@@ -74,8 +74,8 @@ class ShortcutContext(object):
             # Don't Add Duplicates
             if keycombo_str in self.added_keycombo_to_shortcuts_lookup.keys():
                 existing_shortcut = self.added_keycombo_to_shortcuts_lookup[keycombo_str]
-                log.warn('Warning: shortcut with keycombo %s already exists in context\n' + 
-                    '   ...existing shortcut is: %s\n   ...skipping add shorcut: %s', 
+                log.warn('Warning: shortcut with keycombo %s already exists in context\n' +
+                    '   ...existing shortcut is: %s\n   ...skipping add shorcut: %s',
                     keycombo_str, existing_shortcut, shortcut.name)
                 continue
 
@@ -149,7 +149,7 @@ class ApplicationConfig(object):
         context = ShortcutContext(name)
         self.contexts[context.name] = context
         return context
-    
+
     def get_mods_used(self):
         mods_used = []
         for context in self.contexts.values():
@@ -157,13 +157,13 @@ class ApplicationConfig(object):
                 for mod in shortcut.mods:
                     if mod not in mods_used:
                         mods_used.append(mod)
-        return mods_used
-    
+        return sorted(mods_used)
+
     def serialize(self, output_path):
         log.info('serializing ApplicationConfig to %s', output_path)
 
         mods_used = self.get_mods_used()
-        
+
         output_str = '{\n'
         output_str += '    "version" : "%s",\n' % (self.version)
         output_str += '    "mods_used" : %s,\n' % (json.dumps(mods_used))
@@ -196,4 +196,3 @@ class ApplicationConfig(object):
 
 
 
-        
