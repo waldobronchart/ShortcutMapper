@@ -1,0 +1,4 @@
+[submodule "gh-pages"]
+	path = gh-pages
+	url = https://github.com/waldobronchart/ShortcutMapper
+	branch = gh-pages
