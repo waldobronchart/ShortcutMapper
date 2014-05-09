@@ -1,6 +1,6 @@
 {
     "version" : "None",
-    "mods_used" : ["COMMAND", "SHIFT", "ALT", "CONTROL"],
+    "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
     "contexts" : {
         "Default" : {
             "A" : [

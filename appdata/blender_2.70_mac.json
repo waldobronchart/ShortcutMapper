@@ -1,6 +1,6 @@
 {
     "version" : "2.70",
-    "mods_used" : ["SHIFT", "CONTROL", "COMMAND", "ALT"],
+    "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
     "contexts" : {
         "3D View" : {
             "A" : [
