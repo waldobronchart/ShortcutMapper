@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Waldo Bronchart">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>ShortcutMapper - A visual shortcuts explorer for popular applications</title>
+
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+    <script src="javascripts/jquery-2.0.3.min.js"></script>
+    <script src="javascripts/jquery-ui-1.9.2.min.js"></script>
+    <script src="javascripts/chosen.jquery.min.js"></script>
+
+    <script src="keyboards/keyboards.js"></script>
+    <script src="javascripts/apps.js"></script>
+    <script src="javascripts/keyboard.js"></script>
+    <script src="javascripts/manager.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+        var hash = window.location.hash;
+        if (hash.length > 1)
+            pageManager.selectApplication(hash.substring(1));
+        pageManager.init();
+    })
+    </script>
+</head>
+
+<body>
+    <div id="reference"></div>
+    <div id="mainwrap">
+        <header>
+            <h1>Application Shortcuts Mapper</h1>
+            <p>A visual shortcuts explorer for popular applications. Please contribute on ...</p>
+
+            <nav>
+                <div class="inputgroup">
+                    <!-- leave no spaces between selects -->
+                    <select id="application_select" name="application_select" class="leftfield chosen-select">
+                    </select><select id="version_select" name="version_select" class="rightfield chosen-select">
+                    </select>
+                </div>
+                <div class="inputgroup">
+                    <select id="context_select" name="context_select" class="chosen-select"></select>
+                </div>
+                <div class="inputgroup">
+                    <!-- leave no spaces between buttons -->
+                    <button id="os_windows" class="os-radiobutton os-windows leftfield" data-os="windows"><b></b>
+                    </button><button id="os_osx" class="os-radiobutton os-mac midfield" data-os="mac"><b></b>
+                    </button><button id="os_linux" class="os-radiobutton os-linux rightfield" data-os="linux"><b></b></button>
+                </div>
+                <div class="inputgroup">
+                    <select id="keyboardtype_select" name="keyboardtype_select" class="chosen-select keyboard-select"></select>
+                </div>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div id="contentwrap">
+                <div id="keycontent"></div>
+                <div id="othercontent">
+                    <div id="keyinfo">keyinfo</div>
+                    <div id="search">
+                        <div id="searchbox">
+                            <input id="searchfield" name="searchfield" />
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                    <div id="mousecontent">mouseinfo</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <span>Developed by Waldo Bronchart etc etc</span>
+        </div>
+    </div>
+</body>
+</html>

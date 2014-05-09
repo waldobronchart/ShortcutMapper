@@ -1,0 +1,282 @@
+{
+    "version" : "None",
+    "mods_used" : ["COMMAND", "SHIFT", "ALT", "CONTROL"],
+    "contexts" : {
+        "Default" : {
+            "A" : [
+                {"name":"Adaptive Wide Angle Filter", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Camera Raw Filter", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Cycle Path Selection Tools", "mods":["SHIFT"]},
+                {"name":"Path Selection Tool", "mods":[]},
+                {"name":"Select All Layers", "mods":["ALT", "COMMAND"]},
+                {"name":"Select All", "mods":["COMMAND"]}
+            ],
+            "B" : [
+                {"name":"Auto Color", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Black & White", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Brush Tool", "mods":[]},
+                {"name":"Color Balance", "mods":["COMMAND"]},
+                {"name":"Cycle Brush Tools", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Canvas Size", "mods":["ALT", "COMMAND"]},
+                {"name":"Content-Aware Scale", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Copy Merged", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Copy", "mods":["COMMAND"]},
+                {"name":"Crop Tool", "mods":[]},
+                {"name":"Cycle Crop/Slice Tools", "mods":["SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"First Brush", "mods":["SHIFT"]},
+                {"name":"Previous Brush", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Default Picker Colors", "mods":[]},
+                {"name":"Deselect", "mods":["COMMAND"]},
+                {"name":"Reselect", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Cycle Eraser Tools", "mods":["SHIFT"]},
+                {"name":"Eraser Tool", "mods":[]},
+                {"name":"Merge Layers", "mods":["COMMAND"]},
+                {"name":"Merge Visible", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "F" : [
+                {"name":"Apply Last Filter", "mods":["COMMAND"]},
+                {"name":"Fade", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Find Layers", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Toggle Screen Modes", "mods":[]}
+            ],
+            "F1" : [
+                {"name":"Undo/Redo", "mods":[]}
+            ],
+            "F12" : [
+                {"name":"Revert File", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Cut", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Copy", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Paste", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Brush Panel", "mods":[]},
+                {"name":"Fill", "mods":["SHIFT"]}
+            ],
+            "F6" : [
+                {"name":"Color Panel", "mods":[]},
+                {"name":"Feather Selection", "mods":["SHIFT"]}
+            ],
+            "F7" : [
+                {"name":"Invert Selection", "mods":["SHIFT"]},
+                {"name":"Layers Panel", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Info Panel", "mods":[]}
+            ],
+            "F9" : [
+                {"name":"Actions Panel", "mods":["ALT"]}
+            ],
+            "G" : [
+                {"name":"Create/Release Clipping Mask", "mods":["ALT", "COMMAND"]},
+                {"name":"Cycle Fill Tools", "mods":["SHIFT"]},
+                {"name":"Gradient Tool", "mods":[]},
+                {"name":"Group Layers", "mods":["COMMAND"]},
+                {"name":"Ungroup Layers", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Extras", "mods":["COMMAND"]},
+                {"name":"Hand Tool", "mods":[]},
+                {"name":"Hide Other Windows", "mods":["ALT", "COMMAND"]},
+                {"name":"Hide Photoshop", "mods":["COMMAND", "CONTROL"]},
+                {"name":"Toggle Show Target Path", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Cycle Utility Tools", "mods":["SHIFT"]},
+                {"name":"Eyedropper Tool", "mods":[]},
+                {"name":"File Info", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Image Size", "mods":["ALT", "COMMAND"]},
+                {"name":"Invert Image", "mods":["COMMAND"]},
+                {"name":"Invert Selection", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Cycle Healing Tools", "mods":["SHIFT"]},
+                {"name":"Layer via Copy", "mods":["COMMAND"]},
+                {"name":"Layer via Cut", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Spot Healing Brush", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Color Settings", "mods":["COMMAND", "SHIFT"]},
+                {"name":"General Preferences", "mods":["COMMAND"]},
+                {"name":"Keyboard Shortcuts", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Adjust Levels", "mods":["COMMAND"]},
+                {"name":"Auto Contrast", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Auto Tone", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Cycle Lasso Tools", "mods":["SHIFT"]},
+                {"name":"Lasso Tool", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease Brush Hardness", "mods":["SHIFT"]},
+                {"name":"Decrease Brush Size", "mods":[]},
+                {"name":"Send Backward", "mods":["COMMAND"]},
+                {"name":"Send to Back", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Adjust Curves", "mods":["COMMAND"]},
+                {"name":"Cycle Marquee Tools", "mods":["SHIFT"]},
+                {"name":"Menu Preferences", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Minimize Window", "mods":["COMMAND", "CONTROL"]},
+                {"name":"Record Measurements", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Rectangular Marquee Tool", "mods":[]}
+            ],
+            "MINUS" : [
+                {"name":"Zoom Out", "mods":["COMMAND"]}
+            ],
+            "N" : [
+                {"name":"New Layer", "mods":["COMMAND", "SHIFT"]},
+                {"name":"New", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Zoom Out", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Zoom 100%", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Last Brush", "mods":["SHIFT"]},
+                {"name":"Next Brush", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Photoshop Online Help", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Photoshop Online Help", "mods":["COMMAND"]},
+                {"name":"Toggle Preserve Transparency", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Zoom 100%", "mods":["ALT", "COMMAND"]},
+                {"name":"Zoom Fit on Screen", "mods":["COMMAND"]}
+            ],
+            "O" : [
+                {"name":"Browse in Bridge", "mods":["ALT", "COMMAND"]},
+                {"name":"Browse in Bridge", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Cycle Effect Brush Tools", "mods":["SHIFT"]},
+                {"name":"Dodge Tool", "mods":[]},
+                {"name":"Open", "mods":["COMMAND"]}
+            ],
+            "ONE" : [
+                {"name":"Zoom 100%", "mods":["COMMAND"]}
+            ],
+            "P" : [
+                {"name":"Cycle Pen Tools", "mods":["SHIFT"]},
+                {"name":"Pen Tool", "mods":[]},
+                {"name":"Print One Copy", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Print", "mods":["COMMAND"]}
+            ],
+            "PERIOD" : [
+                {"name":"Last Brush", "mods":["SHIFT"]},
+                {"name":"Next Brush", "mods":[]}
+            ],
+            "PLUS" : [
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "Q" : [
+                {"name":"Quit Photoshop", "mods":["COMMAND"]},
+                {"name":"Toggle Standard/Quick Mask Modes", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Lens Correction Filter", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Refine Edge", "mods":["ALT", "COMMAND"]},
+                {"name":"Render 3D", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Rotate View Tool", "mods":[]},
+                {"name":"Toggle Rulers", "mods":["COMMAND"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Bring Forward", "mods":["COMMAND"]},
+                {"name":"Bring to Front", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Increase Brush Hardness", "mods":["SHIFT"]},
+                {"name":"Increase Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Save As", "mods":["ALT", "COMMAND"]},
+                {"name":"Save As", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save for Web", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Save", "mods":["COMMAND"]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Toggle Guides", "mods":["COMMAND"]},
+                {"name":"Toggle Lock Guides", "mods":["ALT", "COMMAND"]},
+                {"name":"Toggle Snapping", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "SINGLE_QOUTE" : [
+                {"name":"Toggle Grid", "mods":["COMMAND"]}
+            ],
+            "SLASH" : [
+                {"name":"Photoshop Online Help", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Photoshop Online Help", "mods":["COMMAND"]},
+                {"name":"Toggle Preserve Transparency", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Cycle Text Tools", "mods":["SHIFT"]},
+                {"name":"Free Transform", "mods":["COMMAND"]},
+                {"name":"Text Tool", "mods":[]},
+                {"name":"Transform Again", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Cycle Shape Tools", "mods":["SHIFT"]},
+                {"name":"Desaturate", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Hue/Saturation", "mods":["COMMAND"]},
+                {"name":"Rectangle Tool", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Move Tool", "mods":[]},
+                {"name":"Paste Into", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Paste in Place", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Vanishing Point Filter", "mods":["ALT", "COMMAND"]}
+            ],
+            "W" : [
+                {"name":"Close All Files", "mods":["ALT", "COMMAND"]},
+                {"name":"Close File", "mods":["COMMAND"]},
+                {"name":"Close and Go to Bridge", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Cycle Quick Selection Tools", "mods":["SHIFT"]},
+                {"name":"Quick Selection Tool", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Hide Polygons in Selection", "mods":["ALT", "COMMAND"]},
+                {"name":"Liquify Filter", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Reveal All Polygons", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Swap Picker Colors", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Cycle History Brush Tools", "mods":["SHIFT"]},
+                {"name":"History Brush Tool", "mods":[]},
+                {"name":"View Gamut Warning", "mods":["COMMAND", "SHIFT"]},
+                {"name":"View Proof Colors", "mods":["COMMAND"]}
+            ],
+            "Z" : [
+                {"name":"Redo Once", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Undo Once", "mods":["ALT", "COMMAND"]},
+                {"name":"Undo/Redo", "mods":["COMMAND"]},
+                {"name":"Zoom Tool", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Zoom 100%", "mods":["ALT", "COMMAND"]},
+                {"name":"Zoom Fit on Screen", "mods":["COMMAND"]}
+            ]
+        }
+    }
+}

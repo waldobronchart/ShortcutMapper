@@ -1,0 +1,62 @@
+/*
+CSS for keyboard layout only.
+Fancy coloring and special style goes into another stylesheet
+*/
+
+div#keyboard {
+    width: 1255px;
+    padding: 15px 12px 8px 15px;
+    margin: 50px auto 0 auto;
+    background-color: #dbdbdb;
+}
+
+/* --- Rows and Cols ----------------------------------- */
+div#keyboard div.row {
+    clear: both;
+}
+div#keyboard div.row:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+div#keyboard div.col {
+    float: left;
+}
+
+/* --- Content ----------------------------------------- */
+div#keyboard button,
+div#keyboard div.spacer-key {
+    float: left;
+    height: 52px;
+    width: 52px;
+    margin: 0 3px 7px 0;
+}
+
+div#keyboard div.mac-fkeys button {
+    width: 55px;
+}
+
+div#keyboard button.high {
+    height: 111px;
+}
+div#keyboard button.wide {
+    width: 107px;
+}
+
+div#keyboard button {
+    padding: 0;
+    background-color: #aaaaaa;
+}
+
+div#keyboard div.spacer-key {
+    display: block;
+    background-color: #e5ff69;
+}
+
+div#keyboard div.spacer-small {
+    display: block; 
+    float: left;
+    width: 25px;
+    height: 16px;
+    background-color: #e5ff69;
+}

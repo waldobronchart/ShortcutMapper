@@ -1,0 +1,810 @@
+/*
+Sticky footer implemented like this:
+https://github.com/timothylong/Responsive-Sticky-Footer/blob/master/index.html
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('../images/background.png');
+    padding: 0;
+    margin: 0;
+}
+
+#mainwrap {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: table-row;
+    color: #505050;
+    width: 100%;
+    height: 1px;
+    text-align: center;
+}
+
+header h1 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.8em;
+    margin: 26px 0 2px 0;
+}
+
+header p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7em;
+    line-height: 0.5em;
+    margin: 0;
+}
+
+#content {
+    display: table-row;
+    height: auto;
+}
+
+#contentwrap {
+    width: 1280px;
+    margin: 1px auto 0 auto;
+}
+
+#keycontent {
+    height: 372px;
+}
+
+#othercontent {
+    position: relative;
+    margin-top: 40px;
+}
+
+#othercontent div {
+    position: absolute;
+}
+
+#keyinfo {
+    left: 0;
+    width: 365px;
+    background-color: rgba(255, 167, 0, 0.14);
+}
+
+#search {
+    left: 365px; /* = (contentwrap.width-550)/2; */
+    width: 550px;
+    background-color: rgba(255, 0, 0, 0.11);
+}
+
+#mousecontent {
+    right: 0;
+    width: 365px;
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+/*** NAVIGATION *****************************************************/
+
+nav {
+    display: inline-block;
+    margin: 36px auto;
+    text-align: left;
+}
+
+nav .inputgroup {
+    float: left;
+    margin-right: 35px;
+}
+
+nav .inputgroup:last-child {
+    margin-right: 0;
+}
+
+nav .inputgroup .spacer {
+    display: inline-block;
+    width: 5px;
+    clear: right;
+}
+
+nav .inputgroup .leftfield,
+nav .inputgroup .leftfield .chosen-single {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+nav .inputgroup .midfield,
+nav .inputgroup .midfield .chosen-single {
+    border-radius: 0px;
+    border-left-color: #f7f7f7;
+    margin-left: 1px;
+}
+
+nav .inputgroup .rightfield,
+nav .inputgroup .rightfield .chosen-single {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left-color: #f7f7f7;
+    margin-left: 1px;
+}
+
+#application_select { width: 130px; }
+#version_select { width: 75px; }
+#context_select { width: 260px; }
+#keyboardtype_select { width: 140px; }
+
+nav .chosen-container-single.keyboard-select .chosen-single {
+    padding-right: 10px;
+}
+nav .chosen-container-single.keyboard-select .chosen-single div {
+    width: 34px;
+    height: 14px;
+}
+nav .chosen-container-single.keyboard-select .chosen-single div b {
+    padding-right: 10px;
+    background: url('../images/sprites.png') no-repeat -10px 0px;
+}
+
+nav input, nav button,
+nav .chosen-container-single .chosen-single,
+#searchbox input {
+    position: relative;
+    overflow: hidden;
+    padding: 7px 12px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+    background-image: -webkit-linear-gradient(top, rgb(249,249,249) 0%, rgb(246,246,246) 100%);
+    background-image: linear-gradient(top, rgb(249,249,249) 0%, rgb(246,246,246) 100%);
+    background-clip: padding-box;
+    box-shadow: 0 0 1px 1px #d0d0d0,
+                0 2px 1px 0px #d0d0d0;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #777777;
+    white-space: nowrap;
+}
+
+
+nav button.os-radiobutton {
+    height: 34px;
+    line-height: 1px;
+    padding: 7px 9px 7px 9px;
+}
+nav button.os-radiobutton:focus {
+    outline: none;
+}
+nav button.os-radiobutton.checked {
+    background-image: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
+    background-image: linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
+}
+nav button.os-radiobutton b {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url('../images/sprites.png') no-repeat 0px 0px;
+    padding: 0px;
+}
+nav button.os-windows b {
+    background-position: 0px -30px;
+}
+nav button.os-mac b {
+    background-position: -17px -30px;
+}
+nav button.os-linux b {
+    background-position: -34px -30px;
+}
+
+/*** CHOSEN PLUGIN STYLING *********************************************/
+
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.chosen-container .chosen-drop {
+    position: absolute;
+    top: 100%;
+    left: -9999px;
+    z-index: 1010;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-top: 1px;
+    background-color: #f6f6f6;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px #b2b1b1;
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+    left: 0;
+}
+.chosen-container a {
+    cursor: pointer;
+}
+
+
+/* Chosen Single */
+.chosen-container-single .chosen-single {
+    display: block;
+}
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 12px;
+}
+.chosen-container-single .chosen-single div {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    display: block;
+    width: 10px;
+    height: 14px;
+}
+.chosen-container-single .chosen-single div b {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/sprites.png') no-repeat 0px 0px;
+}
+.chosen-container-single .chosen-search {
+    position: relative;
+    z-index: 1010;
+    margin: 2px;
+    white-space: nowrap;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1px 0;
+    padding: 2px 20px 2px 3px;
+    width: 100%;
+    height: auto;
+    outline: 0;
+    border: 1px solid #e4e4e4;
+    background: white url('../images/sprites.png') no-repeat 100% -14px;
+    font-size: 1em;
+    color: #777777;
+    border-radius: 1px;
+}
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Chosen Results */
+.chosen-container .chosen-results {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.chosen-container .chosen-results li {
+    display: none;
+    list-style: none;
+    padding: 0 4px;
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 300;
+    background-color: #f0f0f0;
+    color: #777777;
+    -webkit-touch-callout: none;
+}
+.chosen-container .chosen-results li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.chosen-container .chosen-results li.active-result {
+    display: list-item;
+    cursor: pointer;
+}
+.chosen-container .chosen-results li.disabled-result {
+    display: list-item;
+    color: #ccc;
+    cursor: default;
+}
+.chosen-container .chosen-results li.highlighted {
+    background-color: #758597;
+    color: #fff;
+}
+.chosen-container .chosen-results li.no-results {
+    display: list-item;
+}
+.chosen-container .chosen-results li.group-result {
+    display: list-item;
+    font-weight: bold;
+    cursor: default;
+}
+.chosen-container .chosen-results li.group-option {
+    padding-left: 15px;
+}
+.chosen-container .chosen-results li em {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* Active */
+.chosen-container-active .chosen-single {
+    border: 1px solid #fff;
+    background: #fdfdfd;
+    background-image: none;
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
+    background-image: linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
+}
+
+
+
+
+
+/*** KEYBOARD LAYOUT *****************************************************/
+
+#keycontent {
+    padding: 15px 11px 8px 14px;
+    background-color: #dbdbdb;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 0px 1px #8b8b8b,
+                inset 0px 0px 0px 2px #f0f0f0,
+                0px 5px 0px 0px #aaaaaa,
+                0px 6px 0px 0px #7e7e7e,
+                0px 7px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+div#keyboard div.row {
+    clear: both;
+}
+div#keyboard div.row:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+div#keyboard div.col {
+    float: left;
+}
+
+div#keyboard button,
+div#keyboard div.spacer-key {
+    float: left;
+    height: 52px;
+    width: 52px;
+    margin: 0 3px 7px 0;
+}
+
+div#keyboard div.mac-fkeys button {
+    width: 55px;
+}
+
+div#keyboard button.high {
+    height: 111px;
+}
+div#keyboard button.wide {
+    width: 107px;
+}
+
+div#keyboard button {
+    padding: 0;
+}
+
+div#keyboard div.spacer-key {
+    display: block;
+}
+
+div#keyboard div.spacer-small {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 16px;
+}
+
+/*** KEYBOARD STYLES *****************************************************/
+div#keyboard button {
+    border: 0px;
+    border-radius: 4px;
+    background: #e9e9e9 -webkit-linear-gradient(top, rgb(239,239,239) 0%, rgb(224,224,224) 100%);
+    background: #e9e9e9 linear-gradient(top, rgb(239,239,239) 0%, rgb(224,224,224) 100%);
+
+    box-shadow: inset 0px 0px 0px 1px #8b8b8b,
+                inset 0px 0px 0px 2px #fbfbfb,
+                0px 2px 0px 0px #aaaaaa,
+                0px 3px 0px 0px #7e7e7e,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+div#keyboard button:focus {
+    outline: none;
+}
+
+div#keyboard button:active {
+    margin-top: 1px;
+    margin-bottom: 2px;
+    box-shadow: inset 0px 0px 0px 1px #8b8b8b,
+                inset 0px 0px 0px 2px #fbfbfb,
+                0px 1px 0px 0px #aaaaaa,
+                0px 2px 0px 0px #7e7e7e,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+div#keyboard button b {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #b3b3b3;
+}
+
+div#keyboard button.hasitems b {
+    display: block;
+}
+
+div#keyboard button .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    padding: 2px 0 0 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6b6b6b;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgb(255,255,255);
+}
+
+div#keyboard button .shortcut {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: -1px;
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+    padding: 0 3px 0 3px;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 8px;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.36);
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-overflow: clip;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+/*** KEYBOARD BUTTON STYLES *****************************************************/
+
+div#keyboard button.nomod .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.nomod {
+    background: #adb6c1 -webkit-linear-gradient(top, rgb(178,187,197) 0%, rgb(166,177,188) 100%);
+    background: #adb6c1 linear-gradient(top, rgb(178,187,197) 0%, rgb(166,177,188) 100%);
+    box-shadow: inset 0px 0px 0px 1px #5e6d7d,
+                inset 0px 0px 0px 2px #bcc4cc,
+                0px 2px 0px 0px #758597,
+                0px 3px 0px 0px #556371,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.nomod:active {
+    box-shadow: inset 0px 0px 0px 1px #5e6d7d,
+                inset 0px 0px 0px 2px #bcc4cc,
+                0px 1px 0px 0px #758597,
+                0px 2px 0px 0px #556371,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.nomod.hasitems b {
+    background-color: #828B9E;
+}
+
+div#keyboard button.alt .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.alt {
+    background: #4aa6f4;
+    box-shadow: inset 0px 0px 0px 1px #0867b6,
+                inset 0px 0px 0px 2px #7cbdf8,
+                0px 2px 0px 0px #0a7dde,
+                0px 3px 0px 0px #0e4776,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.alt:active {
+    box-shadow: inset 0px 0px 0px 1px #0867b6,
+                inset 0px 0px 0px 2px #7cbdf8,
+                0px 1px 0px 0px #0a7dde,
+                0px 2px 0px 0px #0e4776,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.alt.hasitems b {
+    background-color: #517796;
+}
+
+div#keyboard button.command .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.command {
+    background: #f56248;
+    box-shadow: inset 0px 0px 0px 1px #b82309,
+                inset 0px 0px 0px 2px #f88875,
+                0px 2px 0px 0px #c9260a,
+                0px 3px 0px 0px #942512,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.command:active {
+    box-shadow: inset 0px 0px 0px 1px #b82309,
+                inset 0px 0px 0px 2px #f88875,
+                0px 1px 0px 0px #c9260a,
+                0px 2px 0px 0px #942512,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.command.hasitems b {
+    background-color: #985446;
+}
+
+div#keyboard button.control .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.control {
+    background: #de43a0;
+    box-shadow: inset 0px 0px 0px 1px #9d1a69,
+                inset 0px 0px 0px 2px #e66cb6,
+                0px 2px 0px 0px #b11c74,
+                0px 3px 0px 0px #831f5d,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.control:active {
+    box-shadow: inset 0px 0px 0px 1px #9d1a69,
+                inset 0px 0px 0px 2px #e66cb6,
+                0px 1px 0px 0px #b11c74,
+                0px 2px 0px 0px #831f5d,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.control.hasitems b {
+    background-color: #935078;
+}
+
+div#keyboard button.shift .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.shift {
+    background: #2dc42d;
+    box-shadow: inset 0px 0px 0px 1px #187618,
+                inset 0px 0px 0px 2px #59d859,
+                0px 2px 0px 0px #1e901e,
+                0px 3px 0px 0px #1b5a1b,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.shift:active {
+    box-shadow: inset 0px 0px 0px 1px #187618,
+                inset 0px 0px 0px 2px #59d859,
+                0px 1px 0px 0px #1e901e,
+                0px 2px 0px 0px #1b5a1b,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.shift.hasitems b {
+    background-color: #498149;
+}
+
+div#keyboard button.multi .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.multi {
+    background: #f79e21;
+    box-shadow: inset 0px 0px 0px 1px #a26105,
+                inset 0px 0px 0px 2px #f9b251,
+                0px 2px 0px 0px #ba7205,
+                0px 3px 0px 0px #83510e,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.multi:active {
+    box-shadow: inset 0px 0px 0px 1px #a26105,
+                inset 0px 0px 0px 2px #f9b251,
+                0px 1px 0px 0px #ba7205,
+                0px 2px 0px 0px #83510e,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.multi.hasitems b {
+    background-color: #b7833a;
+}
+
+
+
+
+
+
+div#keyboard button.mod-active {
+    margin-top: 1px;
+    margin-bottom: 2px;
+
+}
+
+div#keyboard button.mod-alt {
+    box-shadow: inset 0px 0px 0px 1px #0867b6,
+                inset 0px 0px 0px 2px #fafafa,
+                0px 2px 0px 0px #0a7dde,
+                0px 3px 0px 0px #0e4776,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.mod-alt:active .label,
+div#keyboard button.mod-alt-active .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.mod-alt:active,
+div#keyboard button.mod-alt-active {
+    background: #4aa6f4;
+    box-shadow: inset 0px 0px 0px 1px #0867b6,
+                inset 0px 0px 0px 2px #7cbdf8,
+                0px 1px 0px 0px #0a7dde,
+                0px 2px 0px 0px #0e4776,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+div#keyboard button.mod-command {
+    box-shadow: inset 0px 0px 0px 1px #b82309,
+                inset 0px 0px 0px 2px #fafafa,
+                0px 2px 0px 0px #c9260a,
+                0px 3px 0px 0px #942512,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.mod-command:active .label,
+div#keyboard button.mod-command-active .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.mod-command:active,
+div#keyboard button.mod-command-active {
+    background: #f56248;
+    box-shadow: inset 0px 0px 0px 1px #b82309,
+                inset 0px 0px 0px 2px #f88875,
+                0px 1px 0px 0px #c9260a,
+                0px 2px 0px 0px #942512,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+div#keyboard button.mod-control {
+    box-shadow: inset 0px 0px 0px 1px #9d1a69,
+                inset 0px 0px 0px 2px #fafafa,
+                0px 2px 0px 0px #b11c74,
+                0px 3px 0px 0px #831f5d,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.mod-control:active .label,
+div#keyboard button.mod-control-active .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.mod-control:active,
+div#keyboard button.mod-control-active {
+    background: #de43a0;
+    box-shadow: inset 0px 0px 0px 1px #9d1a69,
+                inset 0px 0px 0px 2px #e66cb6,
+                0px 1px 0px 0px #b11c74,
+                0px 2px 0px 0px #831f5d,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+div#keyboard button.mod-shift {
+    box-shadow: inset 0px 0px 0px 1px #187618,
+                inset 0px 0px 0px 2px #fafafa,
+                0px 2px 0px 0px #1e901e,
+                0px 3px 0px 0px #1b5a1b,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.mod-shift:active .label,
+div#keyboard button.mod-shift-active .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.mod-shift:active,
+div#keyboard button.mod-shift-active {
+    background: #2dc42d;
+    box-shadow: inset 0px 0px 0px 1px #187618,
+                inset 0px 0px 0px 2px #59d859,
+                0px 1px 0px 0px #1e901e,
+                0px 2px 0px 0px #1b5a1b,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*** SEARCHBOX *****************************************************/
+
+
+#search {
+    height: 100px;
+}
+
+#searchbox {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+
+
+/*** FOOTER *****************************************************/
+
+#footer {
+    display: table-row;
+    background-color: #fff;
+    width: 100%;
+    height: 28px;
+    text-align: center;
+}
+
+#footer span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7em;
+    line-height: 1em;
+}
+
+#reference {
+    background: url(../images/reference.png) top center no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+
+
+
+
+
+
+/* Retina compatibility */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
+    .chosen-rtl .chosen-search input[type="text"],
+    .chosen-container-single .chosen-single abbr,
+    .chosen-container-single .chosen-single div b,
+    .chosen-container-single .chosen-search input[type="text"],
+    .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+    .chosen-container .chosen-results-scroll-down span,
+    .chosen-container .chosen-results-scroll-up span,
+    nav button.os-radiobutton b {
+        background-image: url('../images/sprites@2x.png') !important;
+        background-size: 51px 51px !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
