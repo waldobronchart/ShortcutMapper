@@ -752,14 +752,14 @@ div#keyboard button.mod-shift.mod-active {
 
 #searchbox {
     position: relative;
-    width: 224px; /* 250-child input leftright padding-border */
+    width: 250px;
     margin: 0 auto;
 }
 
 #searchbox input {
     z-index: 2000;
     outline: none;
-    width: 100%;
+    width: 224px;
     padding: 7px 12px;
     margin: 0px;
 }
@@ -769,7 +769,7 @@ div#keyboard button.mod-shift.mod-active {
     display: block;
     position: absolute;
     top: 8px;
-    right: -16px;
+    right: 12px;
     width: 16px;
     height: 16px;
     background: url('../images/sprites.png') no-repeat -34px -14px;
