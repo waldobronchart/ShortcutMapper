@@ -46,14 +46,15 @@ header p {
     margin: 0;
 }
 
+#contentwrap {
+    position: relative;
+    width: 1280px;
+    margin: 1px auto 0 auto;
+}
+
 #content {
     display: table-row;
     height: auto;
-}
-
-#contentwrap {
-    width: 1280px;
-    margin: 1px auto 0 auto;
 }
 
 #keycontent {
@@ -63,28 +64,61 @@ header p {
 #othercontent {
     position: relative;
     margin-top: 40px;
-}
-
-#othercontent div {
-    position: absolute;
+    min-height: 250px;
 }
 
 #keyinfo {
+    position: absolute;
     left: 0;
     width: 365px;
-    background-color: rgba(255, 167, 0, 0.14);
+    height: 200px;
+    background: url('../images/reference-keyinfo.png') no-repeat;
 }
 
 #search {
+    position: absolute;
     left: 365px; /* = (contentwrap.width-550)/2; */
     width: 550px;
-    background-color: rgba(255, 0, 0, 0.11);
 }
 
 #mousecontent {
+    position: absolute;
     right: 0;
     width: 365px;
-    background-color: rgba(0, 255, 0, 0.1);
+    height: 250px;
+    background: url('../images/reference-mouse.png') no-repeat;
+}
+
+/* Common input styles ******/
+
+nav input, nav button,
+nav .chosen-container-single .chosen-single,
+#searchbox input {
+    position: relative;
+    overflow: hidden;
+    padding: 7px 12px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+    background-image: -webkit-linear-gradient(top, rgb(249,249,249) 0%, rgb(246,246,246) 100%);
+    background-image: linear-gradient(top, rgb(249,249,249) 0%, rgb(246,246,246) 100%);
+    background-clip: padding-box;
+    box-shadow: 0 0 1px 1px #d0d0d0,
+                0 2px 1px 0px #d0d0d0;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #777777;
+    white-space: nowrap;
+}
+.chosen-container-active.chosen-with-drop .chosen-single,
+nav button.checked,
+#searchbox input:focus,
+#searchbox input.active {
+    outline: none;
+    background-image: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
+    background-image: linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
 }
 
 /*** NAVIGATION *****************************************************/
@@ -148,40 +182,11 @@ nav .chosen-container-single.keyboard-select .chosen-single div b {
     background: url('../images/sprites.png') no-repeat -10px 0px;
 }
 
-nav input, nav button,
-nav .chosen-container-single .chosen-single,
-#searchbox input {
-    position: relative;
-    overflow: hidden;
-    padding: 7px 12px;
-    margin: 0;
-    border: 1px solid #fff;
-    border-radius: 2px;
-    background-color: #f7f7f7;
-    background-image: -webkit-linear-gradient(top, rgb(249,249,249) 0%, rgb(246,246,246) 100%);
-    background-image: linear-gradient(top, rgb(249,249,249) 0%, rgb(246,246,246) 100%);
-    background-clip: padding-box;
-    box-shadow: 0 0 1px 1px #d0d0d0,
-                0 2px 1px 0px #d0d0d0;
-    font-size: 0.8em;
-    font-weight: 400;
-    text-decoration: none;
-    color: #777777;
-    white-space: nowrap;
-}
-
 
 nav button.os-radiobutton {
     height: 34px;
     line-height: 1px;
     padding: 7px 9px 7px 9px;
-}
-nav button.os-radiobutton:focus {
-    outline: none;
-}
-nav button.os-radiobutton.checked {
-    background-image: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
-    background-image: linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
 }
 nav button.os-radiobutton b {
     display: block;
@@ -308,7 +313,7 @@ nav button.os-linux b {
     font-size: 0.7em;
     font-weight: 300;
     background-color: #f0f0f0;
-    color: #777777;
+    color: #444;
     -webkit-touch-callout: none;
 }
 .chosen-container .chosen-results li:nth-child(even) {
@@ -352,9 +357,6 @@ nav button.os-linux b {
 .chosen-container-active.chosen-with-drop .chosen-single {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #fff;
-    background-image: -webkit-linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
-    background-image: linear-gradient(top, rgb(226, 226, 226) 0%, rgb(243,243,243) 100%);
 }
 
 
@@ -658,12 +660,12 @@ div#keyboard button.mod-alt {
                 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 div#keyboard button.mod-alt:active .label,
-div#keyboard button.mod-alt-active .label {
+div#keyboard button.mod-alt.mod-active .label {
     color: #fff;
     text-shadow: 0px 1px 0px rgb(80, 80, 80);
 }
 div#keyboard button.mod-alt:active,
-div#keyboard button.mod-alt-active {
+div#keyboard button.mod-alt.mod-active {
     background: #4aa6f4;
     box-shadow: inset 0px 0px 0px 1px #0867b6,
                 inset 0px 0px 0px 2px #7cbdf8,
@@ -680,12 +682,12 @@ div#keyboard button.mod-command {
                 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 div#keyboard button.mod-command:active .label,
-div#keyboard button.mod-command-active .label {
+div#keyboard button.mod-command.mod-active .label {
     color: #fff;
     text-shadow: 0px 1px 0px rgb(80, 80, 80);
 }
 div#keyboard button.mod-command:active,
-div#keyboard button.mod-command-active {
+div#keyboard button.mod-command.mod-active {
     background: #f56248;
     box-shadow: inset 0px 0px 0px 1px #b82309,
                 inset 0px 0px 0px 2px #f88875,
@@ -702,12 +704,12 @@ div#keyboard button.mod-control {
                 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 div#keyboard button.mod-control:active .label,
-div#keyboard button.mod-control-active .label {
+div#keyboard button.mod-control.mod-active .label {
     color: #fff;
     text-shadow: 0px 1px 0px rgb(80, 80, 80);
 }
 div#keyboard button.mod-control:active,
-div#keyboard button.mod-control-active {
+div#keyboard button.mod-control.mod-active {
     background: #de43a0;
     box-shadow: inset 0px 0px 0px 1px #9d1a69,
                 inset 0px 0px 0px 2px #e66cb6,
@@ -724,12 +726,12 @@ div#keyboard button.mod-shift {
                 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 div#keyboard button.mod-shift:active .label,
-div#keyboard button.mod-shift-active .label {
+div#keyboard button.mod-shift.mod-active .label {
     color: #fff;
     text-shadow: 0px 1px 0px rgb(80, 80, 80);
 }
 div#keyboard button.mod-shift:active,
-div#keyboard button.mod-shift-active {
+div#keyboard button.mod-shift.mod-active {
     background: #2dc42d;
     box-shadow: inset 0px 0px 0px 1px #187618,
                 inset 0px 0px 0px 2px #59d859,
@@ -749,14 +751,115 @@ div#keyboard button.mod-shift-active {
 }
 
 #searchbox {
-    width: 250px;
+    position: relative;
+    width: 224px; /* 250-child input leftright padding-border */
     margin: 0 auto;
 }
 
 #searchbox input {
+    z-index: 2000;
     outline: none;
+    width: 100%;
+    padding: 7px 12px;
+    margin: 0px;
 }
 
+#searchbox span.icon {
+    z-index: 2001;
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -16px;
+    width: 16px;
+    height: 16px;
+    background: url('../images/sprites.png') no-repeat -34px -14px;
+
+}
+
+#search_results {
+    display: none;
+    z-index: 2002;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px;
+    margin-top: 1px;
+    background-color: #f6f6f6;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 1px #b2b1b1;
+    min-width: 400px;
+}
+#search_results table {
+    -webkit-touch-callout: none;
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+}
+#search_results table td {
+    font-size: 0.7em;
+    font-weight: 300;
+    line-height: 16px;
+    background-color: #f0f0f0;
+    color: #444;
+    padding: 0 3px;
+}
+#search_results table td em {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    color: #333;
+}
+#search_results table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+#search_results table tr td:last-child {
+    color: #999;
+}
+#search_results table td span {
+    background-color: #556371;
+    border-radius: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    padding: 0 2px;
+    margin-right: 2px;
+}
+#search_results table td span.shift { background-color: #2dc42d; }
+#search_results table td span.control { background-color: #de43a0; }
+#search_results table td span.alt { background-color: #4aa6f4; }
+#search_results table td span.command { background-color: #f56248; }
+
+#search_results table tr.selected td {
+    background-color: #758597;
+    color: #fff;
+}
+#search_results table tr.selected td em {
+    font-style: normal;
+    text-decoration: underline;
+    color: #fff;
+}
+
+#search_results span.more-results {
+    display: block;
+    font-size: 0.7em;
+    width: 100%;
+    text-align: center;
+    color: #777;
+}
+
+#search_blurdetect {
+    z-index: 1999;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+}
 
 
 /*** FOOTER *****************************************************/
@@ -776,19 +879,6 @@ div#keyboard button.mod-shift-active {
     line-height: 1em;
 }
 
-#reference {
-    background: url(../images/reference.png) top center no-repeat;
-    opacity: 0.5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -100;
-}
-
-
-
 
 
 
@@ -801,7 +891,8 @@ div#keyboard button.mod-shift-active {
     .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
     .chosen-container .chosen-results-scroll-down span,
     .chosen-container .chosen-results-scroll-up span,
-    nav button.os-radiobutton b {
+    nav button.os-radiobutton b,
+    #searchbox span.icon {
         background-image: url('../images/sprites@2x.png') !important;
         background-size: 51px 51px !important;
         background-repeat: no-repeat !important;

@@ -28,6 +28,7 @@
 
         activeModKeys: [],
         contextItems: null,
+        highlightedKeyName: null,
 
         _create: function() {
             var keyboard = this;
@@ -73,9 +74,9 @@
                     // Click to toggle modifier activeness
                     $(this).on("click", function() {
                         if ($.inArray(keyName, keyboard.activeModKeys) >= 0)
-                            keyboard._deactivateModifier(keyName);
+                            keyboard._deactivateModifiers([keyName]);
                         else
-                            keyboard._activateModifier(keyName);
+                            keyboard._activateModifiers([keyName]);
                     });
                 }
             });
@@ -93,49 +94,61 @@
 
             // Escape key clears all modifier activeness
             if (keyName === "ESCAPE") {
-                var activeModKeysPrev = this.activeModKeys.slice(0); // create copy
-                for (i=0; i<activeModKeysPrev.length; i++)
-                    this._deactivateModifier(activeModKeysPrev[i]);
+                this._clearActiveModifiers();
+                this._update();
                 return;
             }
 
-            this._activateModifier(keyName);
+            this._activateModifiers([keyName]);
         },
 
         _keyUp: function(e) {
             var keyName = this.keyCodeMap[e.which];
-            this._deactivateModifier(keyName);
+            this._deactivateModifiers([keyName]);
         },
 
-        _activateModifier: function(keyName) {
-            if ($.inArray(keyName, this.options.mods) < 0)
-                return;
-            if ($.inArray(keyName, this.activeModKeys) >= 0)
-                return;
+        _activateModifiers: function(modKeyNames) {
+            for (i=0; i<modKeyNames.length; i++) {
+                var keyName = modKeyNames[i];
+                if ($.inArray(keyName, this.options.mods) < 0)
+                    return;
+                if ($.inArray(keyName, this.activeModKeys) >= 0)
+                    return;
 
-            // Add activeness class from mod buttons
-            var modClass = "mod-" + keyName.toLowerCase();
-            $(this.element).find("button." + modClass).addClass(modClass + "-active mod-active");
+                // Add activeness class from mod buttons
+                var modClass = "mod-" + keyName.toLowerCase();
+                $(this.element).find("button." + modClass).addClass("mod-active");
 
-            // Add to active modifier key list
-            this.activeModKeys.push(keyName);
+                // Add to active modifier key list
+                this.activeModKeys.push(keyName);
+            }
+
             this._update();
         },
 
-        _deactivateModifier: function(keyName) {
-            if ($.inArray(keyName, this.options.mods) < 0)
-                return;
-            if ($.inArray(keyName, this.activeModKeys) < 0)
-                return;
+        _deactivateModifiers: function(modKeyNames) {
+            for (i=0; i<modKeyNames.length; i++) {
+                var keyName = modKeyNames[i];
+                if ($.inArray(keyName, this.options.mods) < 0)
+                    return;
+                if ($.inArray(keyName, this.activeModKeys) < 0)
+                    return;
 
-            // Remove activeness class from mod buttons
-            var modClass = "mod-" + keyName.toLowerCase();
-            $(this.element).find("button." + modClass).removeClass(modClass + "-active mod-active");
+                // Remove activeness class from mod buttons
+                var modClass = "mod-" + keyName.toLowerCase();
+                $(this.element).find("button." + modClass).removeClass("mod-active");
 
-            // Remove from active modifier key
-            var idx = this.activeModKeys.indexOf(keyName);
-            this.activeModKeys.splice(idx, 1);
+                // Remove from active modifier key
+                var idx = this.activeModKeys.indexOf(keyName);
+                this.activeModKeys.splice(idx, 1);
+            }
+
             this._update();
+        },
+
+        _clearActiveModifiers: function() {
+            this.activeModKeys = [];
+            $(this.element).find("button.mod-active").removeClass("mod-active");
         },
 
         _getSafeID: function(name) {
@@ -144,9 +157,10 @@
         },
 
         switchContext: function(name) {
+            this.options.context = name;
             var contextSafeName = this._getSafeID(name);
 
-            console.log("switch context to " + name);
+            console.log("KEYBOARD switch context to " + name);
 
             // Cleanup and hide
             this.element.find("button").removeClass("hasitems");
@@ -160,24 +174,54 @@
             this._update();
         },
 
+        setActiveMods: function(mods) {
+            this._clearActiveModifiers();
+            this._activateModifiers(mods);
+        },
+
+        highlightShortcut: function(keyName, shortcut) {
+            this.setActiveMods(shortcut.mods);
+            this.highlightedKeyName = keyName;
+            this._update();
+        },
+
+        exitHighlightMode: function() {
+            if (this.highlightedKeyName === null)
+                return;
+
+            this.highlightedKeyName = null;
+            this._update();
+        },
+
         _update: function() {
             var mods = "NOMOD";
             if (this.activeModKeys.length > 0)
                 mods = this.activeModKeys.sort().join("_");
 
-            this.contextItems.children().show();
-            this.contextItems.children("div.shortcut[data-mods!='" + mods + "']").hide();
+            var inHighlightMode = (this.highlightedKeyName != null);
+            var buttonSelector = "button" + ((inHighlightMode) ? "[data-key='" + this.highlightedKeyName + "']" : "");
 
-            // Set button class
+            // Show only shortcut labels from current mods
+            if (inHighlightMode) {
+                this.contextItems.children().hide();
+                var c = this._getSafeID(this.options.context);
+                $(this.element).find(buttonSelector + " div.keyitems[data-context='" + c + "'] div.shortcut[data-mods='" + mods + "']").show();
+            } else {
+                this.contextItems.children().show();
+                this.contextItems.children("div.shortcut[data-mods!='" + mods + "']").hide();
+            }
+
+            // Clear all button highlight state
+            var standardModClasses = ["nomod", "alt", "command", "control", "shift", "multi"];
+            this.element.find("button").removeClass(standardModClasses.join(" "));
+
+            // Highlight keys
             var buttonModClass = "nomod";
             if (this.activeModKeys.length == 1)
                 buttonModClass = this.activeModKeys[0].toLowerCase();
             if (this.activeModKeys.length > 1)
                 buttonModClass = "multi";
-
-            var standardModClasses = ["nomod", "alt", "command", "control", "shift", "multi"];
-            this.element.find("button").removeClass(standardModClasses.join(" "));
-            this.contextItems.children("div.shortcut[data-mods='" + mods + "']").closest("button").addClass(buttonModClass);
+            this.contextItems.children("div.shortcut[data-mods='" + mods + "']").closest(buttonSelector).addClass(buttonModClass);
         },
 
         _setOption: function(key, value) {

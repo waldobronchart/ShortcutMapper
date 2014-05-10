@@ -31,10 +31,9 @@
 </head>
 
 <body>
-    <div id="reference"></div>
     <div id="mainwrap">
         <header>
-            <h1>Application Shortcuts Mapper</h1>
+            <h1>Application Shortcut Mapper</h1>
             <p>A visual shortcuts explorer for popular applications. Please contribute on ...</p>
 
             <nav>
@@ -63,20 +62,22 @@
             <div id="contentwrap">
                 <div id="keycontent"></div>
                 <div id="othercontent">
-                    <div id="keyinfo">keyinfo</div>
+                    <div id="keyinfo"></div>
                     <div id="search">
                         <div id="searchbox">
-                            <input id="searchfield" name="searchfield" />
+                            <input id="searchfield" name="searchfield" placeholder="Search for shortcuts..." />
                             <span class="icon"></span>
+                            <div id="search_results"></div>
                         </div>
                     </div>
-                    <div id="mousecontent">mouseinfo</div>
+                    <div id="mousecontent"></div>
                 </div>
             </div>
         </div>
+        <div id="search_blurdetect"></div>
 
         <div id="footer">
-            <span>Developed by Waldo Bronchart etc etc</span>
+            <span>Developed and maintained by <a href="http://waldobronchart.be/">Waldo Bronchart</a>.</span>
         </div>
     </div>
 </body>
