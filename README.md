@@ -13,7 +13,7 @@ Directories in **master**:
 ```
 /exporters       Per application scripts that export a .json file containing all shortcuts
 /shmaplib        Python utility library (Shortcut Mapper Lib) to help exporting shortcuts to the webapp.
-/tests           Python tests to ensure nothings broken
+/tests           Python tests to ensure nothing is broken
 /gh-pages        Git submodule into the *gh-pages* branch containing the web application.
 ```
 
