@@ -95,7 +95,7 @@ header p {
     background-color: #414141;
 }
 #banners li.github a .icon {
-    background: url('../images/sprites@2x.png') no-repeat 0 -47px;
+    background: url('../images/sprites.png') no-repeat 0 -47px;
 }
 #banners li.coin a {
     border-bottom-right-radius: 2px;
@@ -106,7 +106,7 @@ header p {
     background-color: #cc3406;
 }
 #banners li.coin a .icon {
-    background: url('../images/sprites@2x.png') no-repeat -24px -47px;
+    background: url('../images/sprites.png') no-repeat -24px -47px;
 }
 
 
