@@ -11,8 +11,7 @@
         "Open a new panel without closing soloed panel": ["Shift-click a panel", "Shift-click a panel"],
         "Open/close all panels": ["Ctrl-click a panel", "Command-click a panel"],
         "Open/close left panels, top to bottom": ["Ctrl + Shift + 0 - 5", "Command + Control + 0 - 5"],
-        "Open/close right panels, Library and Develop modules, top to bottom": ["Ctrl + 0 - 8", "Command + 0 - 8"],
-        "Open/close right panels, Slideshow, Print, and Web modules, top to bottom": ["Ctrl + 1 - 7", "Command + 1 - 7"]
+        "Open/close right panels top to bottom": ["Ctrl + 0 - 8", "Command + 0 - 8"]
     },
     "Keys for navigating modules": {
         "Go to Library module": ["Ctrl + Alt + 1", "Command + Option + 1"],
@@ -38,7 +37,7 @@
         "Cycle info overlay": ["I", "I"],
         "Show/hide info overlay": ["Ctrl + I", "Command + I"]
     },
-    "Keys for using a secondary window": {
+    "Secondary Window": {
         "Open secondary window": ["F11", "Command + F11"],
         "Enter Grid view": ["Shift + G", "Shift + G"],
         "Enter normal Loupe view": ["Shift + E", "Shift + E"],
@@ -48,7 +47,8 @@
         "Enter Slideshow view": ["Ctrl + Alt + Shift + Enter", "Command + Option + Shift + Return"],
         "Enter full-screen mode": ["Shift + F11", "Command + Shift + F11"],
         "Show/hide Filter bar": ["Shift + \\", "Shift + \\"],
-        "Zoom in / zoom out": ["Ctrl + Shift + = / Ctrl + Shift -", "Command + Shift + = / Command + Shift + -"]
+        "Zoom In": ["Ctrl + Shift + =", "Command + Shift + ="],
+        "Zoom Out": ["Ctrl + Shift + -", "Command + Shift + -"]
     },
     "Keys for managing photos and catalogs": {
         "Import photos from disk": ["Ctrl + Shift + I", "Command + Shift + I"],
@@ -75,25 +75,27 @@
         "Print selected photo": ["Ctrl + P", "Command + P"],
         "Open Page Setup dialog box": ["Ctrl + Shift + P", "Command + Shift + P"]
     },
-    "Keys for comparing photos in the Library module": {
+    "Module: Library": {
         "Switch to Loupe view": ["E or Enter", "E or Return"],
         "Switch to Grid view": ["G or Esc", "G or Esc"],
         "Switch to Compare view": ["C", "C"],
         "Switch to Survey view": ["N", "N"],
-        "Switch from Grid to Loupe view": ["Spacebar or E", "Spacebar or E"],
+        "Switch from Grid to Loupe view": ["Spacebar", "Spacebar"],
         "Swap select and candidate photos in Compare view": ["Down Arrow", "Down Arrow"],
         "Make next photos select and candidate in Compare view": ["Up Arrow", "Up Arrow"],
-        "Toggle Zoom view": ["Z", "Z"],
-        "Zoom in / zoom out in Loupe view": ["Ctrl + = / Ctrl + -", "Command + = / Command + -"],
-        "Scroll up/down zoomed photo in Loupe view": ["Page Up / Page Down on full-size keyboard", "Page Up / Page Down on full-size keyboard"],
+        "Toggle Zoom View": ["Z", "Z"],
+        "Zoom In": ["Ctrl + =", "Command + ="],
+        "Zoom Out": ["Ctrl + -", "Command + -"],
         "Go to beginning/end of Grid view": ["Home / End", "Home / End"],
         "Play impromptu slide show": ["Ctrl + Enter", "Command + Return"],
         "Rotate photo right": ["Ctrl + ]", "Command + ]"],
         "Rotate photo left": ["Ctrl + [", "Command + ["],
-        "Increase/decrease Grid thumbnail size": ["= / -", "= / -"],
-        "Scroll up/down Grid thumbnails": ["Page Up / Page Down on full-size keyboard", "Page Up / Page Down on full-size keyboard"],
+        "Increase Grid Thumbnail Size": ["=", "="],
+        "Decrease Grid Thumbnail Size": ["-", "-"],
+        "Scroll Up": ["Page Up", "Page Up"],
+        "Scroll Down": ["Page Down", "Page Down"],
         "Toggle cell extras": ["Ctrl + Shift + H", "Command + Shift + H"],
-        "Show/hide badges": ["Ctrl + Alt + Shift + H", "Command + Option + Shift + H"],
+        "Show/Hide Badges": ["Ctrl + Alt + Shift + H", "Command + Option + Shift + H"],
         "Cycle Grid views": ["J", "J"],
         "Open Library view options": ["Ctrl + J", "Command + J"],
         "Select multiple discrete photos": ["Ctrl-click", "Command-click"],
@@ -102,7 +104,8 @@
         "Deselect all photos": ["Ctrl + D", "Command + D or Command + Shift + A"],
         "Select only active photo": ["Ctrl + Shift + D", "Command + Shift + D"],
         "Deselect active photo": ["/", "/"],
-        "Add previous/next photo to selection": ["Shift + Left/Right Arrow", "Shift + Left/Right Arrow"],
+        "Add previous photo to selection": ["Shift + Left", "Shift + Left"],
+        "Add next photo to selection": ["Shift + Right", "Shift + Right"],
         "Select flagged photos": ["Ctrl + Alt + A", "Command + Option + A"],
         "Deselect unflagged photos": ["Ctrl + Alt + Shift + D", "Command + Option + Shift + D"],
         "Group into stack": ["Ctrl + G", "Command + G"],
@@ -160,7 +163,7 @@
         "Check spelling": ["", "Command + ;"],
         "Open Character palette": ["", "Command + Option + T"]
     },
-    "Keys for working in the Develop module": {
+    "Module: Develop": {
         "Convert to grayscale": ["V", "V"],
         "Auto tone": ["Ctrl + U", "Command + U"],
         "Auto white balance": ["Ctrl + Shift + U", "Command + Shift + U"],
@@ -200,8 +203,6 @@
         "Paint a horizontal or vertical line": ["Shift-drag", "Shift-drag"],
         "Increase/decrease Amount": ["Drag adjustment pin right/left", "Drag adjustment pin right/left"],
         "Show/hide local adjustment pin": ["H", "H"],
-        "Show/hide local adjustment mask overlay": ["O", "O"],
-        "Cycle local adjustment mask overlay colors": ["Shift + O", "Shift + O"],
         "Select Targeted Adjustment tool to apply a Tone Curve adjustment": ["Ctrl + Alt + Shift + T", "Command + Option + Shift + T"],
         "Select Targeted Adjustment tool to apply a Hue adjustment": ["Ctrl + Alt + Shift + H", "Command + Option + Shift + H"],
         "Select Targeted Adjustment tool to apply a Saturation adjustment": ["Ctrl + Alt + Shift + S", "Command + Option + Shift + S"],
@@ -212,7 +213,8 @@
         "Rotate photo right": ["Ctrl + ]", "Command + ]"],
         "Rotate photo left": ["Ctrl + [", "Command + ["],
         "Toggle between Loupe and 1:1 Zoom preview": ["Spacebar or Z", "Spacebar or Z"],
-        "Zoom in / zoom out": ["Ctrl + = / Ctrl + -", "Command + = / Command + -"],
+        "Zoom In": ["Ctrl + =", "Command + ="],
+        "Zoom Out": ["Ctrl + -", "Command + -"],
         "Play impromptu slide show": ["Ctrl + Enter", "Command + Return"],
         "View Before and After left/right": ["Y", "Y"],
         "View Before and After top/bottom": ["Alt + Y", "Option + Y"],
@@ -223,7 +225,7 @@
         "Create a new preset folder": ["Ctrl + Alt + N", "Command + Option + N"],
         "Open Develop view options": ["Ctrl + J", "Command + J"]
     },
-    "Keys for working in the Slideshow module": {
+    "Module: Slideshow": {
         "Play slide show": ["Enter", "Return"],
         "Play impromptu slide show": ["Ctrl + Enter", "Command + Return"],
         "Pause slide show": ["Spacebar", "Spacebar"],
@@ -241,7 +243,7 @@
         "Create a new slide show template folder": ["Ctrl + Shift + N", "Command + Shift + N"],
         "Save slide show settings": ["Ctrl + S", "Command + S"]
     },
-    "Keys for working in the Print module": {
+    "Module: Print": {
         "Print": ["Ctrl + P", "Command + P"],
         "Print one copy": ["Ctrl + Alt + P", "Command + Option + P"],
         "Open Page Setup dialog box": ["Ctrl + Shift + P", "Command + Shift + P"],
@@ -263,7 +265,7 @@
         "Create a new print template folder": ["Ctrl + Shift + N", "Command + Shift + N"],
         "Save print settings": ["Ctrl + S", "Command + S"]
     },
-    "Keys for working in the Web module": {
+    "Module: Web": {
         "Reload web gallery": ["Ctrl + R", "Command + R"],
         "Preview in browser": ["Ctrl + Alt + P", "Command + Option + P"],
         "Play impromptu slide show": ["Ctrl + Enter", "Command + Return"],
