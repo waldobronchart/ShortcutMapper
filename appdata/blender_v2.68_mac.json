@@ -1,5 +1,7 @@
 {
-    "version" : "2.68",
+    "name" : "Blender",
+    "version" : "v2.68",
+    "os" : "mac",
     "mods_used" : ["SHIFT", "CONTROL", "ALT"],
     "contexts" : {
         "3D View" : {
