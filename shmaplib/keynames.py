@@ -40,6 +40,12 @@ class DataContainer(object):
         u'±' : ['PLUSMINUS'],
 
         # Numbers and maths
+        u'number' : ['ONE', 'NUMPAD_ONE', 'TWO', 'NUMPAD_TWO', 'THREE', 'NUMPAD_THREE', 'FOUR', 'NUMPAD_FOUR',
+                     'FIVE', 'NUMPAD_FIVE', 'SIX', 'NUMPAD_SIX', 'SEVEN', 'NUMPAD_SEVEN', 'EIGHT', 'NUMPAD_EIGHT',
+                     'NINE', 'NUMPAD_NINE','ZERO', 'NUMPAD_ZERO'],
+        u'number keys' : ['ONE', 'NUMPAD_ONE', 'TWO', 'NUMPAD_TWO', 'THREE', 'NUMPAD_THREE', 'FOUR', 'NUMPAD_FOUR',
+                     'FIVE', 'NUMPAD_FIVE', 'SIX', 'NUMPAD_SIX', 'SEVEN', 'NUMPAD_SEVEN', 'EIGHT', 'NUMPAD_EIGHT',
+                     'NINE', 'NUMPAD_NINE','ZERO', 'NUMPAD_ZERO'],
         u'1' : ['ONE', 'NUMPAD_ONE'],
         u'2' : ['TWO', 'NUMPAD_TWO'],
         u'3' : ['THREE', 'NUMPAD_THREE'],
@@ -145,6 +151,8 @@ class DataContainer(object):
         u'page up' : ['PAGE_UP'],
         u'page down' : ['PAGE_DOWN'],
 
+        u'arrow keys' : ['UP_ARROW', 'DOWN_ARROW', 'LEFT_ARROW', 'RIGHT_ARROW'],
+        u'arrows' : ['UP_ARROW', 'DOWN_ARROW', 'LEFT_ARROW', 'RIGHT_ARROW'],
         u'up' : ['UP_ARROW'],
         u'up arrow' : ['UP_ARROW'],
         u'up arrow key' : ['UP_ARROW'],

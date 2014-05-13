@@ -273,64 +273,32 @@ class AdobeSummaryParser(object):
 
         return self.idata
 
-class AdobeDocsExporter(object):
+
+class AdobeExporter(object):
+    """Exports an intermediate .json file to the gh-pages appdata dir in the correct file format."""
+
     def __init__(self, source, app_name, app_version):
-        super(AdobeDocsExporter, self).__init__()
+        super(AdobeExporter, self).__init__()
         self.source_file = source
         self.app_name = app_name
         self.app_version = app_version
-        self.in_testmode = False
 
-        self.context_filter = self._default_context_filter
-        self.shortcut_filter = self._default_shortcut_filter
+        # Windows and Mac appconfigs
+        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows')
+        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac')
 
-    def _default_context_filter(self, name):
-        """A default filter for contexts. This is called when a new context is extracted from the
-        html documentation page. The returned name can be overridden, or if an empty string or None
-        is returned the context and all its shortcuts is completely ignored."""
-        return name
-
-    def _default_shortcut_filter(self, name, keys_str):
-        """A default filter for shortcuts. This is called when a new shortcut is extracted from the
-        html documentation page. The returned tuple (name, keys_str) can be overridden, or if one of
-        the values are empty, the shortcut is completely ignored."""
-        return (name, keys_str)
-
-    def _clean_text(self, text):
-        text = text.replace(u'\n', u' ').strip(u' ').replace(u'\xa0', u' ')
-        # Remove stuff within braces
-        text = re.sub("([\(]).*?([\)])", "", text)
-        # Remove meta-data tags
-        text = text.replace(u'†', u'').replace(u'‡', u'').strip(u'*')
-
-        return text
-
-    def _get_shortcuts_from_str(self, name, keys):
-        name = self._clean_text(name)
-        keys = self._clean_text(keys)
-
-        # Allow the exporter script to override behaviour
-        name, keys = self.shortcut_filter(name, keys)
-
-        # Skip if name is empty
-        if name is None or len(name) == 0:
-            return []
-        # Skip if keys is empty
-        if keys is None or len(keys) == 0:
+    def _parse_shortcut(self, name, keys):
+        if len(keys) == 0:
             return []
 
         # All cases we need to handle:
         #  "A"
         #  "Shift + A"
-        #  "Ctrl + Alt + V"
-        #  "Ctrl + Alt + /"
         #  "Ctrl + 0 - 8"     this is a range of keys from 0 to 8
         #  "Shift + ] / Shift + ["
         #  ". (period) / , (comma)"
         #  "Spacebar or Z"
         #  "Up Arrow / Down Arrow or + / -"
-        #  "Double-click slider name"
-        #  "Ctrl-click Sync button"
         #  "Shift + Up Arrow / Shift + Down Arrow or Shift + + / Shift + -"
 
         # Cleanup the string and replace edge cases
@@ -343,9 +311,6 @@ class AdobeDocsExporter(object):
             keys = "TEMP_SLASH"
         if keys == '+':
             keys = "TEMP_PLUS"
-
-        # Fix errors in adobe documentation
-        keys = keys.replace("Shift -", "Shift + -")
 
         # If we split by ' or ' and then ' / ' we can parse each combo separately
         combo_parts = []
@@ -370,17 +335,16 @@ class AdobeDocsExporter(object):
             elif key == 'TEMP_PLUS':
                 key = '+'
 
+            # Has no key
+            if len(key) == 0:
+                continue
+
             # Parse modifiers
             mods = [m.strip(u' ') for m in parts[:-1]] #all but last
 
-            # For numerical key shortcuts, the adobe documentation specifies a "range of keys" or "number"
+            # For numerical key shortcuts, the adobe documentation specifies a "range of keys"
             #  which will result in multiple shortcuts with the same label
-            if re.match(".*?number.*?", key, flags=re.IGNORECASE):
-                log.warn("DOING SEQUENCE NUMBERS FOR " + name + "    -> " + combo)
-                for i in range(0, 10):
-                    shortcut = Shortcut(name, str(i), mods)
-                    shortcuts.append(shortcut)
-            elif re.match("[0-9]*.-.[0-9]*", key):
+            if re.match("[0-9]*.-.[0-9]*", key):
                 start = int(key[0])
                 end = int(key[-1])
                 for i in range(start, end+1):
@@ -395,89 +359,39 @@ class AdobeDocsExporter(object):
 
         return shortcuts
 
-    def test_mode(self):
-        self.in_testmode = True
-
-    def parse_and_export(self):
+    def parse(self):
         if not os.path.exists(self.source_file):
             log.error("Source file '%s' does not exist", self.source_file)
             return
 
         # Windows and Mac appconfigs
-        app_win = ApplicationConfig(self.app_name, self.app_version, 'windows')
-        app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac')
+        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows')
+        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac')
 
-        # Use BeautifulSoup to parse the html document
-        doc = BeautifulSoup(_get_file_contents(self.source_file))
-        main_wrapper_div = doc.find("div", class_="parsys main-pars")
-        sections = main_wrapper_div.find_all("div", class_="parbase")
+        # Load intermediate data
+        idata = AdobeIntermediateData()
+        idata.load(self.source_file)
 
-        # Iterate sections (headers are contexts, tables contain the shortcuts)
-        prev_context_name = None
-        for section in sections:
-            # This section is a header, the only relevant information here is the context
-            if 'header' in section['class']:
-                h2 = section.find('h2')
-                context_name_orig = str(h2.contents[0]).replace('\n', ' ').strip(' ')
+        # WINDOWS: Iterate contexts and shortcuts
+        log.info("Parsing intermediate data for Windows shortcuts")
+        for context in idata.contexts:
+            context_win = self.app_win.get_or_create_new_context(context.name)
+            for shortcut in context.shortcuts:
+                for s in self._parse_shortcut(shortcut.name, shortcut.win_keys):
+                    context_win.add_shortcut(s)
 
-                # Allow external script to override or skip the context
-                context_name = self.context_filter(context_name_orig)
-
-                # Skip context if empty
-                if context_name is None or len(context_name) == 0:
-                    prev_context_name = None
-                    continue
-
-                # Create a context in both apps
-                log.info('Scanning context: "%s" (originally "%s")', context_name, context_name_orig)
-                app_win.get_or_create_new_context(context_name)
-                app_mac.get_or_create_new_context(context_name)
-                prev_context_name = context_name
-
-            # This is a section containing the shortcuts table
-            elif 'table' in section['class']:
-                # Skip this context
-                if prev_context_name is None:
-                    continue
-
-                rows = section.find('tbody').find_all('tr')
-
-                for row in rows:
-                    cols = row.find_all("td")
-                    if len(cols) != 3:
-                        continue
-
-                    name = cols[0].p.get_text()
-                    shortcut_win = cols[1].get_text().strip(' ')
-                    shortcut_mac = cols[2].get_text().strip(' ')
-
-                    # Add shortcut to windows appconfig
-                    if len(shortcut_win) > 0:
-                        context = app_win.get_or_create_new_context(prev_context_name)
-                        shortcuts = self._get_shortcuts_from_str(name, shortcut_win)
-                        for s in shortcuts:
-                            context.add_shortcut(s)
-
-                    # Add shortcut to mac appconfig
-                    if len(shortcut_mac) > 0:
-                        context = app_mac.get_or_create_new_context(prev_context_name)
-                        shortcuts = self._get_shortcuts_from_str(name, shortcut_mac)
-                        for s in shortcuts:
-                            context.add_shortcut(s)
-
-        # Serialize application configs
-        if self.in_testmode:
-            return
-        app_win.serialize(DIR_PAGES_APPDATA)
-        app_mac.serialize(DIR_PAGES_APPDATA)
+        # MAC: Iterate contexts and shortcuts
+        log.info("Parsing intermediate data for MacOS shortcuts")
+        for context in idata.contexts:
+            context_mac = self.app_mac.get_or_create_new_context(context.name)
+            for shortcut in context.shortcuts:
+                for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
+                    context_mac.add_shortcut(s)
 
 
-
-
-
-
-
-
+    def export(self):
+        self.app_win.serialize(DIR_PAGES_APPDATA)
+        self.app_mac.serialize(DIR_PAGES_APPDATA)
 
 
 
