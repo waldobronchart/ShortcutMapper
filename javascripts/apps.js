@@ -7,8 +7,8 @@ var sitedata_apps = [
         name: "Adobe Lightroom",
         data: {
             "v5.4": {
-                "windows": "adobe-lightroom_v5.4_windows.json",
                 "mac": "adobe-lightroom_v5.4_mac.json",
+                "windows": "adobe-lightroom_v5.4_windows.json",
             },
         }
     },
@@ -16,19 +16,20 @@ var sitedata_apps = [
         name: "Adobe Photoshop",
         data: {
             "v14.2": {
-                "windows": "adobe-photoshop_v14.2_windows.json",
                 "mac": "adobe-photoshop_v14.2_mac.json",
+                "windows": "adobe-photoshop_v14.2_windows.json",
             },
         }
     },
     {
         name: "Blender",
         data: {
-            "v2.68": {
-                "mac": "blender_v2.68_mac.json",
-            },
             "v2.70": {
                 "mac": "blender_v2.70_mac.json",
+                "windows": "blender_v2.70_windows.json",
+            },
+            "v2.68": {
+                "mac": "blender_v2.68_mac.json",
             },
         }
     },
