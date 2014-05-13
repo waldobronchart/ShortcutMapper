@@ -92,11 +92,11 @@
         "Show Snap": ["Shift+Ctrl+;", "Shift+Cmd+;"],
         "View Lock Guides": ["Alt+Ctrl+;", "Opt+Cmd+;"],
         "Minimize Window": ["", "Control+Cmd+M"],
-        "Actions Panel": ["Alt+F9 or F9", "Opt+F9"],
-        "Brush Panel": ["F5", "F5"],
-        "Color Panel": ["F6", "F6"],
-        "Info Panel": ["F8", "F8"],
-        "Layers Panel": ["F7", "F7"],
+        "Show/Hide Actions Panel": ["Alt+F9 or F9", "Opt+F9"],
+        "Show/Hide Brush Panel": ["F5", "F5"],
+        "Show/Hide Color Panel": ["F6", "F6"],
+        "Show/Hide Info Panel": ["F8", "F8"],
+        "Show/Hide Layers Panel": ["F7", "F7"],
         "Open Photoshop Help": ["F1", "Cmd+/ or Shift+Cmd+/"],
 
         "Move Tool": ["V", "V"],
@@ -148,7 +148,7 @@
         "Previous Brush": [",", ","],
         "Next Brush": [".", "."],
         "First Brush": ["Shift+,", "Shift+,"],
-        "Last Brush": ["Shift+.", "Shift+."]
+        "Last Brush": ["Shift+.", "Shift+."],
 
         "Cycle through open documents": ["Control + Tab", "Control + Tab"],
         "Switch to previous document": ["Shift + Control + Tab", "Shift + Command + `"],
@@ -163,9 +163,41 @@
         "Scroll down 10 units": ["Shift + Page Down", "Shift + Page Down"],
         "Move view to upper-left corner": ["Home", "Home"],
         "Move view to lower right corner": ["End", "End"],
-        "Toggle layer mask on/off": ["\\", "\\"]
+        "Toggle layer mask on/off": ["\\", "\\"],
+
+        "Cycle Blending Modes": ["Shift + + or –", "Shift + + or –"],
+        "Blending Mode: Normal": ["Shift + Alt + N", "Shift + Option + N"],
+        "Blending Mode: Dissolve": ["Shift + Alt + I", "Shift + Option + I"],
+        "Blending Mode: Behind": ["Shift + Alt + Q", "Shift + Option + Q"],
+        "Blending Mode: Clear": ["Shift + Alt + R", "Shift + Option + R"],
+        "Blending Mode: Darken": ["Shift + Alt + K", "Shift + Option + K"],
+        "Blending Mode: Multiply": ["Shift + Alt + M", "Shift + Option + M"],
+        "Blending Mode: Color Burn": ["Shift + Alt + B", "Shift + Option + B"],
+        "Blending Mode: Linear Burn": ["Shift + Alt + A", "Shift + Option + A"],
+        "Blending Mode: Lighten": ["Shift + Alt + G", "Shift + Option + G"],
+        "Blending Mode: Screen": ["Shift + Alt + S", "Shift + Option + S"],
+        "Blending Mode: Color Dodge": ["Shift + Alt + D", "Shift + Option + D"],
+        "Blending Mode: Linear Dodge": ["Shift + Alt + W", "Shift + Option + W"],
+        "Blending Mode: Overlay": ["Shift + Alt + O", "Shift + Option + O"],
+        "Blending Mode: Soft Light": ["Shift + Alt + F", "Shift + Option + F"],
+        "Blending Mode: Hard Light": ["Shift + Alt + H", "Shift + Option + H"],
+        "Blending Mode: Vivid Light": ["Shift + Alt + V", "Shift + Option + V"],
+        "Blending Mode: Linear Light": ["Shift + Alt + J", "Shift + Option + J"],
+        "Blending Mode: Pin Light": ["Shift + Alt + Z", "Shift + Option + Z"],
+        "Blending Mode: Hard Mix": ["Shift + Alt + L", "Shift + Option + L"],
+        "Blending Mode: Difference": ["Shift + Alt + E", "Shift + Option + E"],
+        "Blending Mode: Exclusion": ["Shift + Alt + X", "Shift + Option + X"],
+        "Blending Mode: Hue": ["Shift + Alt + U", "Shift + Option + U"],
+        "Blending Mode: Saturation": ["Shift + Alt + T", "Shift + Option + T"],
+        "Blending Mode: Color": ["Shift + Alt + C", "Shift + Option + C"],
+        "Blending Mode: Luminosity": ["Shift + Alt + Y", "Shift + Option + Y"],
+        "Blending Mode: Normal or Threshold": ["Shift + Alt + N", "Shift + Option + N"],
+
+        "Panel: Apply and keep text box active": ["Shift + Enter", "Shift + Return"],
+        "Show/Hide all panels": ["Tab", "Tab"],
+        "Show/Hide all panels except...": ["Shift + Tab", "Shift + Tab"],
     },
-    "Keys for Puppet Warp": {
+    "Mode: Puppet Warp": {
         "Cancel completely": ["Esc", "Esc"],
         "Undo last pin adjustment": ["Ctrl + Z", "Command + Z"],
         "Select all pins": ["Ctrl + A", "Command + A"],
@@ -174,7 +206,7 @@
         "Move multiple selected pins": ["Shift-drag", "Shift-drag"],
         "Temporarily hide pins": ["H", "H"]
     },
-    "Keys for Refine Edge": {
+    "Dialog: Refine Edge": {
         "Open the Refine Edge dialog box": ["Control + Alt + R", "Command + Option + R"],
         "Cycle  through preview modes": ["F", "F"],
         "Toggle between original image and selection preview": ["X", "X"],
@@ -182,7 +214,7 @@
         "Toggle radius preview on and off": ["J", "J"],
         "Toggle between Refine Radius and Erase Refinements tools": ["Shift + E", "Shift + E"]
     },
-    "Keys for the Filter Gallery": {
+    "Dialog: Filter Gallery": {
         "Apply a new filter on top of selected": ["Alt-click a filter", "Option-click a filter"],
         "Open/close all disclosure triangles": ["Alt-click a disclosure triangle", "Option-click a disclosure triangle"],
         "Change Cancel button to Default": ["Control", "Command"],
@@ -191,7 +223,7 @@
         "Step forward": ["Control + Shift + Z", "Command + Shift + Z"],
         "Step backward": ["Control + Alt + Z", "Command + Option + Z"]
     },
-    "Keys for Liquify": {
+    "Dialog: Liquify": {
         "Forward Warp tool": ["W", "W"],
         "Reconstruct tool": ["R", "R"],
         "Twirl Clockwise tool": ["C", "C"],
@@ -209,7 +241,7 @@
         "Cycle through controls on right from bottom": ["Shift + Tab", "Shift + Tab"],
         "Change Cancel to Reset": ["Alt", "Option"]
     },
-    "Keys for Vanishing Point": {
+    "Dialog: Vanishing Point": {
         "Zoom 2x": ["X", "X"],
         "Zoom in": ["Control + +", "Command + +"],
         "Zoom out": ["Control + -", "Command + -"],
@@ -240,7 +272,7 @@
         "Export to a DFX file": ["Control + E", "Command + E"],
         "Export to a 3DS file": ["Control + Shift + E", "Command + Shift + E"]
     },
-    "Keys for the Camera Raw dialog box": {
+    "Dialog: Camera Raw": {
         "Zoom tool": ["Z", "Z"],
         "Hand tool": ["H", "H"],
         "White Balance tool": ["I", "I"],
@@ -305,13 +337,13 @@
         "Camera Raw preferences": ["Ctrl + K", "Command + K"],
         "Deletes Adobe Camera Raw preferences": ["Ctrl + Alt", "Option + Shift"]
     },
-    "Keys for the Black-and-White dialog box": {
+    "Dialog: Black-and-White": {
         "Open the Black-and-White dialog box": ["Shift + Control + Alt + B", "Shift + Command + Option+ B"],
         "Increase/decrease selected value by 1%": ["Up Arrow/Down Arrow", "Up Arrow/Down Arrow"],
         "Increase/decrease selected value by 10%": ["Shift + Up Arrow/Down Arrow", "Shift + Up Arrow/Down Arrow"],
         "Change the values of the closest color slider": ["Click-drag on the image", "Click-drag on the image"]
     },
-    "Keys for Curves": {
+    "Mode: Editing Curves": {
         "Open the Curves dialog box": ["Control + M", "Command + M"],
         "Select next point on the curve": ["+", "+"],
         "Select the previous point on the curve": ["-", "-"],
@@ -325,7 +357,7 @@
         "Set a point to the channel curves": ["Shift + Control-click the image", "Shift + Command-click the image"],
         "Toggle grid size": ["Alt-click the field", "Option-click the field"]
     },
-    "Keys for selecting and moving objects": {
+    "Selecting and Moving Objects": {
         "Reposition marquee while selecting": ["Any marquee tool  + spacebar-drag", "Any marquee tool  + spacebar-drag"],
         "Add to a selection": ["Any selection tool + Shift-drag", "Any selection tool + Shift-drag"],
         "Subtract from a selection": ["Any selection tool + Alt-drag", "Any selection tool + Option-drag"],
@@ -348,16 +380,16 @@
         "Snap guide to ruler ticks": ["Shift-drag guide", "Shift-drag guide"],
         "Convert between horizontal and vertical guide": ["Alt-drag guide", "Option-drag guide"]
     },
-    "Keys for transforming selections, selection borders, and paths": {
+    "Mode: Transforming": {
         "Transform from center or reflect": ["Alt", "Option"],
         "Constrain": ["Shift", "Shift"],
         "Distort": ["Control", "Command"],
         "Apply": ["Enter", "Return"],
-        "Cancel": ["Control + .  or Esc", "Command + .  or Esc"],
+        "Cancel": ["Control + . or Esc", "Command + . or Esc"],
         "Free transform with duplicate data": ["Control + Alt + T", "Command + Option + T"],
         "Transform again with duplicate data": ["Control + Shift + Alt + T", "Command + Shift + Option + T"]
     },
-    "Keys for editing paths": {
+    "Mode: Editing Paths": {
         "Select multiple anchor points": ["Direct selection tool + Shift-click", "Direct selection tool + Shift-click"],
         "Select entire path": ["Direct selection tool + Alt-click", "Direct selection tool + Option-click"],
         "Duplicate a path": ["Pen , Path Selection or Direct Selection tool + Control + Alt-drag", "Pen , Path Selection or Direct Selection tool+ Command + Option-drag"],
@@ -366,7 +398,7 @@
         "Close path": ["Magnetic Pen tool-double-click", "Magnetic Pen tool-double-click"],
         "Close path with straight-line segment": ["Magnetic Pen tool + Alt-double-click", "Magnetic Pen tool + Option-double-click"]
     },
-    "Keys for painting": {
+    "Mode: Painting": {
         "Select foreground color from color picker": ["Any painting tool + Shift + Alt + right-click and drag", "Any painting tool + Control + Option + Command and drag"],
         "Select foreground color from image with Eyedropper tool": ["Any painting tool + Alt or any shape tool + Alt", "Any painting tool + Option or any shape tool + Option"],
         "Select background color": ["Eyedropper tool + Alt-click", "Eyedropper tool + Option-click"],
@@ -385,41 +417,7 @@
         "Lock transparent pixels on/off": ["/", "/"],
         "Connects points with a straight line": ["Any painting tool + Shift-click", "Any painting tool + Shift-click"]
     },
-    "Keys for blending modes": {
-        "Cycle through blending modes": ["Shift + +  or –", "Shift + +  or –"],
-        "Normal": ["Shift + Alt + N", "Shift + Option + N"],
-        "Dissolve": ["Shift + Alt + I", "Shift + Option + I"],
-        "Behind": ["Shift + Alt + Q", "Shift + Option + Q"],
-        "Clear": ["Shift + Alt + R", "Shift + Option + R"],
-        "Darken": ["Shift + Alt + K", "Shift + Option + K"],
-        "Multiply": ["Shift + Alt + M", "Shift + Option + M"],
-        "Color Burn": ["Shift + Alt + B", "Shift + Option + B"],
-        "Linear Burn": ["Shift + Alt + A", "Shift + Option + A"],
-        "Lighten": ["Shift + Alt + G", "Shift + Option + G"],
-        "Screen": ["Shift + Alt + S", "Shift + Option + S"],
-        "Color Dodge": ["Shift + Alt + D", "Shift + Option + D"],
-        "Linear Dodge": ["Shift + Alt + W", "Shift + Option + W"],
-        "Overlay": ["Shift + Alt + O", "Shift + Option + O"],
-        "Soft Light": ["Shift + Alt + F", "Shift + Option + F"],
-        "Hard Light": ["Shift + Alt + H", "Shift + Option + H"],
-        "Vivid Light": ["Shift + Alt + V", "Shift + Option + V"],
-        "Linear Light": ["Shift + Alt + J", "Shift + Option + J"],
-        "Pin Light": ["Shift + Alt + Z", "Shift + Option + Z"],
-        "Hard Mix": ["Shift + Alt + L", "Shift + Option + L"],
-        "Difference": ["Shift + Alt + E", "Shift + Option + E"],
-        "Exclusion": ["Shift + Alt + X", "Shift + Option + X"],
-        "Hue": ["Shift + Alt + U", "Shift + Option + U"],
-        "Saturation": ["Shift + Alt + T", "Shift + Option + T"],
-        "Color": ["Shift + Alt + C", "Shift + Option + C"],
-        "Luminosity": ["Shift + Alt + Y", "Shift + Option + Y"],
-        "Desaturate": ["Sponge tool + Shift + Alt + D", "Sponge tool + Shift + Option + D"],
-        "Saturate": ["Sponge tool + Shift + Alt + S", "Sponge tool + Shift + Option + S"],
-        "Dodge/burn shadows": ["Dodge tool/Burn tool + Shift + Alt + S", "Dodge tool/Burn tool + Shift + Option + S"],
-        "Dodge/burn midtones": ["Dodge tool/Burn tool + Shift + Alt + M", "Dodge tool/Burn tool + Shift + Option + M"],
-        "Dodge/burn highlights": ["Dodge tool/Burn tool + Shift + Alt + H", "Dodge tool/Burn tool + Shift + Option + H"],
-        "Set blending mode to Threshold for bitmap images, Normal for all other images": ["Shift + Alt + N", "Shift + Option + N"]
-    },
-    "Keys for selecting and editing text": {
+    "Mode: Text": {
         "Move type in image": ["Control-drag type when Type layer is selected", "Command-drag type when Type layer is selected"],
         "Select 1 character left/right or 1 line down/up, or 1 word left/right": ["Shift + Left Arrow/Right Arrow or Down Arrow/Up Arrow, or Control + Shift + Left Arrow/Right Arrow", "Shift + Left Arrow/Right Arrow or Down Arrow/Up Arrow, or Command + Shift + Left Arrow/Right Arrow"],
         "Select characters from insertion point to mouse click point": ["Shift-click", "Shift-click"],
@@ -431,7 +429,7 @@
         "Scale text within a bounding box when resizing the bounding box": ["Control-drag a bounding box handle", "Command-drag a bounding box handle"],
         "Move text box while creating text box": ["Spacebar-drag", "Spacebar-drag"]
     },
-    "Keys for formatting type": {
+    "Mode: Formatting Text": {
         "Align left, center, or right": ["Horizontal Type tool + Control + Shift + L, C, or R", "Horizontal Type tool + Command + Shift + L, C, or R"],
         "Align top, center, or bottom": ["Vertical Type tool + Control + Shift + L, C, or R", "Vertical Type tool + Command + Shift + L, C, or R"],
         "Choose 100% horizontal scale": ["Control + Shift + X", "Command + Shift + X"],
@@ -447,7 +445,7 @@
         "Decrease or increase baseline shift 2 points or pixels": ["Shift + Alt + Down Arrow or Up Arrow", "Shift + Option + Down Arrow or Up Arrow"],
         "Decrease or increase kerning/tracking 20/1000 ems": ["Alt + Left Arrow or Right Arrow", "Option + Left Arrow or Right Arrow"]
     },
-    "Keys for slicing and optimizing": {
+    "Mode: Slicing and Optimizing": {
         "Toggle between Slice tool and Slice Selection tool": ["Control", "Command"],
         "Draw square slice": ["Shift-drag", "Shift-drag"],
         "Draw from center outward": ["Alt-drag", "Option-drag"],
@@ -455,16 +453,7 @@
         "Reposition slice while creating slice": ["Spacebar-drag", "Spacebar-drag"],
         "Open context-sensitive menu": ["Right-click slice", "Control-click slice"]
     },
-    "Keys for using panels": {
-        "Set options for new items": ["Alt-click New button", "Option-click New button"],
-        "Delete without confirmation": ["Alt-click Delete button", "Option-click Delete button"],
-        "Apply value and keep text box active": ["Shift + Enter", "Shift + Return"],
-        "Show/Hide all panels": ["Tab", "Tab"],
-        "Show/Hide all panels except the toolbox and options bar": ["Shift + Tab", "Shift + Tab"],
-        "Highlight options bar": ["Select tool and press Enter", "Select tool and press Return"],
-        "Increase/decrease selected values by 10": ["Shift + Up Arrow/Down Arrow", "Shift + Up Arrow/Down Arrow"]
-    },
-    "Keys for the Actions panel": {
+    "Panel: Actions": {
         "Turn command on and all others off, or turns all commands on": ["Alt-click the check mark next to a command.", "Option-click the check mark next to a command."],
         "Turn current modal control on and toggle all other modal controls": ["Alt-click", "Option-click"],
         "Change action or action set options": ["Alt + double-click action or action set", "Option + double-click action or action set"],
@@ -476,18 +465,7 @@
         "Select contiguous items of the same kind": ["Shift-click the action/command", "Shift-click the action/command"],
         "Select discontiguous items of the same kind": ["Control-click the action/command", "Command-click the action/command"]
     },
-    "Keys for adjustment layers": {
-        "Choose specific channel for adjustment": ["Alt + 3 , 4 , 5", "Option + 3 , 4 , 5"],
-        "Choose composite channel for adjustment": ["Alt + 2", "Option + 2"],
-        "Delete adjustment layer": ["Delete or Backspace", "Delete"],
-        "Define Auto options for Levels or Curves": ["Alt-click Auto button", "Option-click Auto button"]
-    },
-    "Keys for the Animation panel in Frames mode": {
-        "Select/deselect multiple contiguous frames": ["Shift-click second frame", "Shift-click second frame"],
-        "Select/deselect multiple discontiguous frames": ["Control-click multiple frames", "Command-click multiple frames"],
-        "Paste using previous settings without displaying the dialog box": ["Alt + Paste Frames command from the Panel pop‑up menu", "Option + Paste Frames command from the Panel pop‑up menu"]
-    },
-    "Keys for the Animation panel in Timeline Mode (Photoshop Extended)": {
+    "Panel: Timeline": {
         "Start playing the timeline or Animation panel": ["Spacebar", "Spacebar"],
         "Switch between timecode and frame numbers": ["Alt + click the current-time display in the upper-left corner of the timeline.", "Option + click the current-time display in the upper-left corner of the timeline."],
         "Expand and collapse list of layers": ["Alt + click", "Option + click on list triangles"],
@@ -510,7 +488,7 @@
         "Foward 1 second": ["Shift + Down Arrow", "Shift + Down Arrow"],
         "Return a rotated document to its original orientation": ["Esc", "Esc"]
     },
-    "Keys for the Brush panel": {
+    "Panel: Brush Presets": {
         "Delete brush": ["Alt-click brush", "Option-click brush"],
         "Rename brush": ["Double-click brush", "Double-click brush"],
         "Change brush size": ["Alt + right click + drag left or right", "Ctrl + Option + drag left or right"],
@@ -520,7 +498,7 @@
         "Display precise cross hair for brushes": ["Caps Lock or Shift + Caps Lock", "Caps Lock"],
         "Toggle airbrush option": ["Shift + Alt + P", "Shift + Option + P"]
     },
-    "Keys for the Channels panel": {
+    "Panel: Channels": {
         "Select individual channels": ["Ctrl + 3 , 4 , 5", "Command + 3 , 4 , 5"],
         "Select composite channel": ["Ctrl + 2", "Command + 2"],
         "Load channel as selection": ["Control-click channel thumbnail, or Alt + Ctrl + 3 , 4 , 5", "Command-click channel thumbnail, or Option + Command + 3 , 4 , 5"],
@@ -534,18 +512,18 @@
         "Display channel options": ["Double-click alpha or spot channel thumbnail", "Double-click alpha or spot channel thumbnail"],
         "Toggle composite and grayscale mask in Quick Mask mode": ["~", "~"]
     },
-    "Keys for the Clone Source panel": {
+    "Panel: Clone Source": {
         "Show Clone Source": ["Alt + Shift", "Opt + Shift"],
         "Nudge Clone Source": ["Alt + Shift + arrow keys", "Opt + Shift + arrow keys"],
         "Rotate Clone Source": ["Alt + Shift + < or >", "Opt + Shift + < or >"],
         "Scale  Clone Source": ["Alt + Shift + [ or ]", "Opt + Shift + [ or ]"]
     },
-    "Keys for the Color panel": {
+    "Panel: Color": {
         "Select background color": ["Alt-click color in color bar", "Option-click color in color bar"],
         "Display Color Bar menu": ["Right-click color bar", "Control-click color bar"],
         "Cycle through color choices": ["Shift-click color bar", "Shift-click color bar"]
     },
-    "Keys for the History panel": {
+    "Panel: History": {
         "Create a new snapshot": ["Alt + New Snapshot", "Option + New Snapshot"],
         "Rename snapshot": ["Double-click snapshot name", "Double-click snapshot name"],
         "Step forward through image states": ["Control + Shift + Z", "Command + Shift + Z"],
@@ -553,11 +531,11 @@
         "Duplicate any image state, except the current state": ["Alt-click the image state", "Option-click the image state"],
         "Permanently clear history": ["Alt + Clear History", "Option + Clear History"]
     },
-    "Keys for the Info panel": {
+    "Panel: Info": {
         "Change color readout modes": ["Click eyedropper icon", "Click eyedropper icon"],
         "Change measurement units": ["Click crosshair icon", "Click crosshair icon"]
     },
-    "Keys for the Layers panel": {
+    "Panel: Layers": {
         "Load layer transparency as a selection": ["Control-click layer thumbnail", "Command-click layer thumbnail"],
         "Add to current selection": ["Control + Shift-click layer thumbnail.", "Command + Shift-click layer thumbnail."],
         "Subtract from current selection": ["Control + Alt-click layer thumbnail.", "Command + Option-click layer thumbnail."],
@@ -607,14 +585,14 @@
         "Select/deselect multiple contiguous layers": ["Shift-click", "Shift-click"],
         "Select/deselect multiple discontiguous layers": ["Control-click", "Command-click"]
     },
-    "Keys for the Layer Comps panel": {
+    "Panel: Layer Comps": {
         "Create new layer comp without the New Layer Comp box": ["Alt-click Create New Layer Comp button", "Option-click Create New Layer Comp button"],
         "Open Layer Comp Options dialog box": ["Double-click layer comp", "Double-click layer comp"],
         "Rename in-line": ["Double-click layer comp name", "Double-click layer comp name"],
         "Select/deselect multiple contiguous layer comps": ["Shift-click", "Shift-click"],
         "Select/deselect multiple discontiguous layer comps": ["Control-click", "Command-click"]
     },
-    "Keys for the Paths panel": {
+    "Panel: Paths": {
         "Load path as selection": ["Control-click pathname", "Command-click pathname"],
         "Add path to selection": ["Control + Shift-click pathname", "Command + Shift-click pathname"],
         "Subtract path from selection": ["Control + Alt-click pathname", "Command + Option-click pathname"],
@@ -622,26 +600,12 @@
         "Hide path": ["Control + Shift + H", "Command + Shift + H"],
         "Set options for Fill Path with Foreground Colorbutton, Stroke Path with Brush button, Load Path as a Selection button, Make Work Path from Selection button, and Create New Path button": ["Alt-click button", "Option-click button"]
     },
-    "Keys for the Swatches panel": {
+    "Panel: Swatches": {
         "Create new swatch from foreground color": ["Click in empty area of panel", "Click in empty area of panel"],
         "Set swatch color as background color": ["Control-click swatch", "Command-click swatch"],
         "Delete swatch": ["Alt-click swatch", "Option-click swatch"]
     },
-    "Keys for 3D tools (Photoshop Extended)": {
-        "Enable 3D object tools": ["K", "K"],
-        "Enable 3D camera tools": ["N", "N"],
-        "Hide nearest surface": ["Alt + Ctrl + X", "Option + Command + X"],
-        "Show all surfaces": ["Alt + Shift + Ctrl + X", "Option + Shift + Command + X"],
-        "Rotate": ["Changes to Drag tool", "Changes to Roll tool"],
-        "Roll": ["Changes to Slide tool", "Changes to Rotate tool"],
-        "Drag": ["Changes to Orbit tool", "Changes to Slide tool"],
-        "Slide": ["Changes to Roll tool", "Changes to Drag tool"],
-        "Scale": ["Scales on the Z plane", "Scales on the Z plane"],
-        "Orbit": ["Changes to Drag tool", "Changes to Roll tool"],
-        "Pan": ["Changes to Orbit tool", "Changes to Slide tool"],
-        "Walk": ["Changes to Roll tool", "Changes to Drag tool"]
-    },
-    "Keys for measurement (Photoshop Extended)": {
+    "Mode: Measurement": {
         "Record a measurement": ["Shift + Control + M", "Shift + Command + M"],
         "Deselects all measurements": ["Control + D", "Command + D"],
         "Selects all measurements": ["Control + A", "Command + A"],
@@ -654,7 +618,7 @@
         "Rotate selected measurement": ["Ctrl + up/down arrow key", "Command + up/down arrow key"],
         "Rotate selected measurement in increments": ["Shift + Ctrl + up/down arrow key", "Shift + Command + up/down arrow key"]
     },
-    "Keys for DICOM files (Photoshop Extended)": {
+    "DICOM Files": {
         "Zoom tool": ["Z", "Z"],
         "Hand tool": ["H", "H"],
         "Window Level tool": ["W", "W"],
@@ -662,7 +626,7 @@
         "Deselect all frames except the current frame": ["Control + D", "Command + D"],
         "Navigate through frames": ["Arrow keys", "Arrow keys"]
     },
-    "Keys for Extract and Pattern Maker (optional plug-ins)": {
+    "Dialog: Pattern Maker (Plugin)": {
         "Fit in window": ["Control + 0", "Command + 0"],
         "Zoom in": ["Control + +", "Command + +"],
         "Zoom out": ["Control + -", "Command + -"],
@@ -670,21 +634,5 @@
         "Cycle through controls on right from bottom": ["Shift + Tab", "Shift + Tab"],
         "Temporarily activate Hand tool": ["Spacebar", "Spacebar"],
         "Change Cancel to Reset": ["Alt", "Option"]
-    },
-    "Function keys": {
-        "Start Help": ["F1", "Help key"],
-        "Undo/Redo": ["", "F1"],
-        "Cut": ["F2", "F2"],
-        "Copy": ["F3", "F3"],
-        "Paste": ["F4", "F4"],
-        "Show/Hide Brush panel": ["F5", "F5"],
-        "Show/Hide Color panel": ["F6", "F6"],
-        "Show/Hide Layers panel": ["F7", "F7"],
-        "Show/Hide Info panel": ["F8", "F8"],
-        "Show/Hide Actions panel": ["F9", "Option + F9"],
-        "Revert": ["F12", "F12"],
-        "Fill": ["Shift + F5", "Shift + F5"],
-        "Feather Selection": ["Shift + F6", "Shift + F6"],
-        "Inverse Selection": ["Shift + F7", "Shift + F7"]
     }
 }
