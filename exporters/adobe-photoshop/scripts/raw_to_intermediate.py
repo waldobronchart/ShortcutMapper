@@ -44,14 +44,14 @@ def main():
 
     # Parse the docs html
     # AdobeIntermediateData, AdobeDocsParser
-    docs_idata = shmaplib.AdobeDocsParser().parse(args.docs_html)
+    docs_idata = AdobeDocsParser().parse(args.docs_html)
 
     # Parse both summary docs
-    mac_summary_idata = shmaplib.AdobeSummaryParser().parse(args.summary_mac, "mac")
-    win_summary_idata = shmaplib.AdobeSummaryParser().parse(args.summary_win, "windows")
+    mac_summary_idata = AdobeSummaryParser().parse(args.summary_mac, "mac")
+    win_summary_idata = AdobeSummaryParser().parse(args.summary_win, "windows")
 
     # Parse the macos summary html
-    merged_idata = shmaplib.AdobeIntermediateData()
+    merged_idata = AdobeIntermediateData()
     merged_idata.extend(mac_summary_idata)
     merged_idata.extend(win_summary_idata)
     merged_idata.extend(docs_idata)
