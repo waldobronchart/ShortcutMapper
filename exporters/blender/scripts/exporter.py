@@ -65,7 +65,7 @@ def export():
         platform = 'mac'
 
     app = parse_main_keyconfig()
-    app.version = bpy.app.version_string.split(' ')[0]
+    app.version = 'v' + bpy.app.version_string.split(' ')[0]
 
     outputdir = shmaplib.DIR_PAGES_APPDATA
     outputfile = os.path.join(outputdir, 'blender_%s_%s.json' % (app.version, platform))
