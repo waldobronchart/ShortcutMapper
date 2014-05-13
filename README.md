@@ -58,14 +58,14 @@ source venv/bin/activate
 pip install BeautifulSoup4
 
 # Do an export
-python exporters/photoshop/scripts/convert.py -a
+python exporters/adobe-photoshop/scripts/export.py -a
 ```
 
 Once your virtualenv in installed, all you need to do is activate it before you run the exporters
 
 ```
 source venv/bin/activate
-python exporters/photoshop/scripts/convert.py -a
+python exporters/adobe-photoshop/scripts/export.py -a
 ```
 
 
