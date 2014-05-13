@@ -231,7 +231,7 @@ nav .inputgroup .rightfield .chosen-single {
     margin-left: 1px;
 }
 
-#application_select { width: 130px; }
+#application_select { width: 160px; }
 #version_select { width: 75px; }
 #context_select { width: 260px; }
 #keyboardtype_select { width: 140px; }
