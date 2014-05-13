@@ -4,6 +4,15 @@
 
 var sitedata_apps = [
     {
+        name: "Adobe Lightroom",
+        data: {
+            "v5.4": {
+                "windows": "adobe-lightroom_v5.4_windows.json",
+                "mac": "adobe-lightroom_v5.4_mac.json",
+            },
+        }
+    },
+    {
         name: "Adobe Photoshop",
         data: {
             "v14.2": {
