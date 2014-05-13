@@ -14,7 +14,10 @@ sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
 
 # Import common shortcut mapper library
 import shmaplib
+from shmaplib.adobe import AdobeIntermediateData, AdobeDocsParser, AdobeSummaryParser, AdobeExporter
 log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
+
+
 
 
 def main():

@@ -12,14 +12,17 @@ sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
 
 # Import common shortcut mapper library
 import shmaplib
+from shmaplib.adobe import AdobeIntermediateData, AdobeDocsParser, AdobeSummaryParser, AdobeExporter
 log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
 
 
 def export_file(filepath, testmode):
+    log.info("Exporting from file: %s", filepath)
+
     filename, ext = os.path.splitext(os.path.basename(filepath))
     version = filename.split('_')[1]
 
-    exporter = shmaplib.AdobeExporter(filepath, "Adobe Photoshop", version)
+    exporter = AdobeExporter(filepath, "Adobe Photoshop", version)
     exporter.parse()
     if not testmode:
         exporter.export()
@@ -51,8 +54,9 @@ def main():
     if args.all:
         searchdir = os.path.join(CWD, '..', 'intermediate', '*.json')
         for filepath in glob.glob(searchdir):
+            filepath = os.path.normpath(filepath)
             export_file(filepath, testmode)
-            log.info('    \n\n')
+            log.info('    \n')
     else:
         export_file(args.file, testmode)
 

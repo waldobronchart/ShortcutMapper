@@ -15,11 +15,10 @@ import bpy
 import exporter_utils as util
 
 
-def parse_main_keyconfig():
+def parse_main_keyconfig(app):
     """The beef, this gets all keyconfigs from blender and converts blender data into
     our specific format."""
 
-    app = shmaplib.ApplicationConfig()
     keyconfig = bpy.context.window_manager.keyconfigs[0]
 
     # Find all keymaps
@@ -59,18 +58,15 @@ def export():
 
     # Get Blender platform and version
     import platform
-    version = bpy.app.version_string
+    version = 'v' + bpy.app.version_string.split(' ')[0]
     platform = platform.system().lower()
     if platform == 'darwin':
         platform = 'mac'
 
-    app = parse_main_keyconfig()
-    app.version = 'v' + bpy.app.version_string.split(' ')[0]
+    app = shmaplib.ApplicationConfig("Blender", version, platform)
+    parse_main_keyconfig(app)
 
-    outputdir = shmaplib.DIR_PAGES_APPDATA
-    outputfile = os.path.join(outputdir, 'blender_%s_%s.json' % (app.version, platform))
-
-    app.serialize(outputfile)
+    app.serialize(shmaplib.DIR_PAGES_APPDATA)
 
 
 try:
