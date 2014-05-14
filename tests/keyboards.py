@@ -20,6 +20,6 @@ class TestKeyboardLayout(BaseTestCase):
         for p in self.keyboard_templates:
             with open(p, 'r') as template_file:
                 contents = template_file.read()
-                key_names = re.findall(r'.*button data-key="([A-Z]*)"', contents)
+                key_names = re.findall(r'.*button data-key="(.*?)"', contents)
                 for keyname in key_names:
                     self.assert_in(keyname, self.valid_keys)
