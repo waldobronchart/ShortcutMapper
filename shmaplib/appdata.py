@@ -210,7 +210,7 @@ class ApplicationConfig(object):
 
         output_str += contexts_str + u'\n'
         output_str += u'    }\n'
-        output_str += u'}'
+        output_str += u'}\n'
 
         # Write to file
         file = codecs.open(output_path, encoding='utf-8', mode='w+')
