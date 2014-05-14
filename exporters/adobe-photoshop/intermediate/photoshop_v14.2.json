@@ -1,5 +1,5 @@
 {
-    "Application": {
+    "Global Context": {
         "Preferences": ["Ctrl+K", "Cmd+K"],
         "Hide Photoshop": ["", "Control+Cmd+H"],
         "Hide Others Windows": ["", "Opt+Cmd+H"],

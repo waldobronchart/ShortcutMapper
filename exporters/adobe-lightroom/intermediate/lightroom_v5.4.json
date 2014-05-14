@@ -1,5 +1,5 @@
 {
-    "Application": {
+    "Global Context": {
         "Show/hide side panels": ["Tab", "Tab"],
         "Show/hide all panels": ["Shift + Tab", "Shift + Tab"],
         "Show/hide toolbar": ["T", "T"],
