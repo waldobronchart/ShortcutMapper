@@ -573,10 +573,9 @@ div#keyboard button.nomod .label {
     text-shadow: 0px 1px 0px rgb(80, 80, 80);
 }
 div#keyboard button.nomod {
-    background: #adb6c1 -webkit-linear-gradient(top, rgb(178,187,197) 0%, rgb(166,177,188) 100%);
-    background: #adb6c1 linear-gradient(top, rgb(178,187,197) 0%, rgb(166,177,188) 100%);
+    background: #96A0AD;
     box-shadow: inset 0px 0px 0px 1px #5e6d7d,
-                inset 0px 0px 0px 2px #bcc4cc,
+                inset 0px 0px 0px 2px #c1cad3,
                 0px 2px 0px 0px #758597,
                 0px 3px 0px 0px #556371,
                 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
@@ -666,7 +665,7 @@ div#keyboard button.shift .label {
     text-shadow: 0px 1px 0px rgb(80, 80, 80);
 }
 div#keyboard button.shift {
-    background: #2dc42d;
+    background: #29b429;
     box-shadow: inset 0px 0px 0px 1px #187618,
                 inset 0px 0px 0px 2px #59d859,
                 0px 2px 0px 0px #1e901e,
@@ -798,7 +797,7 @@ div#keyboard button.mod-shift.mod-active .label {
 }
 div#keyboard button.mod-shift:active,
 div#keyboard button.mod-shift.mod-active {
-    background: #2dc42d;
+    background: #29b429;
     box-shadow: inset 0px 0px 0px 1px #187618,
                 inset 0px 0px 0px 2px #59d859,
                 0px 1px 0px 0px #1e901e,
