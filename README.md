@@ -1,2 +1,2 @@
-ShortcutMapper_NEW
+ShortcutMapper
 ==================
