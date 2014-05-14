@@ -44,29 +44,15 @@ var pageManager = new function PageManager() {
         // Events
         this.elemAppSelect.on("change", function(e, parms) {
             var val = $(this).val();
-            console.log("elemAppSelect changed to " + val);
-
             manager.selectApplication(val);
             manager._updateVersionOptions(0);
-
-            manager._fetchAppKeydata(function() {
-                manager._updateContextOptions(selectedContext);
-                manager._updateKeyboard();
-            });
+            manager._fetchAppKeydataAndUpdate();
         });
         this.elemVersionSelect.on("change", function(e, parms) {
-            console.log("elemVersionSelect changed to " + $(this).val());
-
             selectedVersion = $(this).val();
-
-            manager._fetchAppKeydata(function() {
-                manager._updateContextOptions(selectedContext);
-                manager._updateKeyboard();
-            });
+            manager._fetchAppKeydataAndUpdate();
         });
         this.elemContextSelect.on("change", function(e, parms) {
-            console.log("elemContextSelect changed to " + $(this).val());
-
             selectedContext = $(this).val();
             manager.elemKeyboard.keyboard("option", "context", selectedContext);
         });
@@ -74,24 +60,15 @@ var pageManager = new function PageManager() {
             $("nav button.os-radiobutton").removeClass("checked");
             $(this).addClass("checked");
             selectedOS = $(this).attr("data-os");
-
-            manager._fetchAppKeydata(function() {
-                manager._updateContextOptions(selectedContext);
-                manager._updateKeyboard();
-            });
+            manager._fetchAppKeydataAndUpdate();
         });
         this.elemKeyboardTypeSelect.on("change", function(e, parms) {
-            console.log("elemKeyboardTypeSelect changed to " + $(this).val());
-
             selectedKeyboardType = $(this).val();
             manager._updateKeyboard();
         });
 
         // Load in the keyboard html and available shotcut contexts
-        this._fetchAppKeydata(function() {
-            manager._updateContextOptions(selectedContext);
-            manager._updateKeyboard();
-        });
+        this._fetchAppKeydataAndUpdate();
     }
 
     this._initSearchBox = function() {
@@ -176,7 +153,8 @@ var pageManager = new function PageManager() {
 
     this._updateVersionOptions = function(selected) {
         // get all versions from the keys of the selectedApp.data element
-        selectedVersion = this._setSelectOptions(this.elemVersionSelect, selected, Object.keys(selectedApp.data));
+        var applicationVersions = Object.keys(selectedApp.data).sort().reverse();
+        selectedVersion = this._setSelectOptions(this.elemVersionSelect, selected, applicationVersions);
     }
 
     this._updateContextOptions = function(selected) {
@@ -217,18 +195,17 @@ var pageManager = new function PageManager() {
 
 
 
-    this._fetchAppKeydata = function(onComplete) {
+    this._fetchAppKeydataAndUpdate = function(onComplete) {
+        var manager = this;
         var filename = selectedApp.data[selectedVersion][selectedOS];
-        console.log("update_app_keydata: " + filename);
-
         $.ajax({
             url: "appdata/" + filename,
             dataType: "json"
         }).done(function (keydata) {
-            console.log("loaded app key data: " + filename);
-
             selectedAppData = keydata;
-            onComplete();
+            selectedContext = keydata.default_context;
+            manager._updateContextOptions(selectedContext);
+            manager._updateKeyboard();
         }).fail(function() {
             $("#keycontent").html("There is no export available for this OS");
         });

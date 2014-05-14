@@ -3,6 +3,7 @@
     "version" : "v2.70",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
+    "default_context" : "3D View",
     "contexts" : {
         "3D View" : {
             "A" : [

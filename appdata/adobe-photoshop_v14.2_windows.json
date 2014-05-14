@@ -3,354 +3,8 @@
     "version" : "v14.2",
     "os" : "windows",
     "mods_used" : ["ALT", "CONTROL", "SHIFT", "SPACE"],
+    "default_context" : "Global Context",
     "contexts" : {
-        "Application" : {
-            "A" : [
-                {"name":"Adaptive Wide Angle Filter", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Blending Mode: Linear Burn", "mods":["ALT", "SHIFT"]},
-                {"name":"Camera Raw Filter", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Cycle Path Selection Tools", "mods":["SHIFT"]},
-                {"name":"Path Selection Tool", "mods":[]},
-                {"name":"Select All Layers", "mods":["ALT", "CONTROL"]},
-                {"name":"Select All", "mods":["CONTROL"]}
-            ],
-            "B" : [
-                {"name":"Adjust Black & White", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Adjust Color Balance", "mods":["CONTROL"]},
-                {"name":"Auto Color", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Blending Mode: Color Burn", "mods":["ALT", "SHIFT"]},
-                {"name":"Brush Tool", "mods":[]},
-                {"name":"Cycle Brush Tools", "mods":["SHIFT"]}
-            ],
-            "BACKSLASH" : [
-                {"name":"Toggle layer mask on/off", "mods":[]}
-            ],
-            "C" : [
-                {"name":"Blending Mode: Color", "mods":["ALT", "SHIFT"]},
-                {"name":"Content-Aware Scale", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Copy Merged", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Copy", "mods":["CONTROL"]},
-                {"name":"Crop Tool", "mods":[]},
-                {"name":"Cycle Crop and Slice Tools", "mods":["SHIFT"]},
-                {"name":"Edit Canvas Size", "mods":["ALT", "CONTROL"]}
-            ],
-            "COMMA" : [
-                {"name":"First Brush", "mods":["SHIFT"]},
-                {"name":"Previous Brush", "mods":[]}
-            ],
-            "D" : [
-                {"name":"Blending Mode: Color Dodge", "mods":["ALT", "SHIFT"]},
-                {"name":"Default Foreground/Background Colors", "mods":[]},
-                {"name":"Deselect", "mods":["CONTROL"]},
-                {"name":"Reselect", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "DOWN_ARROW" : [
-                {"name":"Move 1 pixel", "mods":[]},
-                {"name":"Move 10 pixels", "mods":["SHIFT"]}
-            ],
-            "E" : [
-                {"name":"Blending Mode: Difference", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Eraser Tools", "mods":["SHIFT"]},
-                {"name":"Eraser Tool", "mods":[]},
-                {"name":"Merge Layers", "mods":["CONTROL"]},
-                {"name":"Merge Visible", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "END" : [
-                {"name":"Move view to lower right corner", "mods":[]}
-            ],
-            "ENTER" : [
-                {"name":"Panel: Apply and keep text box active", "mods":["SHIFT"]}
-            ],
-            "EQUAL" : [
-                {"name":"Zoom In", "mods":["CONTROL"]}
-            ],
-            "F" : [
-                {"name":"Apply Last Filter", "mods":["CONTROL"]},
-                {"name":"Blending Mode: Soft Light", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle canvas color", "mods":["SPACE"]},
-                {"name":"Fade", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Find Layers", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Toggle Screen Modes", "mods":[]}
-            ],
-            "F1" : [
-                {"name":"Open Photoshop Help", "mods":[]}
-            ],
-            "F12" : [
-                {"name":"Revert File", "mods":[]}
-            ],
-            "F2" : [
-                {"name":"Cut", "mods":[]}
-            ],
-            "F3" : [
-                {"name":"Copy", "mods":[]}
-            ],
-            "F4" : [
-                {"name":"Paste", "mods":[]}
-            ],
-            "F5" : [
-                {"name":"Fill", "mods":["SHIFT"]},
-                {"name":"Show/Hide Brush Panel", "mods":[]}
-            ],
-            "F6" : [
-                {"name":"Feather Selection", "mods":["SHIFT"]},
-                {"name":"Show/Hide Color Panel", "mods":[]}
-            ],
-            "F7" : [
-                {"name":"Invert Selection", "mods":["SHIFT"]},
-                {"name":"Show/Hide Layers Panel", "mods":[]}
-            ],
-            "F8" : [
-                {"name":"Show/Hide Info Panel", "mods":[]}
-            ],
-            "F9" : [
-                {"name":"Show/Hide Actions Panel", "mods":["ALT"]},
-                {"name":"Show/Hide Actions Panel", "mods":[]}
-            ],
-            "G" : [
-                {"name":"Blending Mode: Lighten", "mods":["ALT", "SHIFT"]},
-                {"name":"Create/Release Clipping Mask", "mods":["ALT", "CONTROL"]},
-                {"name":"Cycle Fill Tools", "mods":["SHIFT"]},
-                {"name":"Gradient Tool", "mods":[]},
-                {"name":"Group Layers", "mods":["CONTROL"]},
-                {"name":"Ungroup Layers", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "H" : [
-                {"name":"Blending Mode: Hard Light", "mods":["ALT", "SHIFT"]},
-                {"name":"Hand Tool", "mods":[]},
-                {"name":"Show Target Path", "mods":["CONTROL", "SHIFT"]},
-                {"name":"View Extras", "mods":["CONTROL"]}
-            ],
-            "HOME" : [
-                {"name":"Move view to upper-left corner", "mods":[]}
-            ],
-            "I" : [
-                {"name":"Blending Mode: Dissolve", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Utility Tools", "mods":["SHIFT"]},
-                {"name":"Edit Image Size", "mods":["ALT", "CONTROL"]},
-                {"name":"Eyedropper Tool", "mods":[]},
-                {"name":"File Info", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Invert Image", "mods":["CONTROL"]},
-                {"name":"Invert Selection", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "J" : [
-                {"name":"Blending Mode: Linear Light", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Patch Tools", "mods":["SHIFT"]},
-                {"name":"New Layer Via Copy", "mods":["CONTROL"]},
-                {"name":"New Layer Via Cut", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Spot Healing Brush Tool", "mods":[]}
-            ],
-            "K" : [
-                {"name":"Blending Mode: Darken", "mods":["ALT", "SHIFT"]},
-                {"name":"Color Settings", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Edit Keyboard Shortcuts", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Preferences", "mods":["CONTROL"]}
-            ],
-            "L" : [
-                {"name":"Adjust Levels", "mods":["CONTROL"]},
-                {"name":"Auto Contrast", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Auto Tone", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Blending Mode: Hard Mix", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Lasso Tools", "mods":["SHIFT"]},
-                {"name":"Lasso Tool", "mods":[]}
-            ],
-            "LEFT_ARROW" : [
-                {"name":"Move 1 pixel", "mods":[]},
-                {"name":"Move 10 pixels", "mods":["SHIFT"]}
-            ],
-            "LEFT_BRACKET" : [
-                {"name":"Decrease Brush Hardness", "mods":["SHIFT"]},
-                {"name":"Decrease Brush Size", "mods":[]},
-                {"name":"Send Layer Backward", "mods":["CONTROL"]},
-                {"name":"Send Layer to Back", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "M" : [
-                {"name":"Adjust Curvers", "mods":["CONTROL"]},
-                {"name":"Blending Mode: Multiply", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Marquee Tools", "mods":["SHIFT"]},
-                {"name":"Edit Menus", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Marquee Tool", "mods":[]}
-            ],
-            "MINUS" : [
-                {"name":"Cycle Blending Modes", "mods":[]},
-                {"name":"Zoom Out", "mods":["CONTROL"]}
-            ],
-            "N" : [
-                {"name":"Blending Mode: Normal", "mods":["ALT", "SHIFT"]},
-                {"name":"New File", "mods":["CONTROL"]},
-                {"name":"New Layer", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "NUMPAD_EQUAL" : [
-                {"name":"Zoom In", "mods":["CONTROL"]}
-            ],
-            "NUMPAD_MINUS" : [
-                {"name":"Cycle Blending Modes", "mods":[]},
-                {"name":"Zoom Out", "mods":["CONTROL"]}
-            ],
-            "NUMPAD_ONE" : [
-                {"name":"Zoom 100%", "mods":["CONTROL"]}
-            ],
-            "NUMPAD_PERIOD" : [
-                {"name":"Last Brush", "mods":["SHIFT"]},
-                {"name":"Next Brush", "mods":[]}
-            ],
-            "NUMPAD_PLUS" : [
-                {"name":"Cycle Blending Modes", "mods":["SHIFT"]}
-            ],
-            "NUMPAD_SLASH" : [
-                {"name":"Toggle Preserve Transparency", "mods":[]}
-            ],
-            "NUMPAD_ZERO" : [
-                {"name":"Zoom 100%", "mods":["ALT", "CONTROL"]},
-                {"name":"Zoom Fit on Screen", "mods":["CONTROL"]}
-            ],
-            "O" : [
-                {"name":"Blending Mode: Overlay", "mods":["ALT", "SHIFT"]},
-                {"name":"Browse in Bridge", "mods":["ALT", "CONTROL"]},
-                {"name":"Browse in Bridge", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Cycle Effect Brush Tools", "mods":["SHIFT"]},
-                {"name":"Dodge Tool", "mods":[]},
-                {"name":"Open File As", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Open File", "mods":["CONTROL"]}
-            ],
-            "ONE" : [
-                {"name":"Zoom 100%", "mods":["CONTROL"]}
-            ],
-            "P" : [
-                {"name":"Cycle Pen Tools", "mods":["SHIFT"]},
-                {"name":"Pen Tool", "mods":[]},
-                {"name":"Print One Copy", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Print", "mods":["CONTROL"]}
-            ],
-            "PAGE_DOWN" : [
-                {"name":"Scroll down 1 screen", "mods":[]},
-                {"name":"Scroll down 10 units", "mods":["SHIFT"]}
-            ],
-            "PAGE_UP" : [
-                {"name":"Scroll up 1 screen", "mods":[]},
-                {"name":"Scroll up 10 units", "mods":["SHIFT"]}
-            ],
-            "PERIOD" : [
-                {"name":"Last Brush", "mods":["SHIFT"]},
-                {"name":"Next Brush", "mods":[]}
-            ],
-            "PLUS" : [
-                {"name":"Cycle Blending Modes", "mods":["SHIFT"]}
-            ],
-            "Q" : [
-                {"name":"Blending Mode: Behind", "mods":["ALT", "SHIFT"]},
-                {"name":"Quit Photoshop", "mods":["CONTROL"]},
-                {"name":"Toggle Standard/Quick Mask Modes", "mods":[]}
-            ],
-            "R" : [
-                {"name":"3D: Render", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Blending Mode: Clear", "mods":["ALT", "SHIFT"]},
-                {"name":"Lens Correction Filter", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Refine Edge", "mods":["ALT", "CONTROL"]},
-                {"name":"Rotate View Tool", "mods":[]},
-                {"name":"Show Rulers", "mods":["CONTROL"]}
-            ],
-            "RIGHT_ARROW" : [
-                {"name":"Move 1 pixel", "mods":[]},
-                {"name":"Move 10 pixels", "mods":["SHIFT"]}
-            ],
-            "RIGHT_BRACKET" : [
-                {"name":"Bring Layer Forward", "mods":["CONTROL"]},
-                {"name":"Bring Layer to Front", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Increase Brush Hardness", "mods":["SHIFT"]},
-                {"name":"Increase Brush Size", "mods":[]}
-            ],
-            "S" : [
-                {"name":"Blending Mode: Screen", "mods":["ALT", "SHIFT"]},
-                {"name":"Clone Stamp Tool", "mods":[]},
-                {"name":"Cycle Stamp Tools", "mods":["SHIFT"]},
-                {"name":"Save As", "mods":["ALT", "CONTROL"]},
-                {"name":"Save As", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Save for Web", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Save", "mods":["CONTROL"]}
-            ],
-            "SEMICOLON" : [
-                {"name":"Show Guides", "mods":["CONTROL"]},
-                {"name":"Show Snap", "mods":["CONTROL", "SHIFT"]},
-                {"name":"View Lock Guides", "mods":["ALT", "CONTROL"]}
-            ],
-            "SINGLE_QUOTE" : [
-                {"name":"Show Grid", "mods":["CONTROL"]}
-            ],
-            "SLASH" : [
-                {"name":"Toggle Preserve Transparency", "mods":[]}
-            ],
-            "SPACE" : [
-                {"name":"Switch to Hand tool (Hold)", "mods":[]},
-                {"name":"Switch to Zoom In tool (Hold)", "mods":["CONTROL"]},
-                {"name":"Switch to Zoom Out tool (Hold)", "mods":["ALT"]}
-            ],
-            "T" : [
-                {"name":"Blending Mode: Saturation", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Type Tools", "mods":["SHIFT"]},
-                {"name":"Free Transform", "mods":["CONTROL"]},
-                {"name":"Horizontal Type Tool", "mods":[]},
-                {"name":"Transform Again", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "TAB" : [
-                {"name":"Cycle through open documents", "mods":["CONTROL"]},
-                {"name":"Show/Hide all panels except...", "mods":["SHIFT"]},
-                {"name":"Show/Hide all panels", "mods":[]},
-                {"name":"Switch to previous document", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "U" : [
-                {"name":"Adjust Hue/Saturation", "mods":["CONTROL"]},
-                {"name":"Blending Mode: Hue", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle Shape Tools", "mods":["SHIFT"]},
-                {"name":"Desaturate Image", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Rectangle Tool", "mods":[]}
-            ],
-            "UP_ARROW" : [
-                {"name":"Move 1 pixel", "mods":[]},
-                {"name":"Move 10 pixels", "mods":["SHIFT"]}
-            ],
-            "V" : [
-                {"name":"Blending Mode: Vivid Light", "mods":["ALT", "SHIFT"]},
-                {"name":"Move Tool", "mods":[]},
-                {"name":"Paste Into", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Paste in Place", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Paste", "mods":["CONTROL"]},
-                {"name":"Vanishing Point Filter", "mods":["ALT", "CONTROL"]}
-            ],
-            "W" : [
-                {"name":"Blending Mode: Linear Dodge", "mods":["ALT", "SHIFT"]},
-                {"name":"Close All File", "mods":["ALT", "CONTROL"]},
-                {"name":"Close File and Go to Bridge", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Close File", "mods":["CONTROL"]},
-                {"name":"Cycle Quick Selection Tools", "mods":["SHIFT"]},
-                {"name":"Magic Wand Tool", "mods":[]}
-            ],
-            "X" : [
-                {"name":"3D: Reveal All Polygons", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"3D: Show/Hide Polygons Within Selection", "mods":["ALT", "CONTROL"]},
-                {"name":"Blending Mode: Exclusion", "mods":["ALT", "SHIFT"]},
-                {"name":"Cut", "mods":["CONTROL"]},
-                {"name":"Liquify Filter", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Switch Foreground/Background Colors", "mods":[]}
-            ],
-            "Y" : [
-                {"name":"Blending Mode: Luminosity", "mods":["ALT", "SHIFT"]},
-                {"name":"Cycle History Brush Tools", "mods":["SHIFT"]},
-                {"name":"History Brush Tool", "mods":[]},
-                {"name":"View Gamut Warning", "mods":["CONTROL", "SHIFT"]},
-                {"name":"View Proof Colors", "mods":["CONTROL"]}
-            ],
-            "Z" : [
-                {"name":"Blending Mode: Pin Light", "mods":["ALT", "SHIFT"]},
-                {"name":"Redo", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Undo", "mods":["ALT", "CONTROL"]},
-                {"name":"Undo/Redo Once", "mods":["CONTROL"]},
-                {"name":"Zoom Tool", "mods":[]}
-            ],
-            "ZERO" : [
-                {"name":"Zoom 100%", "mods":["ALT", "CONTROL"]},
-                {"name":"Zoom Fit on Screen", "mods":["CONTROL"]}
-            ]
-        },
         "DICOM Files" : {
             "A" : [
                 {"name":"Select all frames", "mods":["CONTROL"]}
@@ -790,6 +444,353 @@
             ],
             "ZERO" : [
                 {"name":"Fit in view", "mods":["CONTROL"]}
+            ]
+        },
+        "Global Context" : {
+            "A" : [
+                {"name":"Adaptive Wide Angle Filter", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Blending Mode: Linear Burn", "mods":["ALT", "SHIFT"]},
+                {"name":"Camera Raw Filter", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Cycle Path Selection Tools", "mods":["SHIFT"]},
+                {"name":"Path Selection Tool", "mods":[]},
+                {"name":"Select All Layers", "mods":["ALT", "CONTROL"]},
+                {"name":"Select All", "mods":["CONTROL"]}
+            ],
+            "B" : [
+                {"name":"Adjust Black & White", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Adjust Color Balance", "mods":["CONTROL"]},
+                {"name":"Auto Color", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Blending Mode: Color Burn", "mods":["ALT", "SHIFT"]},
+                {"name":"Brush Tool", "mods":[]},
+                {"name":"Cycle Brush Tools", "mods":["SHIFT"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"Toggle layer mask on/off", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Blending Mode: Color", "mods":["ALT", "SHIFT"]},
+                {"name":"Content-Aware Scale", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Copy Merged", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Copy", "mods":["CONTROL"]},
+                {"name":"Crop Tool", "mods":[]},
+                {"name":"Cycle Crop and Slice Tools", "mods":["SHIFT"]},
+                {"name":"Edit Canvas Size", "mods":["ALT", "CONTROL"]}
+            ],
+            "COMMA" : [
+                {"name":"First Brush", "mods":["SHIFT"]},
+                {"name":"Previous Brush", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Blending Mode: Color Dodge", "mods":["ALT", "SHIFT"]},
+                {"name":"Default Foreground/Background Colors", "mods":[]},
+                {"name":"Deselect", "mods":["CONTROL"]},
+                {"name":"Reselect", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Move 1 pixel", "mods":[]},
+                {"name":"Move 10 pixels", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Blending Mode: Difference", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Eraser Tools", "mods":["SHIFT"]},
+                {"name":"Eraser Tool", "mods":[]},
+                {"name":"Merge Layers", "mods":["CONTROL"]},
+                {"name":"Merge Visible", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "END" : [
+                {"name":"Move view to lower right corner", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"Panel: Apply and keep text box active", "mods":["SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Zoom In", "mods":["CONTROL"]}
+            ],
+            "F" : [
+                {"name":"Apply Last Filter", "mods":["CONTROL"]},
+                {"name":"Blending Mode: Soft Light", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle canvas color", "mods":["SPACE"]},
+                {"name":"Fade", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Find Layers", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Toggle Screen Modes", "mods":[]}
+            ],
+            "F1" : [
+                {"name":"Open Photoshop Help", "mods":[]}
+            ],
+            "F12" : [
+                {"name":"Revert File", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Cut", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Copy", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Paste", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Fill", "mods":["SHIFT"]},
+                {"name":"Show/Hide Brush Panel", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Feather Selection", "mods":["SHIFT"]},
+                {"name":"Show/Hide Color Panel", "mods":[]}
+            ],
+            "F7" : [
+                {"name":"Invert Selection", "mods":["SHIFT"]},
+                {"name":"Show/Hide Layers Panel", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Show/Hide Info Panel", "mods":[]}
+            ],
+            "F9" : [
+                {"name":"Show/Hide Actions Panel", "mods":["ALT"]},
+                {"name":"Show/Hide Actions Panel", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Blending Mode: Lighten", "mods":["ALT", "SHIFT"]},
+                {"name":"Create/Release Clipping Mask", "mods":["ALT", "CONTROL"]},
+                {"name":"Cycle Fill Tools", "mods":["SHIFT"]},
+                {"name":"Gradient Tool", "mods":[]},
+                {"name":"Group Layers", "mods":["CONTROL"]},
+                {"name":"Ungroup Layers", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Blending Mode: Hard Light", "mods":["ALT", "SHIFT"]},
+                {"name":"Hand Tool", "mods":[]},
+                {"name":"Show Target Path", "mods":["CONTROL", "SHIFT"]},
+                {"name":"View Extras", "mods":["CONTROL"]}
+            ],
+            "HOME" : [
+                {"name":"Move view to upper-left corner", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Blending Mode: Dissolve", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Utility Tools", "mods":["SHIFT"]},
+                {"name":"Edit Image Size", "mods":["ALT", "CONTROL"]},
+                {"name":"Eyedropper Tool", "mods":[]},
+                {"name":"File Info", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Invert Image", "mods":["CONTROL"]},
+                {"name":"Invert Selection", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Blending Mode: Linear Light", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Patch Tools", "mods":["SHIFT"]},
+                {"name":"New Layer Via Copy", "mods":["CONTROL"]},
+                {"name":"New Layer Via Cut", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Spot Healing Brush Tool", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Blending Mode: Darken", "mods":["ALT", "SHIFT"]},
+                {"name":"Color Settings", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Edit Keyboard Shortcuts", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Preferences", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Adjust Levels", "mods":["CONTROL"]},
+                {"name":"Auto Contrast", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Auto Tone", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Blending Mode: Hard Mix", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Lasso Tools", "mods":["SHIFT"]},
+                {"name":"Lasso Tool", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move 1 pixel", "mods":[]},
+                {"name":"Move 10 pixels", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease Brush Hardness", "mods":["SHIFT"]},
+                {"name":"Decrease Brush Size", "mods":[]},
+                {"name":"Send Layer Backward", "mods":["CONTROL"]},
+                {"name":"Send Layer to Back", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Adjust Curvers", "mods":["CONTROL"]},
+                {"name":"Blending Mode: Multiply", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Marquee Tools", "mods":["SHIFT"]},
+                {"name":"Edit Menus", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Marquee Tool", "mods":[]}
+            ],
+            "MINUS" : [
+                {"name":"Cycle Blending Modes", "mods":[]},
+                {"name":"Zoom Out", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Blending Mode: Normal", "mods":["ALT", "SHIFT"]},
+                {"name":"New File", "mods":["CONTROL"]},
+                {"name":"New Layer", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Zoom In", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Cycle Blending Modes", "mods":[]},
+                {"name":"Zoom Out", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Zoom 100%", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Last Brush", "mods":["SHIFT"]},
+                {"name":"Next Brush", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Cycle Blending Modes", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Toggle Preserve Transparency", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Zoom 100%", "mods":["ALT", "CONTROL"]},
+                {"name":"Zoom Fit on Screen", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Blending Mode: Overlay", "mods":["ALT", "SHIFT"]},
+                {"name":"Browse in Bridge", "mods":["ALT", "CONTROL"]},
+                {"name":"Browse in Bridge", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Cycle Effect Brush Tools", "mods":["SHIFT"]},
+                {"name":"Dodge Tool", "mods":[]},
+                {"name":"Open File As", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Open File", "mods":["CONTROL"]}
+            ],
+            "ONE" : [
+                {"name":"Zoom 100%", "mods":["CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Cycle Pen Tools", "mods":["SHIFT"]},
+                {"name":"Pen Tool", "mods":[]},
+                {"name":"Print One Copy", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Print", "mods":["CONTROL"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Scroll down 1 screen", "mods":[]},
+                {"name":"Scroll down 10 units", "mods":["SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Scroll up 1 screen", "mods":[]},
+                {"name":"Scroll up 10 units", "mods":["SHIFT"]}
+            ],
+            "PERIOD" : [
+                {"name":"Last Brush", "mods":["SHIFT"]},
+                {"name":"Next Brush", "mods":[]}
+            ],
+            "PLUS" : [
+                {"name":"Cycle Blending Modes", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Blending Mode: Behind", "mods":["ALT", "SHIFT"]},
+                {"name":"Quit Photoshop", "mods":["CONTROL"]},
+                {"name":"Toggle Standard/Quick Mask Modes", "mods":[]}
+            ],
+            "R" : [
+                {"name":"3D: Render", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Blending Mode: Clear", "mods":["ALT", "SHIFT"]},
+                {"name":"Lens Correction Filter", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Refine Edge", "mods":["ALT", "CONTROL"]},
+                {"name":"Rotate View Tool", "mods":[]},
+                {"name":"Show Rulers", "mods":["CONTROL"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move 1 pixel", "mods":[]},
+                {"name":"Move 10 pixels", "mods":["SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Bring Layer Forward", "mods":["CONTROL"]},
+                {"name":"Bring Layer to Front", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Increase Brush Hardness", "mods":["SHIFT"]},
+                {"name":"Increase Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Blending Mode: Screen", "mods":["ALT", "SHIFT"]},
+                {"name":"Clone Stamp Tool", "mods":[]},
+                {"name":"Cycle Stamp Tools", "mods":["SHIFT"]},
+                {"name":"Save As", "mods":["ALT", "CONTROL"]},
+                {"name":"Save As", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Save for Web", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Save", "mods":["CONTROL"]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Show Guides", "mods":["CONTROL"]},
+                {"name":"Show Snap", "mods":["CONTROL", "SHIFT"]},
+                {"name":"View Lock Guides", "mods":["ALT", "CONTROL"]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Show Grid", "mods":["CONTROL"]}
+            ],
+            "SLASH" : [
+                {"name":"Toggle Preserve Transparency", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Switch to Hand tool (Hold)", "mods":[]},
+                {"name":"Switch to Zoom In tool (Hold)", "mods":["CONTROL"]},
+                {"name":"Switch to Zoom Out tool (Hold)", "mods":["ALT"]}
+            ],
+            "T" : [
+                {"name":"Blending Mode: Saturation", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Type Tools", "mods":["SHIFT"]},
+                {"name":"Free Transform", "mods":["CONTROL"]},
+                {"name":"Horizontal Type Tool", "mods":[]},
+                {"name":"Transform Again", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Cycle through open documents", "mods":["CONTROL"]},
+                {"name":"Show/Hide all panels except...", "mods":["SHIFT"]},
+                {"name":"Show/Hide all panels", "mods":[]},
+                {"name":"Switch to previous document", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Adjust Hue/Saturation", "mods":["CONTROL"]},
+                {"name":"Blending Mode: Hue", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle Shape Tools", "mods":["SHIFT"]},
+                {"name":"Desaturate Image", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Rectangle Tool", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Move 1 pixel", "mods":[]},
+                {"name":"Move 10 pixels", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Blending Mode: Vivid Light", "mods":["ALT", "SHIFT"]},
+                {"name":"Move Tool", "mods":[]},
+                {"name":"Paste Into", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Paste in Place", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Paste", "mods":["CONTROL"]},
+                {"name":"Vanishing Point Filter", "mods":["ALT", "CONTROL"]}
+            ],
+            "W" : [
+                {"name":"Blending Mode: Linear Dodge", "mods":["ALT", "SHIFT"]},
+                {"name":"Close All File", "mods":["ALT", "CONTROL"]},
+                {"name":"Close File and Go to Bridge", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Close File", "mods":["CONTROL"]},
+                {"name":"Cycle Quick Selection Tools", "mods":["SHIFT"]},
+                {"name":"Magic Wand Tool", "mods":[]}
+            ],
+            "X" : [
+                {"name":"3D: Reveal All Polygons", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"3D: Show/Hide Polygons Within Selection", "mods":["ALT", "CONTROL"]},
+                {"name":"Blending Mode: Exclusion", "mods":["ALT", "SHIFT"]},
+                {"name":"Cut", "mods":["CONTROL"]},
+                {"name":"Liquify Filter", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Switch Foreground/Background Colors", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Blending Mode: Luminosity", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle History Brush Tools", "mods":["SHIFT"]},
+                {"name":"History Brush Tool", "mods":[]},
+                {"name":"View Gamut Warning", "mods":["CONTROL", "SHIFT"]},
+                {"name":"View Proof Colors", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Blending Mode: Pin Light", "mods":["ALT", "SHIFT"]},
+                {"name":"Redo", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Undo", "mods":["ALT", "CONTROL"]},
+                {"name":"Undo/Redo Once", "mods":["CONTROL"]},
+                {"name":"Zoom Tool", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Zoom 100%", "mods":["ALT", "CONTROL"]},
+                {"name":"Zoom Fit on Screen", "mods":["CONTROL"]}
             ]
         },
         "Mode: Crop Tool" : {

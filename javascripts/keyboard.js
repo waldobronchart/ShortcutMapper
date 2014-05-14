@@ -160,8 +160,6 @@
             this.options.context = name;
             var contextSafeName = this._getSafeID(name);
 
-            console.log("KEYBOARD switch context to " + name);
-
             // Cleanup and hide
             this.element.find("button").removeClass("hasitems");
             this.element.find("button div.keyitems").hide();

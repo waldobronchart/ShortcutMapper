@@ -3,8 +3,9 @@
     "version" : "v5.4",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
     "contexts" : {
-        "Application" : {
+        "Global Context" : {
             "B" : [
                 {"name":"Add to Quick Collection and goto Next", "mods":["SHIFT"]},
                 {"name":"Add to Quick Collection", "mods":[]},
