@@ -1,12 +1,13 @@
 var sitedata_keyboards = {
-    "Qwerty US": {
-        windows: "qwerty-us.html",
-        mac: "qwerty-us_mac.html",
-        linux: "qwerty-us.html",
+    "English US": {
+        windows: "english-us.html",
+        mac: "english-us_mac.html",
+        linux: "english-us.html",
     },
-    "Qwerty UK": {
-        windows: "qwerty-uk.html",
-        mac: "qwerty-uk_mac.html",
-        linux: "qwerty-uk.html",
+    "English UK": {
+        windows: "english-uk.html",
+        mac: "english-uk_mac.html",
+        linux: "english-uk.html",
+    },
     }
 }
