@@ -3,7 +3,7 @@ ShortcutMapper
 
 This is a keyboard shortcuts visualiser hosted on Github: http://waldobronchart.github.io/ShortcutMapper/
 
-![Web App Screenshot](http://waldobronchart.github.io/ShortcutMapper/images/screenshot.jpg)
+![Web App Screenshot](http://i.imgur.com/QLVCimg.gif)
 
 # Overview
 
