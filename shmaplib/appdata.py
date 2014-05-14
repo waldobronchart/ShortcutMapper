@@ -242,13 +242,16 @@ def regenerate_site_apps_js():
 
         def to_json(self):
             json_str = '[\n'
-            for appname, version_dict in self.apps.items():
+            for appname in sorted(self.apps.keys()):
+                version_dict = self.apps[appname]
                 json_str += '    {\n'
                 json_str += '        name: "%s",\n' % (appname)
                 json_str += '        data: {\n'
-                for version, os_dict in version_dict.items():
+                for version in reversed(sorted(version_dict.keys())):
+                    os_dict = version_dict[version]
                     json_str += '            "%s": {\n' % (version)
-                    for os_name, filename in os_dict.items():
+                    for os_name in sorted(os_dict.keys()):
+                        filename = os_dict[os_name]
                         json_str += '                "%s": "%s",\n' % (os_name, filename)
                     json_str += '            },\n'
                 json_str += '        }\n'
