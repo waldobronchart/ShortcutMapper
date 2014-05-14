@@ -6,6 +6,9 @@
     "default_context" : "Global Context",
     "contexts" : {
         "Global Context" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Cycle flag settings", "mods":[]}
+            ],
             "B" : [
                 {"name":"Add to Quick Collection and goto Next", "mods":["SHIFT"]},
                 {"name":"Add to Quick Collection", "mods":[]},
@@ -217,8 +220,7 @@
                 {"name":"Open/close right panels top to bottom", "mods":["CONTROL"]}
             ],
             "SINGLE_QUOTE" : [
-                {"name":"Create Virtual Copy", "mods":["CONTROL"]},
-                {"name":"Cycle flag settings", "mods":[]}
+                {"name":"Create Virtual Copy", "mods":["CONTROL"]}
             ],
             "SIX" : [
                 {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
