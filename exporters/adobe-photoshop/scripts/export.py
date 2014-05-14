@@ -22,7 +22,7 @@ def export_file(filepath, testmode):
     filename, ext = os.path.splitext(os.path.basename(filepath))
     version = filename.split('_')[1]
 
-    exporter = AdobeExporter(filepath, "Adobe Photoshop", version)
+    exporter = AdobeExporter(filepath, "Adobe Photoshop", version, "Global Context")
     exporter.parse()
     if not testmode:
         exporter.export()

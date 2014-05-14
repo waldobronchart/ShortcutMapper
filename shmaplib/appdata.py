@@ -147,11 +147,12 @@ class ShortcutContext(object):
 
 
 class ApplicationConfig(object):
-    def __init__(self, app_name, app_version, app_os):
+    def __init__(self, app_name, app_version, app_os, defualt_context_name):
         super(ApplicationConfig, self).__init__()
         self.name = app_name
         self.version = app_version
         self.os = app_os
+        self.default_context_name = defualt_context_name
         self.contexts = {}
 
     def get_or_create_new_context(self, name):
@@ -189,6 +190,7 @@ class ApplicationConfig(object):
         output_str += u'    "version" : "%s",\n' % (self.version)
         output_str += u'    "os" : "%s",\n' % (self.os)
         output_str += u'    "mods_used" : %s,\n' % (json.dumps(mods_used))
+        output_str += u'    "default_context" : "%s",\n' % (self.default_context_name)
         output_str += u'    "contexts" : {\n'
 
         contexts_str = u""

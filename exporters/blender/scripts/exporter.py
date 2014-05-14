@@ -63,7 +63,7 @@ def export():
     if platform == 'darwin':
         platform = 'mac'
 
-    app = shmaplib.ApplicationConfig("Blender", version, platform)
+    app = shmaplib.ApplicationConfig("Blender", version, platform, "3D View")
     parse_main_keyconfig(app)
 
     app.serialize(shmaplib.DIR_PAGES_APPDATA)

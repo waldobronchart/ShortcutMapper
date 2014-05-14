@@ -277,15 +277,16 @@ class AdobeSummaryParser(object):
 class AdobeExporter(object):
     """Exports an intermediate .json file to the gh-pages appdata dir in the correct file format."""
 
-    def __init__(self, source, app_name, app_version):
+    def __init__(self, source, app_name, app_version, defualt_context_name):
         super(AdobeExporter, self).__init__()
         self.source_file = source
         self.app_name = app_name
         self.app_version = app_version
+        self.default_context_name = defualt_context_name
 
         # Windows and Mac appconfigs
-        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows')
-        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac')
+        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows', self.default_context_name)
+        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac', self.default_context_name)
 
     def _parse_shortcut(self, name, keys):
         if len(keys) == 0:
@@ -365,8 +366,8 @@ class AdobeExporter(object):
             return
 
         # Windows and Mac appconfigs
-        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows')
-        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac')
+        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows', self.default_context_name)
+        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac', self.default_context_name)
 
         # Load intermediate data
         idata = AdobeIntermediateData()
