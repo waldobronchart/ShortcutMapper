@@ -99,6 +99,9 @@
                 {"name":"Import Photos", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Show/hide info overlay", "mods":["COMMAND"]}
             ],
+            "K" : [
+                {"name":"Adjustment Brush Tool", "mods":[]}
+            ],
             "L" : [
                 {"name":"Cycle Lights-Out Modes Backward", "mods":["SHIFT"]},
                 {"name":"Cycle Lights-Out Modes Forward", "mods":[]},
@@ -202,6 +205,7 @@
                 {"name":"Print Selected Photo", "mods":["COMMAND"]}
             ],
             "R" : [
+                {"name":"Crop Tool", "mods":[]},
                 {"name":"Refine photos", "mods":["ALT", "COMMAND"]},
                 {"name":"Show in Finder", "mods":["COMMAND"]}
             ],
@@ -259,6 +263,9 @@
             "UP_ARROW" : [
                 {"name":"Go back to previous module", "mods":["ALT", "COMMAND"]},
                 {"name":"Increase Flag Status", "mods":["COMMAND"]}
+            ],
+            "W" : [
+                {"name":"White Balance Tool", "mods":[]}
             ],
             "X" : [
                 {"name":"Flag photo as a reject and go to next photo", "mods":["SHIFT"]},

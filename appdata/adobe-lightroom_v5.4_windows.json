@@ -101,6 +101,9 @@
                 {"name":"Import Photos", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Show/hide info overlay", "mods":["CONTROL"]}
             ],
+            "K" : [
+                {"name":"Adjustment Brush Tool", "mods":[]}
+            ],
             "L" : [
                 {"name":"Cycle Lights-Out Modes Backward", "mods":["SHIFT"]},
                 {"name":"Cycle Lights-Out Modes Forward", "mods":[]},
@@ -204,6 +207,7 @@
                 {"name":"Print Selected Photo", "mods":["CONTROL"]}
             ],
             "R" : [
+                {"name":"Crop Tool", "mods":[]},
                 {"name":"Refine photos", "mods":["ALT", "CONTROL"]},
                 {"name":"Show in Explorer", "mods":["CONTROL"]}
             ],
@@ -261,6 +265,9 @@
             "UP_ARROW" : [
                 {"name":"Go back to previous module", "mods":["ALT", "CONTROL"]},
                 {"name":"Increase Flag Status", "mods":["CONTROL"]}
+            ],
+            "W" : [
+                {"name":"White Balance Tool", "mods":[]}
             ],
             "X" : [
                 {"name":"Flag photo as a reject and go to next photo", "mods":["SHIFT"]},
