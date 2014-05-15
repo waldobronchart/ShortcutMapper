@@ -708,6 +708,28 @@ div#keyboard button.multi.hasitems b {
 
 
 
+div#keyboard button.other .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.other {
+    background: #b46029;
+    box-shadow: inset 0px 0px 0px 1px #753c17,
+                inset 0px 0px 0px 2px #d88c59,
+                0px 2px 0px 0px #904b1e,
+                0px 3px 0px 0px #5a341b,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.other:active {
+    box-shadow: inset 0px 0px 0px 1px #753c17,
+                inset 0px 0px 0px 2px #d88c59,
+                0px 1px 0px 0px #904b1e,
+                0px 2px 0px 0px #5a341b,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.other.hasitems b {
+    background-color: #834923;
+}
 
 
 
@@ -805,6 +827,28 @@ div#keyboard button.mod-shift.mod-active {
                 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
+
+div#keyboard button.mod-other {
+    box-shadow: inset 0px 0px 0px 1px #753c17,
+                inset 0px 0px 0px 2px #d88c59,
+                0px 2px 0px 0px #904b1e,
+                0px 3px 0px 0px #5a341b,
+                0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+div#keyboard button.mod-other:active .label,
+div#keyboard button.mod-other.mod-active .label {
+    color: #fff;
+    text-shadow: 0px 1px 0px rgb(80, 80, 80);
+}
+div#keyboard button.mod-other:active,
+div#keyboard button.mod-other.mod-active {
+    background: #b46029;
+    box-shadow: inset 0px 0px 0px 1px #753c17,
+                inset 0px 0px 0px 2px #d88c59,
+                0px 1px 0px 0px #904b1e,
+                0px 2px 0px 0px #5a341b,
+                0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
 
 
 

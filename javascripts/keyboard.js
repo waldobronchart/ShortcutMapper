@@ -29,6 +29,7 @@
         activeModKeys: [],
         contextItems: null,
         highlightedKeyName: null,
+        standardModClasses: ["nomod", "alt", "command", "control", "shift", "multi", "other"],
 
         _create: function() {
             var keyboard = this;
@@ -68,8 +69,8 @@
 
                 // Is key a modifier key?
                 if ($.inArray(keyName, keyboard.options.mods) >= 0) {
-                    var modClass = "mod-" + keyName.toLowerCase();
-                    $(this).addClass(modClass);
+                    // This css class gives the mod a colored border
+                    $(this).addClass("mod-" + keyboard._getButtonModClass(keyName));
 
                     // Click to toggle modifier activeness
                     $(this).on("click", function() {
@@ -92,6 +93,10 @@
         _keyDown: function(e) {
             var keyName = this.keyCodeMap[e.which];
 
+            // Is key a modifier key?
+            if ($.inArray(keyName, this.options.mods) >= 0)
+                e.preventDefault();
+
             // Escape key clears all modifier activeness
             if (keyName === "ESCAPE") {
                 this._clearActiveModifiers();
@@ -104,6 +109,11 @@
 
         _keyUp: function(e) {
             var keyName = this.keyCodeMap[e.which];
+
+            // Is key a modifier key?
+            if ($.inArray(keyName, this.options.mods) >= 0)
+                e.preventDefault();
+
             this._deactivateModifiers([keyName]);
         },
 
@@ -116,7 +126,7 @@
                     return;
 
                 // Add activeness class from mod buttons
-                var modClass = "mod-" + keyName.toLowerCase();
+                var modClass = "mod-" + this._getButtonModClass(keyName);
                 $(this.element).find("button." + modClass).addClass("mod-active");
 
                 // Add to active modifier key list
@@ -135,7 +145,7 @@
                     return;
 
                 // Remove activeness class from mod buttons
-                var modClass = "mod-" + keyName.toLowerCase();
+                var modClass = "mod-" + this._getButtonModClass(keyName);
                 $(this.element).find("button." + modClass).removeClass("mod-active");
 
                 // Remove from active modifier key
@@ -191,6 +201,14 @@
             this._update();
         },
 
+        _getButtonModClass: function(keyName) {
+            var keyNameLower = keyName.toLowerCase();
+            if ($.inArray(keyNameLower, this.standardModClasses) >= 0)
+                return keyNameLower;
+
+            return "other";
+        },
+
         _update: function() {
             var mods = "NOMOD";
             if (this.activeModKeys.length > 0)
@@ -210,13 +228,12 @@
             }
 
             // Clear all button highlight state
-            var standardModClasses = ["nomod", "alt", "command", "control", "shift", "multi"];
-            this.element.find("button").removeClass(standardModClasses.join(" "));
+            this.element.find("button").removeClass(this.standardModClasses.join(" "));
 
             // Highlight keys
             var buttonModClass = "nomod";
             if (this.activeModKeys.length == 1)
-                buttonModClass = this.activeModKeys[0].toLowerCase();
+                buttonModClass = this._getButtonModClass(this.activeModKeys[0]);
             if (this.activeModKeys.length > 1)
                 buttonModClass = "multi";
             this.contextItems.children("div.shortcut[data-mods='" + mods + "']").closest(buttonSelector).addClass(buttonModClass);
