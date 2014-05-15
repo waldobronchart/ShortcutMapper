@@ -1,5 +1,6 @@
 /gh-pages/*
 /venv/*
+/_venv/*
 
 # Numerous always-ignore extensions
 *.diff
