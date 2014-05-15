@@ -55,9 +55,9 @@
             "F" : [
                 {"name":"Cycle Screen Modes", "mods":["SHIFT"]},
                 {"name":"Find Photo in Library Module", "mods":["COMMAND"]},
-                {"name":"Full Screen Preview", "mods":[]},
                 {"name":"Go to Normal screen mode", "mods":["ALT", "COMMAND"]},
-                {"name":"Switch between normal and full screen mode", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Switch between normal and full screen mode", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle Full Screen Preview", "mods":[]}
             ],
             "F1" : [
                 {"name":"Open Community Help", "mods":[]}
