@@ -20,6 +20,18 @@ var pageManager = new function PageManager() {
     this.init = function() {
         var manager = this;
 
+        // Get selected app name from window hash
+        var hash = window.location.hash;
+        if (hash.length > 1) {
+            hash = hash.substring(1).toLowerCase();
+            for (var i=0; i<sitedata_apps.length; i++) {
+                var name = sitedata_apps[i].name;
+                if (this._appNameToHash(name).toLowerCase() === hash) {
+                    selectedApp = sitedata_apps[i];
+                }
+            }
+        }
+
         // Find all elements we're going to be using a lot
         this.elemAppSelect = $("#application_select");
         this.elemVersionSelect = $("#version_select");
@@ -111,6 +123,10 @@ var pageManager = new function PageManager() {
         });
     }
 
+    this._appNameToHash = function(name) {
+        return name.replace(" ", "")
+    }
+
     this.selectApplication = function(name) {
         name = name.toLowerCase();
         if (name === selectedApp.name.toLowerCase())
@@ -119,7 +135,7 @@ var pageManager = new function PageManager() {
         for (var i=0; i<sitedata_apps.length; i++) {
             if (name === sitedata_apps[i].name.toLowerCase()) {
                 selectedApp = sitedata_apps[i];
-                window.location.hash = "#" + selectedApp.name;
+                window.location.hash = "#" + this._appNameToHash(selectedApp.name);
                 document.title = selectedApp.name + " Shortcuts";
                 return;
             }
