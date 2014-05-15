@@ -1,5 +1,5 @@
-# Temporarily ignore design dir until the PSD's are less volatile
 /design/*
+/_venv/*
 
 # Numerous always-ignore extensions
 *.diff
@@ -38,4 +38,3 @@ nbproject
 .hg
 .svn
 .idea
-
