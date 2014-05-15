@@ -53,10 +53,10 @@
                 {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
             ],
             "F" : [
-                {"name":"Cycle screen modes", "mods":[]},
+                {"name":"Cycle Screen Modes", "mods":["SHIFT"]},
                 {"name":"Find Photo in Library Module", "mods":["COMMAND"]},
+                {"name":"Full Screen Preview", "mods":[]},
                 {"name":"Go to Normal screen mode", "mods":["ALT", "COMMAND"]},
-                {"name":"Previous screen mode", "mods":["SHIFT"]},
                 {"name":"Switch between normal and full screen mode", "mods":["COMMAND", "SHIFT"]}
             ],
             "F1" : [

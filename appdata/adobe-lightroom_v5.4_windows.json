@@ -56,8 +56,9 @@
                 {"name":"Open/close right panels top to bottom", "mods":["CONTROL"]}
             ],
             "F" : [
-                {"name":"Cycle screen modes", "mods":[]},
+                {"name":"Cycle Screen Modes", "mods":["SHIFT"]},
                 {"name":"Find Photo in Library Module", "mods":["CONTROL"]},
+                {"name":"Full Screen Preview", "mods":[]},
                 {"name":"Go to Normal screen mode", "mods":["ALT", "CONTROL"]},
                 {"name":"Switch between normal and full screen mode", "mods":["CONTROL", "SHIFT"]}
             ],
