@@ -100,7 +100,11 @@
         "Display current module shortcuts": ["Ctrl + /", "Command + /"],
         "Hide current module shortcuts": ["Click", "Click"],
         "Go to current module Help": ["Ctrl + Alt + /", "Command + Option + Shift + /"],
-        "Open Community Help": ["F1", "F1"]
+        "Open Community Help": ["F1", "F1"],
+
+        "Adjustment Brush Tool": ["K", "K"],
+        "Crop Tool": ["R", "R"],
+        "White Balance Tool": ["W", "W"]
     },
     "Secondary Window": {
         "Open secondary window": ["F11", "Command + F11"],
