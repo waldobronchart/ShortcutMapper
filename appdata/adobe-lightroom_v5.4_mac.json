@@ -204,6 +204,9 @@
                 {"name":"Open Page Setup dialog box", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Print Selected Photo", "mods":["COMMAND"]}
             ],
+            "Q" : [
+                {"name":"Spot Removal Tool", "mods":[]}
+            ],
             "R" : [
                 {"name":"Crop Tool", "mods":[]},
                 {"name":"Refine photos", "mods":["ALT", "COMMAND"]},
