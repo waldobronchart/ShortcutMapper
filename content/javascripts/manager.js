@@ -215,7 +215,7 @@ var pageManager = new function PageManager() {
         var manager = this;
         var filename = selectedApp.data[selectedVersion][selectedOS];
         $.ajax({
-            url: "appdata/" + filename,
+            url: "content/appdata/" + filename,
             dataType: "json"
         }).done(function (keydata) {
             selectedAppData = keydata;
@@ -235,7 +235,7 @@ var pageManager = new function PageManager() {
         var manager = this;
         var filename = sitedata_keyboards[selectedKeyboardType][selectedOS];
         $.ajax({
-            url: "keyboards/" + filename,
+            url: "content/keyboards/" + filename,
             dataType: "html"
         }).done(function (content) {
 
