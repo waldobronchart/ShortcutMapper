@@ -92,6 +92,10 @@
         _keyDown: function(e) {
             var keyName = this.keyCodeMap[e.which];
 
+            // Is key a modifier key?
+            if ($.inArray(keyName, this.options.mods) >= 0)
+                e.preventDefault();
+
             // Escape key clears all modifier activeness
             if (keyName === "ESCAPE") {
                 this._clearActiveModifiers();
@@ -104,6 +108,11 @@
 
         _keyUp: function(e) {
             var keyName = this.keyCodeMap[e.which];
+
+            // Is key a modifier key?
+            if ($.inArray(keyName, this.options.mods) >= 0)
+                e.preventDefault();
+
             this._deactivateModifiers([keyName]);
         },
 
