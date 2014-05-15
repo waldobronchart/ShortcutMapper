@@ -66,7 +66,7 @@ def export():
     app = shmaplib.ApplicationConfig("Blender", version, platform, "3D View")
     parse_main_keyconfig(app)
 
-    app.serialize(shmaplib.DIR_PAGES_APPDATA)
+    app.serialize(shmaplib.DIR_CONTENT_APPDATA)
 
 
 try:

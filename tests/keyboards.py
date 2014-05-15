@@ -14,7 +14,7 @@ class TestKeyboardLayout(BaseTestCase):
 
     def setup(self):
         self.valid_keys = shmaplib.get_all_valid_keynames()
-        self.keyboard_templates = glob.glob(os.path.join(shmaplib.DIR_PAGES_KEYBOARDS, '*.html'))
+        self.keyboard_templates = glob.glob(os.path.join(shmaplib.DIR_CONTENT_KEYBOARDS, '*.html'))
 
     def test_validate_keyboard_template_keynames(self):
         for p in self.keyboard_templates:

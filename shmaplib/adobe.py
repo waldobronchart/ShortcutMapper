@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 from appdata import Shortcut, ShortcutContext, ApplicationConfig
 from keynames import get_all_valid_keynames, get_valid_keynames, is_valid_keyname
-from constants import DIR_PAGES_APPDATA, VALID_OS_NAMES
+from constants import DIR_CONTENT_APPDATA, VALID_OS_NAMES
 
 from logger import getlog
 log = getlog()
@@ -391,8 +391,8 @@ class AdobeExporter(object):
 
 
     def export(self):
-        self.app_win.serialize(DIR_PAGES_APPDATA)
-        self.app_mac.serialize(DIR_PAGES_APPDATA)
+        self.app_win.serialize(DIR_CONTENT_APPDATA)
+        self.app_mac.serialize(DIR_CONTENT_APPDATA)
 
 
 
