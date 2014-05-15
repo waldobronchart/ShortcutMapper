@@ -104,7 +104,8 @@
 
         "Adjustment Brush Tool": ["K", "K"],
         "Crop Tool": ["R", "R"],
-        "White Balance Tool": ["W", "W"]
+        "White Balance Tool": ["W", "W"],
+        "Spot Removal Tool": ["Q", "Q"]
     },
     "Secondary Window": {
         "Open secondary window": ["F11", "Command + F11"],
