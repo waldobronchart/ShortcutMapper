@@ -108,6 +108,9 @@ You'll create an AppConfig first. Then create a new context to the application, 
 
 AppConfig has multiple ShortcutContexts, which has multiple Shortcuts.
 
+The AppConfig has a serialize function that exports it into the correct directory under /content/appdata and adds the application to the javascript file under /content/javascripts/apps.js
+
+Look in shmaplib/appdata.py for more specific docs.
 
 **docs are work in progress**
 
