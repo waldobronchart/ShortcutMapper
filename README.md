@@ -59,9 +59,57 @@ python exporters/adobe-photoshop/scripts/export.py -a
 ```
 
 
+## Adding shortcuts for a new Application
+
+**This documentation is incomplete, I'm working on it :)**
+
+### Exporters directory setup
+
+First, try and find an online resource that lists all the application shortcuts for each platform. For adobe applications for example, I use the ones from their online documentation: http://helpx.adobe.com/lightroom/help/keyboard-shortcuts.html
+
+Make sure it's up-to-date and the list is complete.
+
+Now you're going to use that resource to export an to intermediate data format that can be edited by hand easily (like photoshop and lightroom).
+
+Create a directory structure under **/exporters** as so (for reference, look at the adobe applications):
+```
+/exporters
+    /my_app
+        /intermediate    One-time exports from raw data, which have been hand edited to
+                          fix faulty shortcuts and shorten labels that are too long
+        /raw             Source used to export to an intermediate data format
+        /scripts         Scripts to convert raw to intermediate, and then intermediate to
+                          a web-application supported format in /content/appdata/...
+```
+
+Then ideally, you're going to write some scripts to convert data to a more 
+
+### Using SHMAPLIB
+
+SHMAPLIB is short for "Shortcut Mapper Lib". It's a Python library that will help you export data in the right format to the right location.
+
+If your script lives and runs directly in **/exporters/../scripts**, then you can import the lib like so:
+```
+# Add repository root path to sys.path (This will make import shmaplib work)
+CWD = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, CWD)
+sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
+
+# Import common shortcut mapper library
+import shmaplib
+```
+
+From there, you can parse your intermediate data format and export it to the web application using these structures:
+- *shmaplib.ApplicationConfig*: Main application data format (name, os, version, and shortcut-contexts)
+- *shmaplib.ShortcutContext*: A container for shortcuts for a specific context (Lightroom: Global, Develop, Library)
+- *shmaplib.Shortcut*: Data format for a shortcut (name, key and modifiers)
+
+You'll create an AppConfig first. Then create a new context to the application, to which the shortcuts are added
+
+AppConfig has multiple ShortcutContexts, which has multiple Shortcuts.
 
 
-
+**docs are work in progress**
 
 
 
