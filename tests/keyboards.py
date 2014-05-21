@@ -18,6 +18,7 @@ class TestKeyboardLayout(BaseTestCase):
 
     def test_validate_keyboard_template_keynames(self):
         for p in self.keyboard_templates:
+            print("   " + p)
             with open(p, 'r') as template_file:
                 contents = template_file.read()
                 key_names = re.findall(r'.*button data-key="(.*?)"', contents)
