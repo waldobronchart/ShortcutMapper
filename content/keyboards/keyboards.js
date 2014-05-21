@@ -9,6 +9,9 @@ var sitedata_keyboards = {
         mac: "english-uk_mac.html",
         linux: "english-uk.html",
     },
+    "English UK Dvorak": {
+        mac: "english-uk-dvorak_mac.html",
+    },
     "Danish": {
         windows: "danish.html",
         mac: "danish_mac.html",
