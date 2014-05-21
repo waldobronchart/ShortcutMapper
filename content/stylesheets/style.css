@@ -234,7 +234,7 @@ nav .inputgroup .rightfield .chosen-single {
 #application_select { width: 160px; }
 #version_select { width: 75px; }
 #context_select { width: 260px; }
-#keyboardtype_select { width: 140px; }
+#keyboardtype_select { width: 175px; }
 
 nav .chosen-container-single.keyboard-select .chosen-single {
     padding-right: 10px;

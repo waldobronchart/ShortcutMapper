@@ -1,1 +1,1 @@
-open "/Applications/Google Chrome.app" gh-pages/index.html  --args -allow-file-access-from-files
+open "/Applications/Google Chrome.app" ../index.html  --args -allow-file-access-from-files

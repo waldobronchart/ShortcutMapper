@@ -252,7 +252,7 @@ var pageManager = new function PageManager() {
             });
             manager.elemKeyboard.show();
         }).fail(function() {
-            $("#keycontent").html("KEYBOARD NOT FOUND");
+            $("#keycontent").html("KEYBOARD NOT FOUND (Possibly doesn't exist for selected OS)");
         });
     }
 
