@@ -1,0 +1,384 @@
+{
+    "name" : "Audodesk Maya",
+    "version" : "2014",
+    "os" : "mac",
+    "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Dialog: Rendering" : {
+            "LEFT_ARROW" : [
+                {"name":"View Next Image", "mods":["CONTROL"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"View Previous Image", "mods":["CONTROL"]}
+            ]
+        },
+        "Global Context" : {
+            "A" : [
+                {"name":"Channel Box / Attrib Editor", "mods":["CONTROL"]},
+                {"name":"Frame All in Active Panel", "mods":[]},
+                {"name":"Frame All in All Views", "mods":["SHIFT"]},
+                {"name":"Select All", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Select All", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "B" : [
+                {"name":"Switch Background Color", "mods":["ALT"]}
+            ],
+            "C" : [
+                {"name":"(HOLD) Snap to Curves", "mods":[]},
+                {"name":"Copy", "mods":["COMMAND"]},
+                {"name":"Copy", "mods":["CONTROL"]}
+            ],
+            "COMMA" : [
+                {"name":"Shrink Selection", "mods":["SHIFT"]},
+                {"name":"Timeline: Go to Prev Key", "mods":[]},
+                {"name":"Timeline: Prev Frame", "mods":["ALT"]}
+            ],
+            "D" : [
+                {"name":"(HOLD) Pivot Move Mode", "mods":[]},
+                {"name":"Duplicate Special", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Duplicate with Transform", "mods":["SHIFT"]},
+                {"name":"Duplicate", "mods":["CONTROL"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Move Down 1 Pixel", "mods":["ALT"]},
+                {"name":"Walk Down Current", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Rotate Tool", "mods":[]},
+                {"name":"Set Key for Rotate", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Complete Current Tool", "mods":[]}
+            ],
+            "EQUAL" : [
+                {"name":"Increase manipulator size", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Frame Selected in Active Panel", "mods":[]},
+                {"name":"Frame Selected in All Views", "mods":["SHIFT"]}
+            ],
+            "F1" : [
+                {"name":"Maya Help", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Edge Selection Mode", "mods":[]}
+            ],
+            "F11" : [
+                {"name":"Face Selection Mode", "mods":[]}
+            ],
+            "F12" : [
+                {"name":"UV Selection Mode", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Animation menu set", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Polygons menu set", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Modeling menu set", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Dynamics menu set", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Rendering menu set", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Obj/Comp Selection Mode", "mods":[]}
+            ],
+            "F9" : [
+                {"name":"Vertex Face Selection Mode", "mods":["ALT"]},
+                {"name":"Vertex Selection Mode", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Shaded Display", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Wireframe Shading", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Group Selection", "mods":["CONTROL"]},
+                {"name":"Repeat Last Command at Mouse Pos", "mods":["SHIFT"]},
+                {"name":"Repeat Last", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Hide Selection", "mods":["CONTROL"]},
+                {"name":"Hide Unselected Objects", "mods":["ALT"]},
+                {"name":"Show Last Hidden", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Show Selection", "mods":["SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Import", "mods":["COMMAND"]},
+                {"name":"Insert Anim Keys Tool", "mods":[]},
+                {"name":"Invert Selection", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Invert Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select Next Intermediate Object", "mods":["CONTROL"]}
+            ],
+            "INSERT" : [
+                {"name":"Enter Tool Edit mode", "mods":[]}
+            ],
+            "J" : [
+                {"name":"(HOLD) Relative-Snap Current Tool", "mods":["SHIFT"]},
+                {"name":"(HOLD) Snap Current Tool", "mods":[]},
+                {"name":"Toggle Multicolor Feedback", "mods":["ALT"]}
+            ],
+            "L" : [
+                {"name":"Isolate View Selected", "mods":["SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move Left 1 Pixel", "mods":["ALT"]},
+                {"name":"Walk Left in Current", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Undo View Change", "mods":[]},
+                {"name":"View Previous Layout", "mods":["SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Default Hotbox Style", "mods":["ALT"]},
+                {"name":"Show/Hide Panel Toolbar", "mods":[]},
+                {"name":"Toggle Main Menu Bar", "mods":["CONTROL"]},
+                {"name":"Toggle Panel Menu Bar", "mods":["SHIFT"]}
+            ],
+            "MINUS" : [
+                {"name":"Decrease manipulator size", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New Scene", "mods":["COMMAND"]},
+                {"name":"New Scene", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Increase manipulator size", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Shaded Display", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Wireframe Shading", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Decrease manipulator size", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Rough Display Quality", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Grow Selection", "mods":["SHIFT"]},
+                {"name":"Timeline: Go to Next Key", "mods":[]},
+                {"name":"Timeline: Next Frame", "mods":["ALT"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Increase manipulator size", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Shade Use All Lights", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Shaded and Textured Display", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Smooth Display Quality", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Medium Display Quality", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Default Display Quality", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Open Scene", "mods":["COMMAND"]},
+                {"name":"Open Scene", "mods":["CONTROL"]}
+            ],
+            "ONE" : [
+                {"name":"Rough Display Quality", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Parent", "mods":[]},
+                {"name":"Unparent", "mods":["SHIFT"]}
+            ],
+            "PERIOD" : [
+                {"name":"Grow Selection", "mods":["SHIFT"]},
+                {"name":"Timeline: Go to Next Key", "mods":[]},
+                {"name":"Timeline: Next Frame", "mods":["ALT"]}
+            ],
+            "PLUS" : [
+                {"name":"Increase manipulator size", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Exit Maya", "mods":["COMMAND"]},
+                {"name":"Exit Maya", "mods":["CONTROL"]},
+                {"name":"Select-Tool", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Create File Reference", "mods":["CONTROL"]},
+                {"name":"Scale Tool", "mods":[]},
+                {"name":"Set Key for Scale", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move Right 1 Pixel", "mods":["ALT"]},
+                {"name":"Walk Right in Current", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Redo View Change", "mods":[]},
+                {"name":"View Next Layout", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Increment And Save", "mods":["ALT", "COMMAND"]},
+                {"name":"Save Scene As", "mods":["SHIFT"]},
+                {"name":"Save Scene", "mods":["COMMAND"]},
+                {"name":"Save Scene", "mods":["CONTROL"]},
+                {"name":"Set Anim Key", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Shade Use All Lights", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Shaded and Textured Display", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"(HOLD) Show Hotbox", "mods":[]},
+                {"name":"Toggle FullScreen View", "mods":["CONTROL"]}
+            ],
+            "T" : [
+                {"name":"Manipulator Tool", "mods":[]},
+                {"name":"Universal Manipulator Tool", "mods":["CONTROL"]}
+            ],
+            "THREE" : [
+                {"name":"Smooth Display Quality", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Medium Display Quality", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Move Up 1 Pixel", "mods":["ALT"]},
+                {"name":"Walk Up Current", "mods":[]}
+            ],
+            "V" : [
+                {"name":"(HOLD) Snap to Points", "mods":[]},
+                {"name":"Go to Min Frame", "mods":["ALT", "SHIFT"]},
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Paste", "mods":["CONTROL"]},
+                {"name":"Toggle Playback On/Off", "mods":["ALT"]}
+            ],
+            "W" : [
+                {"name":"Move Tool", "mods":[]},
+                {"name":"Set Key for Translate", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"(HOLD) Snap to Grids", "mods":[]},
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Cut", "mods":["CONTROL"]}
+            ],
+            "Y" : [
+                {"name":"Last Used Tool", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Redo", "mods":["SHIFT"]},
+                {"name":"Undo", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Default Display Quality", "mods":[]}
+            ]
+        },
+        "Mode: Modeling Operations" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Convert NURBS/Poly to Subdiv", "mods":["ALT"]},
+                {"name":"Subdiv Proxy >", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Subdiv Proxy", "mods":["CONTROL"]},
+                {"name":"Toggle Original/Smooth Mesh", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Convert Selection to Edges", "mods":["CONTROL"]}
+            ],
+            "F11" : [
+                {"name":"Covert Selection to Faces", "mods":["CONTROL"]}
+            ],
+            "F12" : [
+                {"name":"Covert Selection to UVs", "mods":["CONTROL"]}
+            ],
+            "F9" : [
+                {"name":"Convert Selection to Vertices", "mods":["CONTROL"]}
+            ],
+            "H" : [
+                {"name":"Display Coarser Subdiv Level", "mods":["CONTROL"]}
+            ],
+            "I" : [
+                {"name":"Select/refine subdiv surface component", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Lock/Unlock Length of Curve", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Default Polygon Mesh Display", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Smooth Polygon Mesh Display", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Cage + Smooth Polygon Mesh Display", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Default Polygon Mesh Display", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Decrease Division Levels", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Increase Division Levels", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Smooth Polygon Mesh Display", "mods":[]}
+            ],
+            "TILDE" : [
+                {"name":"Convert NURBS/Poly Menu", "mods":["ALT", "SHIFT"]},
+                {"name":"Display Original and Smooth Mesh", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Cage + Smooth Polygon Mesh Display", "mods":[]}
+            ]
+        },
+        "Mode: Move, Rotate, Scale" : {
+            "INSERT" : [
+                {"name":"Toggle Move Pivot/Object", "mods":[]}
+            ]
+        },
+        "Mode: Painting Tools" : {
+            "A" : [
+                {"name":"Turn Show Wireframe on or off", "mods":["ALT"]}
+            ],
+            "B" : [
+                {"name":"(HOLD) Modify Lower Brush Radius", "mods":["SHIFT"]},
+                {"name":"(HOLD) Modify Upper Brush Radius", "mods":[]},
+                {"name":"Edit Paint Effects Brush Settings", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Turn Color Feedback on or off", "mods":["ALT"]}
+            ],
+            "EIGHT" : [
+                {"name":"Open Paint Effects panel", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Flood with the current value", "mods":["ALT"]}
+            ],
+            "M" : [
+                {"name":"Modify maximum displacement", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Modify paint value", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Open Paint Effects panel", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Switch to pick color mode", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Toggle Reflection on or off", "mods":["ALT"]}
+            ],
+            "SLASH" : [
+                {"name":"Switch to pick color mode", "mods":[]}
+            ]
+        }
+    }
+}

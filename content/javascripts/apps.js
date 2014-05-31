@@ -22,6 +22,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "Audodesk Maya",
+        data: {
+            "2014": {
+                "mac": "audodesk-maya_2014_mac.json",
+                "windows": "audodesk-maya_2014_windows.json",
+            },
+        }
+    },
+    {
         name: "Blender",
         data: {
             "v2.70": {
