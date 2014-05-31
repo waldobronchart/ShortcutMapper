@@ -70,10 +70,12 @@ class RawDocsParser(object):
                 # This row contains 3 cols with shortcut information
                 else:
                     cols = row.find_all("td")
-                    mods, keys, label = ("", "", "")
+                    mods, or_mac_cmd_mod, keys, label = ("", False, "", "")
 
                     if cols[0].find('p') is not None:
-                        mods = self._clean_text(cols[0].p.get_text())
+                        mods_rawtext = cols[0].p.get_text()
+                        mods = self._clean_text(mods_rawtext)
+                        or_mac_cmd_mod = '(or' in mods_rawtext
                     if cols[1].find('p') is not None:
                         keys = self._clean_text(cols[1].p.get_text())
                     if cols[2].find('p') is not None:
@@ -82,7 +84,10 @@ class RawDocsParser(object):
                     keys_win = keys
                     if len(mods) > 0:
                         keys_win = mods + " + " + keys
-                    keys_mac = keys_win.replace("ctrl", "cmd").replace("Ctrl", "Cmd")
+
+                    keys_mac = keys_win
+                    if or_mac_cmd_mod:
+                        keys_mac = keys_mac + " / " + keys_mac.replace('Ctrl', 'Cmd')
 
                     self.idata.add_shortcut(context_name, label, keys_win, keys_mac)
                     log.debug('...found shortcut "%s"', label)
