@@ -241,6 +241,7 @@
                 {"name":"Toggle FullScreen View", "mods":["CONTROL"]}
             ],
             "T" : [
+                {"name":"Assign New Material", "mods":["SHIFT"]},
                 {"name":"Manipulator Tool", "mods":[]},
                 {"name":"Universal Manipulator Tool", "mods":["CONTROL"]}
             ],

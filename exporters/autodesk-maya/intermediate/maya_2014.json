@@ -131,7 +131,10 @@
         "Set Key for Rotate": ["Shift + E", "Shift + E"],
         "Set Key for Scale": ["Shift + R", "Shift + R"],
         "Set Key for Translate": ["Shift + W", "Shift + W"],
-        "Toggle Multicolor Feedback": ["Alt + J", "Alt + J"]
+        "Toggle Multicolor Feedback": ["Alt + J", "Alt + J"],
+
+
+        "Assign New Material": ["Shift + T", "Shift + T"]
     },
     "Mode: Move, Rotate, Scale": {
         "Toggle Move Pivot/Object": ["Insert", "Insert"]
