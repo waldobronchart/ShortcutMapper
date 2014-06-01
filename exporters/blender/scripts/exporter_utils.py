@@ -146,7 +146,7 @@ def override_layers(shortcut_context, item):
     shortcut_context.add_shortcut(shortcut)
 
     # Default shortcut
-    return shmaplib.Shortcut("Switch To Layer %s" % (nr), item.type, mods)
+    return shmaplib.Shortcut("Switch To Layer %s" % (nr), item.type, [])
 
 def override_subdivisionset(shortcut_context, item):
     name = "Set Subdivision Level To %s" % item.properties.get("level")
