@@ -16,11 +16,30 @@ from constants import DIR_CONTENT_APPDATA
 class IntermediateShortcutData(object):
     """Intermediate shortcut data format for applications.
 
-    This can be used as output from various shortcut document parsers and can be
-    merged together at the end.
+    This can be used as output from various shortcut document parsers and can be merged together at the end.
 
-    A serialized IntermediateShortcutData document can then be hand-edited to ensure the data
-    going exported to the web application is clean and clear."""
+    A serialized IntermediateShortcutData document can then be hand-edited to ensure the data going exported
+    to the web application is clean and clear.
+
+    The data format for intermediate data (JSON) is as follows:
+    {
+        "CONTEXT NAME": {
+            "SHORTCUT NAME": ["WINDOWS SHORTCUT KEYS", "MAC SHORTCUT KEYS"],
+            ...
+        },
+        ...
+    }
+
+    Linux is usually the same as windows shortcuts, so we convieniently ignore that for now.
+
+    The shortcut keys can be in the following formats:
+    - "T"               Just one key
+    - "Ctrl + T"        Short form allowed
+    - "Control + T"
+    - "Alt + +"         Special cases handled correctly
+    - "Shift + 0-9"     Range of numbers (Equivalent to having the same shortcut name on all buttons)
+    - "Space / Z"       '/' is used as a separator if shortcut has multiple options
+    """
 
     class Shortcut:
         """Intermediate Shortcut structure"""
@@ -189,7 +208,7 @@ class IntermediateDataExporter(object):
             # Parse modifiers
             mods = [m.strip(u' ') for m in parts[:-1]] #all but last
 
-            # For numerical key shortcuts, the adobe documentation specifies a "range of keys"
+            # Handle a range of keys (Example: "Ctrl + 0-9")
             #  which will result in multiple shortcuts with the same label
             if re.match("[0-9]*.-.[0-9]*", key):
                 start = int(key[0])
