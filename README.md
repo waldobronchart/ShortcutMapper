@@ -61,7 +61,7 @@ python exporters/adobe-photoshop/scripts/export.py -a
 
 ## Adding shortcuts for a new Application
 
-**This documentation is incomplete, I'm working on it :)**
+**The best example you can look at is Autodesk Maya under /exporters/autodesk-maya**
 
 ### Exporters directory setup
 
@@ -69,20 +69,29 @@ First, try and find an online resource that lists all the application shortcuts 
 
 Make sure it's up-to-date and the list is complete.
 
-Now you're going to use that resource to export an to intermediate data format that can be edited by hand easily (like photoshop and lightroom).
+You're going to use that resource to export to an intermediate data format that can be edited by hand easily (See Autodesk Maya for a good example).
 
 Create a directory structure under **/exporters** as so (for reference, look at the adobe applications):
 ```
 /exporters
-    /my_app
-        /intermediate    One-time exports from raw data, which have been hand edited to
-                          fix faulty shortcuts and shorten labels that are too long
-        /raw             Source used to export to an intermediate data format
+    /my-app
+        /intermediate    One-time conversions from raw data, which have been hand edited to
+                          fix faulty shortcuts and shorten labels that are too long.
+        /raw             Source(s) used to build a full shortcut list in the intermediate data format
         /scripts         Scripts to convert raw to intermediate, and then intermediate to
                           a web-application supported format in /content/appdata/...
 ```
 
-Then ideally, you're going to write some scripts to convert data to a more 
+Then ideally, you're going to write some scripts (Python recommended) that drive the conversions. I like to have two scripts as follows:
+```
+/exporters
+    /my-app
+        /scripts
+            /convert.py     This script converts from raw sources to intermediate
+            /export.py      This script exports the intermediate format to the web application
+```
+
+These python scripts can then use the shmaplib python utility library which does a lot of the heavy lifting.
 
 ### Using SHMAPLIB
 
@@ -99,7 +108,16 @@ sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
 import shmaplib
 ```
 
-From there, you can parse your intermediate data format and export it to the web application using these structures:
+From there, you can parse your intermediate data format and export it to the web application. Have a look at the **Autodesk Maya** scripts for a good example. Here's a minimal example (more documentation in /shmaplib/intermediate.py:
+```
+import shmaplib
+
+exporter = shmaplib.IntermediateDataExporter(filepath, "Audodesk Maya", version, "Global Context")
+exporter.parse()
+exporter.export() # Exports to /content/appdata/*.json
+```
+
+If your application doesn't have an intermediate format (like Blender), you can use these structures to build up the data:
 - *shmaplib.ApplicationConfig*: Main application data format (name, os, version, and shortcut-contexts)
 - *shmaplib.ShortcutContext*: A container for shortcuts for a specific context (Lightroom: Global, Develop, Library)
 - *shmaplib.Shortcut*: Data format for a shortcut (name, key and modifiers)
@@ -111,8 +129,6 @@ AppConfig has multiple ShortcutContexts, which has multiple Shortcuts.
 The AppConfig has a serialize function that exports it into the correct directory under /content/appdata and adds the application to the javascript file under /content/javascripts/apps.js
 
 Look in shmaplib/appdata.py for more specific docs.
-
-**docs are work in progress**
 
 
 
