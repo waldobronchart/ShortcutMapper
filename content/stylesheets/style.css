@@ -27,7 +27,7 @@ body {
 
 header {
     display: table-row;
-    color: #505050;
+    color: #303030;
     width: 100%;
     height: 1px;
     text-align: center;
@@ -37,14 +37,14 @@ header h1 {
     font-style: italic;
     font-weight: 300;
     font-size: 1.8em;
-    margin: 26px 0 2px 0;
+    margin: 22px 0 2px 0;
 }
 
 header p {
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7em;
-    line-height: 0.5em;
+    font-size: 0.8em;
+    line-height: 1em;
     margin: 0;
 }
 
@@ -175,7 +175,7 @@ nav .chosen-container-single .chosen-single,
     font-size: 0.8em;
     font-weight: 400;
     text-decoration: none;
-    color: #777777;
+    color: #606060;
     white-space: nowrap;
 }
 .chosen-container-active.chosen-with-drop .chosen-single,
