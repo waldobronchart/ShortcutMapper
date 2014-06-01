@@ -8,7 +8,7 @@ var pageManager = new function PageManager() {
     selectedKeyboardType = null;
 
     minSearchLength = 2;
-    maxSearchResults = 8;
+    maxSearchResults = 50;
     prevNumSearchResults = 0;
     selectedSearchResult = -1;
     selectedSearchShortcut = {

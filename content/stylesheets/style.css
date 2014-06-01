@@ -901,6 +901,8 @@ div#keyboard button.mod-other.mod-active {
     border-radius: 2px;
     box-shadow: 0 1px 1px 1px #b2b1b1;
     min-width: 400px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 #search_results table {
     -webkit-touch-callout: none;
