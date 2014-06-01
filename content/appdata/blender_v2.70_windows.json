@@ -46,7 +46,7 @@
             ],
             "EIGHT" : [
                 {"name":"Switch To Layer 18", "mods":["ALT"]},
-                {"name":"Switch To Layer 8", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 8", "mods":[]},
                 {"name":"Toggle Layer 18", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 8", "mods":["SHIFT"]}
             ],
@@ -61,14 +61,14 @@
             "FIVE" : [
                 {"name":"Set Subdivision Level To 5", "mods":["CONTROL"]},
                 {"name":"Switch To Layer 15", "mods":["ALT"]},
-                {"name":"Switch To Layer 5", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 5", "mods":[]},
                 {"name":"Toggle Layer 15", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 5", "mods":["SHIFT"]}
             ],
             "FOUR" : [
                 {"name":"Set Subdivision Level To 4", "mods":["CONTROL"]},
                 {"name":"Switch To Layer 14", "mods":["ALT"]},
-                {"name":"Switch To Layer 4", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 4", "mods":[]},
                 {"name":"Toggle Layer 14", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 4", "mods":["SHIFT"]}
             ],
@@ -126,7 +126,7 @@
             ],
             "NINE" : [
                 {"name":"Switch To Layer 19", "mods":["ALT"]},
-                {"name":"Switch To Layer 9", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 9", "mods":[]},
                 {"name":"Toggle Layer 19", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 9", "mods":["SHIFT"]}
             ],
@@ -201,7 +201,7 @@
             ],
             "ONE" : [
                 {"name":"Set Subdivision Level To 1", "mods":["CONTROL"]},
-                {"name":"Switch To Layer 1", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 1", "mods":[]},
                 {"name":"Switch To Layer 11", "mods":["ALT"]},
                 {"name":"Toggle Layer 1", "mods":["SHIFT"]},
                 {"name":"Toggle Layer 11", "mods":["ALT", "SHIFT"]}
@@ -235,13 +235,13 @@
             ],
             "SEVEN" : [
                 {"name":"Switch To Layer 17", "mods":["ALT"]},
-                {"name":"Switch To Layer 7", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 7", "mods":[]},
                 {"name":"Toggle Layer 17", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 7", "mods":["SHIFT"]}
             ],
             "SIX" : [
                 {"name":"Switch To Layer 16", "mods":["ALT"]},
-                {"name":"Switch To Layer 6", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 6", "mods":[]},
                 {"name":"Toggle Layer 16", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 6", "mods":["SHIFT"]}
             ],
@@ -266,14 +266,14 @@
             "THREE" : [
                 {"name":"Set Subdivision Level To 3", "mods":["CONTROL"]},
                 {"name":"Switch To Layer 13", "mods":["ALT"]},
-                {"name":"Switch To Layer 3", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 3", "mods":[]},
                 {"name":"Toggle Layer 13", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 3", "mods":["SHIFT"]}
             ],
             "TWO" : [
                 {"name":"Set Subdivision Level To 2", "mods":["CONTROL"]},
                 {"name":"Switch To Layer 12", "mods":["ALT"]},
-                {"name":"Switch To Layer 2", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 2", "mods":[]},
                 {"name":"Toggle Layer 12", "mods":["ALT", "SHIFT"]},
                 {"name":"Toggle Layer 2", "mods":["SHIFT"]}
             ],
@@ -299,7 +299,7 @@
             ],
             "ZERO" : [
                 {"name":"Set Subdivision Level To 0", "mods":["CONTROL"]},
-                {"name":"Switch To Layer 10", "mods":["ALT", "COMMAND", "CONTROL", "SHIFT"]},
+                {"name":"Switch To Layer 10", "mods":[]},
                 {"name":"Switch To Layer 20", "mods":["ALT"]},
                 {"name":"Toggle Layer 10", "mods":["SHIFT"]},
                 {"name":"Toggle Layer 20", "mods":["ALT", "SHIFT"]}
