@@ -497,7 +497,8 @@
                 {"name":"Cycle Eraser Tools", "mods":["SHIFT"]},
                 {"name":"Eraser Tool", "mods":[]},
                 {"name":"Merge Layers", "mods":["COMMAND"]},
-                {"name":"Merge Visible", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Merge Visible", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Stamp Visible", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
             "END" : [
                 {"name":"Move view to lower right corner", "mods":[]}

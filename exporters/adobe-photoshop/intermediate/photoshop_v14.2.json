@@ -60,6 +60,7 @@
         "Send Layer to Back": ["Shift+Ctrl+[", "Shift+Cmd+["],
         "Merge Layers": ["Ctrl+E", "Cmd+E"],
         "Merge Visible": ["Shift+Ctrl+E", "Shift+Cmd+E"],
+        "Stamp Visible": ["Shift+Ctrl+Alt+E", "Shift+Cmd+Alt+E"],
         "Select All": ["Ctrl+A", "Cmd+A"],
         "Deselect": ["Ctrl+D", "Cmd+D"],
         "Reselect": ["Shift+Ctrl+D", "Shift+Cmd+D"],
