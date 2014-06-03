@@ -168,6 +168,8 @@ class IntermediateDataExporter(object):
         #  "Shift + Up Arrow / Shift + Down Arrow or Shift + + / Shift + -"
 
         # Cleanup the string and replace edge cases
+        keys = re.sub("numpad \+", "NUMPAD_PLUS", keys, flags=re.IGNORECASE)
+        keys = re.sub("numpad /", "NUMPAD_SLASH", keys, flags=re.IGNORECASE)
         keys = keys.replace(" or +", " or TEMP_PLUS")
         keys = keys.replace(" or /", " or TEMP_SLASH")
         keys = keys.replace(" + +", " + TEMP_PLUS")
@@ -225,7 +227,7 @@ class IntermediateDataExporter(object):
 
         return shortcuts
 
-    def parse(self):
+    def parse(self, windows=True, mac=True):
         if not os.path.exists(self.source_file):
             log.error("Source file '%s' does not exist", self.source_file)
             return
@@ -239,22 +241,28 @@ class IntermediateDataExporter(object):
         idata.load(self.source_file)
 
         # WINDOWS: Iterate contexts and shortcuts
-        log.info("Parsing intermediate data for Windows shortcuts")
-        for context in idata.contexts:
-            context_win = self.app_win.get_or_create_new_context(context.name)
-            for shortcut in context.shortcuts:
-                for s in self._parse_shortcut(shortcut.name, shortcut.win_keys):
-                    context_win.add_shortcut(s)
+        if windows:
+            log.info("Parsing intermediate data for Windows shortcuts")
+            for context in idata.contexts:
+                context_win = self.app_win.get_or_create_new_context(context.name)
+                for shortcut in context.shortcuts:
+                    for s in self._parse_shortcut(shortcut.name, shortcut.win_keys):
+                        context_win.add_shortcut(s)
+            log.info("...DONE\n")
 
         # MAC: Iterate contexts and shortcuts
-        log.info("Parsing intermediate data for MacOS shortcuts")
-        for context in idata.contexts:
-            context_mac = self.app_mac.get_or_create_new_context(context.name)
-            for shortcut in context.shortcuts:
-                for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
-                    context_mac.add_shortcut(s)
+        if mac:
+            log.info("Parsing intermediate data for MacOS shortcuts")
+            for context in idata.contexts:
+                context_mac = self.app_mac.get_or_create_new_context(context.name)
+                for shortcut in context.shortcuts:
+                    for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
+                        context_mac.add_shortcut(s)
+            log.info("...DONE\n")
 
 
-    def export(self):
-        self.app_win.serialize(DIR_CONTENT_APPDATA)
-        self.app_mac.serialize(DIR_CONTENT_APPDATA)
+    def export(self, windows=True, mac=True):
+        if windows:
+            self.app_win.serialize(DIR_CONTENT_APPDATA)
+        if mac:
+            self.app_mac.serialize(DIR_CONTENT_APPDATA)
