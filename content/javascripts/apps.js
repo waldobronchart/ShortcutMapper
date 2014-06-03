@@ -22,6 +22,14 @@ var sitedata_apps = [
         }
     },
     {
+        name: "Audodesk 3dsMax",
+        data: {
+            "2015": {
+                "windows": "audodesk-3dsmax_2015_windows.json",
+            },
+        }
+    },
+    {
         name: "Audodesk Maya",
         data: {
             "2014": {
