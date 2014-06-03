@@ -174,11 +174,27 @@ class ApplicationConfig(object):
                         mods_used.append(mod)
         return sorted(mods_used)
 
+    def is_empty(self):
+        """Returns true if all contexts are empty or AppConfig has no contexts"""
+        for context in self.contexts.values():
+            if len(context.shortcuts) > 0:
+                return False
+        return True
+
     def serialize(self, output_dir):
+        """Serialize this class into a .json file with name: 'APP-NAME_VERSION_OS.json'
+        Returns True for succes, False for failure"""
+
         assert os.path.isdir(output_dir), "The output dir is not a directory"
         assert self.os in VALID_OS_NAMES, "The application Operating system must be one of these: " + str(VALID_OS_NAMES)
         assert self.version is not None and len(self.version) > 0, "The application version must be assigned"
 
+        # Check for empty
+        if self.is_empty():
+            log.warn("Cannot export ApplicationConfig because it is empty")
+            return False
+
+        # todo: handle colons in name
         appname_for_file = self.name.lower().replace(' ', '-')
         output_path = os.path.join(output_dir, "{0}_{1}_{2}.json".format(appname_for_file, self.version, self.os))
         log.info('serializing ApplicationConfig to %s', output_path)
@@ -271,6 +287,7 @@ def regenerate_site_apps_js():
     app_sitedata = SiteAppDatas()
     for path in glob.glob(os.path.join(DIR_CONTENT_APPDATA, "*.json")):
         with open(path) as appdata_file:
+            log.debug('...adding %s', path)
             appdata = json.load(appdata_file)
 
             app_name = appdata["name"]

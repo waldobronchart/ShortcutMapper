@@ -73,6 +73,22 @@ class DataContainer(object):
         u'numpad_7' : ['NUMPAD_SEVEN'],
         u'numpad_8' : ['NUMPAD_EIGHT'],
         u'numpad_9' : ['NUMPAD_NINE'],
+        u'numpad 0' : ['NUMPAD_ZERO'],
+        u'numpad 1' : ['NUMPAD_ONE'],
+        u'numpad 2' : ['NUMPAD_TWO'],
+        u'numpad 3' : ['NUMPAD_THREE'],
+        u'numpad 4' : ['NUMPAD_FOUR'],
+        u'numpad 5' : ['NUMPAD_FIVE'],
+        u'numpad 6' : ['NUMPAD_SIX'],
+        u'numpad 7' : ['NUMPAD_SEVEN'],
+        u'numpad 8' : ['NUMPAD_EIGHT'],
+        u'numpad 9' : ['NUMPAD_NINE'],
+        u'numpad -' : ['NUMPAD_MINUS'],
+        u'numpad +' : ['NUMPAD_PLUS'],
+        u'numpad =' : ['NUMPAD_EQUAL'],
+        u'numpad *' : ['NUMPAD_ASTERISK'],
+        u'numpad /' : ['NUMPAD_SLASH'],
+        u'numpad .' : ['NUMPAD_PERIOD'],
 
         # Non-Enlish keyboard characters
         # Reference used: http://www.ascii.cl/htmlcodes.htm
