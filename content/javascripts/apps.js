@@ -50,4 +50,13 @@ var sitedata_apps = [
             },
         }
     },
+    {
+        name: "Sublime Text",
+        data: {
+            "v2": {
+                "mac": "sublime-text_v2_mac.json",
+                "windows": "sublime-text_v2_windows.json",
+            },
+        }
+    },
 ];
