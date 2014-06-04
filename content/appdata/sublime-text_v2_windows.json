@@ -1,0 +1,83 @@
+{
+    "name" : "Sublime Text",
+    "version" : "v2",
+    "os" : "windows",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Plugin: emmet" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Split/Join Tag", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"Match Tag Pair Outward", "mods":["CONTROL"]},
+                {"name":"Select Item", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrement by 0.1", "mods":["ALT"]},
+                {"name":"Decrement by 1", "mods":["CONTROL"]},
+                {"name":"Decrement by 10", "mods":["ALT", "SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Expand Abbreviation", "mods":["CONTROL"]}
+            ],
+            "ENTER" : [
+                {"name":"Interactive “Expand Abbreviation”", "mods":["ALT", "CONTROL"]}
+            ],
+            "G" : [
+                {"name":"Wrap With Abbreviation", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Go to Matching Pair", "mods":["ALT", "CONTROL"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Go to Edit Point", "mods":["ALT", "CONTROL"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Select Item", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Toggle Comment", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Match Tag Pair Inward", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "PERIOD" : [
+                {"name":"Select Item", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Reflect CSS Value", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Go to Edit Point", "mods":["ALT", "CONTROL"]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Remove Tag", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Encode/Decode Image to data:URL", "mods":["CONTROL"]},
+                {"name":"Rename Tag", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SLASH" : [
+                {"name":"Toggle Comment", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Expand Abbreviation", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Update Image Size", "mods":["CONTROL"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increment by 0.1", "mods":["ALT"]},
+                {"name":"Increment by 1", "mods":["CONTROL"]},
+                {"name":"Increment by 10", "mods":["ALT", "SHIFT"]}
+            ],
+            "Y" : [
+                {"name":"Evaluate Math Expression", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "ZERO" : [
+                {"name":"Match Tag Pair Inward", "mods":["CONTROL", "SHIFT"]}
+            ]
+        }
+    }
+}
