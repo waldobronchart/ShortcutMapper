@@ -20,7 +20,7 @@ def export_file(filepath, testmode):
     filename, ext = os.path.splitext(os.path.basename(filepath))
     version = filename.split('_')[1]
 
-    exporter = shmaplib.IntermediateDataExporter(filepath, "Audodesk 3dsMax", version, "Main UI")
+    exporter = shmaplib.IntermediateDataExporter(filepath, "Autodesk 3dsMax", version, "Main UI")
     exporter.parse(mac=False)
     if not testmode:
         exporter.export(mac=False)

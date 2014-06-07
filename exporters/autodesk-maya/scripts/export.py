@@ -20,7 +20,7 @@ def export_file(filepath, testmode):
     filename, ext = os.path.splitext(os.path.basename(filepath))
     version = filename.split('_')[1]
 
-    exporter = shmaplib.IntermediateDataExporter(filepath, "Audodesk Maya", version, "Global Context")
+    exporter = shmaplib.IntermediateDataExporter(filepath, "Autodesk Maya", version, "Global Context")
     exporter.parse()
     if not testmode:
         exporter.export()

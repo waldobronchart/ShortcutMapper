@@ -22,19 +22,19 @@ var sitedata_apps = [
         }
     },
     {
-        name: "Audodesk 3dsMax",
+        name: "Autodesk 3dsMax",
         data: {
             "2015": {
-                "windows": "audodesk-3dsmax_2015_windows.json",
+                "windows": "autodesk-3dsmax_2015_windows.json",
             },
         }
     },
     {
-        name: "Audodesk Maya",
+        name: "Autodesk Maya",
         data: {
             "2014": {
-                "mac": "audodesk-maya_2014_mac.json",
-                "windows": "audodesk-maya_2014_windows.json",
+                "mac": "autodesk-maya_2014_mac.json",
+                "windows": "autodesk-maya_2014_windows.json",
             },
         }
     },

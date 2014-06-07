@@ -1,8 +1,8 @@
 {
-    "name" : "Audodesk Maya",
+    "name" : "Autodesk Maya",
     "version" : "2014",
-    "os" : "mac",
-    "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
+    "os" : "windows",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
     "default_context" : "Global Context",
     "contexts" : {
         "Dialog: Rendering" : {
@@ -18,7 +18,6 @@
                 {"name":"Channel Box / Attrib Editor", "mods":["CONTROL"]},
                 {"name":"Frame All in Active Panel", "mods":[]},
                 {"name":"Frame All in All Views", "mods":["SHIFT"]},
-                {"name":"Select All", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Select All", "mods":["CONTROL", "SHIFT"]}
             ],
             "B" : [
@@ -26,7 +25,6 @@
             ],
             "C" : [
                 {"name":"(HOLD) Snap to Curves", "mods":[]},
-                {"name":"Copy", "mods":["COMMAND"]},
                 {"name":"Copy", "mods":["CONTROL"]}
             ],
             "COMMA" : [
@@ -110,9 +108,7 @@
                 {"name":"Show Selection", "mods":["SHIFT"]}
             ],
             "I" : [
-                {"name":"Import", "mods":["COMMAND"]},
                 {"name":"Insert Anim Keys Tool", "mods":[]},
-                {"name":"Invert Selection", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Invert Selection", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Select Next Intermediate Object", "mods":["CONTROL"]}
             ],
@@ -145,7 +141,6 @@
                 {"name":"Decrease manipulator size", "mods":[]}
             ],
             "N" : [
-                {"name":"New Scene", "mods":["COMMAND"]},
                 {"name":"New Scene", "mods":["CONTROL"]}
             ],
             "NUMPAD_EQUAL" : [
@@ -187,7 +182,6 @@
                 {"name":"Default Display Quality", "mods":[]}
             ],
             "O" : [
-                {"name":"Open Scene", "mods":["COMMAND"]},
                 {"name":"Open Scene", "mods":["CONTROL"]}
             ],
             "ONE" : [
@@ -206,7 +200,6 @@
                 {"name":"Increase manipulator size", "mods":[]}
             ],
             "Q" : [
-                {"name":"Exit Maya", "mods":["COMMAND"]},
                 {"name":"Exit Maya", "mods":["CONTROL"]},
                 {"name":"Select-Tool", "mods":[]}
             ],
@@ -224,9 +217,7 @@
                 {"name":"View Next Layout", "mods":["SHIFT"]}
             ],
             "S" : [
-                {"name":"Increment And Save", "mods":["ALT", "COMMAND"]},
                 {"name":"Save Scene As", "mods":["SHIFT"]},
-                {"name":"Save Scene", "mods":["COMMAND"]},
                 {"name":"Save Scene", "mods":["CONTROL"]},
                 {"name":"Set Anim Key", "mods":[]}
             ],
@@ -258,7 +249,6 @@
             "V" : [
                 {"name":"(HOLD) Snap to Points", "mods":[]},
                 {"name":"Go to Min Frame", "mods":["ALT", "SHIFT"]},
-                {"name":"Paste", "mods":["COMMAND"]},
                 {"name":"Paste", "mods":["CONTROL"]},
                 {"name":"Toggle Playback On/Off", "mods":["ALT"]}
             ],
@@ -268,7 +258,6 @@
             ],
             "X" : [
                 {"name":"(HOLD) Snap to Grids", "mods":[]},
-                {"name":"Cut", "mods":["COMMAND"]},
                 {"name":"Cut", "mods":["CONTROL"]}
             ],
             "Y" : [
