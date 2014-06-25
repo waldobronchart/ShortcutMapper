@@ -254,7 +254,7 @@
         _destroy: function() {
             // Deregister key events
             $(document).off("keydown", null, this._keyDown);
-            $(document).off("keyup", null, this._keyDown);
+            $(document).off("keyup", null, this._keyUp);
         }
     });
 })(jQuery);
