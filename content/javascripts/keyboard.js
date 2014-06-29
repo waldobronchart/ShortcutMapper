@@ -18,6 +18,8 @@
             65:"A", 66:"B", 67:"C", 68:"D", 69:"E", 70:"F", 71:"G", 72:"H", 73:"I", 74:"J", 75:"K", 76:"L",
             77:"M", 78:"N", 79:"O", 80:"P", 81:"Q", 82:"R", 83:"S", 84:"T", 85:"U", 86:"V", 87:"W", 88:"X", 89:"Y", 90:"Z",
             91:"COMMAND",
+            93:"COMMAND",
+            224:"COMMAND",
             96:"NUMPAD_ZERO", 97:"NUMPAD_ONE", 98:"NUMPAD_TWO", 99:"NUMPAD_THREE", 100:"NUMPAD_FOUR", 101:"NUMPAD_FIVE",
             102:"NUMPAD_SIX", 103:"NUMPAD_SEVEN", 104:"NUMPAD_EIGHT", 105:"NUMPAD_NINE",
             106: "NUMPAD_ASTERISK", 107:"NUMPAD_PLUS", 109:"NUMPAD_MINUS", 110:"NUMPAD_PERIOD", 111: "NUMPAD_SLASH",
