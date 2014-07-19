@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
-import sys
 import os
 import json
-import logging
 import codecs
 import re
 
 from logger import getlog
 log = getlog()
 
-from appdata import Shortcut, ShortcutContext, ApplicationConfig
+from appdata import Shortcut, ApplicationConfig
 from constants import DIR_CONTENT_APPDATA
+
 
 class IntermediateShortcutData(object):
     """Intermediate shortcut data format for applications.
@@ -30,7 +29,7 @@ class IntermediateShortcutData(object):
         ...
     }
 
-    Linux is usually the same as windows shortcuts, so we convieniently ignore that for now.
+    Linux is usually the same as windows shortcuts, so we conveniently ignore that for now.
 
     The shortcut keys can be in the following formats:
     - "T"               Just one key
@@ -53,7 +52,7 @@ class IntermediateShortcutData(object):
             text = text.replace('"', '\\"')
             return text
 
-        def _serialize(self):
+        def serialize(self):
             return u'        "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
                                                               self._escape(self.win_keys), self._escape(self.mac_keys))
 
@@ -76,14 +75,13 @@ class IntermediateShortcutData(object):
                     return s
             return None
 
-        def _serialize(self):
+        def serialize(self):
             ctx_str = u'    "{0}": {{\n'.format(self.name)
             for s in self.shortcuts:
-                ctx_str += s._serialize()
+                ctx_str += s.serialize()
             ctx_str = ctx_str.strip(",\n")
             ctx_str += u'\n    },\n'
             return ctx_str
-
 
     def __init__(self):
         super(IntermediateShortcutData, self).__init__()
@@ -129,14 +127,13 @@ class IntermediateShortcutData(object):
         """Save the intermediate data to a json file"""
         json_str = "{\n"
         for context in self.contexts:
-            json_str += context._serialize()
+            json_str += context.serialize()
         json_str = json_str.strip(",\n")
         json_str += "\n}\n"
 
         f = codecs.open(output_filepath, encoding='utf-8', mode='w+')
         f.write(json_str)
         f.close()
-
 
 
 class IntermediateDataExporter(object):
@@ -196,7 +193,7 @@ class IntermediateDataExporter(object):
             parts = combo.split("+")
 
             # Parse main key
-            key = parts[-1] #last element
+            key = parts[-1]  # last element
             key = key.strip(' ')
             if key == 'TEMP_SLASH':
                 key = '/'
@@ -208,7 +205,7 @@ class IntermediateDataExporter(object):
                 continue
 
             # Parse modifiers
-            mods = [m.strip(u' ') for m in parts[:-1]] #all but last
+            mods = [m.strip(u' ') for m in parts[:-1]]  # all but last
 
             # Handle a range of keys (Example: "Ctrl + 0-9")
             #  which will result in multiple shortcuts with the same label
@@ -223,7 +220,6 @@ class IntermediateDataExporter(object):
             else:
                 shortcut = Shortcut(name, key, mods)
                 shortcuts.append(shortcut)
-
 
         return shortcuts
 
@@ -259,7 +255,6 @@ class IntermediateDataExporter(object):
                     for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
                         context_mac.add_shortcut(s)
             log.info("...DONE\n")
-
 
     def export(self, windows=True, mac=True):
         if windows:

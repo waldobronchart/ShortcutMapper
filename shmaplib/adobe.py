@@ -1,18 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import sys
 import os
-import glob
-import argparse
 import json
-import logging
 import re
 import codecs
 from bs4 import BeautifulSoup
 
-from appdata import Shortcut, ShortcutContext, ApplicationConfig
-from keynames import get_all_valid_keynames, get_valid_keynames, is_valid_keyname
-from constants import DIR_CONTENT_APPDATA, VALID_OS_NAMES
+from appdata import Shortcut, ApplicationConfig
+from constants import DIR_CONTENT_APPDATA
 
 from logger import getlog
 log = getlog()
@@ -23,6 +18,7 @@ def _get_file_contents(source):
     contents = f.read()
     f.close()
     return contents
+
 
 class AdobeIntermediateData(object):
     """Intermediate data format for adobe shortcuts.
@@ -39,12 +35,13 @@ class AdobeIntermediateData(object):
             self.win_keys = win_keys
             self.mac_keys = mac_keys
 
-        def _escape(self, text):
+        @staticmethod
+        def _escape(text):
             text = text.replace('\\', '\\\\')
             text = text.replace('"', '\\"')
             return text
 
-        def _serialize(self):
+        def serialize(self):
             return u'        "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
                                                               self._escape(self.win_keys), self._escape(self.mac_keys))
 
@@ -66,14 +63,13 @@ class AdobeIntermediateData(object):
                     return s
             return None
 
-        def _serialize(self):
+        def serialize(self):
             ctx_str = u'    "{0}": {{\n'.format(self.name)
             for s in self.shortcuts:
-                ctx_str += s._serialize()
+                ctx_str += s.serialize()
             ctx_str = ctx_str.strip(",\n")
             ctx_str += u'\n    },\n'
             return ctx_str
-
 
     def __init__(self):
         super(AdobeIntermediateData, self).__init__()
@@ -103,24 +99,24 @@ class AdobeIntermediateData(object):
                     if shortcut.mac_keys is None or len(shortcut.mac_keys) == 0:
                         shortcut.mac_keys = source_shortcut.mac_keys
 
-    def load(self, filepath):
+    def load(self, file_path):
         self.contexts = []
         self._context_lookup = {}
 
-        with codecs.open(filepath, encoding='utf-8') as idata_file:
+        with codecs.open(file_path, encoding='utf-8') as idata_file:
             json_idata = json.load(idata_file)
             for context_name, shortcuts in json_idata.iteritems():
                 for shortcut_name, os_keys in shortcuts.iteritems():
                     self.add_shortcut(context_name, shortcut_name, os_keys[0], os_keys[1])
 
-    def serialize(self, output_filepath):
+    def serialize(self, output_path):
         json_str = "{\n"
         for context in self.contexts:
-            json_str += context._serialize()
+            json_str += context.serialize()
         json_str = json_str.strip(",\n")
         json_str += "\n}\n"
 
-        f = codecs.open(output_filepath, encoding='utf-8', mode='w+')
+        f = codecs.open(output_path, encoding='utf-8', mode='w+')
         f.write(json_str)
         f.close()
 
@@ -137,7 +133,8 @@ class AdobeDocsParser(object):
         super(AdobeDocsParser, self).__init__()
         self.idata = AdobeIntermediateData()
 
-    def _clean_text(self, text):
+    @staticmethod
+    def _clean_text(text):
         text = text.replace(u'\n', u' ').strip(u' ').replace(u'\xa0', u' ')
         # Remove stuff within braces
         text = re.sub("([\(]).*?([\)])", "", text)
@@ -146,13 +143,13 @@ class AdobeDocsParser(object):
 
         return text.strip(u' ')
 
-    def parse(self, source_filepath):
-        if not os.path.exists(source_filepath):
-            log.error("Source file '%s' does not exist", source_filepath)
+    def parse(self, source_file_path):
+        if not os.path.exists(source_file_path):
+            log.error("Source file '%s' does not exist", source_file_path)
             return
 
         # Use BeautifulSoup to parse the html document
-        doc = BeautifulSoup(_get_file_contents(source_filepath))
+        doc = BeautifulSoup(_get_file_contents(source_file_path))
         main_wrapper_div = doc.find("div", class_="parsys main-pars")
         sections = main_wrapper_div.find_all("div", class_="parbase")
 
@@ -257,7 +254,7 @@ class AdobeSummaryParser(object):
                         # Shortcut + removing <br>'s
                         keys = u' or '.join(col.findAll(text=True))
 
-                        # No need to contiue, we found the the shortcuts
+                        # No need to continue, we found the the shortcuts
                         break
 
                 if not keys:
@@ -269,7 +266,6 @@ class AdobeSummaryParser(object):
                     self.idata.add_shortcut("Application", full_name, keys, "")
                 else:
                     self.idata.add_shortcut("Application", full_name, "", keys)
-
 
         return self.idata
 
@@ -288,7 +284,8 @@ class AdobeExporter(object):
         self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows', self.default_context_name)
         self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac', self.default_context_name)
 
-    def _parse_shortcut(self, name, keys):
+    @staticmethod
+    def _parse_shortcut(name, keys):
         if len(keys) == 0:
             return []
 
@@ -329,7 +326,7 @@ class AdobeExporter(object):
             parts = combo.split("+")
 
             # Parse main key
-            key = parts[-1] #last element
+            key = parts[-1]  # last element
             key = key.strip(' ')
             if key == 'TEMP_SLASH':
                 key = '/'
@@ -341,7 +338,7 @@ class AdobeExporter(object):
                 continue
 
             # Parse modifiers
-            mods = [m.strip(u' ') for m in parts[:-1]] #all but last
+            mods = [m.strip(u' ') for m in parts[:-1]]  # all but last
 
             # For numerical key shortcuts, the adobe documentation specifies a "range of keys"
             #  which will result in multiple shortcuts with the same label
@@ -356,7 +353,6 @@ class AdobeExporter(object):
             else:
                 shortcut = Shortcut(name, key, mods)
                 shortcuts.append(shortcut)
-
 
         return shortcuts
 
@@ -389,12 +385,9 @@ class AdobeExporter(object):
                 for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
                     context_mac.add_shortcut(s)
 
-
     def export(self):
         self.app_win.serialize(DIR_CONTENT_APPDATA)
         self.app_mac.serialize(DIR_CONTENT_APPDATA)
-
-
 
 
 

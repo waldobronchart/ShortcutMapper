@@ -1,8 +1,10 @@
 import sys
 import logging
 
+
 class LogData(object):
-     log_instance = logging.Logger('default')
+    log_instance = logging.Logger('default')
+
 
 def getlog():
     """Get the global log setup by the __main__ script"""
@@ -12,7 +14,8 @@ def getlog():
 
     return LogData.log_instance
 
-def setuplog(outputfile=None):
+
+def setuplog(output_file=None):
     """Setup the global log. Add more specific settings as you please."""
 
     log = LogData.log_instance
@@ -29,8 +32,8 @@ def setuplog(outputfile=None):
     log.addHandler(stdout_handler)
 
     # Output to file
-    if outputfile is not None:
-        file_handler = logging.FileHandler(outputfile, 'w')
+    if output_file is not None:
+        file_handler = logging.FileHandler(output_file, 'w')
         file_handler.formatter = formatter
         log.addHandler(file_handler)
 

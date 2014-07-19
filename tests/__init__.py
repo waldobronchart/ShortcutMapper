@@ -1,8 +1,7 @@
-import sys
-import os
 import unittest
 
 from keyboards import TestKeyboardLayout
+
 
 def main():
     """Runs the testsuite as command line application.
@@ -17,6 +16,7 @@ def main():
         
     except Exception as e:
         print('Error: %s' % e)
+
 
 if __name__ == '__main__':
     main()

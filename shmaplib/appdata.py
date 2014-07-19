@@ -1,4 +1,3 @@
-import os
 import json
 import copy
 import collections
@@ -12,7 +11,7 @@ log = getlog()
 
 
 class Shortcut(object):
-    def __init__(self, name, key, mods=[], anymod=False):
+    def __init__(self, name, key, mods=list(), anymod=False):
         self.name = name
         self.key = key
         self.mods = mods
@@ -113,7 +112,6 @@ class ShortcutContext(object):
         keys.append(shortcut.key)
         return '+'.join(keys)
 
-
     def serialize(self):
         # todo: check for duplicates somewhere else!
         lookup_table = {}
@@ -122,17 +120,17 @@ class ShortcutContext(object):
                 lookup_table[shortcut.key] = []
             lookup_table[shortcut.key].append(shortcut)
 
-        output_str = '"%s" : {\n' % (self.name)
+        output_str = '"%s" : {\n' % self.name
 
         sorted_shortcuts = collections.OrderedDict(sorted(lookup_table.items()))
         for key, shortcuts in sorted_shortcuts.items():
-            output_str += '    "%s" : [\n' % (key)
+            output_str += '    "%s" : [\n' % key
 
             # Important to sort shortcuts alphabetically, this improves the quality of repo diffs
             serialized_shortcuts = [s.serialize() for s in shortcuts]
             serialized_shortcuts.sort()
             for shortcut_str in serialized_shortcuts:
-                output_str += '        %s,\n' % (shortcut_str)
+                output_str += '        %s,\n' % shortcut_str
 
             output_str = output_str.rstrip(',\n')
             output_str += '\n    ],\n'
@@ -143,16 +141,13 @@ class ShortcutContext(object):
         return output_str
 
 
-
-
-
 class ApplicationConfig(object):
-    def __init__(self, app_name, app_version, app_os, defualt_context_name):
+    def __init__(self, app_name, app_version, app_os, default_context_name):
         super(ApplicationConfig, self).__init__()
         self.name = app_name
         self.version = app_version
         self.os = app_os
-        self.default_context_name = defualt_context_name
+        self.default_context_name = default_context_name
         self.contexts = {}
 
     def get_or_create_new_context(self, name):
@@ -202,11 +197,11 @@ class ApplicationConfig(object):
         mods_used = self.get_mods_used()
 
         output_str = u'{\n'
-        output_str += u'    "name" : "%s",\n' % (self.name)
-        output_str += u'    "version" : "%s",\n' % (self.version)
-        output_str += u'    "os" : "%s",\n' % (self.os)
-        output_str += u'    "mods_used" : %s,\n' % (json.dumps(mods_used))
-        output_str += u'    "default_context" : "%s",\n' % (self.default_context_name)
+        output_str += u'    "name" : "%s",\n' % self.name
+        output_str += u'    "version" : "%s",\n' % self.version
+        output_str += u'    "os" : "%s",\n' % self.os
+        output_str += u'    "mods_used" : %s,\n' % json.dumps(mods_used)
+        output_str += u'    "default_context" : "%s",\n' % self.default_context_name
         output_str += u'    "contexts" : {\n'
 
         contexts_str = u""
@@ -229,16 +224,13 @@ class ApplicationConfig(object):
         output_str += u'}\n'
 
         # Write to file
-        file = codecs.open(output_path, encoding='utf-8', mode='w+')
-        file.write(output_str)
-        file.close()
+        f = codecs.open(output_path, encoding='utf-8', mode='w+')
+        f.write(output_str)
+        f.close()
 
         # Regenerate apps.js file, this file has a list of all appdata json files
         #  so the web application knows what apps exist
         regenerate_site_apps_js()
-
-
-
 
 
 def regenerate_site_apps_js():
@@ -263,11 +255,11 @@ def regenerate_site_apps_js():
             for appname in sorted(self.apps.keys()):
                 version_dict = self.apps[appname]
                 json_str += '    {\n'
-                json_str += '        name: "%s",\n' % (appname)
+                json_str += '        name: "%s",\n' % appname
                 json_str += '        data: {\n'
                 for version in reversed(sorted(version_dict.keys())):
                     os_dict = version_dict[version]
-                    json_str += '            "%s": {\n' % (version)
+                    json_str += '            "%s": {\n' % version
                     for os_name in sorted(os_dict.keys()):
                         filename = os_dict[os_name]
                         json_str += '                "%s": "%s",\n' % (os_name, filename)
