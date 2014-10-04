@@ -1,6 +1,6 @@
 {
     "name" : "Unity 3D",
-    "version" : "5",
+    "version" : "v5",
     "os" : "windows",
     "mods_used" : ["ALT", "CONTROL", "SHIFT"],
     "default_context" : "Global Context",
@@ -32,8 +32,7 @@
             "F" : [
                 {"name":"Align with view", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Find", "mods":["CONTROL"]},
-                {"name":"Frame Selection", "mods":[]},
-                {"name":"Lock view to Selection", "mods":["SHIFT"]},
+                {"name":"Frame (centre) selection", "mods":[]},
                 {"name":"Move to view", "mods":["ALT", "CONTROL"]}
             ],
             "FIVE" : [
