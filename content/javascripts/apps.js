@@ -59,4 +59,13 @@ var sitedata_apps = [
             },
         }
     },
+    {
+        name: "Unity 3D",
+        data: {
+            "5": {
+                "mac": "unity-3d_5_mac.json",
+                "windows": "unity-3d_5_windows.json",
+            },
+        }
+    },
 ];
