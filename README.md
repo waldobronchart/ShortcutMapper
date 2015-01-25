@@ -11,13 +11,13 @@ This project is directly hosted on github from the main **gh-pages** branch. All
 
 ```
 /content         The website content
-    /appdata         Contains exported .json files containing all application shortccuts
-    /keyboards       Contains html keyboard layouts
+    /generated   Contains generated json/js files containing application shortcut data in the site format
+    /keyboards   Contains html keyboard layouts
     ...
 /exporters       Per application scripts that export a .json file containing all shortcuts to 'content/appdata'
 /shmaplib        Python utility library (Shortcut Mapper Lib) to help exporting shortcuts to the webapp.
 /tests           Python tests to ensure nothing is broken
-/utils           Utilities for exporting and testing 
+/utils           Utilities for exporting and testing
 index.html       Main site page
 ```
 

@@ -215,7 +215,7 @@ var pageManager = new function PageManager() {
         var manager = this;
         var filename = selectedApp.data[selectedVersion][selectedOS];
         $.ajax({
-            url: "content/appdata/" + filename,
+            url: "content/generated/" + filename,
             dataType: "json"
         }).done(function (keydata) {
             selectedAppData = keydata;

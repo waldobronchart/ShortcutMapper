@@ -9,7 +9,7 @@ from logger import getlog
 log = getlog()
 
 from appdata import Shortcut, ApplicationConfig
-from constants import DIR_CONTENT_APPDATA
+from constants import DIR_CONTENT_GENERATED
 
 
 class IntermediateShortcutData(object):
@@ -137,7 +137,7 @@ class IntermediateShortcutData(object):
 
 
 class IntermediateDataExporter(object):
-    """Exports an intermediate .json file to the contents/appdata directory in the correct file format."""
+    """Exports an intermediate .json file to the contents/generated directory in the correct file format."""
 
     def __init__(self, source, app_name, app_version, defualt_context_name):
         super(IntermediateDataExporter, self).__init__()
@@ -258,6 +258,6 @@ class IntermediateDataExporter(object):
 
     def export(self, windows=True, mac=True):
         if windows:
-            self.app_win.serialize(DIR_CONTENT_APPDATA)
+            self.app_win.serialize(DIR_CONTENT_GENERATED)
         if mac:
-            self.app_mac.serialize(DIR_CONTENT_APPDATA)
+            self.app_mac.serialize(DIR_CONTENT_GENERATED)

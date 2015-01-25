@@ -7,7 +7,7 @@ import codecs
 from bs4 import BeautifulSoup
 
 from appdata import Shortcut, ApplicationConfig
-from constants import DIR_CONTENT_APPDATA
+from constants import DIR_CONTENT_GENERATED
 
 from logger import getlog
 log = getlog()
@@ -386,8 +386,8 @@ class AdobeExporter(object):
                     context_mac.add_shortcut(s)
 
     def export(self):
-        self.app_win.serialize(DIR_CONTENT_APPDATA)
-        self.app_mac.serialize(DIR_CONTENT_APPDATA)
+        self.app_win.serialize(DIR_CONTENT_GENERATED)
+        self.app_mac.serialize(DIR_CONTENT_GENERATED)
 
 
 

@@ -228,13 +228,13 @@ class ApplicationConfig(object):
         f.write(output_str)
         f.close()
 
-        # Regenerate apps.js file, this file has a list of all appdata json files
+        # Regenerate apps.js file, this file has a list of all application json files
         #  so the web application knows what apps exist
         regenerate_site_apps_js()
 
 
 def regenerate_site_apps_js():
-    log.debug("REGENERATING FILE /gh-pages/javascripts/apps.js")
+    log.debug("REGENERATING FILE " + CONTENT_APPS_JS_FILE)
 
     class SiteAppDatas:
         def __init__(self):
@@ -277,7 +277,7 @@ def regenerate_site_apps_js():
 
     # Generate JSON for all applications in the specific format we want it
     app_sitedata = SiteAppDatas()
-    for path in glob.glob(os.path.join(DIR_CONTENT_APPDATA, "*.json")):
+    for path in glob.glob(os.path.join(DIR_CONTENT_GENERATED, "*.json")):
         with open(path) as appdata_file:
             log.debug('...adding %s', path)
             appdata = json.load(appdata_file)
