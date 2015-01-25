@@ -386,6 +386,9 @@
                 {"name":"Reset all settings", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Select the Crop tool", "mods":[]}
             ],
+            "S" : [
+                {"name":"Toggle soft proofing"},
+            ],
             "RIGHT_ARROW" : [
                 {"name":"Copy Before settings to After", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
