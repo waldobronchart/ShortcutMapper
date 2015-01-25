@@ -400,7 +400,8 @@
             "S" : [
                 {"name":"Adjustment tool: apply Saturation adjustment", "mods":["ALT", "CONTROL", "SHIFT"]},
                 {"name":"Sync settings bypassing Sync-Settings dialog", "mods":["ALT", "CONTROL"]},
-                {"name":"Sync settings", "mods":["CONTROL", "SHIFT"]}
+                {"name":"Sync settings", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Toggle soft proofing", "mods":[]}
             ],
             "SLASH" : [
                 {"name":"Switch between adjustment brush A/B", "mods":[]}

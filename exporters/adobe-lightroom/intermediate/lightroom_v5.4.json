@@ -199,6 +199,7 @@
         "Toggle Auto Sync": ["Ctrl-click Sync button", "Command-click Sync button"],
         "Enable Auto Sync": ["Ctrl + Alt + Shift + A", "Command + Option + Shift + A"],
         "Match total exposures": ["Ctrl + Alt + Shift + M", "Command + Option + Shift + M"],
+        "Toggle soft proofing": ["S", "S"],
         "Select White Balance tool": ["W", "W"],
         "Select the Crop tool": ["R", "R"],
         "Constrain aspect ratio when Crop tool is selected": ["A", "A"],

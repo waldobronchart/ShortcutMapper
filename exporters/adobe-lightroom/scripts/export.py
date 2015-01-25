@@ -32,7 +32,7 @@ def main():
     parser = argparse.ArgumentParser(description="Converts Lightroom's intermediate json data file to the web application data format.")
     parser.add_argument('-t', '--test', action='store_true', required=False, help="Run in test mode. This does not output any file")
     parser.add_argument('-v', '--verbose', action='store_true', required=False, help="Verbose output")
-    parser.add_argument('-a', '--all', action='store_true', required=False, help="Convert all raw files to our json format")
+    parser.add_argument('-a', '--all', action='store_true', required=False, help="Convert all intermediate files to the site format")
     parser.add_argument('file', nargs='?', help="File to convert (Ignored if -a flag is set)")
 
     args = parser.parse_args()
@@ -50,7 +50,7 @@ def main():
     # Testmode
     testmode = args.test
 
-    # If --all flag is set, convert all raw htmls to our format
+    # If --all flag is set, convert all intermediate files to the site format
     if args.all:
         searchdir = os.path.join(CWD, '..', 'intermediate', '*.json')
         for filepath in glob.glob(searchdir):

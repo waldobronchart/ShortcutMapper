@@ -397,7 +397,8 @@
             "S" : [
                 {"name":"Adjustment tool: apply Saturation adjustment", "mods":["ALT", "COMMAND", "SHIFT"]},
                 {"name":"Sync settings bypassing Sync-Settings dialog", "mods":["ALT", "COMMAND"]},
-                {"name":"Sync settings", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Sync settings", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle soft proofing", "mods":[]}
             ],
             "SLASH" : [
                 {"name":"Switch between adjustment brush A/B", "mods":[]}
