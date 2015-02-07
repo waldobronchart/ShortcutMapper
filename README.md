@@ -11,11 +11,13 @@ This project is directly hosted on github from the main **gh-pages** branch. All
 
 ```
 /content         The website content
-    /generated   Contains generated json/js files containing application shortcut data in the site format
+    /generated   Contains generated json/js files containing application
+                  shortcut data in the site format
     /keyboards   Contains html keyboard layouts
     ...
-/exporters       Per application scripts that export a .json file containing all shortcuts to 'content/appdata'
-/shmaplib        Python utility library (Shortcut Mapper Lib) to help exporting shortcuts to the webapp.
+/sources         Source data for shortcuts per application.
+/shmaplib        Python utility library (Shortcut Mapper Lib) to help 
+                  exporting shortcuts to the webapp.
 /tests           Python tests to ensure nothing is broken
 /utils           Utilities for exporting and testing
 index.html       Main site page
@@ -55,13 +57,15 @@ Once your virtualenv in installed, all you need to do is activate it before you 
 
 ```
 source _venv/bin/activate
-python exporters/adobe-photoshop/scripts/export.py -a
+
+# Export all intermediate json files to content/generated/
+python utils/export_intermediate_data.py -a
 ```
 
 
 ## Adding shortcuts for a new Application
 
-**The best example you can look at is Autodesk Maya under /exporters/autodesk-maya**
+**The best example you can look at is Autodesk Maya under /sources/autodesk-maya**
 
 ### Exporters directory setup
 
@@ -69,52 +73,62 @@ First, try and find an online resource that lists all the application shortcuts 
 
 Make sure it's up-to-date and the list is complete.
 
-You're going to use that resource to export to an intermediate data format that can be edited by hand easily (See Autodesk Maya for a good example).
+You're going to use that resource to create an intermediate data format that can be edited by hand easily.
 
 Create a directory structure under **/exporters** as so (for reference, look at the adobe applications):
 ```
-/exporters
+/sources
     /my-app
-        /intermediate    One-time conversions from raw data, which have been hand edited to
-                          fix faulty shortcuts and shorten labels that are too long.
-        /raw             Source(s) used to build a full shortcut list in the intermediate data format
-        /scripts         Scripts to convert raw to intermediate, and then intermediate to
-                          a web-application supported format in /content/appdata/...
+        /intermediate           One-time conversions from raw data, which have been hand edited to
+                                 fix faulty shortcuts and shorten labels that are too long.
+        /raw                    Source(s) used to build a full shortcut list in the intermediate data format
 ```
 
-Then ideally, you're going to write some scripts (Python recommended) that drive the conversions. I like to have two scripts as follows:
-```
-/exporters
-    /my-app
-        /scripts
-            /convert.py     This script converts from raw sources to intermediate
-            /export.py      This script exports the intermediate format to the web application
-```
+Then ideally, you're going to write a script that converts the raw source to intermediate: `/sources/my-app/raw_to_intermediate.py`
 
-These python scripts can then use the shmaplib python utility library which does a lot of the heavy lifting.
+Past the intermediate data creation step, everything can be automated. Much of the heavy lifting code lives under the `shmaplib` folder.
 
 ### Using SHMAPLIB
 
 SHMAPLIB is short for "Shortcut Mapper Lib". It's a Python library that will help you export data in the right format to the right location.
 
-If your script lives and runs directly in **/exporters/../scripts**, then you can import the lib like so:
+If your script lives and runs directly in **/sources/app/, then you can import the lib like so:
+
 ```
 # Add repository root path to sys.path (This will make import shmaplib work)
 CWD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CWD)
-sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
+sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..')))
 
 # Import common shortcut mapper library
 import shmaplib
 ```
 
-From there, you can parse your intermediate data format and export it to the web application. Have a look at the **Autodesk Maya** scripts for a good example. Here's a minimal example (more documentation in /shmaplib/intermediate.py:
+From there you can parse your raw files (HTML, XML, etc..) and create an intermediate data file which can then be hand edited.
+
 ```
 import shmaplib
 
-exporter = shmaplib.IntermediateDataExporter(filepath, "Audodesk Maya", version, "Global Context")
-exporter.parse()
-exporter.export() # Exports to /content/appdata/*.json
+# Create the intermediate data container
+idata = shmaplib.IntermediateShortcutData("Application Name")
+
+# Parse the raw file
+# ...and add shortcuts to the container like this:
+context_name = "Global Context"
+label = "Select All"
+keys_win = "Ctrl + A"
+keys_mac = "Cmd + A"
+idata.add_shortcut(context_name, label, keys_win, keys_mac)
+
+# Save out the file
+idata.serialize('intermediate/my-application_v3.json')
+```
+
+You can then export this intermediate data file after making hand-edits (there are always edge cases to fix).
+
+```
+# Export intermediate to the frontend data format
+python utils/export_intermediate_data.py sources/application-name/intermediate/SOURCE.json
 ```
 
 If your application doesn't have an intermediate format (like Blender), you can use these structures to build up the data:
@@ -126,9 +140,9 @@ You'll create an AppConfig first. Then create a new context to the application, 
 
 AppConfig has multiple ShortcutContexts, which has multiple Shortcuts.
 
-The AppConfig has a serialize function that exports it into the correct directory under /content/appdata and adds the application to the javascript file under /content/javascripts/apps.js
+The AppConfig has a serialize function that exports it into the correct directory under /content/generated
 
-Look in shmaplib/appdata.py for more specific docs.
+Look in `shmaplib/appdata.py` for more specific docs.
 
 
 
