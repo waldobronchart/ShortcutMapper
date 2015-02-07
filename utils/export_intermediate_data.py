@@ -3,7 +3,6 @@ import os
 import glob
 import logging
 import argparse
-import re
 
 # Import common scripts
 CWD = os.path.dirname(os.path.abspath(__file__))
