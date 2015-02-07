@@ -5,7 +5,10 @@ Adobe Photoshop
 
 Contains .json data files that were generated from shortcuts scraped from sources in **/raw**
 
-Once exported, the file was hand-edited to make some nessesary fixes that just couldn't be automated.
+Once exported, the file was hand-edited to make some necessary fixes that just couldn't be automated.
+
+To export this intermediate format to the web application run the following script:
+`python utils/export_intermediate_data.py exporters/adobe-photoshop/intermediate/photoshop_v14.2.json`
 
 ### /raw
 
@@ -15,10 +18,4 @@ Per photoshop version, there should be 3 raw files:
 - photoshop_vXX.X_summary_win.html: same as previous but for windows
 
 Shortcuts from these 3 files will then be scraped for shortcuts and exported to an intermediate data format in **/intermediate**
-
-### /scripts
-
-Contains python scripts to:
-- create intermediate .json files (You will probably only do this once, and then hand edit the intermediate file)
-- export intermediate files to the web application
 
