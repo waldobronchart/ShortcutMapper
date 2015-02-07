@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..')))
 
 # Import common shortcut mapper library
 import shmaplib
-from shmaplib.constants import DIR_EXPORTERS
+from shmaplib.constants import DIR_SOURCES
 log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
 
 
@@ -48,8 +48,7 @@ def main():
 
     # If --all flag is set, convert all application intermediate data
     if args.all:
-        search_dir = os.path.join(DIR_EXPORTERS, '*', 'intermediate', '*.json')
-        print search_dir
+        search_dir = os.path.join(DIR_SOURCES, '*', 'intermediate', '*.json')
         for file_path in glob.glob(search_dir):
             file_path = os.path.normpath(file_path)
             export_intermediate_file(file_path, test_mode)
