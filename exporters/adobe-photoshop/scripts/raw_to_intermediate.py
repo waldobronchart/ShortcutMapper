@@ -14,11 +14,11 @@ sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
 
 # Import common shortcut mapper library
 import shmaplib
-from shmaplib.adobe import AdobeIntermediateData, AdobeDocsParser, AdobeSummaryParser, AdobeExporter
+from shmaplib.adobe import AdobeDocsParser, AdobeSummaryParser
+from shmaplib import IntermediateShortcutData
 log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
 
-
-
+APP_NAME = "Adobe Photoshop"
 
 def main():
     parser = argparse.ArgumentParser(description="Converts Photoshop's raw files to an intermediate format.")
@@ -43,15 +43,14 @@ def main():
         log.setLevel(logging.DEBUG)
 
     # Parse the docs html
-    # AdobeIntermediateData, AdobeDocsParser
-    docs_idata = AdobeDocsParser().parse(args.docs_html)
+    docs_idata = AdobeDocsParser(APP_NAME).parse(args.docs_html)
 
     # Parse both summary docs
-    mac_summary_idata = AdobeSummaryParser().parse(args.summary_mac, "mac")
-    win_summary_idata = AdobeSummaryParser().parse(args.summary_win, "windows")
+    mac_summary_idata = AdobeSummaryParser(APP_NAME).parse(args.summary_mac, "mac")
+    win_summary_idata = AdobeSummaryParser(APP_NAME).parse(args.summary_win, "windows")
 
-    # Parse the macos summary html
-    merged_idata = AdobeIntermediateData()
+    # Merge all source data into a single file
+    merged_idata = IntermediateShortcutData(APP_NAME)
     merged_idata.extend(mac_summary_idata)
     merged_idata.extend(win_summary_idata)
     merged_idata.extend(docs_idata)

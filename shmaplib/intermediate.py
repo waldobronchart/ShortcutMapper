@@ -172,7 +172,7 @@ class IntermediateShortcutData(object):
 
         # Contexts
         json_str += u'    "contexts": {\n'
-        for context in self.contexts:
+        for context in sorted(self.contexts, key=lambda c: c.name):
             json_str += context.serialize()
         json_str = json_str.strip(",\n")
         json_str += "\n    }\n"

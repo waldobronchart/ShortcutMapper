@@ -12,10 +12,8 @@ sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
 
 # Import common shortcut mapper library
 import shmaplib
-from shmaplib.adobe import AdobeIntermediateData, AdobeDocsParser, AdobeSummaryParser, AdobeExporter
+from shmaplib.adobe import AdobeDocsParser
 log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
-
-
 
 
 def main():
@@ -38,10 +36,8 @@ def main():
         log.setLevel(logging.DEBUG)
 
     # Parse the docs html
-    docs_idata = AdobeDocsParser().parse(args.source)
+    docs_idata = AdobeDocsParser("Adobe Lightroom").parse(args.source)
     docs_idata.serialize(args.output)
-
-
 
 
 if __name__ == '__main__':
