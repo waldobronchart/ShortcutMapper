@@ -75,7 +75,7 @@ Make sure it's up-to-date and the list is complete.
 
 You're going to use that resource to create an intermediate data format that can be edited by hand easily.
 
-Create a directory structure under **/exporters** as so (for reference, look at the adobe applications):
+Create a directory structure under **/sources** like this:
 ```
 /sources
     /my-app
@@ -88,11 +88,11 @@ Then ideally, you're going to write a script that converts the raw source to int
 
 Past the intermediate data creation step, everything can be automated. Much of the heavy lifting code lives under the `shmaplib` folder.
 
-### Using SHMAPLIB
+### Using SHMAPlib
 
-SHMAPLIB is short for "Shortcut Mapper Lib". It's a Python library that will help you export data in the right format to the right location.
+SHMAPlib is short for "Shortcut Mapper Lib". It's a Python library that will help you export data in the right format to the right location.
 
-If your script lives and runs directly in **/sources/app/, then you can import the lib like so:
+If your script lives and runs directly in **/sources/app/**, then you can import the lib like so:
 
 ```
 # Add repository root path to sys.path (This will make import shmaplib work)
