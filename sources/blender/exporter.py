@@ -4,7 +4,7 @@ import logging
 
 CWD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CWD)
-sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
+sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..')))
 
 # Import common shortcut mapper library
 import shmaplib
