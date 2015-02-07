@@ -29,7 +29,7 @@ class RawDocsParser(object):
 
     def __init__(self):
         super(RawDocsParser, self).__init__()
-        self.idata = shmaplib.IntermediateShortcutData()
+        self.idata = shmaplib.IntermediateShortcutData("Autodesk Maya")
 
     def _clean_text(self, text):
         text = text.replace(u'\n', u' ').strip(u' ').replace(u'\xa0', u' ')

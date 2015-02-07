@@ -28,7 +28,7 @@ class RawDocsParser(object):
 
     def __init__(self):
         super(RawDocsParser, self).__init__()
-        self.idata = shmaplib.IntermediateShortcutData()
+        self.idata = shmaplib.IntermediateShortcutData("Unity 3D")
 
     def parse(self, source_filepath):
         if not os.path.exists(source_filepath):

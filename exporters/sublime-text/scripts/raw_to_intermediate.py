@@ -37,6 +37,9 @@ def _get_file_contents(source):
 
 class StEmmetParser(IntermediateShortcutData):
 
+    def __init__(self):
+        super(StEmmetParser, self).__init__("Sublime Text")
+
     def _replall(self, text):
         """Replace the char with the word.
         """
@@ -49,6 +52,7 @@ class StEmmetParser(IntermediateShortcutData):
             return ' + '.join([self._replall(i) for i in text[0].split('+')])
         else:
             return self._replall(text[0])
+
     def _convert_shortcut(self, origin):
         """Extract the mac keys and the windows keys.
         """

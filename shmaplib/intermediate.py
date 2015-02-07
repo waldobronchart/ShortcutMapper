@@ -9,7 +9,7 @@ from logger import getlog
 log = getlog()
 
 from appdata import Shortcut, ApplicationConfig
-from constants import DIR_CONTENT_GENERATED
+from constants import DIR_CONTENT_GENERATED, VALID_OS_NAMES
 
 
 class IntermediateShortcutData(object):
@@ -22,11 +22,17 @@ class IntermediateShortcutData(object):
 
     The data format for intermediate data (JSON) is as follows:
     {
-        "CONTEXT NAME": {
-            "SHORTCUT NAME": ["WINDOWS SHORTCUT KEYS", "MAC SHORTCUT KEYS"],
+        "name": "Application Name",
+        "version": "v1.2.3",
+        "default_context": "Global Context",
+        "os": ["windows", "mac"],
+        "contexts": {
+            "CONTEXT NAME": {
+                "SHORTCUT NAME": ["WINDOWS SHORTCUT KEYS", "MAC SHORTCUT KEYS"],
+                ...
+            },
             ...
-        },
-        ...
+        }
     }
 
     Linux is usually the same as windows shortcuts, so we conveniently ignore that for now.
@@ -53,8 +59,9 @@ class IntermediateShortcutData(object):
             return text
 
         def serialize(self):
-            return u'        "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
-                                                              self._escape(self.win_keys), self._escape(self.mac_keys))
+            return u'            "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
+                                                                  self._escape(self.win_keys),
+                                                                  self._escape(self.mac_keys))
 
     class Context(object):
         """Intermediate application context structure that contains a list of shortcuts"""
@@ -76,15 +83,38 @@ class IntermediateShortcutData(object):
             return None
 
         def serialize(self):
-            ctx_str = u'    "{0}": {{\n'.format(self.name)
+            ctx_str = u'        "{0}": {{\n'.format(self.name)
             for s in self.shortcuts:
                 ctx_str += s.serialize()
             ctx_str = ctx_str.strip(",\n")
-            ctx_str += u'\n    },\n'
+            ctx_str += u'\n        },\n'
             return ctx_str
 
-    def __init__(self):
+    def __init__(self, app_name, version="", default_context="", os_supported=None):
+        """
+        IntermediateShortcutData is a json format that can be easily hand-edited to fix shortcut errors.
+
+        :param app_name: display name of the application (Adobe Photoshop)
+        :param version: string format of the version (eg: 2015, v1.2, v1.6a)
+        :param default_context: the name of the context that will be active by default on the website
+        :param os_supported: list of supported os names as a list
+        """
         super(IntermediateShortcutData, self).__init__()
+
+        # Validation
+        if os_supported:
+            assert isinstance(os_supported, list), "the os_supported parameter must be a list"
+            assert len(os_supported) > 0, "the os_supported parameter cannot be empty"
+            assert len([o for o in os_supported if o in VALID_OS_NAMES]) > 0, \
+                "the os_supported param contains invalid os names. Valid names are: " + str(VALID_OS_NAMES)
+        else:
+            os_supported = list(VALID_OS_NAMES)
+
+        # Properties
+        self.name = app_name
+        self.version = version
+        self.default_context = default_context
+        self.os = os_supported
         self.contexts = []
         self._context_lookup = {}
 
@@ -93,6 +123,7 @@ class IntermediateShortcutData(object):
             context = IntermediateShortcutData.Context(context_name)
             self._context_lookup[context_name] = context
             self.contexts.append(context)
+            print 'Adding Context:', context.name
 
         self._context_lookup[context_name].add_shortcut(shortcut_name, win_keys, mac_keys)
 
@@ -119,17 +150,34 @@ class IntermediateShortcutData(object):
 
         with codecs.open(filepath, encoding='utf-8') as idata_file:
             json_idata = json.load(idata_file)
-            for context_name, shortcuts in json_idata.iteritems():
+
+            self.name = json_idata["name"]
+            self.version = json_idata["version"]
+            self.default_context = json_idata["default_context"]
+            self.os = json_idata["os"]
+
+            for context_name, shortcuts in json_idata["contexts"].iteritems():
                 for shortcut_name, os_keys in shortcuts.iteritems():
                     self.add_shortcut(context_name, shortcut_name, os_keys[0], os_keys[1])
 
     def serialize(self, output_filepath):
         """Save the intermediate data to a json file"""
         json_str = "{\n"
+
+        # Config
+        json_str += u'    "name": "{0}",\n'.format(self.name)
+        json_str += u'    "version": "{0}",\n'.format(self.version)
+        json_str += u'    "default_context": "{0}",\n'.format(self.default_context)
+        json_str += u'    "os": {0},\n'.format(json.dumps(self.os))
+
+        # Contexts
+        json_str += u'    "contexts": {\n'
         for context in self.contexts:
             json_str += context.serialize()
         json_str = json_str.strip(",\n")
-        json_str += "\n}\n"
+        json_str += "\n    }\n"
+
+        json_str += "}\n"
 
         f = codecs.open(output_filepath, encoding='utf-8', mode='w+')
         f.write(json_str)

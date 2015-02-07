@@ -20,14 +20,14 @@ log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
 
 
 class RawKBDXParser(object):
-    """This parse grabbs shortcuts from a .txt file that was exported from 3dsMax directly.
+    """This parse grabs shortcuts from a .txt file that was exported from 3dsMax directly.
 
     Lines starting with '---' start a new context, all lines that follow are shortcuts in that context.
     """
 
     def __init__(self):
         super(RawKBDXParser, self).__init__()
-        self.idata = shmaplib.IntermediateShortcutData()
+        self.idata = shmaplib.IntermediateShortcutData("Autodesk 3dsMax")
 
     def parse(self, source_filepath):
         if not os.path.exists(source_filepath):
