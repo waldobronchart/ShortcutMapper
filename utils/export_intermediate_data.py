@@ -3,31 +3,30 @@ import os
 import glob
 import logging
 import argparse
+import re
 
 # Import common scripts
 CWD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, CWD)
-sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..', '..', '..')))
+sys.path.insert(0, os.path.normpath(os.path.join(CWD, '..')))
 
 # Import common shortcut mapper library
 import shmaplib
+from shmaplib.constants import DIR_EXPORTERS
 log = shmaplib.setuplog(os.path.join(CWD, 'output.log'))
 
 
-def export_file(filepath, testmode):
-    log.info("Exporting from file: %s", filepath)
+def export_intermediate_file(file_path, test_mode):
+    log.info("Exporting from file: %s", file_path)
 
-    filename, ext = os.path.splitext(os.path.basename(filepath))
-    version = filename.split('_')[1]
-
-    exporter = shmaplib.IntermediateDataExporter(filepath, "Unity 3D", version, "Global Context")
+    exporter = shmaplib.IntermediateDataExporter(file_path)
     exporter.parse()
-    if not testmode:
+    if not test_mode:
         exporter.export()
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Converts Unity's intermediate json data file to the web application data format.")
+    parser = argparse.ArgumentParser(description="Converts intermediate json data files to the web application data format.")
     parser.add_argument('-t', '--test', action='store_true', required=False, help="Run in test mode. This does not output any file")
     parser.add_argument('-v', '--verbose', action='store_true', required=False, help="Verbose output")
     parser.add_argument('-a', '--all', action='store_true', required=False, help="Convert all raw files to our json format")
@@ -45,18 +44,19 @@ def main():
     if args.verbose:
         log.setLevel(logging.DEBUG)
 
-    # Testmode
-    testmode = args.test
+    # Test mode
+    test_mode = args.test
 
-    # If --all flag is set, convert all raw htmls to our format
+    # If --all flag is set, convert all application intermediate data
     if args.all:
-        searchdir = os.path.join(CWD, '..', 'intermediate', '*.json')
-        for filepath in glob.glob(searchdir):
-            filepath = os.path.normpath(filepath)
-            export_file(filepath, testmode)
+        search_dir = os.path.join(DIR_EXPORTERS, '*', 'intermediate', '*.json')
+        print search_dir
+        for file_path in glob.glob(search_dir):
+            file_path = os.path.normpath(file_path)
+            export_intermediate_file(file_path, test_mode)
             log.info('    \n')
     else:
-        export_file(args.file, testmode)
+        export_intermediate_file(args.file, test_mode)
 
 if __name__ == '__main__':
     main()
