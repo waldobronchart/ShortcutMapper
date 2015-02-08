@@ -68,19 +68,29 @@ class IntermediateShortcutData(object):
         def __init__(self, name):
             self.name = name
             self.shortcuts = []
+            self._shortcut_lookup = {}
 
         def add_shortcut(self, name, win_keys, mac_keys):
-            if name in [s.name for s in self.shortcuts]:
+            # Add keys to existing shortcut
+            existing_shortcut = self.get_shortcut(name)
+            if existing_shortcut is not None:
+                if len(win_keys):
+                    existing_shortcut.win_keys += " / " + win_keys
+                if len(mac_keys):
+                    existing_shortcut.mac_keys += " / " + mac_keys
+
                 return
 
+            # Create new
             s = IntermediateShortcutData.Shortcut(name, win_keys, mac_keys)
+            self._shortcut_lookup[name] = s
             self.shortcuts.append(s)
 
         def get_shortcut(self, name):
-            for s in self.shortcuts:
-                if s.name == name:
-                    return s
-            return None
+            if name not in self._shortcut_lookup:
+                return None
+
+            return self._shortcut_lookup[name]
 
         def serialize(self):
             ctx_str = u'        "{0}": {{\n'.format(self.name)
