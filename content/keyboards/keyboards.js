@@ -1,34 +1,35 @@
 var sitedata_keyboards = {
     "English US": {
-        windows: "english-us.html",
         mac: "english-us_mac.html",
+        windows: "english-us.html",
         linux: "english-us.html",
     },
     "English UK": {
-        windows: "english-uk.html",
         mac: "english-uk_mac.html",
+        windows: "english-uk.html",
         linux: "english-uk.html",
     },
     "English US Dvorak": {
-        windows: "english-us-dvorak.html",
         mac: "english-us-dvorak_mac.html",
+        windows: "english-us-dvorak.html",
         linux: "english-us-dvorak.html",
     },
     "English UK Dvorak": {
-        windows: "english-uk-dvorak.html",
         mac: "english-uk-dvorak_mac.html",
+        windows: "english-uk-dvorak.html",
         linux: "english-uk-dvorak.html",
     },
     "Danish": {
-        windows: "danish.html",
         mac: "danish_mac.html",
+        windows: "danish.html",
         linux: "danish.html",
     },
     "German": {
+        mac: "german_mac.html",
         windows: "german.html",
         linux: "german.html",
     },
-	"French": {
+    "French": {
         windows: "french.html",
         linux: "french.html",
     }
