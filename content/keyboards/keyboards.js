@@ -30,6 +30,7 @@ var sitedata_keyboards = {
         linux: "german.html",
     },
     "French": {
+        mac: "french_mac.html",
         windows: "french.html",
         linux: "french.html",
     }
