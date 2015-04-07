@@ -223,7 +223,7 @@ var pageManager = new function PageManager() {
             manager._updateContextOptions(selectedContext);
             manager._updateKeyboard();
         }).fail(function() {
-            $("#keycontent").html("There is no export available for this OS");
+            $("#keycontent").html("There is no data available for this OS or App Version (try selecting a different app version)");
         });
     }
 
