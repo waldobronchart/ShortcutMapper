@@ -38,6 +38,9 @@ Once that's done, just open the **index.html** in your browser and you're off!
 The exporter scripts all use Python2.7 and some additional libraries. I recommend you use [virtualenv](http://virtualenv.readthedocs.org/en/latest/) like so:
 
 ```
+# Install pip if you don't have it yet
+sudo easy_install pip
+
 # Install virtualenv
 pip install virtualenv
 
