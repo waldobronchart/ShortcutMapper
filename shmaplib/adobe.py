@@ -48,6 +48,8 @@ class AdobeDocsParser(object):
         # Use BeautifulSoup to parse the html document
         doc = BeautifulSoup(_get_file_contents(source_file_path))
         main_wrapper_div = doc.find("div", class_="parsys main-pars")
+        if main_wrapper_div is None:
+            main_wrapper_div = doc.find("div", id="main")
         sections = main_wrapper_div.find_all("div", class_="parbase")
 
         # Iterate sections (headers are contexts, tables contain the shortcuts)
