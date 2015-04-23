@@ -70,7 +70,7 @@ class AdobeDocsParser(object):
                     if len(cols) != 3:
                         continue
 
-                    shortcut_name = self._clean_text(cols[0].p.get_text())
+                    shortcut_name = self._clean_text(cols[0].get_text())
                     keys_win = self._clean_text(cols[1].get_text())
                     keys_mac = self._clean_text(cols[2].get_text())
 
