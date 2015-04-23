@@ -4,6 +4,15 @@
 
 var sitedata_apps = [
     {
+        name: "Adobe Illustrator",
+        data: {
+            "CC": {
+                "mac": "adobe-illustrator_cc_mac.json",
+                "windows": "adobe-illustrator_cc_windows.json",
+            },
+        }
+    },
+    {
         name: "Adobe Lightroom",
         data: {
             "v5.4": {
