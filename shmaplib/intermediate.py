@@ -197,9 +197,11 @@ class IntermediateShortcutData(object):
 class IntermediateDataExporter(object):
     """Exports an intermediate .json file to the contents/generated directory in the correct file format."""
 
-    def __init__(self, source):
+    def __init__(self, source, explicit_numpad_mode=False):
         super(IntermediateDataExporter, self).__init__()
         assert os.path.exists(source), "Source file '%s' does not exist" % source
+
+        self.explicit_numpad_mode = explicit_numpad_mode
 
         # Load intermediate data
         self.idata = IntermediateShortcutData()
@@ -299,7 +301,7 @@ class IntermediateDataExporter(object):
                 context_win = self.data_windows.get_or_create_new_context(context.name)
                 for shortcut in context.shortcuts:
                     for s in self._parse_shortcut(shortcut.name, shortcut.win_keys):
-                        context_win.add_shortcut(s)
+                        context_win.add_shortcut(s, True, self.explicit_numpad_mode)
             log.info("...DONE\n")
 
         # MAC: Iterate contexts and shortcuts
@@ -309,7 +311,7 @@ class IntermediateDataExporter(object):
                 context_mac = self.data_mac.get_or_create_new_context(context.name)
                 for shortcut in context.shortcuts:
                     for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
-                        context_mac.add_shortcut(s)
+                        context_mac.add_shortcut(s, True, self.explicit_numpad_mode)
             log.info("...DONE\n")
 
     def export(self):

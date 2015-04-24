@@ -89,6 +89,8 @@ class DataContainer(object):
         u'numpad *': ['NUMPAD_ASTERISK'],
         u'numpad /': ['NUMPAD_SLASH'],
         u'numpad .': ['NUMPAD_PERIOD'],
+        u'numpad enter': ['NUMPAD_ENTER'],
+        u'numpad return': ['NUMPAD_ENTER'],
 
         # Non-English keyboard characters
         # Reference used: http://www.ascii.cl/htmlcodes.htm
@@ -286,7 +288,7 @@ def _populate_valid_keynames():
         'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
         'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11',
         'F12', 'F13', 'F14', 'F15', 'F16', 'F17', 'F18', 'F19',
-        'NUMPAD_ENTER', 'TAB', 'END', 'NUMLOCK', 'EJECT', 'FN_KEY', 'CLEAR',
+        'TAB', 'END', 'NUMLOCK', 'EJECT', 'FN_KEY', 'CLEAR',
         'MEDIA_PLAY', 'MEDIA_STOP', 'SCROLL_LOCK', 'CAPSLOCK'
     ])
 
@@ -312,20 +314,27 @@ def is_valid_keyname(name):
     return name in DataContainer.VALID_KEYNAMES
 
 
-def get_valid_keynames(char_or_name):
+def get_valid_keynames(char_or_name, treat_numpad_keys_explicitly=False):
     """Checks if the given name is a valid keyname used in keyboard layouts
     returns a list of uppercased valid key names.
 
     If the given name couldn't be converted, an empty list is returned.
+
+    /:param treat_numpad_keys_explicitly    if true, will not expand ambiguous keys to numpad keys (0 and Numpad 0 have different functions)
     """
 
+    valid_keynames = []
+
     if is_valid_keyname(char_or_name.upper()):
-        return [char_or_name.upper()]
+        valid_keynames =  [char_or_name.upper()]
+    elif char_or_name.lower() in DataContainer.VALID_NAME_LOOKUP.keys():
+        valid_keynames =  DataContainer.VALID_NAME_LOOKUP[char_or_name.lower()]
 
-    if char_or_name.lower() in DataContainer.VALID_NAME_LOOKUP.keys():
-        return DataContainer.VALID_NAME_LOOKUP[char_or_name.lower()]
+    # Remove numpad keys
+    if treat_numpad_keys_explicitly and 'numpad' not in char_or_name.lower():
+        valid_keynames = [n for n in valid_keynames if 'numpad' not in n.lower()]
 
-    return []
+    return valid_keynames
 
 
 

@@ -36,14 +36,14 @@ class ShortcutContext(object):
         self.added_keycombos_lookup = []
         self.added_keycombo_to_shortcuts_lookup = {}
 
-    def add_shortcut(self, s, check_for_duplicates=True):
+    def add_shortcut(self, s, check_for_duplicates=True, explicit_numpad_mode=False):
         log.debug("adding shortcut %s", self._get_shortcut_str(s))
 
         # Validate modifier names
         # Modifier keys cannot be ambiguous (ctrl -> left_ctrl, right_ctrl), but can be added later if needed
         valid_mod_names = []
         for mod in s.mods:
-            valid_mod_keys = keynames.get_valid_keynames(mod)
+            valid_mod_keys = keynames.get_valid_keynames(mod, explicit_numpad_mode)
             if len(valid_mod_keys) == 0:
                 log.warn('...skipping add shortcut because it has an invalid modifier key name (%s)', mod)
                 return
@@ -54,7 +54,7 @@ class ShortcutContext(object):
         # Split up ambiguous keys into multiple shortcuts
         #  a simple example is +, which can be PLUS or NUMPAD_PLUS
         expanded_shortcuts = []
-        keys = keynames.get_valid_keynames(s.key)
+        keys = keynames.get_valid_keynames(s.key, explicit_numpad_mode)
         if len(keys) == 0:
             log.warn('...skipping add shortcut because it has an invalid key name (%s)', s.key)
             return
