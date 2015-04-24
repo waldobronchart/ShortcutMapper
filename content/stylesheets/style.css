@@ -552,6 +552,7 @@ div#keyboard button .shortcut {
     left: -1px;
     font-family: 'Lato', sans-serif;
     width: 90%;
+    max-height: 32px;
     padding: 0 3px 0 3px;
     font-size: 9px;
     font-weight: 300;

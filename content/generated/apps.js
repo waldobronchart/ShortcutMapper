@@ -4,6 +4,15 @@
 
 var sitedata_apps = [
     {
+        name: "Adobe After Effects",
+        data: {
+            "CC": {
+                "mac": "adobe-after-effects_cc_mac.json",
+                "windows": "adobe-after-effects_cc_windows.json",
+            },
+        }
+    },
+    {
         name: "Adobe Illustrator",
         data: {
             "CC": {
