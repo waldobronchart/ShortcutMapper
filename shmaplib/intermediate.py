@@ -277,13 +277,19 @@ class IntermediateDataExporter(object):
             # Parse modifiers
             mods = [m.strip(u' ') for m in parts[:-1]]  # all but last
 
-            # Handle a range of keys (Example: "Ctrl + 0-9")
+            # Handle a range of keys (Example: "Ctrl + 0-9" or "Ctrl + Numpad 0-9")
             #  which will result in multiple shortcuts with the same label
-            if re.match("[0-9]*.-.[0-9]*", key):
-                start = int(key[0])
-                end = int(key[-1])
+            results = re.findall(".*?([0-9])-([0-9])", key)
+            if results:
+                start = int(results[0][0])
+                end = int(results[0][1])
+                is_numpad_key = 'numpad' in key.lower()
+
                 for i in range(start, end+1):
-                    shortcut = Shortcut(name, str(i), mods)
+                    key_name = str(i)
+                    if is_numpad_key:
+                        key_name = 'Numpad ' + key_name
+                    shortcut = Shortcut(name, key_name, mods)
                     shortcuts.append(shortcut)
 
             # Result is just one shortcut
