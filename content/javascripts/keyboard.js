@@ -1,6 +1,8 @@
 
 
 (function($) {
+    "use strict";
+    
     $.widget("custom.keyboard", {
 
         options: {
@@ -25,6 +27,10 @@
                 var hasShortcut = false;
 
                 for (var contextName in keyboard.options.keydata) {
+                    if (!keyboard.options.keydata.hasOwnProperty(contextName)) {
+                        continue;
+                    }
+                        
                     var context = keyboard.options.keydata[contextName];
                     var contextSafeName = keyboard._getSafeID(contextName);
                     var keyItems = context[keyName];
@@ -32,7 +38,7 @@
                     if (keyItems) {
                         html += "<div class='keyitems' data-context='" + contextSafeName + "'>";
 
-                        for (i=0; i<keyItems.length; i++) {
+                        for (var i=0; i<keyItems.length; i++) {
                             var keyItem = keyItems[i];
                             var mods = (keyItem.mods.length > 0) ? keyItem.mods.join('_') : "NOMOD";
                             html += "<div class='shortcut' data-mods='" + mods + "'>" + keyItem.name + "</div>";
@@ -47,8 +53,9 @@
                 $(this).html(html);
 
                 // Is this key ever used?
-                if (!hasShortcut)
+                if (!hasShortcut) {
                     $(this).addClass("unmapped");
+                }
 
                 // Is key a modifier key?
                 if ($.inArray(keyName, keyboard.options.mods) >= 0) {
@@ -57,10 +64,11 @@
 
                     // Click to toggle modifier activeness
                     $(this).on("click", function() {
-                        if ($.inArray(keyName, keyboard.activeModKeys) >= 0)
+                        if ($.inArray(keyName, keyboard.activeModKeys) >= 0) {
                             keyboard._deactivateModifiers([keyName]);
-                        else
+                        } else {
                             keyboard._activateModifiers([keyName]);
+                        }
                     });
                 }
             });
@@ -77,8 +85,9 @@
             var keyName = window.utils.keyCodeMap[e.which];
 
             // Is key a modifier key?
-            if ($.inArray(keyName, this.options.mods) >= 0)
+            if ($.inArray(keyName, this.options.mods) >= 0) {
                 e.preventDefault();
+            }
 
             // Escape key clears all modifier activeness
             if (keyName === "ESCAPE") {
@@ -94,19 +103,22 @@
             var keyName = window.utils.keyCodeMap[e.which];
 
             // Is key a modifier key?
-            if ($.inArray(keyName, this.options.mods) >= 0)
+            if ($.inArray(keyName, this.options.mods) >= 0) {
                 e.preventDefault();
+            }
 
             this._deactivateModifiers([keyName]);
         },
 
         _activateModifiers: function(modKeyNames) {
-            for (i=0; i<modKeyNames.length; i++) {
+            for (var i=0; i<modKeyNames.length; i++) {
                 var keyName = modKeyNames[i];
-                if ($.inArray(keyName, this.options.mods) < 0)
+                if ($.inArray(keyName, this.options.mods) < 0) {
                     return;
-                if ($.inArray(keyName, this.activeModKeys) >= 0)
+                }
+                if ($.inArray(keyName, this.activeModKeys) >= 0) {
                     return;
+                }
 
                 // Add activeness class from mod buttons
                 var modClass = "mod-" + this._getButtonModClass(keyName);
@@ -120,12 +132,14 @@
         },
 
         _deactivateModifiers: function(modKeyNames) {
-            for (i=0; i<modKeyNames.length; i++) {
+            for (var i=0; i<modKeyNames.length; i++) {
                 var keyName = modKeyNames[i];
-                if ($.inArray(keyName, this.options.mods) < 0)
+                if ($.inArray(keyName, this.options.mods) < 0) {
                     return;
-                if ($.inArray(keyName, this.activeModKeys) < 0)
+                }
+                if ($.inArray(keyName, this.activeModKeys) < 0) {
                     return;
+                }
 
                 // Remove activeness class from mod buttons
                 var modClass = "mod-" + this._getButtonModClass(keyName);
@@ -177,8 +191,9 @@
         },
 
         exitHighlightMode: function() {
-            if (this.highlightedKeyName === null)
+            if (this.highlightedKeyName === null) {
                 return;
+            }
 
             this.highlightedKeyName = null;
             this._update();
@@ -186,18 +201,20 @@
 
         _getButtonModClass: function(keyName) {
             var keyNameLower = keyName.toLowerCase();
-            if ($.inArray(keyNameLower, this.standardModClasses) >= 0)
+            if ($.inArray(keyNameLower, this.standardModClasses) >= 0) {
                 return keyNameLower;
+            }
 
             return "other";
         },
 
         _update: function() {
             var mods = "NOMOD";
-            if (this.activeModKeys.length > 0)
+            if (this.activeModKeys.length > 0) {
                 mods = this.activeModKeys.sort().join("_");
+            }
 
-            var inHighlightMode = (this.highlightedKeyName != null);
+            var inHighlightMode = (this.highlightedKeyName !== null);
             var buttonSelector = "button" + ((inHighlightMode) ? "[data-key='" + this.highlightedKeyName + "']" : "");
 
             // Show only shortcut labels from current mods
@@ -215,10 +232,12 @@
 
             // Highlight keys
             var buttonModClass = "nomod";
-            if (this.activeModKeys.length == 1)
+            if (this.activeModKeys.length === 1) {
                 buttonModClass = this._getButtonModClass(this.activeModKeys[0]);
-            if (this.activeModKeys.length > 1)
+            }
+            if (this.activeModKeys.length > 1) {
                 buttonModClass = "multi";
+            }
             this.contextItems.children("div.shortcut[data-mods='" + mods + "']").closest(buttonSelector).addClass(buttonModClass);
         },
 

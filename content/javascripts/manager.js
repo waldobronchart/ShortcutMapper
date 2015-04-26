@@ -1,33 +1,36 @@
-var pageManager = new function PageManager() {
+function ShortcutMapper() {
+    "use strict";
+    
+    this.selectedApp = null;
+    this.selectedAppData = null;
+    this.selectedVersion = null;
+    this.selectedContext = null;
+    this.selectedOS = null;
+    this.selectedKeyboardType = null;
 
-    selectedApp = sitedata_apps[0];
-    selectedAppData = null;
-    selectedVersion = null;
-    selectedContext = null;
-    selectedOS = null;
-    selectedKeyboardType = null;
-
-    minSearchLength = 2;
-    maxSearchResults = 50;
-    prevNumSearchResults = 0;
-    selectedSearchResult = -1;
-    selectedSearchShortcut = {
+    this.minSearchLength = 2;
+    this.maxSearchResults = 50;
+    this.prevNumSearchResults = 0;
+    this.selectedSearchResult = -1;
+    this.selectedSearchShortcut = {
         context: null,
         key: null,
         shortcut: null
     };
 
-    this.init = function() {
-        var manager = this;
+    this.init = function () {
+        var self = this,
+            hash = window.location.hash;
+        
+        this.selectedApp = window.sitedata_apps[0];
 
         // Get selected app name from window hash
-        var hash = window.location.hash;
         if (hash.length > 1) {
             hash = hash.substring(1).toLowerCase();
             for (var i=0; i<sitedata_apps.length; i++) {
                 var name = sitedata_apps[i].name;
                 if (this._appNameToHash(name).toLowerCase() === hash) {
-                    selectedApp = sitedata_apps[i];
+                    this.selectedApp = sitedata_apps[i];
                 }
             }
         }
@@ -39,120 +42,121 @@ var pageManager = new function PageManager() {
         this.elemKeyboardTypeSelect = $("#keyboardtype_select");
 
         // Set Application and OS
-        this.selectApplication(selectedApp.name);
-        selectedOS = this._getCurrentOS();
+        this.selectApplication(this.selectedApp.name);
+        this.selectedOS = this._getCurrentOS();
 
         // Init ui
         $("select.chosen-select").chosen({
             inherit_select_classes: true,
             search_contains: true
         });
-        this._updateAppOptions(selectedApp.name);
-        this._updateVersionOptions(selectedVersion);
-        this._updateKeyboardTypeOptions(selectedKeyboardType);
-        $("nav button.os-" + selectedOS).addClass("checked");
+        this._updateAppOptions(this.selectedApp.name);
+        this._updateVersionOptions(this.selectedVersion);
+        this._updateKeyboardTypeOptions(this.selectedKeyboardType);
+        $("nav button.os-" + this.selectedOS).addClass("checked");
         this._initSearchBox();
 
         // Events
-        this.elemAppSelect.on("change", function(e, parms) {
+        this.elemAppSelect.on("change", function() {
             var val = $(this).val();
-            manager.selectApplication(val);
-            manager._updateVersionOptions(0);
-            manager._fetchAppKeydataAndUpdate();
+            self.selectApplication(val);
+            self._updateVersionOptions(0);
+            self._fetchAppKeydataAndUpdate();
         });
-        this.elemVersionSelect.on("change", function(e, parms) {
-            selectedVersion = $(this).val();
-            manager._fetchAppKeydataAndUpdate();
+        this.elemVersionSelect.on("change", function() {
+            self.selectedVersion = $(this).val();
+            self._fetchAppKeydataAndUpdate();
         });
-        this.elemContextSelect.on("change", function(e, parms) {
-            selectedContext = $(this).val();
-            manager.elemKeyboard.keyboard("option", "context", selectedContext);
+        this.elemContextSelect.on("change", function() {
+            self.selectedContext = $(this).val();
+            self.elemKeyboard.keyboard("option", "context", self.selectedContext);
         });
         $("nav button.os-radiobutton").click(function () {
             $("nav button.os-radiobutton").removeClass("checked");
             $(this).addClass("checked");
-            selectedOS = $(this).attr("data-os");
-            manager._fetchAppKeydataAndUpdate();
+            self.selectedOS = $(this).attr("data-os");
+            self._fetchAppKeydataAndUpdate();
         });
-        this.elemKeyboardTypeSelect.on("change", function(e, parms) {
-            selectedKeyboardType = $(this).val();
-            manager._updateKeyboard();
+        this.elemKeyboardTypeSelect.on("change", function() {
+            self.selectedKeyboardType = $(this).val();
+            self._updateKeyboard();
         });
 
         // Load in the keyboard html and available shotcut contexts
         this._fetchAppKeydataAndUpdate();
-    }
+    };
 
     this._initSearchBox = function() {
-        var manager = this;
-        var results = $("#search_results");
+        var self = this;
         var input = $("#searchbox input");
         var inputBlurrer = $("#search_blurdetect");
 
         input.keyup(function(e) {
-            manager._searchBoxUpdate(e, $(this).val());
+            self._searchBoxUpdate(e, $(this).val());
 
         }).keydown(function(e) {
             // Escape key clears the search bar and hides results
             var updateHighlight = false;
             if (e.which === $.ui.keyCode.UP) {
-                selectedSearchResult = Math.max(selectedSearchResult-1, 0);
+                self.selectedSearchResult = Math.max(self.selectedSearchResult-1, 0);
                 updateHighlight = true;
             } else if (e.which === $.ui.keyCode.DOWN) {
-                selectedSearchResult = Math.min(selectedSearchResult+1, maxSearchResults-1);
+                self.selectedSearchResult = Math.min(self.selectedSearchResult+1, self.maxSearchResults-1);
                 updateHighlight = true;
             }
 
             if (updateHighlight) {
-                manager._searchBoxUpdate(e, $(this).val());
+                self._searchBoxUpdate(e, $(this).val());
 
-                if (selectedSearchResult >= 0) {
-                    var s = selectedSearchShortcut;
-                    manager.highlightShortcut(s.context, s.key, s.shortcut);
+                if (self.selectedSearchResult >= 0) {
+                    var s = self.selectedSearchShortcut;
+                    self.highlightShortcut(s.context, s.key, s.shortcut);
                 }
             }
 
-        }).focus(function(e) {
+        }).focus(function() {
             input.addClass("active");
-            //manager._searchBoxUpdate(e, $(this).val());
+            //self._searchBoxUpdate(e, $(this).val());
             inputBlurrer.show();
         });
 
         inputBlurrer.mousedown(function() {
-            manager._exitSearch();
+            self._exitSearch();
         });
-    }
+    };
 
     this._appNameToHash = function(name) {
-        return name.replace(" ", "")
-    }
+        return name.replace(" ", "");
+    };
 
     this.selectApplication = function(name) {
         name = name.toLowerCase();
-        if (name === selectedApp.name.toLowerCase())
+        if (name === this.selectedApp.name.toLowerCase()) {
             return;
+        }
 
         for (var i=0; i<sitedata_apps.length; i++) {
             if (name === sitedata_apps[i].name.toLowerCase()) {
-                selectedApp = sitedata_apps[i];
-                window.location.hash = "#" + this._appNameToHash(selectedApp.name);
-                document.title = selectedApp.name + " Shortcuts";
+                this.selectedApp = sitedata_apps[i];
+                window.location.hash = "#" + this._appNameToHash(this.selectedApp.name);
+                document.title = this.selectedApp.name + " Shortcuts";
                 return;
             }
         }
 
         console.error("selected application that doesn't exist in data");
-    }
+    };
 
     this.selectContext = function(name) {
-        if (name === selectedContext)
+        if (name === this.selectedContext) {
             return;
+        }
 
-        selectedContext = name;
+        this.selectedContext = name;
         this.elemContextSelect.val(name);
         this.elemContextSelect.trigger("chosen:updated");
-        this.elemKeyboard.data("keyboard").switchContext(selectedContext);
-    }
+        this.elemKeyboard.data("keyboard").switchContext(this.selectedContext);
+    };
 
 
 
@@ -163,24 +167,25 @@ var pageManager = new function PageManager() {
         var newAppName = this._setSelectOptions(this.elemAppSelect, selected, applicationNames);
 
         // In case the app didn't exist in list
-        if (newAppName.toLowerCase() != selected)
+        if (newAppName.toLowerCase() !== selected) {
             this.selectApplication(newAppName);
-    }
+        }
+    };
 
     this._updateVersionOptions = function(selected) {
         // get all versions from the keys of the selectedApp.data element
-        var applicationVersions = Object.keys(selectedApp.data).sort().reverse();
-        selectedVersion = this._setSelectOptions(this.elemVersionSelect, selected, applicationVersions);
-    }
+        var applicationVersions = Object.keys(this.selectedApp.data).sort().reverse();
+        this.selectedVersion = this._setSelectOptions(this.elemVersionSelect, selected, applicationVersions);
+    };
 
     this._updateContextOptions = function(selected) {
         // the datasheet contains all contexts and shortcuts for the application
-        selectedContext = this._setSelectOptions(this.elemContextSelect, selected, Object.keys(selectedAppData.contexts));
-    }
+        this.selectedContext = this._setSelectOptions(this.elemContextSelect, selected, Object.keys(this.selectedAppData.contexts));
+    };
 
     this._updateKeyboardTypeOptions = function(selected) {
-        selectedKeyboardType = this._setSelectOptions(this.elemKeyboardTypeSelect, selected, Object.keys(sitedata_keyboards));
-    }
+        this.selectedKeyboardType = this._setSelectOptions(this.elemKeyboardTypeSelect, selected, Object.keys(sitedata_keyboards));
+    };
 
     this._setSelectOptions = function(element, selected, options) {
         var html_options = "";
@@ -188,84 +193,94 @@ var pageManager = new function PageManager() {
         var final_selected = null;
         for (var i=0; i<options.length; i++) {
             var option = options[i];
+            
             if (option.toLowerCase() === String(selected).toLowerCase() || i === selected) {
                 html_options += '<option value="' + option + '" selected>' + option + '</option>';
                 final_selected = option;
             } else {
                 html_options += '<option value="' + option + '">' + option + '</option>';
             }
-            if (option.length > max_option_length)
+            
+            if (option.length > max_option_length) {
                 max_option_length = option.length;
+            }
         }
 
         element.html(html_options);
         element.trigger("chosen:updated");
 
-        if (final_selected == null)
+        if (final_selected === null) {
             final_selected = options[0];
+        }
 
         return final_selected;
-    }
+    };
 
 
 
 
 
-    this._fetchAppKeydataAndUpdate = function(onComplete) {
-        var manager = this;
-        var filename = selectedApp.data[selectedVersion][selectedOS];
+    this._fetchAppKeydataAndUpdate = function() {
+        var self = this;
+        var filename = this.selectedApp.data[this.selectedVersion][this.selectedOS];
         $.ajax({
             url: "content/generated/" + filename,
             dataType: "json"
         }).done(function (keydata) {
-            selectedAppData = keydata;
-            selectedContext = keydata.default_context;
-            manager._updateContextOptions(selectedContext);
-            manager._updateKeyboard();
+            self.selectedAppData = keydata;
+            self.selectedContext = keydata.default_context;
+            self._updateContextOptions(self.selectedContext);
+            self._updateKeyboard();
         }).fail(function() {
             $("#keycontent").html("There is no data available for this OS or App Version (try selecting a different app version)");
         });
-    }
+    };
 
     this._updateKeyboard = function() {
         // Clear keyboard html contents
         // Todo: add some sort of loading thing
         $("#keycontent").html("");
 
-        var manager = this;
-        var filename = sitedata_keyboards[selectedKeyboardType][selectedOS];
+        var self = this;
+        var filename = sitedata_keyboards[this.selectedKeyboardType][this.selectedOS];
         $.ajax({
             url: "content/keyboards/" + filename,
             dataType: "html"
         }).done(function (content) {
 
             // Strip stylesheet from content and add to page DOM
-            content = content.replace(/<link\b[^>]*>/i,"")
+            content = content.replace(/<link\b[^>]*>/i,"");
             $("#keycontent").html(content);
 
             // Init the keyboard widget
-            manager.elemKeyboard = $("#keyboard");
-            manager.elemKeyboard.keyboard({
-                'keydata': selectedAppData.contexts,
-                'mods': selectedAppData.mods_used,
-                'context': selectedContext
+            self.elemKeyboard = $("#keyboard");
+            self.elemKeyboard.keyboard({
+                'keydata': self.selectedAppData.contexts,
+                'mods': self.selectedAppData.mods_used,
+                'context': self.selectedContext
             });
-            manager.elemKeyboard.show();
+            self.elemKeyboard.show();
         }).fail(function() {
             $("#keycontent").html("KEYBOARD NOT FOUND (Possibly doesn't exist for selected OS)");
         });
-    }
+    };
 
     this._getCurrentOS = function() {
         var appver = navigator.appVersion.toLowerCase();
-        if (appver.indexOf("win")!=-1)
+        if (appver.indexOf("win") !== -1) {
             return "windows";
-        if (appver.indexOf("mac")!=-1)
+        }
+        
+        if (appver.indexOf("mac") !== -1) {
             return "mac";
-        if (appver.indexOf("linux")!=-1)
+        }
+        
+        if (appver.indexOf("linux") !== -1) {
             return "linux";
+        }
+        
         return "windows";
-    }
+    };
 
 
 
@@ -276,15 +291,16 @@ var pageManager = new function PageManager() {
 
     this._exitSearch = function() {
         $("#searchbox input").removeClass("active");
-        selectedSearchResult = -1;
+        this.selectedSearchResult = -1;
         $("#search_results").hide();
         $("#search_blurdetect").hide();
         this.elemKeyboard.data("keyboard").exitHighlightMode();
-    }
+    };
 
     this._searchBoxUpdate = function(e, searchText) {
         var input = $("#searchbox input");
         var results = $("#search_results");
+        var self = this;
 
         // Escape key clears the search bar and hides results
         if (e.which === $.ui.keyCode.ESCAPE) {
@@ -295,8 +311,8 @@ var pageManager = new function PageManager() {
         }
 
         // Only search past centrain length
-        if (searchText.length < minSearchLength) {
-            selectedSearchResult = -1;
+        if (searchText.length < this.minSearchLength) {
+            this.selectedSearchResult = -1;
             results.hide();
             return;
         }
@@ -308,36 +324,42 @@ var pageManager = new function PageManager() {
         // Iterate through our shortcuts data and build a table for results
         var html = "<table><tbody>";
         var numResults = 0;
-        var numContexts = Object.keys(selectedAppData.contexts).length;
-        for (var contextName in selectedAppData.contexts) {
-            var context = selectedAppData.contexts[contextName];
-
+        var numContexts = Object.keys(this.selectedAppData.contexts).length;
+        for (var contextName in this.selectedAppData.contexts) {
+            if (!this.selectedAppData.contexts.hasOwnProperty(contextName)) {
+                continue;
+            }
+            
+            var context = self.selectedAppData.contexts[contextName];
             for (var keyName in context) {
+                if (!context.hasOwnProperty(keyName)) {
+                    continue;
+                }
 
                 var shortcuts = context[keyName];
-                for (i=0; i<shortcuts.length; i++) {
+                for (var i=0; i<shortcuts.length; i++) {
                     var shortcut = shortcuts[i];
                     var name = shortcut.name;
                     if (regex.test(name)) {
 
                         // Don't show more than max
-                        if (numResults >= maxSearchResults) {
+                        if (numResults >= this.maxSearchResults) {
                             numResults++;
                             continue;
                         }
 
                         // Keep track of selected result
-                        if (selectedSearchResult === numResults) {
-                            selectedSearchShortcut.context = contextName;
-                            selectedSearchShortcut.key = keyName;
-                            selectedSearchShortcut.shortcut = shortcut;
+                        if (this.selectedSearchResult === numResults) {
+                            this.selectedSearchShortcut.context = contextName;
+                            this.selectedSearchShortcut.key = keyName;
+                            this.selectedSearchShortcut.shortcut = shortcut;
                         }
 
-                        html += (selectedSearchResult === numResults) ? "<tr class='selected'>" : "<tr>";
+                        html += (this.selectedSearchResult === numResults) ? "<tr class='selected'>" : "<tr>";
 
                         // Keys
                         html += "<td>";
-                        for (m=0; m<shortcut.mods.length; m++) {
+                        for (var m=0; m<shortcut.mods.length; m++) {
                             var mod = shortcut.mods[m].toLowerCase();
                             html += "<span class='" + mod + "'>" + mod + "</span>";
                         }
@@ -350,8 +372,9 @@ var pageManager = new function PageManager() {
                         html += "</td>";
 
                         // Context (only if there are multiple)
-                        if (numContexts > 1)
+                        if (numContexts > 1) {
                             html += "<td>" + contextName + "</td>";
+                        }
 
                         html += "</tr>";
 
@@ -363,8 +386,8 @@ var pageManager = new function PageManager() {
         html += "</tbody></table>";
 
         // Makes sure the user knows there are more
-        if ((numResults-maxSearchResults) > 0) {
-            html += "<span class='more-results'>" + (numResults-maxSearchResults) + " more shortcuts found...</span>";
+        if ((numResults - this.maxSearchResults) > 0) {
+            html += "<span class='more-results'>" + (numResults - this.maxSearchResults) + " more shortcuts found...</span>";
         }
 
         // Show results and center content
@@ -372,14 +395,14 @@ var pageManager = new function PageManager() {
             results.html(html);
             results.css("left", input.outerWidth()/2 - results.width()/2);
             results.show();
-        } else if (numResults == 0) {
-            selectedSearchResult = -1;
+        } else if (numResults === 0) {
+            this.selectedSearchResult = -1;
             results.hide();
         }
-    }
+    };
 
     this.highlightShortcut = function(contextName, keyName, shortcut) {
         this.selectContext(contextName);
         this.elemKeyboard.data("keyboard").highlightShortcut(keyName, shortcut);
-    }
+    };
 }
