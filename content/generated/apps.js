@@ -40,6 +40,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "AppCode",
+        data: {
+            "3": {
+                "mac": "appcode_3_mac.json",
+                "windows": "appcode_3_windows.json",
+            },
+        }
+    },
+    {
         name: "Autodesk 3dsMax",
         data: {
             "2015": {
@@ -72,6 +81,51 @@ var sitedata_apps = [
         }
     },
     {
+        name: "CLion",
+        data: {
+            "1": {
+                "mac": "clion_1_mac.json",
+                "windows": "clion_1_windows.json",
+            },
+        }
+    },
+    {
+        name: "IntelliJ IDEA",
+        data: {
+            "14": {
+                "mac": "intellij-idea_14_mac.json",
+                "windows": "intellij-idea_14_windows.json",
+            },
+        }
+    },
+    {
+        name: "PhpStorm",
+        data: {
+            "8": {
+                "mac": "phpstorm_8_mac.json",
+                "windows": "phpstorm_8_windows.json",
+            },
+        }
+    },
+    {
+        name: "PyCharm",
+        data: {
+            "4": {
+                "mac": "pycharm_4_mac.json",
+                "windows": "pycharm_4_windows.json",
+            },
+        }
+    },
+    {
+        name: "RubyMine",
+        data: {
+            "7": {
+                "mac": "rubymine_7_mac.json",
+                "windows": "rubymine_7_windows.json",
+            },
+        }
+    },
+    {
         name: "Sublime Text",
         data: {
             "v2": {
@@ -86,6 +140,15 @@ var sitedata_apps = [
             "v5": {
                 "mac": "unity-3d_v5_mac.json",
                 "windows": "unity-3d_v5_windows.json",
+            },
+        }
+    },
+    {
+        name: "WebStorm",
+        data: {
+            "10": {
+                "mac": "webstorm_10_mac.json",
+                "windows": "webstorm_10_windows.json",
             },
         }
     },
