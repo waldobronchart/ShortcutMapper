@@ -1,5 +1,5 @@
 {
-    "name" : "AppCode",
+    "name" : "JetBrains AppCode",
     "version" : "3",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],

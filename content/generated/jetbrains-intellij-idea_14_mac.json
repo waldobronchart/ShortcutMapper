@@ -1,5 +1,5 @@
 {
-    "name" : "IntelliJ IDEA",
+    "name" : "JetBrains IntelliJ IDEA",
     "version" : "14",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],

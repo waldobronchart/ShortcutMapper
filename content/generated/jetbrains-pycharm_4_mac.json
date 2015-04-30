@@ -1,13 +1,13 @@
 {
-    "name" : "WebStorm",
-    "version" : "10",
+    "name" : "JetBrains PyCharm",
+    "version" : "4",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
     "default_context" : "Global Context",
     "contexts" : {
         "Global Context" : {
             "A" : [
-                {"name":"Add to VCS", "mods":["ALT", "COMMAND"]},
+                {"name":"Deselect All", "mods":["ALT", "COMMAND"]},
                 {"name":"Find Action", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Move Caret to Line Start", "mods":["CONTROL"]},
                 {"name":"Select All", "mods":["COMMAND"]},
@@ -31,7 +31,8 @@
                 {"name":"Delete Line", "mods":["COMMAND"]},
                 {"name":"Delete to Word Start", "mods":["ALT"]},
                 {"name":"Last Edit Location", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Redo", "mods":["ALT", "SHIFT"]}
+                {"name":"Redo", "mods":["ALT", "SHIFT"]},
+                {"name":"Unsorted", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
             "C" : [
                 {"name":"Copy Paths", "mods":["COMMAND", "SHIFT"]},
@@ -44,10 +45,12 @@
                 {"name":"Preferences", "mods":["COMMAND"]}
             ],
             "D" : [
-                {"name":"Debug", "mods":["CONTROL"]},
-                {"name":"Duplicate Line or Block", "mods":["COMMAND"]}
+                {"name":"Compare Two Files", "mods":["COMMAND"]},
+                {"name":"Compare all classes from revision on UML", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Show Changes", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
             "DELETE" : [
+                {"name":"Cancel Running Statements", "mods":["ALT", "COMMAND", "SHIFT"]},
                 {"name":"Cut", "mods":["SHIFT"]},
                 {"name":"Delete to Word End", "mods":["ALT"]},
                 {"name":"Remove From Favorites", "mods":["CONTROL"]},
@@ -61,12 +64,13 @@
                 {"name":"Move Statement Down", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Navigate to next table row", "mods":["ALT", "COMMAND", "SHIFT"]},
                 {"name":"Next Change", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Next Method", "mods":["CONTROL"]},
-                {"name":"Next Occurrence", "mods":["ALT", "COMMAND"]},
+                {"name":"Next Page", "mods":["ALT", "COMMAND"]},
+                {"name":"Show List of Tabs", "mods":["CONTROL"]},
                 {"name":"Shrink Selection", "mods":["ALT"]}
             ],
             "E" : [
-                {"name":"Browse Console History", "mods":["ALT", "COMMAND"]},
+                {"name":"Browse History", "mods":["ALT", "COMMAND"]},
+                {"name":"Execute selection in console", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Caret to Line End", "mods":["CONTROL"]},
                 {"name":"Recent Files", "mods":["COMMAND"]},
                 {"name":"Recently Changed Files", "mods":["COMMAND", "SHIFT"]}
@@ -84,14 +88,15 @@
             "ENTER" : [
                 {"name":"Choose Lookup Item and Invoke Complete Statement", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Choose Lookup Item", "mods":[]},
-                {"name":"Execute Current Statement in Multiline Console", "mods":["COMMAND"]},
+                {"name":"Execute", "mods":["COMMAND"]},
                 {"name":"Show Intention Actions", "mods":["ALT"]},
                 {"name":"Start New Line Before Current", "mods":["ALT", "COMMAND"]},
                 {"name":"Start New Line", "mods":["SHIFT"]}
             ],
             "EQUAL" : [
                 {"name":"Expand Recursively", "mods":["ALT", "COMMAND"]},
-                {"name":"Expand", "mods":["COMMAND"]}
+                {"name":"Expand", "mods":["COMMAND"]},
+                {"name":"Insert Cell Above", "mods":["COMMAND", "SHIFT"]}
             ],
             "ESCAPE" : [
                 {"name":"Escape", "mods":[]},
@@ -110,11 +115,11 @@
                 {"name":"Select In", "mods":["ALT"]}
             ],
             "F10" : [
-                {"name":"Show Execution Point", "mods":["ALT"]},
-                {"name":"Update application", "mods":["COMMAND"]}
+                {"name":"Console", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Show Execution Point", "mods":["ALT"]}
             ],
             "F11" : [
-                {"name":"Run Gulp/Grunt Task", "mods":["ALT"]}
+                {"name":"Run Gulp Task", "mods":["ALT"]}
             ],
             "F12" : [
                 {"name":"File Path", "mods":["ALT", "COMMAND"]},
@@ -125,7 +130,7 @@
                 {"name":"Terminal", "mods":["ALT"]}
             ],
             "F2" : [
-                {"name":"Next Highlighted Error", "mods":[]},
+                {"name":"Edit Value", "mods":[]},
                 {"name":"Previous Highlighted Error", "mods":["SHIFT"]},
                 {"name":"Stop", "mods":["COMMAND"]},
                 {"name":"Web Preview", "mods":["ALT"]}
@@ -153,9 +158,9 @@
                 {"name":"Find Usages", "mods":["ALT"]},
                 {"name":"Force Step Into", "mods":["ALT", "SHIFT"]},
                 {"name":"Highlight Usages in File", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Next Difference", "mods":[]},
                 {"name":"Show Usages", "mods":["ALT", "COMMAND"]},
-                {"name":"Smart Step Into", "mods":["SHIFT"]}
+                {"name":"Smart Step Into", "mods":["SHIFT"]},
+                {"name":"Step Into", "mods":[]}
             ],
             "F8" : [
                 {"name":"Evaluate Expression", "mods":["ALT"]},
@@ -172,6 +177,7 @@
                 {"name":"Run to Cursor", "mods":["ALT"]}
             ],
             "FIVE" : [
+                {"name":"Debug", "mods":["COMMAND"]},
                 {"name":"Go to Bookmark 5", "mods":["CONTROL"]},
                 {"name":"Toggle Bookmark 5", "mods":["CONTROL", "SHIFT"]}
             ],
@@ -219,8 +225,7 @@
             ],
             "L" : [
                 {"name":"Navigate to Line", "mods":["COMMAND"]},
-                {"name":"Reformat Code", "mods":["ALT", "COMMAND"]},
-                {"name":"Show Reformat File Dialog", "mods":["ALT", "COMMAND", "SHIFT"]}
+                {"name":"Reformat Code", "mods":["ALT", "COMMAND"]}
             ],
             "LEFT_ARROW" : [
                 {"name":"Back", "mods":["ALT", "COMMAND"]},
@@ -230,7 +235,6 @@
                 {"name":"Move Caret to Previous Word with Selection", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Caret to Previous Word", "mods":["ALT"]},
                 {"name":"Navigate to previous table column", "mods":["ALT", "COMMAND", "SHIFT"]},
-                {"name":"Previous Emmet Edit Point", "mods":["ALT", "CONTROL"]},
                 {"name":"Select Previous Tab in multi-editor file", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Select Previous Tab", "mods":["CONTROL"]}
             ],
@@ -241,7 +245,8 @@
                 {"name":"Select Next Tab", "mods":["COMMAND", "SHIFT"]}
             ],
             "M" : [
-                {"name":"Extract Method", "mods":["ALT", "COMMAND"]}
+                {"name":"Extract Method", "mods":["ALT", "COMMAND"]},
+                {"name":"Replace Structurally", "mods":["COMMAND", "SHIFT"]}
             ],
             "MINUS" : [
                 {"name":"Collapse All", "mods":["COMMAND", "SHIFT"]},
@@ -255,10 +260,9 @@
                 {"name":"Open Task", "mods":["ALT", "SHIFT"]}
             ],
             "NINE" : [
+                {"name":"Changes", "mods":["COMMAND"]},
                 {"name":"Go to Bookmark 9", "mods":["CONTROL"]},
-                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Version Control", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Version Control", "mods":["COMMAND"]}
+                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_EIGHT" : [
                 {"name":"Go to Bookmark 8", "mods":["CONTROL"]},
@@ -266,9 +270,11 @@
             ],
             "NUMPAD_EQUAL" : [
                 {"name":"Expand Recursively", "mods":["ALT", "COMMAND"]},
-                {"name":"Expand", "mods":["COMMAND"]}
+                {"name":"Expand", "mods":["COMMAND"]},
+                {"name":"Insert Cell Above", "mods":["COMMAND", "SHIFT"]}
             ],
             "NUMPAD_FIVE" : [
+                {"name":"Debug", "mods":["COMMAND"]},
                 {"name":"Go to Bookmark 5", "mods":["CONTROL"]},
                 {"name":"Toggle Bookmark 5", "mods":["CONTROL", "SHIFT"]}
             ],
@@ -283,10 +289,9 @@
                 {"name":"Collapse", "mods":["COMMAND"]}
             ],
             "NUMPAD_NINE" : [
+                {"name":"Changes", "mods":["COMMAND"]},
                 {"name":"Go to Bookmark 9", "mods":["CONTROL"]},
-                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Version Control", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Version Control", "mods":["COMMAND"]}
+                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_ONE" : [
                 {"name":"Go to Bookmark 1", "mods":["CONTROL"]},
@@ -295,7 +300,6 @@
             ],
             "NUMPAD_PERIOD" : [
                 {"name":"Choose Lookup Item and Insert Dot", "mods":["CONTROL"]},
-                {"name":"Custom Folding", "mods":["ALT", "COMMAND"]},
                 {"name":"Fold Selection / Remove region", "mods":["COMMAND"]}
             ],
             "NUMPAD_PLUS" : [
@@ -325,7 +329,7 @@
                 {"name":"Toggle Bookmark 0", "mods":["CONTROL", "SHIFT"]}
             ],
             "O" : [
-                {"name":"Go To Changed Navigate to File", "mods":["COMMAND"]},
+                {"name":"Navigate to Class", "mods":["COMMAND"]},
                 {"name":"Navigate to File", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Navigate to Symbol", "mods":["ALT", "COMMAND"]},
                 {"name":"Optimize Imports", "mods":["ALT", "CONTROL"]},
@@ -341,14 +345,13 @@
                 {"name":"Parameter Info", "mods":["COMMAND"]}
             ],
             "PAGE_UP" : [
-                {"name":"Move Caret to Page Top with Selection", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Move Caret to Page Bottom with Selection", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Move Caret to Page Top", "mods":["COMMAND"]},
-                {"name":"Page Down with Selection", "mods":["SHIFT"]},
+                {"name":"Page Up with Selection", "mods":["SHIFT"]},
                 {"name":"Page Up", "mods":[]}
             ],
             "PERIOD" : [
                 {"name":"Choose Lookup Item and Insert Dot", "mods":["CONTROL"]},
-                {"name":"Custom Folding", "mods":["ALT", "COMMAND"]},
                 {"name":"Fold Selection / Remove region", "mods":["COMMAND"]}
             ],
             "PLUS" : [
@@ -364,7 +367,8 @@
                 {"name":"Rerun Navigate to Tests", "mods":["COMMAND", "CONTROL"]},
                 {"name":"Resume Program", "mods":["ALT", "COMMAND"]},
                 {"name":"Run context configuration", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Run", "mods":["ALT", "CONTROL"]}
+                {"name":"Run manage.py Task", "mods":["ALT"]},
+                {"name":"Run", "mods":["CONTROL"]}
             ],
             "RIGHT_ARROW" : [
                 {"name":"Forward", "mods":["ALT", "COMMAND"]},
@@ -373,7 +377,6 @@
                 {"name":"Move Caret to Next Word with Selection", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Caret to Next Word", "mods":["ALT"]},
                 {"name":"Navigate to next table column", "mods":["ALT", "COMMAND", "SHIFT"]},
-                {"name":"Next Emmet Edit Point", "mods":["ALT", "CONTROL"]},
                 {"name":"Right with Selection", "mods":["SHIFT"]},
                 {"name":"Select Next Tab in multi-editor file", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Select Next Tab", "mods":["CONTROL"]}
@@ -386,15 +389,12 @@
             ],
             "S" : [
                 {"name":"Save All", "mods":["COMMAND"]},
-                {"name":"Save As..", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Search Structurally", "mods":["COMMAND", "SHIFT"]}
             ],
             "SEVEN" : [
                 {"name":"Go to Bookmark 7", "mods":["CONTROL"]},
                 {"name":"Structure", "mods":["COMMAND"]},
                 {"name":"Toggle Bookmark 7", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "SINGLE_QUOTE" : [
-                {"name":"Maximize tool window", "mods":["COMMAND", "SHIFT"]}
             ],
             "SIX" : [
                 {"name":"Go to Bookmark 6", "mods":["CONTROL"]},
@@ -415,8 +415,8 @@
                 {"name":"Update Project", "mods":["COMMAND"]}
             ],
             "TAB" : [
-                {"name":"Expand Live Template by Tab", "mods":[]},
-                {"name":"Previous Parameter", "mods":["SHIFT"]},
+                {"name":"Choose Lookup Item Replace", "mods":[]},
+                {"name":"Previous Template Variable", "mods":["SHIFT"]},
                 {"name":"Switcher", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Switcher", "mods":["CONTROL"]}
             ],
@@ -431,17 +431,19 @@
             ],
             "U" : [
                 {"name":"Navigate to Super Method", "mods":["COMMAND"]},
-                {"name":"Unshelve", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Show UML Diagram", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Show UML Popup", "mods":["ALT", "COMMAND"]},
+                {"name":"Toggle Case", "mods":["COMMAND", "SHIFT"]}
             ],
             "UP_ARROW" : [
                 {"name":"Extend Selection", "mods":["ALT"]},
                 {"name":"Jump to Navigation Bar", "mods":["COMMAND"]},
-                {"name":"Lookup Up", "mods":["CONTROL"]},
                 {"name":"Move Line Up", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Statement Up", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Navigate to previous table row", "mods":["ALT", "COMMAND", "SHIFT"]},
                 {"name":"Previous Change", "mods":["ALT", "CONTROL", "SHIFT"]},
-                {"name":"Previous Occurrence", "mods":["ALT", "COMMAND"]},
+                {"name":"Previous Method", "mods":["CONTROL"]},
+                {"name":"Previous Page", "mods":["ALT", "COMMAND"]},
                 {"name":"Related Navigate to Symbol", "mods":["COMMAND", "CONTROL"]},
                 {"name":"Up with Selection", "mods":["SHIFT"]}
             ],

@@ -1,6 +1,6 @@
 {
-    "name" : "PyCharm",
-    "version" : "4",
+    "name" : "JetBrains PhpStorm",
+    "version" : "8",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
     "default_context" : "Global Context",
@@ -47,6 +47,7 @@
             "D" : [
                 {"name":"Compare Two Files", "mods":["COMMAND"]},
                 {"name":"Compare all classes from revision on UML", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Debug", "mods":["CONTROL"]},
                 {"name":"Show Changes", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
             "DELETE" : [
@@ -64,13 +65,12 @@
                 {"name":"Move Statement Down", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Navigate to next table row", "mods":["ALT", "COMMAND", "SHIFT"]},
                 {"name":"Next Change", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Next Method", "mods":["CONTROL"]},
                 {"name":"Next Page", "mods":["ALT", "COMMAND"]},
-                {"name":"Show List of Tabs", "mods":["CONTROL"]},
                 {"name":"Shrink Selection", "mods":["ALT"]}
             ],
             "E" : [
                 {"name":"Browse History", "mods":["ALT", "COMMAND"]},
-                {"name":"Execute selection in console", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Caret to Line End", "mods":["CONTROL"]},
                 {"name":"Recent Files", "mods":["COMMAND"]},
                 {"name":"Recently Changed Files", "mods":["COMMAND", "SHIFT"]}
@@ -94,9 +94,9 @@
                 {"name":"Start New Line", "mods":["SHIFT"]}
             ],
             "EQUAL" : [
+                {"name":"Expand All", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Expand Recursively", "mods":["ALT", "COMMAND"]},
-                {"name":"Expand", "mods":["COMMAND"]},
-                {"name":"Insert Cell Above", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Expand", "mods":["COMMAND"]}
             ],
             "ESCAPE" : [
                 {"name":"Escape", "mods":[]},
@@ -177,7 +177,6 @@
                 {"name":"Run to Cursor", "mods":["ALT"]}
             ],
             "FIVE" : [
-                {"name":"Debug", "mods":["COMMAND"]},
                 {"name":"Go to Bookmark 5", "mods":["CONTROL"]},
                 {"name":"Toggle Bookmark 5", "mods":["CONTROL", "SHIFT"]}
             ],
@@ -269,12 +268,11 @@
                 {"name":"Toggle Bookmark 8", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_EQUAL" : [
+                {"name":"Expand All", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Expand Recursively", "mods":["ALT", "COMMAND"]},
-                {"name":"Expand", "mods":["COMMAND"]},
-                {"name":"Insert Cell Above", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Expand", "mods":["COMMAND"]}
             ],
             "NUMPAD_FIVE" : [
-                {"name":"Debug", "mods":["COMMAND"]},
                 {"name":"Go to Bookmark 5", "mods":["CONTROL"]},
                 {"name":"Toggle Bookmark 5", "mods":["CONTROL", "SHIFT"]}
             ],
@@ -295,7 +293,7 @@
             ],
             "NUMPAD_ONE" : [
                 {"name":"Go to Bookmark 1", "mods":["CONTROL"]},
-                {"name":"Project", "mods":["COMMAND"]},
+                {"name":"Home Directory", "mods":["COMMAND"]},
                 {"name":"Toggle Bookmark 1", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_PERIOD" : [
@@ -329,15 +327,15 @@
                 {"name":"Toggle Bookmark 0", "mods":["CONTROL", "SHIFT"]}
             ],
             "O" : [
+                {"name":"Export to Text File", "mods":["CONTROL"]},
                 {"name":"Navigate to Class", "mods":["COMMAND"]},
                 {"name":"Navigate to File", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Navigate to Symbol", "mods":["ALT", "COMMAND"]},
-                {"name":"Optimize Imports", "mods":["ALT", "CONTROL"]},
-                {"name":"Override Methods", "mods":["CONTROL"]}
+                {"name":"Optimize Imports", "mods":["ALT", "CONTROL"]}
             ],
             "ONE" : [
                 {"name":"Go to Bookmark 1", "mods":["CONTROL"]},
-                {"name":"Project", "mods":["COMMAND"]},
+                {"name":"Home Directory", "mods":["COMMAND"]},
                 {"name":"Toggle Bookmark 1", "mods":["CONTROL", "SHIFT"]}
             ],
             "P" : [
@@ -345,7 +343,7 @@
                 {"name":"Parameter Info", "mods":["COMMAND"]}
             ],
             "PAGE_UP" : [
-                {"name":"Move Caret to Page Bottom with Selection", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Move Caret to Page Top with Selection", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Move Caret to Page Top", "mods":["COMMAND"]},
                 {"name":"Page Up with Selection", "mods":["SHIFT"]},
                 {"name":"Page Up", "mods":[]}
@@ -367,8 +365,7 @@
                 {"name":"Rerun Navigate to Tests", "mods":["COMMAND", "CONTROL"]},
                 {"name":"Resume Program", "mods":["ALT", "COMMAND"]},
                 {"name":"Run context configuration", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Run manage.py Task", "mods":["ALT"]},
-                {"name":"Run", "mods":["CONTROL"]}
+                {"name":"Run", "mods":["ALT", "CONTROL"]}
             ],
             "RIGHT_ARROW" : [
                 {"name":"Forward", "mods":["ALT", "COMMAND"]},
@@ -389,7 +386,7 @@
             ],
             "S" : [
                 {"name":"Save All", "mods":["COMMAND"]},
-                {"name":"Search Structurally", "mods":["COMMAND", "SHIFT"]}
+                {"name":"Save As..", "mods":["COMMAND", "SHIFT"]}
             ],
             "SEVEN" : [
                 {"name":"Go to Bookmark 7", "mods":["CONTROL"]},
@@ -416,7 +413,7 @@
             ],
             "TAB" : [
                 {"name":"Choose Lookup Item Replace", "mods":[]},
-                {"name":"Previous Template Variable", "mods":["SHIFT"]},
+                {"name":"Previous Parameter", "mods":["SHIFT"]},
                 {"name":"Switcher", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Switcher", "mods":["CONTROL"]}
             ],
@@ -462,6 +459,7 @@
             "X" : [
                 {"name":"Clear Context", "mods":["ALT", "SHIFT"]},
                 {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Run Command", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Upload to", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
             "Y" : [

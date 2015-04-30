@@ -1,6 +1,6 @@
 {
-    "name" : "CLion",
-    "version" : "1",
+    "name" : "JetBrains AppCode",
+    "version" : "3",
     "os" : "windows",
     "mods_used" : ["ALT", "CONTROL", "SHIFT"],
     "default_context" : "Global Context",
@@ -37,9 +37,8 @@
                 {"name":"Recent Changes", "mods":["ALT", "SHIFT"]}
             ],
             "D" : [
-                {"name":"Clean", "mods":["ALT", "SHIFT"]},
-                {"name":"Define", "mods":["ALT", "CONTROL"]},
-                {"name":"Duplicate Line or Block", "mods":["CONTROL"]}
+                {"name":"Compare Two Files", "mods":["CONTROL"]},
+                {"name":"Define", "mods":["ALT", "CONTROL"]}
             ],
             "DELETE" : [
                 {"name":"Cut", "mods":["SHIFT"]},
@@ -49,7 +48,6 @@
             ],
             "DOWN_ARROW" : [
                 {"name":"Down with Selection", "mods":["SHIFT"]},
-                {"name":"Lookup Down", "mods":["CONTROL"]},
                 {"name":"Move Line Down", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Statement Down", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Next Change", "mods":["ALT", "CONTROL", "SHIFT"]},
@@ -57,7 +55,7 @@
                 {"name":"Next Occurrence", "mods":["ALT", "CONTROL"]}
             ],
             "E" : [
-                {"name":"Property", "mods":["ALT", "CONTROL"]},
+                {"name":"Browse History", "mods":["ALT", "CONTROL"]},
                 {"name":"Recent Files", "mods":["CONTROL"]},
                 {"name":"Recently Changed Files", "mods":["CONTROL", "SHIFT"]}
             ],
@@ -74,7 +72,6 @@
             "ENTER" : [
                 {"name":"Choose Lookup Item and Invoke Complete Statement", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Choose Lookup Item", "mods":[]},
-                {"name":"Execute Current Statement in Multiline Console", "mods":["CONTROL"]},
                 {"name":"Show Intention Actions", "mods":["ALT"]},
                 {"name":"Start New Line Before Current", "mods":["ALT", "CONTROL"]},
                 {"name":"Start New Line", "mods":["SHIFT"]}
@@ -104,7 +101,7 @@
                 {"name":"Show Execution Point", "mods":["ALT"]}
             ],
             "F11" : [
-                {"name":"Run Gulp/Grunt Task", "mods":["ALT"]},
+                {"name":"Run Gulp Task", "mods":["ALT"]},
                 {"name":"Show Bookmarks", "mods":["SHIFT"]},
                 {"name":"Toggle Bookmark with Mnemonic", "mods":["CONTROL"]},
                 {"name":"Toggle Bookmark", "mods":[]}
@@ -149,7 +146,7 @@
                 {"name":"Find Usages", "mods":["ALT"]},
                 {"name":"Force Step Into", "mods":["ALT", "SHIFT"]},
                 {"name":"Highlight Usages in File", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Next Difference", "mods":[]},
+                {"name":"Move to the next difference", "mods":[]},
                 {"name":"Show Usages", "mods":["ALT", "CONTROL"]},
                 {"name":"Smart Step Into", "mods":["SHIFT"]}
             ],
@@ -214,14 +211,13 @@
             ],
             "K" : [
                 {"name":"Check In Project", "mods":["CONTROL"]},
-                {"name":"Push", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Clean", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Typedef", "mods":["ALT", "CONTROL"]}
             ],
             "L" : [
                 {"name":"Find Next / Move to Next Occurrence", "mods":["CONTROL"]},
                 {"name":"Find Previous / Move to Previous Occurrence", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Reformat Code", "mods":["ALT", "CONTROL"]},
-                {"name":"Show Reformat File Dialog", "mods":["ALT", "CONTROL", "SHIFT"]}
+                {"name":"Reformat Code", "mods":["ALT", "CONTROL"]}
             ],
             "LEFT_ARROW" : [
                 {"name":"Back", "mods":["ALT", "CONTROL"]},
@@ -235,7 +231,6 @@
             "LEFT_BRACKET" : [
                 {"name":"Move Caret to Code Block End with Selection", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Move Caret to Code Block End", "mods":["CONTROL"]},
-                {"name":"Next Emmet Edit Point", "mods":["ALT", "SHIFT"]},
                 {"name":"Next Project Window", "mods":["ALT", "CONTROL"]}
             ],
             "M" : [
@@ -255,10 +250,9 @@
                 {"name":"Open Task", "mods":["ALT", "SHIFT"]}
             ],
             "NINE" : [
+                {"name":"Changes", "mods":["ALT"]},
                 {"name":"Go to Bookmark 9", "mods":["CONTROL"]},
-                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Version Control", "mods":["ALT", "SHIFT"]},
-                {"name":"Version Control", "mods":["ALT"]}
+                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_EIGHT" : [
                 {"name":"Go to Bookmark 8", "mods":["CONTROL"]},
@@ -283,10 +277,9 @@
                 {"name":"Collapse", "mods":["CONTROL"]}
             ],
             "NUMPAD_NINE" : [
+                {"name":"Changes", "mods":["ALT"]},
                 {"name":"Go to Bookmark 9", "mods":["CONTROL"]},
-                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]},
-                {"name":"Version Control", "mods":["ALT", "SHIFT"]},
-                {"name":"Version Control", "mods":["ALT"]}
+                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_ONE" : [
                 {"name":"Home Directory", "mods":["CONTROL"]},
@@ -294,7 +287,6 @@
                 {"name":"Toggle Bookmark 1", "mods":["CONTROL", "SHIFT"]}
             ],
             "NUMPAD_PERIOD" : [
-                {"name":"Custom Folding", "mods":["ALT", "CONTROL"]},
                 {"name":"Fold Selection / Remove region", "mods":["CONTROL"]}
             ],
             "NUMPAD_PLUS" : [
@@ -344,7 +336,6 @@
                 {"name":"Page Up", "mods":[]}
             ],
             "PERIOD" : [
-                {"name":"Custom Folding", "mods":["ALT", "CONTROL"]},
                 {"name":"Fold Selection / Remove region", "mods":["CONTROL"]}
             ],
             "PLUS" : [
@@ -371,7 +362,6 @@
             "RIGHT_BRACKET" : [
                 {"name":"Move Caret to Code Block Start with Selection", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Move Caret to Code Block Start", "mods":["CONTROL"]},
-                {"name":"Previous Emmet Edit Point", "mods":["ALT", "SHIFT"]},
                 {"name":"Previous Project Window", "mods":["ALT", "CONTROL"]}
             ],
             "S" : [
@@ -382,9 +372,6 @@
                 {"name":"Go to Bookmark 7", "mods":["CONTROL"]},
                 {"name":"Structure", "mods":["ALT"]},
                 {"name":"Toggle Bookmark 7", "mods":["CONTROL", "SHIFT"]}
-            ],
-            "SINGLE_QUOTE" : [
-                {"name":"Maximize tool window", "mods":["CONTROL", "SHIFT"]}
             ],
             "SIX" : [
                 {"name":"Go to Bookmark 6", "mods":["CONTROL"]},
@@ -404,7 +391,7 @@
                 {"name":"Update Project", "mods":["CONTROL"]}
             ],
             "TAB" : [
-                {"name":"Expand Live Template by Tab", "mods":[]},
+                {"name":"Choose Lookup Item Replace", "mods":[]},
                 {"name":"Previous Parameter", "mods":["SHIFT"]},
                 {"name":"Switcher", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Switcher", "mods":["CONTROL"]}
@@ -419,10 +406,9 @@
                 {"name":"Toggle Bookmark 2", "mods":["CONTROL", "SHIFT"]}
             ],
             "U" : [
-                {"name":"Unshelve", "mods":["CONTROL", "SHIFT"]}
+                {"name":"Toggle Case", "mods":["CONTROL", "SHIFT"]}
             ],
             "UP_ARROW" : [
-                {"name":"Lookup Up", "mods":["CONTROL"]},
                 {"name":"Move Line Up", "mods":["ALT", "SHIFT"]},
                 {"name":"Move Statement Up", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Navigate to previous table row", "mods":["ALT", "CONTROL", "SHIFT"]},

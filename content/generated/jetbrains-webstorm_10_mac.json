@@ -1,6 +1,6 @@
 {
-    "name" : "CLion",
-    "version" : "1",
+    "name" : "JetBrains WebStorm",
+    "version" : "10",
     "os" : "mac",
     "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
     "default_context" : "Global Context",
@@ -20,6 +20,7 @@
             ],
             "B" : [
                 {"name":"Navigate to Declaration", "mods":["COMMAND"]},
+                {"name":"Navigate to Implementation(s)", "mods":["ALT", "COMMAND"]},
                 {"name":"Navigate to Type Declaration", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Navigate to Type Declaration", "mods":["CONTROL", "SHIFT"]},
                 {"name":"Open in Browser", "mods":["ALT", "SHIFT"]}
@@ -43,9 +44,7 @@
                 {"name":"Preferences", "mods":["COMMAND"]}
             ],
             "D" : [
-                {"name":"Clean", "mods":["ALT", "SHIFT"]},
                 {"name":"Debug", "mods":["CONTROL"]},
-                {"name":"Define", "mods":["ALT", "COMMAND"]},
                 {"name":"Duplicate Line or Block", "mods":["COMMAND"]}
             ],
             "DELETE" : [
@@ -67,8 +66,8 @@
                 {"name":"Shrink Selection", "mods":["ALT"]}
             ],
             "E" : [
+                {"name":"Browse Console History", "mods":["ALT", "COMMAND"]},
                 {"name":"Move Caret to Line End", "mods":["CONTROL"]},
-                {"name":"Property", "mods":["ALT", "COMMAND"]},
                 {"name":"Recent Files", "mods":["COMMAND"]},
                 {"name":"Recently Changed Files", "mods":["COMMAND", "SHIFT"]}
             ],
@@ -111,7 +110,8 @@
                 {"name":"Select In", "mods":["ALT"]}
             ],
             "F10" : [
-                {"name":"Show Execution Point", "mods":["ALT"]}
+                {"name":"Show Execution Point", "mods":["ALT"]},
+                {"name":"Update application", "mods":["COMMAND"]}
             ],
             "F11" : [
                 {"name":"Run Gulp/Grunt Task", "mods":["ALT"]}
@@ -144,7 +144,8 @@
             "F6" : [
                 {"name":"Change Signature", "mods":["COMMAND"]},
                 {"name":"Move", "mods":[]},
-                {"name":"Rename", "mods":["SHIFT"]}
+                {"name":"Rename", "mods":["SHIFT"]},
+                {"name":"Show Code Coverage Data", "mods":["ALT", "COMMAND"]}
             ],
             "F7" : [
                 {"name":"Find Usages Settings", "mods":["ALT", "COMMAND", "SHIFT"]},
@@ -187,8 +188,6 @@
             ],
             "H" : [
                 {"name":"Call Hierarchy", "mods":["ALT", "CONTROL"]},
-                {"name":"Imports Hierarchy", "mods":["ALT", "SHIFT"]},
-                {"name":"Imports Hierarchy", "mods":["COMMAND", "CONTROL"]},
                 {"name":"Method Hierarchy", "mods":["COMMAND", "SHIFT"]},
                 {"name":"Type Hierarchy", "mods":["CONTROL"]}
             ],
@@ -216,8 +215,7 @@
             ],
             "K" : [
                 {"name":"Check In Project", "mods":["COMMAND"]},
-                {"name":"Push", "mods":["COMMAND", "SHIFT"]},
-                {"name":"Typedef", "mods":["ALT", "COMMAND"]}
+                {"name":"Push", "mods":["COMMAND", "SHIFT"]}
             ],
             "L" : [
                 {"name":"Navigate to Line", "mods":["COMMAND"]},
@@ -387,7 +385,8 @@
                 {"name":"Select Previous Tab", "mods":["COMMAND", "SHIFT"]}
             ],
             "S" : [
-                {"name":"Save All", "mods":["COMMAND"]}
+                {"name":"Save All", "mods":["COMMAND"]},
+                {"name":"Save As..", "mods":["COMMAND", "SHIFT"]}
             ],
             "SEVEN" : [
                 {"name":"Go to Bookmark 7", "mods":["CONTROL"]},
@@ -431,6 +430,7 @@
                 {"name":"Toggle Bookmark 2", "mods":["CONTROL", "SHIFT"]}
             ],
             "U" : [
+                {"name":"Navigate to Super Method", "mods":["COMMAND"]},
                 {"name":"Unshelve", "mods":["COMMAND", "SHIFT"]}
             ],
             "UP_ARROW" : [
@@ -459,7 +459,8 @@
             ],
             "X" : [
                 {"name":"Clear Context", "mods":["ALT", "SHIFT"]},
-                {"name":"Cut", "mods":["COMMAND"]}
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Upload to", "mods":["ALT", "COMMAND", "SHIFT"]}
             ],
             "Y" : [
                 {"name":"Quick Definition", "mods":["COMMAND"]},
