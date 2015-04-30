@@ -1,5 +1,5 @@
 {
-    "name": "AppCode",
+    "name": "JetBrains AppCode",
     "version": "3",
     "default_context": "Global Context",
     "os": ["windows", "mac", "linux"],

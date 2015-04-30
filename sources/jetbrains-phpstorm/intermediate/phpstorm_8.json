@@ -1,5 +1,5 @@
 {
-    "name": "PhpStorm",
+    "name": "JetBrains PhpStorm",
     "version": "8",
     "default_context": "Global Context",
     "os": ["windows", "mac", "linux"],

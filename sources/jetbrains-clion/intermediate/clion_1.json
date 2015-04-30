@@ -1,5 +1,5 @@
 {
-    "name": "CLion",
+    "name": "JetBrains CLion",
     "version": "1",
     "default_context": "Global Context",
     "os": ["windows", "mac", "linux"],

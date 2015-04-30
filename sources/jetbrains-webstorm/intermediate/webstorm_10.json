@@ -1,5 +1,5 @@
 {
-    "name": "WebStorm",
+    "name": "JetBrains WebStorm",
     "version": "10",
     "default_context": "Global Context",
     "os": ["windows", "mac", "linux"],
