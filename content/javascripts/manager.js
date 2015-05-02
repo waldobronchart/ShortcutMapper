@@ -126,7 +126,7 @@ function ShortcutMapper() {
     };
 
     this._appNameToHash = function(name) {
-        return name.replace(" ", "");
+        return name.replace(/ /g, "");
     };
 
     this.selectApplication = function(name) {
