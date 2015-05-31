@@ -191,7 +191,7 @@ class ApplicationConfig(object):
 
         # todo: handle colons in name
         appname_for_file = self.name.lower().replace(' ', '-')
-        output_path = os.path.join(output_dir, "{0}_{1}_{2}.json".format(appname_for_file, self.version, self.os)).lower()
+        output_path = os.path.join(output_dir, "{0}_{1}_{2}.json".format(appname_for_file, self.version, self.os).lower())
         log.info('serializing ApplicationConfig to %s', output_path)
 
         mods_used = self.get_mods_used()
