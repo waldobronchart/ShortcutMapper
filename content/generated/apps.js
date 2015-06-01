@@ -72,6 +72,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "Euro Truck Simulator 2",
+        data: {
+            "v1.18": {
+                "mac": "euro-truck-simulator-2_v1.18_mac.json",
+                "windows": "euro-truck-simulator-2_v1.18_windows.json",
+            },
+        }
+    },
+    {
         name: "JetBrains AppCode",
         data: {
             "3": {
