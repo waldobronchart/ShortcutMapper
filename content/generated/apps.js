@@ -144,6 +144,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "The Foundry Nuke",
+        data: {
+            "8.0": {
+                "mac": "the-foundry-nuke_8.0_mac.json",
+                "windows": "the-foundry-nuke_8.0_windows.json",
+            },
+        }
+    },
+    {
         name: "Unity 3D",
         data: {
             "v5": {
