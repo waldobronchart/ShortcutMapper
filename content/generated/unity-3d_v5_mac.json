@@ -1,0 +1,154 @@
+{
+    "name" : "Unity 3D",
+    "version" : "v5",
+    "os" : "mac",
+    "mods_used" : ["ALT", "COMMAND", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "A" : [
+                {"name":"Select All", "mods":["COMMAND"]}
+            ],
+            "C" : [
+                {"name":"Console", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Copy", "mods":["COMMAND"]}
+            ],
+            "COMMAND" : [
+                {"name":"Snap", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Duplicate", "mods":["COMMAND"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Load Selection 8", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 8", "mods":["ALT", "COMMAND"]}
+            ],
+            "F" : [
+                {"name":"Align with view", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Find", "mods":["COMMAND"]},
+                {"name":"Frame (centre) selection", "mods":[]},
+                {"name":"Move to view", "mods":["ALT", "COMMAND"]}
+            ],
+            "FIVE" : [
+                {"name":"Load Selection 5", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Project", "mods":["COMMAND"]},
+                {"name":"Save Selection 5", "mods":["ALT", "COMMAND"]}
+            ],
+            "FOUR" : [
+                {"name":"Hierarchy", "mods":["COMMAND"]},
+                {"name":"Load Selection 4", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 4", "mods":["ALT", "COMMAND"]}
+            ],
+            "N" : [
+                {"name":"New game object", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "NINE" : [
+                {"name":"Asset store", "mods":["COMMAND"]},
+                {"name":"Load Selection 9", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 9", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Load Selection 8", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 8", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Load Selection 5", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Project", "mods":["COMMAND"]},
+                {"name":"Save Selection 5", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Hierarchy", "mods":["COMMAND"]},
+                {"name":"Load Selection 4", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 4", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Asset store", "mods":["COMMAND"]},
+                {"name":"Load Selection 9", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 9", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Load Selection 1", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 1", "mods":["ALT", "COMMAND"]},
+                {"name":"Scene", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Load Selection 7", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Profiler", "mods":["COMMAND"]},
+                {"name":"Save Selection 7", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Animation", "mods":["COMMAND"]},
+                {"name":"Load Selection 6", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 6", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Inspector", "mods":["COMMAND"]},
+                {"name":"Load Selection 3", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 3", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Game", "mods":["COMMAND"]},
+                {"name":"Load Selection 2", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 2", "mods":["ALT", "COMMAND"]}
+            ],
+            "ONE" : [
+                {"name":"Load Selection 1", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 1", "mods":["ALT", "COMMAND"]},
+                {"name":"Scene", "mods":["COMMAND"]}
+            ],
+            "P" : [
+                {"name":"Pause", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Play", "mods":["COMMAND"]},
+                {"name":"Step", "mods":["ALT", "COMMAND"]}
+            ],
+            "Q" : [
+                {"name":"Pan", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Refresh", "mods":["COMMAND"]},
+                {"name":"Scale", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Load Selection 7", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Profiler", "mods":["COMMAND"]},
+                {"name":"Save Selection 7", "mods":["ALT", "COMMAND"]}
+            ],
+            "SIX" : [
+                {"name":"Animation", "mods":["COMMAND"]},
+                {"name":"Load Selection 6", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 6", "mods":["ALT", "COMMAND"]}
+            ],
+            "THREE" : [
+                {"name":"Inspector", "mods":["COMMAND"]},
+                {"name":"Load Selection 3", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 3", "mods":["ALT", "COMMAND"]}
+            ],
+            "TWO" : [
+                {"name":"Game", "mods":["COMMAND"]},
+                {"name":"Load Selection 2", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Selection 2", "mods":["ALT", "COMMAND"]}
+            ],
+            "V" : [
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Vertex Snap", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Move", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Pivot Rotation Toggle", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Pivot Mode toggle", "mods":[]},
+                {"name":"Undo", "mods":["COMMAND"]}
+            ]
+        }
+    }
+}

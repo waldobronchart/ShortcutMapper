@@ -1,0 +1,778 @@
+{
+    "name" : "Adobe Lightroom",
+    "version" : "v5.4",
+    "os" : "mac",
+    "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Cycle flag settings", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Add to Quick Collection and goto Next", "mods":["SHIFT"]},
+                {"name":"Add to Quick Collection", "mods":[]},
+                {"name":"Clear Quick Collection", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save Quick Collection", "mods":["ALT", "COMMAND"]},
+                {"name":"Set as target collection", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Show Quick Collection", "mods":["COMMAND"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"Toggle Library Filter Bar", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Enter Library Compare view", "mods":[]}
+            ],
+            "COMMA" : [
+                {"name":"Open Catalog Settings", "mods":["ALT", "COMMAND"]},
+                {"name":"Open Plug-In Manager", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Open Preferences", "mods":["COMMAND"]}
+            ],
+            "D" : [
+                {"name":"Open Develop module", "mods":[]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Rejected Photos", "mods":["COMMAND"]},
+                {"name":"Delete Selected Photo to Trash", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Delete Selected Photo", "mods":[]},
+                {"name":"Remove Selected Photo from Catalog", "mods":["ALT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrease Flag Status", "mods":["COMMAND"]}
+            ],
+            "E" : [
+                {"name":"Edit in Photoshop", "mods":["COMMAND"]},
+                {"name":"Enter Library Loupe view", "mods":[]},
+                {"name":"Export Selected Photo", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Export With Previous Settings", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Open in Other Editor", "mods":["ALT", "COMMAND"]}
+            ],
+            "EIGHT" : [
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
+                {"name":"Assign a green label", "mods":[]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
+            ],
+            "F" : [
+                {"name":"Cycle Screen Modes", "mods":["SHIFT"]},
+                {"name":"Find Photo in Library Module", "mods":["COMMAND"]},
+                {"name":"Go to Normal screen mode", "mods":["ALT", "COMMAND"]},
+                {"name":"Switch between normal and full screen mode", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle Full Screen Preview", "mods":[]}
+            ],
+            "F1" : [
+                {"name":"Open Community Help", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Rename photo", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Show/hide Module Picker", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Show/hide Filmstrip", "mods":[]}
+            ],
+            "F7" : [
+                {"name":"Show/hide left panels", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Show/hide right panels", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Go to Web module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "FOUR" : [
+                {"name":"Go to Print module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "G" : [
+                {"name":"Enter Library Grid view", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Cycle info overlay", "mods":[]},
+                {"name":"Import Photos", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Show/hide info overlay", "mods":["COMMAND"]}
+            ],
+            "K" : [
+                {"name":"Adjustment Brush Tool", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Cycle Lights-Out Modes Backward", "mods":["SHIFT"]},
+                {"name":"Cycle Lights-Out Modes Forward", "mods":[]},
+                {"name":"Toggle Lights Dim mode", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle filters on/off", "mods":["COMMAND"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Go back", "mods":["ALT", "COMMAND"]},
+                {"name":"Previous Photo in Filmstrip", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease Rating by 1 Star", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Enter Library Survey view", "mods":[]},
+                {"name":"New Collection in Library module", "mods":["COMMAND"]},
+                {"name":"New folder in Library module", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "NINE" : [
+                {"name":"Assign a blue label", "mods":[]},
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
+                {"name":"Assign a green label", "mods":[]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Go to Web module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Go to Print module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Assign a blue label", "mods":[]},
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Go to Library module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
+                {"name":"Assign a yellow label", "mods":[]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
+                {"name":"Assign a red label", "mods":[]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Display current module shortcuts", "mods":["COMMAND"]},
+                {"name":"Go to current module Help", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Go to Slideshow module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Go to Develop module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Remove Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Remove Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Open Catalog", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "ONE" : [
+                {"name":"Go to Library module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Flag photo as a pick and go to next photo", "mods":["SHIFT"]},
+                {"name":"Flag photo as a pick", "mods":[]},
+                {"name":"Open Page Setup dialog box", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Print Selected Photo", "mods":["COMMAND"]}
+            ],
+            "Q" : [
+                {"name":"Spot Removal Tool", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Crop Tool", "mods":[]},
+                {"name":"Refine photos", "mods":["ALT", "COMMAND"]},
+                {"name":"Show in Finder", "mods":["COMMAND"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Go forward", "mods":["ALT", "COMMAND"]},
+                {"name":"Next Photo in Filmstrip", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Increase Rating by 1 Star", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
+                {"name":"Assign a yellow label", "mods":[]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Create Virtual Copy", "mods":["COMMAND"]}
+            ],
+            "SIX" : [
+                {"name":"Assign a color label and go to next photo", "mods":["SHIFT"]},
+                {"name":"Assign a red label", "mods":[]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]}
+            ],
+            "SLASH" : [
+                {"name":"Display current module shortcuts", "mods":["COMMAND"]},
+                {"name":"Go to current module Help", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "T" : [
+                {"name":"Create new Subfolder", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Show/hide toolbar", "mods":[]},
+                {"name":"Toggle Tether Capture Bar", "mods":["COMMAND"]}
+            ],
+            "TAB" : [
+                {"name":"Show/hide all panels", "mods":["SHIFT"]},
+                {"name":"Show/hide side panels", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Go to Slideshow module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "TWO" : [
+                {"name":"Go to Develop module", "mods":["ALT", "COMMAND"]},
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Set Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Set Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ],
+            "U" : [
+                {"name":"Unflag photo and go to next photo", "mods":["SHIFT"]},
+                {"name":"Unflag photo", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Go back to previous module", "mods":["ALT", "COMMAND"]},
+                {"name":"Increase Flag Status", "mods":["COMMAND"]}
+            ],
+            "W" : [
+                {"name":"White Balance Tool", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Flag photo as a reject and go to next photo", "mods":["SHIFT"]},
+                {"name":"Flag photo as a reject", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Open/close right panels top to bottom", "mods":["COMMAND"]},
+                {"name":"Remove Star Rating and go to Next Photo", "mods":["SHIFT"]},
+                {"name":"Remove Star Rating", "mods":[]},
+                {"name":"Toggle left panels, top to bottom", "mods":["COMMAND", "CONTROL"]}
+            ]
+        },
+        "Module: Develop" : {
+            "A" : [
+                {"name":"Constrain aspect ratio when Crop tool is selected", "mods":[]},
+                {"name":"Crop to same aspect ratio", "mods":["SHIFT"]},
+                {"name":"Enable Auto Sync", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"View Before only", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Copy/paste Develop settings", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"Cycle through Basic panel settings", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrease selected slider larger increments", "mods":["SHIFT"]},
+                {"name":"Decrease selected slider small increments", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Edit in Photoshop", "mods":["COMMAND"]}
+            ],
+            "ENTER" : [
+                {"name":"Play impromptu slide show", "mods":["COMMAND"]}
+            ],
+            "EQUAL" : [
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "G" : [
+                {"name":"Adjustment tool: apply Grayscale Mix adjustment", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Adjustment tool: apply Hue adjustment", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Show/hide local adjustment pin", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Open Develop view options", "mods":["COMMAND"]},
+                {"name":"Show clipping", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Select the Adjustment Brush tool", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Adjustment tool: apply Luminance adjustment", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Copy After settings to Before", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease brush feathering", "mods":["SHIFT"]},
+                {"name":"Decrease brush size", "mods":[]},
+                {"name":"Rotate photo left", "mods":["COMMAND"]}
+            ],
+            "M" : [
+                {"name":"Match total exposures", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Select the Graduated Filter tool", "mods":[]}
+            ],
+            "MINUS" : [
+                {"name":"Decrease selected slider larger increments", "mods":["SHIFT"]},
+                {"name":"Decrease selected slider small increments", "mods":[]},
+                {"name":"Zoom Out", "mods":["COMMAND"]}
+            ],
+            "N" : [
+                {"name":"Create a new preset folder", "mods":["ALT", "COMMAND"]},
+                {"name":"Create a new preset", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Create a new snapshot", "mods":["COMMAND"]},
+                {"name":"Deselect Targeted Adjustment tool", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Decrease selected slider larger increments", "mods":["SHIFT"]},
+                {"name":"Decrease selected slider small increments", "mods":[]},
+                {"name":"Zoom Out", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Cycle through Basic panel settings", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Increase selected slider larger increments", "mods":["SHIFT"]},
+                {"name":"Increase selected slider small increments", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Switch between adjustment brush A/B", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Cycle Crop grid overlay orientation", "mods":["SHIFT"]},
+                {"name":"Cycle Crop grid overlay", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Cycle through Basic panel settings", "mods":[]}
+            ],
+            "PLUS" : [
+                {"name":"Increase selected slider larger increments", "mods":["SHIFT"]},
+                {"name":"Increase selected slider small increments", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Select the Spot Removal tool", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Reset Crop", "mods":["ALT", "COMMAND"]},
+                {"name":"Reset all settings", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Select the Crop tool", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Copy Before settings to After", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Increase brush feathering", "mods":["SHIFT"]},
+                {"name":"Increase brush size", "mods":[]},
+                {"name":"Rotate photo right", "mods":["COMMAND"]}
+            ],
+            "S" : [
+                {"name":"Adjustment tool: apply Saturation adjustment", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Sync settings bypassing Sync-Settings dialog", "mods":["ALT", "COMMAND"]},
+                {"name":"Sync settings", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle soft proofing", "mods":[]}
+            ],
+            "SLASH" : [
+                {"name":"Switch between adjustment brush A/B", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Toggle between Loupe and 1:1 Zoom preview", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Adjustment tool: apply Tone Curve adjustment", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Auto tone", "mods":["COMMAND"]},
+                {"name":"Auto white balance", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increase selected slider larger increments", "mods":["SHIFT"]},
+                {"name":"Increase selected slider small increments", "mods":[]},
+                {"name":"Swap Before and After settings", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Convert to grayscale", "mods":[]},
+                {"name":"Copy/paste Develop settings", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Paste settings from previous photo", "mods":["ALT", "COMMAND"]}
+            ],
+            "W" : [
+                {"name":"Select White Balance tool", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Switch Crop between Portrait/Landscape", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"View Before and After left/right", "mods":[]},
+                {"name":"View Before and After top/bottom", "mods":["ALT"]},
+                {"name":"View Before/After in split screen", "mods":["SHIFT"]}
+            ],
+            "Z" : [
+                {"name":"Toggle between Loupe and 1:1 Zoom preview", "mods":[]}
+            ]
+        },
+        "Module: Library" : {
+            "A" : [
+                {"name":"Deselect all photos", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Select all photos", "mods":["COMMAND"]},
+                {"name":"Select flagged photos", "mods":["ALT", "COMMAND"]}
+            ],
+            "C" : [
+                {"name":"Copy metadata", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Switch to Compare view", "mods":[]}
+            ],
+            "COLON" : [
+                {"name":"Open Spelling dialog box", "mods":["COMMAND"]}
+            ],
+            "D" : [
+                {"name":"Deselect all photos", "mods":["COMMAND"]},
+                {"name":"Deselect unflagged photos", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Select only active photo", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Swap candidate photos in Compare view", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Switch to Loupe view", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "END" : [
+                {"name":"Go to end of Grid view", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"Play impromptu slide show", "mods":["COMMAND"]},
+                {"name":"Switch to Loupe view", "mods":[]}
+            ],
+            "EQUAL" : [
+                {"name":"Increase Grid Thumb Size", "mods":[]},
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "ESCAPE" : [
+                {"name":"Switch to Grid view", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "FOUR" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "G" : [
+                {"name":"Group into stack", "mods":["COMMAND"]},
+                {"name":"Switch to Grid view", "mods":[]},
+                {"name":"Unstack", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Show/Hide Badges", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Toggle cell extras", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Go to start of Grid view", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Cycle Grid views", "mods":[]},
+                {"name":"Open Library view options", "mods":["COMMAND"]}
+            ],
+            "K" : [
+                {"name":"Add keywords", "mods":["COMMAND"]},
+                {"name":"Edit keywords", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Enable painting", "mods":["ALT", "COMMAND"]},
+                {"name":"Set a keyword shortcut", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Toggle keyword shortcut selected photo", "mods":["SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Add previous photo to selection", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Move up in stack", "mods":["SHIFT"]},
+                {"name":"Rotate photo left", "mods":["COMMAND"]}
+            ],
+            "MINUS" : [
+                {"name":"Decrease Grid Thumb Size", "mods":[]},
+                {"name":"Zoom Out", "mods":["COMMAND"]}
+            ],
+            "N" : [
+                {"name":"Switch to Survey view", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Increase Grid Thumb Size", "mods":[]},
+                {"name":"Zoom In", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Decrease Grid Thumb Size", "mods":[]},
+                {"name":"Zoom Out", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Deselect active photo", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Cycle backward through keyword sets", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle forward through keyword sets", "mods":["ALT"]}
+            ],
+            "ONE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Scroll Down", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Scroll Up", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Add next photo to selection", "mods":["SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Move down in stack", "mods":["SHIFT"]},
+                {"name":"Rotate photo right", "mods":["COMMAND"]}
+            ],
+            "S" : [
+                {"name":"Move to top of stack", "mods":["SHIFT"]},
+                {"name":"Save metadata to file", "mods":["COMMAND"]},
+                {"name":"Toggle stack", "mods":[]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Check spelling", "mods":["COMMAND"]}
+            ],
+            "SEVEN" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "SIX" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "SLASH" : [
+                {"name":"Deselect active photo", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Switch from Grid to Loupe view", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Open Character palette", "mods":["ALT", "COMMAND"]}
+            ],
+            "THREE" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "TWO" : [
+                {"name":"Add keyword from set to selected", "mods":["ALT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Make next photos candidate in Compare view", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste metadata", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "Z" : [
+                {"name":"Toggle Zoom View", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Cycle backward through keyword sets", "mods":["ALT", "SHIFT"]},
+                {"name":"Cycle forward through keyword sets", "mods":["ALT"]}
+            ]
+        },
+        "Module: Print" : {
+            "ENTER" : [
+                {"name":"Play impromptu slide show", "mods":["COMMAND"]}
+            ],
+            "H" : [
+                {"name":"Show/hide guides", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Show/hide page bleed", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Show/hide image cells", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Go to first page", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Go to previous page", "mods":["COMMAND"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Rotate photo left", "mods":["COMMAND"]}
+            ],
+            "M" : [
+                {"name":"Show/hide margins and gutters", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "N" : [
+                {"name":"Create a new print template folder", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Create a new print template", "mods":["COMMAND"]}
+            ],
+            "P" : [
+                {"name":"Open Page Setup dialog box", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Open Print Settings dialog box", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Print one copy", "mods":["ALT", "COMMAND"]},
+                {"name":"Print", "mods":["COMMAND"]}
+            ],
+            "R" : [
+                {"name":"Show/hide rulers", "mods":["COMMAND"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Go to last page", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Go to next page", "mods":["COMMAND"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Rotate photo right", "mods":["COMMAND"]}
+            ],
+            "S" : [
+                {"name":"Save print settings", "mods":["COMMAND"]}
+            ],
+            "U" : [
+                {"name":"Show/hide dimensions", "mods":["COMMAND", "SHIFT"]}
+            ]
+        },
+        "Module: Slideshow" : {
+            "ENTER" : [
+                {"name":"Play impromptu slide show", "mods":["COMMAND"]},
+                {"name":"Play slide show", "mods":[]},
+                {"name":"Preview slide show", "mods":["ALT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"End slide show", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Show/hide guides", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Export JPEG slide show", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Export PDF slide show", "mods":["COMMAND"]},
+                {"name":"Export video slide show", "mods":["ALT", "COMMAND"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Go to previous slide", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Rotate photo left", "mods":["COMMAND"]}
+            ],
+            "N" : [
+                {"name":"Create a new slide show template folder", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Create a new slide show template", "mods":["COMMAND"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Go to next slide", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Rotate photo right", "mods":["COMMAND"]}
+            ],
+            "S" : [
+                {"name":"Save slide show settings", "mods":["COMMAND"]}
+            ],
+            "SPACE" : [
+                {"name":"Pause slide show", "mods":[]}
+            ]
+        },
+        "Module: Web" : {
+            "ENTER" : [
+                {"name":"Play impromptu slide show", "mods":["COMMAND"]}
+            ],
+            "J" : [
+                {"name":"Export web gallery", "mods":["COMMAND"]}
+            ],
+            "N" : [
+                {"name":"Create a new web gallery template folder", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Create a new web gallery template", "mods":["COMMAND"]}
+            ],
+            "P" : [
+                {"name":"Preview in browser", "mods":["ALT", "COMMAND"]}
+            ],
+            "R" : [
+                {"name":"Reload web gallery", "mods":["COMMAND"]}
+            ],
+            "S" : [
+                {"name":"Save web gallery settings", "mods":["COMMAND"]}
+            ]
+        },
+        "Secondary Window" : {
+            "BACKSLASH" : [
+                {"name":"Show/hide Filter bar", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Enter Compare view", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Enter normal Loupe view", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Enter Slideshow view", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Enter locked Loupe view", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Zoom In", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "F11" : [
+                {"name":"Enter full-screen mode", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Open secondary window", "mods":["COMMAND"]}
+            ],
+            "G" : [
+                {"name":"Enter Grid view", "mods":["SHIFT"]}
+            ],
+            "MINUS" : [
+                {"name":"Zoom Out", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "N" : [
+                {"name":"Enter Survey view", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Zoom In", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Zoom Out", "mods":["COMMAND", "SHIFT"]}
+            ]
+        }
+    }
+}

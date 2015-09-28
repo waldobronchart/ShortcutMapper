@@ -1,0 +1,212 @@
+{
+    "name" : "Euro Truck Simulator 2",
+    "version" : "v1.18",
+    "os" : "windows",
+    "mods_used" : [],
+    "default_context" : "Truck Controls",
+    "contexts" : {
+        "Camera Controls" : {
+            "EIGHT" : [
+                {"name":"Drive-By Camera", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Lean Out Camera", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Roof Camera", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Next Camera", "mods":[]}
+            ],
+            "NUMPAD_ASTERISK" : [
+                {"name":"Look Right", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Interior Look Up Middle", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Interior Look Forward", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Interior Look Left", "mods":[]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Interior Look Up Right", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Interior Look Up Left", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Interior Look Right", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Look Left", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Interior Camera", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"On-Wheel Camera", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Bumper Camera", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Top-Down Camera", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Chasing Camera", "mods":[]}
+            ]
+        },
+        "HUD Controls" : {
+            "F1" : [
+                {"name":"Route Advisor Mouse Control", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Show/Hide Side Mirrors On-Screen", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Route Advisor Modes", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Truck Adjustment", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Route Advisor Navigation Page", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Route Advisor Job Info Page", "mods":[]}
+            ],
+            "F7" : [
+                {"name":"Route Advisor Diagnostics Page", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Route Advisor Info Page", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Route Advisor Next Page", "mods":[]}
+            ],
+            "PAUSE_BREAK" : [
+                {"name":"Route Advisor Mouse Control ", "mods":[]}
+            ]
+        },
+        "Other" : {
+            "ENTER" : [
+                {"name":"Activate", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Menu", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Screenshot", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Garage Manager", "mods":[]}
+            ],
+            "M" : [
+                {"name":"World Map", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Audio Player Next Favourite", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Audio Player Previous Favourite", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Audio Player", "mods":[]}
+            ],
+            "SCROLL_LOCK" : [
+                {"name":"Quick Save", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Trailer Attach/Detach", "mods":[]}
+            ]
+        },
+        "Truck Controls" : {
+            "A" : [
+                {"name":"Steering Left ", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Exhaust Brake", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Cruise Control", "mods":[]}
+            ],
+            "CONTROL" : [
+                {"name":"Shift Down", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Steering Right ", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Brake / Reverse", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Start/Stop Engine", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Hazard Warning", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Horn", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Dashboard Display Mode", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Light Horn", "mods":[]}
+            ],
+            "K" : [
+                {"name":"High Beam Headlights", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Light Modes", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Steering Left", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Left-Turn Indicator", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Air Horn", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Beacon", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Wipers", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Steering Right", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Right-Turn Indicator", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Brake / Reverse ", "mods":[]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Retarder Increase", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Shift Up", "mods":[]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Retarder Decrease", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Parking Brake", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Lift/Drop Axle", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Throttle", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Throttle ", "mods":[]}
+            ]
+        }
+    }
+}

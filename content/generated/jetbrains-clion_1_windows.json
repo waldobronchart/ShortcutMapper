@@ -1,0 +1,464 @@
+{
+    "name" : "JetBrains CLion",
+    "version" : "1",
+    "os" : "windows",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "A" : [
+                {"name":"Add to VCS", "mods":["ALT", "CONTROL"]},
+                {"name":"Find Action", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select All", "mods":["CONTROL"]},
+                {"name":"Show All Affected Files", "mods":["ALT", "SHIFT"]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Quick Switch Scheme", "mods":["CONTROL"]},
+                {"name":"VCS Operations Popup", "mods":["ALT"]}
+            ],
+            "B" : [
+                {"name":"Navigate to Declaration", "mods":["CONTROL"]},
+                {"name":"Navigate to Type Declaration", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Open in Browser", "mods":["ALT", "SHIFT"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Backspace", "mods":["SHIFT"]},
+                {"name":"Backspace", "mods":[]},
+                {"name":"Delete to Word Start", "mods":["CONTROL"]},
+                {"name":"Last Edit Location", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Redo", "mods":["ALT", "SHIFT"]},
+                {"name":"Undo", "mods":["ALT"]}
+            ],
+            "C" : [
+                {"name":"Copy Paths", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Copy Reference", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Copy", "mods":["CONTROL"]},
+                {"name":"Extract Constant", "mods":["ALT", "CONTROL"]},
+                {"name":"Recent Changes", "mods":["ALT", "SHIFT"]}
+            ],
+            "D" : [
+                {"name":"Clean", "mods":["ALT", "SHIFT"]},
+                {"name":"Define", "mods":["ALT", "CONTROL"]},
+                {"name":"Duplicate Line or Block", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Cut", "mods":["SHIFT"]},
+                {"name":"Remove From Favorites", "mods":["CONTROL"]},
+                {"name":"Safe Delete", "mods":["ALT"]},
+                {"name":"Unwrap/Remove", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Down with Selection", "mods":["SHIFT"]},
+                {"name":"Lookup Down", "mods":["CONTROL"]},
+                {"name":"Move Line Down", "mods":["ALT", "SHIFT"]},
+                {"name":"Move Statement Down", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Next Change", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Next Method", "mods":["ALT"]},
+                {"name":"Next Occurrence", "mods":["ALT", "CONTROL"]}
+            ],
+            "E" : [
+                {"name":"Property", "mods":["ALT", "CONTROL"]},
+                {"name":"Recent Files", "mods":["CONTROL"]},
+                {"name":"Recently Changed Files", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "EIGHT" : [
+                {"name":"Go to Bookmark 8", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 8", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "END" : [
+                {"name":"Move Caret to Line End with Selection", "mods":["SHIFT"]},
+                {"name":"Move Caret to Line End", "mods":[]},
+                {"name":"Move Caret to Text End with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Text End", "mods":["CONTROL"]}
+            ],
+            "ENTER" : [
+                {"name":"Choose Lookup Item and Invoke Complete Statement", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Choose Lookup Item", "mods":[]},
+                {"name":"Execute Current Statement in Multiline Console", "mods":["CONTROL"]},
+                {"name":"Show Intention Actions", "mods":["ALT"]},
+                {"name":"Start New Line Before Current", "mods":["ALT", "CONTROL"]},
+                {"name":"Start New Line", "mods":["SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Expand Recursively", "mods":["ALT", "CONTROL"]},
+                {"name":"Expand", "mods":["CONTROL"]}
+            ],
+            "ESCAPE" : [
+                {"name":"Escape", "mods":[]},
+                {"name":"Hide Active Tool Window", "mods":["SHIFT"]}
+            ],
+            "F" : [
+                {"name":"Add to Favorites", "mods":["ALT", "SHIFT"]},
+                {"name":"Extract Field", "mods":["ALT", "CONTROL"]},
+                {"name":"Find in Path", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Find", "mods":["CONTROL"]}
+            ],
+            "F1" : [
+                {"name":"Error Description", "mods":["CONTROL"]},
+                {"name":"External Documentation", "mods":["SHIFT"]},
+                {"name":"Select In", "mods":["ALT"]}
+            ],
+            "F10" : [
+                {"name":"Run context configuration", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Run", "mods":["ALT", "SHIFT"]},
+                {"name":"Show Execution Point", "mods":["ALT"]}
+            ],
+            "F11" : [
+                {"name":"Run Gulp/Grunt Task", "mods":["ALT"]},
+                {"name":"Show Bookmarks", "mods":["SHIFT"]},
+                {"name":"Toggle Bookmark with Mnemonic", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark", "mods":[]}
+            ],
+            "F12" : [
+                {"name":"File Path", "mods":["ALT", "CONTROL"]},
+                {"name":"File Structure", "mods":["CONTROL"]},
+                {"name":"Hide All Tool Windows", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Jump to Last Tool Window", "mods":[]},
+                {"name":"Restore Default Layout", "mods":["SHIFT"]},
+                {"name":"Terminal", "mods":["ALT"]}
+            ],
+            "F2" : [
+                {"name":"Next Highlighted Error", "mods":[]},
+                {"name":"Previous Highlighted Error", "mods":["SHIFT"]},
+                {"name":"Stop", "mods":["CONTROL"]},
+                {"name":"Web Preview", "mods":["ALT"]}
+            ],
+            "F3" : [
+                {"name":"Find Next / Move to Next Occurrence", "mods":[]},
+                {"name":"Find Previous / Move to Previous Occurrence", "mods":["SHIFT"]},
+                {"name":"Find", "mods":["ALT"]}
+            ],
+            "F4" : [
+                {"name":"Close Active Tab", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Close", "mods":["CONTROL"]},
+                {"name":"Jump to External Editor", "mods":["ALT", "CONTROL"]},
+                {"name":"Jump to Source", "mods":[]},
+                {"name":"Open source in new window", "mods":["SHIFT"]}
+            ],
+            "F5" : [
+                {"name":"Rerun", "mods":["CONTROL"]}
+            ],
+            "F6" : [
+                {"name":"Change Signature", "mods":["CONTROL"]},
+                {"name":"Move", "mods":[]},
+                {"name":"Rename", "mods":["SHIFT"]}
+            ],
+            "F7" : [
+                {"name":"Find Usages Settings", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Find Usages in File", "mods":["CONTROL"]},
+                {"name":"Find Usages", "mods":["ALT"]},
+                {"name":"Force Step Into", "mods":["ALT", "SHIFT"]},
+                {"name":"Highlight Usages in File", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Next Difference", "mods":[]},
+                {"name":"Show Usages", "mods":["ALT", "CONTROL"]},
+                {"name":"Smart Step Into", "mods":["SHIFT"]}
+            ],
+            "F8" : [
+                {"name":"Evaluate Expression", "mods":["ALT"]},
+                {"name":"Force Step Over", "mods":["ALT", "SHIFT"]},
+                {"name":"Quick Evaluate Expression", "mods":["ALT", "CONTROL"]},
+                {"name":"Step Out", "mods":["SHIFT"]},
+                {"name":"Step Over", "mods":[]},
+                {"name":"Toggle Line Breakpoint", "mods":["CONTROL"]},
+                {"name":"Toggle Temporary Line Breakpoint", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"View Breakpoints", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "F9" : [
+                {"name":"Debug", "mods":["SHIFT"]},
+                {"name":"Force Run to Cursor", "mods":["ALT", "CONTROL"]},
+                {"name":"Resume Program", "mods":[]},
+                {"name":"Run to Cursor", "mods":["ALT"]}
+            ],
+            "FIVE" : [
+                {"name":"Go to Bookmark 5", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 5", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "FOUR" : [
+                {"name":"Go to Bookmark 4", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 4", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Navigate to Line", "mods":["CONTROL"]}
+            ],
+            "H" : [
+                {"name":"Call Hierarchy", "mods":["ALT", "CONTROL"]},
+                {"name":"Imports Hierarchy", "mods":["ALT", "SHIFT"]},
+                {"name":"Method Hierarchy", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Type Hierarchy", "mods":["CONTROL"]}
+            ],
+            "HOME" : [
+                {"name":"Jump to Navigation Bar", "mods":["ALT"]},
+                {"name":"Move Caret to Line Start with Selection", "mods":["SHIFT"]},
+                {"name":"Move Caret to Line Start", "mods":[]},
+                {"name":"Move Caret to Text Start with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Text Start", "mods":["CONTROL"]},
+                {"name":"Related Navigate to Symbol", "mods":["ALT", "CONTROL"]}
+            ],
+            "I" : [
+                {"name":"Auto-Indent Lines", "mods":["ALT", "CONTROL"]},
+                {"name":"Implement Methods", "mods":["CONTROL"]},
+                {"name":"Inspect Code With Editor Settings", "mods":["ALT", "SHIFT"]},
+                {"name":"Quick Definition", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Run Inspection by Name", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "INSERT" : [
+                {"name":"Insert element", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Add Selection for Next Occurrence", "mods":["ALT"]},
+                {"name":"Insert Live Template", "mods":["CONTROL"]},
+                {"name":"Join Lines", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select All Occurrences", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Surround with Live Template", "mods":["ALT", "CONTROL"]},
+                {"name":"Unselect Occurrence", "mods":["ALT", "SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Check In Project", "mods":["CONTROL"]},
+                {"name":"Push", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Typedef", "mods":["ALT", "CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Find Next / Move to Next Occurrence", "mods":["CONTROL"]},
+                {"name":"Find Previous / Move to Previous Occurrence", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Reformat Code", "mods":["ALT", "CONTROL"]},
+                {"name":"Show Reformat File Dialog", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Back", "mods":["ALT", "CONTROL"]},
+                {"name":"Left with Selection", "mods":["SHIFT"]},
+                {"name":"Move Caret to Previous Word with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Previous Word", "mods":["CONTROL"]},
+                {"name":"Navigate to previous table column", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Select Previous Tab in multi-editor file", "mods":["ALT", "SHIFT"]},
+                {"name":"Select Previous Tab", "mods":["ALT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Move Caret to Code Block End with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Code Block End", "mods":["CONTROL"]},
+                {"name":"Next Emmet Edit Point", "mods":["ALT", "SHIFT"]},
+                {"name":"Next Project Window", "mods":["ALT", "CONTROL"]}
+            ],
+            "M" : [
+                {"name":"Extract Method", "mods":["ALT", "CONTROL"]}
+            ],
+            "MINUS" : [
+                {"name":"Collapse All", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Collapse Recursively", "mods":["ALT", "CONTROL"]},
+                {"name":"Collapse Tree Node", "mods":[]},
+                {"name":"Collapse", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Inline", "mods":["ALT", "CONTROL"]},
+                {"name":"Navigate to File", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Navigate to Symbol", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"New...", "mods":["CONTROL"]},
+                {"name":"Open Task", "mods":["ALT", "SHIFT"]}
+            ],
+            "NINE" : [
+                {"name":"Go to Bookmark 9", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Version Control", "mods":["ALT", "SHIFT"]},
+                {"name":"Version Control", "mods":["ALT"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Go to Bookmark 8", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 8", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name":"Expand Recursively", "mods":["ALT", "CONTROL"]},
+                {"name":"Expand", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Go to Bookmark 5", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 5", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Go to Bookmark 4", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 4", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Collapse All", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Collapse Recursively", "mods":["ALT", "CONTROL"]},
+                {"name":"Collapse Tree Node", "mods":[]},
+                {"name":"Collapse", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Go to Bookmark 9", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 9", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Version Control", "mods":["ALT", "SHIFT"]},
+                {"name":"Version Control", "mods":["ALT"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Home Directory", "mods":["CONTROL"]},
+                {"name":"Project", "mods":["ALT"]},
+                {"name":"Toggle Bookmark 1", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Custom Folding", "mods":["ALT", "CONTROL"]},
+                {"name":"Fold Selection / Remove region", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Expand Tree Node", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Go to Bookmark 7", "mods":["CONTROL"]},
+                {"name":"Structure", "mods":["ALT"]},
+                {"name":"Toggle Bookmark 7", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Go to Bookmark 6", "mods":["CONTROL"]},
+                {"name":"TODO", "mods":["ALT"]},
+                {"name":"Toggle Bookmark 6", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Go to Bookmark 3", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 3", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Favorites", "mods":["ALT"]},
+                {"name":"Go to Bookmark 2", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 2", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Go to Bookmark 0", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 0", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "O" : [
+                {"name":"Export to Text File", "mods":["ALT"]},
+                {"name":"Optimize Imports", "mods":["ALT", "CONTROL"]},
+                {"name":"Override Methods", "mods":["CONTROL"]}
+            ],
+            "ONE" : [
+                {"name":"Home Directory", "mods":["CONTROL"]},
+                {"name":"Project", "mods":["ALT"]},
+                {"name":"Toggle Bookmark 1", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Extract Parameter", "mods":["ALT", "CONTROL"]},
+                {"name":"Parameter Info", "mods":["CONTROL"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Move Caret to Page Top with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Page Top", "mods":["CONTROL"]},
+                {"name":"Page Down with Selection", "mods":["SHIFT"]},
+                {"name":"Page Up", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Custom Folding", "mods":["ALT", "CONTROL"]},
+                {"name":"Fold Selection / Remove region", "mods":["CONTROL"]}
+            ],
+            "PLUS" : [
+                {"name":"Expand Tree Node", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Context Info", "mods":["ALT"]},
+                {"name":"Quick Documentation", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Replace in Path", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Replace", "mods":["CONTROL"]},
+                {"name":"Rerun Navigate to Tests", "mods":["ALT", "SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Forward", "mods":["ALT", "CONTROL"]},
+                {"name":"Move Caret to Next Word with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Next Word", "mods":["CONTROL"]},
+                {"name":"Navigate to next table column", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Right with Selection", "mods":["SHIFT"]},
+                {"name":"Select Next Tab in multi-editor file", "mods":["ALT", "SHIFT"]},
+                {"name":"Select Next Tab", "mods":["ALT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Move Caret to Code Block Start with Selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Caret to Code Block Start", "mods":["CONTROL"]},
+                {"name":"Previous Emmet Edit Point", "mods":["ALT", "SHIFT"]},
+                {"name":"Previous Project Window", "mods":["ALT", "CONTROL"]}
+            ],
+            "S" : [
+                {"name":"Preferences", "mods":["ALT", "CONTROL"]},
+                {"name":"Save All", "mods":["CONTROL"]}
+            ],
+            "SEVEN" : [
+                {"name":"Go to Bookmark 7", "mods":["CONTROL"]},
+                {"name":"Structure", "mods":["ALT"]},
+                {"name":"Toggle Bookmark 7", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Maximize tool window", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Go to Bookmark 6", "mods":["CONTROL"]},
+                {"name":"TODO", "mods":["ALT"]},
+                {"name":"Toggle Bookmark 6", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"Basic Completion", "mods":["CONTROL"]},
+                {"name":"Class Name Completion", "mods":["ALT", "CONTROL"]},
+                {"name":"Smart Completion", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "T" : [
+                {"name":"Navigate to Test", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Refactor This", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Surround With", "mods":["ALT", "CONTROL"]},
+                {"name":"Switch Task", "mods":["ALT", "SHIFT"]},
+                {"name":"Update Project", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Expand Live Template by Tab", "mods":[]},
+                {"name":"Previous Parameter", "mods":["SHIFT"]},
+                {"name":"Switcher", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Switcher", "mods":["CONTROL"]}
+            ],
+            "THREE" : [
+                {"name":"Go to Bookmark 3", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 3", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "TWO" : [
+                {"name":"Favorites", "mods":["ALT"]},
+                {"name":"Go to Bookmark 2", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 2", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Unshelve", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Lookup Up", "mods":["CONTROL"]},
+                {"name":"Move Line Up", "mods":["ALT", "SHIFT"]},
+                {"name":"Move Statement Up", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Navigate to previous table row", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Previous Method", "mods":["ALT"]},
+                {"name":"Previous Occurrence", "mods":["ALT", "CONTROL"]},
+                {"name":"Up with Selection", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Extract Variable", "mods":["ALT", "CONTROL"]},
+                {"name":"Paste Simple", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Paste from History", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Paste", "mods":["CONTROL"]}
+            ],
+            "W" : [
+                {"name":"Close Active Task", "mods":["ALT", "SHIFT"]},
+                {"name":"Dump lookup element weights to log", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Extend Selection", "mods":["CONTROL"]},
+                {"name":"Shrink Selection", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Clear Context", "mods":["ALT", "SHIFT"]},
+                {"name":"Cut", "mods":["CONTROL"]}
+            ],
+            "Y" : [
+                {"name":"Delete Line", "mods":["CONTROL"]},
+                {"name":"Synchronize", "mods":["ALT", "CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Redo", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Revert", "mods":["ALT", "CONTROL"]},
+                {"name":"Undo", "mods":["CONTROL"]}
+            ],
+            "ZERO" : [
+                {"name":"Go to Bookmark 0", "mods":["CONTROL"]},
+                {"name":"Toggle Bookmark 0", "mods":["CONTROL", "SHIFT"]}
+            ]
+        }
+    }
+}

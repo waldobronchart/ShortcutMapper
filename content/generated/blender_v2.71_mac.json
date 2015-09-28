@@ -1,0 +1,3331 @@
+{
+    "name" : "Blender",
+    "version" : "v2.71",
+    "os" : "mac",
+    "mods_used" : ["ALT", "COMMAND", "CONTROL", "SHIFT"],
+    "default_context" : "3D View",
+    "contexts" : {
+        "3D View" : {
+            "A" : [
+                {"name":"Add Menu", "mods":["SHIFT"]},
+                {"name":"Make Duplicates Real", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Object Apply Menu", "mods":["CONTROL"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Toggle All Layers", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]},
+                {"name":"Clear Render Border", "mods":["ALT", "CONTROL"]},
+                {"name":"Clipping Border", "mods":["ALT"]},
+                {"name":"Set Render Border", "mods":["CONTROL"]},
+                {"name":"Zoom to Border", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Add Constraint (with Targets)", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Circle Select", "mods":[]},
+                {"name":"Clear Object Constraints", "mods":["ALT", "CONTROL"]},
+                {"name":"Convert to", "mods":["ALT"]},
+                {"name":"Copy Selection to Buffer", "mods":["COMMAND"]},
+                {"name":"Copy Selection to Buffer", "mods":["CONTROL"]},
+                {"name":"Set Origin", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"View All", "mods":["SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"Set Pivot: Bounding Box Center", "mods":[]},
+                {"name":"Set Pivot: Median Point", "mods":["CONTROL"]},
+                {"name":"Toggle Use Pivot Point Align", "mods":["ALT"]}
+            ],
+            "D" : [
+                {"name":"Duplicate Linked", "mods":["ALT"]},
+                {"name":"Duplicate Objects", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":["SHIFT"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Switch To Layer 18", "mods":["ALT"]},
+                {"name":"Switch To Layer 8", "mods":[]},
+                {"name":"Toggle Layer 18", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 8", "mods":["SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Dolly View", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Zoom View", "mods":["CONTROL"]}
+            ],
+            "F" : [
+                {"name":"Center View to Mouse", "mods":["ALT"]},
+                {"name":"View Navigation", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Set Subdivision Level To 5", "mods":["CONTROL"]},
+                {"name":"Switch To Layer 15", "mods":["ALT"]},
+                {"name":"Switch To Layer 5", "mods":[]},
+                {"name":"Toggle Layer 15", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 5", "mods":["SHIFT"]}
+            ],
+            "FOUR" : [
+                {"name":"Set Subdivision Level To 4", "mods":["CONTROL"]},
+                {"name":"Switch To Layer 14", "mods":["ALT"]},
+                {"name":"Switch To Layer 4", "mods":[]},
+                {"name":"Toggle Layer 14", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 4", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Add Selected To Active Group", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Clear Location", "mods":["ALT"]},
+                {"name":"Create New Group", "mods":["CONTROL"]},
+                {"name":"Remove From All Groups", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Remove From Group", "mods":["ALT", "CONTROL"]},
+                {"name":"Remove Selected From Active Group", "mods":["ALT", "SHIFT"]},
+                {"name":"Select Grouped", "mods":["SHIFT"]},
+                {"name":"Translate", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Clear Restrict Render", "mods":["ALT", "CONTROL"]},
+                {"name":"Clear Restrict View", "mods":["ALT"]},
+                {"name":"Set Restrict Render", "mods":["CONTROL"]},
+                {"name":"Set Restrict View", "mods":["SHIFT"]},
+                {"name":"Set Restrict View", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"Center View to Cursor", "mods":["ALT"]},
+                {"name":"View All", "mods":["CONTROL"]},
+                {"name":"View Camera Center", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Delete Keyframe", "mods":["ALT"]},
+                {"name":"Insert Keyframe Menu", "mods":[]},
+                {"name":"Set Active Keying Set", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "J" : [
+                {"name":"Join", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Make Links Menu", "mods":["CONTROL"]},
+                {"name":"Make Local", "mods":[]},
+                {"name":"Select Linked", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Hierarchy", "mods":["SHIFT"]},
+                {"name":"Select Hierarchy", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Mirror", "mods":["CONTROL"]},
+                {"name":"Move to Layer", "mods":[]},
+                {"name":"Select Mirror", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "MINUS" : [
+                {"name":"Dolly View", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Zoom View", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Switch To Layer 19", "mods":["ALT"]},
+                {"name":"Switch To Layer 9", "mods":[]},
+                {"name":"Toggle Layer 19", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 9", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"View Orbit", "mods":[]},
+                {"name":"View Pan", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Zoom Camera 1:1", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"View Persp/Ortho", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"View Orbit", "mods":[]},
+                {"name":"View Pan", "mods":["CONTROL"]},
+                {"name":"View Roll", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Dolly View", "mods":["SHIFT"]},
+                {"name":"Zoom View", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"View Numpad", "mods":["CONTROL", "SHIFT"]},
+                {"name":"View Numpad", "mods":["CONTROL"]},
+                {"name":"View Numpad", "mods":["SHIFT"]},
+                {"name":"View Numpad", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Lock Clear", "mods":["ALT"]},
+                {"name":"View Lock to Active", "mods":["SHIFT"]},
+                {"name":"View Selected", "mods":["CONTROL"]},
+                {"name":"View Selected", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Dolly View", "mods":["SHIFT"]},
+                {"name":"Zoom View", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"View Numpad", "mods":["CONTROL", "SHIFT"]},
+                {"name":"View Numpad", "mods":["CONTROL"]},
+                {"name":"View Numpad", "mods":["SHIFT"]},
+                {"name":"View Numpad", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"View Orbit", "mods":[]},
+                {"name":"View Pan", "mods":["CONTROL"]},
+                {"name":"View Roll", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Local View", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"View Numpad", "mods":["CONTROL", "SHIFT"]},
+                {"name":"View Numpad", "mods":["CONTROL"]},
+                {"name":"View Numpad", "mods":["SHIFT"]},
+                {"name":"View Numpad", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"View Orbit", "mods":[]},
+                {"name":"View Pan", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Align Camera To View", "mods":["ALT", "CONTROL"]},
+                {"name":"Set Active Object as Camera", "mods":["CONTROL"]},
+                {"name":"View Numpad", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Clear Origin", "mods":["ALT"]},
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Use Proportional Edit Objects", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Set Subdivision Level To 1", "mods":["CONTROL"]},
+                {"name":"Switch To Layer 1", "mods":[]},
+                {"name":"Switch To Layer 11", "mods":["ALT"]},
+                {"name":"Toggle Layer 1", "mods":["SHIFT"]},
+                {"name":"Toggle Layer 11", "mods":["ALT", "SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Clear Parent", "mods":["ALT"]},
+                {"name":"Make Parent without Inverse", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Make Parent", "mods":["CONTROL"]},
+                {"name":"Make Proxy", "mods":["ALT", "CONTROL"]},
+                {"name":"Start Game Engine", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Set Pivot: Active Element", "mods":["ALT"]},
+                {"name":"Set Pivot: Cursor", "mods":[]},
+                {"name":"Set Pivot: Individual Origins", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Clear Rotation", "mods":["ALT"]},
+                {"name":"Rotate", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Hierarchy", "mods":["SHIFT"]},
+                {"name":"Select Hierarchy", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Clear Scale", "mods":["ALT"]},
+                {"name":"Resize", "mods":[]},
+                {"name":"Shear", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Snap Menu", "mods":["SHIFT"]},
+                {"name":"To Sphere", "mods":["ALT", "SHIFT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Switch To Layer 17", "mods":["ALT"]},
+                {"name":"Switch To Layer 7", "mods":[]},
+                {"name":"Toggle Layer 17", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 7", "mods":["SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Switch To Layer 16", "mods":["ALT"]},
+                {"name":"Switch To Layer 6", "mods":[]},
+                {"name":"Toggle Layer 16", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 6", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"Create Orientation", "mods":["ALT", "CONTROL"]},
+                {"name":"Select Orientation", "mods":["ALT"]},
+                {"name":"Toggle Show Manipulator", "mods":["CONTROL"]}
+            ],
+            "T" : [
+                {"name":"Clear Track", "mods":["ALT"]},
+                {"name":"Make Track", "mods":["CONTROL"]},
+                {"name":"Resize", "mods":["ALT", "SHIFT"]},
+                {"name":"Tool Shelf", "mods":[]},
+                {"name":"Translate", "mods":["SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Snap Element Menu", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Toggle Object/Edit Mode", "mods":[]},
+                {"name":"Toggle Pose Mode", "mods":["CONTROL"]},
+                {"name":"Toggle Use Snap", "mods":["SHIFT"]}
+            ],
+            "THREE" : [
+                {"name":"Set Subdivision Level To 3", "mods":["CONTROL"]},
+                {"name":"Switch To Layer 13", "mods":["ALT"]},
+                {"name":"Switch To Layer 3", "mods":[]},
+                {"name":"Toggle Layer 13", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 3", "mods":["SHIFT"]}
+            ],
+            "TWO" : [
+                {"name":"Set Subdivision Level To 2", "mods":["CONTROL"]},
+                {"name":"Switch To Layer 12", "mods":["ALT"]},
+                {"name":"Switch To Layer 2", "mods":[]},
+                {"name":"Toggle Layer 12", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Layer 2", "mods":["SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Make Single User Menu", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste Selection from Buffer", "mods":["COMMAND"]},
+                {"name":"Paste Selection from Buffer", "mods":["CONTROL"]},
+                {"name":"Toggle Vertex Paint Mode", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Bend", "mods":["SHIFT"]},
+                {"name":"Object Specials Menu", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete", "mods":["SHIFT"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Viewport Shade SOLID/RENDERED", "mods":["SHIFT"]},
+                {"name":"Viewport Shade SOLID/TEXTURED", "mods":["ALT"]},
+                {"name":"Viewport Shade SOLID/WIREFRAME", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Set Subdivision Level To 0", "mods":["CONTROL"]},
+                {"name":"Switch To Layer 10", "mods":[]},
+                {"name":"Switch To Layer 20", "mods":["ALT"]},
+                {"name":"Toggle Layer 10", "mods":["SHIFT"]},
+                {"name":"Toggle Layer 20", "mods":["ALT", "SHIFT"]}
+            ]
+        },
+        "3D View: Armature" : {
+            "A" : [
+                {"name":"Add Bone", "mods":["SHIFT"]},
+                {"name":"Align Bones", "mods":["ALT", "CONTROL"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Show All Layers", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Extrude Forked", "mods":["SHIFT"]},
+                {"name":"Extrude", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Cancel Stroke", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Fill Between Joints", "mods":[]},
+                {"name":"Switch Direction", "mods":["ALT"]}
+            ],
+            "G" : [
+                {"name":"Select Similar", "mods":["SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hide Selected Bones", "mods":["SHIFT"]},
+                {"name":"Hide Selected Bones", "mods":[]},
+                {"name":"Reveal Bones", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Select Connected", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Hierarchy", "mods":["SHIFT"]},
+                {"name":"Select Hierarchy", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Change Armature Layers", "mods":["SHIFT"]},
+                {"name":"Change Bone Layers", "mods":[]},
+                {"name":"Flip Active/Selected Bone", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Merge Bones", "mods":["ALT"]}
+            ],
+            "N" : [
+                {"name":"Recalculate Roll", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Clear Parent", "mods":["ALT"]},
+                {"name":"Make Parent", "mods":["CONTROL"]},
+                {"name":"Separate Bones", "mods":["ALT", "CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Transform", "mods":["CONTROL"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Hierarchy", "mods":["SHIFT"]},
+                {"name":"Select Hierarchy", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Transform", "mods":["ALT", "CONTROL"]},
+                {"name":"Transform", "mods":["ALT"]}
+            ],
+            "W" : [
+                {"name":"Armature Specials Menu", "mods":[]},
+                {"name":"Bone Options Disable Menu", "mods":["ALT"]},
+                {"name":"Bone Options Enable Menu", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Bone Options Toggle Menu", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Split", "mods":[]}
+            ]
+        },
+        "3D View: Curve" : {
+            "A" : [
+                {"name":"Edit Curve Add Menu", "mods":["SHIFT"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Toggle Cyclic", "mods":["ALT"]}
+            ],
+            "D" : [
+                {"name":"Add Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Extrude Curve and Move", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Make Segment", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Hide Selected", "mods":["SHIFT"]},
+                {"name":"Hide Selected", "mods":[]},
+                {"name":"Hook Menu", "mods":["CONTROL"]},
+                {"name":"Reveal Hidden", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Select Linked All", "mods":["CONTROL"]},
+                {"name":"Select Linked", "mods":["SHIFT"]},
+                {"name":"Select Linked", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Recalc Normals", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Proportional Edit", "mods":["ALT"]},
+                {"name":"Toggle Proportional Edit", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Make Vertex Parent", "mods":["CONTROL"]},
+                {"name":"Separate", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Select Control Point Row", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Transform", "mods":["ALT"]}
+            ],
+            "T" : [
+                {"name":"Clear Tilt", "mods":["ALT"]},
+                {"name":"Tilt", "mods":["CONTROL"]}
+            ],
+            "V" : [
+                {"name":"Set Handle Type", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Edit Curve Specials Menu", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Split", "mods":[]}
+            ]
+        },
+        "3D View: Face Mask" : {
+            "A" : [
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Face Select Hide", "mods":["SHIFT"]},
+                {"name":"Face Select Hide", "mods":[]},
+                {"name":"Face Select Reveal", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Select Linked Pick", "mods":["SHIFT"]},
+                {"name":"Select Linked Pick", "mods":[]},
+                {"name":"Select Linked", "mods":["CONTROL"]}
+            ]
+        },
+        "3D View: Font" : {
+            "A" : [
+                {"name":"Select All", "mods":["CONTROL"]}
+            ],
+            "B" : [
+                {"name":"Toggle Style", "mods":["CONTROL"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Delete", "mods":["CONTROL"]},
+                {"name":"Delete", "mods":["SHIFT"]},
+                {"name":"Delete", "mods":[]},
+                {"name":"Insert Text", "mods":["ALT"]}
+            ],
+            "C" : [
+                {"name":"Copy Text", "mods":["COMMAND"]},
+                {"name":"Copy Text", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Change Character", "mods":["ALT"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "END" : [
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Line Break", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Style", "mods":["CONTROL"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Change Spacing", "mods":["ALT"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Toggle Style", "mods":["CONTROL"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Change Spacing", "mods":["ALT"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Toggle Style", "mods":["CONTROL"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Change Character", "mods":["ALT"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Paste Text", "mods":["COMMAND"]},
+                {"name":"Paste Text", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Cut Text", "mods":["COMMAND"]},
+                {"name":"Cut Text", "mods":["CONTROL"]}
+            ]
+        },
+        "3D View: Image Paint" : {
+            "A" : [
+                {"name":"Stroke Method Menu", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Brush 17", "mods":["SHIFT"]},
+                {"name":"Brush 7", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Brush Angle", "mods":["ALT", "CONTROL"]},
+                {"name":"Brush Angle", "mods":["CONTROL"]},
+                {"name":"Brush Size", "mods":[]},
+                {"name":"Brush Strength", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Brush 14", "mods":["SHIFT"]},
+                {"name":"Brush 4", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Brush 13", "mods":["SHIFT"]},
+                {"name":"Brush 3", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Toggle Use Paint Mask", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Brush 18", "mods":["SHIFT"]},
+                {"name":"Brush 8", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Brush 0", "mods":[]},
+                {"name":"Brush 10", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Texture Angle Source Random Menu", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Sample Color", "mods":[]},
+                {"name":"Toggle Use Smooth Stroke", "mods":["SHIFT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Brush 16", "mods":["SHIFT"]},
+                {"name":"Brush 6", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Brush 15", "mods":["SHIFT"]},
+                {"name":"Brush 5", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Brush 12", "mods":["SHIFT"]},
+                {"name":"Brush 2", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Brush 1", "mods":[]},
+                {"name":"Brush 11", "mods":["SHIFT"]}
+            ],
+            "ZERO" : [
+                {"name":"Brush 19", "mods":["SHIFT"]},
+                {"name":"Brush 9", "mods":[]}
+            ]
+        },
+        "3D View: Knife Tool Modal Map" : {
+            "C" : [
+                {"name":"ANGLE_SNAP_TOGGLE", "mods":[]}
+            ],
+            "CONTROL" : [
+                {"name":"SNAP_MIDPOINTS_ON", "mods":["ALT"]},
+                {"name":"SNAP_MIDPOINTS_ON", "mods":["COMMAND"]},
+                {"name":"SNAP_MIDPOINTS_ON", "mods":["CONTROL"]},
+                {"name":"SNAP_MIDPOINTS_ON", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"NEW_CUT", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "SHIFT" : [
+                {"name":"IGNORE_SNAP_ON", "mods":["ALT"]},
+                {"name":"IGNORE_SNAP_ON", "mods":["COMMAND"]},
+                {"name":"IGNORE_SNAP_ON", "mods":["CONTROL"]},
+                {"name":"IGNORE_SNAP_ON", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "Z" : [
+                {"name":"CUT_THROUGH_TOGGLE", "mods":[]}
+            ]
+        },
+        "3D View: Lattice" : {
+            "A" : [
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Flip (Distortion Free)", "mods":["CONTROL"]}
+            ],
+            "H" : [
+                {"name":"Hook Menu", "mods":["CONTROL"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Proportional Edit", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Make Vertex Parent", "mods":["CONTROL"]}
+            ]
+        },
+        "3D View: Mesh" : {
+            "A" : [
+                {"name":"Mesh Add Menu", "mods":["SHIFT"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Bevel", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Bevel", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Add Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Dissolve Selection", "mods":["CONTROL"]},
+                {"name":"Edit Mesh Delete Menu", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Edge Crease", "mods":["SHIFT"]},
+                {"name":"Edit Mesh Edges Menu", "mods":["CONTROL"]},
+                {"name":"Edit Mesh Extrude Menu", "mods":["ALT"]},
+                {"name":"Extrude and Move on Normals", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Beautify Faces", "mods":["ALT", "SHIFT"]},
+                {"name":"Edit Mesh Faces Menu", "mods":["CONTROL"]},
+                {"name":"Fill", "mods":["ALT"]},
+                {"name":"Make Edge/Face", "mods":[]},
+                {"name":"Select Linked Flat Faces", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Set Subdivision Level To 5", "mods":["CONTROL"]}
+            ],
+            "FOUR" : [
+                {"name":"Set Subdivision Level To 4", "mods":["CONTROL"]}
+            ],
+            "G" : [
+                {"name":"Select Similar", "mods":["SHIFT"]},
+                {"name":"Vertex Group Menu", "mods":["CONTROL"]}
+            ],
+            "H" : [
+                {"name":"Hide Selection", "mods":["SHIFT"]},
+                {"name":"Hide Selection", "mods":[]},
+                {"name":"Hook Menu", "mods":["CONTROL"]},
+                {"name":"Reveal Hidden", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Inset Faces", "mods":[]},
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "J" : [
+                {"name":"Tris to Quads", "mods":["ALT"]},
+                {"name":"Vertex Connect", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Knife Topology Tool", "mods":["SHIFT"]},
+                {"name":"Knife Topology Tool", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Select Linked All", "mods":["CONTROL"]},
+                {"name":"Select Linked", "mods":["SHIFT"]},
+                {"name":"Select Linked", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Merge", "mods":["ALT"]},
+                {"name":"Select Non Manifold", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "N" : [
+                {"name":"Make Normals Consistent", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Make Normals Consistent", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Proportional Edit", "mods":["ALT"]},
+                {"name":"Toggle Proportional Edit", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Set Subdivision Level To 1", "mods":["CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Make Vertex Parent", "mods":["CONTROL"]},
+                {"name":"Poke Faces", "mods":["ALT"]},
+                {"name":"Separate", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Loop Cut and Slide", "mods":["CONTROL"]},
+                {"name":"Spin", "mods":["ALT"]}
+            ],
+            "S" : [
+                {"name":"Shrink/Fatten", "mods":["ALT"]}
+            ],
+            "T" : [
+                {"name":"Triangulate Faces", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Triangulate Faces", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Edit Mesh Select Mode Menu", "mods":["CONTROL"]}
+            ],
+            "THREE" : [
+                {"name":"Set Subdivision Level To 3", "mods":["CONTROL"]}
+            ],
+            "TWO" : [
+                {"name":"Set Subdivision Level To 2", "mods":["CONTROL"]}
+            ],
+            "U" : [
+                {"name":"Uv Map Menu", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Edit Mesh Vertices Menu", "mods":["CONTROL"]},
+                {"name":"Rip Fill", "mods":["ALT"]},
+                {"name":"Rip", "mods":[]},
+                {"name":"Vertex Slide", "mods":["SHIFT"]}
+            ],
+            "W" : [
+                {"name":"Edit Mesh Specials Menu", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Dissolve Selection", "mods":["CONTROL"]},
+                {"name":"Edit Mesh Delete Menu", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Split", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Set Subdivision Level To 0", "mods":["CONTROL"]}
+            ]
+        },
+        "3D View: Metaball" : {
+            "A" : [
+                {"name":"Add Metaball", "mods":["SHIFT"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Select Similar", "mods":["SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hide", "mods":["SHIFT"]},
+                {"name":"Hide", "mods":[]},
+                {"name":"Reveal", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Proportional Edit", "mods":["ALT"]},
+                {"name":"Toggle Proportional Edit", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete", "mods":[]}
+            ]
+        },
+        "3D View: Paint Stroke Modal" : {
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ]
+        },
+        "3D View: Particle" : {
+            "A" : [
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Brush Size", "mods":[]},
+                {"name":"Brush Strength", "mods":["SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hide Selected", "mods":["SHIFT"]},
+                {"name":"Hide Selected", "mods":[]},
+                {"name":"Reveal", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Weight Set", "mods":["SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Select Linked", "mods":["SHIFT"]},
+                {"name":"Select Linked", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Proportional Edit", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Particle Specials Menu", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete", "mods":[]}
+            ]
+        },
+        "3D View: Pose" : {
+            "A" : [
+                {"name":"Add Menu", "mods":["SHIFT"]},
+                {"name":"Pose Apply Menu", "mods":["CONTROL"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Show All Layers", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Add Constraint (with Targets)", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Clear Pose Constraints", "mods":["ALT", "CONTROL"]},
+                {"name":"Copy Pose", "mods":["COMMAND"]},
+                {"name":"Copy Pose", "mods":["CONTROL"]}
+            ],
+            "E" : [
+                {"name":"Pose Breakdowner", "mods":["SHIFT"]},
+                {"name":"Push Pose", "mods":["CONTROL"]},
+                {"name":"Relax Pose", "mods":["ALT"]}
+            ],
+            "F" : [
+                {"name":"Flip Active/Selected Bone", "mods":["SHIFT"]},
+                {"name":"Flip Quats", "mods":["ALT"]}
+            ],
+            "G" : [
+                {"name":"Clear Pose Location", "mods":["ALT"]},
+                {"name":"Pose Group Menu", "mods":["CONTROL"]},
+                {"name":"Select Grouped", "mods":["SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hide Selected", "mods":["SHIFT"]},
+                {"name":"Hide Selected", "mods":[]},
+                {"name":"Reveal Selected", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Add IK to Bone", "mods":["SHIFT"]},
+                {"name":"Delete Keyframe", "mods":["ALT"]},
+                {"name":"Insert Keyframe Menu", "mods":[]},
+                {"name":"Remove IK", "mods":["ALT", "CONTROL"]},
+                {"name":"Set Active Keying Set", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"PoseLib Add Pose", "mods":["SHIFT"]},
+                {"name":"PoseLib Browse Poses", "mods":["CONTROL"]},
+                {"name":"PoseLib Remove Pose", "mods":["ALT"]},
+                {"name":"PoseLib Rename Pose", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select Connected", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Hierarchy", "mods":["SHIFT"]},
+                {"name":"Select Hierarchy", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Change Armature Layers", "mods":["SHIFT"]},
+                {"name":"Change Bone Layers", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Make Parent", "mods":["CONTROL"]},
+                {"name":"Select Parent Bone", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Clear Pose Rotation", "mods":["ALT"]},
+                {"name":"Set Rotation Mode", "mods":["CONTROL"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Hierarchy", "mods":["SHIFT"]},
+                {"name":"Select Hierarchy", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Clear Pose Scale", "mods":["ALT"]},
+                {"name":"Transform", "mods":["ALT", "CONTROL"]}
+            ],
+            "V" : [
+                {"name":"Paste Pose", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Paste Pose", "mods":["COMMAND"]},
+                {"name":"Paste Pose", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Paste Pose", "mods":["CONTROL"]}
+            ],
+            "W" : [
+                {"name":"Bone Options Disable Menu", "mods":["ALT"]},
+                {"name":"Bone Options Enable Menu", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Bone Options Toggle Menu", "mods":["SHIFT"]},
+                {"name":"Pose Specials Menu", "mods":[]}
+            ]
+        },
+        "3D View: Sculpt" : {
+            "A" : [
+                {"name":"Stroke Method Menu", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Clay Brush", "mods":[]},
+                {"name":"Crease Brush", "mods":["SHIFT"]}
+            ],
+            "D" : [
+                {"name":"Brush Detail_size", "mods":["SHIFT"]},
+                {"name":"Dynamic Topology Toggle", "mods":["CONTROL"]}
+            ],
+            "EIGHT" : [
+                {"name":"Brush 17", "mods":["SHIFT"]},
+                {"name":"Brush 7", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Brush Angle", "mods":["CONTROL"]},
+                {"name":"Brush Size", "mods":[]},
+                {"name":"Brush Strength", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Brush 14", "mods":["SHIFT"]},
+                {"name":"Brush 4", "mods":[]},
+                {"name":"Set Subdivision Level To 5", "mods":["CONTROL"]}
+            ],
+            "FOUR" : [
+                {"name":"Brush 13", "mods":["SHIFT"]},
+                {"name":"Brush 3", "mods":[]},
+                {"name":"Set Subdivision Level To 4", "mods":["CONTROL"]}
+            ],
+            "G" : [
+                {"name":"Grab Brush", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Hide/Show", "mods":["ALT"]},
+                {"name":"Hide/Show", "mods":["SHIFT"]},
+                {"name":"Hide/Show", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Inflate Brush", "mods":[]},
+                {"name":"Mask Flood Fill", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Snake Hook Brush", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Layer Brush", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Mask Flood Fill", "mods":["ALT"]},
+                {"name":"Toggle Mask Brush", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Brush 18", "mods":["SHIFT"]},
+                {"name":"Brush 8", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Brush 0", "mods":[]},
+                {"name":"Brush 10", "mods":["SHIFT"]},
+                {"name":"Set Subdivision Level To 1", "mods":["CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Pinch Brush", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Set Subdivision Level To -1", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Set Subdivision Level To 1", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Texture Angle Source Random Menu", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Smooth Brush", "mods":[]},
+                {"name":"Toggle Use Smooth Stroke", "mods":["SHIFT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Brush 16", "mods":["SHIFT"]},
+                {"name":"Brush 6", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Brush 15", "mods":["SHIFT"]},
+                {"name":"Brush 5", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Flatten Brush", "mods":["SHIFT"]}
+            ],
+            "THREE" : [
+                {"name":"Brush 12", "mods":["SHIFT"]},
+                {"name":"Brush 2", "mods":[]},
+                {"name":"Set Subdivision Level To 3", "mods":["CONTROL"]}
+            ],
+            "TWO" : [
+                {"name":"Brush 1", "mods":[]},
+                {"name":"Brush 11", "mods":["SHIFT"]},
+                {"name":"Set Subdivision Level To 2", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Draw Brush", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Brush 19", "mods":["SHIFT"]},
+                {"name":"Brush 9", "mods":[]},
+                {"name":"Set Subdivision Level To 0", "mods":["CONTROL"]}
+            ]
+        },
+        "3D View: Vertex Paint" : {
+            "A" : [
+                {"name":"Stroke Method Menu", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Brush 17", "mods":["SHIFT"]},
+                {"name":"Brush 7", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Brush Angle", "mods":["CONTROL"]},
+                {"name":"Brush Size", "mods":[]},
+                {"name":"Brush Strength", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Brush 14", "mods":["SHIFT"]},
+                {"name":"Brush 4", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Brush 13", "mods":["SHIFT"]},
+                {"name":"Brush 3", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Set Vertex Colors", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Toggle Use Paint Mask", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Brush 18", "mods":["SHIFT"]},
+                {"name":"Brush 8", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Brush 0", "mods":[]},
+                {"name":"Brush 10", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Texture Angle Source Random Menu", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Sample Color", "mods":[]},
+                {"name":"Toggle Use Smooth Stroke", "mods":["SHIFT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Brush 16", "mods":["SHIFT"]},
+                {"name":"Brush 6", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Brush 15", "mods":["SHIFT"]},
+                {"name":"Brush 5", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Brush 12", "mods":["SHIFT"]},
+                {"name":"Brush 2", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Brush 1", "mods":[]},
+                {"name":"Brush 11", "mods":["SHIFT"]}
+            ],
+            "ZERO" : [
+                {"name":"Brush 19", "mods":["SHIFT"]},
+                {"name":"Brush 9", "mods":[]}
+            ]
+        },
+        "3D View: Weight Paint" : {
+            "A" : [
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Circle Select", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Brush 17", "mods":["SHIFT"]},
+                {"name":"Brush 7", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Brush Size", "mods":[]},
+                {"name":"Brush Strength", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Brush 14", "mods":["SHIFT"]},
+                {"name":"Brush 4", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Brush 13", "mods":["SHIFT"]},
+                {"name":"Brush 3", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Set Weight", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Toggle Use Paint Mask", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Brush 18", "mods":["SHIFT"]},
+                {"name":"Brush 8", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Brush 0", "mods":[]},
+                {"name":"Brush 10", "mods":["SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Toggle Use Smooth Stroke", "mods":["SHIFT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Brush 16", "mods":["SHIFT"]},
+                {"name":"Brush 6", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Brush 15", "mods":["SHIFT"]},
+                {"name":"Brush 5", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Brush 12", "mods":["SHIFT"]},
+                {"name":"Brush 2", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Brush 1", "mods":[]},
+                {"name":"Brush 11", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Toggle Use Paint Mask Vertex", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Brush Weight", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Brush 19", "mods":["SHIFT"]},
+                {"name":"Brush 9", "mods":[]}
+            ]
+        },
+        "Animation" : {
+            "P" : [
+                {"name":"Clear Preview Range", "mods":["ALT"]},
+                {"name":"Set Preview Range", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Toggle Show Seconds", "mods":["CONTROL"]}
+            ]
+        },
+        "Animation Channels" : {
+            "A" : [
+                {"name":"Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Channels", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Group Channels", "mods":["CONTROL"]},
+                {"name":"Ungroup Channels", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Select All", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Collapse Channels", "mods":["CONTROL"]},
+                {"name":"Collapse Channels", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Expand Channels", "mods":["CONTROL"]},
+                {"name":"Expand Channels", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Move Channels", "mods":["SHIFT"]},
+                {"name":"Move Channels", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Move Channels", "mods":["SHIFT"]},
+                {"name":"Move Channels", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Toggle Channel Editability", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Set Visibility", "mods":[]},
+                {"name":"Toggle Visibility", "mods":["SHIFT"]}
+            ],
+            "W" : [
+                {"name":"Disable Channel Setting", "mods":["ALT"]},
+                {"name":"Enable Channel Setting", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Toggle Channel Setting", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Delete Channels", "mods":[]}
+            ]
+        },
+        "Clip" : {
+            "E" : [
+                {"name":"Set Solver Keyframe", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Track Markers", "mods":["ALT"]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Open Clip", "mods":["ALT"]}
+            ],
+            "P" : [
+                {"name":"Prefetch Frames", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Set Solver Keyframe", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Track Markers", "mods":["ALT"]}
+            ],
+            "S" : [
+                {"name":"Solve Camera", "mods":["SHIFT"]}
+            ],
+            "T" : [
+                {"name":"Tools", "mods":[]},
+                {"name":"Track Markers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Track Markers", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Mode TRACKING/MASK", "mods":[]}
+            ]
+        },
+        "Clip Dopesheet Editor" : {
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ]
+        },
+        "Clip Editor" : {
+            "A" : [
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Circle Select", "mods":[]}
+            ],
+            "COMMA" : [
+                {"name":"Set Pivot: Bounding Box Center", "mods":[]},
+                {"name":"Set Pivot: Median Point", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Disable Markers", "mods":["SHIFT"]},
+                {"name":"Toggle Show Disabled", "mods":["ALT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Marker", "mods":["SHIFT"]},
+                {"name":"Delete Track", "mods":[]}
+            ],
+            "F" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Select Grouped Menu", "mods":["SHIFT"]},
+                {"name":"Translate", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Hide Tracks Clear", "mods":["ALT"]},
+                {"name":"Hide Tracks", "mods":["SHIFT"]},
+                {"name":"Hide Tracks", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Delete keyframe", "mods":["ALT"]},
+                {"name":"Insert keyframe", "mods":[]},
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "J" : [
+                {"name":"Join Tracks", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Lock Tracks", "mods":["ALT"]},
+                {"name":"Lock Tracks", "mods":["CONTROL"]},
+                {"name":"Toggle Lock Selection", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Jump to Frame", "mods":["ALT", "SHIFT"]},
+                {"name":"Jump to Frame", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Toggle Use Mute Footage", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"View Zoom Ratio", "mods":["CONTROL"]},
+                {"name":"View Zoom Ratio", "mods":["SHIFT"]},
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"View Zoom Ratio", "mods":["CONTROL"]},
+                {"name":"View Zoom Ratio", "mods":["SHIFT"]},
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"View Zoom Out", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Selected", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"View Zoom In", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"View Zoom Ratio", "mods":["CONTROL"]},
+                {"name":"View Zoom Ratio", "mods":["SHIFT"]},
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Set Pivot: Cursor", "mods":[]},
+                {"name":"Set Pivot: Individual Origins", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Jump to Frame", "mods":["ALT", "SHIFT"]},
+                {"name":"Jump to Frame", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Resize", "mods":[]},
+                {"name":"Toggle Show Marker Search", "mods":["ALT"]}
+            ],
+            "T" : [
+                {"name":"Clear Track Path", "mods":["ALT", "SHIFT"]},
+                {"name":"Clear Track Path", "mods":["ALT"]},
+                {"name":"Clear Track Path", "mods":["SHIFT"]}
+            ],
+            "W" : [
+                {"name":"Tracking Specials Menu", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Marker", "mods":["SHIFT"]},
+                {"name":"Delete Track", "mods":[]}
+            ]
+        },
+        "Clip Graph Editor" : {
+            "A" : [
+                {"name":"(De)select All Markers", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Disable Markers", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Curve", "mods":[]},
+                {"name":"Delete Knot", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Translate", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"(De)select All Markers", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Toggle Lock Time Cursor", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Center Current Frame", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Resize", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Clear Track Path", "mods":["ALT", "SHIFT"]},
+                {"name":"Clear Track Path", "mods":["ALT"]},
+                {"name":"Clear Track Path", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Delete Curve", "mods":[]},
+                {"name":"Delete Knot", "mods":["SHIFT"]}
+            ]
+        },
+        "Console" : {
+            "BACKSPACE" : [
+                {"name":"Delete", "mods":["CONTROL"]},
+                {"name":"Delete", "mods":["SHIFT"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Copy to Clipboard (as script)", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Copy to Clipboard", "mods":["COMMAND"]},
+                {"name":"Copy to Clipboard", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":["CONTROL"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"History Cycle", "mods":[]}
+            ],
+            "END" : [
+                {"name":"Move Cursor", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"Clear Line", "mods":["SHIFT"]},
+                {"name":"Console Execute", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"Move Cursor", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move Cursor", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Clear Line", "mods":["SHIFT"]},
+                {"name":"Console Execute", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Cycle Font Size", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Cycle Font Size", "mods":["CONTROL"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move Cursor", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Console Autocomplete", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Indent", "mods":[]},
+                {"name":"Insert", "mods":["CONTROL"]},
+                {"name":"Unindent", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"History Cycle", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste from Clipboard", "mods":["COMMAND"]},
+                {"name":"Paste from Clipboard", "mods":["CONTROL"]}
+            ]
+        },
+        "Dopesheet" : {
+            "A" : [
+                {"name":"Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":["ALT"]},
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Copy Keyframes", "mods":["COMMAND"]},
+                {"name":"Copy Keyframes", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Keyframes", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Set Keyframe Extrapolation", "mods":["SHIFT"]},
+                {"name":"Transform", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Jump to Keyframes", "mods":["CONTROL"]},
+                {"name":"Transform", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Insert Keyframes", "mods":[]},
+                {"name":"Select All", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Select All", "mods":["ALT"]},
+                {"name":"Select All", "mods":["CONTROL"]},
+                {"name":"Select All", "mods":["SHIFT"]},
+                {"name":"Select All", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Select Linked", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Left/Right", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Add Time Marker", "mods":[]},
+                {"name":"Mirror Keys", "mods":["SHIFT"]},
+                {"name":"Rename Marker", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Selected", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Clean Keyframes", "mods":[]},
+                {"name":"Sample Keyframes", "mods":["SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Auto-Set Preview Range", "mods":["ALT", "CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Set Keyframe Type", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Left/Right", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Snap Keys", "mods":["SHIFT"]},
+                {"name":"Transform", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Set Keyframe Interpolation", "mods":[]},
+                {"name":"Transform", "mods":["SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Toggle Channel Editability", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste Keyframes", "mods":["COMMAND"]},
+                {"name":"Paste Keyframes", "mods":["CONTROL"]},
+                {"name":"Set Keyframe Handle Type", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Keyframes", "mods":[]}
+            ]
+        },
+        "Extra: Gesture Border" : {
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: Gesture Straight Line" : {
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: Gesture Zoom Border" : {
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: Standard Modal Map" : {
+            "CONTROL" : [
+                {"name":"STEP10", "mods":["ALT"]},
+                {"name":"STEP10", "mods":["COMMAND"]},
+                {"name":"STEP10", "mods":["CONTROL"]},
+                {"name":"STEP10", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"APPLY", "mods":["ALT"]},
+                {"name":"APPLY", "mods":["COMMAND"]},
+                {"name":"APPLY", "mods":["CONTROL"]},
+                {"name":"APPLY", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"APPLY", "mods":["ALT"]},
+                {"name":"APPLY", "mods":["COMMAND"]},
+                {"name":"APPLY", "mods":["CONTROL"]},
+                {"name":"APPLY", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: View3D Dolly Modal" : {
+            "ESCAPE" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: View3D Fly Modal" : {
+            "A" : [
+                {"name":"LEFT", "mods":[]}
+            ],
+            "ALT" : [
+                {"name":"PRECISION_ENABLE", "mods":["ALT"]},
+                {"name":"PRECISION_ENABLE", "mods":["COMMAND"]},
+                {"name":"PRECISION_ENABLE", "mods":["CONTROL"]},
+                {"name":"PRECISION_ENABLE", "mods":["SHIFT"]}
+            ],
+            "CONTROL" : [
+                {"name":"FREELOOK_ENABLE", "mods":["ALT"]},
+                {"name":"FREELOOK_ENABLE", "mods":["COMMAND"]},
+                {"name":"FREELOOK_ENABLE", "mods":["CONTROL"]},
+                {"name":"FREELOOK_ENABLE", "mods":["SHIFT"]}
+            ],
+            "D" : [
+                {"name":"RIGHT", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"BACKWARD", "mods":[]}
+            ],
+            "E" : [
+                {"name":"UP", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ],
+            "F" : [
+                {"name":"DOWN", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"LEFT", "mods":[]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"DECELERATE", "mods":["ALT"]},
+                {"name":"DECELERATE", "mods":["COMMAND"]},
+                {"name":"DECELERATE", "mods":["CONTROL"]},
+                {"name":"DECELERATE", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"ACCELERATE", "mods":["ALT"]},
+                {"name":"ACCELERATE", "mods":["COMMAND"]},
+                {"name":"ACCELERATE", "mods":["CONTROL"]},
+                {"name":"ACCELERATE", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"DOWN", "mods":[]}
+            ],
+            "R" : [
+                {"name":"UP", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"RIGHT", "mods":[]}
+            ],
+            "S" : [
+                {"name":"BACKWARD", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"PRECISION_ENABLE", "mods":["ALT"]},
+                {"name":"PRECISION_ENABLE", "mods":["COMMAND"]},
+                {"name":"PRECISION_ENABLE", "mods":["CONTROL"]},
+                {"name":"PRECISION_ENABLE", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"FORWARD", "mods":[]}
+            ],
+            "W" : [
+                {"name":"FORWARD", "mods":[]}
+            ],
+            "X" : [
+                {"name":"AXIS_LOCK_X", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"AXIS_LOCK_Z", "mods":[]}
+            ]
+        },
+        "Extra: View3D Gesture Circle" : {
+            "ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"CONFIRM", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"SUBTRACT", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"ADD", "mods":[]}
+            ]
+        },
+        "Extra: View3D Move Modal" : {
+            "ESCAPE" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: View3D Rotate Modal" : {
+            "ALT" : [
+                {"name":"AXIS_SNAP_ENABLE", "mods":["ALT"]},
+                {"name":"AXIS_SNAP_ENABLE", "mods":["COMMAND"]},
+                {"name":"AXIS_SNAP_ENABLE", "mods":["CONTROL"]},
+                {"name":"AXIS_SNAP_ENABLE", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ]
+        },
+        "Extra: View3D Zoom Modal" : {
+            "ESCAPE" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ]
+        },
+        "File Browser" : {
+            "A" : [
+                {"name":"(De)select All Files", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Activate/Select File", "mods":[]},
+                {"name":"Add Bookmark", "mods":["CONTROL"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Next Folder", "mods":["SHIFT"]},
+                {"name":"Previous Folder", "mods":[]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Selected Files", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Toggle Hide Dot Files", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Create New Directory", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Increment Number in Filename", "mods":["CONTROL"]},
+                {"name":"Increment Number in Filename", "mods":["SHIFT"]},
+                {"name":"Increment Number in Filename", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Refresh Filelist", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Increment Number in Filename", "mods":["CONTROL"]},
+                {"name":"Increment Number in Filename", "mods":["SHIFT"]},
+                {"name":"Increment Number in Filename", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Parent File", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Toggle Bookmarks", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Selected Files", "mods":[]}
+            ]
+        },
+        "Frames" : {
+            "A" : [
+                {"name":"Play Animation", "mods":["ALT", "SHIFT"]},
+                {"name":"Play Animation", "mods":["ALT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Frame Offset", "mods":["SHIFT"]},
+                {"name":"Jump to Endpoint", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Jump to Keyframe", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Cancel Animation", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Frame Offset", "mods":[]},
+                {"name":"Jump to Endpoint", "mods":["SHIFT"]}
+            ],
+            "MEDIA_NEXT" : [
+                {"name":"Jump to Keyframe", "mods":[]}
+            ],
+            "MEDIA_PLAY" : [
+                {"name":"Play Animation", "mods":[]}
+            ],
+            "MEDIA_PREVIOUS" : [
+                {"name":"Jump to Keyframe", "mods":[]}
+            ],
+            "MEDIA_STOP" : [
+                {"name":"Cancel Animation", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Frame Offset", "mods":[]},
+                {"name":"Jump to Endpoint", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Frame Offset", "mods":["SHIFT"]},
+                {"name":"Jump to Endpoint", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Jump to Keyframe", "mods":[]}
+            ]
+        },
+        "Graph Editor" : {
+            "A" : [
+                {"name":"Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":["ALT", "CONTROL"]},
+                {"name":"Border Select", "mods":["ALT"]},
+                {"name":"Border Select", "mods":["CONTROL"]},
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Bake Curve", "mods":["ALT"]},
+                {"name":"Copy Keyframes", "mods":["COMMAND"]},
+                {"name":"Copy Keyframes", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Keyframes", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Set Keyframe Easing Type", "mods":["CONTROL"]},
+                {"name":"Set Keyframe Extrapolation", "mods":["SHIFT"]},
+                {"name":"Transform", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Jump to Keyframes", "mods":["CONTROL"]},
+                {"name":"Translate", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Toggle Show Handles", "mods":["CONTROL"]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Insert Keyframes", "mods":[]},
+                {"name":"Select All", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Select All", "mods":["ALT"]},
+                {"name":"Select All", "mods":["CONTROL"]},
+                {"name":"Select All", "mods":["SHIFT"]},
+                {"name":"Select All", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Select Linked", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Left/Right", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Add F-Curve Modifier", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Add Time Marker", "mods":[]},
+                {"name":"Mirror Keys", "mods":["SHIFT"]},
+                {"name":"Rename Marker", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Selected", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Clean Keyframes", "mods":[]},
+                {"name":"Sample Keyframes", "mods":["SHIFT"]},
+                {"name":"Smooth Keys", "mods":["ALT"]}
+            ],
+            "P" : [
+                {"name":"Auto-Set Preview Range", "mods":["ALT", "CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Left/Right", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Resize", "mods":[]},
+                {"name":"Snap Keys", "mods":["SHIFT"]}
+            ],
+            "T" : [
+                {"name":"Set Keyframe Interpolation", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Toggle Channel Editability", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste Keyframes", "mods":["COMMAND"]},
+                {"name":"Paste Keyframes", "mods":["CONTROL"]},
+                {"name":"Set Keyframe Handle Type", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Keyframes", "mods":[]}
+            ]
+        },
+        "Image" : {
+            "COMMA" : [
+                {"name":"Set Pivot: Center", "mods":[]},
+                {"name":"Set Pivot: Median", "mods":["CONTROL"]}
+            ],
+            "EIGHT" : [
+                {"name":"Set Render Slot 7", "mods":[]}
+            ],
+            "F" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Save As Image", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Set Render Slot 4", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Set Render Slot 3", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Cycle Render Slot", "mods":["ALT"]},
+                {"name":"Cycle Render Slot", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New Image", "mods":["ALT"]},
+                {"name":"Properties", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Set Render Slot 8", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"View Zoom Ratio", "mods":["CONTROL"]},
+                {"name":"View Zoom Ratio", "mods":["SHIFT"]},
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"View Zoom Ratio", "mods":["CONTROL"]},
+                {"name":"View Zoom Ratio", "mods":["SHIFT"]},
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"View Zoom Out", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Center", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"View Zoom In", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"View Zoom Ratio", "mods":["CONTROL"]},
+                {"name":"View Zoom Ratio", "mods":["SHIFT"]},
+                {"name":"View Zoom Ratio", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Open Image", "mods":["ALT"]}
+            ],
+            "ONE" : [
+                {"name":"Set Render Slot 0", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Set Pivot: Cursor", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Reload Image", "mods":["ALT"]}
+            ],
+            "S" : [
+                {"name":"Save Image", "mods":["ALT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Set Render Slot 6", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Set Render Slot 5", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Tool Shelf", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Toggle Object/Edit Mode", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Set Render Slot 2", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Set Render Slot 1", "mods":[]}
+            ]
+        },
+        "Info" : {
+            "A" : [
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Copy Reports to Clipboard", "mods":["COMMAND"]},
+                {"name":"Copy Reports to Clipboard", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Reports", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Replay Operators", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Reports", "mods":[]}
+            ]
+        },
+        "Logic Editor" : {
+            "A" : [
+                {"name":"Logicbricks Add Menu", "mods":["SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ]
+        },
+        "Markers" : {
+            "A" : [
+                {"name":"(De)select all Markers", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Bind Camera to Markers", "mods":["CONTROL"]},
+                {"name":"Marker Border Select", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Duplicate Time Marker", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Markers", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Move Time Marker", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Add Time Marker", "mods":[]},
+                {"name":"Rename Marker", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Delete Markers", "mods":[]}
+            ]
+        },
+        "Mask Editing" : {
+            "A" : [
+                {"name":"Add Menu", "mods":["SHIFT"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Circle Select", "mods":[]},
+                {"name":"Toggle Cyclic", "mods":["ALT"]}
+            ],
+            "D" : [
+                {"name":"Add Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Translate", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Clear Restrict View", "mods":["ALT"]},
+                {"name":"Set Restrict View", "mods":["SHIFT"]},
+                {"name":"Set Restrict View", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Clear Shape Key", "mods":["ALT"]},
+                {"name":"Insert Shape Key", "mods":[]},
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Select Linked All", "mods":["CONTROL"]},
+                {"name":"Select Linked", "mods":["SHIFT"]},
+                {"name":"Select Linked", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New Mask", "mods":["ALT"]},
+                {"name":"Recalc Normals", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Use Proportional Edit Mask", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Clear Parent", "mods":["ALT"]},
+                {"name":"Make Parent", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Resize", "mods":[]},
+                {"name":"Transform", "mods":["ALT"]}
+            ],
+            "V" : [
+                {"name":"Set Handle Type", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete", "mods":[]}
+            ]
+        },
+        "NLA Channels" : {
+            "A" : [
+                {"name":"Add Tracks", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Add Tracks", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Tracks", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Tracks", "mods":[]}
+            ]
+        },
+        "NLA Editor" : {
+            "A" : [
+                {"name":"Add Action Strip", "mods":["SHIFT"]},
+                {"name":"Apply Scale", "mods":["CONTROL"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":["ALT"]},
+                {"name":"Border Select", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Duplicate Strips", "mods":["ALT"]},
+                {"name":"Duplicate Strips", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete Strips", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Transform", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Swap Strips", "mods":["ALT"]}
+            ],
+            "G" : [
+                {"name":"Add Meta-Strips", "mods":["SHIFT"]},
+                {"name":"Remove Meta-Strips", "mods":["ALT"]},
+                {"name":"Transform", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Toggle Muting", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Add Sound Clip", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Select Left/Right", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Add F-Modifier", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Add Time Marker", "mods":[]},
+                {"name":"Rename Marker", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Selected", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Auto-Set Preview Range", "mods":["ALT", "CONTROL"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Move Strips Down", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Move Strips Up", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Select Left/Right", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Clear Scale", "mods":["ALT"]},
+                {"name":"Snap Strips", "mods":["SHIFT"]},
+                {"name":"Transform", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Add Transition", "mods":["SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Enter Tweak Mode", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Make Single User", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Delete Strips", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Split Strips", "mods":[]}
+            ]
+        },
+        "Node Editor" : {
+            "A" : [
+                {"name":"Add Menu", "mods":["SHIFT"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]},
+                {"name":"Viewer Border", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Circle Select", "mods":[]},
+                {"name":"Copy to Clipboard", "mods":["COMMAND"]},
+                {"name":"Copy to Clipboard", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Detach", "mods":["ALT"]},
+                {"name":"Duplicate", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Duplicate", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Detach and Move", "mods":["ALT"]},
+                {"name":"Find Node", "mods":["CONTROL"]},
+                {"name":"Make Links", "mods":["SHIFT"]},
+                {"name":"Make Links", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Make Group", "mods":["CONTROL"]},
+                {"name":"Move and Attach", "mods":[]},
+                {"name":"Select Same Type", "mods":["SHIFT"]},
+                {"name":"Ungroup", "mods":["ALT"]}
+            ],
+            "H" : [
+                {"name":"Hide", "mods":[]},
+                {"name":"Toggle Hidden Node Sockets", "mods":["CONTROL"]},
+                {"name":"Toggle Node Preview", "mods":["SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Background Image Fit", "mods":["ALT"]},
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "J" : [
+                {"name":"Join Nodes", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Select Linked From", "mods":[]},
+                {"name":"Select Linked To", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Activate Same Type Next/Prev", "mods":["SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Toggle Node Mute", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Selected", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Clear Parent", "mods":["ALT"]},
+                {"name":"Make Parent", "mods":["CONTROL"]},
+                {"name":"Separate", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Read Full Sample Layers", "mods":["SHIFT"]},
+                {"name":"Read Render Layers", "mods":["CONTROL"]},
+                {"name":"Rotate", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Activate Same Type Next/Prev", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Resize", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Tool Shelf", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Edit Group", "mods":["SHIFT"]},
+                {"name":"Edit Group", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Background Image Zoom", "mods":["ALT"]},
+                {"name":"Background Image Zoom", "mods":[]},
+                {"name":"Paste from Clipboard", "mods":["COMMAND"]},
+                {"name":"Paste from Clipboard", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Delete with Reconnect", "mods":["CONTROL"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Render Changed Layer", "mods":[]}
+            ]
+        },
+        "Outliner" : {
+            "A" : [
+                {"name":"Expand/Collapse All", "mods":["SHIFT"]},
+                {"name":"Toggle Selected", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Add Drivers for Selected", "mods":[]},
+                {"name":"Delete Drivers for Selected", "mods":["ALT"]}
+            ],
+            "ENTER" : [
+                {"name":"Open/Close Item", "mods":["SHIFT"]},
+                {"name":"Open/Close Item", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"Show Hierarchy", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Delete Keying-Set Keyframe", "mods":["ALT"]},
+                {"name":"Insert Keyframe", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Keying Set Add Selected", "mods":[]},
+                {"name":"Keying Set Remove Selected", "mods":["ALT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Show/Hide One Level", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Show Active", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Show/Hide One Level", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Scroll Page", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Scroll Page", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Show Active", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Toggle Renderability", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Toggle Selectability", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Toggle Visibility", "mods":[]}
+            ]
+        },
+        "Screen" : {
+            "COMMA" : [
+                {"name":"Show User Preferences", "mods":["COMMAND"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Toggle Full Screen", "mods":["CONTROL"]}
+            ],
+            "ENTER" : [
+                {"name":"Execute File Window", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Cancel File Load", "mods":[]}
+            ],
+            "F11" : [
+                {"name":"Play Rendered Animation", "mods":["CONTROL"]},
+                {"name":"Show/Hide Render View", "mods":[]}
+            ],
+            "F12" : [
+                {"name":"Render", "mods":["CONTROL"]},
+                {"name":"Render", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Make Screencast", "mods":["ALT"]},
+                {"name":"Repeat History", "mods":[]},
+                {"name":"Save Screenshot", "mods":["CONTROL"]}
+            ],
+            "F5" : [
+                {"name":"Flip Region", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Redo Last", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Reload Scripts", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Set Screen", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Execute File Window", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Toggle Quad View", "mods":["ALT", "CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Repeat Last", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Set Screen", "mods":["CONTROL"]}
+            ],
+            "SPACE" : [
+                {"name":"Toggle Full Screen", "mods":["SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Show User Preferences", "mods":["ALT", "CONTROL"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Toggle Full Screen", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Redo", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Redo", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Undo History", "mods":["ALT", "COMMAND"]},
+                {"name":"Undo History", "mods":["ALT", "CONTROL"]},
+                {"name":"Undo", "mods":["COMMAND"]},
+                {"name":"Undo", "mods":["CONTROL"]}
+            ]
+        },
+        "Sequencer" : {
+            "A" : [
+                {"name":"Add Menu", "mods":["SHIFT"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":[]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Remove Gaps", "mods":["SHIFT"]},
+                {"name":"Remove Gaps", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Change Menu", "mods":[]},
+                {"name":"Copy", "mods":["COMMAND"]},
+                {"name":"Copy", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Duplicate Strips", "mods":["SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Erase Strips", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Transform", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "EQUAL" : [
+                {"name":"Insert Gaps", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Make Meta Strip", "mods":["CONTROL"]},
+                {"name":"Select Grouped", "mods":["SHIFT"]},
+                {"name":"Sequence Slide", "mods":[]},
+                {"name":"UnMeta Strip", "mods":["ALT"]}
+            ],
+            "H" : [
+                {"name":"Mute Strips", "mods":["SHIFT"]},
+                {"name":"Mute Strips", "mods":[]},
+                {"name":"Un-Mute Strips", "mods":["ALT", "SHIFT"]},
+                {"name":"Un-Mute Strips", "mods":["ALT"]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Cut Strips", "mods":["SHIFT"]},
+                {"name":"Cut Strips", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Lock Strips", "mods":["SHIFT"]},
+                {"name":"Select Linked", "mods":["CONTROL"]},
+                {"name":"Select Pick Linked", "mods":[]},
+                {"name":"UnLock Strips", "mods":["ALT", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Swap Strip", "mods":["ALT"]}
+            ],
+            "M" : [
+                {"name":"Add Time Marker", "mods":[]},
+                {"name":"Rename Marker", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Properties", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"View Selected", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Clear Strip Offset", "mods":["ALT"]},
+                {"name":"Set Overlay Frame 0", "mods":[]},
+                {"name":"Toggle Show Overlay", "mods":["SHIFT"]}
+            ],
+            "ONE" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Jump to Strip", "mods":["ALT"]},
+                {"name":"Jump to Strip", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Jump to Strip", "mods":["ALT"]},
+                {"name":"Jump to Strip", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Reassign Inputs", "mods":[]},
+                {"name":"Reload Strips", "mods":["ALT", "SHIFT"]},
+                {"name":"Reload Strips", "mods":["ALT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Swap Strip", "mods":["ALT"]}
+            ],
+            "S" : [
+                {"name":"Snap Strips", "mods":["SHIFT"]},
+                {"name":"Swap Inputs", "mods":["ALT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Toggle Meta Strip", "mods":[]},
+                {"name":"View Toggle", "mods":["CONTROL"]}
+            ],
+            "THREE" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Cut multicam", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Paste", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Erase Strips", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Separate Images", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Cut multicam", "mods":[]}
+            ]
+        },
+        "SequencerPreview" : {
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Sequencer View Zoom Ratio", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Border Offset View", "mods":[]}
+            ]
+        },
+        "Text" : {
+            "A" : [
+                {"name":"Select All", "mods":["COMMAND"]},
+                {"name":"Select All", "mods":["CONTROL"]},
+                {"name":"Select Line", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Select Line", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Delete", "mods":["ALT"]},
+                {"name":"Delete", "mods":["CONTROL"]},
+                {"name":"Delete", "mods":["SHIFT"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Copy", "mods":["COMMAND"]},
+                {"name":"Copy", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Duplicate Line", "mods":["CONTROL"]},
+                {"name":"Uncomment", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DELETE" : [
+                {"name":"Cut", "mods":["SHIFT"]},
+                {"name":"Delete", "mods":["CONTROL"]},
+                {"name":"Delete", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Move Cursor", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Lines", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"Find Set Selected", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]}
+            ],
+            "END" : [
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Line Break", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Find", "mods":["COMMAND"]},
+                {"name":"Find", "mods":["CONTROL"]}
+            ],
+            "G" : [
+                {"name":"Find Next", "mods":["CONTROL"]}
+            ],
+            "H" : [
+                {"name":"Replace", "mods":["CONTROL"]}
+            ],
+            "HOME" : [
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "INSERT" : [
+                {"name":"Copy", "mods":["CONTROL"]},
+                {"name":"Paste", "mods":["SHIFT"]},
+                {"name":"Toggle Overwrite", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Jump", "mods":["CONTROL"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move Cursor", "mods":["ALT"]},
+                {"name":"Move Cursor", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["ALT", "SHIFT"]},
+                {"name":"Move Select", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Move Select", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "N" : [
+                {"name":"Create Text Block", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Line Break", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Cycle Font Size", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Cycle Font Size", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Open Text Block", "mods":["ALT"]}
+            ],
+            "P" : [
+                {"name":"Run Script", "mods":["ALT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Reload", "mods":["ALT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move Cursor", "mods":["ALT"]},
+                {"name":"Move Cursor", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":["CONTROL"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Select", "mods":["ALT", "SHIFT"]},
+                {"name":"Move Select", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Move Select", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Save As", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Save As", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Save", "mods":["ALT", "COMMAND"]},
+                {"name":"Save", "mods":["ALT"]}
+            ],
+            "SPACE" : [
+                {"name":"Text Auto Complete", "mods":["CONTROL"]}
+            ],
+            "T" : [
+                {"name":"Properties", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Indent", "mods":[]},
+                {"name":"Unindent", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Move Cursor", "mods":["COMMAND"]},
+                {"name":"Move Cursor", "mods":[]},
+                {"name":"Move Lines", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move Select", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Move Select", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Paste", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Cut", "mods":["CONTROL"]}
+            ]
+        },
+        "Timeline" : {
+            "E" : [
+                {"name":"Set End Frame", "mods":[]}
+            ],
+            "HOME" : [
+                {"name":"View All", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Set Start Frame", "mods":[]}
+            ]
+        },
+        "Transform Modal Map" : {
+            "A" : [
+                {"name":"ADD_SNAP", "mods":[]},
+                {"name":"REMOVE_SNAP", "mods":["ALT"]}
+            ],
+            "CONTROL" : [
+                {"name":"SNAP_INV_ON", "mods":["ALT"]},
+                {"name":"SNAP_INV_ON", "mods":["COMMAND"]},
+                {"name":"SNAP_INV_ON", "mods":["CONTROL"]},
+                {"name":"SNAP_INV_ON", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"TRANSLATE", "mods":[]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"AUTOIK_CHAIN_LEN_DOWN", "mods":["SHIFT"]},
+                {"name":"PROPORTIONAL_SIZE_DOWN", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"AUTOIK_CHAIN_LEN_UP", "mods":["SHIFT"]},
+                {"name":"PROPORTIONAL_SIZE_UP", "mods":[]}
+            ],
+            "R" : [
+                {"name":"ROTATE", "mods":[]}
+            ],
+            "S" : [
+                {"name":"RESIZE", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"SNAP_TOGGLE", "mods":["SHIFT"]}
+            ]
+        },
+        "UV Editor" : {
+            "A" : [
+                {"name":"Average Islands Scale", "mods":["CONTROL"]},
+                {"name":"Toggle Select All", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Border Select", "mods":["SHIFT"]},
+                {"name":"Border Select", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Circle Select", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Mark Seams", "mods":["CONTROL"]},
+                {"name":"Unwrap", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Translate", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Hide Selected", "mods":["SHIFT"]},
+                {"name":"Hide Selected", "mods":[]},
+                {"name":"Reveal Hidden", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Toggle Select All", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Select Linked Pick", "mods":["SHIFT"]},
+                {"name":"Select Linked Pick", "mods":[]},
+                {"name":"Select Linked", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select Linked", "mods":["CONTROL"]}
+            ],
+            "M" : [
+                {"name":"Mirror", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Select Less", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Select More", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Cycle Proportional Edit Falloff", "mods":["SHIFT"]},
+                {"name":"Toggle Proportional Edit", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Pack Islands", "mods":["CONTROL"]},
+                {"name":"Pin", "mods":["ALT"]},
+                {"name":"Pin", "mods":[]},
+                {"name":"Selected Pinned", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Toggle Use Uv Sculpt", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Resize", "mods":[]},
+                {"name":"Shear", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Uvs Snap Menu", "mods":["SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Snap Uv Element Menu", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Toggle Use Snap", "mods":["SHIFT"]},
+                {"name":"Uvs Select Mode Menu", "mods":["CONTROL"]}
+            ],
+            "V" : [
+                {"name":"Minimize Stretch", "mods":["CONTROL"]},
+                {"name":"Stitch", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Uvs Weldalign Menu", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Select Split", "mods":[]}
+            ]
+        },
+        "UV Sculpt" : {
+            "F" : [
+                {"name":"Brush Size", "mods":[]},
+                {"name":"Brush Strength", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"UV Sculpt Tool Set", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "P" : [
+                {"name":"UV Sculpt Tool Set", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Toggle Use Uv Sculpt", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Scale Sculpt/Paint Brush Size", "mods":[]}
+            ],
+            "S" : [
+                {"name":"UV Sculpt Tool Set", "mods":[]}
+            ]
+        },
+        "View2D" : {
+            "B" : [
+                {"name":"Zoom to Border", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Zoom Out", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Zoom In", "mods":[]}
+            ]
+        },
+        "View2D Buttons List" : {
+            "HOME" : [
+                {"name":"Reset View", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Zoom Out", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Zoom In", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Scroll Down", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Scroll Up", "mods":[]}
+            ]
+        },
+        "View3D Walk Modal" : {
+            "A" : [
+                {"name":"LEFT", "mods":["ALT"]},
+                {"name":"LEFT", "mods":["COMMAND"]},
+                {"name":"LEFT", "mods":["CONTROL"]},
+                {"name":"LEFT", "mods":["SHIFT"]}
+            ],
+            "ALT" : [
+                {"name":"SLOW_ENABLE", "mods":["ALT"]},
+                {"name":"SLOW_ENABLE", "mods":["COMMAND"]},
+                {"name":"SLOW_ENABLE", "mods":["CONTROL"]},
+                {"name":"SLOW_ENABLE", "mods":["SHIFT"]}
+            ],
+            "D" : [
+                {"name":"RIGHT", "mods":["ALT"]},
+                {"name":"RIGHT", "mods":["COMMAND"]},
+                {"name":"RIGHT", "mods":["CONTROL"]},
+                {"name":"RIGHT", "mods":["SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"BACKWARD", "mods":[]},
+                {"name":"BACKWARD_STOP", "mods":["ALT"]},
+                {"name":"BACKWARD_STOP", "mods":["COMMAND"]},
+                {"name":"BACKWARD_STOP", "mods":["CONTROL"]},
+                {"name":"BACKWARD_STOP", "mods":["SHIFT"]}
+            ],
+            "E" : [
+                {"name":"UP", "mods":["ALT"]},
+                {"name":"UP", "mods":["COMMAND"]},
+                {"name":"UP", "mods":["CONTROL"]},
+                {"name":"UP", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "ESCAPE" : [
+                {"name":"CANCEL", "mods":["ALT"]},
+                {"name":"CANCEL", "mods":["COMMAND"]},
+                {"name":"CANCEL", "mods":["CONTROL"]},
+                {"name":"CANCEL", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"CANCEL", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"LEFT", "mods":[]},
+                {"name":"LEFT_STOP", "mods":["ALT"]},
+                {"name":"LEFT_STOP", "mods":["COMMAND"]},
+                {"name":"LEFT_STOP", "mods":["CONTROL"]},
+                {"name":"LEFT_STOP", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"CONFIRM", "mods":["ALT"]},
+                {"name":"CONFIRM", "mods":["COMMAND"]},
+                {"name":"CONFIRM", "mods":["CONTROL"]},
+                {"name":"CONFIRM", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"DECELERATE", "mods":["ALT"]},
+                {"name":"DECELERATE", "mods":["COMMAND"]},
+                {"name":"DECELERATE", "mods":["CONTROL"]},
+                {"name":"DECELERATE", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"ACCELERATE", "mods":["ALT"]},
+                {"name":"ACCELERATE", "mods":["COMMAND"]},
+                {"name":"ACCELERATE", "mods":["CONTROL"]},
+                {"name":"ACCELERATE", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"DOWN", "mods":["ALT"]},
+                {"name":"DOWN", "mods":["COMMAND"]},
+                {"name":"DOWN", "mods":["CONTROL"]},
+                {"name":"DOWN", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"RIGHT", "mods":[]},
+                {"name":"RIGHT_STOP", "mods":["ALT"]},
+                {"name":"RIGHT_STOP", "mods":["COMMAND"]},
+                {"name":"RIGHT_STOP", "mods":["CONTROL"]},
+                {"name":"RIGHT_STOP", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"BACKWARD", "mods":["ALT"]},
+                {"name":"BACKWARD", "mods":["COMMAND"]},
+                {"name":"BACKWARD", "mods":["CONTROL"]},
+                {"name":"BACKWARD", "mods":["SHIFT"]}
+            ],
+            "SHIFT" : [
+                {"name":"FAST_ENABLE", "mods":["ALT"]},
+                {"name":"FAST_ENABLE", "mods":["COMMAND"]},
+                {"name":"FAST_ENABLE", "mods":["CONTROL"]},
+                {"name":"FAST_ENABLE", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"TELEPORT", "mods":["ALT"]},
+                {"name":"TELEPORT", "mods":["COMMAND"]},
+                {"name":"TELEPORT", "mods":["CONTROL"]},
+                {"name":"TELEPORT", "mods":["SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"CANCEL", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"FORWARD", "mods":[]},
+                {"name":"FORWARD_STOP", "mods":["ALT"]},
+                {"name":"FORWARD_STOP", "mods":["COMMAND"]},
+                {"name":"FORWARD_STOP", "mods":["CONTROL"]},
+                {"name":"FORWARD_STOP", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"JUMP", "mods":["ALT"]},
+                {"name":"JUMP", "mods":["COMMAND"]},
+                {"name":"JUMP", "mods":["CONTROL"]},
+                {"name":"JUMP", "mods":["SHIFT"]}
+            ],
+            "W" : [
+                {"name":"FORWARD", "mods":["ALT"]},
+                {"name":"FORWARD", "mods":["COMMAND"]},
+                {"name":"FORWARD", "mods":["CONTROL"]},
+                {"name":"FORWARD", "mods":["SHIFT"]}
+            ]
+        },
+        "Window" : {
+            "D" : [
+                {"name":"Debug Menu", "mods":["ALT", "CONTROL"]}
+            ],
+            "F1" : [
+                {"name":"Link/Append from Library", "mods":["SHIFT"]},
+                {"name":"Open Blender File", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Image Editor", "mods":["SHIFT"]}
+            ],
+            "F11" : [
+                {"name":"Text Editor", "mods":["SHIFT"]},
+                {"name":"Toggle Fullscreen", "mods":["ALT"]}
+            ],
+            "F12" : [
+                {"name":"Dopesheet Editor", "mods":["SHIFT"]}
+            ],
+            "F2" : [
+                {"name":"Logic Editor", "mods":["SHIFT"]},
+                {"name":"Save As Blender File", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Node Editor", "mods":["SHIFT"]}
+            ],
+            "F4" : [
+                {"name":"Console", "mods":["SHIFT"]}
+            ],
+            "F5" : [
+                {"name":"View 3D", "mods":["SHIFT"]}
+            ],
+            "F6" : [
+                {"name":"Graph Editor", "mods":["SHIFT"]}
+            ],
+            "F7" : [
+                {"name":"Properties", "mods":["SHIFT"]}
+            ],
+            "F8" : [
+                {"name":"Sequence Editor", "mods":["SHIFT"]}
+            ],
+            "F9" : [
+                {"name":"Outliner", "mods":["SHIFT"]}
+            ],
+            "N" : [
+                {"name":"Reload Start-Up File", "mods":["COMMAND"]},
+                {"name":"Reload Start-Up File", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"File Open Recent Menu", "mods":["COMMAND", "SHIFT"]},
+                {"name":"File Open Recent Menu", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Link/Append from Library", "mods":["ALT", "CONTROL"]},
+                {"name":"Open Blender File", "mods":["COMMAND"]},
+                {"name":"Open Blender File", "mods":["CONTROL"]}
+            ],
+            "Q" : [
+                {"name":"Quit Blender", "mods":["COMMAND"]},
+                {"name":"Quit Blender", "mods":["CONTROL"]}
+            ],
+            "S" : [
+                {"name":"Save As Blender File", "mods":["ALT", "CONTROL"]},
+                {"name":"Save As Blender File", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save As Blender File", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Save Blender File", "mods":["COMMAND"]},
+                {"name":"Save Blender File", "mods":["CONTROL"]}
+            ],
+            "SPACE" : [
+                {"name":"Search Menu", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Redraw Timer", "mods":["ALT", "CONTROL"]}
+            ],
+            "U" : [
+                {"name":"Save Startup File", "mods":["CONTROL"]}
+            ],
+            "W" : [
+                {"name":"Duplicate Window", "mods":["ALT", "CONTROL"]},
+                {"name":"Save Blender File", "mods":["CONTROL"]}
+            ]
+        }
+    }
+}

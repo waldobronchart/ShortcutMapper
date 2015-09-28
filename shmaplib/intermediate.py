@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
-import sys
 import os
 import json
-import logging
 import codecs
 import re
 
 from logger import getlog
 log = getlog()
 
-from appdata import Shortcut, ShortcutContext, ApplicationConfig
-from constants import DIR_CONTENT_APPDATA
+from appdata import Shortcut, ApplicationConfig
+from constants import DIR_CONTENT_GENERATED, VALID_OS_NAMES, OS_WINDOWS, OS_MAC
+
 
 class IntermediateShortcutData(object):
     """Intermediate shortcut data format for applications.
@@ -23,14 +22,20 @@ class IntermediateShortcutData(object):
 
     The data format for intermediate data (JSON) is as follows:
     {
-        "CONTEXT NAME": {
-            "SHORTCUT NAME": ["WINDOWS SHORTCUT KEYS", "MAC SHORTCUT KEYS"],
+        "name": "Application Name",
+        "version": "v1.2.3",
+        "default_context": "Global Context",
+        "os": ["windows", "mac"],
+        "contexts": {
+            "CONTEXT NAME": {
+                "SHORTCUT NAME": ["WINDOWS SHORTCUT KEYS", "MAC SHORTCUT KEYS"],
+                ...
+            },
             ...
-        },
-        ...
+        }
     }
 
-    Linux is usually the same as windows shortcuts, so we convieniently ignore that for now.
+    Linux is usually the same as windows shortcuts, so we conveniently ignore that for now.
 
     The shortcut keys can be in the following formats:
     - "T"               Just one key
@@ -53,40 +58,73 @@ class IntermediateShortcutData(object):
             text = text.replace('"', '\\"')
             return text
 
-        def _serialize(self):
-            return u'        "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
-                                                              self._escape(self.win_keys), self._escape(self.mac_keys))
+        def serialize(self):
+            return u'            "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
+                                                                  self._escape(self.win_keys),
+                                                                  self._escape(self.mac_keys))
 
     class Context(object):
         """Intermediate application context structure that contains a list of shortcuts"""
         def __init__(self, name):
             self.name = name
             self.shortcuts = []
+            self._shortcut_lookup = {}
 
         def add_shortcut(self, name, win_keys, mac_keys):
-            if name in [s.name for s in self.shortcuts]:
+            # Add keys to existing shortcut
+            existing_shortcut = self.get_shortcut(name)
+            if existing_shortcut is not None:
+                if len(win_keys):
+                    existing_shortcut.win_keys += " / " + win_keys
+                if len(mac_keys):
+                    existing_shortcut.mac_keys += " / " + mac_keys
+
                 return
 
+            # Create new
             s = IntermediateShortcutData.Shortcut(name, win_keys, mac_keys)
+            self._shortcut_lookup[name] = s
             self.shortcuts.append(s)
 
         def get_shortcut(self, name):
-            for s in self.shortcuts:
-                if s.name == name:
-                    return s
-            return None
+            if name not in self._shortcut_lookup:
+                return None
 
-        def _serialize(self):
-            ctx_str = u'    "{0}": {{\n'.format(self.name)
+            return self._shortcut_lookup[name]
+
+        def serialize(self):
+            ctx_str = u'        "{0}": {{\n'.format(self.name)
             for s in self.shortcuts:
-                ctx_str += s._serialize()
+                ctx_str += s.serialize()
             ctx_str = ctx_str.strip(",\n")
-            ctx_str += u'\n    },\n'
+            ctx_str += u'\n        },\n'
             return ctx_str
 
+    def __init__(self, app_name="", version="", default_context="", os_supported=None):
+        """
+        IntermediateShortcutData is a json format that can be easily hand-edited to fix shortcut errors.
 
-    def __init__(self):
+        :param app_name: display name of the application (Adobe Photoshop)
+        :param version: string format of the version (eg: 2015, v1.2, v1.6a)
+        :param default_context: the name of the context that will be active by default on the website
+        :param os_supported: list of supported os names as a list
+        """
         super(IntermediateShortcutData, self).__init__()
+
+        # Validation
+        if os_supported:
+            assert isinstance(os_supported, list), "the os_supported parameter must be a list"
+            assert len(os_supported) > 0, "the os_supported parameter cannot be empty"
+            assert len([o for o in os_supported if o in VALID_OS_NAMES]) > 0, \
+                "the os_supported param contains invalid os names. Valid names are: " + str(VALID_OS_NAMES)
+        else:
+            os_supported = list(VALID_OS_NAMES)
+
+        # Properties
+        self.name = app_name
+        self.version = version
+        self.default_context = default_context
+        self.os = os_supported
         self.contexts = []
         self._context_lookup = {}
 
@@ -95,6 +133,7 @@ class IntermediateShortcutData(object):
             context = IntermediateShortcutData.Context(context_name)
             self._context_lookup[context_name] = context
             self.contexts.append(context)
+            print 'Adding Context:', context.name
 
         self._context_lookup[context_name].add_shortcut(shortcut_name, win_keys, mac_keys)
 
@@ -114,44 +153,72 @@ class IntermediateShortcutData(object):
                     if shortcut.mac_keys is None or len(shortcut.mac_keys) == 0:
                         shortcut.mac_keys = source_shortcut.mac_keys
 
-    def load(self, filepath):
+    def load(self, file_path):
         """Load the intermediate data from a json file"""
         self.contexts = []
         self._context_lookup = {}
 
-        with codecs.open(filepath, encoding='utf-8') as idata_file:
+        with codecs.open(file_path, encoding='utf-8') as idata_file:
             json_idata = json.load(idata_file)
-            for context_name, shortcuts in json_idata.iteritems():
+
+            self.name = json_idata["name"]
+            self.version = json_idata["version"]
+            self.default_context = json_idata["default_context"]
+            self.os = json_idata["os"]
+
+            for context_name, shortcuts in json_idata["contexts"].iteritems():
                 for shortcut_name, os_keys in shortcuts.iteritems():
                     self.add_shortcut(context_name, shortcut_name, os_keys[0], os_keys[1])
 
     def serialize(self, output_filepath):
         """Save the intermediate data to a json file"""
         json_str = "{\n"
-        for context in self.contexts:
-            json_str += context._serialize()
+
+        # Config
+        json_str += u'    "name": "{0}",\n'.format(self.name)
+        json_str += u'    "version": "{0}",\n'.format(self.version)
+        json_str += u'    "default_context": "{0}",\n'.format(self.default_context)
+        json_str += u'    "os": {0},\n'.format(json.dumps(self.os))
+
+        # Contexts
+        json_str += u'    "contexts": {\n'
+        for context in sorted(self.contexts, key=lambda c: c.name):
+            json_str += context.serialize()
         json_str = json_str.strip(",\n")
-        json_str += "\n}\n"
+        json_str += "\n    }\n"
+
+        json_str += "}\n"
 
         f = codecs.open(output_filepath, encoding='utf-8', mode='w+')
         f.write(json_str)
         f.close()
 
 
-
 class IntermediateDataExporter(object):
-    """Exports an intermediate .json file to the contents/appdata directory in the correct file format."""
+    """Exports an intermediate .json file to the contents/generated directory in the correct file format."""
 
-    def __init__(self, source, app_name, app_version, defualt_context_name):
+    def __init__(self, source, explicit_numpad_mode=False):
         super(IntermediateDataExporter, self).__init__()
-        self.source_file = source
-        self.app_name = app_name
-        self.app_version = app_version
-        self.default_context_name = defualt_context_name
+        assert os.path.exists(source), "Source file '%s' does not exist" % source
 
-        # Windows and Mac appconfigs
-        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows', self.default_context_name)
-        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac', self.default_context_name)
+        self.explicit_numpad_mode = explicit_numpad_mode
+
+        # Load intermediate data
+        self.idata = IntermediateShortcutData()
+        self.idata.load(source)
+
+        # Get app prefs from intermediate data format
+        self.app_name = self.idata.name
+        self.app_version = self.idata.version
+        self.default_context_name = self.idata.default_context
+
+        # Windows and Mac app configs
+        self.data_windows = None
+        self.data_mac = None
+        if OS_WINDOWS in self.idata.os:
+            self.data_windows = ApplicationConfig(self.app_name, self.app_version, OS_WINDOWS, self.default_context_name)
+        if OS_MAC in self.idata.os:
+            self.data_mac = ApplicationConfig(self.app_name, self.app_version, OS_MAC, self.default_context_name)
 
     def _parse_shortcut(self, name, keys):
         if len(keys) == 0:
@@ -196,7 +263,7 @@ class IntermediateDataExporter(object):
             parts = combo.split("+")
 
             # Parse main key
-            key = parts[-1] #last element
+            key = parts[-1]  # last element
             key = key.strip(' ')
             if key == 'TEMP_SLASH':
                 key = '/'
@@ -208,15 +275,21 @@ class IntermediateDataExporter(object):
                 continue
 
             # Parse modifiers
-            mods = [m.strip(u' ') for m in parts[:-1]] #all but last
+            mods = [m.strip(u' ') for m in parts[:-1]]  # all but last
 
-            # Handle a range of keys (Example: "Ctrl + 0-9")
+            # Handle a range of keys (Example: "Ctrl + 0-9" or "Ctrl + Numpad 0-9")
             #  which will result in multiple shortcuts with the same label
-            if re.match("[0-9]*.-.[0-9]*", key):
-                start = int(key[0])
-                end = int(key[-1])
+            results = re.findall(".*?([0-9])-([0-9])", key)
+            if results:
+                start = int(results[0][0])
+                end = int(results[0][1])
+                is_numpad_key = 'numpad' in key.lower()
+
                 for i in range(start, end+1):
-                    shortcut = Shortcut(name, str(i), mods)
+                    key_name = str(i)
+                    if is_numpad_key:
+                        key_name = 'Numpad ' + key_name
+                    shortcut = Shortcut(name, key_name, mods)
                     shortcuts.append(shortcut)
 
             # Result is just one shortcut
@@ -224,45 +297,31 @@ class IntermediateDataExporter(object):
                 shortcut = Shortcut(name, key, mods)
                 shortcuts.append(shortcut)
 
-
         return shortcuts
 
-    def parse(self, windows=True, mac=True):
-        if not os.path.exists(self.source_file):
-            log.error("Source file '%s' does not exist", self.source_file)
-            return
-
-        # Windows and Mac appconfigs
-        self.app_win = ApplicationConfig(self.app_name, self.app_version, 'windows', self.default_context_name)
-        self.app_mac = ApplicationConfig(self.app_name, self.app_version, 'mac', self.default_context_name)
-
-        # Load intermediate data
-        idata = IntermediateShortcutData()
-        idata.load(self.source_file)
-
+    def parse(self):
         # WINDOWS: Iterate contexts and shortcuts
-        if windows:
+        if self.data_windows:
             log.info("Parsing intermediate data for Windows shortcuts")
-            for context in idata.contexts:
-                context_win = self.app_win.get_or_create_new_context(context.name)
+            for context in self.idata.contexts:
+                context_win = self.data_windows.get_or_create_new_context(context.name)
                 for shortcut in context.shortcuts:
                     for s in self._parse_shortcut(shortcut.name, shortcut.win_keys):
-                        context_win.add_shortcut(s)
+                        context_win.add_shortcut(s, True, self.explicit_numpad_mode)
             log.info("...DONE\n")
 
         # MAC: Iterate contexts and shortcuts
-        if mac:
+        if self.data_mac:
             log.info("Parsing intermediate data for MacOS shortcuts")
-            for context in idata.contexts:
-                context_mac = self.app_mac.get_or_create_new_context(context.name)
+            for context in self.idata.contexts:
+                context_mac = self.data_mac.get_or_create_new_context(context.name)
                 for shortcut in context.shortcuts:
                     for s in self._parse_shortcut(shortcut.name, shortcut.mac_keys):
-                        context_mac.add_shortcut(s)
+                        context_mac.add_shortcut(s, True, self.explicit_numpad_mode)
             log.info("...DONE\n")
 
-
-    def export(self, windows=True, mac=True):
-        if windows:
-            self.app_win.serialize(DIR_CONTENT_APPDATA)
-        if mac:
-            self.app_mac.serialize(DIR_CONTENT_APPDATA)
+    def export(self):
+        if self.data_windows:
+            self.data_windows.serialize(DIR_CONTENT_GENERATED)
+        if self.data_mac:
+            self.data_mac.serialize(DIR_CONTENT_GENERATED)
