@@ -1,0 +1,838 @@
+{
+    "name" : "Adobe After Effects",
+    "version" : "CC",
+    "os" : "windows",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "A" : [
+                {"name":"Deselect all keyframes, properties, and property groups", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Deselect all", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select all visible keyframes and properties", "mods":["ALT", "CONTROL"]},
+                {"name":"Select all", "mods":["CONTROL"]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Maximize or restore panel under pointer", "mods":[]},
+                {"name":"Select next mask", "mods":["ALT"]},
+                {"name":"Select previous mask", "mods":["ALT", "SHIFT"]}
+            ],
+            "ALT" : [
+                {"name":"Zoom Out tool", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Cycle Brush, Clone Stamp, Eraser", "mods":["CONTROL"]},
+                {"name":"Set beginning of work area to current time", "mods":[]},
+                {"name":"Set work area to duration of selected layers or, if no layers are selected, set work area to composition duration", "mods":["ALT", "CONTROL"]},
+                {"name":"Setting the sampling method for selected layers", "mods":["ALT", "SHIFT"]},
+                {"name":"Setting the sampling method for selected layers", "mods":["ALT"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"Move application window or floating window to main monitor; resize window to fit screen.", "mods":["ALT", "CONTROL"]},
+                {"name":"Move the camera and its point of interest to look at selected 3D layers", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Resize application window or floating window to fit screen.", "mods":["CONTROL"]},
+                {"name":"Toggle activation between Composition panel and Timeline panel for current composition", "mods":[]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Delete a footage item without a warning", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Cycle Camera tools", "mods":[]},
+                {"name":"New camera", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Precompose selected layers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Remember footage interpretation", "mods":["ALT", "CONTROL"]},
+                {"name":"Turn Casts Shadows property on or off for selected 3D layers", "mods":["ALT", "SHIFT"]}
+            ],
+            "CAPSLOCK" : [
+                {"name":"Prevent images from being rendered for previews in viewer panels", "mods":[]}
+            ],
+            "COMMA" : [
+                {"name":"Cycle to previous or next item in active viewer", "mods":["SHIFT"]},
+                {"name":"Cycle to previous or next panel in active frame", "mods":["ALT", "SHIFT"]},
+                {"name":"Set In point by time-stretching", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Set Out point by time-stretching", "mods":["ALT", "CONTROL"]},
+                {"name":"Zoom out in Composition, Layer, or Footage panel", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Duplicate selected (layers, masks, effects, text selectors, animators, puppet meshes, shapes, render items, output modules, or compositions)", "mods":["CONTROL"]},
+                {"name":"Reset Background/Foreground to black white", "mods":[]},
+                {"name":"Split selected layers", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Extend selection to next layer in stacking order", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move layer/mask/effect to bottom", "mods":["ALT", "CONTROL"]},
+                {"name":"Move selection 1 pixel at current zoom", "mods":[]},
+                {"name":"Move selection points 10 pixels at current zoom", "mods":["SHIFT"]},
+                {"name":"Select next layer in stacking order", "mods":["CONTROL"]}
+            ],
+            "E" : [
+                {"name":"Apply most recently applied effect to selected layers", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Delete all effects from selected layers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Display filename corresponding to the frame at the current time in the Info panel", "mods":["ALT", "CONTROL"]},
+                {"name":"Edit selected footage item in application with which it’s associated", "mods":["CONTROL"]}
+            ],
+            "EIGHT" : [
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Toggle Paint panel", "mods":["CONTROL"]}
+            ],
+            "END" : [
+                {"name":"Go to end of composition, layer, or footage item", "mods":[]},
+                {"name":"Go to end of work area", "mods":["SHIFT"]},
+                {"name":"With selected layers: move Out point to end of composition", "mods":["ALT"]}
+            ],
+            "ENTER" : [
+                {"name":"Rename", "mods":[]}
+            ],
+            "EQUAL" : [
+                {"name":"Zoom in time", "mods":[]},
+                {"name":"Zoom in", "mods":["CONTROL"]}
+            ],
+            "ESCAPE" : [
+                {"name":"Activate the most recently active composition that is in the same composition hierarchy as the currently active composition", "mods":["SHIFT"]},
+                {"name":"Return/Exit/Interrupt", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Apply most recently applied animation preset to selected layers", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Find in Project panel", "mods":["CONTROL"]},
+                {"name":"Open Mask Feather dialog box for selected mask", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Scale and reposition selected layers to fit composition", "mods":["ALT", "CONTROL"]},
+                {"name":"With a camera tool selected, move the camera and its point of interest to look at selected 3D layers", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Switch to 3D view 1", "mods":[]},
+                {"name":"Switch to workspace", "mods":["SHIFT"]}
+            ],
+            "F11" : [
+                {"name":"Open Flowchart panel for project flowchart", "mods":["CONTROL"]},
+                {"name":"Switch to 3D view 2", "mods":[]},
+                {"name":"Switch to workspace", "mods":["SHIFT"]}
+            ],
+            "F12" : [
+                {"name":"Switch to 3D view 3", "mods":[]},
+                {"name":"Switch to workspace", "mods":["SHIFT"]}
+            ],
+            "F2" : [
+                {"name":"Deselect all keyframes, properties, and property groups", "mods":["SHIFT"]},
+                {"name":"Deselect all", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Toggle Effect Controls panel for selected layer", "mods":[]},
+                {"name":"Toggle Graph Editor/Layer Bar modes", "mods":["SHIFT"]}
+            ],
+            "F4" : [
+                {"name":"Toggle Layer Switches and Modes columns", "mods":[]},
+                {"name":"Toggle Parent column", "mods":["SHIFT"]}
+            ],
+            "F5" : [
+                {"name":"Display snapshot in active viewer", "mods":[]},
+                {"name":"Purge snapshot", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Take snapshot", "mods":["SHIFT"]}
+            ],
+            "F6" : [
+                {"name":"Display snapshot in active viewer", "mods":[]},
+                {"name":"Purge snapshot", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Take snapshot", "mods":["SHIFT"]}
+            ],
+            "F7" : [
+                {"name":"Display snapshot in active viewer", "mods":[]},
+                {"name":"Purge snapshot", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Take snapshot", "mods":["SHIFT"]}
+            ],
+            "F8" : [
+                {"name":"Display snapshot in active viewer", "mods":[]},
+                {"name":"Purge snapshot", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Take snapshot", "mods":["SHIFT"]}
+            ],
+            "F9" : [
+                {"name":"Easy ease selected keyframes in", "mods":["SHIFT"]},
+                {"name":"Easy ease selected keyframes out", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Easy ease selected keyframes", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Fast Previews > Wireframe", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Show alpha boundary  in Layer panel", "mods":["ALT"]},
+                {"name":"Toggle Effects & Presets panel", "mods":["CONTROL"]}
+            ],
+            "FOUR" : [
+                {"name":"Fast Previews > Fast Draft", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Show alpha channel as grayscale", "mods":["ALT"]},
+                {"name":"Toggle Audio panel", "mods":["CONTROL"]},
+                {"name":"Toggle showing straight RGB color", "mods":["ALT", "SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Cycle Pen and Mask Feather tools", "mods":[]},
+                {"name":"Group selected shapes", "mods":["CONTROL"]},
+                {"name":"Open Interpret Footage dialog box for selected footage item", "mods":["ALT", "CONTROL"]},
+                {"name":"Scale and reposition selected layers to fit composition height, preserving image aspect ratio for each layer", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Ungroup selected shapes", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hand tool", "mods":[]},
+                {"name":"Replace selected footage item", "mods":["CONTROL"]},
+                {"name":"Scale and reposition selected layers to fit composition width, preserving image aspect ratio for each layer", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Set keyframe interpolation: hold or Auto Bezier", "mods":["ALT", "CONTROL"]},
+                {"name":"Toggle layer controls", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Center selected layers in view", "mods":["CONTROL"]},
+                {"name":"Go to beginning of composition, layer, or footage item", "mods":[]},
+                {"name":"Go to beginning of work area", "mods":["SHIFT"]},
+                {"name":"With selected layers: move In Point to beginning of composition", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Go to layer In point", "mods":[]},
+                {"name":"Import multiple files or image sequences", "mods":["ALT", "CONTROL"]},
+                {"name":"Import one file or image sequence", "mods":["CONTROL"]},
+                {"name":"Invert selected mask", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Go to previous visible item in time ruler", "mods":[]},
+                {"name":"Go to specific time", "mods":["ALT", "SHIFT"]},
+                {"name":"Set resolution to Custom in Composition panel", "mods":["ALT", "CONTROL"]},
+                {"name":"Set resolution to Full in Composition panel", "mods":["CONTROL"]},
+                {"name":"Set resolution to Half in Composition panel", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Composition Settings", "mods":["CONTROL"]},
+                {"name":"Go to next visible item in time ruler", "mods":[]},
+                {"name":"Open Project Settings dialog box", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Set interpolation for selected keyframes", "mods":["ALT", "CONTROL"]},
+                {"name":"Set velocity for selected keyframes", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Lock selected layers", "mods":["CONTROL"]},
+                {"name":"New light", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Reload selected footage items", "mods":["ALT", "CONTROL"]},
+                {"name":"Unlock all layers", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Go backward 1 frame", "mods":["CONTROL"]},
+                {"name":"Go backward 10 frames", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Go to beginning of composition, layer, or footage item", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to previous In point or Out point", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Move keyframe 1 frame earlier", "mods":["ALT"]},
+                {"name":"Move keyframe 10 frames earlier", "mods":["ALT", "SHIFT"]},
+                {"name":"Move selection 1 pixel at current zoom", "mods":[]},
+                {"name":"Move selection points 10 pixels at current zoom", "mods":["SHIFT"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Move selected layers so that their In point is at the current time", "mods":[]},
+                {"name":"Trim In point or Out point of selected layers to current time", "mods":["ALT"]}
+            ],
+            "M" : [
+                {"name":"Open Mask Shape dialog box for selected mask", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "MINUS" : [
+                {"name":"Cycle forward through blending modes for selected layers", "mods":["SHIFT"]},
+                {"name":"Zoom out time", "mods":[]},
+                {"name":"Zoom out", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"New composition", "mods":["CONTROL"]},
+                {"name":"New mask", "mods":["CONTROL", "SHIFT"]},
+                {"name":"New project", "mods":["ALT", "CONTROL"]},
+                {"name":"Set end of work area to current time", "mods":[]},
+                {"name":"Split the frame containing the active viewer and create a new viewer with opposite locked/unlocked state", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "NINE" : [
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Toggle Brushes panel", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ASTERISK" : [
+                {"name":"Set marker at current time and open marker dialog box", "mods":["ALT"]},
+                {"name":"Set marker at current time", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Open selected layer/composition/footage", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Decrease Opacity of selected layers by 1%", "mods":["ALT", "CONTROL"]},
+                {"name":"Decrease Opacity of selected layers by 10%", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Decrease Rotation of selected layers by 10°", "mods":["SHIFT"]},
+                {"name":"Decrease Rotation of selected layers by 1°", "mods":[]},
+                {"name":"Decrease Scale of selected layers by 1%", "mods":["ALT"]},
+                {"name":"Decrease Scale of selected layers by 1%", "mods":["CONTROL"]},
+                {"name":"Decrease Scale of selected layers by 10%", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Preview only audio from current time", "mods":[]},
+                {"name":"Preview only audio in work area", "mods":["ALT"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Increase Opacity of selected layers by 1%", "mods":["ALT", "CONTROL"]},
+                {"name":"Increase Opacity of selected layers by 10%", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Increase Rotation of selected layers by 10°", "mods":["SHIFT"]},
+                {"name":"Increase Rotation of selected layers by 1°", "mods":[]},
+                {"name":"Increase Scale of selected layers by 1%", "mods":["ALT"]},
+                {"name":"Increase Scale of selected layers by 1%", "mods":["CONTROL"]},
+                {"name":"Increase Scale of selected layers by 10%", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Select layer by its number", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"RAM preview number of frames specified by Alternate RAM Preview preference", "mods":["ALT"]},
+                {"name":"RAM preview with alternate settings", "mods":["SHIFT"]},
+                {"name":"RAM preview", "mods":[]},
+                {"name":"Save RAM preview with alternate settings", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Save RAM preview", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Go to layer Out point", "mods":[]},
+                {"name":"Open Auto-Orientation dialog box for selected layers", "mods":["ALT", "CONTROL"]},
+                {"name":"Open Opacity dialog box for selected layers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Open project", "mods":["CONTROL"]}
+            ],
+            "ONE" : [
+                {"name":"Fast Previews > Off", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Show colorized red channel", "mods":["ALT", "SHIFT"]},
+                {"name":"Show red channel as grayscale", "mods":["ALT"]},
+                {"name":"Toggle Tools panel", "mods":["CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Cycle Puppet tools", "mods":["CONTROL"]},
+                {"name":"Open Position dialog box for selected layers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Open most recent project", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Set proxy for selected footage item", "mods":["ALT", "CONTROL"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Go forward 1 frame", "mods":[]},
+                {"name":"Go forward 10 frames", "mods":["SHIFT"]},
+                {"name":"Move earlier or later by number of frames specified for stroke Duration", "mods":["CONTROL"]},
+                {"name":"Move selected layers 1 frame later", "mods":["ALT"]},
+                {"name":"Move selected layers 10 frames later", "mods":["ALT", "SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Go backward 1 frame", "mods":[]},
+                {"name":"Go backward 10 frames", "mods":["SHIFT"]},
+                {"name":"Move earlier or later by number of frames specified for stroke Duration", "mods":["CONTROL"]},
+                {"name":"Move selected layers 1 frame earlier", "mods":["ALT"]},
+                {"name":"Move selected layers 10 frames earlier", "mods":["ALT", "SHIFT"]}
+            ],
+            "PERIOD" : [
+                {"name":"Cycle to previous or next item in active viewer", "mods":["SHIFT"]},
+                {"name":"Cycle to previous or next panel in active frame", "mods":["ALT", "SHIFT"]},
+                {"name":"Zoom in in Composition, Layer, or Footage panel", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Cycle mask and shape tools", "mods":[]},
+                {"name":"Quit", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Open Rotation dialog box for selected layers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Reverse selected layers in time", "mods":["ALT", "CONTROL"]},
+                {"name":"Toggle rulers", "mods":["CONTROL"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Go forward 1 frame", "mods":["CONTROL"]},
+                {"name":"Go forward 10 frames", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Go to end of composition, layer, or footage item", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to next In point or Out point", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Move keyframe 1 frame later", "mods":["ALT"]},
+                {"name":"Move keyframe 10 frames later", "mods":["ALT", "SHIFT"]},
+                {"name":"Move selection 1 pixel at current zoom", "mods":[]},
+                {"name":"Move selection points 10 pixels at current zoom", "mods":["SHIFT"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Move selected layers so that their Out point is at the current time", "mods":[]},
+                {"name":"Trim In point or Out point of selected layers to current time", "mods":["ALT"]}
+            ],
+            "S" : [
+                {"name":"Add current frame to render queue", "mods":["ALT", "CONTROL"]},
+                {"name":"Increment and save project", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Save As", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Save project", "mods":["CONTROL"]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Lock or unlock guides", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Open Preferences dialog box", "mods":["ALT", "CONTROL"]},
+                {"name":"Toggle guides", "mods":["CONTROL"]},
+                {"name":"Turn snapping to guides on or off", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Zoom in Timeline panel to single-frame units", "mods":[]},
+                {"name":"Zoom out in Timeline panel to show the entire composition duration", "mods":["SHIFT"]}
+            ],
+            "SEVEN" : [
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Toggle Paragraph panel", "mods":["CONTROL"]}
+            ],
+            "SHIFT" : [
+                {"name":"(Hold) Eraser tool with Last Stroke Only option", "mods":["CONTROL"]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Toggle grid", "mods":["CONTROL"]},
+                {"name":"Toggle proportional grid", "mods":["ALT"]},
+                {"name":"Toggle safe zones", "mods":[]},
+                {"name":"Turn snapping to grid on or off", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Show alpha overlay  in Layer panel", "mods":["ALT"]},
+                {"name":"Toggle Character panel", "mods":["CONTROL"]}
+            ],
+            "SLASH" : [
+                {"name":"Zoom to 100% in Composition, Layer, or Footage panel", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Start or stop standard preview", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Cycle Type tools", "mods":["CONTROL"]},
+                {"name":"Enable time remapping for selected layers", "mods":["ALT", "CONTROL"]},
+                {"name":"New text layer", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Toggle Effect Controls panel for selected layer", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "TAB" : [
+                {"name":"Open Composition Mini-Flowchart for active composition", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Fast Previews > Draft", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Show blue channel as grayscale", "mods":["ALT"]},
+                {"name":"Show colorized blue channel", "mods":["ALT", "SHIFT"]},
+                {"name":"Toggle Preview panel", "mods":["CONTROL"]}
+            ],
+            "TWO" : [
+                {"name":"Fast Previews > Adaptive Resolution", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Show colorized green channel", "mods":["ALT", "SHIFT"]},
+                {"name":"Show green channel as grayscale", "mods":["ALT"]},
+                {"name":"Toggle Info panel", "mods":["CONTROL"]}
+            ],
+            "U" : [
+                {"name":"Open View Options dialog box for active Composition panel", "mods":["ALT", "CONTROL"]},
+                {"name":"Set Quality to Best for selected layers", "mods":["CONTROL"]},
+                {"name":"Set Quality to Draft for selected layers", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Set Quality to Wireframe for selected layers", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Extend selection to previous layer in stacking order", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move layer/mask/effect to top", "mods":["ALT", "CONTROL"]},
+                {"name":"Move selection 1 pixel at current zoom", "mods":[]},
+                {"name":"Move selection points 10 pixels at current zoom", "mods":["SHIFT"]},
+                {"name":"Select previous layer in stacking order", "mods":["CONTROL"]}
+            ],
+            "V" : [
+                {"name":"Paste layers at current time", "mods":["ALT", "CONTROL"]},
+                {"name":"Selection tool", "mods":[]},
+                {"name":"Turn Video switch on or off for selected layers", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Turn off Video switch for all video layers other than selected layers", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "W" : [
+                {"name":"Close active panel or all viewers of type of active viewer", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Close active viewer or panel", "mods":["CONTROL"]},
+                {"name":"Rotation tool", "mods":[]},
+                {"name":"Roto Brush tool", "mods":["ALT"]}
+            ],
+            "X" : [
+                {"name":"Show Refine Edge X-ray", "mods":["ALT"]},
+                {"name":"Swap color Background/Foreground", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"New adjustment layer", "mods":["ALT", "CONTROL"]},
+                {"name":"New null layer", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"New solid layer", "mods":["CONTROL"]},
+                {"name":"Open settings dialog box for selected solid, light, camera, null, or adjustment layer", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Pan Behind tool", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Redo", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Undo", "mods":["CONTROL"]},
+                {"name":"Zoom In tool", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Go to a composition marker", "mods":[]},
+                {"name":"Set and number a composition marker at the current time", "mods":["SHIFT"]},
+                {"name":"Toggle Project panel", "mods":["CONTROL"]},
+                {"name":"Toggle Render Queue panel", "mods":["ALT", "CONTROL"]}
+            ]
+        },
+        "Motion tracking" : {
+            "DOWN_ARROW" : [
+                {"name":"Move 10px: feature region and search region", "mods":["ALT", "SHIFT"]},
+                {"name":"Move 10px: feature region, search region, and attach point", "mods":["SHIFT"]},
+                {"name":"Move 1px: feature region and search region", "mods":["ALT"]},
+                {"name":"Move 1px: feature region, search region, and attach point", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move 10px: feature region and search region", "mods":["ALT", "SHIFT"]},
+                {"name":"Move 10px: feature region, search region, and attach point", "mods":["SHIFT"]},
+                {"name":"Move 1px: feature region and search region", "mods":["ALT"]},
+                {"name":"Move 1px: feature region, search region, and attach point", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move 10px: feature region and search region", "mods":["ALT", "SHIFT"]},
+                {"name":"Move 10px: feature region, search region, and attach point", "mods":["SHIFT"]},
+                {"name":"Move 1px: feature region and search region", "mods":["ALT"]},
+                {"name":"Move 1px: feature region, search region, and attach point", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Move 10px: feature region and search region", "mods":["ALT", "SHIFT"]},
+                {"name":"Move 10px: feature region, search region, and attach point", "mods":["SHIFT"]},
+                {"name":"Move 1px: feature region and search region", "mods":["ALT"]},
+                {"name":"Move 1px: feature region, search region, and attach point", "mods":[]}
+            ]
+        },
+        "Panel: Composition" : {
+            "SLASH" : [
+                {"name":"Toggle Mercury Transmit video preview", "mods":[]}
+            ]
+        },
+        "Panel: Effect Controls" : {
+            "ACCENT_GRAVE" : [
+                {"name":"Toggle expansion of selected effects to show all properties", "mods":["CONTROL"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Extend selection to next item", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Extend selection to previous item", "mods":["SHIFT"]}
+            ]
+        },
+        "Panel: Project" : {
+            "DOWN_ARROW" : [
+                {"name":"Extend selection to next item", "mods":["SHIFT"]}
+            ],
+            "N" : [
+                {"name":"New folder in Project panel", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Extend selection to previous item", "mods":["SHIFT"]}
+            ]
+        },
+        "Panel: RenderQueue" : {
+            "D" : [
+                {"name":"Duplicate render item with same output filename as original", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Extend selection to next item", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Extend selection to previous item", "mods":["SHIFT"]}
+            ]
+        },
+        "Panel: Timeline" : {
+            "A" : [
+                {"name":"Show only Anchor Point property", "mods":[]}
+            ],
+            "ACCENT_GRAVE" : [
+                {"name":"Toggle expansion of selected layers to show all properties", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Scroll to current time", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Show only Effects property group", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Find", "mods":["CONTROL"]},
+                {"name":"Show only Mask Feather property", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Show only Audio Levels property", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Show only Mask Path property", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Toggle selection of layer  by its number", "mods":["SHIFT"]}
+            ],
+            "P" : [
+                {"name":"Show only Position property", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Show only Rotation and Orientation properties", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Show only Scale property", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Enter free-transform path editing mode", "mods":["CONTROL"]},
+                {"name":"Show only Opacity property", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Show only properties with keyframes or expressions", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Scroll topmost selected layer to top of Timeline panel", "mods":[]}
+            ]
+        },
+        "Text Editing" : {
+            "A" : [
+                {"name":"Auto leading for selected text", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Select all text", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Align text center", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "COMMA" : [
+                {"name":"Decrease font size by 10 units", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Decrease font size by 2 units", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrease baseline shift by 10 units", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Decrease baseline shift by 2 units", "mods":["ALT", "SHIFT"]},
+                {"name":"Decrease leading by 10 units", "mods":["ALT", "CONTROL"]},
+                {"name":"Decrease leading by 2 units", "mods":["ALT"]},
+                {"name":"Extend or reduce selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move text caret", "mods":["CONTROL"]},
+                {"name":"Move text caret", "mods":[]}
+            ],
+            "END" : [
+                {"name":"Move cursor to end of line", "mods":[]},
+                {"name":"Select text to end of line", "mods":["SHIFT"]},
+                {"name":"Select text to end of text frame", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "EQUAL" : [
+                {"name":"Turn Subscript on or off for selected text", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Turn Superscript on or off for selected text", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "F" : [
+                {"name":"Justify paragraph; force last line", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Move cursor to beginning of line", "mods":[]},
+                {"name":"Select text to beginning of line", "mods":["SHIFT"]},
+                {"name":"Select text to beginning of text frame", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Justify paragraph; left align last line", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Justify paragraph; right align last line", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Turn All Caps on or off for selected text", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Turn Small Caps on or off for selected text", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Align text left/top", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Decrease kerning or tracking 100 units", "mods":["ALT", "CONTROL"]},
+                {"name":"Decrease kerning or tracking 20 units", "mods":["ALT"]},
+                {"name":"Move text caret", "mods":["CONTROL"]},
+                {"name":"Move text caret", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Increase font size by 10 units", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Increase font size by 2 units", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Reset tracking to 0 for selected text", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Align text right/bottom", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Increase kerning or tracking 100 units", "mods":["ALT", "CONTROL"]},
+                {"name":"Increase kerning or tracking 20 units", "mods":["ALT"]},
+                {"name":"Move text caret", "mods":["CONTROL"]},
+                {"name":"Move text caret", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Toggle paragraph composer", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Extend or reduce selection", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Increase baseline shift by 10 units", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Increase baseline shift by 2 units", "mods":["ALT", "SHIFT"]},
+                {"name":"Increase leading by 10 units", "mods":["ALT", "CONTROL"]},
+                {"name":"Increase leading by 2 units", "mods":["ALT"]},
+                {"name":"Move text caret", "mods":["CONTROL"]},
+                {"name":"Move text caret", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Set horizontal scale to 100% for selected text", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Set vertical scale to 100% for selected text", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ]
+        },
+        "Time navigation" : {
+            "D" : [
+                {"name":"Scroll to current time in Timeline panel", "mods":[]}
+            ],
+            "END" : [
+                {"name":"Go to end of composition, layer, or footage item", "mods":[]},
+                {"name":"Go to end of work area", "mods":["SHIFT"]}
+            ],
+            "HOME" : [
+                {"name":"Go to beginning of composition, layer, or footage item", "mods":[]},
+                {"name":"Go to beginning of work area", "mods":["SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Go to layer In point", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Go to previous visible item in time ruler", "mods":[]},
+                {"name":"Go to specific time", "mods":["ALT", "SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Go to next visible item in time ruler", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Go backward 1 frame", "mods":["CONTROL"]},
+                {"name":"Go backward 10 frames", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Go to beginning of composition, layer, or footage item", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to previous In point or Out point", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ],
+            "O" : [
+                {"name":"Go to layer Out point", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Go forward 1 frame", "mods":[]},
+                {"name":"Go forward 10 frames", "mods":["SHIFT"]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Go backward 1 frame", "mods":[]},
+                {"name":"Go backward 10 frames", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Go forward 1 frame", "mods":["CONTROL"]},
+                {"name":"Go forward 10 frames", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Go to end of composition, layer, or footage item", "mods":["ALT", "CONTROL"]},
+                {"name":"Go to next In point or Out point", "mods":["ALT", "CONTROL", "SHIFT"]}
+            ]
+        },
+        "Tool: Camera" : {
+            "F" : [
+                {"name":"Move the camera and its point of interest to look at all 3D layers", "mods":["CONTROL", "SHIFT"]}
+            ]
+        },
+        "Tool: Clone Stamp" : {
+            "FIVE" : [
+                {"name":"Activate a Clone Stamp tool preset", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Activate a Clone Stamp tool preset", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Activate a Clone Stamp tool preset", "mods":[]}
+            ],
+            "SIX" : [
+                {"name":"Activate a Clone Stamp tool preset", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Activate a Clone Stamp tool preset", "mods":[]}
+            ]
+        },
+        "Tool: Paint" : {
+            "NUMPAD_EIGHT" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Set flow for a paint tool to 100%", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool to 100%", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Set flow for a paint tool", "mods":["SHIFT"]},
+                {"name":"Set opacity for a paint tool", "mods":[]}
+            ]
+        },
+        "Tool: Pen" : {
+            "CONTROL" : [
+                {"name":"(Hold) Selection tool", "mods":[]}
+            ]
+        },
+        "Tool: Selection" : {
+            "ALT" : [
+                {"name":"(Hold) Shape Duplication tool", "mods":[]}
+            ],
+            "CONTROL" : [
+                {"name":"(Hold) Direct Selection tool", "mods":[]}
+            ]
+        }
+    }
+}

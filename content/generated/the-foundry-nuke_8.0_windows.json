@@ -1,0 +1,506 @@
+{
+    "name" : "The Foundry Nuke",
+    "version" : "8.0",
+    "os" : "windows",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Color Picker" : {
+            "LEFT_ARROW" : [
+                {"name":"Scrub the value up or down fast", "mods":[]}
+            ]
+        },
+        "Curve Editor and Dope Sheet" : {
+            "A" : [
+                {"name":"Select all curves", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Change interpolation of selected control points to Cubic", "mods":[]},
+                {"name":"Copy selected curves", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Copy selected keys", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Toggle the always in the Dope Sheet box on the node’s properties panel. When active, the node always displays in the Dope Sheet, instead of just displaying when its properties panel is open", "mods":["ALT"]}
+            ],
+            "E" : [
+                {"name":"Copy expressions", "mods":["CONTROL"]}
+            ],
+            "F" : [
+                {"name":"Fit selection in the window", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Change interpolation of selected control points to Horizontal", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Change interpolation of selected control points to Constant", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Change interpolation of selected control points to Linear", "mods":[]},
+                {"name":"Copy links", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Change interpolation of selected control points to Catmull-Rom", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste curve", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Break selected control points’ handles", "mods":[]},
+                {"name":"Cut selected keys", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Change interpolation of selected control points to Smooth ", "mods":[]}
+            ]
+        },
+        "Editing" : {
+            "B" : [
+                {"name":"Left justify selected text", "mods":["CONTROL"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Erase or Delete Left", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Copy", "mods":["CONTROL"]}
+            ],
+            "E" : [
+                {"name":"Move cursor to end of selected text", "mods":["CONTROL"]}
+            ],
+            "F" : [
+                {"name":"Right justify selected text", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Delete text from the cursor to the next space", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Bottom justify selected text", "mods":["CONTROL"]}
+            ],
+            "P" : [
+                {"name":"Top justify selected text", "mods":["CONTROL"]}
+            ],
+            "V" : [
+                {"name":"Paste ", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Paste knob values", "mods":["ALT", "CONTROL"]},
+                {"name":"Paste", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Cut", "mods":["CONTROL"]}
+            ]
+        },
+        "Global Context" : {
+            "C" : [
+                {"name":"3D view, bottom orthographic", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Go to a specific frame", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Display script information, such as the node count, channel count, cache usage, and whether the script is in full-res or proxy mode", "mods":["ALT"]},
+                {"name":"Open new Viewer window", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Toggle between Unlocked and Locked 3D view mode for selected Camera or Light", "mods":["CONTROL"]}
+            ],
+            "N" : [
+                {"name":"Launch a new project window in a new instance of Nuke", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Search by node name or class", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Open a script file", "mods":["CONTROL"]}
+            ],
+            "Q" : [
+                {"name":"Exit Nuke", "mods":["CONTROL"]}
+            ],
+            "S" : [
+                {"name":"Make the active  window fullscreen", "mods":["ALT"]},
+                {"name":"Open the Nuke Preferences dialog", "mods":["SHIFT"]},
+                {"name":"Save script and increment version number", "mods":["ALT", "SHIFT"]},
+                {"name":"Save script and specify name ", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "SLASH" : [
+                {"name":"Search by node name or class", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Cycle through tabs in the current pane. Note that this does not work if the focus is on the input pane of the Script Editor", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"3D / 2D view toggle", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Enable or disable previewing output on an external broadcast video monitor", "mods":["CONTROL"]}
+            ],
+            "V" : [
+                {"name":"3D view, perspective", "mods":[]}
+            ],
+            "X" : [
+                {"name":"3D view, left-side orthographic", "mods":["SHIFT"]},
+                {"name":"3D view, right-side orthographic", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Redo last action", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"3D view, back orthographic", "mods":["SHIFT"]},
+                {"name":"3D view, front-side orthographic", "mods":[]},
+                {"name":"Undo last action", "mods":["CONTROL"]}
+            ]
+        },
+        "Node Graph" : {
+            "A" : [
+                {"name":"Insert an AddMix node", "mods":["SHIFT"]},
+                {"name":"Select all nodes in the Node Graph or group window", "mods":["CONTROL"]}
+            ],
+            "B" : [
+                {"name":"Duplicate and branch selected nodes", "mods":["ALT"]},
+                {"name":"Insert Filter Blur node", "mods":[]},
+                {"name":"Node buffer toggle. When this is on, the output from the node is cached or kept in memory, so that it can be read quickly. A yellow line displays under the node to indicate that the caching is on", "mods":["CONTROL"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"Snaps all nodes to the grid. ", "mods":[]},
+                {"name":"Snaps selected node to the grid", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Copy selected nodes", "mods":["CONTROL"]},
+                {"name":"Duplicate selected nodes", "mods":["ALT"]},
+                {"name":"Insert a ColorCorrect node", "mods":[]},
+                {"name":"Set color for selected nodes", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "CONTROL" : [
+                {"name":"Display connector dots. Drag one to set a dot and create an “elbow.”", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Disable / enable selected node", "mods":[]},
+                {"name":"Disconnect upstream node from selected node", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Remove selected nodes", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrement the version number in the selected node’s file name", "mods":["ALT"]},
+                {"name":"Move selected node downstream", "mods":["CONTROL"]},
+                {"name":"Selects the previous or next node in the tree", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"Open panel for selected node", "mods":[]},
+                {"name":"Open window for selected group node", "mods":["CONTROL"]}
+            ],
+            "F" : [
+                {"name":"Fit the selected nodes  to the Node Graph panel or group window", "mods":[]},
+                {"name":"Generate flipbook for selected node using FrameCycler", "mods":["ALT"]}
+            ],
+            "F12" : [
+                {"name":"Clear buffers", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Nest selected nodes inside a Group node, keeping the original nodes in the layout. Ctrl+Enter opens the new Group node", "mods":["ALT", "CONTROL", "SHIFT"]},
+                {"name":"Nest selected nodes inside a Group node, replacing the original nodes with the Group", "mods":["CONTROL"]},
+                {"name":"Replace selected Group node with the nodes nested inside it", "mods":["ALT", "CONTROL"]},
+                {"name":"insert a Grade node", "mods":[]}
+            ],
+            "HASH" : [
+                {"name":"Opens a new Viewer window with # representing the number of the connection  you want to establish between the new Viewer and the selected node", "mods":[]},
+                {"name":"Zoom-in by a specific percentage. The # represents a number between 0 and 9, with 0=1000%, 1=100%, 2=200%, 3=300%, 4=400%, 5=500%, 6=600%, 7=700%, 8=800%, and 9=900%", "mods":["CONTROL"]},
+                {"name":"Zoom-out by a specific percentage. The # represents a number between 0 and 9, with 0=10%, 1=100%, 2=50%, 3=30%, 4=25%, 5=20%, 6=16%, 7=14%, 8=12%, and 9=11%", "mods":["ALT"]}
+            ],
+            "I" : [
+                {"name":"Display information for selected node", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Clone selected nodes", "mods":["ALT"]},
+                {"name":"Insert Copy node. Note that for this to work, you first need to click on the Node Graph to select it. If you have selected the Viewer, pressing K stops playback", "mods":[]},
+                {"name":"Remove selected nodes from clone group ", "mods":["ALT", "SHIFT"]}
+            ],
+            "M" : [
+                {"name":"Insert Merge node", "mods":[]}
+            ],
+            "MINUS" : [
+                {"name":"Zoom-out", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Rename the selected node", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Zoom-out", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Inserts Dot node", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Zoom-in . See also LMB+MMB", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Insert Roto node", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Insert RotoPaint node", "mods":[]},
+                {"name":"Toggle proxy resolution, as defined on the Settings properties panel", "mods":["CONTROL"]}
+            ],
+            "PERIOD" : [
+                {"name":"Inserts Dot node", "mods":[]}
+            ],
+            "PLUS" : [
+                {"name":"Zoom-in . See also LMB+MMB", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Insert a Read node. NOTE:  Pressing R with an existing Read node selected, opens the file browser at the location specified by that node", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Insert a Transform node", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Open a text field where you can enter the first letters of a node name to bring up a list of matches. Press Return to insert a node from the list", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Splay first selected node to input A", "mods":["ALT"]},
+                {"name":"Splay last selected node to input A", "mods":["ALT", "SHIFT"]},
+                {"name":"Splay selected nodes to first selected node", "mods":[]},
+                {"name":"Splay selected nodes to last selected node", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increment the version number in the selected node’s file name", "mods":["ALT"]},
+                {"name":"Move selected node upstream", "mods":["CONTROL"]},
+                {"name":"Selects the previous or next node in the tree", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Close current script file", "mods":["CONTROL"]},
+                {"name":"Insert a Write node", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Extract selected nodes", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Swap A/B inputs on selected node", "mods":["SHIFT"]}
+            ],
+            "Y" : [
+                {"name":"Connect first selected node to the output of the second selected node", "mods":[]},
+                {"name":"Connect second selected node to the output of the first selected node", "mods":["SHIFT"]}
+            ]
+        },
+        "Properties Panels" : {
+            "A" : [
+                {"name":"Close all open properties panels", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Select all nodes in the Properties Bin", "mods":["CONTROL"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Increment  or decrement  the value in a parameter field. Click first on the field or press Tab to move focus to the parameter", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"Chooses selected UI control ", "mods":[]},
+                {"name":"Close the current panel", "mods":["CONTROL"]}
+            ],
+            "R" : [
+                {"name":"Fit Properties Bin to open panels", "mods":["ALT"]},
+                {"name":"Fit Properties Bin to open panels", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Move focus to next  or previous  parameter. May need to click on a parameter first, to establish the focus inside the properties panel", "mods":["SHIFT"]},
+                {"name":"Move focus to next  or previous  parameter. May need to click on a parameter first, to establish the focus inside the properties panel", "mods":[]},
+                {"name":"Move to next tabbed page  or the previous tabbed page  in the properties panel", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Move to next tabbed page  or the previous tabbed page  in the properties panel", "mods":["CONTROL"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increment  or decrement  the value in a parameter field. Click first on the field or press Tab to move focus to the parameter", "mods":[]}
+            ]
+        },
+        "RotoPaint Draw" : {
+            "A" : [
+                {"name":"Select all points", "mods":["CONTROL"]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Delete an item from the stroke/shape list. Note that if the RotoPaint node is selected in the Node Graph, pressing Backspace deletes the entire node", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Toggle between Clone and Reveal tools", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Toggle between Dodge and Burn tools", "mods":[]}
+            ],
+            "DELETE" : [
+                {"name":"Remove selected points", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Increase feather for selected points", "mods":[]},
+                {"name":"Remove feather outline from selected points", "mods":["SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Close shape", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Pick color", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Toggle between Brush and Eraser tools", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Toggle between Select All, Select Curves and Select Points tools", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Drag the transform box points to move them", "mods":["CONTROL"]}
+            ],
+            "T" : [
+                {"name":"Show/hide source as onion skin with transform box/jack", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Toggle between Bezier, B-Spline, Ellipse and Rectangle tools", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Toggle between Blur, Sharpen, and Smear tools", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Make selected points linear ", "mods":["SHIFT"]},
+                {"name":"Make tangent handles horizontal on selected points ", "mods":[]}
+            ]
+        },
+        "Script Editor" : {
+            "BACKSPACE" : [
+                {"name":"Clear output pane", "mods":["CONTROL"]}
+            ],
+            "ENTER" : [
+                {"name":"Run the script in the Editor", "mods":["CONTROL"]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease the indentation level of selected text", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Step back to the previous statement", "mods":["CONTROL"]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Increase the indentation level of selected text", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Step forward to the next statement", "mods":["CONTROL"]}
+            ],
+            "TAB" : [
+                {"name":"Decrease the indentation level", "mods":["SHIFT"]},
+                {"name":"Increase the indentation level", "mods":[]}
+            ]
+        },
+        "Viewers" : {
+            "A" : [
+                {"name":"Display the alpha channel or the channel displayed in the list at the top of the Viewer", "mods":[]},
+                {"name":"Display “other” channel / RGB toggle. Current input only. ", "mods":["SHIFT"]}
+            ],
+            "B" : [
+                {"name":"Display Blue channel / RGB toggle. Current input only", "mods":["SHIFT"]},
+                {"name":"Display blue channel / RGB toggle", "mods":[]}
+            ],
+            "BACKSPACE" : [
+                {"name":"Activate Wipe. Cycle images on right side", "mods":["SHIFT"]},
+                {"name":"Cycle through Viewer inputs in reverse order. If wipe is active, cycles through inputs on the left-hand side", "mods":[]}
+            ],
+            "COMMA" : [
+                {"name":"Gain display, decrease", "mods":[]}
+            ],
+            "END" : [
+                {"name":"Go to last frame", "mods":[]}
+            ],
+            "ESCAPE" : [
+                {"name":"Close Viewer", "mods":[]}
+            ],
+            "EXCLAMATION" : [
+                {"name":"Turn on Viewer “blend,” split-screen display. ", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Fit image to Viewer", "mods":[]},
+                {"name":"Maximum Viewer window toggle", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Display Green channel / RGB toggle. Current input only", "mods":["SHIFT"]},
+                {"name":"Display green channel / RGB toggle", "mods":[]},
+                {"name":"Go to specific frame", "mods":["ALT"]}
+            ],
+            "H" : [
+                {"name":"Fill image in Viewer", "mods":[]}
+            ],
+            "HASH" : [
+                {"name":"Zoom-in by a specific percentage. The # represents a number between 0 and 9, with 0=1000%, 1=100%, 2=200%, 3=300%, 4=400%, 5=500%, 6=600%, 7=700%, 8=800%, and 9=900%", "mods":["CONTROL"]},
+                {"name":"Zoom-out by a specific percentage. The # represents a number between 0 and 9, with 0=10%, 1=100%, 2=50%, 3=30%, 4=25%, 5=20%, 6=16%, 7=14%, 8=12%, and 9=11%", "mods":["ALT"]}
+            ],
+            "J" : [
+                {"name":"Play backward", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Stop playback. Note that for this to work, you first need to click on the Viewer to select it. If you have selected the Node Graph, pressing K inserts a Copy node", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Display Luminance / RGB toggle. Current input only", "mods":["SHIFT"]},
+                {"name":"Play forward", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move left on the timeline by the specified increment amount", "mods":["SHIFT"]},
+                {"name":"Move to midpoint between current frame and previous keyframe/first frame", "mods":["CONTROL"]},
+                {"name":"Previous keyframe", "mods":["ALT"]},
+                {"name":"Step back one frame", "mods":[]}
+            ],
+            "LEFT_BRACE" : [
+                {"name":"Show / hide top toolbar", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Display Matte / RGB toggle. Current input only", "mods":["SHIFT"]},
+                {"name":"Display Matte, or alpha channel as transparent overlay", "mods":[]}
+            ],
+            "MINUS" : [
+                {"name":"Zoom-out", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Zoom-out", "mods":[]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name":"Gain display, increase", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Zoom-in ", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Show / hide overlays", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Disable  the display refresh of the Viewer", "mods":[]},
+                {"name":"Open the controls of the currently active Viewer process", "mods":["ALT"]},
+                {"name":"With the mouse pointer over the Viewer, this keystroke toggles pixel aspect ratio between square and non-square, according to the setting of the default format under the Settings properties panel. This is not the same as toggling proxy resolution ", "mods":["CONTROL"]}
+            ],
+            "PERIOD" : [
+                {"name":"Gain display, increase", "mods":[]}
+            ],
+            "PLUS" : [
+                {"name":"Zoom-in ", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Display Red channel / RGB toggle. Current input only", "mods":["SHIFT"]},
+                {"name":"Display red channel / RGB toggle", "mods":[]},
+                {"name":"Resize Viewer and image to fit frame", "mods":["ALT", "SHIFT"]},
+                {"name":"Resize Viewer to image ", "mods":["ALT"]},
+                {"name":"Resize Viewer to maximum and fit image", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Resize Viewer window to image ", "mods":["CONTROL"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move right on the timeline by the specified increment amount", "mods":["SHIFT"]},
+                {"name":"Move to midpoint between current frame and next keyframe/last frame", "mods":["CONTROL"]},
+                {"name":"Next keyframe", "mods":["ALT"]},
+                {"name":"Step forward one frame", "mods":[]}
+            ],
+            "RIGHT_BRACE" : [
+                {"name":"Show / hide bottom toolbar", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Display Viewer Settings dialog", "mods":[]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Switch to the previous view in a multi-view project", "mods":[]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Show / hide all Viewers", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"2D / 3D view toggle", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Enable or disable previewing output on an external broadcast video monitor", "mods":["CONTROL"]},
+                {"name":"Update Viewer display. Used when Pause is active ", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Activate the ROI feature, or if a ROI exists, clear the current ROI. Drag to define a new ROI", "mods":["ALT"]},
+                {"name":"Region of interest  toggle", "mods":["SHIFT"]},
+                {"name":"Toggles Viewer “blend,” split-screen display, on/off. This was previously called the “wipe” mode. ", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Toggle lock/unlock the Viewer to a specified zoom level for all inputs", "mods":["ALT"]}
+            ]
+        }
+    }
+}

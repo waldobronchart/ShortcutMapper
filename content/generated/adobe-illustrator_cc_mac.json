@@ -1,0 +1,573 @@
+{
+    "name" : "Adobe Illustrator",
+    "version" : "CC",
+    "os" : "mac",
+    "mods_used" : ["ALT", "COMMAND", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "A" : [
+                {"name":"Deselect", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Direct Selection tool", "mods":[]},
+                {"name":"Select All", "mods":["COMMAND"]},
+                {"name":"Select artwork in active artboard", "mods":["ALT", "COMMAND"]}
+            ],
+            "ALT" : [
+                {"name":"Direct/Group Selection tool", "mods":[]}
+            ],
+            "B" : [
+                {"name":"Blob Brush tool", "mods":["SHIFT"]},
+                {"name":"Hide bounding box", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Make blend", "mods":["ALT", "COMMAND"]},
+                {"name":"Paintbrush tool", "mods":[]},
+                {"name":"Paste in back", "mods":["COMMAND"]}
+            ],
+            "BACKSLASH" : [
+                {"name":"Line Segment tool", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Convert Anchor Point tool", "mods":["SHIFT"]},
+                {"name":"Copy", "mods":["COMMAND"]},
+                {"name":"Envelope Distort: Make with Top Object", "mods":["ALT", "COMMAND"]},
+                {"name":"Scissors tool", "mods":[]}
+            ],
+            "COMMA" : [
+                {"name":"Unit preferences", "mods":["COMMAND"]}
+            ],
+            "COMMAND" : [
+                {"name":"Last-used selection tool", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Cycle drawing modes (Normal, Behind, Inside)", "mods":["SHIFT"]},
+                {"name":"Set fill and stroke to default", "mods":[]},
+                {"name":"Toggle transparency grid", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Transform again", "mods":["COMMAND"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Move Selection 10x", "mods":["SHIFT"]},
+                {"name":"Move Selection", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Apply last effect", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Eraser tool", "mods":["SHIFT"]},
+                {"name":"Free Transform tool", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Make compound path", "mods":["COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "ENTER" : [
+                {"name":"Apply value and keep text box active", "mods":["SHIFT"]}
+            ],
+            "F" : [
+                {"name":"Cycle screen modes", "mods":[]},
+                {"name":"Paste in front", "mods":["COMMAND"]}
+            ],
+            "F1" : [
+                {"name":"Help", "mods":[]}
+            ],
+            "F10" : [
+                {"name":"Toggle Stroke panel", "mods":["COMMAND"]},
+                {"name":"Toggle Transparency panel", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "F11" : [
+                {"name":"Toggle Attributes panel", "mods":["COMMAND"]},
+                {"name":"Toggle Symbols panel", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "F12" : [
+                {"name":"Other script...", "mods":["COMMAND"]}
+            ],
+            "F5" : [
+                {"name":"Toggle Brushes panel", "mods":[]},
+                {"name":"Toggle Graphic Styles panel", "mods":["SHIFT"]}
+            ],
+            "F6" : [
+                {"name":"Navigate to next document group", "mods":["ALT", "COMMAND"]},
+                {"name":"Next document", "mods":["COMMAND"]},
+                {"name":"Previous document", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle Appearance panel", "mods":["SHIFT"]},
+                {"name":"Toggle Color panel", "mods":[]}
+            ],
+            "F7" : [
+                {"name":"Toggle Align panel", "mods":["SHIFT"]},
+                {"name":"Toggle Layers panel", "mods":[]}
+            ],
+            "F8" : [
+                {"name":"Create new symbol", "mods":[]},
+                {"name":"Edit pattern", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle Info panel", "mods":["COMMAND"]},
+                {"name":"Toggle Transform panel", "mods":["SHIFT"]}
+            ],
+            "F9" : [
+                {"name":"Toggle Gradient panel", "mods":["COMMAND"]},
+                {"name":"Toggle Pathfinder panel", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Make guides", "mods":["COMMAND"]},
+                {"name":"Release guides", "mods":["ALT", "COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "FOUR" : [
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "G" : [
+                {"name":"Gradient tool", "mods":[]},
+                {"name":"Group", "mods":["COMMAND"]},
+                {"name":"Toggle gradient annotator", "mods":["ALT", "COMMAND"]},
+                {"name":"Ungroup", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Hand tool", "mods":[]},
+                {"name":"Hide edges", "mods":["COMMAND"]},
+                {"name":"Hide other application windows", "mods":["ALT", "COMMAND"]}
+            ],
+            "I" : [
+                {"name":"Check spelling", "mods":["COMMAND"]},
+                {"name":"Eyedropper tool", "mods":[]},
+                {"name":"Show hidden characters", "mods":["ALT", "COMMAND"]},
+                {"name":"Toggle Perspective tool", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Average", "mods":["ALT", "COMMAND"]},
+                {"name":"Column Graph tool", "mods":[]},
+                {"name":"Create corner or smooth join (Select anchor)", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Join selected paths", "mods":["COMMAND"]}
+            ],
+            "K" : [
+                {"name":"Color Settings...", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Live Paint Bucket tool", "mods":[]},
+                {"name":"Open Preferences", "mods":["COMMAND"]},
+                {"name":"Slice tool", "mods":["SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Ellipse tool", "mods":[]},
+                {"name":"Live Paint Selection tool", "mods":["SHIFT"]},
+                {"name":"Toggle perspective grid", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move Selection 10x", "mods":["SHIFT"]},
+                {"name":"Move Selection", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease Bristle brush size", "mods":[]},
+                {"name":"Select object below", "mods":["ALT", "COMMAND"]},
+                {"name":"Send backwards", "mods":["COMMAND"]},
+                {"name":"Send to back", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "LESSTHAN" : [
+                {"name":"Select color fill mode", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Envelope Distort: Make with Mesh", "mods":["ALT", "COMMAND"]},
+                {"name":"Minimize window", "mods":["COMMAND"]},
+                {"name":"Move...", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Rectangle tool", "mods":[]},
+                {"name":"Shape Builder Tool", "mods":["SHIFT"]}
+            ],
+            "MINUS" : [
+                {"name":"Delete Anchor Point tool", "mods":[]},
+                {"name":"Zoom out", "mods":["COMMAND"]}
+            ],
+            "MORETHAN" : [
+                {"name":"Select gradient fill mode", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New Document", "mods":["COMMAND"]},
+                {"name":"Open new from template", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Pencil tool", "mods":[]}
+            ],
+            "NINE" : [
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Make compound path", "mods":["COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Make guides", "mods":["COMMAND"]},
+                {"name":"Release guides", "mods":["ALT", "COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Delete Anchor Point tool", "mods":[]},
+                {"name":"Zoom out", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Set Bristle brush opacity", "mods":[]},
+                {"name":"Zoom to actual size", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Add Anchor Point tool", "mods":[]},
+                {"name":"Zoom in", "mods":["COMMAND"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Make clipping mask", "mods":["COMMAND"]},
+                {"name":"Release clipping mask", "mods":["ALT", "COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Reselect", "mods":["COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Add new fill", "mods":["COMMAND"]},
+                {"name":"Add new stroke", "mods":["ALT", "COMMAND"]},
+                {"name":"Select no stroke/fill mode", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Lock selection", "mods":["COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Hide selection", "mods":["COMMAND"]},
+                {"name":"Lock all deselected artwork", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Set Bristle brush opacity", "mods":[]},
+                {"name":"Unlock all", "mods":["ALT", "COMMAND"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"Set Bristle brush opacity", "mods":[]},
+                {"name":"Zoom fit all in window", "mods":["ALT", "COMMAND"]},
+                {"name":"Zoom fit arboard", "mods":["COMMAND"]}
+            ],
+            "O" : [
+                {"name":"Artboard tool", "mods":["SHIFT"]},
+                {"name":"Browse in Bridge", "mods":["ALT", "COMMAND"]},
+                {"name":"Open document", "mods":["COMMAND"]},
+                {"name":"Reflect tool", "mods":[]}
+            ],
+            "ONE" : [
+                {"name":"Set Bristle brush opacity", "mods":[]},
+                {"name":"Zoom to actual size", "mods":["COMMAND"]}
+            ],
+            "P" : [
+                {"name":"Document setup...", "mods":["ALT", "COMMAND"]},
+                {"name":"Pen tool", "mods":[]},
+                {"name":"Perspective Grid Tool", "mods":["SHIFT"]},
+                {"name":"Place...", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Print...", "mods":["COMMAND"]}
+            ],
+            "PLUS" : [
+                {"name":"Add Anchor Point tool", "mods":[]},
+                {"name":"Zoom in", "mods":["COMMAND"]}
+            ],
+            "Q" : [
+                {"name":"Lasso tool", "mods":[]},
+                {"name":"Quit", "mods":["COMMAND"]}
+            ],
+            "R" : [
+                {"name":"Rotate tool", "mods":[]},
+                {"name":"Toggle Rulers", "mods":["COMMAND"]},
+                {"name":"Toggle artboard rulers", "mods":["ALT", "COMMAND"]},
+                {"name":"Warp tool", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move Selection 10x", "mods":["SHIFT"]},
+                {"name":"Move Selection", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Bring to front", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Increase Bristle brush size", "mods":[]},
+                {"name":"Select object above", "mods":["ALT", "COMMAND"]},
+                {"name":"Send forward", "mods":["COMMAND"]}
+            ],
+            "S" : [
+                {"name":"Save as copy...", "mods":["ALT", "COMMAND"]},
+                {"name":"Save as...", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Save", "mods":["COMMAND"]},
+                {"name":"Scale tool", "mods":[]},
+                {"name":"Symbol Sprayer tool", "mods":["SHIFT"]}
+            ],
+            "SEMICOLON" : [
+                {"name":"Snap to point", "mods":["ALT", "COMMAND"]},
+                {"name":"Toggle Guides", "mods":["COMMAND"]}
+            ],
+            "SEVEN" : [
+                {"name":"Make clipping mask", "mods":["COMMAND"]},
+                {"name":"Release clipping mask", "mods":["ALT", "COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"(Hold) Constrain to 45°", "mods":[]}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name":"Lock/Unlock guides", "mods":["ALT", "COMMAND"]},
+                {"name":"Snap to grid", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Toggle Grid", "mods":["COMMAND"]}
+            ],
+            "SIX" : [
+                {"name":"Reselect", "mods":["COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "SLASH" : [
+                {"name":"Add new fill", "mods":["COMMAND"]},
+                {"name":"Add new stroke", "mods":["ALT", "COMMAND"]},
+                {"name":"Select no stroke/fill mode", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Cycle Type tools", "mods":["SHIFT"]},
+                {"name":"Toggle Character Panel", "mods":["COMMAND"]},
+                {"name":"Toggle Paragraph panel", "mods":["ALT", "COMMAND"]},
+                {"name":"Toggle Tabs Panel", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Type tool", "mods":[]}
+            ],
+            "TAB" : [
+                {"name":"Show/Hide all panels except the Tools panel and Control panel", "mods":["SHIFT"]},
+                {"name":"Show/Hide all panels", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Lock selection", "mods":["COMMAND"]},
+                {"name":"Set Bristle brush opacity", "mods":[]}
+            ],
+            "TWO" : [
+                {"name":"Hide selection", "mods":["COMMAND"]},
+                {"name":"Lock all deselected artwork", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Set Bristle brush opacity", "mods":[]},
+                {"name":"Unlock all", "mods":["ALT", "COMMAND"]}
+            ],
+            "U" : [
+                {"name":"Mesh tool", "mods":[]},
+                {"name":"Smart guides", "mods":["COMMAND"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Move Selection 10x", "mods":["SHIFT"]},
+                {"name":"Move Selection", "mods":[]}
+            ],
+            "V" : [
+                {"name":"Paste in place", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Paste", "mods":["COMMAND"]},
+                {"name":"Perspective Selection Tool", "mods":["SHIFT"]},
+                {"name":"Selection tool", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Blend tool", "mods":[]},
+                {"name":"Close Document", "mods":["COMMAND"]},
+                {"name":"Hide Template", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Width Tool", "mods":["SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Cut", "mods":["COMMAND"]},
+                {"name":"Make live paint", "mods":["ALT", "COMMAND"]},
+                {"name":"Swap fill and stroke", "mods":["SHIFT"]},
+                {"name":"Toggle between fill and stroke", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Magic Wand tool", "mods":[]},
+                {"name":"Toggle Outline/Preview", "mods":["COMMAND"]},
+                {"name":"Toggle Pixel preview view", "mods":["ALT", "COMMAND"]},
+                {"name":"Toggle Text Threads", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "Z" : [
+                {"name":"Redo", "mods":["COMMAND", "SHIFT"]},
+                {"name":"Revert", "mods":["ALT", "COMMAND"]},
+                {"name":"Undo", "mods":["COMMAND"]},
+                {"name":"Zoom tool", "mods":[]}
+            ],
+            "ZERO" : [
+                {"name":"Set Bristle brush opacity", "mods":[]},
+                {"name":"Zoom fit all in window", "mods":["ALT", "COMMAND"]},
+                {"name":"Zoom fit arboard", "mods":["COMMAND"]}
+            ]
+        },
+        "Mode: Drawing" : {
+            "DOWN_ARROW" : [
+                {"name":"Add or remove horizontal lines from a rectangular grid or concentric lines from a polar grid", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Add or remove vertical lines from a rectangular grid or radial lines from a polar grid", "mods":[]}
+            ]
+        },
+        "Panel: Character & Paragraph" : {
+            "DOWN_ARROW" : [
+                {"name":"Decrease value large", "mods":["SHIFT"]},
+                {"name":"Decrease value", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Highlight font field", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increase value large", "mods":["SHIFT"]},
+                {"name":"Increase value", "mods":[]}
+            ]
+        },
+        "Panel: Transform" : {
+            "ENTER" : [
+                {"name":"Apply and copy object", "mods":["ALT"]},
+                {"name":"Apply and keep focus in edit field", "mods":["SHIFT"]},
+                {"name":"Apply and scale option proportionately for width or height", "mods":["COMMAND"]}
+            ]
+        },
+        "Panel: Transparency" : {
+            "DOWN_ARROW" : [
+                {"name":"Opacity Field: Decrease by 1", "mods":[]},
+                {"name":"Opacity Field: Decrease by 10", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Opacity Field: Increase by 1", "mods":[]},
+                {"name":"Opacity Field: Increase by 10", "mods":["SHIFT"]}
+            ]
+        },
+        "Tool: Blob Brush" : {
+            "ALT" : [
+                {"name":"(Hold) Smooth Tool", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease brush size", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Increase brush size", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Constrain horizontally/vertically", "mods":[]}
+            ]
+        },
+        "Tool: Eyedropper" : {
+            "SHIFT" : [
+                {"name":"Sample color", "mods":[]}
+            ]
+        },
+        "Tool: Knife" : {
+            "ALT" : [
+                {"name":"Cut a straight line", "mods":[]}
+            ]
+        },
+        "Tool: Lasso" : {
+            "CAPSLOCK" : [
+                {"name":"Change pointer to cross hair", "mods":[]}
+            ]
+        },
+        "Tool: Pen" : {
+            "ALT" : [
+                {"name":"(Hold) Convert Anchor Point tool", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"(Drag) Move current anchor point while drawing with Pen tool", "mods":[]}
+            ]
+        },
+        "Tool: Pencil" : {
+            "ALT" : [
+                {"name":"(Hold) Smooth Tool", "mods":[]}
+            ],
+            "LEFT_BRACKET" : [
+                {"name":"Decrease brush size", "mods":[]}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name":"Increase brush size", "mods":[]}
+            ]
+        },
+        "Tool: Scissors" : {
+            "ALT" : [
+                {"name":"(Hold) Add Anchor Point tool", "mods":[]}
+            ]
+        },
+        "Tool: Text & Type" : {
+            "ALT" : [
+                {"name":"Switch Type Tools", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Align paragraph center", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrease leading", "mods":["ALT"]},
+                {"name":"Move down one line", "mods":[]},
+                {"name":"Move down one paragraph", "mods":["COMMAND"]},
+                {"name":"Select one paragraph after", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "ENTER" : [
+                {"name":"Exit type edit mode", "mods":["COMMAND"]},
+                {"name":"Insert soft return", "mods":["SHIFT"]}
+            ],
+            "J" : [
+                {"name":"Justify paragraph", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Highlight kerning", "mods":["ALT", "COMMAND"]}
+            ],
+            "L" : [
+                {"name":"Align paragraph left", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"5x Decrease kerning", "mods":["ALT", "COMMAND"]},
+                {"name":"Decrease baseline shift", "mods":["ALT", "SHIFT"]},
+                {"name":"Decrease kerning", "mods":["ALT"]},
+                {"name":"Move one character left", "mods":[]},
+                {"name":"Move one word left", "mods":["COMMAND"]},
+                {"name":"Select one word left", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "LESSTHAN" : [
+                {"name":"Decrease type size", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "MORETHAN" : [
+                {"name":"Increase type size", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Reset tracking/kerning to 0", "mods":["ALT", "COMMAND"]}
+            ],
+            "R" : [
+                {"name":"Align paragraph right", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"5x Increase kerning", "mods":["ALT", "COMMAND"]},
+                {"name":"Increase baseline shift", "mods":["ALT", "SHIFT"]},
+                {"name":"Increase kerning", "mods":["ALT"]},
+                {"name":"Move one character right", "mods":[]},
+                {"name":"Move one word right", "mods":["COMMAND"]},
+                {"name":"Select one word right", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increase leading", "mods":["ALT"]},
+                {"name":"Move up one line", "mods":[]},
+                {"name":"Move up one paragraph", "mods":["COMMAND"]},
+                {"name":"Select one paragraph before", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Reset horizontal scale to 100%", "mods":["COMMAND", "SHIFT"]}
+            ]
+        },
+        "View Artwork" : {
+            "ESCAPE" : [
+                {"name":"Exit Artboard tool mode", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Toggle between screen modes: Normal Screen Mode, Full Screen Mode with Menu Bar, Full Screen Mode", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Navigate to next document group", "mods":["ALT", "COMMAND"]},
+                {"name":"Navigate to next document", "mods":["COMMAND"]},
+                {"name":"Navigate to previous document group", "mods":["ALT", "COMMAND", "SHIFT"]},
+                {"name":"Navigate to previous document", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "H" : [
+                {"name":"Show/Hide artboards", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Hide unselected artwork", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name":"View all artboards in window", "mods":["ALT", "COMMAND"]}
+            ],
+            "R" : [
+                {"name":"Show/Hide artboard rulers", "mods":["ALT", "COMMAND"]}
+            ],
+            "SPACE" : [
+                {"name":"Switch to Hand tool", "mods":[]},
+                {"name":"Switch to Zoom tool in magnify mode", "mods":["COMMAND"]},
+                {"name":"Switch to Zoom tool in reduce mode", "mods":["ALT", "COMMAND"]}
+            ],
+            "THREE" : [
+                {"name":"Hide unselected artwork", "mods":["ALT", "COMMAND", "SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Paste in place on the active artboard", "mods":["COMMAND", "SHIFT"]}
+            ],
+            "ZERO" : [
+                {"name":"View all artboards in window", "mods":["ALT", "COMMAND"]}
+            ]
+        }
+    }
+}

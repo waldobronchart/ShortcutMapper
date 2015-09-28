@@ -1,6 +1,6 @@
 import sys
-import os
 import unittest
+
 
 class BaseTestCase(unittest.TestCase):
     """Baseclass for all the tests that Flask uses.  Use these methods

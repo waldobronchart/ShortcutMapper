@@ -1,0 +1,32 @@
+{
+    "name": "Sublime Text",
+    "version": "v2",
+    "default_context": "Global Context",
+    "os": ["windows", "mac"],
+    "contexts": {
+        "Plugin: emmet": {
+            "Update Image Size": ["Ctrl + U", "Shift + Ctrl + I"],
+            "Increment by 1": ["Ctrl + Up Arrow", "Ctrl + Up Arrow"],
+            "Encode/Decode Image to data:URL": ["Ctrl + '", "Shift + Ctrl + D"],
+            "Increment by 0.1": ["Alt + Up Arrow", "Alt + Up Arrow"],
+            "Go to Edit Point": ["Ctrl + Alt + Right Arrow or Ctrl + Alt + Left Arrow", "Ctrl + Alt + Right Arrow or Ctrl + Alt + Left Arrow"],
+            "Split/Join Tag": ["Shift + Ctrl + `", "Shift + Command + '"],
+            "Toggle Comment": ["Shift + Ctrl + /", "Shift + Option + /"],
+            "Decrement by 0.1": ["Alt + Down Arrow", "Alt + Down Arrow"],
+            "Interactive “Expand Abbreviation”": ["Ctrl + Alt + Enter", "Ctrl + Alt + Enter"],
+            "Reflect CSS Value": ["Shift + Ctrl + R", "Shift + Command + R"],
+            "Wrap With Abbreviation": ["Shift + Ctrl + G", "Ctrl + W"],
+            "Go to Matching Pair": ["Ctrl + Alt + J", "Shift + Ctrl + T"],
+            "Remove Tag": ["Shift + Ctrl + ;", "Command + '"],
+            "Decrement by 10": ["Shift + Alt + Down Arrow", "Option + Command + Down Arrow"],
+            "Expand Abbreviation": ["Tab or Ctrl + E", "Tab or Ctrl + E"],
+            "Evaluate Math Expression": ["Shift + Ctrl + Y", "Shift + Command + Y"],
+            "Match Tag Pair Inward": ["Shift + Ctrl + 0", "Ctrl + J"],
+            "Increment by 10": ["Shift + Alt + Up Arrow", "Option + Command + Up Arrow"],
+            "Decrement by 1": ["Ctrl + Down Arrow", "Ctrl + Down Arrow"],
+            "Select Item": ["Shift + Ctrl + . or Shift + Ctrl + ,", "Shift + Command + . or Shift + Command + ,"],
+            "Rename Tag": ["Shift + Ctrl + '", "Shift + Command + K"],
+            "Match Tag Pair Outward": ["Ctrl + ,", "Ctrl + D"]
+        }
+    }
+}
