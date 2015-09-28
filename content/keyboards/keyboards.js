@@ -35,7 +35,7 @@ var sitedata_keyboards = {
         linux: "french.html",
     },
 	"Español": {
-		windows:	"spanish.html"
+		windows:	"spanish.html",
 		linux:		"spanish.html"
 	}
 };
