@@ -27,5 +27,9 @@ var sitedata_keyboards = {
     "German": {
         windows: "german.html",
         linux: "german.html",
-    }
+    },
+	"Español": {
+		windows:	"spanish.html"
+		linux:		"spanish.html"
+	}
 };
