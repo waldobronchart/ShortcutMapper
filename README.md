@@ -183,7 +183,7 @@ Make sure to run all tests in the `/tests` folder to ensure all keycodes are val
 Please make sure to read the "Adding shortcuts for a new Application" section above.
 It is good practice to keep your commits small and structured so it's easy to review.
 
-First I find a raw source and write a scraper script to generate the intermediate file (Example: 76f7b2f6c895bebebd5a5948c3bc759ac7779189)
+First I find a raw source and write a scraper script to generate the intermediate file (Example: https://github.com/waldobronchart/ShortcutMapper/commit/76f7b2f6c895bebebd5a5948c3bc759ac7779189)
 -  sources/thefoundry-nuke/raw/nuke_8.0_user_guide_hotkeys.html
 -  sources/thefoundry-nuke/raw_to_intermediate_nuke8.py
 
