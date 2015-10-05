@@ -148,5 +148,56 @@ The AppConfig has a serialize function that exports it into the correct director
 Look in `shmaplib/appdata.py` for more specific docs.
 
 
+## Pull Requests Flow
 
+I follow the git-flow process to get new features and bugfixes in. You can read about it here:
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
+Basically you'll create a branch like `feature/descriptive-feature-name` from the `gh-pages` branch and start working in that. Once you're done, you'll create a pull request that merges into the `develop` branch.
+This allows me to test your changes before it is published to the `gh-pages` branch.
+
+For bug fixes, you'll name your branch `bugfix/descriptive-bug-name`.
+
+### Expected contents for new keyboards
+
+Ideally both windows and mac keyboards, created from other existing layouts (Klingon for example):
+- content/keyboards/klingon.html
+- content/keyboards/klingon_mac.html
+
+These files added to the keyboard list in `content/keyboards/keyboards.js`
+```
+var sitedata_keyboards = {
+    ...
+    "Klingon": {
+        mac: "klingon_mac.html",
+        windows: "klingon.html",
+        linux: "klingon.html",
+    }
+}
+```
+
+Make sure to run all tests in the `/tests` folder to ensure all keycodes are valid.
+
+### Expected contents for new applications
+
+Please make sure to read the "Adding shortcuts for a new Application" section above.
+It is good practice to keep your commits small and structured so it's easy to review.
+
+First I find a raw source and write a scraper script to generate the intermediate file (Example: 76f7b2f6c895bebebd5a5948c3bc759ac7779189)
+-  sources/thefoundry-nuke/raw/nuke_8.0_user_guide_hotkeys.html
+-  sources/thefoundry-nuke/raw_to_intermediate_nuke8.py
+
+Generate the intermediate file with the `raw_to_intermediate` script (Example: https://github.com/waldobronchart/ShortcutMapper/commit/f1db1aa3268e0a82b5394d7e1c26335153872cb5)
+- sources/thefoundry-nuke/intermediate/thefoundry_nuke_8.0.json
+
+Make some needed hand edits to the intermediate files, like better grouping in contexts and fixing some long names. It's good to have the original untouched one in first, so that you can track your changes more easily (Example: https://github.com/waldobronchart/ShortcutMapper/commit/767556431a983481abd7cc0a30f1878cceef5fe9)
+- sources/thefoundry-nuke/intermediate/thefoundry_nuke_8.0.json
+
+Keep re-generating the app content (with `/utils/export_intermediate_data`) until you're happy with the changes. Note to fix the warnings during the export process.
+
+When you're happy with all the changes, commit the generated data (Example: https://github.com/waldobronchart/ShortcutMapper/commit/5533cdf94e9cab5564b9a946f528638cea6420f3)
+- content/generated/apps.js (app was added here)
+- content/generated/the-foundry-nuke_8.0_mac.json
+- content/generated/the-foundry-nuke_8.0_windows.json
+
+Then create a new pull request into the `develop` branch.
