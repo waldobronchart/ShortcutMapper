@@ -144,6 +144,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "SketchUp",
+        data: {
+            "2016": {
+                "mac": "sketchup_2016_mac.json",
+                "windows": "sketchup_2016_windows.json",
+            },
+        }
+    },
+    {
         name: "Sublime Text",
         data: {
             "v2": {
