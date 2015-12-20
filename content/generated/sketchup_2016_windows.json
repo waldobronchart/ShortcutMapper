@@ -1,0 +1,244 @@
+{
+    "name" : "SketchUp",
+    "version" : "2016",
+    "os" : "windows",
+    "mods_used" : ["CONTROL", "SHIFT"],
+    "default_context" : "Global Context",
+    "contexts" : {
+        "Global Context" : {
+            "A" : [
+                {"name":"2 Point Arc", "mods":[]},
+                {"name":"Select All", "mods":["CONTROL"]}
+            ],
+            "B" : [
+                {"name":"Paint Bucket", "mods":[]}
+            ],
+            "C" : [
+                {"name":"Circle", "mods":[]}
+            ],
+            "DELETE" : [
+                {"name":"Delete", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Eraser", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Offset", "mods":[]}
+            ],
+            "F1" : [
+                {"name":"Context Help", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Make Component", "mods":[]}
+            ],
+            "H" : [
+                {"name":"Pan", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Image Igloo", "mods":[]}
+            ],
+            "INSERT" : [
+                {"name":"Copy", "mods":["CONTROL"]},
+                {"name":"Paste", "mods":["SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Back Edges", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Line", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Move", "mods":[]}
+            ],
+            "N" : [
+                {"name":"New", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Open", "mods":["CONTROL"]},
+                {"name":"Orbit", "mods":[]}
+            ],
+            "P" : [
+                {"name":"Print", "mods":["CONTROL"]},
+                {"name":"Push/Pull", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Rotate", "mods":[]}
+            ],
+            "R" : [
+                {"name":"Rectangle", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Save", "mods":["CONTROL"]},
+                {"name":"Scale", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Select", "mods":[]}
+            ],
+            "T" : [
+                {"name":"Select None", "mods":["CONTROL"]},
+                {"name":"Tape Measure", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Zoom Window", "mods":["CONTROL", "SHIFT"]}
+            ],
+            "X" : [
+                {"name":"Cut", "mods":["CONTROL"]}
+            ],
+            "Y" : [
+                {"name":"Redo", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Undo", "mods":["CONTROL"]},
+                {"name":"Zoom Extents", "mods":["SHIFT"]},
+                {"name":"Zoom", "mods":[]}
+            ]
+        },
+        "Mode: Circle" : {
+            "SHIFT" : [
+                {"name":"Lock current inferences", "mods":[]}
+            ]
+        },
+        "Mode: Eraser" : {
+            "CONTROL" : [
+                {"name":"Soften/Smooth", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Hide", "mods":[]}
+            ]
+        },
+        "Mode: Follow me" : {
+            "ALT" : [
+                {"name":"Face perimeter as extrusion path", "mods":[]}
+            ]
+        },
+        "Mode: Line" : {
+            "DOWN_ARROW" : [
+                {"name":"Parallel/Perpendicular", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"On Green Axis", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"On Red Axis", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"On Blue Axis", "mods":[]}
+            ]
+        },
+        "Mode: Move" : {
+            "ALT" : [
+                {"name":"Auto-fold", "mods":[]}
+            ],
+            "ASTERISK" : [
+                {"name":"External Copy Array", "mods":[]}
+            ],
+            "CONTROL" : [
+                {"name":"Copy", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Parallel/Perpendicular", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"On Green Axis", "mods":[]}
+            ],
+            "NUMPAD_ASTERISK" : [
+                {"name":"External Copy Array", "mods":[]}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name":"Internal Copy Array", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"On Red Axis", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Lock Inference", "mods":[]}
+            ],
+            "SLASH" : [
+                {"name":"Internal Copy Array", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"On Blue Axis", "mods":[]}
+            ],
+            "X" : [
+                {"name":"External Copy Array", "mods":[]}
+            ]
+        },
+        "Mode: Orbit" : {
+            "CONTROL" : [
+                {"name":"(HOLD) Suspend gravity", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"(HOLD) Activate Pan", "mods":[]}
+            ]
+        },
+        "Mode: Paint Bucket" : {
+            "ALT" : [
+                {"name":"Sample material", "mods":[]}
+            ],
+            "CONTROL" : [
+                {"name":"Paint all matching connected faces", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Paint all matching faces in the model", "mods":[]},
+                {"name":"Paint all matching faces on the same object", "mods":["CONTROL"]}
+            ]
+        },
+        "Mode: Push/Pull" : {
+            "CONTROL" : [
+                {"name":"Push/Pull a copy of the face (leaving the original face in place)", "mods":[]}
+            ]
+        },
+        "Mode: Rotate" : {
+            "CONTROL" : [
+                {"name":"Copy", "mods":[]}
+            ]
+        },
+        "Mode: Rotated Rectangle" : {
+            "ALT" : [
+                {"name":"Lock drawing plane for first edge (after first click)", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Lock in current direction/plane", "mods":[]}
+            ]
+        },
+        "Mode: Scale" : {
+            "CONTROL" : [
+                {"name":"About center", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Uniformly (don’t distort)", "mods":[]}
+            ]
+        },
+        "Mode: Select" : {
+            "CONTROL" : [
+                {"name":"Add to selection", "mods":[]}
+            ],
+            "SHIFT" : [
+                {"name":"Add/Subtract from selection", "mods":[]},
+                {"name":"Subtract from selection", "mods":["CONTROL"]}
+            ]
+        },
+        "Mode: Tape Measure" : {
+            "CONTROL" : [
+                {"name":"Create guide or measure only", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Parallel/Perpendicular", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"On Green Axis", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"On Red Axis", "mods":[]}
+            ],
+            "UP_ARROW" : [
+                {"name":"On Blue Axis", "mods":[]}
+            ]
+        },
+        "Mode: Zoom" : {
+            "SHIFT" : [
+                {"name":"(HOLD) and click-drag mouse to change Field of View", "mods":[]}
+            ]
+        }
+    }
+}
