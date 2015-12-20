@@ -1,0 +1,114 @@
+{
+    "name": "SketchUp",
+    "version": "2016",
+    "default_context": "Global Context",
+    "os": ["windows", "mac"],
+    "contexts": {
+        "Global Context": {
+            "Context Help": ["Shift+F1", "Shift+F1"],
+            "Zoom Extents": ["Ctrl+Shift+E", "Command+Shift+E"],
+            "Zoom Window": ["Ctrl+Shift+W", "Command+Shift+W"],
+            "Pan": ["H", "H"],
+            "Image Igloo": ["I", "I"],
+            "Orbit": ["O", "O"],
+            "Zoom": ["Z", "Z"],
+            "Zoom Extents": ["Shift+Z", "Shift+Z"],
+            "2 Point Arc": ["A", "A"],
+            "Circle": ["C", "C"],
+            "Rectangle": ["R", "R"],
+            "Line": ["L", "L"],
+            "Select None": ["Ctrl+T", "Command+T"],
+            "Copy": ["Ctrl+C", "Command+C"],
+            "Copy": ["Ctrl+Insert", "Command+Insert"],
+            "Cut": ["Shift+Delete", "Shift+Delete"],
+            "Cut": ["Ctrl+X", "Command+X"],
+            "Delete": ["Delete", "Delete"],
+            "Paste": ["Ctrl+V", "Command+V"],
+            "Paste": ["Shift+Insert", "Shift+Insert"],
+            "Redo": ["Ctrl+Y", "Command+Y"],
+            "Select All": ["Ctrl+A", "Command+A"],
+            "Undo": ["Ctrl+Z", "Command+Z"],
+            "Make Component": ["G", "G"],
+            "New": ["Ctrl+N", "Command+N"],
+            "Open": ["Ctrl+O", "Command+O"],
+            "Print": ["Ctrl+P", "Command+P"],
+            "Save": ["Ctrl+S", "Command+S"],
+            "Eraser": ["E", "E"],
+            "Paint Bucket": ["B", "B"],
+            "Push/Pull": ["P", "P"],
+            "Select": ["Spacebar", "Spacebar"],
+            "Move": ["M", "M"],
+            "Tape Measure": ["T", "T"],
+            "Offset": ["F", "F"],
+            "Rotate": ["Q", "Q"],
+            "Scale": ["S", "S"],
+            "Back Edges": ["K", "K"]
+        },
+        "Mode: Circle": {
+            "Lock current inferences": ["Shift", "Shift"]
+        },
+        "Mode: Follow me": {
+            "Face perimeter as extrusion path": ["Alt", "Option"]
+        },
+        "Mode: Line": {
+            "On Green Axis": ["Left Arrow", "Left Arrow"],
+            "On Red Axis": ["Right Arrow", "Right Arrow"],
+            "On Blue Axis": ["Up Arrow", "Up Arrow"],
+            "Parallel/Perpendicular": ["Down Arrow", "Down Arrow"]
+        },
+        "Mode: Move": {
+            "Copy": ["Ctrl", "Command"],
+            "Auto-fold": ["Alt", "Option"],
+            "Lock Inference": ["Shift", "Shift"],
+            "On Blue Axis": ["Up Arrow", "Up Arrow"],
+            "On Green Axis": ["Left Arrow", "Left Arrow"],
+            "On Red Axis": ["Right Arrow", "Right Arrow"],
+            "Parallel/Perpendicular": ["Down Arrow", "Down Arrow"],
+            "External Copy Array": ["X or *", "X or *"],
+            "Internal Copy Array": ["/", "/"]
+        },
+        "Mode: Orbit": {
+            "(HOLD) Suspend gravity": ["Ctrl", "Command"],
+            "(HOLD) Activate Pan": ["Shift", "Shift"]
+        },
+        "Mode: Paint Bucket": {
+            "Paint all matching connected faces": ["Ctrl", "Command"],
+            "Paint all matching faces in the model": ["Shift", "Shift"],
+            "Sample material": ["Alt", "Option"],
+            "Paint all matching faces on the same object": ["Ctrl+Shift", "Command+Shift"]
+        },
+        "Mode: Push/Pull": {
+            "Push/Pull a copy of the face (leaving the original face in place)": ["Ctrl", "Command"]
+        },
+        "Mode: Rotated Rectangle": {
+            "Lock in current direction/plane": ["Shift", "Shift"],
+            "Lock drawing plane for first edge (after first click)": ["Alt", "Option"]
+        },
+        "Mode: Scale": {
+            "About center": ["Ctrl", "Command"],
+            "Uniformly (don’t distort)": ["Shift", "Shift"]
+        },
+        "Mode: Eraser": {
+            "Soften/Smooth": ["Ctrl", "Command"],
+            "Hide": ["Shift", "Shift"]
+        },
+        "Mode: Select": {
+            "Add to selection": ["Ctrl", "Command"],
+            "Add/Subtract from selection": ["Shift", "Shift"],
+            "Subtract from selection": ["Ctrl+Shift", "Command+Shift"]
+        },
+        "Mode: Rotate": {
+            "Copy": ["Ctrl", "Command"]
+        },
+        "Mode: Tape Measure": {
+            "Create guide or measure only": ["Ctrl", "Command"],
+            "On Blue Axis": ["Up Arrow", "Up Arrow"],
+            "On Green Axis": ["Left Arrow", "Left Arrow"],
+            "On Red Axis": ["Right Arrow", "Right Arrow"],
+            "Parallel/Perpendicular": ["Down Arrow", "Down Arrow"]
+        },
+        "Mode: Zoom": {
+            "(HOLD) and click-drag mouse to change Field of View": ["Shift", "Shift"]
+        }
+    }
+}
