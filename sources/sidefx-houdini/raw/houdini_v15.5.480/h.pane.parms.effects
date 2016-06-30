@@ -1,0 +1,7 @@
+//
+// Parameter Effects definitions
+//
+
+HCONTEXT h.pane.parms.effects	"Parameter Effects" "These keys apply to parameter effects."
+
+h.pane.parms.effects.create_clip    "Create Clip..."	"Create clip for parameters"

@@ -1,0 +1,13 @@
+//
+// Handle list definitions
+//
+
+HCONTEXT h.pane.ipr		"IPR Viewer"		"These keys apply to the IPR Viewer pane."
+
+h.pane.ipr.render	"Render"		"Render"
+h.pane.ipr.rerender	"Restart Rendering"	"Restart Rendering"
+h.pane.ipr.killrender	"Kill Render"		"Kill Render"
+h.pane.ipr.showrop	"Popup ROP Parameters"	"Popup ROP Parameters"
+h.pane.ipr.showcamera	"Popup Camera Parameters" "Popup Camera Parameters"
+h.pane.ipr.snapshot	"Add Image to History"	"Add image to history"	Enter
+h.pane.ipr.removeimage	"Remove Image from History" "Remove image from history" Del

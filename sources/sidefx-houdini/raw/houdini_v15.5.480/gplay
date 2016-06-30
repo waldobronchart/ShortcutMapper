@@ -1,0 +1,25 @@
+//
+// Gplay hotkeys
+//
+
+HCONTEXT gplay "GPLAY Geometry Viewer" "These keys apply to the Geometry Viewer application."
+
+// File menu
+gplay.open		"Open"			"Open"			Alt+O Cmd+O
+gplay.quit		"Quit"			"Quit"			Alt+Q Cmd+Q
+
+// Display menu
+gplay.display_info	"Geometry Info"		"Geometry Info"		Alt+I
+gplay.unpack		"Unpack Geometry"	"Unpack Geometry"	Alt+U
+gplay.display_ssheet	"Geometry Spreadsheet"	"Geometry Speadsheet"	Alt+S
+gplay.flipbook		"Flipbook Current Viewport" "Flipbook the currently selected viewport"	Alt+F
+gplay.display_prefs	"Preferences"		"Preferences"		
+
+// Help menu
+gplay.help_menu		"Help Menu"		"Help Menu"		Alt+H
+
+// Commands not in menus
+gplay.quick_quit	"Quick Quit"		"Quick Quit"		Q
+gplay.next_geo		"Next Geometry"		"Next Geometry"		N
+gplay.prev_geo		"Previous Geometry"	"Previous Geometry"	P
+gplay.stop_play		"Stop Play"		"Stop Play"		Space

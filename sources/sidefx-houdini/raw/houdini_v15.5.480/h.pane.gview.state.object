@@ -1,0 +1,63 @@
+//
+// Keys for object states
+//
+
+HCONTEXT h.pane.gview.state.obj		"World (OBJ) Tools"	"These keys apply to the World tools."
+HCONTEXT h.pane.gview.state.obj.mirror	"Mirror Tool"		"These keys apply to the Mirror tool."
+HCONTEXT h.pane.gview.state.obj.view	"View Tool"		"These keys apply to the View tool."
+HCONTEXT h.pane.gview.state.obj.bones	"Bones Tool"		"These keys apply to the Bones tool."
+HCONTEXT h.pane.gview.state.obj.editcaptureweight  "Edit Capture Weights Tool"		"These keys apply to the Edit Capture Weights tool."
+HCONTEXT h.pane.gview.state.obj.pose	"Pose Tool"		"These keys apply to the Edit Capture Weights operation."
+HCONTEXT h.pane.gview.state.obj.blendpose    "BlendPose Tool"	"These keys apply to the BlendPose operation."
+
+// Mirror State
+// ------------
+h.pane.gview.state.obj.mirror.mirrorxy		"Mirror on XY Plane"		"Mirror on XY plane"		Shift+A
+h.pane.gview.state.obj.mirror.mirroryz		"Mirror on YZ Plane"		"Mirror on YZ plane"		Shift+S
+h.pane.gview.state.obj.mirror.mirrorzx		"Mirror on ZX Plane"		"Mirror on ZX plane"		Shift+D
+
+// Object View State
+// -----------------
+
+// Multi-Op State
+// --------------
+// none for now
+
+
+// Bone Common
+// -----------
+h.pane.gview.state.obj.bones.no_kin		"No Kinematics"		"No kinematics bone chain"				N
+h.pane.gview.state.obj.bones.fk			"Forward Kinematics"	"Forward kinematics bone chain"				F
+h.pane.gview.state.obj.bones.ik			"Inverse Kinematics"	"Inverse kinematics bone chain"				I
+h.pane.gview.state.obj.bones.iktwist		"IK With Twist Affector" "Inverse kinematics with twist affector"
+h.pane.gview.state.obj.bones.ikc		"IK With Constraints"	"Inverse kinematics with constraints"			Shift+I
+h.pane.gview.state.obj.bones.fkc		"FK With Constraints"	"Forward kinematics with constraints"			Shift+F
+h.pane.gview.state.obj.bones.follow_curve	"Follow-Curve Kinematics" "Follow-curve kinematics"				Shift+K
+h.pane.gview.state.obj.bones.add_kin		"Add Kinematics..." "Add kinematics to bone chain"				
+h.pane.gview.state.obj.bones.remove_kin		"Remove Kinematics..." "Remove kinematics from bone chain"				
+h.pane.gview.state.obj.bones.remove_kin_and_aff	"Remove Kinematics and Affectors..." "Remove kinematics and affectors from bone chain"				
+h.pane.gview.state.obj.bones.move_cplane	"Move C-Plane To Bone"	"Translate construction plane to end of last bone"	
+
+// Bone State
+// ----------
+
+// Edit Capture Weights State
+// --------------------------
+h.pane.gview.state.obj.editcaptureweight.pickpoints	"Select Points from Highlighted Bones"	"Select points from highlighted bones"
+h.pane.gview.state.obj.editcaptureweight.spreadsheet	"Spreadsheet..."			"Pop-up spreadsheet window"			Shift+S
+
+// Bone Posing State
+// -----------------
+h.pane.gview.state.obj.pose.xform		"Global Transform Handle"   "Switch to global transform handle"			A
+
+// Blend Pose State
+// ----------------
+h.pane.gview.state.obj.blendpose.addpose	"Add Pose"		    "Adds a new example pose"
+h.pane.gview.state.obj.blendpose.updatepose	"Update Pose"		    "Update the current pose"
+h.pane.gview.state.obj.blendpose.removepose	"Remove Pose"		    "Remove the current pose"
+h.pane.gview.state.obj.blendpose.modifyselect	"Modify Selection"		    "Modify the target and driver selection"
+h.pane.gview.state.obj.blendpose.prev		"Previous Pose"		    "Jump to previous pose"
+h.pane.gview.state.obj.blendpose.next		"Next Pose"		    "Jump to next pose"
+
+// State Entry Hotkeys
+// -------------------

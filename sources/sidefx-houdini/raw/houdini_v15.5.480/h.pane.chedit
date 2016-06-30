@@ -1,0 +1,145 @@
+//
+// Animation editor: graph, table, dopesheet
+//
+
+HCONTEXT h.pane.chedit		"Animation Editor"	"These keys apply to the animaton editor."
+HCONTEXT h.pane.chedit.graph	"Animation Graph"	"These keys apply to the animaton editor's graph."
+HCONTEXT h.pane.chedit.table	"Animation Table"	"These keys apply to the animaton editor's channel table."
+HCONTEXT h.pane.chedit.dope	"Animation Dopesheet"	"These keys apply to the animaton editor's dopesheet."
+
+// Common defines
+// --------------
+h.pane.chedit.load		"Load Active Chan/BChan"	"Load active channels and bchannels"	<
+h.pane.chedit.save		"Save Active Chan"		"Save active channels as .chan"		>
+h.pane.chedit.bsave		"Save Active BChan"		"Save active channels as .bchan"	]
+h.pane.chedit.del		"Delete Keys"			"Delete keyframes"			Del
+h.pane.chedit.handle 		"Box Handle" 			"Toggle box handle display"             Y
+h.pane.chedit.pivot		"Box Pivot Handle"		"Toggle box pivot handle display"	Shift+Y
+h.pane.chedit.home		"Home Channels (Current)"	    "Home current graph channels"	G
+h.pane.chedit.home_all		"Home Channels (All)"		    "Home all graph channels"		H
+h.pane.chedit.home_all_frange	"Home Playback Range (All)"	    "Home all graphs to playback range"	J
+h.pane.chedit.home_all_range	"Home Global Range (All)"	    "Home all graphs to global range"	Shift+J
+h.pane.chedit.frame		"Frame Selected"		    "Frame the selected keys"		F
+h.pane.chedit.to_graph		"Switch To Graph"		"Switch to graph view"			1
+h.pane.chedit.to_table		"Switch To Table"		"Switch to table view"			2
+h.pane.chedit.to_dopes		"Switch To Dopesheet"		"Switch to dopesheet view"		3
+h.pane.chedit.toggle_list	"Toggle Channel List"		"Toggle channel list"			Tab Backspace
+// ideally, these could override the built in nextkey/prevkey entries. but not any time soon...
+h.pane.chedit.prevkey		"Jump To Previous Keyframe"	"Jump to previous keyframe"		//Cmd+LeftArrow
+h.pane.chedit.nextkey		"Jump To Next Keyframe"		"Jump to next keyframe"			//Cmd+RightArrow
+h.pane.chedit.keycurrent	"Set Keyframes at Current Time"	"Set Keyframes at Current Time"
+h.pane.chedit.samplecurrent	"Sample Value at Current Time"	"Sample Value at Current Time"
+h.pane.chedit.savesnapshots	"Save Snapshots"		"Save snapshots for active channels"
+h.pane.chedit.loadsnapshots	"Load Snapshots"		"Load saved snapshots for active channels"
+h.pane.chedit.swapsnapshots	"Swap Snapshots"		"Swap saved snapshots with active channels"			Shift+X
+h.pane.chedit.clearsnapshots	"Clear Snapshots"		"Clear saved snapshots for active channels"			Enter
+h.pane.chedit.pastesample	"Paste Sample to Current Time"	"Paste Sample to Current Time"
+h.pane.chedit.show_channels	"Open Channel Chooser"		"Open channel chooser"			Cmd+1
+h.pane.chedit.show_groups	"Open Group List"		"Open channel group list"		Cmd+2 X
+h.pane.chedit.show_layers	"Open Layer List"		"Open layer list"			Cmd+3
+h.pane.chedit.show_parmbox	"Open Parameter List"		"Open parameter list"			Cmd+4
+h.pane.chedit.show_menu_bar	"Show Menu Bar"			"Show the animation editor menu bar."
+h.pane.chedit.displayed_channels_props "Edit Displayed Channels Properties..." "Edit Displayed Channels Properties" Alt+E
+
+// Graph menu
+// ----------
+h.pane.chedit.graph.lnames	"Long Channel Names"			"Long channel names"		N
+h.pane.chedit.graph.snames	"Show Channel Names"			"Show channel names"		Shift+N
+h.pane.chedit.graph.show_times	"Show Times"				"Show Time Mark Times"
+h.pane.chedit.graph.show_values	"Show Key Values"			"Show Key Values"
+h.pane.chedit.graph.show_all_handles	"Show All Handles"		"Show All Handles"
+h.pane.chedit.graph.show_near_handles	"Show Nearby Handles Only"	"Show Nearby Handles Only"
+h.pane.chedit.graph.bold_non_int_keys	"Bold Non-Integer Keys"		"Bold Non-Integer Keys"
+h.pane.chedit.graph.enablesnapshots	"Enable Channel Snapshots"	"Enable Channel Snapshots"				Shift+Enter
+h.pane.chedit.graph.persitentsnapshots	"Persistent Channel Snapshots"	"Persistent Channel Snapshots"
+
+h.pane.chedit.graph.creategroup	"Create Time Group on Selected Keys"	"Create time group attached to the selected keys"   	Q
+h.pane.chedit.graph.attach	"Attach/Detach Time Group"		"Attach/detach time group"				A
+h.pane.chedit.graph.scope	"Scope Time Group Channels"		"Scope time group channels"				
+h.pane.chedit.graph.vadapt	"Vertical Adapt"			"Vertical adapt"					V
+h.pane.chedit.graph.addkey	"Add Keyframe to Displayed Channels"	"Add a keyframe to displayed channels"			Cmd+K
+h.pane.chedit.graph.settodefault "Set Selected Keys/Slopes to Default Value" 	"Set Selected Keys and Slopes to Default Value"	B
+h.pane.chedit.graph.zeroslope	"Set Selected Slopes To Zero"		"Set selected slopes to zero"				0
+h.pane.chedit.graph.manualslope	"Set Selected Slopes To Manual"		"Set selected slopes to manual"				-
+h.pane.chedit.graph.autoslope	"Set Selected Slopes To Automatic"	"Set selected slopes to automatic"			=
+h.pane.chedit.graph.toggleslope	"Toggle Selected Slopes Mode"		"Toggle selected slopes between automatic or manual"
+h.pane.chedit.graph.togglenewslope "Toggle Automatic Slope Mode Preference"	"Toggle automatic slope mode preference when adding new key between automatical and manual keeping the same slope."		Shift+=
+h.pane.chedit.graph.smoothslope	"Smooth Selected Slopes"		"Smooth the selected slopes"				9
+h.pane.chedit.graph.ties	"Tie/Untie Selection"			"Tie/untie selection"					T
+h.pane.chedit.graph.graphType	"Toggle Multigraph"			"One graph for all scoped, or one graph per channel"	M
+h.pane.chedit.graph.toggle_lod	"Toggle Minimum Detail"			"Toggle between current and minimum detail level"	W
+h.pane.chedit.graph.snapmarks	"Snap Selected Marks"			"Snap Selected Marks to Integer Frames"
+h.pane.chedit.graph.isolate	"Isolate Channels"			"Isolate Channels (Only Display Selected Channels)"			I
+h.pane.chedit.graph.unisolate	"Unisolate Channels"			"Unisolate Channels"							Shift+I
+h.pane.chedit.graph.addkeys_mouse_click_position	"Add Keys at Mouse Click Position"	"Add Keys at Mouse Click Position"
+h.pane.chedit.graph.addkeys_curve_value			"Add Keys at Curve Value"		"Add Keys at Curve Value"
+h.pane.chedit.graph.smoothslopes_disabled		"Smooth Slopes Disabled"		"Smooth Slopes Disabled"
+h.pane.chedit.graph.smoothslopes_after			"Smooth Slopes After Moving Keys"	"Smooth Slopes After Moving Keys"
+h.pane.chedit.graph.smoothslopes_while			"Smooth Slopes While Moving Keys"	"Smooth Slopes While Moving Keys"
+
+h.pane.chedit.graph.selectall	"Select All Handles"	"Select All Handles"			Cmd+A
+h.pane.chedit.graph.selectno	"Select No Handles"	"Select No Handles"			Cmd+Shift+A
+h.pane.chedit.graph.invertselection "Invert Handle Selection" "Invert Handle Selection"		Cmd+I
+h.pane.chedit.graph.segconst	"Set Selected Segments to Constant"			"Set Selected Segments to Constant"
+h.pane.chedit.graph.seglinear	"Set Selected Segments to Linear"			"Set Selected Segments to Linear"
+h.pane.chedit.graph.segbezier	"Set Selected Segments to Bezier"			"Set Selected Segments to Bezier"
+h.pane.chedit.graph.segcubic	"Set Selected Segments to Cubic"			"Set Selected Segments to Cubic"
+h.pane.chedit.graph.segeaseio	"Set Selected Segments to Ease In and Out"		"Set Selected Segments to Ease In and Out"
+h.pane.chedit.graph.segeasei	"Set Selected Segments to Ease In"			"Set Selected Segments to Ease In"
+h.pane.chedit.graph.segeaseo	"Set Selected Segments to Ease Out"			"Set Selected Segments to Ease Out"
+h.pane.chedit.graph.segmatchio	"Set Selected Segments to Match In and Out Tangents"	"Set Selected Segments to Match In and Out Tangents"
+h.pane.chedit.graph.segmatchi	"Set Selected Segments to Match In Tangents"		"Set Selected Segments to Match In Tangents"
+h.pane.chedit.graph.segmatcho	"Set Selected Segments to Match Out Tangents"		"Set Selected Segments to Match Out Tangents"
+h.pane.chedit.graph.segspline	"Set Selected Segments to Spline"			"Set Selected Segments to Spline"
+h.pane.chedit.graph.segqlinear	"Set Selected Segments to Quaternion Linear"		"Set Selected Segments to Quaternion Linear"
+
+h.pane.chedit.graph.eulerfilter	"Filter Euler Rotations of Selected Channels"		"Filter Euler Rotations of Selected Channels"
+h.pane.chedit.graph.matchkeys	"Match Keyframes of Selected Timemarks"			"Match Keyframes of Selected Timemarks"
+h.pane.chedit.graph.refit	"Refit Selected Segments"				"Refit Selected Segments"
+
+
+h.pane.chedit.graph.show_func_bar   "Show Bottom Values Toolbar"			"Show the Animation Editor Bottom Toolbar holding edit fields for selected handles."  Shift+V
+h.pane.chedit.graph.show_time_bar   "Show Top Timeline"					"Show the Animation Editor Top Timeline bar"
+h.pane.chedit.graph.show_tool_bar   "Show Right Toolbar"				"Show the Animation Editor Right Toolbar holding shortcut buttons for switching segment type and tied/untied state."
+
+// Table menu
+// ----------
+h.pane.chedit.table.addkey	"Add Keyframes at Selected Cells"	"Add keyframes at selected cells"		Cmd+K
+h.pane.chedit.table.cnames	"Channel Colors"		"Use channel colors"
+h.pane.chedit.table.fnames	"Full Channel Names"		"Full channel names"			N
+
+// Dopesheet menu
+// --------------
+h.pane.chedit.dope.addkey	"Add Keyframes at Selected Cells"	"Add keyframes at selected cells"				Cmd+K
+
+h.pane.chedit.dope.spaste	"Paste"				"Paste"					V
+h.pane.chedit.dope.sstretch	"Stretch/Paste"			"Stretch/paste"				Z
+h.pane.chedit.dope.scycle	"Cycle/Paste"			"Paste as cycle"			B
+h.pane.chedit.dope.scycleoffset	"Cycle with Offset/Paste"	"Paste as cycle with offset"		C
+h.pane.chedit.dope.sreplace	"Replace"			"Replace"				R
+
+h.pane.chedit.dope.vpaste	"Visual Paste"			"Visual paste"				Shift+V
+h.pane.chedit.dope.vstretch	"Visual Stretch/Paste"		"Visual stretch/paste"			Shift+Z
+h.pane.chedit.dope.vcycle	"Visual Cycle/Paste"		"Visually paste as cycle"		Shift+B
+h.pane.chedit.dope.vcycleoffset	"Visual Cycle with Offset/Paste"    "Visually paste as cycle with offset"   Shift+C
+h.pane.chedit.dope.vreplace	"Visual Replace"		"Visual replace"			Shift+R
+
+h.pane.chedit.dope.enable	"Enable Keys"			"Enable keys"				Cmd+E
+h.pane.chedit.dope.disable	"Disable Keys"			"Disable keys"				Shift+E
+h.pane.chedit.dope.snap		"Snap Selection to Keys"	"Snap selection to nearest keyframes"	E
+h.pane.chedit.dope.growrow	"Select Rows"			"Grow selection horizontally"		Shift+A
+h.pane.chedit.dope.clearsel	"Clear Selection"		"Clear selection"			Q
+h.pane.chedit.dope.growcol	"Select Columns"		"Grow selection vertically"		A
+h.pane.chedit.dope.escape	"Escape"			"Escape"				Esc
+h.pane.chedit.dope.fnames	"Full Channel Names"		"Full channel names"			N
+h.pane.chedit.dope.cnames	"Channel Colors"		"Use channel colors"
+h.pane.chedit.dope.collapse	"One Line Per Group"		"One line per group"			Shift+L
+h.pane.chedit.dope.expand	"One Line Per Channel"		"One line per channel"			L
+h.pane.chedit.dope.snapmarks	"Snap Selected Marks"		"Snap Selected Marks to Integer Frames"
+h.pane.chedit.dope.show_ac_row	"Show All-Channels Row"		"Show All-Channels Row"
+
+h.pane.chedit.dope.selecttool	"Select Tool"			"Selects Frames"				S
+h.pane.chedit.dope.regiontool   "Region Tool"			"Selects Boxed Region"				Shift+S
+h.pane.chedit.dope.rippletool 	"Ripple Tool" 			"Ripples All Frames After Selected Frame"	W
+
+h.pane.chedit.resetsettings     "Reset Channels Settings" "Reset Channels Settings"

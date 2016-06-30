@@ -1,0 +1,236 @@
+//
+// Keys for the 3D geometry viewer
+//
+
+HCONTEXT h.pane.gview			"Geometry Viewers"	"These keys apply to all geometry viewers."
+HCONTEXT h.pane.gview.model		"Modeling Viewer"	"These keys apply to the modeling viewer."
+HCONTEXT h.pane.gview.model.groupsel	"Input Group Selectors"	"These keys apply to the input group selector in the modeling viewer."
+HCONTEXT h.pane.gview.world		"World Viewer"		"These keys apply to the world viewer."
+HCONTEXT h.pane.gview.model.sel		"Input Selectors"	"These keys apply to the input selector in the modeling viewer."
+HCONTEXT h.pane.gview.model.selconvert	"Component Selection Conversion" "These keys apply to the input selector in the modeling viewer."
+HCONTEXT h.pane.gview.selmode		"Selection modes"	"These keys apply to the selection modes in Scene View."
+HCONTEXT h.pane.gview.particle		"Particle Selectors"	"These keys apply to the particle selectors."
+HCONTEXT h.pane.gview.dynamics		"Dynamics Selectors"	"These keys apply to the dynamics selectors."
+
+h.pane.gview.accept				"Accept" 			"Accept"				    Enter
+h.pane.gview.delete				"Delete"	 		"Delete"					Del
+
+h.pane.gview.selectmode			"Toggle Object/Geometry Mode"	"Toggle the selection mode between object and geometry"	    F8
+h.pane.gview.selmode.object		"Object Select Mode"		"Invoke object selection mode"				    1
+h.pane.gview.selmode.geometry		"Geometry Select Mode"		"Invoke geometry selection mode"
+h.pane.gview.selmode.particle		"Particle Select Mode"		"Particle selection mode"				    6
+h.pane.gview.selmode.dynamics		"Dynamics Select Mode"		"Dynamics selection mode"				    7
+h.pane.gview.selmode.visibleonly	"Area Pick Visible Geometry Only" "Area pick visible geometry only"
+
+
+h.pane.gview.layoutsingle			"Layout: Single View"			"Display single (upper-right) view"	Cmd+1
+h.pane.gview.layoutquad				"Layout: Four Views"			"Display all four views"		Cmd+2
+h.pane.gview.layout2stacked			"Layout: Two Views Stacked"		"Display two views stacked"		Cmd+3
+h.pane.gview.layout2side			"Layout: Two Views Side by Side"	"Display two views side by side"	Cmd+4
+h.pane.gview.layout3bottom			"Layout: Three Views Split Bottom"	"Display three views split bottom"	Cmd+5
+h.pane.gview.layout3left			"Layout: Three Views Split Left"	"Display three views split left"	Cmd+6
+h.pane.gview.layout4bottom			"Layout: Four Views Split Bottom"	"Display four views split bottom"	Cmd+7
+h.pane.gview.layout4left			"Layout: Four Views Split Left"		"Display four views split left"		Cmd+8
+
+h.pane.gview.clearobject			"Clear Current Object (New)"		"Clear current object (New)"
+h.pane.gview.cleartemplates			"Clear All templates"			"Clear all template flags"
+h.pane.gview.clearfootprints			"Clear All Selectable Templates"	"Clear all selectable template flags"
+h.pane.gview.demotefootprints			"Convert All Selectable Templates To Templates"	"Demote all selectable templates to templates"
+h.pane.gview.promotetemplates			"Convert All Templates To Selectable Templates"	"Promote all template flags to selectable templates"
+h.pane.gview.togglehuddisplay			"Toggle Dispay of All HUDs"		"Toggle on or off the display of all HUD handles."		;
+h.pane.gview.hidepersistents			"Hide All Persistent Handles"		"Hide all persistent handles"
+h.pane.gview.showpersistents			"Show All Persistent Handles"		"Show all persistent handles"
+h.pane.gview.makepersistents			"Make All Handles Persistent"		"Make all handles persistent"
+h.pane.gview.deletepersistents			"Delete All Persistent Handles"		"Delete all persistent handles"
+h.pane.gview.keyframehandles			"Set Keyframes For All Handles"		"Set keyframes for all handles"
+h.pane.gview.scopehandles			"Scope Channels Of All Handles"		"Scope channels of all handles"
+h.pane.gview.export_all_parms		"Export All Parameters to Type Properties"	"Create new parameters in the Type Properties dialog for all handles"
+h.pane.gview.export_all_handles		"Export All Handles to Type Properties"		"Create handle bindings in the Type Properties dialog for all handles"
+h.pane.gview.add_ops_to_bundles		"Add Selected Operators to Selected Bundles"	"Add selected operators to selected bundles"
+h.pane.gview.remove_ops_from_bundles		"Remove Selected Operators from Selected Bundles"	"Remove selected operators from selected bundles"
+h.pane.gview.savesopgeo				"Save Operation Geometry As"		"Save operation geometry as..."
+h.pane.gview.geosheet				"Operation Spreadsheet"			"Operation spreadsheet"
+h.pane.gview.mergeall				"Merge Operation With All Selectable Templates"	"Merge operation with all selectable templates"
+h.pane.gview.remove_visibility_sops		"Remove All Visibility Operators"	"Remove All Visibility Operators"
+h.pane.gview.footprint_leaves			"Make All Leaf Operators Selectable Templates"	"Set the selectable template flag on all leaf operators"
+
+h.pane.gview.editop				"Edit Current Operation"		"Edit current operation"
+h.pane.gview.operation_parameters		"Operation Parameters"			"Operation parameters"			P
+h.pane.gview.displaysop				"Show Display SOP"			"Show display SOP"
+h.pane.gview.currentsop				"Show Current SOP"			"Show current SOP"
+h.pane.gview.toggle_wireshaded			"Toggle Wireframe/Shaded"		"Toggle wireframe/shaded"		W
+h.pane.gview.toggle_wireover			"Toggle Shaded/Wire-over-shaded"		"Toggle shaded/Wire-over-shaded"	Shift+W
+h.pane.gview.toggle_headlight			"Toggle Headlight/Object Lights Lighting"	"Toggle object lighting between a headlight/all lights"
+h.pane.gview.toggle_scenelights			"Toggle SOP Level Lighting"	"Toggle SOP lighting between a headlight/all lights"
+h.pane.gview.link_orthos			"Link Ortho Views"			"Link ortho viewports for pan and zoom"
+h.pane.gview.edit_disp_options			"Display Options"			"Open display options dialog"		D
+h.pane.gview.grid_snap_toggle			"Toggle Grid Snapping"			"Toggle grid snapping"			X
+h.pane.gview.primitive_snap_toggle		"Toggle Primitive Snapping"		"Toggle primitive snapping"		C
+h.pane.gview.point_snap_toggle			"Toggle Point Snapping"			"Toggle point snapping"			V
+h.pane.gview.edit_snap_toggle			"Toggle Multi-Snapping"			"Toggle multi-snapping"			Cmd+J
+h.pane.gview.edit_snap_options			"Edit Multi-Snap Options"		"Edit multi-snap options"		Cmd+Shift+J
+h.pane.gview.grid_snap_options			"Grid Snapping Options..."			"Edit grid snapping options"
+h.pane.gview.prim_snap_options			"Primitive Snapping Options..."			"Edit primitive snapping options"
+h.pane.gview.point_snap_options			"Point Snapping Options..."			"Edit point snapping options"
+
+h.pane.gview.inspect_toggle			"Toggle Inspect Mode"			"Toggle inspect mode"
+h.pane.gview.inspect_objects			"Object Inspection Mode"		"Object inspection mode"
+h.pane.gview.inspect_prims			"Primitive Inspection Mode"		"Primitive inspection mode"
+h.pane.gview.inspect_pixels			"Pixel Inspection Mode"		"Pixel inspection mode"
+h.pane.gview.inspect_magnify			"Toggle Magnification Of Cursor Position In Inspection Overlay"		"Toggle magnification of the area under the cursor in the inspection overlay"
+h.pane.gview.inspect_object_grundles		"Inspect Object Bundle/Group Membership"	"Toggle inspection of object bundle/group membership"
+h.pane.gview.inspect_object_bounds		"Inspect Object Bounds"	"Toggle inspection of object bounding box information"
+h.pane.gview.inspect_object_pythonscript		"Inspect Object By Python Script"		"Toggle inspection by python script"
+h.pane.gview.inspect_prim_groups		"Inspect Primitive Group Membership"		"Toggle inspection of primitive group membership"
+h.pane.gview.inspect_prim_intrinsics		"Inspect Primitive Intrinsic Data"		"Toggle inspection of primitive intrinsic data"
+h.pane.gview.inspect_prim_materials		"Inspect Primitive Material Assignment"		"Toggle inspection of primitive material assignment"
+h.pane.gview.inspect_prim_pythonscript		"Inspect Primitive By Python Script"		"Toggle inspection by python script"
+
+h.pane.gview.increase_handle_size		"Increase Handle Size"			"Increase handle size"			*
+h.pane.gview.decrease_handle_size		"Decrease Handle Size"			"Decrease handle size"			/
+
+h.pane.gview.edittoolbar			"Edit Toolbar"				"Edit toolbar"
+h.pane.gview.operator_menu			"Toolbar Menu"				"Pop up toolbar menu"			Tab Backspace
+h.pane.gview.operator_menu_branch		"Branch Off New Operation"		"Branch off new operation"		Shift+Tab
+h.pane.gview.repeat_current			"Repeat Current Operation"		"Quick-repeat current operation"	Q
+h.pane.gview.repeat_current_branch		"Repeat Current Operation Branched"	"Quick-repeat current operation branched"	Shift+Q
+h.pane.gview.repeat_previous			"Repeat Previous Operation"		"Repeat previous operation"
+h.pane.gview.repeat_previous_branch		"Repeat Previous Operation Branched"	"Repeat previous operation branched"
+h.pane.gview.up					"Move To Previous Operation"		"Move to previous operation"		PageUp
+h.pane.gview.down				"Move To Next Operation"		"Move to next operation"		PageDown
+h.pane.gview.left				"Move To Left Sibling"			"Move to left sibling operation"	Shift+PageUp ,
+h.pane.gview.right				"Move To Right Sibling"			"Move to right sibling operation"	Shift+PageDown .
+h.pane.gview.top				"Move To First Operation"		"Move to first operation"	Home
+h.pane.gview.bottom				"Move To Last Operation"		"Move to last operation"	End
+h.pane.gview.snapshot_options			"Snapshot Memory Options"		"Snapshot memory options"
+h.pane.gview.select_output_op			"Select Output Operation"		"Select output operation"	Shift+End
+h.pane.gview.decrease_subd			"Turn Off Viewport Subdivision"		"Turn off viewport subdivision for the selected objects"	-
+h.pane.gview.increase_subd			"Turn On Viewport Subdivision"		"Turn on viewport subdivision for the selected objects"		+ =
+
+h.pane.gview.createincontext			"Create in Context"		"Toggle creation of nodes in the current context"
+
+h.pane.gview.model.seltypepoints		"Select Points"			"Select points"			2
+h.pane.gview.model.seltypeedges			"Select Edges"			"Select edges"			3
+h.pane.gview.model.seltypeprims			"Select Primitives"		"Select primitives"		4
+h.pane.gview.model.seltypevertices		"Select Vertices"		"Select vertices"		5
+h.pane.gview.model.seltypebreakpoints		"Select Breakpoints"		"Select breakpoints"
+h.pane.gview.model.seltypegroups		"Select Groups"			"Select geometry groups"	9
+h.pane.gview.model.fullselection		"Select Whole Geometry"		"Select whole geometry"		
+h.pane.gview.keeporiginalobjects		"Keep Original Objects"		"Keep original objects in tool action when selecting from multiple objects"
+h.pane.gview.model.selectall			"Select All"			"Select all"			N
+h.pane.gview.model.uvselectallfront		"Select All From Front-Facing UV Polygons"		"Select all from front-facing uv polygons"
+h.pane.gview.model.uvselectallback		"Select All From Back-Facing UV Polygons"		"Select all from back-facing uv polygons"
+h.pane.gview.model.invertselection		"Invert Selection"		"Invert selection"		Cmd+I
+h.pane.gview.model.selectboundary		"Select Boundary" 		"Select Boundary"		Shift+B
+h.pane.gview.model.shrinkselection		"Shrink Selection"		"Shrink Selection"		Shift+S
+h.pane.gview.model.growselection		"Grow Selection"		"Grow Selection"		Shift+G
+h.pane.gview.model.selectnone			"Select None"			"Select None"			Shift+N
+h.pane.gview.model.selectvisible		"Area Select Visible Geometry Only"		"Area select visible geometry only"  Shift+V
+h.pane.gview.model.locatealways			"Locate Cursor"			"Locate cursor"
+h.pane.gview.model.selectrestrict		"Pick Front/Back Cycle"	"Pick front/back cycle"	Cmd+Shift+B
+
+
+h.pane.gview.model.selconvert.point		"Convert to Point Selection"	"Convert Current Selection to Point Selection" Cmd+Shift+2
+h.pane.gview.model.selconvert.edge		"Convert to Edge Selection"	"Convert Current Selection to Edge Selection" Cmd+Shift+3
+h.pane.gview.model.selconvert.primitive		"Convert to Primitive Selection" "Convert Current Selection to Primitive Selection" Cmd+Shift+4
+h.pane.gview.model.selconvert.vertex		"Convert to Vertex Selection"	"Convert Current Selection to Vertex Selection" Cmd+Shift+5
+h.pane.gview.model.selconvert.breakpoint	"Convert to Breakpoint Selection" "Convert Current Selection to Breakpoint Selection" 
+
+
+h.pane.gview.model.selectcustom1		"Custom Select Script 1"	"Run the first custom select mode script"	
+h.pane.gview.model.selectcustom2		"Custom Select Script 2"	"Run the second custom select mode script"	
+h.pane.gview.model.selectcustom3		"Custom Select Script 3"	"Run the third custom select mode script"	
+h.pane.gview.model.selectcustom4		"Custom Select Script 4"	"Run the fourth custom select mode script"	
+h.pane.gview.model.selectcustom5		"Custom Select Script 5"	"Run the fifth custom select mode script"
+h.pane.gview.model.selectcustom6		"Custom Select Script 6"	"Run the sixth custom select mode script"
+h.pane.gview.model.selectcustom7		"Custom Select Script 7"	"Run the seventh custom select mode script"
+h.pane.gview.model.selectcustom8		"Custom Select Script 8"	"Run the eighth custom select mode script"
+h.pane.gview.model.selectcustom9		"Custom Select Script 9"	"Run the ninth custom select mode script"
+
+// Group Navigation Keys
+// --------------
+h.pane.gview.model.prevgroup	"Previous Group"		"Highlight previous group for the component under the mouse"	F
+h.pane.gview.model.nextgroup	"Next Group"			"Highlight next group for the component under the mouse"	G
+h.pane.gview.model.copygroupname "Copy Group Name"		"Copy the current name from the group list"
+h.pane.gview.model.copyselection "Copy Selection as String"	"Copy the current selection to the clipboard"
+h.pane.gview.model.colorgroups	"Color Groups"			"Color geometry groups in viewport"
+h.pane.gview.model.emptygroups	"Show Empty Groups"		"Include empty groups in the viewport group list"
+h.pane.gview.model.onlylocatedgroups	"Show Only Highlighted Groups"		"Show only groups containing geometry with a pre-selection highlight in the viewport group list"
+
+// Group Selection Keys
+// --------------
+h.pane.gview.model.groupsel.hide_selected	"Hide Selected Primitives" "Hide Selected Primitives"
+h.pane.gview.model.groupsel.only_selected	"Show Only Selected Primitives" "Show Only Selected Primitives"
+h.pane.gview.model.groupsel.expose_all		"Show All Primitives" "Show All Primitives"
+
+// Loop Selection Keys
+// --------------
+h.pane.gview.model.sel.loop		"Select Loops"	"Press and hold to make partial or full loop selections"	A Cmd+A Shift+A Cmd+Shift+A
+
+// Object Selection Keys
+// ---------------------
+h.pane.gview.world.seltypegeo			"Select Geometry Objects"	"Select geometry objects"
+h.pane.gview.world.seltypecam			"Select Camera Objects"		"Select camera objects"
+h.pane.gview.world.seltypelight			"Select Light Objects"		"Select light objects"
+h.pane.gview.world.seltypebone			"Select Bone Objects"		"Select bone objects"
+h.pane.gview.world.seltypenull			"Select Null Objects"		"Select null objects"
+h.pane.gview.world.seltypeblend			"Select Blend Objects"		"Select blend objects"
+h.pane.gview.world.seltypeother			"Select All Other Object Types"	"Select all other object types"
+h.pane.gview.world.seltypeall			"Enable/Disable All Object Types"	"Enable/Disable selection of all object types"
+h.pane.gview.world.selexpandchild		"Select Child Objects"		"Select child objects"			9
+h.pane.gview.world.selexpandparent		"Select Parent Objects"		"Select parent objects"			0
+h.pane.gview.world.locatealways			"Locate Cursor"			"Locate cursor"
+h.pane.gview.world.selexpandsubnet		"Select Entire Digital asset"	"Select Digital Asset"			
+h.pane.gview.world.selectall			"Select All Objects"		"Select all objects"			A Cmd+A
+h.pane.gview.world.invertselection		"Invert Object Selection"	"Invert object selection"		Cmd+I
+h.pane.gview.world.selectnone			"Select No Objects"		"Select No Objects"			N
+
+// Particle Selection Keys
+// -----------------------
+h.pane.gview.particle.selparticles		"Select Particles"		"Select particles"
+h.pane.gview.particle.selparticlenodes		"Select Particle Nodes"		"Select particle nodes"
+h.pane.gview.particle.selgenerators		"Select Particle Generators"	"Toggle selection of particle generators"
+h.pane.gview.particle.selmodifiers		"Select Particle Modifiers"	"Toggle selection of particle modifiers"
+
+// Dynamics Selection Keys
+// -----------------------
+h.pane.gview.dynamics.seldynamics		"Select Dynamics"		"Select dynamics"
+h.pane.gview.dynamics.selobjects		"Select Dynamics Objects"	"Toggle selection of dynamics objects"
+h.pane.gview.dynamics.selmodifiers		"Select Dynamics Modifiers"	"Toggle selection of dynamics modifiers"
+
+h.pane.gview.selruleadd				"Selection Rule: Add"		"Selection rule: add"
+h.pane.gview.selruletoggle			"Selection Rule: Toggle"	"Selection rule: toggle"
+h.pane.gview.selruleremove			"Selection Rule: Remove"	"Selection rule: remove"
+h.pane.gview.selrulereplace			"Selection Rule: Replace"	"Selection rule: replace"
+h.pane.gview.selruleintersect			"Selection Rule: Intersect"	"Selection rule: intersect"
+h.pane.gview.selectstylebox			"Box Selection"			"Switch to box selection"		F2
+h.pane.gview.selectstylelasso			"Lasso Selection"		"Switch to lasso selection"		F3
+h.pane.gview.selectstylebrush			"Brush Selection"		"Switch to brush selection"		F4
+h.pane.gview.selectstylelaser			"Laser Selection"		"Switch to laser selection"		F5
+
+h.pane.gview.xrayboneson			"Enable Xray For All Bones"	"Turn on the xray flag for all bones"	
+h.pane.gview.xraybonesoff			"Disable Xray For All Bones"	"Turn off the xray flag for all bones"	
+h.pane.gview.xrayobjson				"Enable Xray For All Selected Objects"	"Turn on the xray flag for all selected objects"	
+h.pane.gview.xrayobjsoff			"Disable Xray For All Selected Objects"	"Turn off the xray flag for all selected objects"
+h.pane.gview.cachestickieson			"Enable Transform Caching For All Sticky Objects"	"Turn on the caching option for sticky objects"	
+h.pane.gview.cachestickiesoff			"Disable Transform Caching For All Sticky Objects"	"Turn off the caching option for sticky objects"	
+
+h.pane.gview.secureselection			"Secure Selection"		"Secure selection"			~
+h.pane.gview.redoselection			"Restart Selecting"		"Restart selecting"			`
+
+h.pane.gview.render				"Launch output driver"	    "Launch selected output driver"
+h.pane.gview.render_flipbook			"Launch flipbook render"    "Launch flipbook render"
+h.pane.gview.render_flipbook_options		"Launch flipbook render with options"	    "Launch flipbook render with options"
+
+h.pane.gview.cplane				"Display C-Plane"	"Display contruction plane"
+h.pane.gview.cplanehandle			"Display C-Plane Handle"	"Display construction plane handle"
+
+
+// camera drop down menu options on the viewer
+h.pane.gview.camoptions_display			"Display"			"Toggle display flag of linked camera"
+
+// New camera with transform set to current view.
+h.pane.gview.newcamera				"New Camera"		"Creates a new camera with its transform set to the current view."
+h.pane.gview.restore_prevcam			"Restore Previous Camera"	"Look through the previous camera"		[
+h.pane.gview.prevcamera				"Previous Camera"		"Look through the previous camera in the list"
+h.pane.gview.nextcamera				"Next Camera"		"Look through the next camera in the list"

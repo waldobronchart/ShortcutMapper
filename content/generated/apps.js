@@ -144,6 +144,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "SideFx Houdini",
+        data: {
+            "v15.5": {
+                "mac": "sidefx-houdini_v15.5_mac.json",
+                "windows": "sidefx-houdini_v15.5_windows.json",
+            },
+        }
+    },
+    {
         name: "SketchUp",
         data: {
             "2016": {

@@ -1,0 +1,20 @@
+//
+// Hotkey manager (separate app)
+//
+
+HCONTEXT hotkeymgr		"Hotkey Manager"	"These keys apply to the Hotkey Manager configuration dialog."
+HCONTEXT hotkeymgr.search	"Hotkey Search"		"These keys apply to the Hotkey Manager search dialog."
+
+hotkeymgr.opensearch		"Search"		"Search"		Alt+S
+hotkeymgr.resetall		"Reset All Hotkeys"	"Reset all hotkeys"
+hotkeymgr.resetbranch		"Reset Context Hotkeys"	"Reset all hotkeys for the current context"
+hotkeymgr.resetbranchcommands	"Reset Context Action Hotkeys"	"Reset all hotkeys for the actions in the current context"
+hotkeymgr.resetcommand		"Reset Action Hotkeys"	"Reset all hotkeys for the current action"
+hotkeymgr.apply			"Apply"			"Apply changes"
+hotkeymgr.discard		"Discard"		"Discard changes"
+hotkeymgr.accept		"Accept"		"Accept"
+hotkeymgr.cancel		"Cancel"		"Cancel"		Esc
+
+hotkeymgr.search.findcommand	"Find By Action"	"Find by action"
+hotkeymgr.search.findkey	"Find By Hotkey"	"Find by hotkey"
+hotkeymgr.search.close		"Close"			"Close"

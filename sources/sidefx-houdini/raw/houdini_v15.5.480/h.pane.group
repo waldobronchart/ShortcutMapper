@@ -1,0 +1,24 @@
+//
+// Group definitions (for both op and channel groups)
+//
+
+HCONTEXT h.pane.group "Groups" "These keys apply to channel and operator groups."
+
+h.pane.group.delete	"Delete"			"Delete group"					Del
+h.pane.group.selectall	"Select All"			"Select all groups"				A Cmd+A
+h.pane.group.selectnone	"Select None"			"Select no groups"				Cmd+Shift+A
+h.pane.group.togpinall	"Toggle Pinning on All Groups"	"Alternate between all groups pinned and unpinned"	Shift+P
+h.pane.group.togpin	"Toggle Pinning on Groups"	"Alternate between selected groups pinned and unpinned"	P
+h.pane.group.addgroup	"Add Group"			"Add new group"					G
+h.pane.group.addgroupscoped	"Add Group From Scoped"		"Create a group from the scoped channels"	Shift+G
+h.pane.group.addgroupselected	"Add Group From Selected"	"Create a group from the selected scoped channels"	Cmd+G
+h.pane.group.partition	"Partition Selected into Sibling"	"Create a sibling group of the selected channels"
+h.pane.group.copygroup	"Copy Selected into Sibling Group"	"Create a sibling group with copies of the selected channels"
+h.pane.group.plus	"Add Selection To Group"	"Add OP selection to group"			+
+h.pane.group.plusall	"Add To Group"			"Add all to group"				
+h.pane.group.minus	"Remove Selection From Group"	"Remove OP selection from group"		-
+h.pane.group.minusall	"Remove From Group"		"Remove all from group"				
+h.pane.group.equals	"Replace Group With Selection"	"Replace group contents with OP selection"	=
+h.pane.group.equalsall	"Replace Group"			"Replace group with contents"			
+h.pane.group.show_key_status	"Show Key Status"	"Show key status for channel groups"
+h.pane.group.tie_group_selection	"Tie Group Selection To Global Selection"	"Tie group selection to global selection"

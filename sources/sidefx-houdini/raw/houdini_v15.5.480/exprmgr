@@ -1,0 +1,10 @@
+//
+// Hotkey manager (separate app)
+//
+
+HCONTEXT exprmgr		"Expression Manager"	"These keys apply to the Expression Manager dialog."
+
+exprmgr.up		"Up"		"Scroll up"		K UpArrow
+exprmgr.down		"Down"		"Scroll down"		J DownArrow
+exprmgr.delete		"Delete"	"Delete"		Del
+exprmgr.textport	"Textport"	"Open textport"		Alt+Shift+T

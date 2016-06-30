@@ -1,0 +1,30 @@
+//
+// Project Margrathea
+//
+
+HCONTEXT h.pane.projectm	"Orbolt Asset Browser"	"These keys apply to the Orbolt Asset Browser pane."
+
+// -----------------
+h.pane.projectm.search			"Search"			"Search"
+h.pane.projectm.hide_search		"Close Search"			"Close Search"
+h.pane.projectm.visit			"Visit"				"Visit"
+h.pane.projectm.rate			"Feedback"			"Feedback"
+h.pane.projectm.check_updates		"Check for Updates"		"Check for Updates"
+h.pane.projectm.delete_folder		"Delete Folder"			"Delete Folder"			Del
+h.pane.projectm.new_folder		"Add New Folder"		"Add New Folder"		Insert
+h.pane.projectm.toggle_icon_size	"Toggle Icon Size"		"Toggle Icon Size"
+h.pane.projectm.show_dependencies	"Show Dependencies"		"Show Dependencies"
+h.pane.projectm.hide_dependencies	"Hide Dependencies"		"Hide Dependencies"
+h.pane.projectm.hide_changelog		"Hide Changelog"		"Hide Changelog"
+h.pane.projectm.view_details		"View Details"			"View Details"
+h.pane.projectm.asset_help		"Help"				"Help"
+h.pane.projectm.update_asset		"Update Asset"			"Update Asset"
+h.pane.projectm.update_all		"Update All Assets"		"Update All Assets"
+h.pane.projectm.upload_dependency	"Upload Dependent Asset"	"Upload Dependent Asset"
+h.pane.projectm.close			"Close Banner"			"Close Banner"
+h.pane.projectm.preferences		"Preferences"			"Preferences"
+h.pane.projectm.apply			"Apply"				"Apply"
+h.pane.projectm.accept			"Accept"			"Accept"
+h.pane.projectm.cancel			"Cancel"			"Cancel"
+h.pane.projectm.load_example		"Load Example File"		"Load Example File"
+h.pane.projectm.sync_assets		"Sync Asset Library"		"Sync Asset Library"

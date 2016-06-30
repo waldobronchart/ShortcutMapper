@@ -1,0 +1,24 @@
+//
+// Tree controls
+//
+
+HCONTEXT tree "Generic Tree Controls" "These hotkeys apply to generic tree controls."
+
+tree.moveup		"Move Up"	"Move the current item up one row"	UpArrow
+tree.movedown		"Move Down"	"Move the current item down one row"	DownArrow
+tree.moveleft		"Move Left"	"Move the current item up one branch"	LeftArrow
+tree.moveright		"Move Right"	"Move the current item down one branch"	RightArrow
+tree.pageup		"Page Up"	"Scroll up by one page"			PageUp Cmd+B
+tree.pagedown		"Page Down"	"Scroll down by one page"		PageDown Cmd+F
+tree.expandall		"Expand All"	"Expand the current branch and all sub-branches"
+tree.collapseall	"Collapse All"	"Collapse the current branch and all sub-branches"
+tree.delete		"Delete"	"Delete the current branch"		Del
+tree.duplicate		"Duplicate"	"Duplicate the selected items"		D
+tree.default		"Default Action"		"Default action: usually edit the text of the current branch"	Enter
+tree.edit		"Edit"		"Edit the text of the current branch"	
+tree.sortascending	"Sort Ascending"  "Sort branches in ascending order"	Shift+A
+tree.sortdescending	"Sort Descending" "Sort branches in descending order"	Shift+D
+tree.sortnone		"Sort None"	  "Sort branches in natural order"	Shift+N
+tree.sortcustom		"Sort Custom"	  "Sort branches in custom or configurable order"	Shift+C
+tree.selectchildren	"Select All Children"	  "Select all children in the current branch"
+tree.unselectchildren	"Un-select All Children"  "Un-select children in the current branch"

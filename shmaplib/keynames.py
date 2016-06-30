@@ -256,19 +256,24 @@ class DataContainer(object):
         u'arrows': ['UP_ARROW', 'DOWN_ARROW', 'LEFT_ARROW', 'RIGHT_ARROW'],
         u'up': ['UP_ARROW'],
         u'up arrow': ['UP_ARROW'],
+        u'uparrow': ['UP_ARROW'],
         u'up arrow key': ['UP_ARROW'],
         u'down': ['DOWN_ARROW'],
         u'down arrow': ['DOWN_ARROW'],
+        u'downarrow': ['DOWN_ARROW'],
         u'down arrow key': ['DOWN_ARROW'],
         u'left': ['LEFT_ARROW'],
         u'left arrow': ['LEFT_ARROW'],
+        u'leftarrow': ['LEFT_ARROW'],
         u'left arrow key': ['LEFT_ARROW'],
         u'right': ['RIGHT_ARROW'],
         u'right arrow': ['RIGHT_ARROW'],
+        u'rightarrow': ['RIGHT_ARROW'],
         u'right arrow key': ['RIGHT_ARROW'],
 
         u'prtscr': ['PRINT_SCREEN'],
         u'break': ['PAUSE_BREAK'],
+        u'pause': ['PAUSE_BREAK'],
 
         u'media_first': ['MEDIA_PREVIOUS'],
         u'media_last': ['MEDIA_NEXT']
@@ -335,21 +340,3 @@ def get_valid_keynames(char_or_name, treat_numpad_keys_explicitly=False):
         valid_keynames = [n for n in valid_keynames if 'numpad' not in n.lower()]
 
     return valid_keynames
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

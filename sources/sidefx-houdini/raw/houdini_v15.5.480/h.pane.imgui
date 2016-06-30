@@ -1,0 +1,150 @@
+//
+//	Controls for the IMGUI-based COP view.
+//
+
+HCONTEXT h.pane.imgui	"Image Viewer"	"These keys apply to the Image Viewer pane."
+
+h.pane.imgui.home		"Home"				"Home"				H
+h.pane.imgui.homeselected	"Home Selected"			"Home selected"			G
+h.pane.imgui.homeselectedfull	"Home Selected Full"			"Home selected full" 	Shift+G
+h.pane.imgui.homefull		"Home Full"			"Home full"			Shift+H
+h.pane.imgui.zoomin		"Zoom In"			"Zoom In"			= +
+h.pane.imgui.zoomout		"Zoom Out"			"Zoom out"			-
+
+h.pane.imgui.nextplane		"Next Plane"			"Next plane"			}
+h.pane.imgui.prevplane		"Previous Plane"		"Previous plane"		{
+h.pane.imgui.resup		"Increase Resolution"		"Increase resolution"		
+h.pane.imgui.resdown		"Decrease Resolution"		"Decrease resolution"		
+
+h.pane.imgui.prevframe		"Previous Frame"		"Previous frame"		[
+h.pane.imgui.nextframe		"Next Frame"			"Next frame"			]
+h.pane.imgui.adaptrange		"Adapt Frame Range"		"Adapt frame range"
+h.pane.imgui.fastinteractive	"Fast Interactive Cooking Toggle" "Fast Interactive Cooking Toggle" F
+
+
+h.pane.imgui.options		"Display Options"		"Show Display Options"		D
+h.pane.imgui.profiles		"Profiles"			"Show Profile Manager"
+h.pane.imgui.inspect		"Inspect"			"Toggle Inspect bar"		I
+h.pane.imgui.compare		"Compare"			"Toggle Compare bar"		Cmd+D
+h.pane.imgui.view		"Enable View"			"Enable view"			Cmd+E
+h.pane.imgui.previews		"Show Preview"			"Show preview"			Cmd+P
+h.pane.imgui.labels		"Show Labels"			"Show labels"			Cmd+Shift+L
+h.pane.imgui.guides		"Show Guides"			"Show guides"			Cmd+G
+h.pane.imgui.handles		"Show Handles"			"Show handles"			Cmd+H
+h.pane.imgui.enablelut		"Enable LUT"			"Enable LUT"			Cmd+U
+h.pane.imgui.loadlut		"Load LUT"			"Load LUT"			Cmd+Shift+U
+
+//viewers
+h.pane.imgui.view2d		"Image"				"Image Viewer"			Cmd+1
+h.pane.imgui.timeline		"TimeLine"			"Time Line Viewer"		Cmd+2
+h.pane.imgui.graph		"Graph"				"Graph Viewer"			Cmd+3
+
+// node stuff
+h.pane.imgui.addfile		"Add Image File"		"Add image file"		
+
+
+
+// Multiple Viewport Viewer.
+
+HCONTEXT h.pane.imgui.split	"Mutliple Viewport Viewer"	"These keys apply to viewers with multiple viewports."
+
+h.pane.imgui.split.linkall	"Apply Changes To All Views"	"Apply changes to all views"	V
+h.pane.imgui.split.linkscroll	"Link Scrolling To All Views"	"Link scrolling to all views"	S
+
+h.pane.imgui.split.zoomport	"Zoom Current Viewport"		"Zoom current viewport"		B
+
+h.pane.imgui.split.setcurrent	"Set Current"			"Set current viewport"		X
+
+h.pane.imgui.split.col1		"1 Column"		"1 column layout"
+h.pane.imgui.split.col2		"2 Columns"		"2 column layout"
+h.pane.imgui.split.col3		"3 Columns"		"3 column layout"
+h.pane.imgui.split.col4		"4 Columns"		"4 column layout"
+h.pane.imgui.split.row1		"1 Row"			"1 row layout"	
+h.pane.imgui.split.row2		"2 Rows"		"2 row layout"	
+h.pane.imgui.split.row3		"3 Rows"		"3 row layout"	
+h.pane.imgui.split.row4		"4 Rows"		"4 row layout"	
+
+
+// 2D View specific.
+
+HCONTEXT h.pane.imgui.view2d	"2D Image Viewer"	"These keys apply to the 2D Image Viewer."
+
+h.pane.imgui.view2d.detail		"Magnify"			"Magnify"			M
+h.pane.imgui.view2d.exact		"Exact Pixel Size"		"Exact pixel size"		/
+h.pane.imgui.view2d.adapt		"Size Adapt"		"Size adapt"				?
+h.pane.imgui.view2d.clearselect		"Clear Selection"		"Clear selection"		Shift+S
+h.pane.imgui.view2d.resetcolor		"Reset Color"			"Reset color"			R
+h.pane.imgui.view2d.pixeladapt		"Adapt To Full Pixel Range"	"Adapt to full pixel range"	Shift+R
+h.pane.imgui.view2d.rulers		"Toggle Rulers"			"Toggle rulers"			Cmd+R
+h.pane.imgui.view2d.transparency	"Toggle Transparency"		"Toggle transparency"		Cmd+Shift+T
+h.pane.imgui.view2d.background		"Toggle Background Image"	"Toggle background image"	Shift+B
+h.pane.imgui.view2d.pixelaspect		"Toggle Pixel Aspect Ratio"	"Toggle pixel aspect ratio"	Cmd+A
+
+
+h.pane.imgui.view2d.compall		"All Components"	"All components"   		`
+h.pane.imgui.view2d.compleft		"Left Component"	"Left component"   		<
+h.pane.imgui.view2d.compright		"Right Component"	"Right component"  		>
+h.pane.imgui.view2d.viewcolor		"View Color Plane"	"View color plane" 		C
+h.pane.imgui.view2d.viewalpha		"View Alpha Plane"	"View alpha plane" 		A
+
+h.pane.imgui.view2d.red			"View Red Component"	"View red component"		1
+h.pane.imgui.view2d.green		"View Green Component"	"View green component"		2
+h.pane.imgui.view2d.blue		"View Blue Component"	"View blue component"		3
+h.pane.imgui.view2d.comp4		"View Fourth Component" "View Fourth Component"		4
+
+h.pane.imgui.view2d.compare		"Compare Images"	"Diff: Compare"			Cmd+Shift+C
+h.pane.imgui.view2d.subtract		"Subtract Images"	"Diff: Subtract"		Cmd+Shift+X
+h.pane.imgui.view2d.hwipe 		"Horizontal Wipe"	"Diff: Horizontal Wipe"		Cmd+Shift+W
+h.pane.imgui.view2d.vwipe 		"Vertical Wipe"		"Diff: Vertical Wipe"		Cmd+Shift+V
+h.pane.imgui.view2d.blend		"Blend Images"		"Diff: Blend"			Cmd+Shift+B
+h.pane.imgui.view2d.highlight		"Highlight Differences"	"Diff: Highlight Differences"	Cmd+Shift+N
+
+
+// Timeline View Specific
+
+HCONTEXT h.pane.imgui.time	"Timeline Viewer"	"These keys apply to the Timeline."
+h.pane.imgui.time.extend	"Show Extend Regions"	"Show extend regions"		E
+h.pane.imgui.time.frames	"Show Frames Boxes"	"Show frames boxes"		Shift+F
+h.pane.imgui.time.bar		"Show Timebar"		"Show timebar"			Shift+B
+h.pane.imgui.time.adapt		"Toggle H/V Adapts"	"Toggle H/V Adapts"		?
+
+
+
+// Histogram View Specific
+
+HCONTEXT h.pane.imgui.hist	"Histogram Viewer"	"These keys apply to the Histogram."
+h.pane.imgui.hist.ignorespikes	"Ignore Graph Spikes During Adapt"	"Ignore graph spikes during adapt"	Shift+S
+
+h.pane.imgui.hist.compall	"All Components"	"All components"   			`
+h.pane.imgui.hist.compleft	"Left Component"	"Left component"   			<
+h.pane.imgui.hist.compright	"Right Component"	"Right component"  			>
+h.pane.imgui.hist.viewcolor	"View Color Plane"	"View color plane" 			C
+h.pane.imgui.hist.viewalpha	"View Alpha Plane"	"View alpha plane" 			A
+
+h.pane.imgui.hist.red		"View Red Component"	"View red component"			1
+h.pane.imgui.hist.green		"View Green Component"	"View green component"			2
+h.pane.imgui.hist.blue		"View Blue Component"	"View blue component"			3
+h.pane.imgui.hist.comp4		"View Fourth Component" "View Fourth Component"			4
+h.pane.imgui.hist.adapt		"Toggle H/V Adapts"	"Toggle H/V Adapts"			?
+
+
+// Color Pick State
+
+h.pane.imgui.colorpick		"Enter Color Pick State"	"Enter color pick state"	Q
+
+
+
+
+// Incremental update
+
+HCONTEXT h.pane.imgui.incr	"Image Viewer Incremental Update"	"These keys are used in the Incremental Update mode in the Image Viewer pane."
+
+h.pane.imgui.incr.redocook	"Finish Incomplete Cook"	"Finish incomplete cook"	Shift+F
+
+
+
+// Selector
+
+HCONTEXT h.pane.imgui.selector	"Image Viewer Selector"	"These keys are used for the Selector in the Image Viewer pane."
+
+h.pane.imgui.selector.cancel	"Cancel Selector"		"Cancel selector"		Esc

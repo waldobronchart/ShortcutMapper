@@ -1,0 +1,68 @@
+//
+// Office (pane) controls
+//
+
+HCONTEXT h.pane "Panes" "These hotkeys affect all desktop pane types."
+
+h.pane.prevtab		"Previous Tab"		"Previous pane tab"		Cmd+PageUp Cmd+Shift+Tab
+h.pane.nexttab		"Next Tab"		"Next pane tab"			Cmd+PageDown Cmd+Tab
+h.pane.closetab		"Close Tab"		"Close tab"			Cmd+W
+h.pane.undoclosetab	"Undo Close Tab"	"Undo Close tab"
+h.pane.copytab		"Copy Tab"		"Copy tab"			Cmd+T
+h.pane.clone		"Clone"			"Clone pane"			Alt+Shift+C
+h.pane.tearoff		"Tear Off"		"Tear off pane"
+h.pane.playbar		"Move Playbar Here"	"Move playbar to this pane"	Alt+P
+h.pane.shelf		"Move Shelf Here"	"Move the shelf to this pane"
+h.pane.statusbar	"Move Status Bar Here"	"Move the status bar to this pane"
+h.pane.menubar		"Move Menu Bar Here"	"Move the main menu bar to this pane"
+h.pane.playbar_panel	"Move Playbar to Panel"	"Move playbar to this panel"
+h.pane.shelf_panel	"Move Shelf to Panel"	"Move the shelf to this panel"
+h.pane.statusbar_panel	"Move Status Bar to Panel"	"Move the status bar to this panel"
+h.pane.menubar_panel	"Move Menu Bar to Panel"	"Move the main menu bar to this panel"
+h.pane.link_panel	"Attach Panel to Desktop"	"Attach this panel to the current desktop"
+h.pane.fullscreen_panel	"Toggle Panel Fullscreen"	"Toggle this panel to fullscreen mode"
+
+h.pane.stow		"Stow"			"Stow pane"			
+h.pane.stowtabs		"Stow Pane Tabs"	"Stow pane tabs"
+h.pane.stowpanebar	"Stow Panebar"		"Stow Panebar"			
+h.pane.edit_bookmark	"Edit Bookmarks"	"Edit pane bookmarks"		Alt+B
+h.pane.add_bookmark	"Add Bookmark"		"Add pane bookmark"		Alt+Shift+K
+h.pane.split_lr		"Split Left/Right"	"Split pane left/right"		Alt+[
+h.pane.split_tb		"Split Top/Bottom"	"Split pane top/bottom"		Alt+]
+h.pane.maximize_full	"Maximize"		"Toggle pane full screen"	Alt+\' Cmd+B
+h.pane.maximize_split   "Maximize in Split Direction" "Toggle pane full size horizontally or vertically" Alt+\\
+h.pane.close		"Close"			"Close pane"			Alt+/      	// Used to be Alt+z, but it's UNDO in some packages
+h.pane.link_plus	"Increment Link"	"Increment pane link number"	Alt++
+h.pane.link_minus	"Decrement Link"	"Decrement pane link number"	Alt+-
+h.pane.link_as_parent	"Link as Parent"	"Toggle link as parent state"	
+h.pane.toggle_pin	"Toggle Pane Pin"	"Toggle between pinning and unpinning the pane"
+h.pane.jump_back	"Jump Back"		"Jump back one step"		Alt+LeftArrow
+h.pane.jump_forth	"Jump Forward"		"Jump forward one step"		Alt+RightArrow
+h.pane.to_scene_view	"Scene View"		"Switch to scene view"		Alt+1
+h.pane.to_context_view	"Context View"		"Switch to context view"	Alt+9
+h.pane.to_chop_view	"Motion FX View"	"Switch to motion FX view"
+h.pane.to_cop_view	"Composite View"	"Switch to composite view"
+h.pane.to_ipr_viewer	"Render View"		"Switch to render view"
+h.pane.to_pop_view	"Particle View"		"Switch to particle view"
+h.pane.to_rop_view	"Render Scheduler"	"Switch to render scheduler"
+h.pane.to_mat_palette	"Material Palette"	"Switch to material palette"	Alt+7
+h.pane.to_shop_view	"Shader Palette"	"Switch to shader palette"
+h.pane.to_net		"Network Editor"	"Switch to network editor"	Alt+2
+h.pane.to_parm		"Parameters"		"Switch to parameter dialog"	Alt+3
+h.pane.to_geosheet	"Geometry Spreadsheet"	"Switch to geometry spreadsheet"	Alt+8
+h.pane.to_chanedit	"Animation Editor"	"Switch to animation editor"	Alt+6
+h.pane.to_chanlist	"Channel List"		"Switch to channel list"
+h.pane.to_parmsheet	"Parameter Sheet"	"Switch to parameter sheet"
+h.pane.to_textport	"Textport"		"Switch to textport"		Alt+5
+h.pane.to_python_shell	"Python Shell"		"Switch to python shell"
+h.pane.to_pilist	"Handle List"		"Switch to handle list"
+h.pane.to_bundlelist	"Bundle List"		"Switch to bundle list"	
+h.pane.to_takelist	"Take List"		"Switch to take list"	
+h.pane.to_linker	"Light Linker"		"Switch to light linker"
+h.pane.to_treeview	"Tree View"		"Switch to tree viewer"		Alt+4
+h.pane.to_helpbrowser	"Help Browser"		"Switch to help browser"
+h.pane.to_pythonpanel	"PySide Panel"		"Switch to Python panel"
+h.pane.to_projectm	"Orbolt Asset Browser"		"Switch to Orbolt Asset Browser"
+h.pane.to_perfmon	"Performance Monitor"	"Switch to performance monitor"
+h.pane.to_datatree	"Data Tree"		"Switch to data tree"
+h.pane.editpathastext	"Edit Path As Text"	"Edit the current path in text mode"	Cmd+L

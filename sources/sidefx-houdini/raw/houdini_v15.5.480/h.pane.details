@@ -1,0 +1,7 @@
+//
+// Paramters pane, tree view for OTL type editing
+//
+
+HCONTEXT h.pane.details "Details View" "The keys apply to the Details View pane."
+
+h.pane.details.savesimdata		"Save Data to File"		"Saves simulation data to a file"

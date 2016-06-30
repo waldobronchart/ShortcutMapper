@@ -1,0 +1,8 @@
+//
+// Preference List controls
+//
+
+HCONTEXT preflist "Generic Preference List Controls" "These hotkeys apply to generic preference list controls."
+
+preflist.save		"Save"		"Save"		Alt+S
+preflist.delete		"Delete Item"	"Delete item"	Del

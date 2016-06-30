@@ -1,0 +1,9 @@
+// playbar controls
+
+HCONTEXT h.playbar "Playbar" "These hotkeys affect the playbar"
+
+h.playbar.show_range	"Show Range Slider"	"Toggle showing of range slider"	Alt+T
+h.playbar.show_ticks	"Show Ticks"		"Toggle showing of ticks"
+h.playbar.show_audio	"Show Audio"		"Toggle showing of audio"
+h.playbar.show_keys	"Show Keys"		"Toggle showing of keys"
+h.playbar.show_simcache	"Show Simulation Cache"		"Toggle showing of simulation cache status"

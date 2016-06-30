@@ -1,0 +1,17 @@
+//
+// Handle list definitions
+//
+
+HCONTEXT h.pane.manip	"Handle List"	"These keys apply to the Handle List pane."
+
+h.pane.manip.delete		"Delete Selected Groups"	"Delete selected handle groups"			Del
+h.pane.manip.addgroup		"Add Group"			"Add handle group"				Shift+G
+h.pane.manip.plus		"Add Selection To Groups"	"Add handle selection to groups"		+
+h.pane.manip.minus		"Remove Selection From Groups"	"Remove handle selection from groups"		-
+h.pane.manip.equals		"Set Groups Equal To Selection"	"Set groups equal to handle selection"		=
+h.pane.manip.clear		"Clear Groups"			"Clear handle groups"				Shift+C
+h.pane.manip.expose		"Expose Selected Handles"	"Expose selected handles"			E
+h.pane.manip.hide		"Hide Selected Handles"		"Hide selected handles"				H
+h.pane.manip.defcolor		"Set Colors To Default Values"	"Reset handle colors"				D
+h.pane.manip.open_groups	"Open Group List"		"Open group list"				X
+h.pane.manip.open_manips	"Open Handle List"		"Open handle list"				M

@@ -1,0 +1,18 @@
+//
+// Material palette definitions
+//
+
+HCONTEXT h.pane.material "Material Palette" "These keys apply to the material palette."
+
+h.pane.material.saveshopnet	"Save Material Network"		"Save the entire material network as a gallery"
+h.pane.material.renameshopnet	"Rename Material Network"	"Rename material network"
+h.pane.material.deleteshopnet	"Delete Material Network"	"Delete material network"
+
+h.pane.material.save		"Save Material"			"Save material to gallery"
+h.pane.material.assign		"Assign Material"		"Assign material to geometry"
+h.pane.material.duplicate	"Duplicate Material"		"Duplicate material"
+h.pane.material.updateicon	"Update Thumbnail"		"Update material thumbnail"
+h.pane.material.allowedit	"Allow Editing of Contents"	"Allow editing of digital asset contents"
+h.pane.material.matchdadefinition	"Match Asset Definition"	"Match digital asset definition"
+h.pane.material.saveasset	"Save as Asset"			"Save material as a digital asset"
+h.pane.material.delete		"Delete"			"Delete material"	Del

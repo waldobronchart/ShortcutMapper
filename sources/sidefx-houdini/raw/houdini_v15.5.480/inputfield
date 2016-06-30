@@ -1,0 +1,31 @@
+//
+// Input field definitions
+//
+// Make sure they are all Alt-ed, Ctrl-ed, Shift-ed or special keys because
+// regular keys are for typing data in the field.
+
+HCONTEXT inputfield "Input Fields" "These keys apply to all input fields."
+
+inputfield.editor		"Open Editor"		"Open editor"		Cmd+E Alt+E
+inputfield.undo			"Undo"			"Undo"			Cmd+Z Alt+Z
+inputfield.home			"Home"			"Home"			Home
+inputfield.up			"Up"			"Up"			UpArrow
+inputfield.end			"End"			"End"			End
+inputfield.down			"Down"			"Down"			DownArrow
+inputfield.prev			"Previous"		"Previous"		LeftArrow
+inputfield.next			"Next"			"Next"			RightArrow
+inputfield.select_home		"Select To Beginning"	"Select to beginning"	Shift+Home
+inputfield.select_up		"Select To Previous Line"	"Select to beginning"	Shift+UpArrow
+inputfield.select_end		"Select To End"		"Select to end"		Shift+End
+inputfield.select_down		"Select To Next Line"	"Select to end"		Shift+DownArrow
+inputfield.select_prev		"Select To Previous"	"Select to previous"	Shift+LeftArrow
+inputfield.select_next		"Select To Next"	"Select to next"	Shift+RightArrow
+inputfield.select_all		"Select All"		"Select all"		Alt+A Cmd+A
+inputfield.backtab		"Back TAB"		"Back TAB"		Shift+Tab
+inputfield.jump_match		"Jump to Matching Character" "Jump to matching character"	Cmd+M
+inputfield.context_help		"Popup Context Help"	"Popup Context Help"	F1
+inputfield.prev_word		"Previous Word"		"Previous Word"		Cmd+LeftArrow
+inputfield.next_word		"Next Word"		"Next Word"		Cmd+RightArrow
+inputfield.select_prev_word	"Select Previous Word"	"Select Previous Word"	Shift+Cmd+LeftArrow
+inputfield.select_next_word	"Select Next Word"	"Select Next Word"	Shift+Cmd+RightArrow
+inputfield.autocomplete		"Auto-complete Word"	"Auto-complete Word"	Cmd+Space

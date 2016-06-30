@@ -1,0 +1,20 @@
+//
+// These parmscoper-specific items are at this level because they apply only when
+// the parm scoper is active.  If they weren't at this level, they would conflict
+// with other keys.
+//
+
+HCONTEXT parmscoper "Parameter Scoper" "These keys apply to the scoper of animatable parameters."
+
+parmscoper.show_only_chans	"Display Only Channels"	"Display only parameters that have channels"	D
+parmscoper.show_only_scoped	"Display Only Scoped Channels"	"Display only parameters that have scoped channels"	B
+parmscoper.open_channel_editor	"Open Animation Editor when Scoping"	"Open the animation editor when scoping channels"
+parmscoper.chans_to_top		"Move Channels to Top"	"Move all parameters that have channels to top"
+
+parmscoper.scopeall		"Scope All Channels" "Scope all displayed parameters with channels" A Cmd+A
+parmscoper.scopetoggle		"Toggle Channel Scope" "Toggle the scope all displayed parameters with channels" T
+
+parmscoper.setkey_all		"Set Keyframe on All" "Set keyframes on all displayed parameters" K
+parmscoper.removekey_all	"Remove Keyframe on All" "Remove keyframes on all displayed parameters" Shift+K
+parmscoper.setkey_scoped	"Set Keyframe on Scoped" "Set keyframes on all displayed parameters that have scoped channels" J
+parmscoper.removekey_scoped	"Remove Keyframe on Scoped" "Remove keyframes on all displayed parameters that have scoped channels" Shift+J

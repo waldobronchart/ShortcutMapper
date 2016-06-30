@@ -1,0 +1,26 @@
+//
+// Keys for pop states
+//
+HCONTEXT h.pane.gview.state.pop			"Particle (POP) Operations"	"These keys apply to the Particle operations."
+HCONTEXT h.pane.gview.state.pop.select		"Select Operation"		"These keys apply to the Select operation in the Particle Viewer"
+
+// View State
+// ----------
+
+// State Entry Hotkeys
+// -------------------
+
+// Select State
+// ------------
+h.pane.gview.state.pop.select.seltypepoints		"Select Points"			"Select points"			1
+h.pane.gview.state.pop.select.seltypeedges		"Select Edges"			"Select edges"			2
+h.pane.gview.state.pop.select.seltypebreakpoints	"Select Breakpoints"		"Select breakpoints"		3
+h.pane.gview.state.pop.select.seltypeprims		"Select Primitives"		"Select primitives"		4
+h.pane.gview.state.pop.select.seltypepointgroups	"Select Point Groups"		"Select point groups"		5
+h.pane.gview.state.pop.select.seltypeprimgroups		"Select Primitive Groups"	"Select primitive groups"	6
+h.pane.gview.state.pop.select.seltypeconprims		"Select Connected Primitives"	"Select connected primitives"	7
+h.pane.gview.state.pop.select.seltypeconpoints		"Select Connected Points"	"Select connected points"	8
+h.pane.gview.state.pop.select.seltypeconedges		"Select Connected Edges"	"Select connected edges"	9
+h.pane.gview.state.pop.select.seltypeconbreakpoints	"Select Connected Breakpoints"	"Select connected breakpoints"	0
+h.pane.gview.state.pop.select.seltypevertices		"Select Vertices"		"Select vertices"
+h.pane.gview.state.pop.select.seltypeconvertices	"Select Connected Vertices"	"Select connected vertices"

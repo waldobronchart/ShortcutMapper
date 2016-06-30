@@ -1,0 +1,212 @@
+//
+// Main houdini app keys
+//
+
+HCONTEXT h "Houdini" "These keys are used by the entire Houdini application."
+
+// File menu
+// ---------
+h.new			"New"		"Delete all contents"		Alt+N
+h.open			"Open"		"Open a new file"		Alt+O Cmd+O
+h.save			"Save"		"Save current file"		Alt+S Cmd+S
+h.save_as		"Save As"	"Specify name for saved file"	Alt+Shift+S Cmd+Shift+S
+h.merge			"Merge"		"Merge with a file"		Alt+M
+h.newotl		"New Operator Type"	"Create a new operator type"
+h.import		"Import Collada"	"Import a Collada file"
+h.import_fbx	"Import Filmbox"	"Import a Filmbox file"
+h.import_psd	"Import Photoshop PSD"	"Import a Photoshop PSD file"
+h.import_alembic	"Import Alembic Scene"	"Import an Alembic file"
+h.import_otl            "Import HDA"  "Import Houdini Digital Asset"
+h.source		"Source"	"Source a script file"
+h.add_desktop		"New Desktop"		"Add new desktop"
+h.save_desktop		"Save Current Desktop"	"Save current desktop"
+h.saveas_desktop	"Save As Current Desktop" "Save as current desktop"
+h.save_desktops		"Save All Desktops"	"Save all desktops"
+h.reload_desktop	"Reload Current Desktop" "Reload the current desktop"
+h.quit			"Quit"		"Quit the appication"		Alt+Q Cmd+Q
+h.new_project           "New Project"   "Delete all contents"
+h.set_project           "Set Project"   "Set current project"
+
+// Edit menu
+// ---------
+h.undo			"Undo"			"Undo latest change"	Alt+U Cmd+Z
+h.redo			"Redo"			"Redo latest change"	Alt+R Cmd+Y Cmd+Shift+Z
+h.undo_mgr		"Undo Manager"		"Open undo manager dialog"	
+h.cut			"Cut"			"Cut selection"		Alt+X Cmd+X
+h.copy			"Copy"			"Copy selection"	Alt+C Cmd+C
+h.paste			"Paste"			"Paste Selection"	Alt+V Cmd+V
+
+h.prefs_ui		"UI Preferences"		"Open UI preferences dialog"	Cmd+,
+h.prefs_network		"Network Preferences"		"Open Network preferences dialog"
+h.prefs_viewports	"Viewport Preferences"		"Open viewport preferences dialog"
+h.prefs_shelves		"Shelf and TAB Preferences"	"Open shelf and TAB menu preferences dialog"
+h.prefs_takes		"Takes Preferences"		"Open takes preferences dialog"
+h.prefs_animation	"Animation Preferences"		"Open animation preferences dialog"
+h.prefs_rendering	"Rendering Preferences"		"Open rendering preferences dialog"
+h.prefs_handles		"Handle Preferences"		"Open handle preferences dialog"
+h.prefs_obj		"Object Preferences"		"Open object preferences dialog"
+h.prefs_chop		"Audio and Motion Preferences"	"Open audio and motion preferences dialog"
+h.prefs_cop		"Compositing Preferences"	"Open compositing preferences dialog"
+h.prefs_desks		"Desks Preferences"		"Open desks preferences dialog"
+h.prefs_persistence	"Save and Load Preferences"	"Open save and load preferences dialog"
+h.prefs_misc		"Miscelaneous Preferences"	"Open preferences dialog"
+h.prefs_hip		"Hip File Preferences"		"Open hip file preferences dialog"
+h.prefs_dialogs		"Dialog Preferences"		"Open dialog preferences"
+h.prefs_notify		"Notification Preferences"	"Open notification message preferences"
+h.prefs_perfmon		"Performance Preferences"	"Open perfmormance monitor preferences"
+
+h.aliases		"Aliases/Variables"	"Open aliases/variables"	Alt+Shift+A
+h.hotkey_mgr		"Hotkey Manager"	"Open hotkey manager"
+h.colorsettings		"Color Settings"	"Open color settings dialog"
+h.reset_playbar		"Reset Playbar to Bottom"	"Reset playbar to bottom"
+h.reset_shelf		"Reset Shelf to Top" 	"Reset shelf to top"
+h.reset_statusbar	"Reset Status Bar to Bottom" 	"Reset status bar to bottom"
+h.reset_menubar		"Reset Menu Bar to Top" 	"Reset menu bar to top"
+h.comp_project_manager	"Composite Project"	"Composite Project Manager"	Alt+Shift+I
+h.clear_cop_caches	"Clear All COP Caches"	"Clear all COP caches"	Alt+Shift+R
+
+h.highlightobjselection	"Always Highlight Object Selection in Viewer"	"Always highlight the object selection in the viewer"
+h.kin_none		"No Kinematic Override"	"Disables Kinematic Override of bones"
+h.kin_rest		"Rest Kinematic Override"	"Overrides bone kinematics to rest position"
+h.kin_capt		"Capture Kinematic Override"	"Overrides bone kinematics to capture position"
+h.keeppos_moving_never   "Never Child Compensate"   "Never child compensate when moving object"
+h.keeppos_moving_always  "Always Child Compensate"  "Always child compensate when moving object"
+h.keeppos_moving_useflag "Use Object Flag"          "Use object flag for child compensation when moving object"
+h.keeppos_never		"Never Keep Position"	"Never keep position when parenting"
+h.keeppos_always	"Always Keep Position"	"Always keep position when parenting"
+h.keeppos_useflag	"Use Object Flag"	"Use object flag for positioning when parenting"
+h.help_tags		"Help Tags"		"Show help tags"
+h.toggle_help_on_startup "Help Browser"	        "Open getting started at startup"
+h.auto_take_mode	"Auto Take Mode"	"Automatically add parameters to the current take as they are set"
+h.auto_save		"Auto Save"		"Automatically save the file after every interval"
+h.live_updates          "Live Parameter Display during Playback" "Animated parameters in the parameter pane will be automatically refreshed on playback" Pause
+
+
+
+// Render menu
+// ------------
+h.render_mgr		"Render Manager"	"Open render manager"
+h.update_textures	"Update Textures"	"Refresh textures"
+
+h.mplay_file		"Launch MPlay (Disk Files)" 	"Launch MPlay to load disk files."
+h.mplay_render		"Launch MPlay (Render)"		"Launch MPlay to listen for renders."
+h.mplay_flipbook	"Launch MPlay (Flipbook)"	"Launch MPlay to listen for flipbooks."
+
+
+
+// Window menu
+// ----------
+h.floatpanel		"Floating Panel"	"New floating panel"		Alt+Shift+W
+h.channeleditor		"Animation Editor"	"Open animation editor"		Alt+Shift+F
+h.textport		"Textport"		"Open texport"			Alt+Shift+T
+h.python_shell		"Python Shell"		"Open python shell"		Alt+Shift+P
+h.python_source_editor	"Python Source Editor"	"Python Source Editor"
+h.python_panel_editor	"Python Panel Editor"	"Open Python panel editor"
+h.open_bundlelist	"Open Bundle List"	"Open bundle list"
+h.open_takemanager	"Open Take Manager"	"Open take manager"
+h.open_parmspreadsheet	"Open Parameter Spreadsheet"	"Open parameter spreadsheet"
+h.open_treeview		"Open Tree View"		"Open tree view"
+h.optype_mgr		"Operator Type Manager"	"Open operator type manager dialog"	
+h.gallery_mgr		"Gallery Manager"	"Open gallery manager dialog"	
+h.handleeditor		"Handle Editor"		"Open handle editor dialog"	
+h.mat_palette		"Shader Palette"	"Open shader palette"		Alt+G
+h.view_code		"Code Viewer"		"Open code viewer"
+h.perf_monitor		"Performance Monitor"	"Open performace monitor"	Alt+Y
+h.audio_panel		"Audio Panel"		"Open audio panel"		Alt+I
+h.cache_manager		"Cache Manager"		"Open cache manager"		Alt+Shift+M
+h.shell			"Window Shell"		"Open window shell"
+
+h.desktop_mgr		"Desktop Manager"	"Open desktop manager"		Alt+Shift+D
+h.keep_float_windows_on_top "Keep Floating Windows on Top"  "Sets the option that keeps the utility windows always on top"
+
+// Assets menu
+// ------------
+h.createotl             "New Digital Asset From Selection"      "Create digital asset from selection"
+h.openotl               "Install Operator Type Library"         "Install an operator type library"
+h.manageotl             "Manage Operator Type Libraries"        "Open operator type manager dialog for managing assets"
+h.refreshotl            "Refresh Operator Type Libraries"       "Refresh all operator type libraries and scripted operators from disk"
+h.blackboxotl           "Create Black Box Asset"		"Create black-box asset from the selected node"
+h.help_orbolt           "Orbolt"                                "Open Orbolt Smart 3D Asset website"
+h.asset_browser         "Asset Browser"                         "Open Asset Browser"
+h.uploadotl             "Upload to Orbolt Asset Store"          "Upload to Orbolt Asset Store"
+h.encapsulate_asset     "Encapsulate Asset"                     "Encapsulate asset"
+h.compile_embed_material "Complie and Embed Material"           "Complie and embed the material of the selected node"
+h.embed_internal_assets  "Embed Internal Assets"                "Embed internal assets"
+
+// Dialogs menu
+// ------------
+h.desktop01		"Desktop 1"		"Switch to Desktop 1"
+h.desktop02		"Desktop 2"		"Switch to Desktop 2"
+h.desktop03		"Desktop 3"		"Switch to Desktop 3"
+h.desktop04		"Desktop 4"		"Switch to Desktop 4"
+h.desktop05		"Desktop 5"		"Switch to Desktop 5"
+h.desktop06		"Desktop 6"		"Switch to Desktop 6"
+h.desktop07		"Desktop 7"		"Switch to Desktop 7"
+h.desktop08		"Desktop 8"		"Switch to Desktop 8"
+h.desktop09		"Desktop 9"		"Switch to Desktop 9"
+h.desktop10		"Desktop 10"		"Switch to Desktop 10"
+h.desktop11		"Desktop 11"		"Switch to Desktop 11"
+h.desktop12		"Desktop 12"		"Switch to Desktop 12"
+h.desktop13		"Desktop 13"		"Switch to Desktop 13"
+h.desktop14		"Desktop 14"		"Switch to Desktop 14"
+h.desktop15		"Desktop 15"		"Switch to Desktop 15"
+h.desktop16		"Desktop 16"		"Switch to Desktop 16"
+h.desktop17		"Desktop 17"		"Switch to Desktop 17"
+h.desktop18		"Desktop 18"		"Switch to Desktop 18"
+h.desktop19		"Desktop 19"		"Switch to Desktop 19"
+h.desktop20		"Desktop 20"		"Switch to Desktop 20"
+
+// Help menu
+// ---------
+h.startuphelp		"Start-up Help"	"Display start-up help contents"
+h.helpcontents		"Contents"	"Display help contents"
+h.help_tutorials	"Tutorials"	"Show a list of tutorials"
+h.help_examples		"Examples"	"Show a list of operator examples"
+h.help_sesi		"SESI"		"Open Side Effects website"
+h.help_tutorials_online	"Online Tutorials"  "Display a list of online tutorials"
+h.help_forum		"Forum"		"Open a discussion forum website"
+h.help_support_online	"Online Support"    "Open a support website"
+h.help_updates		"Updates"	"Check for product updates"
+h.version		"Version"	"Display software version"	Alt+Shift+V
+h.indie_upgrade		"Upgrade to Houdini Indie"	"View the Houdini Indie webpage in an external browser"
+
+
+
+// Playback definitions
+// ------------------------------
+// Please make sure they all use arrow keys, if any! The code looks for arrows.
+h.play_fwd		"Play Forward"			"Playback forward"		UpArrow
+h.play_bwd		"Play Backward"			"Playback backward"		DownArrow
+h.next_frame		"Step Forward One Frame"	"Step forward one frame"	RightArrow
+h.prev_frame		"Step Backward One Frame"	"Step backward one frame"	LeftArrow
+h.next_key		"Jump To Next Keyframe"		"Jump to next keyframe"		Cmd+RightArrow
+h.prev_key		"Jump To Previous Keyframe"	"Jump to previous keyframe"	Cmd+LeftArrow
+h.range_start		"Jump To Start Of Range"	"Jump to start of range"	Cmd+UpArrow 
+// There's no really useful reason for going to the last frame, and in cases
+// like POPs it can be really disastrous. There is a good case to be made for
+// mapping both Cmd+Up and Cmd+Down to range_start, since (depending on how
+// you think) they both make sense. But we don't want to get ourselves in a
+// position where people rely upon both of them...
+h.range_end		"Jump To End Of Range"		"Jump to end of range"		// Cmd+DownArrow	
+
+h.show_dopesheet	"Show Dopesheet"		"Toggle showing of dopesheet"
+
+// Other definitions
+// -----------------
+h.add_key		"Add Keyframe"		"Add a keyframe"	K
+h.auto_key		"Auto-Key"		"Add keyframes automatically" Alt+K
+h.clear_scope		"Clear Scope"		"Clear the scope"	Alt+0
+h.debug			"Debug"			"Debug software"	Alt+Shift+Z
+h.find			"Find Operator"		"Find operator"		Alt+F Cmd+F
+h.rename_selected_nodes	"Rename Selected Nodes"	"Rename selected nodes"	Alt+W
+h.groups		"Open Groups"		"Open groups pane"	// Alt+g
+h.update_mode_always	"Update Mode 'Always'"	"Update mode 'Always'"
+h.update_mode_changes	"Update Mode 'Changes'"	"Update mode 'Changes'"
+h.update_mode_never	"Update Mode 'Never'"	"Update mode 'Never'"
+h.update_now		"Force Update"		"Force update"
+h.reset_sim		"Reset Simulations"	"Recook simulations in open viewers"
+h.enable_sim		"Enable/Disable Simulations"	"Toggle cooking of simulations"
+h.stow_playbar		"Toggle Playbar Stow"	"Toggle playbar stow"
+h.stow_shelf		"Toggle Shelf Stow"	"Toggle shelf stow"
+
+h.context_help		"Context Help"		"Brings up context help"    F1

@@ -1,0 +1,28 @@
+// 
+// Keys for COP2 Handles.
+//
+
+HCONTEXT h.pane.imgui.handle "Image Handles" "These keys apply to Handles in the Image Viewer."
+
+HCONTEXT h.pane.imgui.handle.ramp "Ramp Handles" "These keys apply to the Ramp PI Handles in the Image Viewer."
+
+h.pane.imgui.handle.ramp.pointremoved	"Remove Point From Ramp" "Remove point from ramp" Del
+h.pane.imgui.handle.ramp.step		"Step Interpolation" "Step interpolation"
+h.pane.imgui.handle.ramp.hold		"Hold Interpolation" "Hold interpolation"
+h.pane.imgui.handle.ramp.linear		"Linear Interpolation" "Linear interpolation"
+h.pane.imgui.handle.ramp.easein		"Ease In Interpolation" "Ease In interpolation"
+h.pane.imgui.handle.ramp.easeout	"Ease Out Interpolation" "Ease Out interpolation"
+h.pane.imgui.handle.ramp.halfcos	"Ease In Ease Out Interpolation" "Ease In Ease Out interpolation"
+h.pane.imgui.handle.ramp.useglobal	"Use Global Interpolation" "Use global interpolation"
+
+HCONTEXT h.pane.imgui.handle.roto "Rotospline Handles" "These keys apply to the Rotospline PI Handles in the Image Viewer."
+h.pane.imgui.handle.roto.showslope	"Show Slope Handles" "Show slope handles" S
+h.pane.imgui.handle.roto.showfeather	"Show Feather Handle" "Show feather handle" W
+h.pane.imgui.handle.roto.pointremoved	"Remove Roto Point" "Remove roto point" Del
+
+HCONTEXT h.pane.imgui.handle.curve "Color Curve Handles" "These keys apply to editting color curves."
+h.pane.imgui.handle.curve.pointremoved	"Remove Curve Point" "Remove curve point" Del
+
+
+HCONTEXT h.pane.imgui.handle.transform "Transform Handles" "These keys apply to editting transforms."
+h.pane.imgui.handle.transform.reset "Reset Transform" "Reset transform"

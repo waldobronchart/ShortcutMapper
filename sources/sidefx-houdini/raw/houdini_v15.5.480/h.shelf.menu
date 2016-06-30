@@ -1,0 +1,21 @@
+// shelf controls
+
+HCONTEXT h.shelf.menu "Shelf Menus" "The hotkeys for RMB menu entries"
+
+h.shelf.menu.new_tool		"New Tool"		    "Create a new tool"
+h.shelf.menu.edit_tool		"Edit Tool"		    "Open shelf tool editor"
+h.shelf.menu.remove_tool	"Remove Tool from Shelf"    "Remove tool from shelf"
+h.shelf.menu.delete_tool	"Delete Tool"		    "Delete tool altogether"
+h.shelf.menu.tool_help		"Tool Help"		    "Show tool documentation"
+
+h.shelf.menu.new_shelf		"New Shelf"		    "Create a new shelf"
+h.shelf.menu.edit_shelf		"Edit Shelf"		    "Open shelf editor"
+h.shelf.menu.remove_shelf	"Remove Shelf from Set"	    "Remove shelf from a shelf set"
+h.shelf.menu.delete_shelf	"Delete Shelf"		    "Delete a shelf altogether"
+
+h.shelf.menu.new_shelfset	"New Shelf Set"		    "Create a new shelf set"
+h.shelf.menu.edit_shelfset	"Edit Shelf Set"	    "Open shelf set editor"
+h.shelf.menu.remove_shelfset	"Remove Shelf Set from Dock"	    "Remove shelf set from a dock"
+h.shelf.menu.delete_shelfset	"Delete Shelf Set"	    "Delete a shelf set altogether"
+h.shelf.menu.save_shelfset	"Save Shelf Set"	    "Save a shelf set to a file"
+

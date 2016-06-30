@@ -1,0 +1,14 @@
+//
+// Paramters pane, tree view for OTL type editing
+//
+
+HCONTEXT h.pane.editparms "Operator Type Properties" "The keys apply to the Operator Type Properties parameters tree view."
+
+h.pane.editparms.refreshimports	"Refresh Imports"	"Refresh selected parameter import blocks"
+h.pane.editparms.selectall	"Select All"		"Select all parameters"				Cmd+A
+h.pane.editparms.delete		"Delete"		"Delete selected parameters"			Del
+h.pane.editparms.save		"Save"			"Save selected parameters"
+h.pane.editparms.copydefaults	"Copy Defaults From Node" "Copy current node values to the defaults of the selected parameters"
+h.pane.editparms.putinfolder	"Put in Folder"		"Put the selected parameters into a new folder"	Shift+C
+h.pane.editparms.install	"Install Parameters"	"Install selected parameters"
+h.pane.editparms.uninstall	"Uninstall Parameters"	"Uninstall selected parameters"

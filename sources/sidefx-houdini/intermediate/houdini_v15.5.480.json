@@ -1,0 +1,911 @@
+{
+    "name": "SideFx Houdini",
+    "version": "v15.5",
+    "default_context": "Houdini",
+    "os": ["windows", "mac", "linux"],
+    "contexts": {
+        "Desktop Manager": {
+            "New": ["Alt+N / N", "Alt+N / N"],
+            "Add": ["Alt+D / D", "Alt+D / D"],
+            "Save": ["Alt+S / S", "Alt+S / S"],
+            "Cancel": ["Esc", "Esc"]
+        },
+        "Expression Manager": {
+            "Up": ["K / UpArrow", "K / UpArrow"],
+            "Down": ["J / DownArrow", "J / DownArrow"],
+            "Delete": ["Del", "Del"],
+            "Textport": ["Alt+Shift+T", "Alt+Shift+T"]
+        },
+        "GPLAY Geometry Viewer": {
+            "Open": ["Alt+O / Ctrl+O", "Alt+O / Cmd+O"],
+            "Quit": ["Alt+Q / Ctrl+Q", "Alt+Q / Cmd+Q"],
+            "Geometry Info": ["Alt+I", "Alt+I"],
+            "Unpack Geometry": ["Alt+U", "Alt+U"],
+            "Geometry Spreadsheet": ["Alt+S", "Alt+S"],
+            "Flipbook Current Viewport": ["Alt+F", "Alt+F"],
+            "Help Menu": ["Alt+H", "Alt+H"],
+            "Quick Quit": ["Q", "Q"],
+            "Next Geometry": ["N", "N"],
+            "Previous Geometry": ["P", "P"],
+            "Stop Play": ["Space", "Space"]
+        },
+        "Generic Preference List Controls": {
+            "Save": ["Alt+S", "Alt+S"],
+            "Delete Item": ["Del", "Del"]
+        },
+        "Generic Tree Controls": {
+            "Move Up": ["UpArrow", "UpArrow"],
+            "Move Down": ["DownArrow", "DownArrow"],
+            "Move Left": ["LeftArrow", "LeftArrow"],
+            "Move Right": ["RightArrow", "RightArrow"],
+            "Page Up": ["PageUp / Ctrl+B", "PageUp / Cmd+B"],
+            "Page Down": ["PageDown / Ctrl+F", "PageDown / Cmd+F"],
+            "Delete": ["Del", "Del"],
+            "Duplicate": ["D", "D"],
+            "Default Action": ["Enter", "Enter"],
+            "Sort Ascending": ["Shift+A", "Shift+A"],
+            "Sort Descending": ["Shift+D", "Shift+D"],
+            "Sort None": ["Shift+N", "Shift+N"],
+            "Sort Custom": ["Shift+C", "Shift+C"]
+        },
+        "Hotkey Manager": {
+            "Search": ["Alt+S", "Alt+S"],
+            "Cancel": ["Esc", "Esc"]
+        },
+        "Houdini": {
+            "New": ["Alt+N", "Alt+N"],
+            "Open": ["Alt+O / Ctrl+O", "Alt+O / Cmd+O"],
+            "Save": ["Alt+S / Ctrl+S", "Alt+S / Cmd+S"],
+            "Save As": ["Alt+Shift+S / Ctrl+Shift+S", "Alt+Shift+S / Cmd+Shift+S"],
+            "Merge": ["Alt+M", "Alt+M"],
+            "Quit": ["Alt+Q / Ctrl+Q", "Alt+Q / Cmd+Q"],
+            "Undo": ["Alt+U / Ctrl+Z", "Alt+U / Cmd+Z"],
+            "Redo": ["Alt+R / Ctrl+Y / Ctrl+Shift+Z", "Alt+R / Cmd+Y / Cmd+Shift+Z"],
+            "Cut": ["Alt+X / Ctrl+X", "Alt+X / Cmd+X"],
+            "Copy": ["Alt+C / Ctrl+C", "Alt+C / Cmd+C"],
+            "Paste": ["Alt+V / Ctrl+V", "Alt+V / Cmd+V"],
+            "UI Preferences": ["Ctrl+,", "Cmd+,"],
+            "Aliases/Variables": ["Alt+Shift+A", "Alt+Shift+A"],
+            "Composite Project": ["Alt+Shift+I", "Alt+Shift+I"],
+            "Clear All COP Caches": ["Alt+Shift+R", "Alt+Shift+R"],
+            "Live Parameter Display during Playback": ["Pause", "Pause"],
+            "Floating Panel": ["Alt+Shift+W", "Alt+Shift+W"],
+            "Animation Editor": ["Alt+Shift+F / Alt+6", "Alt+Shift+F / Alt+6"],
+            "Textport": ["Alt+Shift+T / Alt+5", "Alt+Shift+T / Alt+5"],
+            "Python Shell": ["Alt+Shift+P", "Alt+Shift+P"],
+            "Shader Palette": ["Alt+G", "Alt+G"],
+            "Performance Monitor": ["Alt+Y", "Alt+Y"],
+            "Audio Panel": ["Alt+I", "Alt+I"],
+            "Cache Manager": ["Alt+Shift+M", "Alt+Shift+M"],
+            "Desktop Manager": ["Alt+Shift+D", "Alt+Shift+D"],
+            "Version": ["Alt+Shift+V", "Alt+Shift+V"],
+            "Play Forward": ["UpArrow", "UpArrow"],
+            "Play Backward": ["DownArrow", "DownArrow"],
+            "Step Forward One Frame": ["RightArrow", "RightArrow"],
+            "Step Backward One Frame": ["LeftArrow", "LeftArrow"],
+            "Jump To Next Keyframe": ["Ctrl+RightArrow", "Cmd+RightArrow"],
+            "Jump To Previous Keyframe": ["Ctrl+LeftArrow", "Cmd+LeftArrow"],
+            "Jump To Start Of Range": ["Ctrl+UpArrow / ", "Cmd+UpArrow / "],
+            "Add Keyframe": ["K", "K"],
+            "Auto-Key": ["Alt+K", "Alt+K"],
+            "Clear Scope": ["Alt+0", "Alt+0"],
+            "Debug": ["Alt+Shift+Z", "Alt+Shift+Z"],
+            "Find Operator": ["Alt+F / Ctrl+F", "Alt+F / Cmd+F"],
+            "Rename Selected Nodes": ["Alt+W", "Alt+W"],
+            "Context Help": ["F1", "F1"],
+            "Previous Tab": ["Ctrl+PageUp / Ctrl+Shift+Tab", "Cmd+PageUp / Cmd+Shift+Tab"],
+            "Next Tab": ["Ctrl+PageDown / Ctrl+Tab", "Cmd+PageDown / Cmd+Tab"],
+            "Close Tab": ["Ctrl+W", "Cmd+W"],
+            "Copy Tab": ["Ctrl+T", "Cmd+T"],
+            "Clone": ["Alt+Shift+C", "Alt+Shift+C"],
+            "Move Playbar Here": ["Alt+P", "Alt+P"],
+            "Edit Bookmarks": ["Alt+B", "Alt+B"],
+            "Add Bookmark": ["Alt+Shift+K", "Alt+Shift+K"],
+            "Split Left/Right": ["Alt+[", "Alt+["],
+            "Split Top/Bottom": ["Alt+]", "Alt+]"],
+            "Maximize": ["Alt+' / Ctrl+B", "Alt+' / Cmd+B"],
+            "Maximize in Split Direction": ["Alt+\\", "Alt+\\"],
+            "Close": ["Alt+/ /  /  /  /  /  /  / ", "Alt+/ /  /  /  /  /  /  / "],
+            "Increment Link": ["Alt++", "Alt++"],
+            "Decrement Link": ["Alt+-", "Alt+-"],
+            "Jump Back": ["Alt+LeftArrow", "Alt+LeftArrow"],
+            "Jump Forward": ["Alt+RightArrow", "Alt+RightArrow"],
+            "Scene View": ["Alt+1", "Alt+1"],
+            "Context View": ["Alt+9", "Alt+9"],
+            "Material Palette": ["Alt+7", "Alt+7"],
+            "Network Editor": ["Alt+2", "Alt+2"],
+            "Parameters": ["Alt+3", "Alt+3"],
+            "Geometry Spreadsheet": ["Alt+8", "Alt+8"],
+            "Tree View": ["Alt+4", "Alt+4"],
+            "Edit Path As Text": ["Ctrl+L", "Cmd+L"],
+            "Show Range Slider": ["Alt+T", "Alt+T"]
+        },
+        "Input Fields": {
+            "Open Editor": ["Ctrl+E / Alt+E", "Cmd+E / Alt+E"],
+            "Undo": ["Ctrl+Z / Alt+Z", "Cmd+Z / Alt+Z"],
+            "Home": ["Home", "Home"],
+            "Up": ["UpArrow", "UpArrow"],
+            "End": ["End", "End"],
+            "Down": ["DownArrow", "DownArrow"],
+            "Previous": ["LeftArrow", "LeftArrow"],
+            "Next": ["RightArrow", "RightArrow"],
+            "Select To Beginning": ["Shift+Home", "Shift+Home"],
+            "Select To Previous Line": ["Shift+UpArrow", "Shift+UpArrow"],
+            "Select To End": ["Shift+End", "Shift+End"],
+            "Select To Next Line": ["Shift+DownArrow", "Shift+DownArrow"],
+            "Select To Previous": ["Shift+LeftArrow", "Shift+LeftArrow"],
+            "Select To Next": ["Shift+RightArrow", "Shift+RightArrow"],
+            "Select All": ["Alt+A / Ctrl+A", "Alt+A / Cmd+A"],
+            "Back TAB": ["Shift+Tab", "Shift+Tab"],
+            "Jump to Matching Character": ["Ctrl+M", "Cmd+M"],
+            "Popup Context Help": ["F1", "F1"],
+            "Previous Word": ["Ctrl+LeftArrow", "Cmd+LeftArrow"],
+            "Next Word": ["Ctrl+RightArrow", "Cmd+RightArrow"],
+            "Select Previous Word": ["Shift+Ctrl+LeftArrow", "Shift+Cmd+LeftArrow"],
+            "Select Next Word": ["Shift+Ctrl+RightArrow", "Shift+Cmd+RightArrow"],
+            "Auto-complete Word": ["Ctrl+Space", "Cmd+Space"]
+        },
+        "MPLAY Image Player": {
+            "Open": ["Alt+O / Ctrl+O", "Alt+O / Cmd+O"],
+            "Merge": ["Alt+M", "Alt+M"],
+            "Save Current Frame": ["Alt+F", "Alt+F"],
+            "Save Current Sequence": ["Alt+S", "Alt+S"],
+            "Save Preview": ["Alt+P", "Alt+P"],
+            "Load Audio": ["Alt+A", "Alt+A"],
+            "Sequence List": ["Alt+L", "Alt+L"],
+            "New 2D View": ["Alt+N", "Alt+N"],
+            "New Timeline": ["Alt+T", "Alt+T"],
+            "New Histogram": ["Alt+G", "Alt+G"],
+            "Load Background Sequence": ["Alt+Shift+B", "Alt+Shift+B"],
+            "Quit": ["Alt+Q / Ctrl+Q", "Alt+Q / Cmd+Q"],
+            "Settings": ["Alt+Shift+S", "Alt+Shift+S"],
+            "Profiles": ["Alt+Shift+P", "Alt+Shift+P"],
+            "Dialog Options": ["D", "D"],
+            "Textport": ["Alt+Shift+T", "Alt+Shift+T"],
+            "Help Browser": ["Alt+H", "Alt+H"],
+            "Double Buffer": ["Alt+B", "Alt+B"],
+            "Hide UI": ["U", "U"],
+            "Toggle Realtime": ["P", "P"],
+            "Half Window Size": ["Alt+-", "Alt+-"],
+            "Double Window Size": ["Alt+=", "Alt+="],
+            "Fit Viewer to Image": ["F", "F"],
+            "Fullscreen": ["Ctrl+F / F11", "Cmd+F / F11"],
+            "Halt Current Render": ["Esc", "Esc"],
+            "Halt All Renders": ["Alt+K", "Alt+K"],
+            "Disconnect": ["Alt+Shift+I", "Alt+Shift+I"],
+            "Set Houdini Frame": ["Ctrl+K", "Cmd+K"],
+            "Export Channel Blocking": ["Ctrl+B", "Cmd+B"],
+            "Add Image Comment": ["Alt+C", "Alt+C"],
+            "Remove Sequence": ["Alt+Del", "Alt+Del"],
+            "Remove Frame": ["Del", "Del"],
+            "Reload Sequence": ["Alt+R", "Alt+R"]
+        },
+        "Pane: Animation Editor": {
+            "Load Active Chan/BChan": ["<", "<"],
+            "Save Active Chan": [">", ">"],
+            "Save Active BChan": ["]", "]"],
+            "Delete Keys": ["Del", "Del"],
+            "Box Handle": ["Y", "Y"],
+            "Box Pivot Handle": ["Shift+Y", "Shift+Y"],
+            "Home Channels (Current)": ["G", "G"],
+            "Home Channels (All)": ["H", "H"],
+            "Home Playback Range (All)": ["J", "J"],
+            "Home Global Range (All)": ["Shift+J", "Shift+J"],
+            "Frame Selected": ["F", "F"],
+            "Switch To Graph": ["1", "1"],
+            "Switch To Table": ["2", "2"],
+            "Switch To Dopesheet": ["3", "3"],
+            "Toggle Channel List": ["Tab / Backspace", "Tab / Backspace"],
+            "Swap Snapshots": ["Shift+X", "Shift+X"],
+            "Clear Snapshots": ["Enter", "Enter"],
+            "Open Channel Chooser": ["Ctrl+1", "Cmd+1"],
+            "Open Group List": ["Ctrl+2 / X", "Cmd+2 / X"],
+            "Open Layer List": ["Ctrl+3", "Cmd+3"],
+            "Open Parameter List": ["Ctrl+4", "Cmd+4"],
+            "Edit Displayed Channels Properties...": ["Alt+E", "Alt+E"]
+        },
+        "Pane: Animation Editor (Animation Dopesheet)": {
+            "Add Keyframes at Selected Cells": ["Ctrl+K", "Cmd+K"],
+            "Paste": ["V", "V"],
+            "Stretch/Paste": ["Z", "Z"],
+            "Cycle/Paste": ["B", "B"],
+            "Cycle with Offset/Paste": ["C", "C"],
+            "Replace": ["R", "R"],
+            "Visual Paste": ["Shift+V", "Shift+V"],
+            "Visual Stretch/Paste": ["Shift+Z", "Shift+Z"],
+            "Visual Cycle/Paste": ["Shift+B", "Shift+B"],
+            "Visual Cycle with Offset/Paste": ["Shift+C", "Shift+C"],
+            "Visual Replace": ["Shift+R", "Shift+R"],
+            "Enable Keys": ["Ctrl+E", "Cmd+E"],
+            "Disable Keys": ["Shift+E", "Shift+E"],
+            "Snap Selection to Keys": ["E", "E"],
+            "Select Rows": ["Shift+A", "Shift+A"],
+            "Clear Selection": ["Q", "Q"],
+            "Select Columns": ["A", "A"],
+            "Escape": ["Esc", "Esc"],
+            "Full Channel Names": ["N", "N"],
+            "One Line Per Group": ["Shift+L", "Shift+L"],
+            "One Line Per Channel": ["L", "L"],
+            "Select Tool": ["S", "S"],
+            "Region Tool": ["Shift+S", "Shift+S"],
+            "Ripple Tool": ["W", "W"]
+        },
+        "Pane: Animation Editor (Animation Graph)": {
+            "Long Channel Names": ["N", "N"],
+            "Show Channel Names": ["Shift+N", "Shift+N"],
+            "Enable Channel Snapshots": ["Shift+Enter", "Shift+Enter"],
+            "Create Time Group on Selected Keys": ["Q", "Q"],
+            "Attach/Detach Time Group": ["A", "A"],
+            "Vertical Adapt": ["V", "V"],
+            "Add Keyframe to Displayed Channels": ["Ctrl+K", "Cmd+K"],
+            "Set Selected Keys/Slopes to Default Value": ["B", "B"],
+            "Set Selected Slopes To Zero": ["0", "0"],
+            "Set Selected Slopes To Manual": ["-", "-"],
+            "Set Selected Slopes To Automatic": ["=", "="],
+            "Toggle Automatic Slope Mode Preference": ["Shift+=", "Shift+="],
+            "Smooth Selected Slopes": ["9", "9"],
+            "Tie/Untie Selection": ["T", "T"],
+            "Toggle Multigraph": ["M", "M"],
+            "Toggle Minimum Detail": ["W", "W"],
+            "Isolate Channels": ["I", "I"],
+            "Unisolate Channels": ["Shift+I", "Shift+I"],
+            "Select All Handles": ["Ctrl+A", "Cmd+A"],
+            "Select No Handles": ["Ctrl+Shift+A", "Cmd+Shift+A"],
+            "Invert Handle Selection": ["Ctrl+I", "Cmd+I"],
+            "Show Bottom Values Toolbar": ["Shift+V", "Shift+V"]
+        },
+        "Pane: Animation Editor (Animation Table)": {
+            "Add Keyframes at Selected Cells": ["Ctrl+K", "Cmd+K"],
+            "Full Channel Names": ["N", "N"]
+        },
+        "Pane: Bundle List": {
+            "Add Bundle": ["Shift+B", "Shift+B"],
+            "Duplicate Bundle": ["Shift+D", "Shift+D"],
+            "Delete Bundle": ["Del", "Del"],
+            "Show full paths for bundle nodes": ["F", "F"]
+        },
+        "Pane: CHOP Viewer": {
+            "Home": ["H", "H"],
+            "Horizontal Adapt": ["Shift+H", "Shift+H"],
+            "Vertical Adapt": ["Shift+V", "Shift+V"],
+            "Timebar": ["T", "T"],
+            "Labels": ["L", "L"],
+            "Dots": ["D", "D"],
+            "Extend Regions": ["X", "X"],
+            "Raw Edit Tools": ["E", "E"],
+            "Scope Tools": ["W", "W"],
+            "Units": ["Shift+U", "Shift+U"],
+            "Grid Detail": ["G", "G"],
+            "Handles": ["Tab / Y", "Tab / Y"],
+            "Escape": ["Esc", "Esc"]
+        },
+        "Pane: Channel List": {
+            "Open Channel Chooser": ["Ctrl+1", "Cmd+1"],
+            "Open Group List": ["Ctrl+2 / X", "Cmd+2 / X"],
+            "Open Layer List": ["Ctrl+3", "Cmd+3"],
+            "Open Parameter List": ["Ctrl+4", "Cmd+4"]
+        },
+        "Pane: Channel List (Parameter Box)": {
+            "Toggle Mode": ["M", "M"],
+            "Show Pin Status Column": ["Ctrl+P", "Cmd+P"],
+            "Show Value Column": ["V", "V"],
+            "Use Parm Labels": ["L", "L"],
+            "Show Node Headers": ["H", "H"],
+            "Select All": ["A / Ctrl+A", "A / Cmd+A"],
+            "Select None": ["Ctrl+Shift+A", "Cmd+Shift+A"],
+            "Display All": ["D / Ctrl+D", "D / Cmd+D"],
+            "Display None": ["Shift+D", "Shift+D"],
+            "Key Selected": ["Ctrl+K", "Cmd+K"],
+            "Toggle Expand on All": ["Shift+E", "Shift+E"],
+            "Toggle Expand on All Node Headers": ["Shift+H", "Shift+H"],
+            "Toggle Expand on Channel(s)": ["E", "E"],
+            "Toggle Pinning on All": ["Shift+P", "Shift+P"],
+            "Toggle Pinning on Channel(s)": ["P", "P"],
+            "Unscope All": ["C", "C"],
+            "Displayed Channels Properties...": ["Alt+E", "Alt+E"],
+            "Scoped Channels Properties...": ["Ctrl+E", "Cmd+E"]
+        },
+        "Pane: Data Tree": {
+            "Delete Node": ["Del", "Del"],
+            "Rename Node": ["F2", "F2"]
+        },
+        "Pane: Data Tree (Object Node)": {
+            "Add Style Sheet Parameter": ["+", "+"],
+            "Create Style Sheet fromExisting Overrides": ["Shift+C", "Shift+C"]
+        },
+        "Pane: Data Tree (Override Set)": {
+            "Add Override": ["+", "+"],
+            "Add Override Script": ["Ctrl++", "Cmd++"]
+        },
+        "Pane: Data Tree (Referenced Style Sheets)": {
+            "Add Style Sheet Reference": ["+", "+"]
+        },
+        "Pane: Data Tree (Script Definition)": {
+            "Add Script Binding": ["+", "+"]
+        },
+        "Pane: Data Tree (Shard Override Sets)": {
+            "Add Shared Override Set": ["+", "+"]
+        },
+        "Pane: Data Tree (Shared Scripts)": {
+            "Add Shared Script": ["+", "+"]
+        },
+        "Pane: Data Tree (Style Entry)": {
+            "Add Override Set Reference": ["Shift+S", "Shift+S"]
+        },
+        "Pane: Data Tree (Style Sheet)": {
+            "Add Style Entry": ["+", "+"],
+            "View JSON": ["Shift+V", "Shift+V"]
+        },
+        "Pane: Data Tree (Target)": {
+            "Add Target": ["Shift+T", "Shift+T"],
+            "Add Condition": ["Shift+C", "Shift+C"],
+            "Add Pre-Binding": ["Shift+B", "Shift+B"],
+            "Set Target From Viewport": ["Shift+V", "Shift+V"],
+            "Set Object Target From Viewport": ["Shift+O", "Shift+O"],
+            "Set Component Target From Viewport": ["Shift+G", "Shift+G"]
+        },
+        "Pane: Geometry Viewers": {
+            "Accept": ["Enter", "Enter"],
+            "Delete": ["Del", "Del"],
+            "Toggle Object/Geometry Mode": ["F8", "F8"],
+            "Layout: Single View": ["Ctrl+1", "Cmd+1"],
+            "Layout: Four Views": ["Ctrl+2", "Cmd+2"],
+            "Layout: Two Views Stacked": ["Ctrl+3", "Cmd+3"],
+            "Layout: Two Views Side by Side": ["Ctrl+4", "Cmd+4"],
+            "Layout: Three Views Split Bottom": ["Ctrl+5", "Cmd+5"],
+            "Layout: Three Views Split Left": ["Ctrl+6", "Cmd+6"],
+            "Layout: Four Views Split Bottom": ["Ctrl+7", "Cmd+7"],
+            "Layout: Four Views Split Left": ["Ctrl+8", "Cmd+8"],
+            "Toggle Dispay of All HUDs": [";", ";"],
+            "Operation Parameters": ["P", "P"],
+            "Toggle Wireframe/Shaded": ["W", "W"],
+            "Toggle Shaded/Wire-over-shaded": ["Shift+W", "Shift+W"],
+            "Display Options": ["D", "D"],
+            "Toggle Grid Snapping": ["X", "X"],
+            "Toggle Primitive Snapping": ["C", "C"],
+            "Toggle Point Snapping": ["V", "V"],
+            "Toggle Multi-Snapping": ["Ctrl+J", "Cmd+J"],
+            "Edit Multi-Snap Options": ["Ctrl+Shift+J", "Cmd+Shift+J"],
+            "Increase Handle Size": ["*", "*"],
+            "Decrease Handle Size": ["/", "/"],
+            "Toolbar Menu": ["Tab / Backspace", "Tab / Backspace"],
+            "Branch Off New Operation": ["Shift+Tab", "Shift+Tab"],
+            "Repeat Current Operation": ["Q", "Q"],
+            "Repeat Current Operation Branched": ["Shift+Q", "Shift+Q"],
+            "Move To Previous Operation": ["PageUp", "PageUp"],
+            "Move To Next Operation": ["PageDown", "PageDown"],
+            "Move To Left Sibling": ["Shift+PageUp / ,", "Shift+PageUp / ,"],
+            "Move To Right Sibling": ["Shift+PageDown / .", "Shift+PageDown / ."],
+            "Move To First Operation": ["Home", "Home"],
+            "Move To Last Operation": ["End", "End"],
+            "Select Output Operation": ["Shift+End", "Shift+End"],
+            "Turn Off Viewport Subdivision": ["-", "-"],
+            "Turn On Viewport Subdivision": ["+ / =", "+ / ="],
+            "Box Selection": ["F2", "F2"],
+            "Lasso Selection": ["F3", "F3"],
+            "Brush Selection": ["F4", "F4"],
+            "Laser Selection": ["F5", "F5"],
+            "Secure Selection": ["~", "~"],
+            "Restart Selecting": ["`", "`"],
+            "Restore Previous Camera": ["[", "["]
+        },
+        "Pane: Geometry Viewers (Agent Collision Layer Handle)": {
+            "Box Handle": ["B", "B"],
+            "Orientation Handle": ["O", "O"]
+        },
+        "Pane: Geometry Viewers (Agent Collision Layer Operation)": {
+            "Cycle Collision Shape": ["Z", "Z"]
+        },
+        "Pane: Geometry Viewers (Agent Configure Joints Handle)": {
+            "Cone Rotation Handle": ["O", "O"],
+            "Child Rotation Handle": ["Shift+O", "Shift+O"],
+            "Cone Handle": ["F", "F"],
+            "Twist Handle": ["Z", "Z"]
+        },
+        "Pane: Geometry Viewers (Agent Configure Joints Operation)": {
+            "Initialize Joint Limits": ["Shift+C", "Shift+C"]
+        },
+        "Pane: Geometry Viewers (Bones Tool)": {
+            "No Kinematics": ["N", "N"],
+            "Forward Kinematics": ["F", "F"],
+            "Inverse Kinematics": ["I", "I"],
+            "IK With Constraints": ["Shift+I", "Shift+I"],
+            "FK With Constraints": ["Shift+F", "Shift+F"],
+            "Follow-Curve Kinematics": ["Shift+K", "Shift+K"]
+        },
+        "Pane: Geometry Viewers (Camera Handle)": {
+            "Orient Handle": ["O", "O"],
+            "Focus Handle": ["Z", "Z"],
+            "Frustum Handle": ["F", "F"]
+        },
+        "Pane: Geometry Viewers (Component Selection Conversion)": {
+            "Convert to Point Selection": ["Ctrl+Shift+2", "Cmd+Shift+2"],
+            "Convert to Edge Selection": ["Ctrl+Shift+3", "Cmd+Shift+3"],
+            "Convert to Primitive Selection": ["Ctrl+Shift+4", "Cmd+Shift+4"],
+            "Convert to Vertex Selection": ["Ctrl+Shift+5", "Cmd+Shift+5"]
+        },
+        "Pane: Geometry Viewers (Cone Handle)": {
+            "Increase Radius": [">", ">"],
+            "Decrease Radius": ["<", "<"]
+        },
+        "Pane: Geometry Viewers (Construction Plane Operation)": {
+            "Flip C-Plane Normal": ["N", "N"],
+            "Increase Grid In X And Y": [">", ">"],
+            "Decrease Grid In X And Y": ["<", "<"],
+            "Align Normal With World X Axis": ["Shift+X", "Shift+X"],
+            "Align Normal With World Y Axis": ["Shift+Y", "Shift+Y"],
+            "Align Normal With World Z Axis": ["Shift+Z", "Shift+Z"],
+            "Align Up-Vector With C-Plane Normal": ["Shift+N", "Shift+N"],
+            "Center C-Plane Around World Y Axis": ["Y", "Y"],
+            "Center C-Plane Around World Z Axis": ["Z", "Z"],
+            "Home On Geometry": ["A", "A"]
+        },
+        "Pane: Geometry Viewers (Edit Capture Weights Tool)": {
+            "Spreadsheet...": ["Shift+S", "Shift+S"]
+        },
+        "Pane: Geometry Viewers (Edit Handle)": {
+            "Toggle Peak Handle": ["H", "H"]
+        },
+        "Pane: Geometry Viewers (Edit Operation)": {
+            "Brush Handle": ["B", "B"],
+            "Toggle Sliding": ["L", "L"],
+            "Make circle": ["Shift+C", "Shift+C"],
+            "Space selection": ["Shift+E", "Shift+E"],
+            "Straighten selection": ["Shift+S", "Shift+S"]
+        },
+        "Pane: Geometry Viewers (Handles)": {
+            "Add Keyframe": ["Ctrl+K", "Cmd+K"],
+            "Remove Keyframe": ["Ctrl+Shift+K", "Cmd+Shift+K"],
+            "Cycle Handle Mode": ["Y", "Y"],
+            "Reverse Cycle Handle Mode": ["Shift+Y", "Shift+Y"]
+        },
+        "Pane: Geometry Viewers (Input Selectors)": {
+            "Select Loops": ["A / Ctrl+A / Shift+A / Ctrl+Shift+A", "A / Cmd+A / Shift+A / Cmd+Shift+A"]
+        },
+        "Pane: Geometry Viewers (Light Handle)": {
+            "Orient Handle": ["O", "O"],
+            "Cone Handle": ["Z", "Z"],
+            "Frustum Handle": ["F", "F"]
+        },
+        "Pane: Geometry Viewers (Mirror Tool)": {
+            "Mirror on XY Plane": ["Shift+A", "Shift+A"],
+            "Mirror on YZ Plane": ["Shift+S", "Shift+S"],
+            "Mirror on ZX Plane": ["Shift+D", "Shift+D"]
+        },
+        "Pane: Geometry Viewers (Modeling Viewer)": {
+            "Select Points": ["2", "2"],
+            "Select Edges": ["3", "3"],
+            "Select Primitives": ["4", "4"],
+            "Select Vertices": ["5", "5"],
+            "Select Groups": ["9", "9"],
+            "Select All": ["N", "N"],
+            "Invert Selection": ["Ctrl+I", "Cmd+I"],
+            "Select Boundary": ["Shift+B", "Shift+B"],
+            "Shrink Selection": ["Shift+S", "Shift+S"],
+            "Grow Selection": ["Shift+G", "Shift+G"],
+            "Select None": ["Shift+N", "Shift+N"],
+            "Area Select Visible Geometry Only": ["Shift+V", "Shift+V"],
+            "Pick Front/Back Cycle": ["Ctrl+Shift+B", "Cmd+Shift+B"],
+            "Previous Group": ["F", "F"],
+            "Next Group": ["G", "G"]
+        },
+        "Pane: Geometry Viewers (Operations)": {
+            "Select Tool": ["S", "S"],
+            "View Tool": ["Esc", "Esc"],
+            "Volatile Modify Channels Operation": ["J", "J"],
+            "Volatile View Operation": ["Space", "Space"]
+        },
+        "Pane: Geometry Viewers (Pelt Operation)": {
+            "Visualize Pelted Mesh": ["G", "G"]
+        },
+        "Pane: Geometry Viewers (Pill Handle)": {
+            "Toggle Opaque Display": ["Shift+O", "Shift+O"]
+        },
+        "Pane: Geometry Viewers (PolyExtrude Operation)": {
+            "Toggle Front Transform": ["F", "F"],
+            "Toggle Extrusion Mode": ["M", "M"]
+        },
+        "Pane: Geometry Viewers (Pose Tool)": {
+            "Global Transform Handle": ["A", "A"]
+        },
+        "Pane: Geometry Viewers (Select And Transform Operation)": {
+            "Select All": ["A / Ctrl+A", "A / Cmd+A"],
+            "Invert Selection": ["Ctrl+I", "Cmd+I"],
+            "Clear Selection": ["N", "N"]
+        },
+        "Pane: Geometry Viewers (Select Operation)": {
+            "Select Points": ["1", "1"],
+            "Select Edges": ["2", "2"],
+            "Select Breakpoints": ["3", "3"],
+            "Select Primitives": ["4", "4"],
+            "Select Point Groups": ["5", "5"],
+            "Select Primitive Groups": ["6", "6"],
+            "Select Connected Primitives": ["7", "7"],
+            "Select Connected Points": ["8", "8"],
+            "Select Connected Edges": ["9", "9"],
+            "Select Connected Breakpoints": ["0", "0"]
+        },
+        "Pane: Geometry Viewers (Select)": {
+            "Move Tool": ["T", "T"],
+            "Rotate Tool": ["R", "R"],
+            "Scale Tool": ["E", "E"]
+        },
+        "Pane: Geometry Viewers (Selection modes)": {
+            "Object Select Mode": ["1", "1"],
+            "Particle Select Mode": ["6", "6"],
+            "Dynamics Select Mode": ["7", "7"]
+        },
+        "Pane: Geometry Viewers (TopoBuild Operation)": {
+            "Build Mode": ["Shift+1", "Shift+1"],
+            "Split Mode": ["Shift+2", "Shift+2"],
+            "Brush Mode": ["Shift+3", "Shift+3"],
+            "Smooth Mode": ["Shift+4", "Shift+4"],
+            "Make circle": ["Shift+C", "Shift+C"],
+            "Space selection": ["Shift+E", "Shift+E"],
+            "Straighten selection": ["Shift+S", "Shift+S"]
+        },
+        "Pane: Geometry Viewers (Transform Handle)": {
+            "Toggle Handle-Geometry Detachment": ["'", "'"],
+            "Cycle Handle Alignment": ["M", "M"],
+            "Reverse Cycle Handle Alignment": ["Shift+M", "Shift+M"],
+            "Pivot Mode": ["\\\" / Insert", "\\\" / Insert"],
+            "Key Translates": ["Shift+T", "Shift+T"],
+            "Key Rotates": ["Shift+R", "Shift+R"],
+            "Key Scales": ["Shift+E", "Shift+E"]
+        },
+        "Pane: Geometry Viewers (View Operation)": {
+            "Home All": ["Shift+A", "Shift+A"],
+            "Home Selected": ["Shift+H / G", "Shift+H / G"],
+            "Home C-Plane": ["H", "H"],
+            "Home Non-Templated": ["Shift+M", "Shift+M"],
+            "Frame All": ["A", "A"],
+            "Frame Selected": ["F", "F"],
+            "Frame C-Plane": ["Shift+F", "Shift+F"],
+            "Frame Non-Templated": ["M", "M"],
+            "Set Pivot": ["Shift+Z", "Shift+Z"],
+            "Set Pivot And Center": ["Z", "Z"],
+            "Toggle Ortho/Perspective": ["O", "O"],
+            "Toggle Local/World View Context": ["Y", "Y"],
+            "Top Viewport": ["2", "2"],
+            "Front Viewport": ["3", "3"],
+            "Right Viewport": ["4", "4"],
+            "Perspective Viewport": ["1", "1"],
+            "UV Viewport": ["5", "5"],
+            "Toggle Single/Quad": ["B", "B"],
+            "Select Viewport": ["N", "N"]
+        },
+        "Pane: Geometry Viewers (World Viewer)": {
+            "Select Child Objects": ["9", "9"],
+            "Select Parent Objects": ["0", "0"],
+            "Select All Objects": ["A / Ctrl+A", "A / Cmd+A"],
+            "Invert Object Selection": ["Ctrl+I", "Cmd+I"],
+            "Select No Objects": ["N", "N"]
+        },
+        "Pane: Groups": {
+            "Delete": ["Del", "Del"],
+            "Select All": ["A / Ctrl+A", "A / Cmd+A"],
+            "Select None": ["Ctrl+Shift+A", "Cmd+Shift+A"],
+            "Toggle Pinning on All Groups": ["Shift+P", "Shift+P"],
+            "Toggle Pinning on Groups": ["P", "P"],
+            "Add Group": ["G", "G"],
+            "Add Group From Scoped": ["Shift+G", "Shift+G"],
+            "Add Group From Selected": ["Ctrl+G", "Cmd+G"],
+            "Add Selection To Group": ["+", "+"],
+            "Remove Selection From Group": ["-", "-"],
+            "Replace Group With Selection": ["=", "="]
+        },
+        "Pane: Groups (Channel Groups)": {
+            "Scope Selected Group(s)": ["V", "V"],
+            "Scope All Groups": ["Shift+V", "Shift+V"],
+            "Set Key on Selected Group(s)": ["Ctrl+K", "Cmd+K"],
+            "Remove Key on Selected Group(s)": ["Ctrl+Shift+K", "Cmd+Shift+K"],
+            "Collapse Children into Group(s)": ["C", "C"],
+            "Merge Selected Group(s)": ["M", "M"],
+            "Display Related Operators": ["D", "D"],
+            "Select Related Operators": ["S", "S"],
+            "Select Terminal Operators": ["Shift+S", "Shift+S"]
+        },
+        "Pane: Handle List": {
+            "Delete Selected Groups": ["Del", "Del"],
+            "Add Group": ["Shift+G", "Shift+G"],
+            "Add Selection To Groups": ["+", "+"],
+            "Remove Selection From Groups": ["-", "-"],
+            "Set Groups Equal To Selection": ["=", "="],
+            "Clear Groups": ["Shift+C", "Shift+C"],
+            "Expose Selected Handles": ["E", "E"],
+            "Hide Selected Handles": ["H", "H"],
+            "Set Colors To Default Values": ["D", "D"],
+            "Open Group List": ["X", "X"],
+            "Open Handle List": ["M", "M"]
+        },
+        "Pane: IPR Viewer": {
+            "Add Image to History": ["Enter", "Enter"],
+            "Remove Image from History": ["Del", "Del"]
+        },
+        "Pane: Image Viewer": {
+            "Home": ["H", "H"],
+            "Home Selected": ["G", "G"],
+            "Home Selected Full": ["Shift+G", "Shift+G"],
+            "Home Full": ["Shift+H", "Shift+H"],
+            "Zoom In": ["= / +", "= / +"],
+            "Zoom Out": ["-", "-"],
+            "Next Plane": ["}", "}"],
+            "Previous Plane": ["{", "{"],
+            "Previous Frame": ["[", "["],
+            "Next Frame": ["]", "]"],
+            "Fast Interactive Cooking Toggle": ["F", "F"],
+            "Display Options": ["D", "D"],
+            "Inspect": ["I", "I"],
+            "Compare": ["Ctrl+D", "Cmd+D"],
+            "Enable View": ["Ctrl+E", "Cmd+E"],
+            "Show Preview": ["Ctrl+P", "Cmd+P"],
+            "Show Labels": ["Ctrl+Shift+L", "Cmd+Shift+L"],
+            "Show Guides": ["Ctrl+G", "Cmd+G"],
+            "Show Handles": ["Ctrl+H", "Cmd+H"],
+            "Enable LUT": ["Ctrl+U", "Cmd+U"],
+            "Load LUT": ["Ctrl+Shift+U", "Cmd+Shift+U"],
+            "Image": ["Ctrl+1", "Cmd+1"],
+            "TimeLine": ["Ctrl+2", "Cmd+2"],
+            "Graph": ["Ctrl+3", "Cmd+3"],
+            "Enter Color Pick State": ["Q", "Q"]
+        },
+        "Pane: Image Viewer (2D Image Viewer)": {
+            "Magnify": ["M", "M"],
+            "Exact Pixel Size": ["/", "/"],
+            "Size Adapt": ["?", "?"],
+            "Clear Selection": ["Shift+S", "Shift+S"],
+            "Reset Color": ["R", "R"],
+            "Adapt To Full Pixel Range": ["Shift+R", "Shift+R"],
+            "Toggle Rulers": ["Ctrl+R", "Cmd+R"],
+            "Toggle Transparency": ["Ctrl+Shift+T", "Cmd+Shift+T"],
+            "Toggle Background Image": ["Shift+B", "Shift+B"],
+            "Toggle Pixel Aspect Ratio": ["Ctrl+A", "Cmd+A"],
+            "All Components": ["`", "`"],
+            "Left Component": ["<", "<"],
+            "Right Component": [">", ">"],
+            "View Color Plane": ["C", "C"],
+            "View Alpha Plane": ["A", "A"],
+            "View Red Component": ["1", "1"],
+            "View Green Component": ["2", "2"],
+            "View Blue Component": ["3", "3"],
+            "View Fourth Component": ["4", "4"],
+            "Compare Images": ["Ctrl+Shift+C", "Cmd+Shift+C"],
+            "Subtract Images": ["Ctrl+Shift+X", "Cmd+Shift+X"],
+            "Horizontal Wipe": ["Ctrl+Shift+W", "Cmd+Shift+W"],
+            "Vertical Wipe": ["Ctrl+Shift+V", "Cmd+Shift+V"],
+            "Blend Images": ["Ctrl+Shift+B", "Cmd+Shift+B"],
+            "Highlight Differences": ["Ctrl+Shift+N", "Cmd+Shift+N"]
+        },
+        "Pane: Image Viewer (Color Curve Handles)": {
+            "Remove Curve Point": ["Del", "Del"]
+        },
+        "Pane: Image Viewer (Compositing (COP2) Operations)": {
+            "Complete Current Operation": ["Enter", "Enter"],
+            "Delete Last Point": ["Del", "Del"],
+            "Delete Last Stroke": ["Shift+Del", "Shift+Del"],
+            "Create New Curve": ["N", "N"],
+            "Cancel New Curve": ["Esc", "Esc"],
+            "Show Current/All Curve Handles": ["B", "B"],
+            "Select Key Color": ["O", "O"],
+            "Add To Key Color": ["Shift+O", "Shift+O"],
+            "Select Spill Color": ["L", "L"],
+            "Add To Spill Color": ["Shift+L", "Shift+L"],
+            "Edit Unpin": ["E", "E"]
+        },
+        "Pane: Image Viewer (Histogram Viewer)": {
+            "Ignore Graph Spikes During Adapt": ["Shift+S", "Shift+S"],
+            "All Components": ["`", "`"],
+            "Left Component": ["<", "<"],
+            "Right Component": [">", ">"],
+            "View Color Plane": ["C", "C"],
+            "View Alpha Plane": ["A", "A"],
+            "View Red Component": ["1", "1"],
+            "View Green Component": ["2", "2"],
+            "View Blue Component": ["3", "3"],
+            "View Fourth Component": ["4", "4"],
+            "Toggle H/V Adapts": ["?", "?"]
+        },
+        "Pane: Image Viewer (Image Viewer Incremental Update)": {
+            "Finish Incomplete Cook": ["Shift+F", "Shift+F"]
+        },
+        "Pane: Image Viewer (Image Viewer Selector)": {
+            "Cancel Selector": ["Esc", "Esc"]
+        },
+        "Pane: Image Viewer (Mutliple Viewport Viewer)": {
+            "Apply Changes To All Views": ["V", "V"],
+            "Link Scrolling To All Views": ["S", "S"],
+            "Zoom Current Viewport": ["B", "B"],
+            "Set Current": ["X", "X"]
+        },
+        "Pane: Image Viewer (Ramp Handles)": {
+            "Remove Point From Ramp": ["Del", "Del"]
+        },
+        "Pane: Image Viewer (Rotospline Handles)": {
+            "Show Slope Handles": ["S", "S"],
+            "Show Feather Handle": ["W", "W"],
+            "Remove Roto Point": ["Del", "Del"]
+        },
+        "Pane: Image Viewer (Timeline Viewer)": {
+            "Show Extend Regions": ["E", "E"],
+            "Show Frames Boxes": ["Shift+F", "Shift+F"],
+            "Show Timebar": ["Shift+B", "Shift+B"],
+            "Toggle H/V Adapts": ["?", "?"]
+        },
+        "Pane: Link Editor": {
+            "Open Parameter Sheet": ["W", "W"]
+        },
+        "Pane: Link Editor (Link Editor Sheet)": {
+            "Volatile Select": ["Space", "Space"],
+            "Select None": ["C", "C"]
+        },
+        "Pane: Material Palette": {
+            "Delete": ["Del", "Del"]
+        },
+        "Pane: Network Editor": {
+            "Add Operator": ["Tab / Backspace", "Tab / Backspace"],
+            "Color Palette": ["C", "C"],
+            "Net Overview": ["O", "O"],
+            "Show Implicit Operators": ["Shift+I", "Shift+I"],
+            "Frame Selected": ["F / Shift+F", "F / Shift+F"],
+            "Home All": ["H", "H"],
+            "Home Selected": ["Shift+H / G", "Shift+H / G"],
+            "Set Current Below": ["PageDown", "PageDown"],
+            "Set Current Above": ["PageUp", "PageUp"],
+            "Set Current Right": ["Shift+PageDown / .", "Shift+PageDown / ."],
+            "Set Current Left": ["Shift+PageUp / ,", "Shift+PageUp / ,"],
+            "Layout All": ["Ctrl+Shift+L / L", "Cmd+Shift+L / L"],
+            "Layout Selected": ["Shift+L", "Shift+L"],
+            "Open Parameters": ["P", "P"],
+            "Switch To Worksheet/List": ["Shift+T", "Shift+T"],
+            "Jump Up": ["U", "U"],
+            "Scope Channels": ["V / ", "V / "],
+            "Open Tree Viewer": ["Shift+W", "Shift+W"],
+            "Add File Operator": ["` / =", "` / ="],
+            "Reorder Selected Node Inputs": ["Shift+R", "Shift+R"],
+            "Cancel": ["Esc", "Esc"],
+            "Delete": ["Del", "Del"],
+            "Jump Down": ["I / Enter / ", "I / Enter / "],
+            "Select All": ["Ctrl+A", "Cmd+A"],
+            "Collapse Selected": ["Shift+C", "Shift+C"],
+            "Expose All": ["Shift+E", "Shift+E"],
+            "Find Operator": ["/", "/"],
+            "Open Display Options": ["D", "D"],
+            "Add Sticky Note": ["Ctrl+P", "Cmd+P"],
+            "Create Network Box From Selected": ["Ctrl+N", "Cmd+N"],
+            "Minimize Selected Network Boxes": ["Ctrl+M", "Cmd+M"],
+            "Maximize Selected Sticky Notes": ["Shift+K", "Shift+K"],
+            "Minimize Selected Sticky Notes": ["Ctrl+K", "Cmd+K"],
+            "Snap Borders To Bounds": ["Ctrl+Alt+S", "Cmd+Alt+S"],
+            "Delete Network Box and Contents": ["Shift+Del", "Shift+Del"],
+            "Display Performance Data": ["Ctrl+Alt+P", "Cmd+Alt+P"]
+        },
+        "Pane: Network Editor (Node Menu)": {
+            "Toggle Display": ["1", "1"],
+            "Toggle Render": ["2", "2"],
+            "Toggle Bypass": ["Shift+B", "Shift+B"],
+            "Toggle Debug Mode": ["Ctrl+D", "Cmd+D"],
+            "Visualize Output": ["X", "X"]
+        },
+        "Pane: Operator Tree Controls": {
+            "Move To Next Error": ["E", "E"],
+            "Move To Prev Error": ["Shift+E", "Shift+E"]
+        },
+        "Pane: Operator Type Properties": {
+            "Select All": ["Ctrl+A", "Cmd+A"],
+            "Delete": ["Del", "Del"],
+            "Put in Folder": ["Shift+C", "Shift+C"]
+        },
+        "Pane: Orbolt Asset Browser": {
+            "Delete Folder": ["Del", "Del"],
+            "Add New Folder": ["Insert", "Insert"]
+        },
+        "Pane: Outputs Viewers": {
+            "Suspend All": ["S", "S"],
+            "Restart All": ["R", "R"],
+            "Kill All": ["Shift+K", "Shift+K"],
+            "Automatically Clear Completed Jobs": ["C", "C"]
+        },
+        "Pane: Parameter Spreadsheet": {
+            "Paste Copied Expressions": ["Ctrl+E", "Cmd+E"],
+            "Paste Copied References": ["Ctrl+R", "Cmd+R"],
+            "Paste Copied Relative References": ["Ctrl+Shift+R", "Cmd+Shift+R"],
+            "Paste Copied Channels": ["Ctrl+Shift+V", "Cmd+Shift+V"],
+            "Full Node Paths": ["N", "N"],
+            "Load Scope": ["L", "L"],
+            "Open Operator Tree": ["Shift+W / W", "Shift+W / W"],
+            "Select None": ["Q", "Q"],
+            "Volatile Select": ["Space", "Space"]
+        },
+        "Pane: Performance Monitor": {
+            "Open Profile": ["Ctrl+Alt+O", "Cmd+Alt+O"],
+            "Save Profile As": ["Ctrl+Alt+Shift+S", "Cmd+Alt+Shift+S"],
+            "Export Profile As": ["Ctrl+Alt+Shift+E", "Cmd+Alt+Shift+E"],
+            "Compare Profiles": ["Ctrl+Alt+C", "Cmd+Alt+C"],
+            "Open Preferences": ["Ctrl+Alt+P", "Cmd+Alt+P"],
+            "Delete Profile": ["Ctrl+Alt+Shift+D", "Cmd+Alt+Shift+D"],
+            "Toggle Node Cook Stats": ["Shift+C", "Shift+C"],
+            "Toggle DOP Solve Stats": ["Shift+S", "Shift+S"],
+            "Toggle Node Draw CPU Stats": ["Shift+D", "Shift+D"],
+            "Toggle Node Draw GPU Stats": ["Shift+G", "Shift+G"],
+            "Toggle Viewport Stats": ["Shift+V", "Shift+V"],
+            "Toggle Script Stats": ["Shift+I / ", "Shift+I / "],
+            "Toggle Render Stats": ["Shift+R / ", "Shift+R / "],
+            "Toggle Thread Stats": ["Shift+T", "Shift+T"],
+            "Toggle Frame Stats": ["Shift+F", "Shift+F"],
+            "Toggle Memory": ["Shift+M", "Shift+M"],
+            "Toggle Errors": ["Shift+E", "Shift+E"],
+            "Sample All": ["Shift+A", "Shift+A"],
+            "Sample None": ["Shift+N", "Shift+N"],
+            "Toggle Live Updates": ["Shift+L", "Shift+L"],
+            "Toggle Time Format": ["P", "P"],
+            "Toggle Statistics View": ["T", "T"],
+            "Toggle Event Log": ["L", "L"],
+            "Toggle Record": ["R", "R"],
+            "Clear Statistics": ["C", "C"]
+        },
+        "Pane: Python shell": {
+            "Copy": ["Ctrl+Shift+C", "Cmd+Shift+C"],
+            "Paste": ["Ctrl+Shift+V", "Cmd+Shift+V"]
+        },
+        "Pane: Shader Viewer": {
+            "Home": ["H", "H"],
+            "Mode": ["M", "M"],
+            "Level Of Detail": ["L", "L"],
+            "Transparency": ["A", "A"],
+            "Reload Shader": ["V", "V"]
+        },
+        "Pane: Take Management (Take List Contents)": {
+            "Exclude From Take": ["Del", "Del"]
+        },
+        "Pane: Take Management (Take List)": {
+            "Delete Take": ["Del", "Del"],
+            "Insert New Take": ["Insert", "Insert"],
+            "Append New Take": ["Shift+T", "Shift+T"],
+            "Show Take Contents": ["W", "W"]
+        },
+        "Pane: Textport": {
+            "Page Up": ["Shift+PageUp", "Shift+PageUp"],
+            "Page Down": ["Shift+PageDown", "Shift+PageDown"],
+            "Select Home": ["Shift+Home", "Shift+Home"],
+            "Select End": ["Shift+End", "Shift+End"],
+            "Select First Line": ["Shift+Ctrl+Home", "Shift+Cmd+Home"],
+            "Select Last Line": ["Shift+Ctrl+End", "Shift+Cmd+End"],
+            "Home": ["Home", "Home"],
+            "End": ["End", "End"],
+            "First Line": ["Ctrl+Home", "Cmd+Home"],
+            "Last Line": ["Ctrl+End", "Cmd+End"],
+            "Open Editor": ["Alt+E", "Alt+E"],
+            "Match Parenthesis/Quotes": ["Ctrl+M", "Cmd+M"],
+            "Search and Replace": ["Ctrl+H", "Cmd+H"],
+            "Jump to Line": ["Ctrl+G", "Cmd+G"]
+        },
+        "Parameter Scoper": {
+            "Display Only Channels": ["D", "D"],
+            "Display Only Scoped Channels": ["B", "B"],
+            "Scope All Channels": ["A / Ctrl+A", "A / Cmd+A"],
+            "Toggle Channel Scope": ["T", "T"],
+            "Set Keyframe on All": ["K", "K"],
+            "Remove Keyframe on All": ["Shift+K", "Shift+K"],
+            "Set Keyframe on Scoped": ["J", "J"],
+            "Remove Keyframe on Scoped": ["Shift+J", "Shift+J"]
+        },
+        "Pop-Up Toolbars": {
+            "Navigate Up": ["UpArrow", "UpArrow"],
+            "Navigate Down": ["DownArrow", "DownArrow"],
+            "Navigate Left": ["LeftArrow", "LeftArrow"],
+            "Navigate Right": ["RightArrow", "RightArrow"],
+            "Remove Last Character": ["Backspace", "Backspace"],
+            "Select": ["Enter", "Enter"]
+        },
+        "Ramp Widgets": {
+            "Delete Point": ["Del", "Del"],
+            "Select Previous Point": ["PageUp", "PageUp"],
+            "Select Next Point": ["PageDown", "PageDown"]
+        },
+        "Toolbar Manager": {
+            "Add Toolbar": ["Alt+N", "Alt+N"],
+            "Save Toolbar": ["Alt+S", "Alt+S"],
+            "Cancel": ["Esc", "Esc"]
+        }
+    }
+}

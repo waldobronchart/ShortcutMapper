@@ -1,0 +1,61 @@
+//
+// Mplay menubar keys
+//
+
+// File Menu
+
+HCONTEXT mplay "MPLAY Image Player" "These keys apply to the Image Player application."
+
+mplay.open		"Open"		"Open"			Alt+O Cmd+O
+mplay.merge		"Merge"		"Merge"			Alt+M
+mplay.insertbefore	"Insert Before"	"Insert sequence before"
+mplay.openframe		"Open Frame from Sequence" "Open frame from sequence"
+mplay.append		"Append"	"Append sequence"
+mplay.saveframe		"Save Current Frame"	"Save current frame"	Alt+F
+mplay.saveseq		"Save Current Sequence" "Save current sequence"	Alt+S
+mplay.savepreview	"Save Preview" "Save preview"	Alt+P
+// mplay.savempeg		"Save As Video..." "Save as video"	
+
+mplay.loadaudio		"Load Audio"	"Load audio"		Alt+A
+mplay.sequencelist	"Sequence List"	"Sequence list"		Alt+L
+mplay.newviewer		"New 2D View"	"New 2D view"		Alt+N
+mplay.newtimeline	"New Timeline"	"New timeline"		Alt+T
+mplay.newgraph		"New Histogram"	"New histogram"		Alt+G
+mplay.clearcache	"Clear Cache"	"Clear cache"
+mplay.cacheall		"Cache All Images"	"Cache All Images"
+mplay.audiounload	"Unload Audio"	"Unload audio"
+mplay.loadbg		"Load Background Sequence" "Load background sequence" Alt+Shift+B
+mplay.unloadbg		"Unload Background Sequence" "Unload background sequence"
+mplay.quit		"Quit"		"Quit"			Alt+Q Cmd+Q
+
+// Options menu
+mplay.settings		"Settings"	"Settings"		Alt+Shift+S
+mplay.profiles		"Profiles"	"Profiles"		Alt+Shift+P
+mplay.displayoptions	"Dialog Options" "Display options"	D
+mplay.textport		"Textport"	"Textport"		Alt+Shift+T
+mplay.helpbrowse	"Help Browser"	"Help browser"		Alt+H
+mplay.buffer		"Double Buffer" "Toggle double buffer"	Alt+B
+mplay.hideui		"Hide UI"	"Hide UI"		U
+mplay.toggletopmost	"Always on Top" "Always on top"
+
+
+// Viewport
+mplay.stopplay		"Stop Play"		"Stop play"
+mplay.realtime		"Toggle Realtime"	"Toggle realtime"	P
+mplay.halfsize		"Half Window Size"	"Half window size"	Alt+-
+mplay.doublesize	"Double Window Size"	"Double window size"	Alt+=
+mplay.fitviewer		"Fit Viewer to Image"	"Fit viewer to image"	F
+mplay.fullscreen	"Fullscreen"		"Full screen"		Cmd+F F11
+
+mplay.killrender	"Halt Current Render"	"Halt current render"	Esc
+mplay.killallrenders	"Halt All Renders"	"Kill all renders"	Alt+K
+mplay.disconnect	"Disconnect"	"Disconnect"		Alt+Shift+I
+mplay.newsequence	"New Sequence"	"New sequence"
+
+mplay.sethoudiniframe   "Set Houdini Frame"	"Set Houdini's current frame to MPLAY's current frame"	Cmd+K
+
+mplay.exportblocking   "Export Channel Blocking" "Send the channel blocking changes back to Houdini"	Cmd+B
+mplay.addcomment	"Add Image Comment" 	"Add image comment" Alt+C
+mplay.removeseq		"Remove Sequence"	"Remove sequence"   Alt+Del
+mplay.removeframe	"Remove Frame"		"Remove frame"      Del
+mplay.reloadseq		"Reload Sequence"	"Reload sequence"	Alt+R
