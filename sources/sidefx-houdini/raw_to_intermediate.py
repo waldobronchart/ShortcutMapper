@@ -33,7 +33,7 @@ class RawHoudiniConfigParser(object):
 
     def __init__(self):
         super(RawHoudiniConfigParser, self).__init__()
-        self.idata = shmaplib.IntermediateShortcutData("SideFx Houdini")
+        self.idata = shmaplib.IntermediateShortcutData("SideFx Houdini", "NA", "Houdini")
         self._context_id_to_name_lookup = {}
 
         # HCONTEXT deskmgr "Desktop Manager" "These keys are used in the Desktop Manager dialog."
@@ -45,6 +45,9 @@ class RawHoudiniConfigParser(object):
         if not os.path.exists(source_dir):
             log.error("Source directory '%s' does not exist", source_dir)
             return
+
+        name = os.path.basename(source_dir)
+        self.idata.version = name[name.index('_v')+1:-4]
 
         files = os.listdir(source_dir)
         for filename in files:
@@ -66,9 +69,13 @@ class RawHoudiniConfigParser(object):
             line = line.replace('\t', ' ').strip('\n')
             log.debug("Parsing line: %s", line)
 
-            # Ignore lines
+            # Ignore comments, includes and empty lines
             if line.startswith('//') or line.startswith('#') or not len(line):
                 continue
+
+            # Some lines have comments at the end, remove that
+            if '//' in line:
+                line = line[:line.index('//')]
 
             # Context line
             if line.startswith('HCONTEXT '):
@@ -80,7 +87,9 @@ class RawHoudiniConfigParser(object):
             if shortcut_match:
                 command, label, description, keys = shortcut_match.groups()
 
-                keys = keys.replace(' ', ' or ')
+                # / is separator for multiple keys
+                keys = keys.replace(' ', ' / ')
+                keys = keys.replace('\\\\', '\\').replace('\\\'', "'")
                 keys_win = keys.replace('Cmd', 'Ctrl')
                 if not len(keys):
                     continue
@@ -109,7 +118,7 @@ class RawHoudiniConfigParser(object):
             if id.count('.') > 2:
                 parts = id.split('.')
                 parent_id = '.'.join(parts[:3])
-                name = self._context_id_to_name_lookup[parent_id]
+                name = "{0} ({1})".format(self._context_id_to_name_lookup[parent_id], name)
             else:
                 name = "Pane: " + name
 
