@@ -501,6 +501,16 @@ div#keyboard button {
                 0px 3px 0px 0px #7e7e7e,
                 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
     position: relative;
+    opacity: 0.4;
+}
+
+div#keyboard button.hasitems,
+div#keyboard button.mod-alt,
+div#keyboard button.mod-control,
+div#keyboard button.mod-command,
+div#keyboard button.mod-shift,
+div#keyboard button.mod-other {
+    opacity: 1;
 }
 
 div#keyboard button:focus {
@@ -1019,4 +1029,3 @@ div#keyboard button.mod-other.mod-active {
         background-repeat: no-repeat !important;
     }
 }
-
