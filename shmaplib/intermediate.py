@@ -74,9 +74,9 @@ class IntermediateShortcutData(object):
             # Add keys to existing shortcut
             existing_shortcut = self.get_shortcut(name)
             if existing_shortcut is not None:
-                if len(win_keys):
+                if len(win_keys) and win_keys not in existing_shortcut.win_keys:
                     existing_shortcut.win_keys += " / " + win_keys
-                if len(mac_keys):
+                if len(mac_keys) and mac_keys not in existing_shortcut.mac_keys:
                     existing_shortcut.mac_keys += " / " + mac_keys
 
                 return
