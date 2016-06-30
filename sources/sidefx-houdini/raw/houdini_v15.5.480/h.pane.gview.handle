@@ -1,0 +1,284 @@
+//
+// Hotkeys for handles and PI's
+//
+
+HCONTEXT h.pane.gview.handle		"Handles"			"These keys apply to all handles."
+HCONTEXT h.pane.gview.handle.extrude	"Extrude Handle"		"These keys apply to the Extrude handle."
+HCONTEXT h.pane.gview.handle.xform	"Transform Handle"		"These keys apply to the Transform handle."
+HCONTEXT h.pane.gview.handle.vector	"Vector Handle"			"These keys apply to the Vector handle."
+HCONTEXT h.pane.gview.handle.project	"Project Handle"		"These keys apply to the Project handle."
+HCONTEXT h.pane.gview.handle.joint	"Joint Handle"			"These keys apply to the Joint handle."
+HCONTEXT h.pane.gview.handle.path	"Path Handle"			"These keys apply to the Path Control Points handle."
+HCONTEXT h.pane.gview.handle.followpath	"Follow Path Handle"		"These keys apply to the Follow Path handle."
+HCONTEXT h.pane.gview.handle.multixform	"Multi-Transform Handle"	"These keys apply to the Multi-Transform handle."
+HCONTEXT h.pane.gview.handle.ikend	"Pose Handle"			"These keys apply to the Pose handle."
+HCONTEXT h.pane.gview.handle.ikpivot	"Pose Pivot Handle"		"These keys apply to the Pose handle."
+HCONTEXT h.pane.gview.handle.captureweight   "Capture Weight Handle"	"These keys apply to the Capture Weight handle."
+HCONTEXT h.pane.gview.handle.edit	"Edit Handle"			"These keys apply to the Edit handle."
+HCONTEXT h.pane.gview.handle.curvepoint	"Curve Point Handle"		"These keys apply to the Curve Point handle."
+HCONTEXT h.pane.gview.handle.bone	"Bone Handle"			"These keys apply to the Bone handle."
+HCONTEXT h.pane.gview.handle.pill	"Pill Handle"			"These keys apply to the Pill handle."
+HCONTEXT h.pane.gview.handle.floor	"C-Plane Handle"		"These keys apply to the Construction Plane handle."
+HCONTEXT h.pane.gview.handle.slider	"Slider Handle"			"These keys apply to the Slider handle."
+HCONTEXT h.pane.gview.handle.softxform	"Soft Transform Handle"		"These keys apply to the Soft Transform handle."
+HCONTEXT h.pane.gview.handle.uvflattenpin	"UV Flatten Pin Handle"		"These keys apply to the UV Flatten Pin handle."
+HCONTEXT h.pane.gview.handle.uvrange	"UVRange Handle"		"These keys apply to the UVRange handle."
+HCONTEXT h.pane.gview.handle.uvproject	"UVProject Handle"		"These keys apply to the UVProject handle."
+HCONTEXT h.pane.gview.handle.bboxvector	"Bounding Box Vector Handle"	"These keys apply to the bounding box vector handle."
+HCONTEXT h.pane.gview.handle.bound	"Bound Handle"			"These keys apply to the Bound handle."
+HCONTEXT h.pane.gview.handle.hud	"HUD Handles"			"These keys apply the HUD handles."
+HCONTEXT h.pane.gview.handle.camera	"Camera Handle"			"These keys apply to the Camera handle."
+HCONTEXT h.pane.gview.handle.objblend	"Blend Handle"			"These keys apply to the Blend handle."
+HCONTEXT h.pane.gview.handle.agentcollisionlayer	"Agent Collision Layer Handle"	"These keys apply to the Agent Collision Layer handle."
+HCONTEXT h.pane.gview.handle.agentconfigurejoints       "Agent Configure Joints Handle"	"These keys apply to the Agent Configure Joints handle."
+HCONTEXT h.pane.gview.handle.light	"Light Handle"			"These keys apply to the Light handle."
+HCONTEXT h.pane.gview.handle.crosshair	"Crosshair Handle"		"These keys apply to the Crosshair handle."
+HCONTEXT h.pane.gview.handle.cone	"Cone Handle"			"These keys apply to the Cone handle."
+
+// Common PI menu commands
+// -----------------------
+h.pane.gview.handle.display			"Display"					"Display handle"
+h.pane.gview.handle.persistent			"Persistent"					"Make handle persistent"
+h.pane.gview.handle.bound_opparms		"Operator Parameter Dialog"			"Open operator parameter dialog"
+h.pane.gview.handle.export_parms		"Export Parameters to Type Properties"		"Create parameters in the Type Properties dialog"
+h.pane.gview.handle.export_handle		"Export Handle to Type Properties"		"Create a handle binding in the Type Properties dialog"
+h.pane.gview.handle.handle_parms		"Handle Parameter Dialog"			"Open handle parameter dialog"
+h.pane.gview.handle.anim_opparms		"Animatable Parameters"				"Animatable operator parameters"
+h.pane.gview.handle.step_to_prev_key		"Step To Previous Key"				"Step to previous keyframe"
+h.pane.gview.handle.step_to_next_key		"Step To Next Key"				"Step to next keyframe"
+h.pane.gview.handle.set_keyframe		"Add Keyframe"					"Add a keyframe"		Cmd+K
+h.pane.gview.handle.remove_keyframe		"Remove Keyframe"				"Remove a keyframe"		Cmd+Shift+K
+h.pane.gview.handle.scope_append_channels	"Scope Append Channels"				"Scope append channels" 
+h.pane.gview.handle.scope_channels		"Scope Channels"				"Scope channels"
+h.pane.gview.handle.delete_channels		"Delete Channels"				"Delete channels"
+h.pane.gview.handle.lock_channels		"Lock Channels"					"Lock channels"
+h.pane.gview.handle.lock_parms			"Lock Parameters"				"Lock parameters"
+h.pane.gview.handle.revert_defaults		"Revert To Defaults"				"Revert to defaults"
+h.pane.gview.handle.revert_factory_defaults	"Revert To And Restore Factory Defaults"	"Revert to and restore factory defaults"
+h.pane.gview.handle.overwrite_defaults		"Make Current Values Default"			"Make current values default"
+h.pane.gview.handle.cycle_mode			"Cycle Handle Mode"				"Cycle through the different modes of the handle"   Y
+h.pane.gview.handle.reverse_cycle_mode			"Reverse Cycle Handle Mode"		"Cycle through the different modes of the handle in reverse"   Shift+Y
+
+// Extrude
+// -------
+h.pane.gview.handle.extrude.togglelocalglobal	"Toggle Local/Global Control" "Toggle local/global extrusion control"
+
+// Xform/Rotate/Pivot
+// ------------------
+h.pane.gview.handle.xform.handle_visibility 			"Visibility"				"Toggle handle visibility"
+h.pane.gview.handle.xform.handle_geometry_detachment		"Toggle Handle-Geometry Detachment"	"Toggle handle-geometry detachment"	\'
+h.pane.gview.handle.xform.project_pivot_on_cplane		"Project Pivot Onto C-Plane"		"Project pivot onto construction plane"
+h.pane.gview.handle.xform.move_pivot_to_selection_origin	"Move Pivot To Selection Origin"	"Move pivot to selection origin"
+h.pane.gview.handle.xform.move_pivot_to_world_origin		"Move Pivot To World Origin"		"Move pivot to world origin"
+h.pane.gview.handle.xform.move_pivot_to_cplane_origin		"Move Pivot To C-Plane Origin"		"Move pivot to construction plane origin"
+h.pane.gview.handle.xform.align_with_world_axes			"Align With World Axes"			"Align with world axes"
+h.pane.gview.handle.xform.align_with_cplane_axes		"Align With C-Plane Axes"		"Align with construction plane axes"
+h.pane.gview.handle.xform.toggle_gimbal_mode			"Toggle Gimbal Mode"			"Toggle Gimbal Mode"
+h.pane.gview.handle.xform.show_xy_translate_plane		"Show XY Translate Plane"		"Show XY Translate Plane"
+h.pane.gview.handle.xform.show_xz_translate_plane		"Show XZ Translate Plane"		"Show XZ Translate Plane"
+h.pane.gview.handle.xform.show_yz_translate_plane		"Show YZ Translate Plane"		"Show YZ Translate Plane"
+h.pane.gview.handle.xform.clear_translate_plane			"Clear Translate Plane"			"Clear Translate Plane"
+h.pane.gview.handle.xform.click_orient				"Start Orientation Picking"		"Start clicking to orient handle"
+h.pane.gview.handle.xform.cancel_click_orient			"Cancel Orientation Picking"		"Cancel orienting the handle by clicking"
+h.pane.gview.handle.xform.toggle_follow_selection		"Handle Follows Group"		        "Toggle handle follows group"
+h.pane.gview.handle.xform.cycle_alignment			"Cycle Handle Alignment"		"Cycle handle alignment among object, world, viewport and parent axes"	M
+h.pane.gview.handle.xform.reverse_cycle_alignment		"Reverse Cycle Handle Alignment"		"Cycle handle alignment among object, world, viewport and parent axes in reverse"	Shift+M
+h.pane.gview.handle.xform.pivot_mode		"Pivot Mode"		        "Toggle pivot mode"				\" Insert
+h.pane.gview.handle.xform.snap_pivot		"Snap to Pivot"		        "Snap handle to pivot"
+h.pane.gview.handle.xform.snap_centroid		"Snap to Centroid"		        "Snap handle to centroid"
+h.pane.gview.handle.xform.key_translate		"Key Translates"		        "Set keyframe on translates"	Shift+T
+h.pane.gview.handle.xform.key_rotate		"Key Rotates"		        "Set keyframe on rotates"   Shift+R
+h.pane.gview.handle.xform.key_scale		"Key Scales"		        "Set keyframe on scales"    Shift+E
+
+// Vector
+// ------
+h.pane.gview.handle.vector.reverse_direction	"Reverse Direction" "Reverse handle direction"
+h.pane.gview.handle.vector.align_x		"Align With X Axis" "Align with X axis"
+h.pane.gview.handle.vector.align_y		"Align With Y Axis" "Align with Y axis"
+h.pane.gview.handle.vector.align_z		"Align With Z Axis" "Align with Z axis"
+h.pane.gview.handle.vector.move_pivot_to_centroid "Move pivot to centroid"	    "Move pivot to selection centroid"
+
+// Project
+// -------
+h.pane.gview.handle.project.align_normal	"Align With Primitive Normal" "Align with primitive normal"
+
+// Joint
+// -----
+h.pane.gview.handle.joint.align			"Align To Parent Bone"			"Align to parent bone"
+h.pane.gview.handle.joint.delete		"Delete Joint"			"Delete joint"
+h.pane.gview.handle.joint.orient_cplane		"Orient Bone To C-Plane"	"Orient bone to construction plane"
+h.pane.gview.handle.joint.indirect_drag_use_closest		"Use Closest Joint for Indirect Drag"	"Use closest joint for indirect drag"
+
+// Path
+// ----
+h.pane.gview.handle.path.delete			"Delete Point"			"Delete Point"
+h.pane.gview.handle.path.indirect_drag_use_closest		"Use Closest Point for Indirect Drag"	"Use closest point for indirect drag"
+
+// FollowPath
+h.pane.gview.handle.followpath.slide_in_domain	"Slide in Parameter Domain"	"Handle incrementally changes domain parameter rather than intersecting ray with path"
+h.pane.gview.handle.followpath.key_u		"Key U Parameter"		"Set keyframe on the u parameter that defines a point on a path"	
+h.pane.gview.handle.followpath.key_roll		"Key Roll Parameter"		"Set keyframe on the roll parameter that defines a twist around a path"	
+
+// MultiXform
+// ----------
+h.pane.gview.handle.multixform.toggleparenting	"Ignore Parenting" "Ignore parenting"
+h.pane.gview.handle.multixform.globalcontrol	"Global Control" "Global Control"
+
+// IKEnd
+// -------
+h.pane.gview.handle.ikend.timeinterest		"Maintain Locks When Time Changes" "Maintain locks when time changes"
+h.pane.gview.handle.ikend.showtwist		"Show Twist Handle" "Show the twist component of the Pose handle"
+h.pane.gview.handle.ikend.showbone		"Show Bone Handle" "Show the bone component of the Pose handle"
+h.pane.gview.handle.ikend.showblend		"Show Blend Handle" "Show the blend component of the Pose handle"
+h.pane.gview.handle.ikend.autosnap		"Auto-Snap IK/Rotates" "Automatically snap bone rotates and IK together"
+h.pane.gview.handle.ikend.snap_ik		"Snap to IK" "Snap bone rotates to IK solution"
+h.pane.gview.handle.ikend.snap_rotates		"Snap to Rotates" "Snap IK end affector to bone rotates"
+
+// CaptureWeight
+// -------------
+h.pane.gview.handle.captureweight.clampneg	"Clamp Negative Weights"	    "Clamp negative weights to zero"
+h.pane.gview.handle.captureweight.normalize	"Normalize Weights"	    "Normalize weights after modification"
+
+// IKPivot
+// -------
+h.pane.gview.handle.ikpivot.togglelock		"Lock Joint" "Lock joint"
+
+// Edit
+// ----
+h.pane.gview.handle.edit.peak			"Toggle Peak Handle" "Toggle peak handle"	H
+
+// CurvePoint
+// ----------
+h.pane.gview.handle.curvepoint.unref		"Break Current Point Dependency" "Break current point dependency"
+h.pane.gview.handle.curvepoint.indirect_drag_use_closest		"Use Closest Point for Indirect Drag"	"Use closest point for indirect drag"
+
+// Bone
+// ----
+
+// Pill
+// ----
+h.pane.gview.handle.pill.show_opaque		"Toggle Opaque Display" "Toggle opaque display"	Shift+O
+
+// Floor
+// -----
+h.pane.gview.handle.floor.drop_elevation	"Erase C-Plane Elevation"		"Erase the construction plane elevation"	
+h.pane.gview.handle.floor.flip_elevation	"Flip C-Plane Elevation"		"Flip the construction plane elevation"	
+h.pane.gview.handle.floor.flip_normal		"Flip C-Plane Normal"			"Flip the construction plane normal"	
+h.pane.gview.handle.floor.x_normal		"Align Normal with World X Axis"	"Align normal with world X axis"	
+h.pane.gview.handle.floor.y_normal		"Align Normal with World Y Axis"	"Align normal with world Y axis"	
+h.pane.gview.handle.floor.z_normal		"Align Normal with World Z Axis"	"Align normal with world Z axis"	
+h.pane.gview.handle.floor.n_up_vector		"Align Up-Vector With C-Plane Normal"	"Align up-vector with construction plane normal"	
+h.pane.gview.handle.floor.viewing_plane		"Align C-Plane With Viewing Plane"	"Align construction plane with viewing plane"	
+h.pane.gview.handle.floor.x_normal_center	"Center C-Plane Around World X Axis"	"Center construction plane around world X axis"	
+h.pane.gview.handle.floor.y_normal_center	"Center C-Plane Around World Y Axis"	"Center construction plane around world Y axis"	
+h.pane.gview.handle.floor.z_normal_center	"Center C-Plane Around World Z Axis"	"Center construction plane around world Z axis"	
+h.pane.gview.handle.floor.front_plane		"Flip C-Plane Front"			"Flip construction plane to front"	
+h.pane.gview.handle.floor.back_plane		"Flip C-Plane Back"			"Flip construction plane to back"	
+h.pane.gview.handle.floor.left_plane		"Flip C-Plane Left"			"Flip construction plane to left"	
+h.pane.gview.handle.floor.right_plane		"Flip C-Plane Right"			"Flip construction plane to right"	
+h.pane.gview.handle.floor.home_plane_geo	"Home On Geometry"			"Home on geometry"	
+h.pane.gview.handle.floor.home_plane_sel	"Home On Selected Geometry"		"Home on selected geometry"
+h.pane.gview.handle.floor.frame_plane_geo	"Frame On Geometry"			"Frame on geometry"	
+h.pane.gview.handle.floor.frame_plane_sel	"Frame On Selected Geometry"		"Frame on selected geometry"
+h.pane.gview.handle.floor.revertdefaults	"Revert to Defaults"			"Revert to defaults"
+h.pane.gview.handle.floor.parameters		"Parameters"				"Parameters"
+h.pane.gview.handle.floor.click_orient		"Start Orientation Picking"		"Start clicking to orient construction plane"
+h.pane.gview.handle.floor.cancel_click_orient	"Cancel Orientation Picking"		"Cancel orienting the construction plane by clicking"
+
+// Slider
+// ------
+h.pane.gview.handle.slider.absolute		"Absolute Mode"				"Operate in absolute mode"
+
+// SoftXform
+// ------
+h.pane.gview.handle.softxform.togglelocalspace	"Local Space"				"Toggles the local space mode"
+
+// UVFlattenPin
+// ----
+h.pane.gview.handle.uvflattenpin.indirect_drag_use_closest		"Use Closest Pin for Indirect Drag"	"Use closest pin for indirect drag"
+
+// UVProject
+// ---------
+h.pane.gview.handle.uvproject.proj		"Show Projection Geometry"		"Show the projection geometry"
+
+// UVRange
+// -------
+h.pane.gview.handle.uvrange.proj		"Show Projection Geometry"		"Show the projection geometry"
+
+// Bounding Box Vector
+// -------------------
+h.pane.gview.handle.bboxvector.posx		"Align to bounding box +X"		"Align handle to positive X axis of geometry bounding box"
+h.pane.gview.handle.bboxvector.negx		"Align to bounding box -X"		"Align handle to negative X axis of geometry bounding box"
+h.pane.gview.handle.bboxvector.posy		"Align to bounding box +Y"		"Align handle to positive Y axis of geometry bounding box"
+h.pane.gview.handle.bboxvector.negy		"Align to bounding box -Y"		"Align handle to negative Y axis of geometry bounding box"
+h.pane.gview.handle.bboxvector.posz		"Align to bounding box +Z"		"Align handle to positive Z axis of geometry bounding box"
+h.pane.gview.handle.bboxvector.negz		"Align to bounding box -Z"		"Align handle to negative Z axis of geometry bounding box"
+
+// Bound
+// -----
+h.pane.gview.handle.bound.move_centroid		"Move to geometry centroid"		"Move pivot to the centroid of the geometry"
+
+// HUD
+// ---
+h.pane.gview.handle.hud.namenone		"Name: None"				"Disable the name display"
+h.pane.gview.handle.hud.nameleft		"Name: Left"				"Display the name left"
+h.pane.gview.handle.hud.nameright		"Name: Right"				"Display the name right"
+h.pane.gview.handle.hud.nametop			"Name: Top"				"Display the name top"
+h.pane.gview.handle.hud.namebottom		"Name: Bottom"				"Display the name on bottom"
+
+h.pane.gview.handle.hud.valuenone		"Value: None"				"Disable the value display"
+h.pane.gview.handle.hud.valueleft		"Value: Left"				"Display the value left"
+h.pane.gview.handle.hud.valueright		"Value: Right"				"Display the value right"
+h.pane.gview.handle.hud.valuetop		"Value: Top"				"Display the value top"
+h.pane.gview.handle.hud.valuebottom		"Value: Bottom"				"Display the value on bottom"
+
+h.pane.gview.handle.hud.docked			"Docked"				"Is the handle docked?"
+h.pane.gview.handle.hud.locked			"Locked"				"Is the handle locked?"
+
+// Camera
+// ------
+h.pane.gview.handle.camera.orienthandle		"Orient Handle"				"Display the orientation handle"    O
+h.pane.gview.handle.camera.slidehandle		"Focus Handle"				"Display the focus handle"	    Z
+h.pane.gview.handle.camera.frustumhandle	"Frustum Handle"			"Display the frustum handle"	    F
+h.pane.gview.handle.camera.crophandle		"Crop Handle"				"Display the crop handle"	    
+h.pane.gview.handle.camera.disable_clipping	"Disable Frustum Clipping"		"Disable frustum clipping"
+h.pane.gview.handle.camera.full_clipping	"Full Frustum Clipping"		"Clip to full frustum"
+h.pane.gview.handle.camera.focus_clipping	"Focus Frustum Clipping"		"Clip to focus frustum"
+h.pane.gview.handle.camera.gimbal		"Gimbal Mode"		"Toggle gimbal mode for camera orienter"
+h.pane.gview.handle.camera.anchor		"Anchor Orientation Handles"		"Toggle anchor mode for camera orienters"
+
+// ObjBlend
+// --------
+h.pane.gview.handle.objblend.blendweights	"Blend Weights"				"Blend by using weights"
+h.pane.gview.handle.objblend.sequence		"Blend Sequence"			"Blend by using sequence"
+h.pane.gview.handle.objblend.constrain		"Blend Constrain"			"Blend using constrain type"
+
+// Agent Collision Layer
+// ---------
+h.pane.gview.handle.agentcollisionlayer.boxhandle		"Box Handle"				"Display the box handle"            B
+h.pane.gview.handle.agentcollisionlayer.orientationhandle	"Orientation Handle"			"Display the orientation handle"    O
+
+// Agent Configure Joints
+// ---------
+h.pane.gview.handle.agentconfigurejoints.conerotationhandle     "Cone Rotation Handle"  "Display the cone rotation handle"      	O
+h.pane.gview.handle.agentconfigurejoints.childrotationhandle	"Child Rotation Handle" "Display the child rotation handle"		Shift+O
+h.pane.gview.handle.agentconfigurejoints.conehandle		"Cone Handle" 		"Display the cone handle"     			F
+h.pane.gview.handle.agentconfigurejoints.twisthandle		"Twist Handle" 		"Display the twist handle"     			Z
+
+// Light
+// -----
+h.pane.gview.handle.light.orienthandle		"Orient Handle"				"Display the orientation handle"    O
+h.pane.gview.handle.light.conehandle		"Cone Handle"				"Display the cone handle"	    Z
+h.pane.gview.handle.light.frustumhandle		"Frustum Handle"			"Display the frustum handle"	    F
+h.pane.gview.handle.light.linkcone		"Link Cone and Frustum"		"Link cone and frustum parameters"
+h.pane.gview.handle.light.gimbal		"Gimbal Mode"				"Toggle gimbal mode for light orienter"
+h.pane.gview.handle.light.anchor		"Anchor Orientation Handles"		"Toggle anchor mode for light orienters"
+
+// Crosshair
+// ---------
+h.pane.gview.handle.crosshair.global_default	"Transform Globally by Default"		"Transform globally instead of locally"
+
+// Cone
+// ----
+h.pane.gview.handle.cone.increase_radius	"Increase Radius"			"Increase the radius of the cone handle"	>
+h.pane.gview.handle.cone.decrease_radius	"Decrease Radius"			"Decrease the radius of the cone handle"	<

@@ -1,0 +1,153 @@
+//
+// Keys for sop states
+//
+
+HCONTEXT h.pane.gview.state.sop			"Modeling (SOP) Operations"	"These keys apply to the Modeling operations."
+HCONTEXT h.pane.gview.state.sop.curve		"Curve Operation"		"These keys apply to the Curve operation."
+HCONTEXT h.pane.gview.state.sop.polyknit	"PolyKnit Operation"		"These keys apply to the PolyKnit operation."
+HCONTEXT h.pane.gview.state.sop.polysplit2	"PolySplit Operation" 		"These keys apply to the PolySplit operation."
+HCONTEXT h.pane.gview.state.sop.brush		"Brush Operations"		"These keys apply to all Brush operations."
+HCONTEXT h.pane.gview.state.sop.edit		"Edit Operation"		"These keys apply to the Edit operation."
+HCONTEXT h.pane.gview.state.sop.view		"View Operation"		"These keys apply to the View operation."
+HCONTEXT h.pane.gview.state.sop.uvpelt		"Pelt Operation"		"These keys apply to the Pelt operation."
+HCONTEXT h.pane.gview.state.sop.brush.sculpt	"Sculpt Operation"		"These keys apply to the Sculpt operation."
+HCONTEXT h.pane.gview.state.sop.brush.paint	"Paint Operation"		"These keys apply to the Paint operation."
+HCONTEXT h.pane.gview.state.sop.polyextrude2	"PolyExtrude Operation"		"These keys apply to the PolyExtrude operation."
+HCONTEXT h.pane.gview.state.sop.stroke.paint	"Stroke Operation"		"These keys apply to the Stroke operation."
+HCONTEXT h.pane.gview.state.sop.uvedit		"UVEdit Operation"		"These keys apply to the UVEdit operation."
+HCONTEXT h.pane.gview.state.sop.uvflatten	"UVFlatten Operation"		"These keys apply to the UV Flatten operation."
+HCONTEXT h.pane.gview.state.sop.agentcollisionlayer	"Agent Collision Layer Operation"	"These keys apply to the Agent Collision Layer operation."
+HCONTEXT h.pane.gview.state.sop.agentconfigurejoints	"Agent Configure Joints Operation"	"These keys apply to the Agent Configure Joints operation."
+HCONTEXT h.pane.gview.state.sop.topobuild	"TopoBuild Operation"	"These keys apply to the TopoBuild operation."
+
+// Face State
+// ----------
+h.pane.gview.state.sop.curve.bezier		"Bezier Curve"				"Create a Bezier curve"
+h.pane.gview.state.sop.curve.nurbs		"NURBS Curve"				"Create a NURBS curve"
+h.pane.gview.state.sop.curve.polygon		"Polygon"				"Create a polygon"
+h.pane.gview.state.sop.curve.breakpoints	"Create With Breakpoints"		"Build the curve with breakpoints"
+h.pane.gview.state.sop.curve.cvs		"Create With CVs"			"Build the curve with control vertices"
+h.pane.gview.state.sop.curve.freehand		"Freehand Draw"				"Build the curve using freehand drawing"
+h.pane.gview.state.sop.curve.toggleopen		"Close Curve"				"Toggle open/close curve"
+h.pane.gview.state.sop.curve.transfloor		"Translate C-Plane To Last Point In Face" "Translate c-plane to curve's last point"
+h.pane.gview.state.sop.curve.relpoints		"Build Using Relative Points"		"Build the curve using relative coordinates"
+h.pane.gview.state.sop.curve.convertrefs	"Convert All References To Coordinates"	"Convert all references to coordinates"
+
+// PolyKnit State
+// --------------
+h.pane.gview.state.sop.polyknit.locate		"Show Position Feedback"		"Locate cursor"
+
+// Pelt Selector
+// -------------
+h.pane.gview.state.sop.uvpelt.visualize		"Visualize Pelted Mesh"		"Visualize pelted area with boundary"		G
+
+// PolySplit State
+// ---------------
+h.pane.gview.state.sop.polysplit2.showfeedback	"Show Position Feedback"		"Locate cursor"
+h.pane.gview.state.sop.polysplit2.snapmidpoint	"Snap To Edge Midpoint"			"Snap to edge midpoint"
+h.pane.gview.state.sop.polysplit2.snapperp	"Snap To Perpendicular"			"Snap to perpendicular"
+h.pane.gview.state.sop.polysplit2.subdivtoggle	"Toggle Snapping to Subdivisions"	"Toggle snapping to subdivisions along edges"
+h.pane.gview.state.sop.polysplit2.toggleopen	"Toggle Close Path"			"Toggle close path"
+h.pane.gview.state.sop.polysplit2.allowfaces	"Allow Split Points on Faces"		"Toggle whether or not split points on faces can be added"
+h.pane.gview.state.sop.polysplit2.togglequadcomp	"Toggle Quad Autocompletion"	"Toggle automatically completing quads" 
+h.pane.gview.state.sop.polysplit2.toggleedgepercent	"Toggle Edge Percentage"	"Toggle overriding edge percentage"
+
+// Stroke state
+// ------------
+h.pane.gview.state.sop.stroke.realtime		"Realtime Updates"			"Realtime Updates"
+
+// All Brush States
+// ----------------
+h.pane.gview.state.sop.brush.circle		"Circle Brush"				"Circle brush"
+h.pane.gview.state.sop.brush.square		"Square Brush"				"Square brush"
+h.pane.gview.state.sop.brush.bitmap		"Bitmap Brush"				"Bitmap brush"
+h.pane.gview.state.sop.brush.orient		"Orient Brush To Surface"		"Toggle orientation of brush to surface"
+h.pane.gview.state.sop.brush.accumstencil	"Accumulate To Stencil"			"Accumulate current changes to stencil"
+h.pane.gview.state.sop.brush.p_main		"Tie Main Brush To Primary Button"	"Tie Main Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.s_main		"Tie Main Brush To Secondary Button"	"Tie Main Brush To Secondary Mouse Button"
+h.pane.gview.state.sop.brush.p_smooth		"Tie Smooth Brush To Primary Button"	"Tie Smoothing Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.s_smooth		"Tie Smooth Brush To Secondary Button"	"Tie Smoothing Brush To Secondary Mouse Button"
+h.pane.gview.state.sop.brush.p_erase		"Tie Eraser Brush To Primary Button"	"Tie Eraser Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.s_erase		"Tie Eraser Brush To Secondary Button"	"Tie Eraser Brush To Secondary Mouse Button"
+h.pane.gview.state.sop.brush.p_lift		"Tie Lift Brush To Primary Button"	"Tie Lift Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.s_lift		"Tie Lift Brush To Secondary Button"	"Tie Lift Brush To Secondary Mouse Button"
+h.pane.gview.state.sop.brush.p_rotate		"Tie Rotate Brush To Primary Button"	"Tie Rotate Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.s_rotate		"Tie Rotate Brush To Secondary Button"	"Tie Rotate Brush To Secondary Mouse Button"
+
+// Brush/Sculpt State
+// ------------------
+h.pane.gview.state.sop.brush.sculpt.p_smdef	"Tie Smooth-Deform Brush To Primary Button"	"Tie Smooth-Deform Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.sculpt.s_smdef	"Tie Smooth-Deform Brush To Secondary Button"	"Tie Smooth-Deform Brush To Secondary Mouse Button"
+
+// Brush/Paint State
+// -----------------
+h.pane.gview.state.sop.brush.paint.p_eyedrop	"Tie Eye-Dropper Brush To Primary Button"	"Tie Eye-Dropper Brush To Primary Mouse Button"
+h.pane.gview.state.sop.brush.paint.s_eyedrop	"Tie Eye-Dropper Brush To Secondary Button"	"Tie Eye-Dropper Brush To Secondary Mouse Button"
+
+// Misc Brush States
+// -----------------
+h.pane.gview.state.sop.brush.p_callback		"Tie Callback Brush to Primary Button"		"Tie Callback Brush to Primary Mouse Button"
+h.pane.gview.state.sop.brush.s_callback		"Tie Callback Brush to Secondary Button"	"Tie Callback Brush to Secondary Mouse Button"
+
+
+// Brush/PaintCaptureLayer State
+// -----------------------------
+h.pane.gview.state.sop.brush.p_smoothlayer	"Smooth Layer"		"Smooth Layer"
+h.pane.gview.state.sop.brush.s_smoothlayer	"Smooth Layer"		"Smooth Layer"
+h.pane.gview.state.sop.brush.p_smoothsingle	"Smooth Single Bone"	"Smooth Single Bone"
+h.pane.gview.state.sop.brush.s_smoothsingle	"Smooth Single Bone"	"Smooth Single Bone"
+h.pane.gview.state.sop.brush.p_reduce		"Reduce"		"Reduce"
+h.pane.gview.state.sop.brush.s_reduce		"Reduce"		"Reduce"
+h.pane.gview.state.sop.brush.p_erasesingle	"Erase Single Bone"	"Erase Single Bone"
+h.pane.gview.state.sop.brush.s_erasesingle	"Erase Single Bone"	"Erase Single Bone"
+
+// Edit State
+// ----------
+h.pane.gview.state.sop.edit.brush		"Brush Handle"				"Brush handle"					B
+h.pane.gview.state.sop.edit.slide		"Toggle Sliding"			"Toggle sliding"				L
+h.pane.gview.state.sop.edit.flatten		"Flatten selection to c-plane"		"Flatten the selection to the construction plane"
+h.pane.gview.state.sop.edit.circle	    	"Make circle"				"Make circle"					Shift+C
+h.pane.gview.state.sop.edit.spacing		"Space selection"			"Space selection"				Shift+E
+h.pane.gview.state.sop.edit.straighten	    	"Straighten selection"			"Straighten selection"				Shift+S
+
+// UVEdit State
+// ------------
+h.pane.gview.state.sop.uvedit.toggle_sew	"Sew Edges"				"Toggle Sew Vertex UVs"
+
+// UVFlatten State
+// ------------
+h.pane.gview.state.sop.uvflatten.mode		"Cycle Selection Mode"				"Cycle selection mode through pins, vertices and cuts"
+h.pane.gview.state.sop.uvflatten.flatten_u	"Flatten Selection to Average U"				"Flatten pin selection to average U value"
+h.pane.gview.state.sop.uvflatten.flatten_v	"Flatten Selection to Average V"				"Flatten pin selection to average V value"
+
+// PolyExtrude 2.0 State
+//----------------------
+
+h.pane.gview.state.sop.polyextrude2.toggle_xform	"Toggle Front Transform"	"Enable/disable transforming of the extruded front"		F
+h.pane.gview.state.sop.polyextrude2.toggle_mode		"Toggle Extrusion Mode"		"Switch between Primitive/Edge normal and Point normal modes"	M
+
+// Agent Collision Layer State
+// ---------------------------
+h.pane.gview.state.sop.agentcollisionlayer.mode	"Cycle Collision Shape"			"Cycle collision shape through box, capsule and sphere"	Z
+
+// Agent Configure Joints State
+// ----------------------------
+h.pane.gview.state.sop.agentconfigurejoints.initlimits   "Initialize Joint Limits"  "Compute initial joint limits from the agent's animation clips."	Shift+C
+
+// TopoBuild State
+// ---------------
+h.pane.gview.state.sop.topobuild.build		"Build Mode"		"Switch to build mode."			Shift+1
+h.pane.gview.state.sop.topobuild.split		"Split Mode"		"Switch to split mode."		    	Shift+2
+h.pane.gview.state.sop.topobuild.brush		"Brush Mode"		"Switch to brush mode."		    	Shift+3
+h.pane.gview.state.sop.topobuild.smooth		"Smooth Mode"		"Switch to smooth mode."		Shift+4
+h.pane.gview.state.sop.topobuild.circle	    	"Make circle"		"Make circle."				Shift+C
+h.pane.gview.state.sop.topobuild.spacing	"Space selection"	"Space selection."			Shift+E
+h.pane.gview.state.sop.topobuild.straighten	"Straighten selection"	"Straighten selection."			Shift+S
+
+// View State
+// ----------
+h.pane.gview.state.sop.view.home_cplane		"Home C-Plane"				"Home on the construction plane"	H
+h.pane.gview.state.sop.view.frame_cplane	"Frame C-Plane"				"Frame in the construction plane"	F
+
+// State Entry Hotkeys
+// -------------------

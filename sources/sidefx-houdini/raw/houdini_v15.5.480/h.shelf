@@ -1,0 +1,4 @@
+// shelf controls
+
+HCONTEXT h.shelf "Shelf" "These hotkeys affect the shelf"
+

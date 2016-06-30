@@ -1,0 +1,28 @@
+//
+// Keys for cop2 states
+//
+
+HCONTEXT h.pane.imgui.state		"Compositing Operations"	"These keys apply to all Compositing operations."
+
+HCONTEXT h.pane.imgui.state.cop		"Compositing (COP2) Operations"	"These keys apply to the Compositing operations."
+
+h.pane.imgui.state.cop.complete		"Complete Current Operation" 	"Complete current operation" Enter
+
+# Rotospline
+
+h.pane.imgui.state.cop.rotodeletepoint	"Delete Last Point" "Delete last point" Del
+h.pane.imgui.state.cop.rotodeletestroke "Delete Last Stroke" "Delete last stroke" Shift+Del
+
+h.pane.imgui.state.cop.rotonew    "Create New Curve" "Create new curve" N
+h.pane.imgui.state.cop.rotocancel "Cancel New Curve" "Cancel new curve" Esc
+h.pane.imgui.state.cop.rotoshowall "Show Current/All Curve Handles" "show current/all curve handles" B
+
+
+# Chromakey and Lumakey
+h.pane.imgui.state.cop.keyselectcolor	"Select Key Color" "Select key color" O
+h.pane.imgui.state.cop.keyaddtocolor	"Add To Key Color" "Add to key color" Shift+O
+h.pane.imgui.state.cop.keyselectspill	"Select Spill Color" "Select spill color" L
+h.pane.imgui.state.cop.keyaddtospill	"Add To Spill Color" "Add to spill color" Shift+L
+
+# Unpin
+h.pane.imgui.state.cop.unpinedit	"Edit Unpin" "Edit unpin" E

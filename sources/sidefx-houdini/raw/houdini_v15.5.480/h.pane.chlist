@@ -1,0 +1,75 @@
+//
+// Channel list definitions
+//
+
+HCONTEXT h.pane.chlist		"Channel List"			"These keys apply to the channel list pane."
+h.pane.chlist.show_channels	"Open Channel Chooser"		"Open channel chooser"			Cmd+1
+h.pane.chlist.show_groups	"Open Group List"		"Open channel group list"		Cmd+2 X
+h.pane.chlist.show_layers	"Open Layer List"		"Open layer list"			Cmd+3
+h.pane.chlist.show_parmbox	"Open Parameter List"		"Open parameter list"			Cmd+4
+
+//
+// Channel chooser keys
+//
+HCONTEXT h.pane.chlist.ch	"Channel Chooser"		"These keys apply to the channel chooser in the channel list."
+
+//
+// Parm box keys
+//
+
+HCONTEXT h.pane.chlist.parmbox		"Parameter Box"		"These keys apply to the parameter box in the channel list."
+h.pane.chlist.parmbox.mode		"Toggle Mode"	"Toggle mode"	M
+h.pane.chlist.parmbox.show_pin		"Show Pin Status Column"	"Show pin status column"	Cmd+P
+h.pane.chlist.parmbox.show_mute		"Show Mute Column"	"Show mute column"	
+h.pane.chlist.parmbox.show_solo		"Show Solo Column"	"Show solo column"	
+h.pane.chlist.parmbox.show_values	"Show Value Column"	"Show value column"	V
+h.pane.chlist.parmbox.fnames		"Full Channel Names"	"Show full channel names"	
+h.pane.chlist.parmbox.followrefs	"Follow Scoped Channel References"	"Follow Scoped Channel References"	
+h.pane.chlist.parmbox.parmlabels	"Use Parm Labels"	"Use parm labels instead of channel names"	L
+h.pane.chlist.parmbox.nodeheaders	"Show Node Headers"	"Show node headers"	H
+h.pane.chlist.parmbox.selectall		"Select All"		"Select all parameter values"		A Cmd+A
+h.pane.chlist.parmbox.selectnone	"Select None"		"Clear parameter value selection"	Cmd+Shift+A
+h.pane.chlist.parmbox.displayall	"Display All"		"Display all scoped channels"		D Cmd+D
+h.pane.chlist.parmbox.displaynone	"Display None"		"Clear displayed channels"		Shift+D
+h.pane.chlist.parmbox.keyselected	"Key Selected"		"Key selected channels"		Cmd+K
+h.pane.chlist.parmbox.togexpall		"Toggle Expand on All"		"Toggle expand on all channels"			Shift+E
+h.pane.chlist.parmbox.togexpnodes	"Toggle Expand on All Node Headers"	"Toggle expand on all node headers"		Shift+H
+h.pane.chlist.parmbox.togexp		"Toggle Expand on Channel(s)"	"Toggle expand on selected channels"		E
+h.pane.chlist.parmbox.togpinall		"Toggle Pinning on All"		"Toggle pinning on all channels"		Shift+P
+h.pane.chlist.parmbox.togpin		"Toggle Pinning on Channel(s)"	"Toggle pinning on selected channels"		P
+h.pane.chlist.parmbox.scopeonlyselected	"Scope Only Selected"	"Scope Only Selected and pinned channels"	
+h.pane.chlist.parmbox.unscopeselected	"Unscope Selected"	"Unscope selected and unpinned channels"	
+h.pane.chlist.parmbox.unscope		"Unscope All"		"Unscope all unpinned channels"		C
+h.pane.chlist.parmbox.keyall		"Key All Scoped Channels"	"Key all scoped channels"	
+h.pane.chlist.parmbox.deleteall		"Delete All Scoped Channels"	"Delete all scoped channels"	
+h.pane.chlist.parmbox.removeallkeys	"Remove Keys From All Scoped Channels"	"Remove keys from all scoped channels"	
+h.pane.chlist.parmbox.displayedprops	"Displayed Channels Properties..."	"Edit channel properties on displayed channels"	 Alt+E
+h.pane.chlist.parmbox.scopedprops	"Scoped Channels Properties..."	"Edit channel properties on scoped channels"	 Cmd+E
+
+HCONTEXT h.pane.chlist.layers		"Layer List"			"These keys apply to the layer list box in the channel list."
+h.pane.chlist.layers.addlayer		"Add Layer to Layer Mixer"	"Add layer to layer mixer"
+h.pane.chlist.layers.addscopedchannels	"Add Scoped Channels to Layer Mixer"	"Add scoped channels to layer mixer's layers"
+h.pane.chlist.layers.removescopedchannels "Remove Scoped Channels from Layer Mixer"	"Remove scoped channels from layer mixer's layers"
+h.pane.chlist.layers.editchannels "Edit Layer Mixer Channels..."	"Edit the list of channels from a layer mixer"
+h.pane.chlist.layers.createlayermixer	"Create Layer Mixer"		"Create layer mixer"
+h.pane.chlist.layers.deletelayer	"Delete Layer"			"Delete layer"
+h.pane.chlist.layers.deletelayermixer	"Delete Layer Mixer and all its Layers"		"Delete layer mixer and all its layers"
+h.pane.chlist.layers.duplayer		"Duplicate and Mute Layer"	"Duplicate and mute layer"
+h.pane.chlist.layers.keyall		"Key All Scoped Layer Channels"	"Key All Scoped Layer Channels"
+h.pane.chlist.layers.mergedownlayer	"Merge Down Layer"		"Merge down Layer"
+h.pane.chlist.layers.mergelayermixer	"Merge all Layers from Layer Mixer" "Merge all Layers from Layer Mixer"
+h.pane.chlist.layers.movedown		"Move Layer Down"		"Move layer down"
+h.pane.chlist.layers.moveup		"Move Layer Up"			"Move layer up"
+h.pane.chlist.layers.renamelayer	"Rename Layer"			"Rename layer"
+h.pane.chlist.layers.scopelayerchannelsall "Scope Layer Channels"	"Scope layer channels"
+h.pane.chlist.layers.scopelayerchannels "Scope Layer Channels"		"Scope layer channels"
+h.pane.chlist.layers.setactivelayer	"Set as Active Layer"		"Set as active layer"
+h.pane.chlist.layers.togmute		"Toggle Mute"			"Toggle mute"
+h.pane.chlist.layers.togexpall		"Toggle Expand on All Layers"	"Toggle expand on all layers"
+h.pane.chlist.layers.togexp		"Toggle Expand"			"Toggle expand"
+h.pane.chlist.layers.togpinall		"Toggle Pinning on All Layers"	"Toggle pinning on all layers"
+h.pane.chlist.layers.togpin		"Toggle Pinning"		"Toggle pinning"
+h.pane.chlist.layers.togsolo		"Toggle Solo"			"Toggle solo"
+h.pane.chlist.layers.unscopelayerchannelsall "Unscope Layer Channels"	"Unscope layer channels"
+h.pane.chlist.layers.unscopelayerchannels "Unscope Layer Channels"	"Unscope layer channels"
+h.pane.chlist.layers.zerokey		"Zero-Key All Scoped Layer Channels"	"Zero-key all scoped layer channels"

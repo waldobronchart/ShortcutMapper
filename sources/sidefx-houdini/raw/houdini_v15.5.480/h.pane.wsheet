@@ -1,0 +1,107 @@
+//
+// Worksheet (network/list editor)
+//
+
+HCONTEXT h.pane.wsheet	"Network Editor"	"These keys apply to the Network Editor pane."
+
+// FUSE definitions
+// -----------------
+h.pane.wsheet.add_op		"Add Operator"			"Add Operator"				Tab Backspace
+h.pane.wsheet.color_palette	"Color Palette"			"Open color palette"			C
+h.pane.wsheet.overview		"Net Overview"			"Open network overview"			O
+h.pane.wsheet.descrparms	"Show Descriptive Parameters"	"Show descriptive parameters in the network"		
+h.pane.wsheet.convexhulls	"Show Convex Hulls"	"Show convex hulls in the network"		
+h.pane.wsheet.show_implicit	"Show Implicit Operators"	"Show implicit operators"		Shift+I
+h.pane.wsheet.frame		"Frame All"			"Frame all OP tiles"			
+h.pane.wsheet.frame_selected	"Frame Selected"		"Frame selected OP tiles"		F Shift+F
+h.pane.wsheet.home		"Home All"			"Home all OP tiles"			H
+h.pane.wsheet.home_selected	"Home Selected"			"Home selected OP tiles"		Shift+H G
+h.pane.wsheet.down		"Set Current Below"		"Set current below"			PageDown
+h.pane.wsheet.up		"Set Current Above"		"Set current above"			PageUp
+h.pane.wsheet.right		"Set Current Right"		"Set Current right"			Shift+PageDown .
+h.pane.wsheet.left		"Set Current Left"		"Set Current left"			Shift+PageUp ,
+h.pane.wsheet.desel_noncurrent	"Deselect All But Current"	"Deselect all but the current node in the network."
+h.pane.wsheet.layout_all	"Layout All"			"Layout all OP tiles"			Cmd+Shift+L L
+h.pane.wsheet.layout		"Layout Selected"		"Layout selected OP tiles"		Shift+L
+h.pane.wsheet.opnames		"Show Operator Names"		"Show operator names"			
+h.pane.wsheet.add_network	"Add Network"			"Add network"				
+h.pane.wsheet.opparms		"Open Parameters"		"Open OP parameter dialog"		P
+h.pane.wsheet.linkstyle		"Cycle Connection Style"	"Cycle connection style"		
+h.pane.wsheet.local_dep		"Show Local Dependency Links"	"Show local dependency links"
+h.pane.wsheet.child_input_dep	"Show Influence On Subnet Contents"	"Show influence on subnet contents"
+h.pane.wsheet.child_output_dep	"Show Dependency On Subnet Contents"	"Show dependency on subnet contents"
+h.pane.wsheet.external_input_dep	"Show References To External Nodes"	"Show references to external nodes"
+h.pane.wsheet.external_output_dep	"Show References From External Nodes"	"Show references from external nodes"
+h.pane.wsheet.end_affector_dep	"Show Links Between Bones and End Affectors"	"Show links from end affectors to the bones they affect"
+h.pane.wsheet.time_dep	"Show Time-Dependent Nodes"	"Highlight time-dependent nodes and input connections to time-dependent nodes"
+h.pane.wsheet.only_sel_dep	"Show Dependencies Only For Selectedion"	"Show dependencies only for selection nodes"
+h.pane.wsheet.dep_linkstyle	"Cycle Dependency Connection Style"	"Cycle dependency connection style"
+h.pane.wsheet.toolbar_edit	"Edit Toolbars"			"Edit toolbars"				
+h.pane.wsheet.mode_switch	"Switch To Worksheet/List"	"Switch between worksheet and list"	Shift+T
+h.pane.wsheet.updir		"Jump Up"			"Jump up to parent network"		U
+h.pane.wsheet.scope_chans	"Scope Channels"		"Scope channels"			V	// also in h.pane.group.ch
+h.pane.wsheet.delete_chans	"Delete Channels"		"Delete channels"
+h.pane.wsheet.create_channel_groups "Create Nested Channel Groups" "Create nested channel groups that correspond to parameter folders"
+h.pane.wsheet.add_group		"Add Group"			"Add OP group"				
+h.pane.wsheet.add_bundle	"Add Bundle"			"Add bundle"				
+h.pane.wsheet.open_groups	"Open Group List"		"Open OP group list"			
+h.pane.wsheet.open_treeview     "Open Tree Viewer"		"Open OP tree view"			Shift+W
+h.pane.wsheet.open_sidebar	"Open Tool Palette"		"Open TAB and gallery side bar"			
+h.pane.wsheet.previous_zoom	"Previous Zoom Level"		"Set the network zoom level to the previous setting"	
+h.pane.wsheet.align_all_to_grid	"Align All to Grid"		"Align all the tiles to the network grid"
+h.pane.wsheet.align_sel_to_grid "Align Selected to Grid"	"Align the selected tiles to the network grid"
+h.pane.wsheet.sort_order	"Cycle Sort Order"		"Cycle through the sort orders of the operator list"
+h.pane.wsheet.autowire		"Auto Wire"			"Does something automatic with wiring"
+h.pane.wsheet.addfileop		"Add File Operator"		"Adds a new File OP"	` =
+h.pane.wsheet.swap_inputs	"Reorder Selected Node Inputs"  "Reorders the inputs on selected nodes"		Shift+R
+h.pane.wsheet.toggle_drop_on_wire	"Enable/Disable Drop-on-Wire"	 "Enable/disable drop-on-wire"
+
+// OPUI definitions
+// -----------------
+h.pane.wsheet.cancel		"Cancel"			"Cancel"				Esc
+h.pane.wsheet.delete		"Delete"			"Delete"				Del
+h.pane.wsheet.jump		"Jump Down"			"Jump down to child network"		I Enter	// leave "Enter" last.
+h.pane.wsheet.select		"Select All"			"Select all operators"			Cmd+A
+h.pane.wsheet.hide		"Hide Selected"			"Hide selected operators"		
+h.pane.wsheet.collapse		"Collapse Selected"		"Collapse selected operators"		Shift+C
+h.pane.wsheet.expose		"Expose All"			"Expose all hidden operators"		Shift+E
+h.pane.wsheet.disconnect_nodes	"Disconnect Selected Node Inputs"	"Disconnect selected node inputs"
+h.pane.wsheet.disconnect_group	"Isolate Selected Nodes"	"Isolate selected nodes"
+h.pane.wsheet.fastfind  	"Find Operator"			"This Find Operator only works in the network pane"			/
+h.pane.wsheet.executeopscript 	"Execute Operator Script" 	"Execute Operator Script"		
+h.pane.wsheet.open_display_options "Open Display Options"	"Opens the worksheet display options dialog"			       D
+h.pane.wsheet.add_postit	"Add Sticky Note"	"Adds a sticky node to the current network" 	Cmd+P
+h.pane.wsheet.create_netbox	"Create Network Box From Selected"	"Creates a network box containing all the selected nodes" 	Cmd+N
+h.pane.wsheet.minimize_netbox   "Minimize Selected Network Boxes" 	"Minimizes the selected network boxes"     Cmd+M
+h.pane.wsheet.maximize_postit   "Maximize Selected Sticky Notes" 	"Maximizes the selected sticky notes"     Shift+K
+h.pane.wsheet.minimize_postit   "Minimize Selected Sticky Notes" 	"Minimizes the selected sticky notes"     Cmd+K
+h.pane.wsheet.snap_netbox_bounds	"Snap Borders To Bounds"	"Snaps a network box's borders to its minimum bounding box"	Cmd+Alt+S
+h.pane.wsheet.del_netbox_and_contents	"Delete Network Box and Contents"	"Deletes a network box and its contents"	Shift+Del
+
+h.pane.wsheet.display_perfstat	"Display Performance Data"		"Display performance data"		Cmd+Alt+P
+
+// Connections Menu
+// ----------------
+h.pane.wsheet.disconnect 	"Disconnect"			"Disconnect link"		
+h.pane.wsheet.disconnectinput	"Disconnect Source"		"Disconnects link from input but leaves output ready to re-link"
+h.pane.wsheet.disconnectoutput	"Disconnect Target"		"Disconnects link from output but leaves input ready to re-link"
+h.pane.wsheet.selectinout	"Add Source and Target to Selection"	"Add the source and target nodes to node selection"
+h.pane.wsheet.selectinput	"Select Source"			"Selects source node"
+h.pane.wsheet.selectoutput	"Select Target"			"Selects target node"
+h.pane.wsheet.framesource	"Frame Source"			"Frames source node"
+h.pane.wsheet.frametarget	"Frame Target"			"Frames target node"
+
+// Display Options
+// ---------------
+h.pane.wsheet.snap_to_grid	"Snap to Grid"			"Snaps tiles to the grid when dragging"
+h.pane.wsheet.display_grid	"Display Grid"			"Display the grid in the network editor"
+
+// List Mode Commands
+// ------------------
+h.pane.wsheet.expand_selected	"Expand Selected"		"Expands the selected nodes in the network list"
+h.pane.wsheet.show_filter_buttons   "Show Filter Buttons"	"Show or hide the filter buttons in the network list."
+h.pane.wsheet.show_columns	    "Show Columns"		"Show or hide the columns in the network list."
+
+h.pane.wsheet.move_active_index   "Move Input Index Here"		"Moves the active index of the selected to node to the current input"
+
+h.pane.wsheet.disconnect_active_index "Disconnect Input"                "Disconnects the node from the current input"

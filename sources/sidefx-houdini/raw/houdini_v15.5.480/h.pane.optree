@@ -1,0 +1,26 @@
+//
+// Operator Tree controls
+//
+
+HCONTEXT h.pane.optree "Operator Tree Controls" "These hotkeys apply to operator tree controls."
+
+h.pane.optree.autodive		"Auto-dive Into Network"	"Dive into the network automatically"
+h.pane.optree.displayicons	"Display Icons"			"Toggles the display of icons beside the nodes"
+h.pane.optree.objfilter		"Filter Objects"		"Show nodes of type Object"
+h.pane.optree.sopfilter		"Filter Geometry"		"Show nodes of type Geometry"
+h.pane.optree.popfilter		"Filter Particles"		"Show nodes of type Particle"
+h.pane.optree.dopfilter		"Filter Dynamics"		"Show nodes of type Dynamics"
+h.pane.optree.shopfilter	"Filter Shaders"		"Show nodes of type Shader"
+h.pane.optree.vopfilter		"Filter VEX Builder"		"Show nodes of type VEX Builder"
+h.pane.optree.chopfilter	"Filter Motion and Audio"	"Show nodes of type Motion and Audio"
+h.pane.optree.cop2filter	"Filter Compositing"		"Show nodes of type Compositing"
+h.pane.optree.ropfilter		"Filter Outputs"		"Show nodes of type Output"
+
+h.pane.optree.allfilter		"All Operators"			"Show all nodes"
+h.pane.optree.unionfilter	"Union of Bundles"		"Show nodes that are in any selected bundle"
+h.pane.optree.intersectfilter	"Intersection of Bundles"	"Show nodes that are in all selected bundles"
+h.pane.optree.usebundlefilter	"Use Bundle Filters"		"Show nodes filtered though bundle filters"
+h.pane.optree.linkselection	"Link Selection"		"Bind the selection of the tree nodes to the pick flag of the operators"
+h.pane.optree.next_error	"Move To Next Error"		"Jump to the next node with a warning or error"		E
+h.pane.optree.prev_error	"Move To Prev Error"		"Jump to the previous node with a warning or error"	Shift+E
+h.pane.optree.showhidden	"Show Hidden Nodes"		"Show nodes that are hidden"

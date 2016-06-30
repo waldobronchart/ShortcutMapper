@@ -1,0 +1,33 @@
+//
+// Bundle editor hotkeys.
+//
+
+HCONTEXT h.pane.bundle		"Bundle List"			"These keys apply to the Bundle List pane."
+
+// From the Bundle menu.
+h.pane.bundle.addbundle		"Add Bundle"			"Add bundle"					Shift+B
+h.pane.bundle.addsmartbundle	"Add Smart Bundle"		"Add smart bundle"				
+h.pane.bundle.duplicate		"Duplicate Bundle"		"Duplicate selected bundle"			Shift+D
+h.pane.bundle.merge		"Merge Bundles"			"Merge selected bundles"			
+h.pane.bundle.delete		"Delete Bundle"			"Delete selected bundle"			Del
+h.pane.bundle.convert		"Convert to Normal Bundle"	"Convert selected smart bundle to normal bundle" 
+h.pane.bundle.convertsmart	"Convert to Smart Bundle"	"Convert selected normal bundle to smart bundle" 
+h.pane.bundle.toggleselectable	"Toggle Selectable Flags"	"Toggle selectable flags for items in selected bundle" 
+h.pane.bundle.togglevisible	"Toggle Visible Flags"		"Toggle visible flags for items in selected bundle" 
+h.pane.bundle.togglebypass	"Toggle Bypass Flags"		"Toggle bypass flags for items in selected bundle" 
+h.pane.bundle.toggletemplate	"Toggle Template Flags"		"Toggle template flags for items in selected bundle"
+h.pane.bundle.toggleexpose	"Toggle Expose Flags"		"Toggle expose flags for items in selected bundle"
+
+h.pane.bundle.set_bundle_as_selected_nodes	"Select Bundle Nodes"		"Clears global node selection and selects bundle nodes"
+h.pane.bundle.add_bundle_to_selected_nodes	"Add To Selection"		"Adds bundle nodes to the global selection"
+h.pane.bundle.remove_bundle_from_selected_nodes	"Remove From Selection"		"Removes bundle nodes from the global selection"
+h.pane.bundle.set_selected_nodes_as_bundle	"Set Selection As Bundle Contents"  "Replaces bundle contents with the currently selected nodes"
+h.pane.bundle.add_selected_nodes_to_bundle	"Add Selection To Bundle"	"Adds the globally selected nodes to the bundle"
+h.pane.bundle.remove_selected_nodes_from_bundle	"Remove Selection From Bundle"	"Removes the globally selected nodes from the bundle"
+
+// From the Edit menu.
+h.pane.bundle.remove		"Remove"			"Remove selected items from bundle"
+
+// From the Settings menu.
+h.pane.bundle.guessfilter	"Initial Node Sets Bundle Filter" "Bundle filter is automatically set based on the first node added"
+h.pane.bundle.showfullpaths	"Show full paths for bundle nodes" "Shows the full network paths for bundle nodes"  F

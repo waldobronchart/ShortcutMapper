@@ -1,0 +1,18 @@
+//
+// Handle list definitions
+//
+
+HCONTEXT h.pane.parmsheet	"Parameter Spreadsheet"	"These keys apply to the Parameter Spreadsheet pane."
+
+h.pane.parmsheet.copy_parm		"Copy Parameters"		"Copy parameters"				
+h.pane.parmsheet.paste_vals		"Paste Copied Values"		"Paste copied values"				
+h.pane.parmsheet.paste_exprs		"Paste Copied Expressions"	"Paste copied expressions"			Cmd+E
+h.pane.parmsheet.paste_refs		"Paste Copied References"	"Paste copied references"			Cmd+R
+h.pane.parmsheet.paste_rel_refs		"Paste Copied Relative References" "Paste copied relative references"		Cmd+Shift+R
+h.pane.parmsheet.paste_channels		"Paste Copied Channels"	        "Paste copied channels"				Cmd+Shift+V
+h.pane.parmsheet.fullpaths		"Full Node Paths"		"Show full node paths"				N
+h.pane.parmsheet.load_scope		"Load Scope"			"Load scope"					L
+h.pane.parmsheet.open_tree		"Open Operator Tree"		"Open operator tree"				Shift+W W
+h.pane.parmsheet.selectnone		"Select None"			"Select none"					Q
+h.pane.parmsheet.show_empty_rows	"Show Empty Rows"		"Show empty rows"
+h.pane.parmsheet.volatile_select	"Volatile Select"		"Volatile select"				Space

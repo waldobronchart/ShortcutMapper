@@ -1,0 +1,12 @@
+//
+// Toolbar manager (separate app)
+//
+
+HCONTEXT toolmgr "Toolbar Manager" "These keys apply to the Toolbar Manager dialog."
+
+toolmgr.add		"Add Toolbar"	"Add toolbar"		Alt+N
+toolmgr.save		"Save Toolbar"	"Save toolbar"		Alt+S
+toolmgr.apply		"Apply"		"Apply changes"
+toolmgr.accept		"Accept"	"Accept changes"
+toolmgr.discard		"Discard"	"Discard changes"
+toolmgr.cancel		"Cancel"	"Cancel"		Esc

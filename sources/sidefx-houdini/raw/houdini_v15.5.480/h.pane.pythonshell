@@ -1,0 +1,8 @@
+//
+// Python shell
+//
+
+HCONTEXT h.pane.pythonshell "Python shell" "These keys apply to the python shell."
+
+h.pane.pythonshell.copy		"Copy"		"Copy the selected text to the clipboard"		Cmd+Shift+C
+h.pane.pythonshell.paste	"Paste"		"Paste in text from the clipboard at the cursor"	Cmd+Shift+V

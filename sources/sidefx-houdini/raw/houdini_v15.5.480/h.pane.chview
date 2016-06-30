@@ -1,0 +1,19 @@
+//
+// Channel (chop) viewer
+//
+
+HCONTEXT h.pane.chview "CHOP Viewer" "The keys apply to the CHOP viewer."
+
+h.pane.chview.home		"Home"			"Home"					H
+h.pane.chview.hadapt		"Horizontal Adapt"	"Horizontal adapt"			Shift+H
+h.pane.chview.vadapt		"Vertical Adapt"	"Vertical adapt"			Shift+V
+h.pane.chview.timebar		"Timebar"		"Timebar"				T
+h.pane.chview.labels		"Labels"		"Labels"				L
+h.pane.chview.dots		"Dots"			"Dots"					D
+h.pane.chview.extend		"Extend Regions"	"Extend regions"			X
+h.pane.chview.raw_edit		"Raw Edit Tools"	"Raw edit tools"			E
+h.pane.chview.scope_tools	"Scope Tools"		"Scope tools"				W
+h.pane.chview.units		"Units"			"Units: frames, samples, seconds"	Shift+U
+h.pane.chview.grid		"Grid Detail"		"Grid detail: low, medium, high"	G
+h.pane.chview.handle		"Handles"		"Handles"				Tab Y
+h.pane.chview.escape		"Escape"		"Escape"				Esc

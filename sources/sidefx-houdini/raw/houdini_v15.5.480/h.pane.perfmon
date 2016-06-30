@@ -1,0 +1,38 @@
+//
+// Performance Monitor hotkeys.
+//
+
+HCONTEXT h.pane.perfmon			"Performance Monitor"		"These keys apply to the Performance Monitor pane."
+
+// From the Profile menu.
+h.pane.perfmon.open_profile		"Open Profile"			"Open a profile from disk."			    Cmd+Alt+O
+h.pane.perfmon.save_profile_as		"Save Profile As"		"Save the current profile to disk."		    Cmd+Alt+Shift+S
+h.pane.perfmon.export_profile_as	"Export Profile As"		"Export the current profile to disk."		    Cmd+Alt+Shift+E
+h.pane.perfmon.compare_profiles		"Compare Profiles"		"Compare two profiles and show their differences."  Cmd+Alt+C
+h.pane.perfmon.open_preferences		"Open Preferences"		"Open the Performance Monitor preferences dialog."  Cmd+Alt+P
+h.pane.perfmon.delete_profile		"Delete Profile"		"Remove the current profile from the performance monitor."  Cmd+Alt+Shift+D
+
+// From the Sample menu.
+h.pane.perfmon.toggle_cook_stats	"Toggle Node Cook Stats"	"Toggle the sampling of node cook statistics."	    Shift+C
+h.pane.perfmon.toggle_solve_stats	"Toggle DOP Solve Stats"	"Toggle the sampling of DOP solve statistics."	    Shift+S
+h.pane.perfmon.toggle_draw_stats	"Toggle Node Draw CPU Stats"	"Toggle the sampling of node CPU draw statistics."  Shift+D
+h.pane.perfmon.toggle_gpu_draw_stats	"Toggle Node Draw GPU Stats"	"Toggle the sampling of node GPU draw statistics."  Shift+G
+h.pane.perfmon.toggle_viewport_stats	"Toggle Viewport Stats"		"Toggle the sampling of viewport statistics."	    Shift+V
+h.pane.perfmon.toggle_script_stats	"Toggle Script Stats"		"Toggle the sampling of script statistics."	    Shift+I 
+h.pane.perfmon.toggle_render_stats	"Toggle Render Stats"		"Toggle the sampling of render statistics."	    Shift+R 
+h.pane.perfmon.toggle_thread_stats	"Toggle Thread Stats"		"Toggle the sampling of thread statistics."	    Shift+T
+h.pane.perfmon.toggle_frame_stats	"Toggle Frame Stats"		"Toggle the sampling of frame statistics."	    Shift+F
+h.pane.perfmon.toggle_memory		"Toggle Memory"		"Toggle the sampling of memory."			    Shift+M
+h.pane.perfmon.toggle_errors		"Toggle Errors"		"Toggle the sampling of errors."			    Shift+E
+h.pane.perfmon.sample_all		"Sample All"			"Turn on the sampling of all events."		    Shift+A
+h.pane.perfmon.sample_none		"Sample None"			"Turn off the sampling of all events."		    Shift+N
+h.pane.perfmon.toggle_live_updates	"Toggle Live Updates"		"Toggle live updates on/off when recording."	    Shift+L
+
+// From the View menu.
+h.pane.perfmon.toggle_time_format	"Toggle Time Format"		"Toggle between displaying times as absolute times or as percentages of the total time spent in recorded events."		    P
+h.pane.perfmon.toggle_stats_view	"Toggle Statistics View"	"Toggle whether the recorded statistics is displayed in a tree or in a list."	T
+h.pane.perfmon.toggle_event_log		"Toggle Event Log"		"Toggle the display of the event log."		    L
+
+// Buttons.
+h.pane.perfmon.toggle_record		"Toggle Record"			"Turn on or off the recording of events."	    R
+h.pane.perfmon.clear_stats		"Clear Statistics"		"Clear the statistics that have been tabulated for the recording profile."	    C

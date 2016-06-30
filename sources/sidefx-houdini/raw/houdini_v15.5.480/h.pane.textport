@@ -1,0 +1,28 @@
+//
+// Textport
+//
+
+HCONTEXT h.pane.textport "Textport" "These keys apply to the Textport pane."
+
+h.pane.textport.selectpageup	"Page Up"		"Select Page up"	Shift+PageUp
+h.pane.textport.selectpagedown	"Page Down"		"Select Page down"	Shift+PageDown
+h.pane.textport.selecttop	"Select Home"		"Select Home"		Shift+Home
+h.pane.textport.selectbottom	"Select End"		"Select End"		Shift+End
+h.pane.textport.selectfirstline	"Select First Line"		"Select First Line"		Shift+Cmd+Home
+h.pane.textport.selectlastline	"Select Last Line"		"Select Last Line"		Shift+Cmd+End
+
+h.pane.textport.pageup		"Page Up"	"Page up"	PageUp
+h.pane.textport.pagedown	"Page Down"	"Page down"	PageDown
+h.pane.textport.top		"Home"		"Home"		Home
+h.pane.textport.bottom		"End"		"End"		End
+h.pane.textport.firstline	"First Line"		"First Line"		Cmd+Home
+h.pane.textport.lastline	"Last Line"		"Last Line"		Cmd+End
+h.pane.textport.editor		"Open Editor"	"Open Editor"	Alt+E
+h.pane.textport.match_paren	"Match Parenthesis/Quotes" "Match parenthesis or quotes"	Cmd+M
+
+h.pane.textport.save		"Save Contents"	"Save contents to text file"
+h.pane.textport.search_and_replace	"Search and Replace"	"Search and Replace"	Cmd+H
+h.pane.textport.jump_to_line	"Jump to Line"	"Jump to Line"	Cmd+G
+h.pane.textport.comment_out	"Comment Out Selected Text"	"Comment Out Selected Text"
+h.pane.textport.uncomment	"Uncomment Selected Text"	"Uncomment Selected Text"
+

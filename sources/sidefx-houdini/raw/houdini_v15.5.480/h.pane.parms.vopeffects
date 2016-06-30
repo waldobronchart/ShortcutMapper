@@ -1,0 +1,11 @@
+//
+// Parameter Vop Effects definitions
+//
+
+HCONTEXT h.pane.parms.vopeffects	"Parameter Vop Effects" "These keys apply to parameter vop effects."
+
+h.pane.parms.vopeffects.create_parm		"Promote Parameter"		"Promote the parameter for the corresponding input"
+h.pane.parms.vopeffects.create_subnet_input	"Promote Subnet Input"	"Promote the input as an input on the parent subnet"
+h.pane.parms.vopeffects.create_const		"Constant"	"Create a constant node for the corresponding input"
+h.pane.parms.vopeffects.toggle_input_visibility		"Remove Input"	"Remove or show the input connector for this parameter"
+h.pane.parms.vopeffects.toggle_input_expose		"Toggle Expose"	"Expose or unexpose the nodes wired into the corresponding input"

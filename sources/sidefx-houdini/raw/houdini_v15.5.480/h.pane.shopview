@@ -1,0 +1,11 @@
+//
+// SHOP previewer
+//
+
+HCONTEXT h.pane.shopview "Shader Viewer" "These keys apply to the Shader View pane."
+
+h.pane.shopview.home	"Home"			"Home"			H
+h.pane.shopview.mode	"Mode"			"Mode"			M
+h.pane.shopview.detail	"Level Of Detail"	"Level of detail"	L
+h.pane.shopview.alpha	"Transparency"		"Transparency"		A
+h.pane.shopview.reload	"Reload Shader"		"Reload shader"		V

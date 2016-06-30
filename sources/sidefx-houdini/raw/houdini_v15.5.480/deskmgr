@@ -1,0 +1,15 @@
+//
+// Desktop manager (separate app)
+//
+
+HCONTEXT deskmgr "Desktop Manager" "These keys are used in the Desktop Manager dialog."
+
+deskmgr.new		"New"		"Create a new desktop"		Alt+N N
+deskmgr.add		"Add"		"Add a desktop"			Alt+D D
+deskmgr.apply		"Apply"		"Apply current changes"
+deskmgr.accept		"Accept"	"Accept current changes"
+deskmgr.discard		"Discard"	"Discard current changes"
+deskmgr.reload		"Reload"	"Reload the desktops"
+deskmgr.refresh		"Refresh"	"Refresh the desktops"
+deskmgr.save		"Save"		"Save current changes"		Alt+S S
+deskmgr.cancel		"Cancel"	"Cancel current changes"	Esc

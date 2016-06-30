@@ -1,0 +1,17 @@
+//
+// Ramp widget definitions
+//
+
+HCONTEXT ramp "Ramp Widgets" "These keys apply to all ramp widgets."
+
+ramp.delete		"Delete Point"		"Delete the current point"	    Del
+ramp.prev		"Select Previous Point"	"Select the previous point"	    PageUp
+ramp.next		"Select Next Point"	"Select the next point"		    PageDown
+
+ramp.set_constant	"Set to Constant"	"Set the point to constant interpolation"
+ramp.set_linear		"Set to Linear"		"Set the point to linear interpolation"
+ramp.set_catmullrom	"Set to Catmull-Rom"	"Set the point to catmull-rom interpolation"
+ramp.set_monotonecubic	"Set to Monotone Cubic"	"Set the point to monotone cubic interpolation"
+ramp.set_bezier		"Set to Bezier"		"Set the point to bezier interpolation"
+ramp.set_bspline	"Set to B-Spline"	"Set the point to b-spline interpolation"
+ramp.set_hermite	"Set to Hermite"	"Set the point to hermite interpolation"

@@ -1,0 +1,15 @@
+//
+// These toolbar-specific items are at this level because they apply only when
+// the toolbar is active.  If they weren't at this level, they would conflict
+// with other keys.
+//
+
+HCONTEXT toolbar "Pop-Up Toolbars" "These keys apply to Pop-Up Toolbars."
+
+toolbar.move_up_menu		"Navigate Up"		"Navigate up"				UpArrow
+toolbar.move_down_menu		"Navigate Down"		"Navigate down"				DownArrow
+toolbar.move_left_on_menu	"Navigate Left"		"Navigate left"				LeftArrow
+toolbar.move_right_on_menu	"Navigate Right"	"Navigate right"			RightArrow
+toolbar.remove_last_char	"Remove Last Character"	"Remove last character"			Backspace
+toolbar.select_from_menu	"Select"		"Make a selection from the menu"	Enter
+

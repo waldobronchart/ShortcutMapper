@@ -1,0 +1,10 @@
+//
+// Keys for dop states
+//
+HCONTEXT h.pane.gview.state.dop			"Dynamics (DOP) Operations"	"These keys apply to the Dynamics operations."
+
+// View State
+// ----------
+
+// State Entry Hotkeys
+// -------------------

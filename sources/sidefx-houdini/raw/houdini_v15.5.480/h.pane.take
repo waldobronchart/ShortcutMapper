@@ -1,0 +1,27 @@
+//
+// Handle list definitions
+//
+
+HCONTEXT h.pane.take		"Take Management"		"These keys apply to the Take pane."
+
+HCONTEXT h.pane.take.list	"Take List"			"These keys apply to the Take List pane."
+
+h.pane.take.list.select		"Select Take"			"Select Take"
+h.pane.take.list.delete		"Delete Take"			"Delete take"			Del
+h.pane.take.list.deleteall	"Delete Take (and children)"	"Delete Take (and children)"
+h.pane.take.list.insert		"Insert New Take"		"Insert New Take"		Insert
+h.pane.take.list.append		"Append New Take"		"Append New take"		Shift+T
+h.pane.take.list.showcontents	"Show Take Contents"		"Show Take Contents"		W
+
+h.pane.take.list.load		"Load Take"			"Load Take"
+h.pane.take.list.save		"Save Take"			"Save Take"
+h.pane.take.list.saverecurse	"Save Take (Recursive)"		"Save Take and all children"
+
+//
+// Content keys
+//
+
+HCONTEXT h.pane.take.content	"Take List Contents"		"These keys apply to the Take List pane (content list)."
+
+h.pane.take.content.exclude	"Exclude From Take"		"Remove data from Take"		Del
+h.pane.take.content.include	"Include In Take"		"Add data to Take"

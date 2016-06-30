@@ -1,0 +1,16 @@
+//
+// Light linker definitions
+//
+
+HCONTEXT h.pane.linkeditor	"Link Editor"	"These keys apply to the Link Editorpane."
+
+h.pane.linkeditor.open_sheet		"Open Parameter Sheet"		"Open parameter sheet"				W
+
+//
+// Light linker parameter spreadsheet definitions
+//
+
+HCONTEXT h.pane.linkeditor.sheet	"Link Editor Sheet"		"These keys apply to the light linker spreadsheet."
+
+h.pane.linkeditor.sheet.volatile_select	"Volatile Select"	"Volatile select"		Space
+h.pane.linkeditor.sheet.selectnone	"Select None"		"Select none"			C

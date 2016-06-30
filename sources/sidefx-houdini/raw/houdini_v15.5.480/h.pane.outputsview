@@ -1,0 +1,10 @@
+//
+// Keys for the ROPs viewer
+//
+
+HCONTEXT h.pane.outputsview		"Outputs Viewers"	"These keys apply to all outputs viewers."
+
+h.pane.outputsview.suspendall		"Suspend All"	"Suspends all render jobs"  S
+h.pane.outputsview.restartall		"Restart All"	"Restarts all suspended render jobs"	R
+h.pane.outputsview.killall		"Kill All"	"Kills all render jobs"	Shift+K
+h.pane.outputsview.cleardonetoggle	"Automatically Clear Completed Jobs"	"Toggles the option to automatically clear completed render jobs"   C

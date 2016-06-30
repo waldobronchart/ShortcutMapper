@@ -1,0 +1,35 @@
+
+HCONTEXT h.pane.datatree			"Data Tree"			"These keys apply to the Data Tree pane."
+HCONTEXT h.pane.datatree.styler			"Style Sheet Editor"		"These keys apply to the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.object		"Object Node"			"These keys apply to Object node entries in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.stylesheet	"Style Sheet"			"These keys apply to Style Sheet entries in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.importfiles	"Referenced Style Sheets"	"These keys apply to Referenced Files in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.scripts		"Shared Scripts"		"These keys apply to Shared Script entries in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.overridesets	"Shard Override Sets"		"These keys apply to Shared Override Sets entries in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.styleentry	"Style Entry"			"These keys apply to Style Entry definitions in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.target		"Target"			"These keys apply to Target definitions in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.overrideset	"Override Set"			"These keys apply to Override Set definitions in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.styler.script		"Script Definition"		"These keys apply to Script definitions in the Data Tree Style Sheet editor."
+HCONTEXT h.pane.datatree.appearance		"Object Appearance"		"These keys apply to the Data Tree Object Appearance editor."
+HCONTEXT h.pane.datatree.lightbank		"Light Bank"			"These keys apply to the Data Tree Light Bank editor."
+
+h.pane.datatree.delete		"Delete Node"		"Delete Node"	Del
+h.pane.datatree.rename		"Rename Node"		"Rename Node"	F2
+
+h.pane.datatree.styler.object.add_stylesheetparm		"Add Style Sheet Parameter"			"Add object style sheet parameter"			+
+h.pane.datatree.styler.object.create_stylesheet			"Create Style Sheet fromExisting Overrides"	"Create a style sheet from existing material overrides on the object and its geometry"		Shift+C
+h.pane.datatree.styler.stylesheet.add_styleentry		"Add Style Entry"				"Add new style entry"					+
+h.pane.datatree.styler.stylesheet.view_json			"View JSON"					"View JSON text for style sheet"			Shift+V
+h.pane.datatree.styler.importfiles.add_import_file		"Add Style Sheet Reference"			"Add new style sheet reference"				+
+h.pane.datatree.styler.scripts.add_script			"Add Shared Script"				"Add new shared script"					+
+h.pane.datatree.styler.overridesets.add_override_set		"Add Shared Override Set"			"Add new shared override set"				+
+h.pane.datatree.styler.styleentry.add_import_override_set	"Add Override Set Reference"			"Add new reference to an override set"			Shift+S
+h.pane.datatree.styler.target.add_target			"Add Target"					"Add target or sub-target specification"		Shift+T
+h.pane.datatree.styler.target.add_condition			"Add Condition"					"Add target condition"					Shift+C
+h.pane.datatree.styler.target.add_binding			"Add Pre-Binding"				"Add target script binding"				Shift+B
+h.pane.datatree.styler.target.set_target_from_viewport		"Set Target From Viewport"			"Set target from a viewport selection"			Shift+V
+h.pane.datatree.styler.target.set_objects_from_viewport		"Set Object Target From Viewport"		"Set target from an object selection in a viewport"	Shift+O
+h.pane.datatree.styler.target.set_components_from_viewport	"Set Component Target From Viewport"		"Set target from a component selection in a viewport"	Shift+G
+h.pane.datatree.styler.overrideset.add_override			"Add Override"					"Add parameter or property override"			+
+h.pane.datatree.styler.overrideset.add_override_script		"Add Override Script"				"Add parameter or property override using a script"	Cmd++
+h.pane.datatree.styler.script.add_binding			"Add Script Binding"				"Add new script binding"				+

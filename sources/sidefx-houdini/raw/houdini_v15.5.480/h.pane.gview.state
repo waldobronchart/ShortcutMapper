@@ -1,0 +1,152 @@
+//
+// Keys for states (the keys or the states are common betweeen different networks)
+//
+
+HCONTEXT h.pane.gview.state		"Operations"			"These keys apply to the Geometry Viewer operation."
+HCONTEXT h.pane.gview.state.floor	"Construction Plane Operation"	"These keys apply to the Construction Plane operation."
+HCONTEXT h.pane.gview.state.view	"View Operation"		"These keys apply to the View operation."
+HCONTEXT h.pane.gview.state.selxform	"Select And Transform Operation" "These keys apply to the Select and Transform operation."
+HCONTEXT h.pane.gview.state.select	"Select"			"These keys apply to the Scene View's Select tool."
+
+// ----------------------------------------
+// Keys for states spanning multiple levels
+// ----------------------------------------
+h.pane.gview.state.new_select		"Select Tool"			"Invoke the select tool"				S
+h.pane.gview.state.new_view		"View Tool"			"Invoke the view tool"					Esc
+h.pane.gview.state.new_renderregion	"Render Region Tool"		"Invoke the render region tool"
+
+// -----------------------
+// Volatile keys for states
+// ------------------------
+h.pane.gview.state.volatile_floor		"Volatile C-Plane Operation"	"Volatile construction plane operation"		
+h.pane.gview.state.volatile_lookat		"Volatile Look At Operation"	"Volatile look-at operation"
+h.pane.gview.state.volatile_masklight		"Volatile Mask Lights Operation"	"Volatile mask lights operation"
+h.pane.gview.state.volatile_material		"Volatile Material Operation"	"Volatile material operation"
+h.pane.gview.state.volatile_parent		"Volatile Parent Operation"	"Volatile parenting operation"
+h.pane.gview.state.volatile_chmodify		"Volatile Modify Channels Operation"	"Volatile modify channels operation"	J
+h.pane.gview.state.volatile_findmaterial	"Volatile Find Materials Operation"	"Volatile find materials operation"
+h.pane.gview.state.volatile_followpath		"Volatile Follow Path Operation"	"Volatile follow path operation"
+h.pane.gview.state.volatile_renderregion	"Volatile Render Region Operation"	"Volatile render region operation"
+h.pane.gview.state.volatile_xform		"Volatile Transform Operation"	"Volatile transformation operation"
+h.pane.gview.state.volatile_select		"Volatile Select Operation"	"Volatile selection operation"
+h.pane.gview.state.volatile_view		"Volatile View Operation"	"Volatile viewing operation"			Space
+
+// Construction Plane State
+// ------------------------
+h.pane.gview.state.floor.drop_elevation		"Erase C-Plane Elevation"		"Erase the construction plane elevation"
+h.pane.gview.state.floor.flip_elevation		"Flip C-Plane Elevation"		"Flip the construction plane elevation"
+h.pane.gview.state.floor.flip_normal		"Flip C-Plane Normal"			"Flip the construction plane normal"			N
+h.pane.gview.state.floor.grow_all		"Increase Grid In X And Y"		"Increase grid in X and Y"				>
+h.pane.gview.state.floor.shrink_all		"Decrease Grid In X And Y"		"Decrease grid in X and Y"				<
+h.pane.gview.state.floor.x_normal		"Align Normal With World X Axis"	"Align normal with world X axis"			Shift+X
+h.pane.gview.state.floor.y_normal		"Align Normal With World Y Axis"	"Align normal with world Y axis"			Shift+Y
+h.pane.gview.state.floor.z_normal		"Align Normal With World Z Axis"	"Align normal with world Z axis"			Shift+Z
+h.pane.gview.state.floor.n_up_vector		"Align Up-Vector With C-Plane Normal"	"Align up-vector with construction plane normal"	Shift+N
+h.pane.gview.state.floor.viewing_plane		"Align C-Plane With Viewing Plane"	"Align construction plane with viewing plane"		
+h.pane.gview.state.floor.x_normal_center	"Center C-Plane Around World X Axis"	"Center construction plane around world X axis"		
+h.pane.gview.state.floor.y_normal_center	"Center C-Plane Around World Y Axis"	"Center construction plane around world Y axis"		Y
+h.pane.gview.state.floor.z_normal_center	"Center C-Plane Around World Z Axis"	"Center construction plane around world Z axis"		Z
+h.pane.gview.state.floor.positive_x		"Increase Grid Along Its Positive X"	"Increase grid along its positive X"
+h.pane.gview.state.floor.positive_y		"Increase Grid Along Its Positive Y"	"Increase grid along its positive Y"
+h.pane.gview.state.floor.negative_x		"Increase Grid Along Its Negative X"	"Increase grid along its negative X"
+h.pane.gview.state.floor.negative_y		"Increase Grid Along Its Negative Y"	"Increase grid Along its negative Y"
+h.pane.gview.state.floor.front_plane		"Flip C-Plane Front"			"Flip construction plane to front"
+h.pane.gview.state.floor.back_plane		"Flip C-Plane Back"			"Flip construction plane to back"
+h.pane.gview.state.floor.left_plane		"Flip C-Plane Left"			"Flip construction plane to left"
+h.pane.gview.state.floor.right_plane		"Flip C-Plane Right"			"Flip construction plane to right"
+h.pane.gview.state.floor.home_plane_geo		"Home On Geometry"			"Home on geometry"					A
+h.pane.gview.state.floor.home_plane_sel		"Home On Selected Geometry"		"Home on selected geometry"
+h.pane.gview.state.floor.frame_plane_geo	"Frame On Geometry"			"Frame on geometry"
+h.pane.gview.state.floor.frame_plane_sel	"Frame On Selected Geometry"		"Frame on selected geometry"
+
+// Common View State Keys
+// ----------------------
+h.pane.gview.state.view.home_all		"Home All"			"Home all"				Shift+A
+h.pane.gview.state.view.home_selection		"Home Selected"			"Home selected"				Shift+H G
+h.pane.gview.state.view.home_cplane		"Home C-Plane"			"Home construction plane"		H
+h.pane.gview.state.view.home_nontemplated	"Home Non-Templated"		"Home non-templated"			Shift+M
+h.pane.gview.state.view.home_custom		"Customize Home"		"Customize home direction"
+h.pane.gview.state.view.frame_all		"Frame All"			"Frame all"				A
+h.pane.gview.state.view.frame_selection		"Frame Selected"		"Frame selected"			F
+h.pane.gview.state.view.frame_cplane		"Frame C-Plane"			"Frame construction plane"		Shift+F
+h.pane.gview.state.view.frame_nontemplated	"Frame Non-Templated"		"Frame non-templated"			M
+h.pane.gview.state.view.set_pivot		"Set Pivot"			"Set pivot to geometry under the cursor"	Shift+Z
+h.pane.gview.state.view.set_pivot_and_center	"Set Pivot And Center"		"Set pivot and center view to geometry under the cursor"	Z
+h.pane.gview.state.view.toggle_ortho		"Toggle Ortho/Perspective"	"Toggle ortho/perspective viewing"	O
+h.pane.gview.state.view.cycle_view_context	"Cycle View Context"		"Cycle view context"
+h.pane.gview.state.view.toggle_view_context	"Toggle Local/World View Context"	"Toggle local/world view context"			Y
+h.pane.gview.state.view.to_top			"Top Viewport"			"Change viewport type to Top"		2
+h.pane.gview.state.view.to_bottom		"Bottom Viewport"		"Change viewport type to Bottom"
+h.pane.gview.state.view.to_front		"Front Viewport"		"Change viewport type to Front"		3
+h.pane.gview.state.view.to_back			"Back Viewport"			"Change viewport type to Back"
+h.pane.gview.state.view.to_right		"Right Viewport"		"Change viewport type to Right"		4
+h.pane.gview.state.view.to_left			"Left Viewport"			"Change viewport type to Left"
+h.pane.gview.state.view.to_persp		"Perspective Viewport"		"Change viewport type to Perspective"	1
+h.pane.gview.state.view.to_uv			"UV Viewport"			"Change viewport type to UV"		5
+h.pane.gview.state.view.toggle_single_quad	"Toggle Single/Quad"		"Toggle single/quad viewport layouts"	B
+h.pane.gview.state.view.set_active_port		"Select Viewport"		"Choose the active viewport"		N
+
+// Common Select/Xform State Keys
+// ------------------------------
+h.pane.gview.state.selxform.selectall		"Select All"			"Select all"			A Cmd+A
+h.pane.gview.state.selxform.invertselection	"Invert Selection"		"Invert selection"		Cmd+I
+h.pane.gview.state.selxform.clearselection	"Clear Selection"		"Clear selection"		N
+h.pane.gview.state.selxform.selectnext		"Select Next"			"Select next"
+h.pane.gview.state.selxform.selectprev		"Select Previous"		"Select previous"
+
+
+// Move tool Keys
+// ------------------------------
+h.pane.gview.state.select.move			"Move Tool"			"Invoke the move tool"			T
+h.pane.gview.state.select.rotate		"Rotate Tool"			"Invoke the rotate tool"		R
+h.pane.gview.state.select.scale			"Scale Tool"			"Invoke the scale tool"			E
+
+//
+// Hotkeys for View/C-Plane/Snapshot Memories
+//
+// Please do not modify the key names as they are synthesized by the code.
+//
+
+// View memory commands
+// -----------------------
+h.pane.gview.state.mem_view1			"View Memory Button 1"					"View memory button 1"
+h.pane.gview.state.mem_view2			"View Memory Button 2"					"View memory button 2"
+h.pane.gview.state.mem_view3			"View Memory Button 3"					"View memory button 3"
+h.pane.gview.state.mem_view4			"View Memory Button 4"					"View memory button 4"
+h.pane.gview.state.mem_view5			"View Memory Button 5"					"View memory button 5"
+h.pane.gview.state.mem_view6			"View Memory Button 6"					"View memory button 6"
+h.pane.gview.state.mem_view7			"View Memory Button 7"					"View memory button 7"
+h.pane.gview.state.mem_view8			"View Memory Button 8"					"View memory button 8"
+h.pane.gview.state.mem_view9			"View Memory Button 9"					"View memory button 9"
+h.pane.gview.state.mem_viewprev			"View Memory Previous"					"Restores the previous view memory"
+h.pane.gview.state.mem_viewstore		"View Memory Store"						"Stores settings into a view memory slot"
+
+
+// C-Plane memory commands
+// -----------------------
+h.pane.gview.state.mem_cplane1			"C-Plane Memory Button 1"					"C-Plane memory button 1"
+h.pane.gview.state.mem_cplane2			"C-Plane Memory Button 2"					"C-Plane memory button 2"
+h.pane.gview.state.mem_cplane3			"C-Plane Memory Button 3"					"C-Plane memory button 3"
+h.pane.gview.state.mem_cplane4			"C-Plane Memory Button 4"					"C-Plane memory button 4"
+h.pane.gview.state.mem_cplane5			"C-Plane Memory Button 5"					"C-Plane memory button 5"
+h.pane.gview.state.mem_cplane6			"C-Plane Memory Button 6"					"C-Plane memory button 6"
+h.pane.gview.state.mem_cplane7			"C-Plane Memory Button 7"					"C-Plane memory button 7"
+h.pane.gview.state.mem_cplane8			"C-Plane Memory Button 8"					"C-Plane memory button 8"
+h.pane.gview.state.mem_cplane9			"C-Plane Memory Button 9"					"C-Plane memory button 9"
+h.pane.gview.state.mem_cplaneprev	"C-Plane Memory Previous"						"Restores the previous C-Plane memory"
+h.pane.gview.state.mem_cplanestore	"C-Plane Memory Store"							"Stores settings into a C-Plane memory slot"
+
+// Snapshot (of a scene) memory commands
+// -----------------------
+h.pane.gview.state.mem_snapshot1			"Snapshot Memory Button 1"					"Snapshot memory button 1"
+h.pane.gview.state.mem_snapshot2			"Snapshot Memory Button 2"					"Snapshot memory button 2"
+h.pane.gview.state.mem_snapshot3			"Snapshot Memory Button 3"					"Snapshot memory button 3"
+h.pane.gview.state.mem_snapshot4			"Snapshot Memory Button 4"					"Snapshot memory button 4"
+h.pane.gview.state.mem_snapshot5			"Snapshot Memory Button 5"					"Snapshot memory button 5"
+h.pane.gview.state.mem_snapshot6			"Snapshot Memory Button 6"					"Snapshot memory button 6"
+h.pane.gview.state.mem_snapshot7			"Snapshot Memory Button 7"					"Snapshot memory button 7"
+h.pane.gview.state.mem_snapshot8			"Snapshot Memory Button 8"					"Snapshot memory button 8"
+h.pane.gview.state.mem_snapshot9			"Snapshot Memory Button 9"					"Snapshot memory button 9"
+h.pane.gview.state.mem_snapshotprev			"Snapshot Memory Previous"					"Restores the previous snapshot memory"
+h.pane.gview.state.mem_snapshotstore			"Snapshot Memory Store"						"Stores settings into a snapshot memory slot"
+h.pane.gview.state.mem_snapshotclear			"Snapshot Memory Clear"						"Clears the memory taken by the view snapshots"
