@@ -5,11 +5,11 @@ import json
 import codecs
 import re
 
-from logger import getlog
+from .logger import getlog
 log = getlog()
 
-from appdata import Shortcut, ApplicationConfig
-from constants import DIR_CONTENT_GENERATED, VALID_OS_NAMES, OS_WINDOWS, OS_MAC
+from .appdata import Shortcut, ApplicationConfig
+from .constants import DIR_CONTENT_GENERATED, VALID_OS_NAMES, OS_WINDOWS, OS_MAC
 
 
 class IntermediateShortcutData(object):
@@ -133,7 +133,7 @@ class IntermediateShortcutData(object):
             context = IntermediateShortcutData.Context(context_name)
             self._context_lookup[context_name] = context
             self.contexts.append(context)
-            print 'Adding Context:', context.name
+            print('Adding Context: ' + context.name)
 
         self._context_lookup[context_name].add_shortcut(shortcut_name, win_keys, mac_keys)
 
