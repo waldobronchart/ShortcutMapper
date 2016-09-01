@@ -5,11 +5,11 @@ import json
 import codecs
 import re
 
-from logger import getlog
+from .logger import getlog
 log = getlog()
 
-from appdata import Shortcut, ApplicationConfig
-from constants import DIR_CONTENT_GENERATED, VALID_OS_NAMES, OS_WINDOWS, OS_MAC
+from .appdata import Shortcut, ApplicationConfig
+from .constants import DIR_CONTENT_GENERATED, VALID_OS_NAMES, OS_WINDOWS, OS_MAC
 
 
 class IntermediateShortcutData(object):
@@ -59,7 +59,7 @@ class IntermediateShortcutData(object):
             return text
 
         def serialize(self):
-            return u'            "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
+            return '            "{0}": ["{1}", "{2}"],\n'.format(self._escape(self.name),
                                                                   self._escape(self.win_keys),
                                                                   self._escape(self.mac_keys))
 
@@ -93,11 +93,11 @@ class IntermediateShortcutData(object):
             return self._shortcut_lookup[name]
 
         def serialize(self):
-            ctx_str = u'        "{0}": {{\n'.format(self.name)
+            ctx_str = '        "{0}": {{\n'.format(self.name)
             for s in self.shortcuts:
                 ctx_str += s.serialize()
             ctx_str = ctx_str.strip(",\n")
-            ctx_str += u'\n        },\n'
+            ctx_str += '\n        },\n'
             return ctx_str
 
     def __init__(self, app_name="", version="", default_context="", os_supported=None):
@@ -133,7 +133,7 @@ class IntermediateShortcutData(object):
             context = IntermediateShortcutData.Context(context_name)
             self._context_lookup[context_name] = context
             self.contexts.append(context)
-            print 'Adding Context:', context.name
+            print('Adding Context:', context.name)
 
         self._context_lookup[context_name].add_shortcut(shortcut_name, win_keys, mac_keys)
 
@@ -166,8 +166,8 @@ class IntermediateShortcutData(object):
             self.default_context = json_idata["default_context"]
             self.os = json_idata["os"]
 
-            for context_name, shortcuts in json_idata["contexts"].iteritems():
-                for shortcut_name, os_keys in shortcuts.iteritems():
+            for context_name, shortcuts in json_idata["contexts"].items():
+                for shortcut_name, os_keys in shortcuts.items():
                     self.add_shortcut(context_name, shortcut_name, os_keys[0], os_keys[1])
 
     def serialize(self, output_filepath):
@@ -175,13 +175,13 @@ class IntermediateShortcutData(object):
         json_str = "{\n"
 
         # Config
-        json_str += u'    "name": "{0}",\n'.format(self.name)
-        json_str += u'    "version": "{0}",\n'.format(self.version)
-        json_str += u'    "default_context": "{0}",\n'.format(self.default_context)
-        json_str += u'    "os": {0},\n'.format(json.dumps(self.os))
+        json_str += '    "name": "{0}",\n'.format(self.name)
+        json_str += '    "version": "{0}",\n'.format(self.version)
+        json_str += '    "default_context": "{0}",\n'.format(self.default_context)
+        json_str += '    "os": {0},\n'.format(json.dumps(self.os))
 
         # Contexts
-        json_str += u'    "contexts": {\n'
+        json_str += '    "contexts": {\n'
         for context in sorted(self.contexts, key=lambda c: c.name):
             json_str += context.serialize()
         json_str = json_str.strip(",\n")
@@ -275,7 +275,7 @@ class IntermediateDataExporter(object):
                 continue
 
             # Parse modifiers
-            mods = [m.strip(u' ') for m in parts[:-1]]  # all but last
+            mods = [m.strip(' ') for m in parts[:-1]]  # all but last
 
             # Handle a range of keys (Example: "Ctrl + 0-9" or "Ctrl + Numpad 0-9")
             #  which will result in multiple shortcuts with the same label

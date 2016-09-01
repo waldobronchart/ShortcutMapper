@@ -1,9 +1,9 @@
 import unittest
 
-from keyboards import TestKeyboardLayout
+from .keyboards import TestKeyboardLayout
 
 
-def main():
+def run_all():
     """
     Runs the testsuite as command line application, or... that's what it will eventually do.
     For the moment, just run everything
@@ -20,4 +20,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    run_all()

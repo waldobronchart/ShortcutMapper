@@ -32,13 +32,13 @@ class RawDocsParser(object):
         self.idata = shmaplib.IntermediateShortcutData("Autodesk Maya")
 
     def _clean_text(self, text):
-        text = text.replace(u'\n', u' ').strip(u' ').replace(u'\xa0', u' ')
+        text = text.replace('\n', ' ').strip(' ').replace('\xa0', ' ')
         # Remove stuff within braces
         text = re.sub("([\(]).*?([\)])", "", text)
         # Remove meta-data tags
-        text = text.replace(u'†', u'').replace(u'‡', u'').strip(u'*')
+        text = text.replace('†', '').replace('‡', '').strip('*')
 
-        return text.strip(u' ')
+        return text.strip(' ')
 
     def parse(self, source_filepath):
         if not os.path.exists(source_filepath):
@@ -63,7 +63,7 @@ class RawDocsParser(object):
             rows = section.find_all("tr")
             for row in rows:
                 # This row is a header, the only relevant information here is the context name in first col
-                if u"ruledHeading" in row['class']:
+                if "ruledHeading" in row['class']:
                     context_name = self._clean_text(str(row.th.get_text()))
                     log.debug('Scanning context: "%s"', context_name)
 

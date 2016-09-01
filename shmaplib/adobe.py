@@ -5,9 +5,9 @@ import re
 import codecs
 from bs4 import BeautifulSoup
 
-from intermediate import IntermediateShortcutData
+from .intermediate import IntermediateShortcutData
 
-from logger import getlog
+from .logger import getlog
 log = getlog()
 
 
@@ -32,13 +32,13 @@ class AdobeDocsParser(object):
 
     @staticmethod
     def _clean_text(text):
-        text = text.replace(u'\n', u' ').strip(u' ').replace(u'\xa0', u' ')
+        text = text.replace('\n', ' ').strip(' ').replace('\xa0', ' ')
         # Remove stuff within braces
         text = re.sub("([\(]).*?([\)])", "", text)
         # Remove meta-data tags
-        text = text.replace(u'†', u'').replace(u'‡', u'').strip(u'*')
+        text = text.replace('†', '').replace('‡', '').strip('*')
 
-        return text.strip(u' ')
+        return text.strip(' ')
 
     def parse(self, source_file_path):
         if not os.path.exists(source_file_path):
@@ -147,11 +147,11 @@ class AdobeSummaryParser(object):
                             continue
 
                         # Check if content is &nbsp;
-                        if col.text == u'\xa0':
+                        if col.text == '\xa0':
                             continue
 
                         # Shortcut + removing <br>'s
-                        keys = u' or '.join(col.findAll(text=True))
+                        keys = ' or '.join(col.findAll(text=True))
 
                         # No need to continue, we found the the shortcuts
                         break
@@ -160,7 +160,7 @@ class AdobeSummaryParser(object):
                     continue
 
                 # It's a shortcut, but is it set?
-                full_name = u''.join(parent_categories) + name
+                full_name = ''.join(parent_categories) + name
                 if platform_type == 'windows':
                     self.idata.add_shortcut("Application", full_name, keys, "")
                 else:

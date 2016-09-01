@@ -43,7 +43,7 @@ class StEmmetParser(IntermediateShortcutData):
     def _replall(self, text):
         """Replace the char with the word.
         """
-        return text.decode('utf-8').replace(u'⌃', 'Ctrl + ').replace(u'⇧', 'Shift + ').replace(u'⌘', 'Command + ').replace(u'⌥', 'Option + ').replace(u'\u2191', 'Up Arrow').encode('utf-8').replace('→', 'Right Arrow').replace('←', 'Left Arrow').replace('↓', 'Down Arrow')
+        return text.decode('utf-8').replace('⌃', 'Ctrl + ').replace('⇧', 'Shift + ').replace('⌘', 'Command + ').replace('⌥', 'Option + ').replace('\u2191', 'Up Arrow').encode('utf-8').replace('→', 'Right Arrow').replace('←', 'Left Arrow').replace('↓', 'Down Arrow')
 
     def _clean_text(self, text):
         """Convert the text into the shortcut format which we can serialize. 

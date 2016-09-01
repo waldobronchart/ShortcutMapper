@@ -4,9 +4,9 @@ import collections
 import glob
 import codecs
 
-import keynames
-from constants import *
-from logger import getlog
+from . import keynames
+from .constants import *
+from .logger import getlog
 log = getlog()
 
 
@@ -196,15 +196,15 @@ class ApplicationConfig(object):
 
         mods_used = self.get_mods_used()
 
-        output_str = u'{\n'
-        output_str += u'    "name" : "%s",\n' % self.name
-        output_str += u'    "version" : "%s",\n' % self.version
-        output_str += u'    "os" : "%s",\n' % self.os
-        output_str += u'    "mods_used" : %s,\n' % json.dumps(mods_used)
-        output_str += u'    "default_context" : "%s",\n' % self.default_context_name
-        output_str += u'    "contexts" : {\n'
+        output_str = '{\n'
+        output_str += '    "name" : "%s",\n' % self.name
+        output_str += '    "version" : "%s",\n' % self.version
+        output_str += '    "os" : "%s",\n' % self.os
+        output_str += '    "mods_used" : %s,\n' % json.dumps(mods_used)
+        output_str += '    "default_context" : "%s",\n' % self.default_context_name
+        output_str += '    "contexts" : {\n'
 
-        contexts_str = u""
+        contexts_str = ""
 
         contexts = list(self.contexts.values())
         contexts.sort(key=lambda c: c.name)
@@ -213,15 +213,15 @@ class ApplicationConfig(object):
             if len(context.shortcuts) == 0:
                 continue
 
-            ctx_str = u'        ' + context.serialize()
-            ctx_str = ctx_str.replace(u'\n', u'\n        ')
+            ctx_str = '        ' + context.serialize()
+            ctx_str = ctx_str.replace('\n', '\n        ')
 
-            contexts_str += ctx_str + u',\n'
-        contexts_str = contexts_str.rstrip(u',\n')
+            contexts_str += ctx_str + ',\n'
+        contexts_str = contexts_str.rstrip(',\n')
 
-        output_str += contexts_str + u'\n'
-        output_str += u'    }\n'
-        output_str += u'}\n'
+        output_str += contexts_str + '\n'
+        output_str += '    }\n'
+        output_str += '}\n'
 
         # Write to file
         f = codecs.open(output_path, encoding='utf-8', mode='w+')
