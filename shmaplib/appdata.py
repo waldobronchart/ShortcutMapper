@@ -4,9 +4,9 @@ import collections
 import glob
 import codecs
 
-import keynames
-from constants import *
-from logger import getlog
+from . import keynames
+from .constants import *
+from .logger import getlog
 log = getlog()
 
 

@@ -2,7 +2,7 @@ import sys
 import os
 import glob
 import re
-from utils import BaseTestCase
+from .utils import BaseTestCase
 
 # import our data common utility
 sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), '..')))

@@ -5,9 +5,9 @@ import re
 import codecs
 from bs4 import BeautifulSoup
 
-from intermediate import IntermediateShortcutData
+from .intermediate import IntermediateShortcutData
 
-from logger import getlog
+from .logger import getlog
 log = getlog()
 
 

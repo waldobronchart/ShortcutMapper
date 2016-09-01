@@ -1,6 +1,6 @@
 import unittest
 
-from keyboards import TestKeyboardLayout
+from .keyboards import TestKeyboardLayout
 
 
 def main():

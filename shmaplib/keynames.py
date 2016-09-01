@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 # makes all strings here unicode by default (u'')
-from __future__ import unicode_literals
 
-from logger import getlog
+
+from .logger import getlog
 log = getlog()
 
 class DataContainer(object):
