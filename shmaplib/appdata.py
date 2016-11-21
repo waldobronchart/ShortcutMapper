@@ -278,7 +278,7 @@ def regenerate_site_apps_js():
     # Generate JSON for all applications in the specific format we want it
     app_sitedata = SiteAppDatas()
     for path in glob.glob(os.path.join(DIR_CONTENT_GENERATED, "*.json")):
-        with open(path) as appdata_file:
+        with open(path, encoding="utf8") as appdata_file:
             log.debug('...adding %s', path)
             appdata = json.load(appdata_file)
 
