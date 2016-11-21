@@ -59,6 +59,9 @@ var sitedata_apps = [
     {
         name: "Blender",
         data: {
+            "v2.78": {
+                "windows": "blender_v2.78_windows.json",
+            },
             "v2.71": {
                 "mac": "blender_v2.71_mac.json",
             },
