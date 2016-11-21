@@ -35,7 +35,7 @@ Once that's done, just open the **index.html** in your browser and you're off!
 
 ## Exporting new updated shortcuts
 
-The exporter scripts all use Python2.7 and some additional libraries. I recommend you use [virtualenv](http://virtualenv.readthedocs.org/en/latest/) like so:
+The exporter scripts all use Python3 and some additional libraries. I recommend you use [virtualenv](http://virtualenv.readthedocs.org/en/latest/) like so:
 
 ```
 # Install pip if you don't have it yet
@@ -45,8 +45,10 @@ sudo easy_install pip
 pip install virtualenv
 
 # Create a virtual environment in ShortcutMapper/_venv directory
+# For Windows, look here for instructions: 
+# http://virtualenv.readthedocs.io/en/latest/userguide/#usage
 cd ShortcutMapper/
-virtualenv -p /usr/bin/python2.7 _venv
+virtualenv -p /usr/bin/python3 _venv
 
 # Activate environment
 source _venv/bin/activate
@@ -60,6 +62,9 @@ Once your virtualenv in installed, all you need to do is activate it before you 
 
 ```
 source _venv/bin/activate
+
+# For windows, you will do this instead
+_venv\Source\activate.bat
 
 # Export all intermediate json files to content/generated/
 python utils/export_intermediate_data.py -a
