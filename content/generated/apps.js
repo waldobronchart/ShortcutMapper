@@ -76,6 +76,15 @@ var sitedata_apps = [
         }
     },
     {
+        name: "Cataclysm DDA",
+        data: {
+            "v0.C": {
+                "mac": "cataclysm-dda_v0.c_mac.json",
+                "windows": "cataclysm-dda_v0.c_windows.json",
+            },
+        }
+    },
+    {
         name: "Euro Truck Simulator 2",
         data: {
             "v1.18": {
