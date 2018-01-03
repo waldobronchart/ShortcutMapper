@@ -2,7 +2,7 @@
 
 (function($) {
     "use strict";
-    
+
     $.widget("custom.keyboard", {
 
         options: {
@@ -30,7 +30,7 @@
                     if (!keyboard.options.keydata.hasOwnProperty(contextName)) {
                         continue;
                     }
-                        
+
                     var context = keyboard.options.keydata[contextName];
                     var contextSafeName = keyboard._getSafeID(contextName);
                     var keyItems = context[keyName];
