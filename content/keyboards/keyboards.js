@@ -33,5 +33,10 @@ var sitedata_keyboards = {
         mac: "french_mac.html",
         windows: "french.html",
         linux: "french.html",
+    },
+    "Dvorak (mod)": {
+        mac: "dvorak_mod.html",
+        windows: "dvorak_mod.html",
+        linux: "dvorak_mod.html",
     }
 };

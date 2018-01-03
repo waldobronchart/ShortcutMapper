@@ -1,6 +1,6 @@
 function ShortcutMapper() {
     "use strict";
-    
+
     this.selectedApp = null;
     this.selectedAppData = null;
     this.selectedVersion = null;
@@ -21,7 +21,7 @@ function ShortcutMapper() {
     this.init = function () {
         var self = this,
             hash = window.location.hash;
-        
+
         this.selectedApp = window.sitedata_apps[0];
 
         // Get selected app name from window hash
@@ -193,14 +193,14 @@ function ShortcutMapper() {
         var final_selected = null;
         for (var i=0; i<options.length; i++) {
             var option = options[i];
-            
+
             if (option.toLowerCase() === String(selected).toLowerCase() || i === selected) {
                 html_options += '<option value="' + option + '" selected>' + option + '</option>';
                 final_selected = option;
             } else {
                 html_options += '<option value="' + option + '">' + option + '</option>';
             }
-            
+
             if (option.length > max_option_length) {
                 max_option_length = option.length;
             }
@@ -270,15 +270,15 @@ function ShortcutMapper() {
         if (appver.indexOf("win") !== -1) {
             return "windows";
         }
-        
+
         if (appver.indexOf("mac") !== -1) {
             return "mac";
         }
-        
+
         if (appver.indexOf("linux") !== -1) {
             return "linux";
         }
-        
+
         return "windows";
     };
 
@@ -329,7 +329,7 @@ function ShortcutMapper() {
             if (!this.selectedAppData.contexts.hasOwnProperty(contextName)) {
                 continue;
             }
-            
+
             var context = self.selectedAppData.contexts[contextName];
             for (var keyName in context) {
                 if (!context.hasOwnProperty(keyName)) {
