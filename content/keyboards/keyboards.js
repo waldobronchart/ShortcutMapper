@@ -24,6 +24,10 @@ var sitedata_keyboards = {
         windows: "danish.html",
         linux: "danish.html",
     },
+    "Español": {
+        windows: "spanish.html",
+        linux: "spanish.html"
+    },
     "German": {
         mac: "german_mac.html",
         windows: "german.html",
