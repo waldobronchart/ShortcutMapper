@@ -30,11 +30,17 @@ index.html       Main site page
 
 ## Running locally
 
-The only page of the website is **index.html**
+Before opening pull requests to contribute, you should test your changes locally.
 
-The application uses ajax calls to load keyboards and application data. These ajax calls will fail using the file:// protocol, so you need to set your browser to allow this. Here's how to enable that for Chrome: http://stackoverflow.com/a/21413534
-
-Once that's done, just open the **index.html** in your browser and you're off!
+The easiest way to run locally is to run a simple http server:
+1. Install http-server via npm: `npm install -g http-server`
+2. Run `http-server` in your terminal
+  > Starting up http-server, serving ./
+  > Available on:
+  >   http://127.0.0.1:8080
+  >   http://192.168.86.95:8080
+  > Hit CTRL-C to stop the server
+3. Go to http://127.0.0.1:8080 in your browser
 
 ## Exporting new updated shortcuts
 
