@@ -10,7 +10,7 @@ The goal of this project is to map out application keyboard shortcuts onto a vir
 
 # Overview
 
-This project is directly hosted on github from the main **gh-pages** branch. All changes to this branch are live.
+This project is directly hosted on github from the **master** branch. All changes to this branch are live.
 
 ```
 /content         The website content
@@ -167,10 +167,10 @@ Look in `shmaplib/appdata.py` for more specific docs.
 I follow the git-flow process to get new features and bugfixes in. You can read about it here:
 https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
-Basically you'll create a branch like `feature/descriptive-feature-name` from the `gh-pages` branch and start working in that. Once you're done, you'll create a pull request that merges into the `develop` branch.
-This allows me to test your changes before it is published to the `gh-pages` branch.
+Basically you'll create a branch like `feature/descriptive-feature-name` from the `master` branch and start working in that. Once you're done, you'll create a pull request that merges into the `dev` branch.
+This allows me to test your changes before it is published to the `master` branch.
 
-For bug fixes, you'll name your branch `bugfix/descriptive-bug-name`.
+For bug fixes, you'll name your branch `fix/descriptive-bug-name`.
 
 ### Expected contents for new keyboards
 
