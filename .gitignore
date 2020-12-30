@@ -1,5 +1,6 @@
 /design/sprites-assets/*
 /_venv/*
+/.venv/*
 
 # Numerous always-ignore extensions
 *.diff
