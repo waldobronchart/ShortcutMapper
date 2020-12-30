@@ -138,7 +138,6 @@ header p {
     left: 0;
     width: 365px;
     height: 200px;
-    background: url('../images/reference-keyinfo.png') no-repeat;
 }
 
 #search {
@@ -152,7 +151,6 @@ header p {
     right: 0;
     width: 365px;
     height: 250px;
-    background: url('../images/reference-mouse.png') no-repeat;
 }
 
 /* Common input styles ******/
