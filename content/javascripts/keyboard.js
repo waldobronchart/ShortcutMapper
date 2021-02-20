@@ -79,6 +79,8 @@
             // Register key events
             $(document).on("keydown", null, $.proxy(this._keyDown, this));
             $(document).on("keyup", null, $.proxy(this._keyUp, this));
+            this._clearActiveModifiers();
+            this._update();
         },
 
         _keyDown: function(e) {
