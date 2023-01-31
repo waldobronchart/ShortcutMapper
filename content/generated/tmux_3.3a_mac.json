@@ -1,0 +1,664 @@
+{
+    "name" : "tmux",
+    "version" : "3.3a",
+    "os" : "mac",
+    "mods_used" : ["ALT", "CONTROL", "SHIFT"],
+    "default_context" : "prefix",
+    "contexts" : {
+        "copy-mode" : {
+            "A" : [
+                {"name": "send-keys -X start-of-line", "mods": ["CONTROL"]}
+            ],
+            "B" : [
+                {"name": "send-keys -X cursor-left", "mods": ["CONTROL"]},
+                {"name": "send-keys -X previous-matching-bracket", "mods": ["ALT", "CONTROL"]},
+                {"name": "send-keys -X previous-word", "mods": ["ALT"]}
+            ],
+            "C" : [
+                {"name": "send-keys -X cancel", "mods": ["CONTROL"]}
+            ],
+            "COMMA" : [
+                {"name": "send-keys -X jump-reverse", "mods": []}
+            ],
+            "DOWN_ARROW" : [
+                {"name": "send-keys -X cursor-down", "mods": []},
+                {"name": "send-keys -X halfpage-down", "mods": ["ALT"]},
+                {"name": "send-keys -X scroll-down", "mods": ["CONTROL"]}
+            ],
+            "E" : [
+                {"name": "send-keys -X end-of-line", "mods": ["CONTROL"]}
+            ],
+            "EIGHT" : [
+                {"name": "command-prompt -N -I 8 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "END" : [
+                {"name": "send-keys -X end-of-line", "mods": []}
+            ],
+            "ESCAPE" : [
+                {"name": "send-keys -X cancel", "mods": []}
+            ],
+            "F" : [
+                {"name": "command-prompt -1 -p \"(jump backward)\" { send-keys -X jump-backward \"%%\" }", "mods": ["SHIFT"]},
+                {"name": "command-prompt -1 -p \"(jump forward)\" { send-keys -X jump-forward \"%%\" }", "mods": []},
+                {"name": "send-keys -X cursor-right", "mods": ["CONTROL"]},
+                {"name": "send-keys -X next-matching-bracket", "mods": ["ALT", "CONTROL"]},
+                {"name": "send-keys -X next-word-end", "mods": ["ALT"]}
+            ],
+            "FIVE" : [
+                {"name": "command-prompt -N -I 5 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "FOUR" : [
+                {"name": "command-prompt -N -I 4 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "G" : [
+                {"name": "command-prompt -p \"(goto line)\" { send-keys -X goto-line \"%%\" }", "mods": []},
+                {"name": "send-keys -X clear-selection", "mods": ["CONTROL"]}
+            ],
+            "HOME" : [
+                {"name": "send-keys -X start-of-line", "mods": []}
+            ],
+            "K" : [
+                {"name": "send-keys -X copy-pipe-end-of-line-and-cancel", "mods": ["CONTROL"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name": "send-keys -X cursor-left", "mods": []}
+            ],
+            "LEFT_BRACE" : [
+                {"name": "send-keys -X previous-paragraph", "mods": ["ALT"]}
+            ],
+            "LESSTHAN" : [
+                {"name": "send-keys -X history-top", "mods": ["ALT"]}
+            ],
+            "M" : [
+                {"name": "send-keys -X back-to-indentation", "mods": ["ALT"]}
+            ],
+            "MORETHAN" : [
+                {"name": "send-keys -X history-bottom", "mods": ["ALT"]}
+            ],
+            "N" : [
+                {"name": "send-keys -X cursor-down", "mods": ["CONTROL"]},
+                {"name": "send-keys -X search-again", "mods": []},
+                {"name": "send-keys -X search-reverse", "mods": ["SHIFT"]}
+            ],
+            "NINE" : [
+                {"name": "command-prompt -N -I 9 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name": "command-prompt -N -I 8 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name": "command-prompt -N -I 5 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name": "command-prompt -N -I 4 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name": "command-prompt -N -I 9 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name": "command-prompt -N -I 1 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name": "command-prompt -N -I 7 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name": "command-prompt -N -I 6 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name": "command-prompt -N -I 3 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name": "command-prompt -N -I 2 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "ONE" : [
+                {"name": "command-prompt -N -I 1 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "P" : [
+                {"name": "send-keys -X cursor-up", "mods": ["CONTROL"]},
+                {"name": "send-keys -X toggle-position", "mods": ["SHIFT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name": "send-keys -X page-down", "mods": []}
+            ],
+            "PAGE_UP" : [
+                {"name": "send-keys -X page-up", "mods": []}
+            ],
+            "Q" : [
+                {"name": "send-keys -X cancel", "mods": []}
+            ],
+            "R" : [
+                {"name": "command-prompt -i -I \"#{pane_search_string}\" -T search -p \"(search up)\" { send-keys -X search-backward-incremental \"%%\" }", "mods": ["CONTROL"]},
+                {"name": "send-keys -X middle-line", "mods": ["ALT"]},
+                {"name": "send-keys -X rectangle-toggle", "mods": ["SHIFT"]},
+                {"name": "send-keys -X refresh-from-pane", "mods": []},
+                {"name": "send-keys -X top-line", "mods": ["ALT", "SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name": "send-keys -X cursor-right", "mods": []}
+            ],
+            "RIGHT_BRACE" : [
+                {"name": "send-keys -X next-paragraph", "mods": ["ALT"]}
+            ],
+            "S" : [
+                {"name": "command-prompt -i -I \"#{pane_search_string}\" -T search -p \"(search down)\" { send-keys -X search-forward-incremental \"%%\" }", "mods": ["CONTROL"]}
+            ],
+            "SEMICOLON" : [
+                {"name": "send-keys -X jump-again", "mods": []}
+            ],
+            "SEVEN" : [
+                {"name": "command-prompt -N -I 7 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "SIX" : [
+                {"name": "command-prompt -N -I 6 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "SPACE" : [
+                {"name": "send-keys -X begin-selection", "mods": ["CONTROL"]},
+                {"name": "send-keys -X page-down", "mods": []}
+            ],
+            "T" : [
+                {"name": "command-prompt -1 -p \"(jump to backward)\" { send-keys -X jump-to-backward \"%%\" }", "mods": ["SHIFT"]},
+                {"name": "command-prompt -1 -p \"(jump to forward)\" { send-keys -X jump-to-forward \"%%\" }", "mods": []}
+            ],
+            "THREE" : [
+                {"name": "command-prompt -N -I 3 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "TWO" : [
+                {"name": "command-prompt -N -I 2 -p (repeat) { send-keys -N \"%%\" }", "mods": ["ALT"]}
+            ],
+            "UP_ARROW" : [
+                {"name": "send-keys -X cursor-up", "mods": []},
+                {"name": "send-keys -X halfpage-up", "mods": ["ALT"]},
+                {"name": "send-keys -X scroll-up", "mods": ["CONTROL"]}
+            ],
+            "V" : [
+                {"name": "send-keys -X page-down", "mods": ["CONTROL"]},
+                {"name": "send-keys -X page-up", "mods": ["ALT"]}
+            ],
+            "W" : [
+                {"name": "send-keys -X copy-pipe-and-cancel", "mods": ["ALT"]},
+                {"name": "send-keys -X copy-pipe-and-cancel", "mods": ["CONTROL"]}
+            ],
+            "X" : [
+                {"name": "send-keys -X jump-to-mark", "mods": ["ALT"]},
+                {"name": "send-keys -X set-mark", "mods": ["SHIFT"]}
+            ]
+        },
+        "copy-mode-vi" : {
+            "A" : [
+                {"name": "send-keys -X append-selection-and-cancel", "mods": ["SHIFT"]}
+            ],
+            "ASTERISK" : [
+                {"name": "send-keys -FX search-forward \"#{copy_cursor_word}\"", "mods": []}
+            ],
+            "B" : [
+                {"name": "send-keys -X page-up", "mods": ["CONTROL"]},
+                {"name": "send-keys -X previous-space", "mods": ["SHIFT"]},
+                {"name": "send-keys -X previous-word", "mods": []}
+            ],
+            "BACKSPACE" : [
+                {"name": "send-keys -X cursor-left", "mods": []}
+            ],
+            "C" : [
+                {"name": "send-keys -X cancel", "mods": ["CONTROL"]}
+            ],
+            "CARET" : [
+                {"name": "send-keys -X back-to-indentation", "mods": []}
+            ],
+            "COLON" : [
+                {"name": "command-prompt -p \"(goto line)\" { send-keys -X goto-line \"%%\" }", "mods": []}
+            ],
+            "COMMA" : [
+                {"name": "send-keys -X jump-reverse", "mods": []}
+            ],
+            "D" : [
+                {"name": "send-keys -X copy-pipe-end-of-line-and-cancel", "mods": ["SHIFT"]},
+                {"name": "send-keys -X halfpage-down", "mods": ["CONTROL"]}
+            ],
+            "DOLLAR" : [
+                {"name": "send-keys -X end-of-line", "mods": []}
+            ],
+            "DOWN_ARROW" : [
+                {"name": "send-keys -X cursor-down", "mods": []},
+                {"name": "send-keys -X scroll-down", "mods": ["CONTROL"]}
+            ],
+            "E" : [
+                {"name": "send-keys -X next-space-end", "mods": ["SHIFT"]},
+                {"name": "send-keys -X next-word-end", "mods": []},
+                {"name": "send-keys -X scroll-down", "mods": ["CONTROL"]}
+            ],
+            "EIGHT" : [
+                {"name": "command-prompt -N -I 8 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "ENTER" : [
+                {"name": "send-keys -X copy-pipe-and-cancel", "mods": []}
+            ],
+            "ESCAPE" : [
+                {"name": "send-keys -X clear-selection", "mods": []}
+            ],
+            "F" : [
+                {"name": "command-prompt -1 -p \"(jump backward)\" { send-keys -X jump-backward \"%%\" }", "mods": ["SHIFT"]},
+                {"name": "command-prompt -1 -p \"(jump forward)\" { send-keys -X jump-forward \"%%\" }", "mods": []},
+                {"name": "send-keys -X page-down", "mods": ["CONTROL"]}
+            ],
+            "FIVE" : [
+                {"name": "command-prompt -N -I 5 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "FOUR" : [
+                {"name": "command-prompt -N -I 4 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "G" : [
+                {"name": "send-keys -X history-bottom", "mods": ["SHIFT"]},
+                {"name": "send-keys -X history-top", "mods": []}
+            ],
+            "H" : [
+                {"name": "send-keys -X cursor-left", "mods": ["CONTROL"]},
+                {"name": "send-keys -X cursor-left", "mods": []},
+                {"name": "send-keys -X top-line", "mods": ["SHIFT"]}
+            ],
+            "HASH" : [
+                {"name": "send-keys -FX search-backward \"#{copy_cursor_word}\"", "mods": []}
+            ],
+            "J" : [
+                {"name": "send-keys -X copy-pipe-and-cancel", "mods": ["CONTROL"]},
+                {"name": "send-keys -X cursor-down", "mods": []},
+                {"name": "send-keys -X scroll-down", "mods": ["SHIFT"]}
+            ],
+            "K" : [
+                {"name": "send-keys -X cursor-up", "mods": []},
+                {"name": "send-keys -X scroll-up", "mods": ["SHIFT"]}
+            ],
+            "L" : [
+                {"name": "send-keys -X bottom-line", "mods": ["SHIFT"]},
+                {"name": "send-keys -X cursor-right", "mods": []}
+            ],
+            "LEFT_ARROW" : [
+                {"name": "send-keys -X cursor-left", "mods": []}
+            ],
+            "LEFT_BRACE" : [
+                {"name": "send-keys -X previous-paragraph", "mods": []}
+            ],
+            "M" : [
+                {"name": "send-keys -X middle-line", "mods": ["SHIFT"]}
+            ],
+            "N" : [
+                {"name": "send-keys -X search-again", "mods": []},
+                {"name": "send-keys -X search-reverse", "mods": ["SHIFT"]}
+            ],
+            "NINE" : [
+                {"name": "command-prompt -N -I 9 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_ASTERISK" : [
+                {"name": "send-keys -FX search-forward \"#{copy_cursor_word}\"", "mods": []}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name": "command-prompt -N -I 8 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name": "command-prompt -N -I 5 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name": "command-prompt -N -I 4 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_NINE" : [
+                {"name": "command-prompt -N -I 9 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_ONE" : [
+                {"name": "command-prompt -N -I 1 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name": "command-prompt -N -I 7 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_SIX" : [
+                {"name": "command-prompt -N -I 6 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name": "command-prompt -T search -p \"(search down)\" { send-keys -X search-forward \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_THREE" : [
+                {"name": "command-prompt -N -I 3 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_TWO" : [
+                {"name": "command-prompt -N -I 2 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name": "send-keys -X start-of-line", "mods": []}
+            ],
+            "O" : [
+                {"name": "send-keys -X other-end", "mods": []}
+            ],
+            "ONE" : [
+                {"name": "command-prompt -N -I 1 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "P" : [
+                {"name": "send-keys -X toggle-position", "mods": ["SHIFT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name": "send-keys -X page-down", "mods": []}
+            ],
+            "PAGE_UP" : [
+                {"name": "send-keys -X page-up", "mods": []}
+            ],
+            "PERCENT" : [
+                {"name": "send-keys -X next-matching-bracket", "mods": []}
+            ],
+            "Q" : [
+                {"name": "send-keys -X cancel", "mods": []}
+            ],
+            "QUESTION_MARK" : [
+                {"name": "command-prompt -T search -p \"(search up)\" { send-keys -X search-backward \"%%\" }", "mods": []}
+            ],
+            "R" : [
+                {"name": "send-keys -X refresh-from-pane", "mods": []}
+            ],
+            "RIGHT_ARROW" : [
+                {"name": "send-keys -X cursor-right", "mods": []}
+            ],
+            "RIGHT_BRACE" : [
+                {"name": "send-keys -X next-paragraph", "mods": []}
+            ],
+            "SEMICOLON" : [
+                {"name": "send-keys -X jump-again", "mods": []}
+            ],
+            "SEVEN" : [
+                {"name": "command-prompt -N -I 7 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "SIX" : [
+                {"name": "command-prompt -N -I 6 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "SLASH" : [
+                {"name": "command-prompt -T search -p \"(search down)\" { send-keys -X search-forward \"%%\" }", "mods": []}
+            ],
+            "SPACE" : [
+                {"name": "send-keys -X begin-selection", "mods": []}
+            ],
+            "T" : [
+                {"name": "command-prompt -1 -p \"(jump to backward)\" { send-keys -X jump-to-backward \"%%\" }", "mods": ["SHIFT"]},
+                {"name": "command-prompt -1 -p \"(jump to forward)\" { send-keys -X jump-to-forward \"%%\" }", "mods": []}
+            ],
+            "THREE" : [
+                {"name": "command-prompt -N -I 3 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "TWO" : [
+                {"name": "command-prompt -N -I 2 -p (repeat) { send-keys -N \"%%\" }", "mods": []}
+            ],
+            "U" : [
+                {"name": "send-keys -X halfpage-up", "mods": ["CONTROL"]}
+            ],
+            "UP_ARROW" : [
+                {"name": "send-keys -X cursor-up", "mods": []},
+                {"name": "send-keys -X scroll-up", "mods": ["CONTROL"]}
+            ],
+            "V" : [
+                {"name": "send-keys -X rectangle-toggle", "mods": ["CONTROL"]},
+                {"name": "send-keys -X rectangle-toggle", "mods": []},
+                {"name": "send-keys -X select-line", "mods": ["SHIFT"]}
+            ],
+            "W" : [
+                {"name": "send-keys -X next-space", "mods": ["SHIFT"]},
+                {"name": "send-keys -X next-word", "mods": []}
+            ],
+            "X" : [
+                {"name": "send-keys -X jump-to-mark", "mods": ["ALT"]},
+                {"name": "send-keys -X set-mark", "mods": ["SHIFT"]}
+            ],
+            "Y" : [
+                {"name": "send-keys -X scroll-up", "mods": ["CONTROL"]}
+            ],
+            "ZERO" : [
+                {"name": "send-keys -X start-of-line", "mods": []}
+            ]
+        },
+        "prefix" : {
+            "AMPERSAND" : [
+                {"name": "Kill current window", "mods": []}
+            ],
+            "B" : [
+                {"name": "Send the prefix key", "mods": ["CONTROL"]}
+            ],
+            "C" : [
+                {"name": "Create a new window", "mods": []},
+                {"name": "Customize options", "mods": ["SHIFT"]}
+            ],
+            "COLON" : [
+                {"name": "Prompt for a command", "mods": []}
+            ],
+            "COMMA" : [
+                {"name": "Rename current window", "mods": []}
+            ],
+            "D" : [
+                {"name": "Choose a client from a list", "mods": ["SHIFT"]},
+                {"name": "Detach the current client", "mods": []}
+            ],
+            "DELETE" : [
+                {"name": "Reset so the visible part of the window follows the cursor", "mods": []}
+            ],
+            "DOLLAR" : [
+                {"name": "Rename current session", "mods": []}
+            ],
+            "DOUBLE_QUOTE" : [
+                {"name": "Split window vertically", "mods": []}
+            ],
+            "DOWN_ARROW" : [
+                {"name": "Move the visible part of the window down", "mods": ["SHIFT"]},
+                {"name": "Resize the pane down by 5", "mods": ["ALT"]},
+                {"name": "Resize the pane down", "mods": ["CONTROL"]},
+                {"name": "Select the pane below the active pane", "mods": []}
+            ],
+            "E" : [
+                {"name": "Spread panes out evenly", "mods": ["SHIFT"]}
+            ],
+            "EIGHT" : [
+                {"name": "Select window 8", "mods": []}
+            ],
+            "EQUAL" : [
+                {"name": "Choose a paste buffer from a list", "mods": []}
+            ],
+            "EXCLAMATION" : [
+                {"name": "Break pane to a new window", "mods": []}
+            ],
+            "F" : [
+                {"name": "Search for a pane", "mods": []}
+            ],
+            "FIVE" : [
+                {"name": "Select the tiled layout", "mods": ["ALT"]},
+                {"name": "Select window 5", "mods": []}
+            ],
+            "FOUR" : [
+                {"name": "Select window 4", "mods": []},
+                {"name": "Set the main-vertical layout", "mods": ["ALT"]}
+            ],
+            "HASH" : [
+                {"name": "List all paste buffers", "mods": []}
+            ],
+            "I" : [
+                {"name": "Display window information", "mods": []}
+            ],
+            "L" : [
+                {"name": "Select the previously current window", "mods": []},
+                {"name": "Switch to the last client", "mods": ["SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name": "Move the visible part of the window left", "mods": ["SHIFT"]},
+                {"name": "Resize the pane left by 5", "mods": ["ALT"]},
+                {"name": "Resize the pane left", "mods": ["CONTROL"]},
+                {"name": "Select the pane to the left of the active pane", "mods": []}
+            ],
+            "LEFT_BRACE" : [
+                {"name": "Swap the active pane with the pane above", "mods": []}
+            ],
+            "LEFT_BRACKET" : [
+                {"name": "Enter copy mode", "mods": []}
+            ],
+            "LEFT_PARENTHESIS" : [
+                {"name": "Switch to previous client", "mods": []}
+            ],
+            "LESSTHAN" : [
+                {"name": "display-menu -T \"#[align=centre]#{window_index}:#{window_name}\" -x W -y W \"#{?#{>:#{session_windows},1},,-}Swap Left\" l { swap-window -t :-1 } \"#{?#{>:#{session_windows},1},,-}Swap Right\" r { swap-window -t :+1 } \"#{?pane_marked_set,,-}Swap Marked\" s { swap-window } '' Kill X { kill-window } Respawn R { respawn-window -k } \"#{?pane_marked,Unmark,Mark}\" m { select-pane -m } Rename n { command-prompt -F -I \"#W\" { rename-window -t \"#{window_id}\" \"%%\" } } '' \"New After\" w { new-window -a } \"New At End\" W { new-window }", "mods": []}
+            ],
+            "M" : [
+                {"name": "Clear the marked pane", "mods": ["SHIFT"]},
+                {"name": "Toggle the marked pane", "mods": []}
+            ],
+            "MINUS" : [
+                {"name": "Delete the most recent paste buffer", "mods": []}
+            ],
+            "MORETHAN" : [
+                {"name": "display-menu -T \"#[align=centre]#{pane_index} (#{pane_id})\" -x P -y P \"#{?#{m/r:(copy|view)-mode,#{pane_mode}},Go To Top,}\" < { send-keys -X history-top } \"#{?#{m/r:(copy|view)-mode,#{pane_mode}},Go To Bottom,}\" > { send-keys -X history-bottom } '' \"#{?mouse_word,Search For #[underscore]#{=/9/...:mouse_word},}\" C-r { if-shell -F \"#{?#{m/r:(copy|view)-mode,#{pane_mode}},0,1}\" \"copy-mode -t=\" ; send-keys -X -t = search-backward \"#{q:mouse_word}\" } \"#{?mouse_word,Type #[underscore]#{=/9/...:mouse_word},}\" C-y { copy-mode -q ; send-keys -l \"#{q:mouse_word}\" } \"#{?mouse_word,Copy #[underscore]#{=/9/...:mouse_word},}\" c { copy-mode -q ; set-buffer \"#{q:mouse_word}\" } \"#{?mouse_line,Copy Line,}\" l { copy-mode -q ; set-buffer \"#{q:mouse_line}\" } '' \"Horizontal Split\" h { split-window -h } \"Vertical Split\" v { split-window -v } '' \"#{?#{>:#{window_panes},1},,-}Swap Up\" u { swap-pane -U } \"#{?#{>:#{window_panes},1},,-}Swap Down\" d { swap-pane -D } \"#{?pane_marked_set,,-}Swap Marked\" s { swap-pane } '' Kill X { kill-pane } Respawn R { respawn-pane -k } \"#{?pane_marked,Unmark,Mark}\" m { select-pane -m } \"#{?#{>:#{window_panes},1},,-}#{?window_zoomed_flag,Unzoom,Zoom}\" z { resize-pane -Z }", "mods": []}
+            ],
+            "N" : [
+                {"name": "Select the next window with an alert", "mods": ["ALT"]},
+                {"name": "Select the next window", "mods": []}
+            ],
+            "NINE" : [
+                {"name": "Select window 9", "mods": []}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name": "Select window 8", "mods": []}
+            ],
+            "NUMPAD_EQUAL" : [
+                {"name": "Choose a paste buffer from a list", "mods": []}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name": "Select the tiled layout", "mods": ["ALT"]},
+                {"name": "Select window 5", "mods": []}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name": "Select window 4", "mods": []},
+                {"name": "Set the main-vertical layout", "mods": ["ALT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name": "Delete the most recent paste buffer", "mods": []}
+            ],
+            "NUMPAD_NINE" : [
+                {"name": "Select window 9", "mods": []}
+            ],
+            "NUMPAD_ONE" : [
+                {"name": "Select window 1", "mods": []},
+                {"name": "Set the even-horizontal layout", "mods": ["ALT"]}
+            ],
+            "NUMPAD_PERIOD" : [
+                {"name": "Move the current window", "mods": []}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name": "Select window 7", "mods": []}
+            ],
+            "NUMPAD_SIX" : [
+                {"name": "Select window 6", "mods": []}
+            ],
+            "NUMPAD_SLASH" : [
+                {"name": "Describe key binding", "mods": []}
+            ],
+            "NUMPAD_THREE" : [
+                {"name": "Select window 3", "mods": []},
+                {"name": "Set the main-horizontal layout", "mods": ["ALT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name": "Select window 2", "mods": []},
+                {"name": "Set the even-vertical layout", "mods": ["ALT"]}
+            ],
+            "NUMPAD_ZERO" : [
+                {"name": "Select window 0", "mods": []}
+            ],
+            "O" : [
+                {"name": "Rotate through the panes in reverse", "mods": ["ALT"]},
+                {"name": "Rotate through the panes", "mods": ["CONTROL"]},
+                {"name": "Select the next pane", "mods": []}
+            ],
+            "ONE" : [
+                {"name": "Select window 1", "mods": []},
+                {"name": "Set the even-horizontal layout", "mods": ["ALT"]}
+            ],
+            "P" : [
+                {"name": "Select the previous window with an alert", "mods": ["ALT"]},
+                {"name": "Select the previous window", "mods": []}
+            ],
+            "PAGE_UP" : [
+                {"name": "Enter copy mode and scroll up", "mods": []}
+            ],
+            "PERCENT" : [
+                {"name": "Split window horizontally", "mods": []}
+            ],
+            "PERIOD" : [
+                {"name": "Move the current window", "mods": []}
+            ],
+            "Q" : [
+                {"name": "Display pane numbers", "mods": []}
+            ],
+            "QUESTION_MARK" : [
+                {"name": "List key bindings", "mods": []}
+            ],
+            "R" : [
+                {"name": "Redraw the current client", "mods": []}
+            ],
+            "RIGHT_ARROW" : [
+                {"name": "Move the visible part of the window right", "mods": ["SHIFT"]},
+                {"name": "Resize the pane right by 5", "mods": ["ALT"]},
+                {"name": "Resize the pane right", "mods": ["CONTROL"]},
+                {"name": "Select the pane to the right of the active pane", "mods": []}
+            ],
+            "RIGHT_BRACE" : [
+                {"name": "Swap the active pane with the pane below", "mods": []}
+            ],
+            "RIGHT_BRACKET" : [
+                {"name": "Paste the most recent paste buffer", "mods": []}
+            ],
+            "RIGHT_PARENTHESIS" : [
+                {"name": "Switch to next client", "mods": []}
+            ],
+            "S" : [
+                {"name": "Choose a session from a list", "mods": []}
+            ],
+            "SEMICOLON" : [
+                {"name": "Move to the previously active pane", "mods": []}
+            ],
+            "SEVEN" : [
+                {"name": "Select window 7", "mods": []}
+            ],
+            "SINGLE_QUOTE" : [
+                {"name": "Prompt for window index to select", "mods": []}
+            ],
+            "SIX" : [
+                {"name": "Select window 6", "mods": []}
+            ],
+            "SLASH" : [
+                {"name": "Describe key binding", "mods": []}
+            ],
+            "SPACE" : [
+                {"name": "Select next layout", "mods": []}
+            ],
+            "T" : [
+                {"name": "Show a clock", "mods": []}
+            ],
+            "THREE" : [
+                {"name": "Select window 3", "mods": []},
+                {"name": "Set the main-horizontal layout", "mods": ["ALT"]}
+            ],
+            "TILDE" : [
+                {"name": "Show messages", "mods": []}
+            ],
+            "TWO" : [
+                {"name": "Select window 2", "mods": []},
+                {"name": "Set the even-vertical layout", "mods": ["ALT"]}
+            ],
+            "UP_ARROW" : [
+                {"name": "Move the visible part of the window up", "mods": ["SHIFT"]},
+                {"name": "Resize the pane up by 5", "mods": ["ALT"]},
+                {"name": "Resize the pane up", "mods": ["CONTROL"]},
+                {"name": "Select the pane above the active pane", "mods": []}
+            ],
+            "W" : [
+                {"name": "Choose a window from a list", "mods": []}
+            ],
+            "X" : [
+                {"name": "Kill the active pane", "mods": []}
+            ],
+            "Z" : [
+                {"name": "Suspend the current client", "mods": ["CONTROL"]},
+                {"name": "Zoom the active pane", "mods": []}
+            ],
+            "ZERO" : [
+                {"name": "Select window 0", "mods": []}
+            ]
+        }
+    }
+}
