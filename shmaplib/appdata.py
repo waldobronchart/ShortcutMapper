@@ -20,9 +20,8 @@ class Shortcut(object):
     def serialize(self):
         mods = list(set(self.mods))
         mods.sort()
-        mods_str = json.dumps(mods)
 
-        return '{"name":"%s", "mods":%s}' % (self.name, mods_str)
+        return json.dumps({'name': self.name, 'mods': mods})
 
     def __str__(self):
         return self.serialize()

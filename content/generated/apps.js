@@ -192,4 +192,12 @@ var sitedata_apps = [
             },
         }
     },
+    {
+        name: "tmux",
+        data: {
+            "3.3a": {
+                "mac": "tmux_3.3a_mac.json",
+            },
+        }
+    },
 ];
