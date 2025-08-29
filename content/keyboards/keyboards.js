@@ -33,5 +33,10 @@ var sitedata_keyboards = {
         mac: "french_mac.html",
         windows: "french.html",
         linux: "french.html",
+    },
+    "Spanish ISO": {
+        mac: "spanish-iso_mac.html",
+        windows: "spanish-iso.html",
+        linux: "spanish-iso.html",
     }
 };
